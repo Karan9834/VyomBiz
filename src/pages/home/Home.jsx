@@ -20,7 +20,7 @@ const Home = () => {
                     with state-of-the-art automation and expert oversight.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                    <button className="px-10 py-4 bg-[#072b47] text-white font-bold rounded-2xl shadow-xl shadow-blue-200 hover:bg-[#0a3a5e] hover:-translate-y-1 transition-all text-lg">
+                    <button className="px-10 py-4 bg-primary text-white font-bold rounded-2xl shadow-xl shadow-blue-200 hover:bg-[#0a3a5e] hover:-translate-y-1 transition-all text-lg">
                         Get Started
                     </button>
                     <button className="px-10 py-4 bg-white text-slate-800 font-bold rounded-2xl border-2 border-slate-100 hover:bg-slate-50 hover:-translate-y-1 transition-all text-lg shadow-sm">

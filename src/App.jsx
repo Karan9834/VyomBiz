@@ -4,7 +4,8 @@ import Navbar from "./components/layout/Navbar/Navbar";
 import Footer from "./components/layout/Footer/Footer";
 
 // Page Imports - Categorized Structure
-import Home from "./pages/home/Home";
+// import Home from "./pages/home/Home";
+import Home from "./pages/home/Home1";
 import Startup from "./pages/startup/Startup";
 import IPTrademark from "./pages/ip-trademark/IPTrademark";
 import Compliance from "./pages/compliance/Compliance";
