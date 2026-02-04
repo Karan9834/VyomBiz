@@ -50,7 +50,7 @@ export default function Navbar() {
     return (
         <nav ref={ref} className="sticky top-0 z-[100] font-sans">
             {/* Header Content Wrapper with Ruler & Shadow */}
-            <div className="bg-white border-b border-slate-100 shadow-[0_15px_30px_-15px_rgba(0,0,0,0.08)] relative z-20">
+            <div className="bg-white border-b border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.35)] relative z-20">
                 <div className="max-w-[1440px] mx-auto h-16 px-4 md:px-6 flex justify-between items-center gap-2">
 
                     {/* Logo Section */}

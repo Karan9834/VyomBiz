@@ -110,13 +110,13 @@ const Footer = () => {
                 href="https://wa.me/yournumber"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="fixed bottom-6 right-6 bg-[#25D366] p-4 rounded-full shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:shadow-[0_15px_35px_rgba(37,211,102,0.5)] active:scale-90 transition-all z-[9999] group flex items-center justify-center"
+                className="fixed bottom-6 right-6 bg-[#25D366] p-3 rounded-full shadow-[0_8px_20px_rgba(37,211,102,0.3)] hover:shadow-[0_12px_30px_rgba(37,211,102,0.4)] active:scale-90 transition-all z-[9999] group flex items-center justify-center"
             >
                 <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20 group-hover:hidden"></span>
                 <svg
                     viewBox="0 0 24 24"
-                    width="32"
-                    height="32"
+                    width="26"
+                    height="26"
                     fill="white"
                     className="relative z-10"
                 >
