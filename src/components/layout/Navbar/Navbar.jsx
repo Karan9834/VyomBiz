@@ -124,7 +124,7 @@ export default function Navbar() {
                                                     {(MEGA_MENU_DATA[item.name].right[sub] || []).slice(0, 5).map(link => (
                                                         <Link
                                                             key={link}
-                                                            to={link === "Company Registration" ? "/company-registration" : link === "LLP Registration" ? "/llp-registration" : link === "Public Limited Company Registration" ? "/public-limited-registration" : link === "One Person Company Registration" ? "/one-person-company-registration" : item.path}
+                                                            to={link === "Company Registration" ? "/company-registration" : link === "LLP Registration" ? "/llp-registration" : link === "Public Limited Company Registration" ? "/public-limited-registration" : link === "One Person Company Registration" ? "/one-person-company-registration" : link === "Partnership Firm Registration" ? "/partnership-firm-registration" : link === "Sole Proprietorship Registration" ? "/sole-proprietorship-registration" : item.path}
                                                             onClick={() => setHamburger(false)}
                                                             className="block text-[15px] font-semibold text-slate-600 hover:text-blue-600 transition-colors"
                                                         >

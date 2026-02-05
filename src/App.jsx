@@ -15,6 +15,8 @@ import CompanyRegistration from "./pages/startup/CompanyRegistration";
 import LLPRegistration from "./pages/startup/LLPRegistration";
 import PublicLimitedRegistration from "./pages/startup/PublicLimitedRegistration";
 import OPCRegistration from "./pages/startup/OPCRegistration";
+import PartnershipRegistration from "./pages/startup/PartnershipRegistration";
+import SoleProprietorship from "./pages/startup/SoleProprietorship";
 
 import About from "./pages/company/About";
 import Career from "./pages/company/Career";
@@ -48,6 +50,8 @@ function App() {
           <Route path="/llp-registration" element={<LLPRegistration />} />
           <Route path="/public-limited-registration" element={<PublicLimitedRegistration />} />
           <Route path="/one-person-company-registration" element={<OPCRegistration />} />
+          <Route path="/partnership-firm-registration" element={<PartnershipRegistration />} />
+          <Route path="/sole-proprietorship-registration" element={<SoleProprietorship />} />
           <Route path="/ip-trademark" element={<IPTrademark />} />
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/regulatory" element={<Regulatory />} />

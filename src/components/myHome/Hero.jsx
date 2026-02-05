@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <section className="w-full bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        
+
         {/* LEFT CONTENT */}
         <div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-[#0B2C4D] leading-tight">
@@ -72,39 +72,21 @@ const Hero = () => {
           />
         </div> */}
 
-<div className="relative flex justify-center">
-  {/* Main Image */}
-  <img
-    src="/download.jpeg"
-    alt="Main Illustration"
-    className="w-full max-w-4xl lg:max-w-5xl"
-     style={{
-    width: "550px",
-    height: "500px",
-    // top: "-86px",
-    // left: "-64px",
-  }}
-  />
+        <div className="relative flex justify-center items-center">
+          {/* Main Image */}
+          <img
+            src="/download.jpeg"
+            alt="Main Illustration"
+            className="w-full max-w-lg lg:max-w-xl object-contain"
+          />
 
-  {/* Overlay Image */}
-  {/* <img
-    src="/banner.png"
-    alt="Compliance Services"
-    className="absolute top-12 left-4 w-64 hidden md:block"
-  /> */}
-  <img
-  src="/banner.png"
-  alt="Compliance Services"
-  className="absolute hidden md:block"
-  style={{
-    width: "857px",
-    height: "795px",
-    top: "-6px",
-    left: "-64px",
-  }}
-/>
-
-</div>
+          {/* Overlay Image - Positioned relatively to the main image container */}
+          <img
+            src="/banner.png"
+            alt="Compliance Services"
+            className="absolute hidden md:block w-[120%] max-w-none -left-[10%] top-0 pointer-events-none"
+          />
+        </div>
 
 
 
