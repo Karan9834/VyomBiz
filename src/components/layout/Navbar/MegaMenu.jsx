@@ -33,7 +33,7 @@ const MegaMenu = ({ data, activeSub, setActiveSub, onItemClick, categoryPath }) 
                         {(data.right[activeSub] || []).map(link => (
                             <Link
                                 key={link}
-                                to={categoryPath || "/"}
+                                to={link === "Company Registration" ? "/company-registration" : link === "LLP Registration" ? "/llp-registration" : link === "Public Limited Company Registration" ? "/public-limited-registration" : link === "One Person Company Registration" ? "/one-person-company-registration" : (categoryPath || "/")}
                                 onClick={onItemClick}
                                 className="group cursor-pointer block"
                             >

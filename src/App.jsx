@@ -11,6 +11,10 @@ import IPTrademark from "./pages/ip-trademark/IPTrademark";
 import Compliance from "./pages/compliance/Compliance";
 import Regulatory from "./pages/regulatory/Regulatory";
 import Environmental from "./pages/environmental/Environmental";
+import CompanyRegistration from "./pages/startup/CompanyRegistration";
+import LLPRegistration from "./pages/startup/LLPRegistration";
+import PublicLimitedRegistration from "./pages/startup/PublicLimitedRegistration";
+import OPCRegistration from "./pages/startup/OPCRegistration";
 
 import About from "./pages/company/About";
 import Career from "./pages/company/Career";
@@ -40,6 +44,10 @@ function App() {
           {/* Main Core Routes */}
           <Route path="/" element={<Home />} />
           <Route path="/startup" element={<Startup />} />
+          <Route path="/company-registration" element={<CompanyRegistration />} />
+          <Route path="/llp-registration" element={<LLPRegistration />} />
+          <Route path="/public-limited-registration" element={<PublicLimitedRegistration />} />
+          <Route path="/one-person-company-registration" element={<OPCRegistration />} />
           <Route path="/ip-trademark" element={<IPTrademark />} />
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/regulatory" element={<Regulatory />} />
