@@ -7,7 +7,7 @@ const MegaMenu = ({ data, activeSub, setActiveSub, onItemClick, categoryPath }) 
 
     return (
         <div
-            className="hidden xl:block absolute top-[64px] left-1/2 -translate-x-1/2 w-[90%] max-w-[1280px] bg-white shadow-2xl rounded-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200 border border-slate-100"
+            className="hidden xl:block absolute top-[68px] left-1/2 -translate-x-1/2 w-[90%] max-w-[1280px] bg-white rounded-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200 border border-slate-200 z-30 shadow-[0_20px_40px_-15px_rgba(34,197,94,0.25)]"
         >
             <div className="grid grid-cols-[330px_1fr] min-h-[500px]">
                 {/* Left Sidebar Category List */}
