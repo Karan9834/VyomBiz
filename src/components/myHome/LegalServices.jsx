@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ArrowRight } from "lucide-react";
 
 // Example data for 7 options and their 4 cards each
 const options = [
@@ -102,17 +103,20 @@ const LegalServices = () => {
       {/* Main Content */}
       <div className="container mx-auto px-4 flex flex-col md:flex-row gap-6">
         {/* Left side options */}
-        <div className="md:w-1/4 flex md:flex-col gap-4 overflow-x-auto md:overflow-x-visible">
+        <div className="md:w-1/4 flex md:flex-col gap-3 overflow-x-auto no-scrollbar pb-4 md:pb-0 px-1">
           {options.map((option) => (
             <button
               key={option.id}
               onClick={() => setSelectedOption(option.id)}
-              className={`flex items-center gap-3 p-4 rounded-lg transition-colors duration-300 border ${
-                selectedOption === option.id ? "bg-yellow-100 border-yellow-500" : "hover:bg-gray-100 border-gray-200"
-              }`}
+              className={`flex items-center gap-3 p-4 rounded-xl transition-all duration-300 border shrink-0 md:shrink ${selectedOption === option.id
+                ? "bg-yellow-500 border-yellow-500 text-white shadow-lg"
+                : "bg-white hover:bg-slate-50 border-slate-200 text-slate-700"
+                }`}
             >
-              <BarChartSVG />
-              <span className="font-semibold">{option.name}</span>
+              <div className={selectedOption === option.id ? "brightness-0 invert" : ""}>
+                <BarChartSVG />
+              </div>
+              <span className="font-bold text-sm whitespace-nowrap">{option.name}</span>
             </button>
           ))}
         </div>
@@ -120,16 +124,18 @@ const LegalServices = () => {
         {/* Right side cards */}
         <div className="md:w-3/4 grid grid-cols-1 sm:grid-cols-2 gap-6">
           {currentCards.map((card, index) => (
-            <div key={index} className="flex flex-col p-6 border rounded-lg shadow hover:shadow-lg relative">
-              <div className="flex items-center gap-4 mb-4">
-                <BarChartSVG />
-                <div>
-                  <h4 className="font-bold text-lg">{card.title}</h4>
-                  <p className="text-gray-600 text-sm">{card.desc}</p>
+            <div key={index} className="flex flex-col p-6 bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition-all group relative min-h-[180px]">
+              <div className="flex gap-4">
+                <div className="shrink-0 w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                  <BarChartSVG />
+                </div>
+                <div className="flex-1 pb-8">
+                  <h4 className="font-black text-slate-900 text-lg mb-2 leading-tight group-hover:text-blue-600 transition-colors uppercase tracking-tight">{card.title}</h4>
+                  <p className="text-slate-500 font-medium text-[13px] leading-relaxed line-clamp-3">{card.desc}</p>
                 </div>
               </div>
-              <button className="absolute bottom-4 right-4 bg-yellow-500 hover:bg-yellow-600 text-white p-2 rounded-full">
-                &rarr;
+              <button className="absolute bottom-6 right-6 w-10 h-10 bg-yellow-500 hover:bg-[#e6951b] text-white rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110">
+                <ArrowRight size={20} />
               </button>
             </div>
           ))}

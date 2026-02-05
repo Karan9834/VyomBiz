@@ -1,92 +1,86 @@
 import React from "react";
-import { Shield, Briefcase, Scale, Landmark, FileCheck, Info } from "lucide-react";
+import DetailsLayout from "../common/DetailsLayout";
 
 const LLPDetails = () => {
     return (
-        <section className="py-24 bg-white">
-            <div className="container mx-auto px-6">
-
-                {/* Benefits Section */}
-                <div className="mb-32">
-                    <div className="text-center max-w-2xl mx-auto mb-16">
-                        <h2 className="text-3xl md:text-5xl font-black text-primary mb-6">Benefits of LLP Registration</h2>
-                        <p className="text-slate-500 font-medium text-lg">Limited Liability Partnership is the preferred choice for startups, consultants, and professionals.</p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {[
-                            { title: "No Minimum Capital", desc: "Start your LLP with any amount of capital. There is no minimum requirement mandated by law.", icon: <Briefcase className="text-blue-600" /> },
-                            { title: "Lower Compliance", desc: "LLPs have fewer compliance requirements compared to Private Limited Companies, saving time and money.", icon: <Shield className="text-orange-600" /> },
-                            { title: "Limited Liability", desc: "Partners are not personally liable for the debts or liabilities of the LLP.", icon: <Scale className="text-green-600" /> },
-                            { title: "Flexible Management", desc: "Design and operate your business structure as per the LLP Agreement without rigid corporate rules.", icon: <FileCheck className="text-purple-600" /> },
-                            { title: "Tax Advantages", desc: "Distributed profits are not taxed in the hands of partners (No Dividend Distribution Tax).", icon: <Landmark className="text-red-600" /> },
-                            { title: "Easy Transfer", desc: "The ownership of an LLP can be easily transferred to another person by changing partners.", icon: <Info className="text-teal-600" /> },
-                        ].map((item, idx) => (
-                            <div key={idx} className="p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:shadow-2xl transition-all group">
-                                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-md mb-6 group-hover:-translate-y-2 transition-transform">
-                                    {item.icon}
-                                </div>
-                                <h4 className="text-xl font-black text-primary mb-3">{item.title}</h4>
-                                <p className="text-slate-500 font-medium leading-relaxed">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Requirements & Documents */}
-                <div className="grid lg:grid-cols-2 gap-12 items-stretch">
-                    <div className="bg-[#0b2c4d] rounded-[3rem] p-10 lg:p-14 text-white shadow-2xl relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
-                        <h3 className="text-3xl font-black mb-8 relative">Requirements for LLP</h3>
-                        <ul className="space-y-6 relative">
-                            {[
-                                "Minimum 2 Partners (No maximum limit)",
-                                "At least 2 Designated Partners (at least one Indian resident)",
-                                "Unique name for the LLP (ending with LLP)",
-                                "Registered Office Address in India",
-                                "LLP Agreement defining rights & duties"
-                            ].map((item, idx) => (
-                                <li key={idx} className="flex gap-4 items-start">
-                                    <div className="w-6 h-6 bg-secondary rounded-full flex items-center justify-center text-primary mt-1 shrink-0">
-                                        <FileCheck size={14} strokeWidth={3} />
-                                    </div>
-                                    <span className="text-slate-200 font-bold text-lg">{item}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    <div className="bg-white rounded-[3rem] p-10 lg:p-14 border-2 border-slate-100 shadow-xl">
-                        <h3 className="text-3xl font-black mb-8 text-primary">Documentation Checklist</h3>
-                        <div className="space-y-8">
-                            <div>
-                                <h4 className="text-sm font-black text-secondary uppercase tracking-[0.2em] mb-4">Partner Documents</h4>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    {["PAN Card copy", "Aadhar Card copy", "Latest Bank Statement", "Photograph"].map((doc, idx) => (
-                                        <div key={idx} className="flex items-center gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                                            <div className="w-2 h-2 bg-primary rounded-full" />
-                                            <span className="font-bold text-slate-700">{doc}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                            <div>
-                                <h4 className="text-sm font-black text-secondary uppercase tracking-[0.2em] mb-4">Office Documents</h4>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    {["Electricity/Water Bill", "NOC from Owner", "Rent Agreement", "Proof of Ownership"].map((doc, idx) => (
-                                        <div key={idx} className="flex items-center gap-3 p-4 bg-slate-100 rounded-2xl border border-slate-200">
-                                            <div className="w-2 h-2 bg-orange-400 rounded-full" />
-                                            <span className="font-bold text-slate-700">{doc}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
+        <DetailsLayout
+            overview={{
+                badge: "Corporate Structure",
+                title: "LLP Registration –",
+                highlightTitle: "Preferred by Startups",
+                description: [
+                    "Limited Liability Partnership is the preferred choice for startups, consultants, and professionals. It combines the flexibility of a partnership with the limited liability benefits of a company.",
+                    "Our consultants ensure hassle-free limited liability partnership registration within a short time, handling every legal technicality while you focus on building your brand."
+                ],
+                whyIdealTitle: "Why Choose LLP?",
+                whyIdealList: [
+                    { title: "No Audit Below 40L", desc: "No mandatory audit required if turnover is below ₹40 Lakhs." },
+                    { title: "Lower Cost", desc: "Lower setup and annual compliance costs compared to Pvt Ltd." },
+                    { title: "Distributed Profit", desc: "No Dividend Distribution Tax (DDT) on profits shared with partners." }
+                ]
+            }}
+            advantages={{
+                title: "Benefits of LLP Registration",
+                subtitle: "Why modern startups choose Limited Liability Partnership.",
+                list: [
+                    { title: "No Minimum Capital", desc: "Start your LLP with any amount. There is no minimum requirement mandated by law." },
+                    { title: "Lower Compliance", desc: "Fewer compliance requirements compared to Private Limited Companies, saving time." },
+                    { title: "Limited Liability", desc: "Partners are not personally liable for the debts or liabilities of the LLP." },
+                    { title: "Flexible Management", desc: "Design and operate your business structure as per the LLP Agreement." },
+                    { title: "Tax Advantages", desc: "Distributed profits are not taxed in the hands of partners (No DDT)." },
+                    { title: "Easy Transfer", desc: "Ownership can be easily transferred to another person by changing partners." }
+                ]
+            }}
+            eligibility={{
+                title: "LLP Prerequisites",
+                subtitle: "Essential requirements to form a Limited Liability Partnership in India.",
+                list: [
+                    { title: "Minimum Partners", desc: "At least 2 Partners are required (No maximum limit defined)." },
+                    { title: "Designated Partners", desc: "Minimum 2 Designated Partners (one must be an Indian resident)." },
+                    { title: "Unique Identity", desc: "Name must be unique and end with 'LLP' or 'Limited Liability Partnership'." },
+                    { title: "Registered Office", desc: "Must have a physical office address in India for official comms." },
+                    { title: "Partnership Deed", desc: "Legal agreement defining rights, duties, and profit sharing." }
+                ]
+            }}
+            documents={{
+                title: "Documentation Checklist",
+                description: "Digital copies required for partners and the office premises.",
+                list: [
+                    "PAN Card of Partners",
+                    "Aadhar Card of Partners",
+                    "Latest Bank Statement",
+                    "Aadhaar Integrated Photograph",
+                    "Electricity/Water Bill (Office)",
+                    "NOC from Owner",
+                    "Rent Agreement",
+                    "Proof of Ownership"
+                ],
+                imageUrl: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1000"
+            }}
+            process={{
+                title: "LLP Registration Process",
+                subtitle: "Getting your partnership registered in 5 simplified steps.",
+                steps: [
+                    { step: "01", title: "DSC & DPIN", desc: "Obtain Digital Signatures and Designated Partner Identification Numbers." },
+                    { step: "02", title: "Name Approval", desc: "Apply for name reservation (RUN-LLP) through the MCA portal." },
+                    { step: "03", title: "FiLLiP Filing", desc: "Submit the incorporation form (FiLLiP) for certificate and PAN/TAN." },
+                    { step: "04", title: "LLP Agreement", desc: "Draft and file the LLP Agreement within 30 days of incorporation." },
+                    { step: "05", title: "Compliance Setup", desc: "Setup statutory records and open the business current account." }
+                ]
+            }}
+            whyChooseUs={{
+                title: "Reasons to Consider VyomBiz",
+                subtitle: "Expert support for your professional partnership.",
+                list: [
+                    { title: "Expert Consultation", desc: "In-depth guidance on drafting the perfect LLP agreement." },
+                    { title: "End-to-End Support", desc: "From name approval to bank account opening, we handle it all." },
+                    { title: "Regulatory Compliance", desc: "Ensuring all MCA filings are accurate and submitted on time." },
+                    { title: "Legal Excellence", desc: "Documents drafted by senior CAs, CSs and legal experts." },
+                    { title: "Fast Delivery", desc: "Optimised workflows to reduce registration turnaround time." },
+                    { title: "Dedicated Manager", desc: "Single point of contact for all your business registration needs." }
+                ]
+            }}
+        />
     );
 };
 
