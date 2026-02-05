@@ -33,11 +33,7 @@ const MegaMenu = ({ data, activeSub, setActiveSub, onItemClick, categoryPath }) 
                         {(data.right[activeSub] || []).map(link => (
                             <Link
                                 key={link}
-<<<<<<< HEAD
-                                to={link === "Company Registration" ? "/company-registration" : link === "LLP Registration" ? "/llp-registration" : link === "Public Limited Company Registration" ? "/public-limited-registration" : link === "One Person Company Registration" ? "/one-person-company-registration" : link === "Trust Registration" ? "/trust-registration" : link === "Society Registration" ? "/society-registration" : link === "Section 8 Company" ? "/section-8-company" : link === "80G & 12A Registration" ? "/80g-12a-registration" : link === "CSR-1 Registration" ? "/csr-1-registration" : link === "DARPAN Registration" ? "/darpan-registration" : (categoryPath || "/")}
-=======
-                                to={link === "Company Registration" ? "/company-registration" : link === "LLP Registration" ? "/llp-registration" : link === "Public Limited Company Registration" ? "/public-limited-registration" : link === "One Person Company Registration" ? "/one-person-company-registration" : link === "Partnership Firm Registration" ? "/partnership-firm-registration" : link === "Sole Proprietorship Registration" ? "/sole-proprietorship-registration" : (categoryPath || "/")}
->>>>>>> ed9d3c87aa2a634cb4110aa3dd967c99f424c52b
+                                to={link === "Company Registration" ? "/company-registration" : link === "LLP Registration" ? "/llp-registration" : link === "Public Limited Company Registration" ? "/public-limited-registration" : link === "One Person Company Registration" ? "/one-person-company-registration" : link === "Trust Registration" ? "/trust-registration" : link === "Society Registration" ? "/society-registration" : link === "Section 8 Company" ? "/section-8-company" : link === "80G & 12A Registration" ? "/80g-12a-registration" : link === "CSR-1 Registration" ? "/csr-1-registration" : link === "DARPAN Registration" ? "/darpan-registration" : link === "Partnership Firm Registration" ? "/partnership-firm-registration" : link === "Sole Proprietorship Registration" ? "/sole-proprietorship-registration" : (categoryPath || "/")}
                                 onClick={onItemClick}
                                 className="group cursor-pointer block"
                             >
