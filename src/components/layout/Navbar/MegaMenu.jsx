@@ -72,7 +72,6 @@ const getLinkPath = (link, categoryPath) => {
         "FSSAI License": "/fssai-license",
         "FSSAI License Renewal": "/fssai-license-renewal",
         "FSSAI State License": "/fssai-state-license",
-        "Eating House License": "/eating-house-license",
         "Central FSSAI License": "/central-fssai-license",
         "FSSAI Annual Return": "/fssai-annual-return",
         "FSSAI Product Approval": "/fssai-product-approval",
