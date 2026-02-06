@@ -18,9 +18,10 @@ export default function Navbar() {
     useEffect(() => {
         if (activeTop === "Startup") setActiveSub("Business Registration");
         if (activeTop === "IP & Trademark ®") setActiveSub("Trademarks India");
-        if (activeTop === "Compliance") setActiveSub("Company Filing");
-        if (activeTop === "Regulatory") setActiveSub("FDI & FEMA");
+        if (activeTop === "Compliance") setActiveSub("Secretarial");
+        if (activeTop === "Regulatory") setActiveSub("RBI");
         if (activeTop === "Environmental") setActiveSub("Pollution NOC");
+        if (activeTop === "Company") setActiveSub("Overview");
     }, [activeTop]);
 
     useEffect(() => {
@@ -35,9 +36,10 @@ export default function Navbar() {
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
 
-    // Lock body scroll when hamburger is open (Mobile)
+    // Lock body scroll when hamburger is open (Mobile Only)
     useEffect(() => {
-        if (hamburger) {
+        const isMobile = window.innerWidth < 1280; // xl breakpoint
+        if (hamburger && isMobile) {
             document.body.style.overflow = "hidden";
         } else {
             document.body.style.overflow = "auto";
@@ -92,9 +94,15 @@ export default function Navbar() {
                             <MessageCircle size={20} className="text-green-500 cursor-pointer hover:scale-110 transition-transform" onClick={() => setContact(!contact)} />
                         </div>
 
-                        {/* Hamburger Trigger */}
-                        <div className="p-2 hover:bg-slate-100 rounded-lg cursor-pointer transition-colors" onClick={() => setHamburger(!hamburger)}>
+                        {/* Mobile & Tablet Hamburger (Opens Sidebar/Mobile Menu) */}
+                        <div className="xl:hidden p-2 hover:bg-slate-100 rounded-lg cursor-pointer transition-colors" onClick={() => setHamburger(!hamburger)}>
                             {hamburger ? <X size={28} strokeWidth={3} /> : <Menu size={28} strokeWidth={3} className="text-slate-700" />}
+                        </div>
+
+                        {/* Desktop Hamburger (Opens Dropdown) */}
+                        <div className="hidden xl:block p-2 hover:bg-slate-100 rounded-lg cursor-pointer transition-colors"
+                            onClick={() => setHamburger(!hamburger)}>
+                            <Menu size={28} strokeWidth={3} className={`transition-colors ${hamburger ? "text-blue-600" : "text-slate-700"}`} />
                         </div>
                     </div>
                 </div>
@@ -187,15 +195,15 @@ export default function Navbar() {
             {/* --- CONTACT POPUP (Desktop) --- */}
             <ContactPopup isOpen={contact} />
 
-            {/* --- DESKTOP SIDEBAR (Optional, or integrate with mobile) --- */}
+            {/* --- DESKTOP SIDEBAR --- */}
             {hamburger && (
-                <div className="hidden xl:block absolute right-6 top-20 bg-white border border-slate-100 rounded-2xl w-72 shadow-2xl py-4 z-[110] animate-in slide-in-from-right-5 duration-200">
+                <div className="hidden xl:block absolute right-4 top-[74px] bg-white border border-slate-100 rounded-xl w-64 shadow-xl py-2 z-[110] space-y-[1px]">
                     {SIDEBAR_LINKS.map(i => (
                         <Link
                             key={i.name}
                             to={i.path}
                             onClick={() => setHamburger(false)}
-                            className="px-6 py-3 block hover:bg-slate-50 hover:text-blue-600 font-bold text-slate-700 cursor-pointer transition-all border-l-4 border-transparent hover:border-blue-600"
+                            className="block px-6 py-2.5 text-slate-600 hover:bg-slate-50 hover:text-blue-600 font-semibold transition-colors"
                         >
                             {i.name}
                         </Link>

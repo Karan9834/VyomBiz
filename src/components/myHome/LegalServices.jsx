@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, BarChart3 } from "lucide-react";
 
 // Example data for 7 options and their 4 cards each
 const options = [
@@ -76,66 +76,84 @@ const options = [
 ];
 
 // SVG Icon Component
-const BarChartSVG = () => (
-  <svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="M4.63158 24.4219H1.15789C0.850802 24.4219 0.556287 24.2888 0.339139 24.0519C0.121992 23.815 0 23.4937 0 23.1587V13.0535C0 12.7184 0.121992 12.3972 0.339139 12.1603C0.556287 11.9234 0.850802 11.7903 1.15789 11.7903H4.63158C4.93867 11.7903 5.23319 11.9234 5.45033 12.1603C5.66748 12.3972 5.78947 12.7184 5.78947 13.0535V23.1587C5.78947 23.4937 5.66748 23.815 5.45033 24.0519C5.23319 24.2888 4.93867 24.4219 4.63158 24.4219ZM12.7368 24.4219H9.26316C8.95607 24.4219 8.66155 24.2888 8.4444 24.0519C8.22726 23.815 8.10526 23.4937 8.10526 23.1587V1.68503C8.10526 1.35002 8.22726 1.02873 8.4444 0.791845C8.66155 0.554957 8.95607 0.421875 9.26316 0.421875H12.7368C13.0439 0.421875 13.3384 0.554957 13.5556 0.791845C13.7727 1.02873 13.8947 1.35002 13.8947 1.68503V23.1587C13.8947 23.4937 13.7727 23.815 13.5556 24.0519C13.3384 24.2888 13.0439 24.4219 12.7368 24.4219ZM20.8421 24.4219H17.3684C17.0613 24.4219 16.7668 24.2888 16.5497 24.0519C16.3325 23.815 16.2105 23.4937 16.2105 23.1587V9.26398C16.2105 8.92897 16.3325 8.60768 16.5497 8.37079C16.7668 8.1339 17.0613 8.00082 17.3684 8.00082H20.8421C21.1492 8.00082 21.4437 8.1339 21.6609 8.37079C21.878 8.60768 22 8.92897 22 9.26398V23.1587C22 23.4937 21.878 23.815 21.6609 24.0519C21.4437 24.2888 21.1492 24.4219 20.8421 24.4219Z"
-      fill="white"
-    />
-  </svg>
-);
+
 
 const LegalServices = () => {
   const [selectedOption, setSelectedOption] = useState(options[0].id);
   const currentCards = options.find((opt) => opt.id === selectedOption).cards;
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-slate-50">
       {/* Heading */}
       <div className="text-center mb-12 px-4">
-        <h2 className="text-3xl font-bold mb-2">Legal Help Across Wide Range of Services</h2>
-        <div className="w-24 h-1 bg-yellow-500 mx-auto rounded mb-4"></div>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Corpbiz focuses predominantly on assisting entrepreneurs or SMEs by providing services such as Business Registration, Government Registration, Regulatory Measures, Tax Filing, IPR, and much more.
+        <h2 className="text-4xl font-bold text-black mb-4 tracking-tight">Legal Help Across Wide Range of Services</h2>
+        <div className="w-16 h-1 bg-[#f1a134] mx-auto rounded mb-6"></div>
+        <p className="text-gray-700 text-sm max-w-4xl mx-auto leading-relaxed">
+          Vyombiz focuses predominantly on assisting entrepreneurs or SMEs by providing services such as Business Registration, Government Registration, Regulatory Measures, Tax Filing, IPR, and much more.
         </p>
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 flex flex-col md:flex-row gap-6">
-        {/* Left side options */}
-        <div className="md:w-1/4 flex md:flex-col gap-3 overflow-x-auto no-scrollbar pb-4 md:pb-0 px-1">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-6 flex flex-col md:flex-row gap-0">
+        {/* Left side - Dark Blue Sidebar */}
+        <div className="md:w-[30%] bg-[#005a9c] rounded-2xl p-6 flex flex-col gap-0 relative">
           {options.map((option) => (
             <button
               key={option.id}
               onClick={() => setSelectedOption(option.id)}
-              className={`flex items-center gap-3 p-4 rounded-xl transition-all duration-300 border shrink-0 md:shrink ${selectedOption === option.id
-                ? "bg-yellow-500 border-yellow-500 text-white shadow-lg"
-                : "bg-white hover:bg-slate-50 border-slate-200 text-slate-700"
+              className={`flex items-center gap-3 p-4 transition-all duration-300 text-left relative ${selectedOption === option.id
+                ? "bg-white text-[#005a9c] -mx-6 px-10 shadow-lg"
+                : "bg-transparent text-white hover:bg-white/10 rounded-lg"
                 }`}
             >
-              <div className={selectedOption === option.id ? "brightness-0 invert" : ""}>
-                <BarChartSVG />
+              <div className={`shrink-0 ${selectedOption === option.id ? "text-red-500" : "text-white"}`}>
+                <BarChart3 className="w-full h-full" />
               </div>
-              <span className="font-bold text-sm whitespace-nowrap">{option.name}</span>
+              <div className="flex-1">
+                <div className={`font-bold text-sm ${selectedOption === option.id ? "text-[#005a9c]" : "text-white"}`}>
+                  {option.name}
+                </div>
+                <div className={`text-xs mt-0.5 ${selectedOption === option.id ? "text-slate-600" : "text-white/80"}`}>
+                  {option.id === 1 && "We help you register your business"}
+                  {option.id === 2 && "Get govt. registration certificates"}
+                  {option.id === 3 && "Getting govt. licenses with us is easy"}
+                  {option.id === 4 && "Streamline compliance with our experts"}
+                  {option.id === 5 && "We ensure eco-sustainable growth"}
+                  {option.id === 6 && "We simplify the process of tax filing"}
+                  {option.id === 7 && "We provide top-notch IPR Services"}
+                </div>
+              </div>
             </button>
           ))}
         </div>
 
-        {/* Right side cards */}
-        <div className="md:w-3/4 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {/* Orange Vertical Separator Line */}
+        <div className="hidden md:block w-1 bg-[#f1a134] mx-6 rounded-full"></div>
+
+        {/* Right side - White Cards Grid with Shadow */}
+        <div className="md:w-[70%] grid grid-cols-1 sm:grid-cols-2 gap-6">
           {currentCards.map((card, index) => (
-            <div key={index} className="flex flex-col p-6 bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition-all group relative min-h-[180px]">
+            <div key={index} className="flex flex-col p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all group relative min-h-[180px]">
               <div className="flex gap-4">
-                <div className="shrink-0 w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                  <BarChartSVG />
+                {/* Chart Icon */}
+                <div className="shrink-0 w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center text-red-600">
+                  <BarChart3 className="w-full h-full" strokeWidth={2.5} />
                 </div>
-                <div className="flex-1 pb-8">
-                  <h4 className="font-black text-slate-900 text-lg mb-2 leading-tight group-hover:text-blue-600 transition-colors uppercase tracking-tight">{card.title}</h4>
-                  <p className="text-slate-500 font-medium text-[13px] leading-relaxed line-clamp-3">{card.desc}</p>
+
+                {/* Text Content */}
+                <div className="flex-1 pb-12">
+                  <h4 className="font-bold text-[#005a9c] text-base mb-2 leading-tight">
+                    {card.title}
+                  </h4>
+                  <p className="text-slate-600 text-sm leading-relaxed line-clamp-3">
+                    {card.desc}
+                  </p>
                 </div>
               </div>
-              <button className="absolute bottom-6 right-6 w-10 h-10 bg-yellow-500 hover:bg-[#e6951b] text-white rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110">
-                <ArrowRight size={20} />
+
+              {/* Circular Arrow Button */}
+              <button className="absolute bottom-6 right-6 w-10 h-10 bg-[#005a9c] hover:bg-[#004a7c] text-white rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110">
+                <ArrowRight size={20} strokeWidth={2.5} />
               </button>
             </div>
           ))}

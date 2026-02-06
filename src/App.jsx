@@ -43,9 +43,12 @@ import Publications from "./pages/resources/Publications";
 
 import NotFound from "./pages/error/NotFound";
 
+import ScrollToTop from "./components/common/ScrollToTop";
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <main className="min-h-screen">
         <Routes>

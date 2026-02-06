@@ -9,9 +9,9 @@ const MegaMenu = ({ data, activeSub, setActiveSub, onItemClick, categoryPath }) 
         <div
             className="hidden xl:block absolute top-[68px] left-1/2 -translate-x-1/2 w-[90%] max-w-[1280px] bg-white rounded-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200 border border-slate-200 z-30 shadow-[0_20px_40px_-15px_rgba(34,197,94,0.25)]"
         >
-            <div className="grid grid-cols-[330px_1fr] min-h-[500px]">
+            <div className="grid grid-cols-[330px_1fr] h-[500px]">
                 {/* Left Sidebar Category List */}
-                <div className="bg-white p-6 border-r border-slate-100 overflow-y-auto max-h-[80vh]">
+                <div className="bg-white p-6 border-r border-slate-100 overflow-y-auto h-full custom-scrollbar">
                     {data.left.map(sub => (
                         <div key={sub}
                             onMouseEnter={() => setActiveSub(sub)}
@@ -25,7 +25,7 @@ const MegaMenu = ({ data, activeSub, setActiveSub, onItemClick, categoryPath }) 
                 </div>
 
                 {/* Right Side Content Grid */}
-                <div className="p-12 bg-slate-50/40">
+                <div className="p-12 bg-slate-50/40 h-full overflow-y-auto custom-scrollbar">
                     <h3 className="text-2xl font-black mb-8 text-[#072b47] tracking-tight">
                         {activeSub}
                     </h3>
