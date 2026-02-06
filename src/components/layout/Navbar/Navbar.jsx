@@ -161,7 +161,12 @@ export default function Navbar() {
                                                                 "FSSAI Annual Return": "/fssai-annual-return",
                                                                 "FSSAI Product Approval": "/fssai-product-approval",
                                                                 "Food Recycling License": "/food-recycling-license",
-                                                                "FPO Mark Certification": "/fpo-mark-certification"
+                                                                "FPO Mark Certification": "/fpo-mark-certification",
+
+                                                                // Company
+                                                                "Career": "/career",
+                                                                "vyomBiz Reviews": "/reviews",
+                                                                "Work at vyomBiz": "/work-at-vyombiz"
                                                             };
                                                             return map[btnLink] || item.path;
                                                         };

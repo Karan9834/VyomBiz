@@ -4,7 +4,7 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 
 /**
- * TrustRegistration Page matching CorpBiz layout styles
+ * TrustRegistration Page matching Vyombiz layout styles
  * Sections:
  * 1. Hero Section (Left Content, Right Form)
  * 2. Stats Strip

@@ -13,7 +13,7 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
  * Refactored to match TrustRegistration design.
  */
 
-const EightyTwenty = () => {
+const EightyTwelve = () => {
     const faqs = [
         {
             question: "Are there any eligibility criteria for registration of 12A and 80G?",
@@ -159,4 +159,4 @@ const EightyTwenty = () => {
     );
 };
 
-export default EightyTwenty;
+export default EightyTwelve;

@@ -2,16 +2,16 @@
 import React from "react";
 
 const brandLogos = [
-  "https://corpbiz.io/admin/style/images/builder/20211225023552_marg-logo.png",
-  "https://corpbiz.io/admin/style/images/builder/20211225023538_justdial.jpg",
-  "https://corpbiz.io/admin/style/images/builder/20211225023524_fia-global.jpg",
-  "https://corpbiz.io/admin/style/images/builder/20180628020803_DHFL.jpg",
-  "https://corpbiz.io/admin/style/images/builder/20180628020851_ku.jpg",
-  "https://corpbiz.io/admin/style/images/builder/20180628020825_foodpanda.jpg",
-  "https://corpbiz.io/admin/style/images/builder/20211225023524_fia-global.jpg",
-  "https://corpbiz.io/admin/style/images/builder/20180628020904_stripe.jpg",
-  "https://corpbiz.io/admin/style/images/builder/20211225023604_milton.jpg",
-  "https://corpbiz.io/admin/style/images/builder/20180628020838_30fbric.jpg",
+  "https://Vyombiz.io/admin/style/images/builder/20211225023552_marg-logo.png",
+  "https://Vyombiz.io/admin/style/images/builder/20211225023538_justdial.jpg",
+  "https://Vyombiz.io/admin/style/images/builder/20211225023524_fia-global.jpg",
+  "https://Vyombiz.io/admin/style/images/builder/20180628020803_DHFL.jpg",
+  "https://Vyombiz.io/admin/style/images/builder/20180628020851_ku.jpg",
+  "https://Vyombiz.io/admin/style/images/builder/20180628020825_foodpanda.jpg",
+  "https://Vyombiz.io/admin/style/images/builder/20211225023524_fia-global.jpg",
+  "https://Vyombiz.io/admin/style/images/builder/20180628020904_stripe.jpg",
+  "https://Vyombiz.io/admin/style/images/builder/20211225023604_milton.jpg",
+  "https://Vyombiz.io/admin/style/images/builder/20180628020838_30fbric.jpg",
 ];
 
 const TrustedBrands = () => {

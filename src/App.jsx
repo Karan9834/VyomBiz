@@ -18,9 +18,15 @@ import OPCRegistration from "./pages/startup/OPCRegistration";
 import TrustRegistration from "./pages/startup/NGOTrust/TrustRegistration";
 import SocietyRegistration from "./pages/startup/NGOTrust/SocietyRegistration";
 import Section8Company from "./pages/startup/NGOTrust/Section8Company";
-import EightyTwenty from "./pages/startup/NGOTrust/EightyTwenty";
-import CSR1Registration from "./pages/startup/NGOTrust/CSR1Registration";
-import DarpanRegistration from "./pages/startup/NGOTrust/DarpanRegistration";
+import EightyTwelve from "./pages/startup/NGOTrust/EightyTwelve";
+import NGOCSR1Registration from "./pages/startup/NGOTrust/NGOCSR1Registration";
+import NGODarpanRegistration from "./pages/startup/NGOTrust/NGODarpanRegistration";
+
+import CompanyRegistrationUSA from "./pages/startup/Global Incorporation/CompanyRegistrationUSA";
+import CompanyRegistrationUK from "./pages/startup/Global Incorporation/CompanyRegistrationUK";
+import CompanyRegistrationDubai from "./pages/startup/Global Incorporation/CompanyRegistrationDubai";
+import CompanyRegistrationMauritius from "./pages/startup/Global Incorporation/CompanyRegistrationMauritius";
+import CompanyRegistrationHongKong from "./pages/startup/Global Incorporation/CompanyRegistrationHongKong";
 import PartnershipRegistration from "./pages/startup/PartnershipRegistration";
 import SoleProprietorship from "./pages/startup/SoleProprietorship";
 import NidhiCompanyRegistration from "./pages/startup/NidhiCompanyRegistration";
@@ -51,11 +57,11 @@ import FPOMarkCertification from "./pages/startup/FssaiEating/FPOMarkCertificati
 
 
 import About from "./pages/company/About";
-import Career from "./pages/company/Career";
-import Contact from "./pages/company/Contact";
+import Carrers from "./pages/Carrers";
+import Contact from "./components/Contact/ContactUs";
 import Media from "./pages/company/Media";
-import WorkAtVyomBiz from "./pages/company/WorkAtVyomBiz";
-import Reviews from "./pages/company/Reviews";
+import WorkAtVyomBiz from "./components/Contact/WorkAtVyombiz";
+import Reviews from "./pages/Reviews";
 import Partner from "./pages/company/Partner";
 
 import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
@@ -88,9 +94,15 @@ function App() {
           <Route path="/trust-registration" element={<TrustRegistration />} />
           <Route path="/society-registration" element={<SocietyRegistration />} />
           <Route path="/section-8-company" element={<Section8Company />} />
-          <Route path="/80g-12a-registration" element={<EightyTwenty />} />
-          <Route path="/csr-1-registration" element={<CSR1Registration />} />
-          <Route path="/darpan-registration" element={<DarpanRegistration />} />
+          <Route path="/80g-12a-registration" element={<EightyTwelve />} />
+          <Route path="/csr-1-registration" element={<NGOCSR1Registration />} />
+          <Route path="/darpan-registration" element={<NGODarpanRegistration />} />
+
+          <Route path="/usa-incorporation" element={<CompanyRegistrationUSA />} />
+          <Route path="/uk-incorporation" element={<CompanyRegistrationUK />} />
+          <Route path="/dubai-company-setup" element={<CompanyRegistrationDubai />} />
+          <Route path="/company-registration-mauritius" element={<CompanyRegistrationMauritius />} />
+          <Route path="/hong-kong-incorporation" element={<CompanyRegistrationHongKong />} />
           <Route path="/partnership-firm-registration" element={<PartnershipRegistration />} />
           <Route path="/sole-proprietorship-registration" element={<SoleProprietorship />} />
           <Route path="/nidhi-company-registration" element={<NidhiCompanyRegistration />} />
@@ -124,7 +136,7 @@ function App() {
 
           {/* Company Routes */}
           <Route path="/about" element={<About />} />
-          <Route path="/career" element={<Career />} />
+          <Route path="/career" element={<Carrers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/media" element={<Media />} />
           <Route path="/work-at-vyombiz" element={<WorkAtVyomBiz />} />
