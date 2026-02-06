@@ -11,7 +11,9 @@ const DetailsLayout = ({
     eligibility = null,
     documents = null,
     process = null,
-    whyChooseUs = null
+    features = null,
+    whyChooseUs = null, // fallback for features
+    postCompliance = null
 }) => {
     const navContainerRef = useRef(null);
     const [activeSection, setActiveSection] = useState("");
@@ -21,17 +23,21 @@ const DetailsLayout = ({
         eligibility: useRef(null),
         documents: useRef(null),
         process: useRef(null),
+        features: useRef(null),
         whyChooseUs: useRef(null),
+        postCompliance: useRef(null),
     };
 
     // Navigation items based on provided props
     const navItems = [
         { id: "overview", label: "Overview", show: !!overview },
         { id: "advantages", label: "Advantages", show: !!advantages },
-        { id: "eligibility", label: "Eligibility", show: !!eligibility },
+        { id: "eligibility", label: "Eligibility Criteria", show: !!eligibility },
         { id: "documents", label: "Documents Required", show: !!documents },
         { id: "process", label: "Process", show: !!process },
-        { id: "whyChooseUs", label: "Why VyomBiz", show: !!whyChooseUs },
+        { id: "features", label: "Features", show: !!(features || whyChooseUs) },
+        { id: "postCompliance", label: "Post Compliance", show: !!postCompliance },
+        { id: "faq", label: "FAQs", show: true },
     ].filter(item => item.show);
 
     useEffect(() => {
@@ -39,7 +45,7 @@ const DetailsLayout = ({
             const scrollPosition = window.scrollY + 150;
 
             for (const item of navItems) {
-                const element = sectionRefs[item.id].current;
+                const element = item.id === "faq" ? document.getElementById("faq") : sectionRefs[item.id].current;
                 if (element) {
                     const { offsetTop, offsetHeight } = element;
                     if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
@@ -67,7 +73,7 @@ const DetailsLayout = ({
     }, [navItems]);
 
     const scrollToSection = (id) => {
-        const element = sectionRefs[id].current;
+        const element = id === "faq" ? document.getElementById("faq") : sectionRefs[id].current;
         if (element) {
             const offset = element.offsetTop - 120;
             window.scrollTo({ top: offset, behavior: "smooth" });
@@ -77,7 +83,7 @@ const DetailsLayout = ({
     return (
         <div className="bg-white">
             {/* Sticky Sub-Navigation with Yellow Background */}
-            <div className="sticky top-[64px] z-40 bg-[#f1a134] shadow-lg overflow-x-auto no-scrollbar">
+            <div className="sticky top-[64px] z-40 bg-[#f1a134] shadow-lg overflow-x-auto no-scrollbar hidden md:block">
                 <div className="container mx-auto px-4 md:px-6">
                     <div ref={navContainerRef} className="flex items-center md:justify-center min-w-max">
                         {navItems.map((item) => (
@@ -96,6 +102,26 @@ const DetailsLayout = ({
                             </button>
                         ))}
                     </div>
+                </div>
+            </div>
+
+            {/* Mobile Nav */}
+            <div className="sticky top-[64px] z-40 bg-[#f1a134] md:hidden shadow-lg overflow-x-auto no-scrollbar">
+                <div ref={navContainerRef} className="flex items-center min-w-max">
+                    {navItems.map((item) => (
+                        <button
+                            key={item.id}
+                            data-id={item.id}
+                            onClick={() => scrollToSection(item.id)}
+                            className={`px-5 py-4 text-[11px] font-black uppercase tracking-widest relative ${activeSection === item.id ? "text-[#072b47]" : "text-white/80"
+                                }`}
+                        >
+                            {item.label}
+                            {activeSection === item.id && (
+                                <div className="absolute bottom-0 left-0 w-full h-1 bg-[#072b47]" />
+                            )}
+                        </button>
+                    ))}
                 </div>
             </div>
 
@@ -331,27 +357,27 @@ const DetailsLayout = ({
                     </section>
                 )}
 
-                {/* 6. WHY CHOOSE US SECTION */}
-                {whyChooseUs && (
+                {/* 6. FEATURES SECTION (Combined features/whyChooseUs) */}
+                {(features || whyChooseUs) && (
                     <section
-                        id="whyChooseUs"
-                        ref={sectionRefs.whyChooseUs}
-                        className="py-24 scroll-mt-24"
+                        id="features"
+                        ref={sectionRefs.features || sectionRefs.whyChooseUs}
+                        className="py-24 border-b border-slate-50 scroll-mt-24"
                     >
                         <div className="bg-slate-50 rounded-[4rem] p-10 lg:p-20 border border-slate-100 shadow-sm relative overflow-hidden">
                             <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[#f1a134] opacity-[0.03] rounded-full translate-x-1/3 translate-y-1/3" />
 
                             <div className="text-center max-w-3xl mx-auto mb-20 relative z-10">
                                 <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-6 tracking-tight">
-                                    {whyChooseUs.title}
+                                    {(features || whyChooseUs).title}
                                 </h2>
                                 <p className="text-slate-500 font-bold text-lg leading-relaxed italic">
-                                    "{whyChooseUs.subtitle}"
+                                    "{(features || whyChooseUs).subtitle}"
                                 </p>
                             </div>
 
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10">
-                                {whyChooseUs.list.map((item, i) => (
+                                {(features || whyChooseUs).list.map((item, i) => (
                                     <div key={i} className="group cursor-default">
                                         <div className="flex items-center gap-4 mb-4">
                                             <div className="w-2 h-8 bg-[#f1a134] rounded-full transition-all group-hover:h-12 group-hover:bg-[#1e40af]" />
@@ -379,6 +405,51 @@ const DetailsLayout = ({
                                         <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">{badge.label}</p>
                                     </div>
                                 ))}
+                            </div>
+                        </div>
+                    </section>
+                )}
+
+                {/* 7. POST COMPLIANCE SECTION */}
+                {postCompliance && (
+                    <section
+                        id="postCompliance"
+                        ref={sectionRefs.postCompliance}
+                        className="py-24 scroll-mt-24"
+                    >
+                        <div className="flex flex-col lg:flex-row gap-16 items-center">
+                            <div className="lg:w-1/2">
+                                <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-8 leading-tight tracking-tight">
+                                    {postCompliance.title}
+                                </h2>
+                                <p className="text-slate-500 font-bold text-lg mb-10 leading-relaxed italic border-l-4 border-[#f1a134] pl-6">
+                                    "{postCompliance.subtitle}"
+                                </p>
+                                <div className="space-y-4">
+                                    {postCompliance.list.map((item, i) => (
+                                        <div key={i} className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 group hover:bg-white hover:border-[#f1a134]/30 hover:shadow-lg transition-all">
+                                            <div className="w-10 h-10 rounded-xl bg-white border border-slate-100 flex items-center justify-center text-[#f1a134] group-hover:bg-[#f1a134] group-hover:text-white transition-all">
+                                                <TrendingUp size={20} />
+                                            </div>
+                                            <span className="text-[15px] font-black text-slate-700">{item}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="lg:w-1/2 w-full">
+                                <div className="relative group p-4">
+                                    <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-[#1e40af] rounded-[3rem] blur-2xl opacity-10" />
+                                    <img
+                                        src={postCompliance.imageUrl || "https://images.unsplash.com/photo-1454165833767-131435bb4496?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"}
+                                        alt="Post Compliance"
+                                        className="relative rounded-[2.5rem] border-4 border-white shadow-2xl w-full h-[400px] object-cover"
+                                    />
+                                    <div className="absolute -bottom-6 -right-6 bg-white p-8 rounded-[2rem] shadow-2xl border border-slate-50 max-w-[200px] hidden md:block">
+                                        <p className="text-[10px] font-black uppercase tracking-widest text-[#f1a134] mb-2">Annual filing</p>
+                                        <p className="text-2xl font-black text-[#072b47]">100%</p>
+                                        <p className="text-[10px] font-bold text-slate-500 leading-tight">Guaranteed accuracy for your business.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>

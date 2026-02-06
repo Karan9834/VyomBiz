@@ -56,7 +56,28 @@ const getLinkPath = (link, categoryPath) => {
         "State FSSAI": "/state-fssai",
         "Central FSSAI": "/central-fssai",
         "Eating House License": "/eating-house-license",
-        "Liquor License": "/liquor-license"
+        "Liquor License": "/liquor-license",
+        "Clinical Establishment Registration": "/clinical-establishment-registration",
+        "Carbon Black Manufacturing": "/carbon-black-manufacturing-business-setup",
+        "Green Hydrogen Plant": "/green-hydrogen-plant-setup",
+        "Green Ammonia Plant": "/green-ammonia-plant-setup",
+        "Synthetic Rubber Business": "/synthetic-rubber-business-setup",
+        "Paper and Paperboard Packaging Industry": "/paper-and-paperboard-packaging-industry",
+        "Fermentation Industry": "/fermentation-industry-setup",
+        "Renewable energy business": "/renewable-energy-business-setup",
+        "Fire Equipment Plant Setup": "/fire-equipment-plant-setup",
+        "Virtual Office Space": "/virtual-office-space-setup",
+
+        // FSSAI & Eating House
+        "FSSAI License": "/fssai-license",
+        "FSSAI License Renewal": "/fssai-license-renewal",
+        "FSSAI State License": "/fssai-state-license",
+        "Eating House License": "/eating-house-license",
+        "Central FSSAI License": "/central-fssai-license",
+        "FSSAI Annual Return": "/fssai-annual-return",
+        "FSSAI Product Approval": "/fssai-product-approval",
+        "Food Recycling License": "/food-recycling-license",
+        "FPO Mark Certification": "/fpo-mark-certification"
     };
 
     return routeMap[link] || (categoryPath || "/");
