@@ -57,7 +57,7 @@ const getLinkPath = (link, categoryPath) => {
         "State FSSAI": "/state-fssai",
         "Central FSSAI": "/central-fssai",
         "Eating House License": "/eating-house-license",
-<<<<<<< Updated upstream
+        "Eating House License": "/eating-house-license",
         "Liquor License": "/liquor-license",
         "Clinical Establishment Registration": "/clinical-establishment-registration",
         "Carbon Black Manufacturing": "/carbon-black-manufacturing-business-setup",
@@ -74,21 +74,16 @@ const getLinkPath = (link, categoryPath) => {
         "FSSAI License": "/fssai-license",
         "FSSAI License Renewal": "/fssai-license-renewal",
         "FSSAI State License": "/fssai-state-license",
-        "Eating House License": "/eating-house-license",
         "Central FSSAI License": "/central-fssai-license",
         "FSSAI Annual Return": "/fssai-annual-return",
         "FSSAI Product Approval": "/fssai-product-approval",
         "Food Recycling License": "/food-recycling-license",
-        "FPO Mark Certification": "/fpo-mark-certification"
-=======
-        "Eating House License": "/eating-house-license",
-        "Liquor License": "/liquor-license",
+        "FPO Mark Certification": "/fpo-mark-certification",
 
         // Company
         "Career": "/career",
         "vyomBiz Reviews": "/reviews",
         "Work at vyomBiz": "/work-at-vyombiz"
->>>>>>> Stashed changes
     };
 
     return routeMap[link] || (categoryPath || "/");
