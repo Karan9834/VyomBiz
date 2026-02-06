@@ -17,17 +17,18 @@ const getLinkPath = (link, categoryPath) => {
         // NGO Routes
         "Trust Registration": "/trust-registration",
         "Society Registration": "/society-registration",
-        "Section 8 Company": "/section-8-company",
-        "80G & 12A Registration": "/80g-12a-registration",
-        "CSR-1 Registration": "/csr-1-registration",
-        "DARPAN Registration": "/darpan-registration",
+        "Section 8 Company Registration": "/section-8-company",
+        "80G and 12A Registration": "/80g-12a-registration",
+        "NGO CSR-1 Filing": "/csr-1-registration",
+        "NGO Darpan Registration": "/darpan-registration",
 
         // Global
-        "USA Incorporation": "/usa-incorporation",
-        "UK Incorporation": "/uk-incorporation",
-        "Singapore Incorporation": "/singapore-incorporation",
-        "Dubai Company Setup": "/dubai-company-setup",
-        "Hong Kong Incorporation": "/hong-kong-incorporation",
+        "Company Registration USA": "/usa-incorporation",
+        "Company Registration UK": "/uk-incorporation",
+        "Company Registration Singapore": "/singapore-incorporation",
+        "Company Registration Mauritius": "/company-registration-mauritius",
+        "Company Registration Dubai": "/dubai-company-setup",
+        "Company Registration Hong Kong": "/hong-kong-incorporation",
 
         // Industry
         "Factory License": "/factory-license",
@@ -56,6 +57,7 @@ const getLinkPath = (link, categoryPath) => {
         "State FSSAI": "/state-fssai",
         "Central FSSAI": "/central-fssai",
         "Eating House License": "/eating-house-license",
+<<<<<<< Updated upstream
         "Liquor License": "/liquor-license",
         "Clinical Establishment Registration": "/clinical-establishment-registration",
         "Carbon Black Manufacturing": "/carbon-black-manufacturing-business-setup",
@@ -78,6 +80,15 @@ const getLinkPath = (link, categoryPath) => {
         "FSSAI Product Approval": "/fssai-product-approval",
         "Food Recycling License": "/food-recycling-license",
         "FPO Mark Certification": "/fpo-mark-certification"
+=======
+        "Eating House License": "/eating-house-license",
+        "Liquor License": "/liquor-license",
+
+        // Company
+        "Career": "/career",
+        "vyomBiz Reviews": "/reviews",
+        "Work at vyomBiz": "/work-at-vyombiz"
+>>>>>>> Stashed changes
     };
 
     return routeMap[link] || (categoryPath || "/");

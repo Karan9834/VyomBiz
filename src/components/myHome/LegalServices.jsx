@@ -10,7 +10,7 @@ const options = [
       { title: "Company Registration", desc: "Company Registration in India Save 50% Today on Professional Services Avail consultation from our seasoned consultants for expert suppor.." },
       { title: "LLP Registration", desc: "LLP Registration in India Avail 50% Off – Professional Services Facing a delay in the process of online LLP registration in India?.." },
       { title: "One Person Company Registration", desc: "One Person Company Registration Facing challenges in making the desired choice for solopreneurs? Get expert assistance for easy-breezy On." },
-      { title: "Partnership Firm Registration", desc: "Partnership Firm Registration in India Grab 50% Off on Corpbiz® Expert Services Are you seeking partnership firm registration in Ind.." },
+      { title: "Partnership Firm Registration", desc: "Partnership Firm Registration in India Grab 50% Off on Vyombiz® Expert Services Are you seeking partnership firm registration in Ind.." },
     ],
   },
   {
@@ -19,7 +19,7 @@ const options = [
     cards: [
       { title: "MSME Registration", desc: "MSME Registration - Get Your Udyam Certificate Easily Looking to grow your business and access government schemes and subsidies?.." },
       { title: "IEC Registration", desc: "IEC Registration Free Consultation for Import Export Code License Are you looking to scale up your business outside India? Manage your.." },
-      { title: "Drone Registration", desc: "Drone Registration Are you excited about launching your drone business? Secure your drone registration with Corpbiz and commence your dro.." },
+      { title: "Drone Registration", desc: "Drone Registration Are you excited about launching your drone business? Secure your drone registration with Vyombiz and commence your dro.." },
       { title: "EPF Registration", desc: "EPF Registration in India Get Approved with Zero Hassle Facing delays in EPF registration and afraid of making mistakes? Our experts e.." },
     ],
   },
@@ -29,8 +29,8 @@ const options = [
     cards: [
       { title: "Shop & Establishment License", desc: "Shop and Establishment License The Shops and Establishment act makes sure that both organized and unorganized sectors are providing appropr.." },
       { title: "PSARA License", desc: "PSARA License in India Limited-Time Deal: Save Up to 50% on Days Worried about the challenges in PSARA License registration in India? We.." },
-      { title: "CE Certification", desc: "Apply For CE Certification in India Are you experiencing delays in getting your CE certification online? Let Corpbiz experts ease the pr.." },
-      { title: "Trade License", desc: "Trade License in India Are you seeking a trade license in India but unaware of the trade license online process? At Corpbiz, we ensure a.." },
+      { title: "CE Certification", desc: "Apply For CE Certification in India Are you experiencing delays in getting your CE certification online? Let Vyombiz experts ease the pr.." },
+      { title: "Trade License", desc: "Trade License in India Are you seeking a trade license in India but unaware of the trade license online process? At Vyombiz, we ensure a.." },
     ],
   },
   {
@@ -47,8 +47,8 @@ const options = [
     id: 5,
     name: "Environment Laws",
     cards: [
-      { title: "EPR Fulfillment in E-Waste Management", desc: "EPR Compliance for E-Waste Management Achieve effortless EPR compliance for E-Waste management with Corpbiz. Let experts at Corpbiz guide y.." },
-      { title: "E-Waste Recycling Authorization", desc: "E-Waste Recycling Authorization Ready to get your e-waste recycling authorization? Let Corpbiz guide you in taking the first step.." },
+      { title: "EPR Fulfillment in E-Waste Management", desc: "EPR Compliance for E-Waste Management Achieve effortless EPR compliance for E-Waste management with Vyombiz. Let experts at Vyombiz guide y.." },
+      { title: "E-Waste Recycling Authorization", desc: "E-Waste Recycling Authorization Ready to get your e-waste recycling authorization? Let Vyombiz guide you in taking the first step.." },
       { title: "Refurbisher Authorization and License", desc: "Refurbisher Authorization and License Ready to obtain your refurbisher authorization and license? Ensure compliance, build trust, and dri.." },
       { title: "Plastic Waste Authorization", desc: "Plastic Waste Authorization in India Get 50% off on Professional Services Today Unmanaged plastic waste can harm your brand�.." },
     ],
@@ -58,9 +58,9 @@ const options = [
     name: "Tax Filing",
     cards: [
       { title: "GST Registration", desc: "GST Registration Online Step-by-Step (REG-01) & Expert Help Are you facing challenges during GST registration? Get your GSTIN quickl.." },
-      { title: "TDS Return Filing", desc: "TDS Return Filing Online Worried about missing the TDS return filing online deadlines? Corpbiz has helped 25K+ employers and organisati.." },
+      { title: "TDS Return Filing", desc: "TDS Return Filing Online Worried about missing the TDS return filing online deadlines? Vyombiz has helped 25K+ employers and organisati.." },
       { title: "GST Return Filing", desc: "GST Return Filing Starting from Just ₹ 999/ Month Do you want to maximize your input tax credit while filing GST? Talk to our experts.." },
-      { title: "Professional Tax Registration", desc: "Professional Tax Registration Apply for Professional Tax Registration with Corpbiz and experience guaranteed application filing within 48.." },
+      { title: "Professional Tax Registration", desc: "Professional Tax Registration Apply for Professional Tax Registration with Vyombiz and experience guaranteed application filing within 48.." },
     ],
   },
   {
@@ -68,7 +68,7 @@ const options = [
     name: "IPR",
     cards: [
       { title: "Trademark Assignment", desc: "Trademark Assignment To transfer the ownership of a trademark from one party to another whether along with or without the goodwill of the.." },
-      { title: "Trademark Objection", desc: "Trademark Objection Get Corpbiz expert assistance for the trademark objection reply in 2 days. Our senior IP lawyers draft a document.." },
+      { title: "Trademark Objection", desc: "Trademark Objection Get Vyombiz expert assistance for the trademark objection reply in 2 days. Our senior IP lawyers draft a document.." },
       { title: "Trademark Registration", desc: "Trademark Registration in India Avail 50% Off on Professional Services Are you finding it difficult to register for a trademark?.." },
       { title: "Trademark Rectification", desc: "Trademark Rectification in India In Just ₹2499 +Govt.Fee Did you discover an error in the trademark registration? If yes, get.." },
     ],

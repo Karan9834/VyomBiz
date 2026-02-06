@@ -6,25 +6,25 @@ const testimonials = [
     heading: "Ms Seema Singh",
     title: "CFO - Online food Delivery App",
     description:
-      "We would recommend Corpbiz incorporation services to any founder without a second doubt. The process was beyond efficient and shows Corpbiz founder's commitment and vision to truly help entrepreneurs and early stage startups to get them incorporated with ease.",
+      "We would recommend Vyombiz incorporation services to any founder without a second doubt. The process was beyond efficient and shows Vyombiz founder's commitment and vision to truly help entrepreneurs and early stage startups to get them incorporated with ease.",
   },
   {
     heading: "Mr. Vinay Arora",
     title: "MD, India",
     description:
-      "Really thankful to Corpbiz. Our experience with its expert was tremendous. Strong professional approach towards clients. My Company Registration was filed in a very less time, thanks to Corpbiz experts.",
+      "Really thankful to Vyombiz. Our experience with its expert was tremendous. Strong professional approach towards clients. My Company Registration was filed in a very less time, thanks to Vyombiz experts.",
   },
   {
     heading: "Priti Singh",
     title: "MD, India",
     description:
-      "I was searching for a company for assistance in the incorporation services. Then one of my friend tell me about Corpbiz and definitely the Corpbiz team is really efficient and has an experienced staff to guide us through the entire process of Company Incorporation.",
+      "I was searching for a company for assistance in the incorporation services. Then one of my friend tell me about Vyombiz and definitely the Vyombiz team is really efficient and has an experienced staff to guide us through the entire process of Company Incorporation.",
   },
   {
     heading: "Arjun Mehta, Startup Founder, Chennai",
     title: "Verified User",
     description:
-      "Corpbiz is very reliable and efficient. They managed all paperwork, resolved my queries, and completed my GST registration much quicker than I expected.",
+      "Vyombiz is very reliable and efficient. They managed all paperwork, resolved my queries, and completed my GST registration much quicker than I expected.",
   },
   {
     heading: "Lavanya Singh, Startup Founder, Greater Noida",

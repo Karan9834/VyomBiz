@@ -129,6 +129,7 @@ export default function Navbar() {
                                             <div key={sub} className="px-10 py-3">
                                                 <p className="text-sm font-black text-[#072b47] uppercase tracking-widest mb-2 border-b border-slate-200 pb-1">{sub}</p>
                                                 <div className="space-y-2">
+<<<<<<< Updated upstream
                                                     {(MEGA_MENU_DATA[item.name].right[sub] || []).slice(0, 5).map(link => {
                                                         const getMobileLink = (btnLink) => {
                                                             const map = {
@@ -176,6 +177,18 @@ export default function Navbar() {
                                                             </Link>
                                                         );
                                                     })}
+=======
+                                                    {(MEGA_MENU_DATA[item.name].right[sub] || []).slice(0, 5).map(link => (
+                                                        <Link
+                                                            key={link}
+                                                            to={link === "Company Registration" ? "/company-registration" : link === "LLP Registration" ? "/llp-registration" : link === "Public Limited Company Registration" ? "/public-limited-registration" : link === "One Person Company Registration" ? "/one-person-company-registration" : link === "Partnership Firm Registration" ? "/partnership-firm-registration" : link === "Sole Proprietorship Registration" ? "/sole-proprietorship-registration" : link === "80G and 12A Registration" ? "/80g-12a-registration" : link === "Section 8 Company Registration" ? "/section-8-company" : link === "NGO CSR-1 Filing" ? "/csr-1-registration" : link === "NGO Darpan Registration" ? "/darpan-registration" : link === "Society Registration" ? "/society-registration" : link === "Trust Registration" ? "/trust-registration" : link === "Company Registration USA" ? "/usa-incorporation" : link === "Company Registration UK" ? "/uk-incorporation" : link === "Company Registration Dubai" ? "/dubai-company-setup" : link === "Company Registration Mauritius" ? "/company-registration-mauritius" : link === "Company Registration Hong Kong" ? "/hong-kong-incorporation" : item.path}
+                                                            onClick={() => setHamburger(false)}
+                                                            className="block text-[15px] font-semibold text-slate-600 hover:text-blue-600 transition-colors"
+                                                        >
+                                                            {link}
+                                                        </Link>
+                                                    ))}
+>>>>>>> Stashed changes
                                                     {(MEGA_MENU_DATA[item.name].right[sub] || []).length > 5 && (
                                                         <Link to={item.path} onClick={() => setHamburger(false)} className="text-blue-600 text-sm font-bold hover:underline">
                                                             + View More
