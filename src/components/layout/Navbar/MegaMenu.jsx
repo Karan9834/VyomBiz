@@ -2,6 +2,66 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 
+const getLinkPath = (link, categoryPath) => {
+    const routeMap = {
+        "Company Registration": "/company-registration",
+        "LLP Registration": "/llp-registration",
+        "Public Limited Company Registration": "/public-limited-registration",
+        "One Person Company Registration": "/one-person-company-registration",
+        "Partnership Firm Registration": "/partnership-firm-registration",
+        "Sole Proprietorship Registration": "/sole-proprietorship-registration",
+        "Nidhi Company Registration": "/nidhi-company-registration",
+        "Producer Company Registration": "/producer-company-registration",
+        "Indian Subsidiary Company Registration": "/indian-subsidiary-company-registration",
+
+        // NGO Routes
+        "Trust Registration": "/trust-registration",
+        "Society Registration": "/society-registration",
+        "Section 8 Company": "/section-8-company",
+        "80G & 12A Registration": "/80g-12a-registration",
+        "CSR-1 Registration": "/csr-1-registration",
+        "DARPAN Registration": "/darpan-registration",
+
+        // Global
+        "USA Incorporation": "/usa-incorporation",
+        "UK Incorporation": "/uk-incorporation",
+        "Singapore Incorporation": "/singapore-incorporation",
+        "Dubai Company Setup": "/dubai-company-setup",
+        "Hong Kong Incorporation": "/hong-kong-incorporation",
+
+        // Industry
+        "Factory License": "/factory-license",
+        "Boiler Registration": "/boiler-registration",
+        "MSME Registration": "/msme-registration",
+        "NSIC Registration": "/nsic-registration",
+
+        // Government
+        "Import Export Code": "/import-export-code",
+        "PSARA License": "/psara-license",
+        "Drug License": "/drug-license",
+        "APEDA Registration": "/apeda-registration",
+        "GST Registration": "/gst-registration",
+        "Professional Tax": "/professional-tax",
+        "Shop & Establishment": "/shop-establishment",
+        "ESI & PF Registration": "/esi-pf-registration",
+
+        // ISO
+        "ISO 9001:2015": "/iso-9001-2015",
+        "ISO 14001": "/iso-14001",
+        "ISO 27001": "/iso-27001",
+        "ISO 22000": "/iso-22000",
+
+        // FSSAI
+        "Basic FSSAI": "/basic-fssai",
+        "State FSSAI": "/state-fssai",
+        "Central FSSAI": "/central-fssai",
+        "Eating House License": "/eating-house-license",
+        "Liquor License": "/liquor-license"
+    };
+
+    return routeMap[link] || (categoryPath || "/");
+};
+
 const MegaMenu = ({ data, activeSub, setActiveSub, onItemClick, categoryPath }) => {
     if (!data) return null;
 
@@ -33,7 +93,7 @@ const MegaMenu = ({ data, activeSub, setActiveSub, onItemClick, categoryPath }) 
                         {(data.right[activeSub] || []).map(link => (
                             <Link
                                 key={link}
-                                to={link === "Company Registration" ? "/company-registration" : link === "LLP Registration" ? "/llp-registration" : link === "Public Limited Company Registration" ? "/public-limited-registration" : link === "One Person Company Registration" ? "/one-person-company-registration" : link === "Trust Registration" ? "/trust-registration" : link === "Society Registration" ? "/society-registration" : link === "Section 8 Company" ? "/section-8-company" : link === "80G & 12A Registration" ? "/80g-12a-registration" : link === "CSR-1 Registration" ? "/csr-1-registration" : link === "DARPAN Registration" ? "/darpan-registration" : link === "Partnership Firm Registration" ? "/partnership-firm-registration" : link === "Sole Proprietorship Registration" ? "/sole-proprietorship-registration" : (categoryPath || "/")}
+                                to={getLinkPath(link, categoryPath)}
                                 onClick={onItemClick}
                                 className="group cursor-pointer block"
                             >
