@@ -47,6 +47,7 @@ const getLinkPath = (link, categoryPath) => {
         "ESI & PF Registration": "/esi-pf-registration",
 
         // ISO
+        "ISO Registration": "/iso-registration",
         "ISO 9001:2015": "/iso-9001-2015",
         "ISO 14001": "/iso-14001",
         "ISO 27001": "/iso-27001",
@@ -56,7 +57,6 @@ const getLinkPath = (link, categoryPath) => {
         "Basic FSSAI": "/basic-fssai",
         "State FSSAI": "/state-fssai",
         "Central FSSAI": "/central-fssai",
-        "Eating House License": "/eating-house-license",
         "Eating House License": "/eating-house-license",
         "Liquor License": "/liquor-license",
         "Clinical Establishment Registration": "/clinical-establishment-registration",

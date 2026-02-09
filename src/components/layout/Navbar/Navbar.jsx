@@ -11,6 +11,7 @@ export default function Navbar() {
     const [activeSub, setActiveSub] = useState("");
     const [hamburger, setHamburger] = useState(false);
     const [contact, setContact] = useState(false);
+    const [expandedSubs, setExpandedSubs] = useState([]); // State for mobile sub-category expansion
     const ref = useRef();
     const navigate = useNavigate();
 
@@ -129,62 +130,71 @@ export default function Navbar() {
                                             <div key={sub} className="px-10 py-3">
                                                 <p className="text-sm font-black text-[#072b47] uppercase tracking-widest mb-2 border-b border-slate-200 pb-1">{sub}</p>
                                                 <div className="space-y-2">
-                                                    {(MEGA_MENU_DATA[item.name].right[sub] || []).slice(0, 5).map(link => {
-                                                        const getMobileLink = (btnLink) => {
-                                                            const map = {
-                                                                "Company Registration": "/company-registration",
-                                                                "LLP Registration": "/llp-registration",
-                                                                "Public Limited Company Registration": "/public-limited-registration",
-                                                                "One Person Company Registration": "/one-person-company-registration",
-                                                                "Partnership Firm Registration": "/partnership-firm-registration",
-                                                                "Sole Proprietorship Registration": "/sole-proprietorship-registration",
-                                                                "Nidhi Company Registration": "/nidhi-company-registration",
-                                                                "Producer Company Registration": "/producer-company-registration",
-                                                                "Indian Subsidiary Company Registration": "/indian-subsidiary-company-registration",
-                                                                "Clinical Establishment Registration": "/clinical-establishment-registration",
-                                                                "Carbon Black Manufacturing": "/carbon-black-manufacturing-business-setup",
-                                                                "Green Hydrogen Plant": "/green-hydrogen-plant-setup",
-                                                                "Green Ammonia Plant": "/green-ammonia-plant-setup",
-                                                                "Synthetic Rubber Business": "/synthetic-rubber-business-setup",
-                                                                "Paper and Paperboard Packaging Industry": "/paper-and-paperboard-packaging-industry",
-                                                                "Fermentation Industry": "/fermentation-industry-setup",
-                                                                "Renewable energy business": "/renewable-energy-business-setup",
-                                                                "Fire Equipment Plant Setup": "/fire-equipment-plant-setup",
-                                                                "Virtual Office Space": "/virtual-office-space-setup",
+                                                    {(MEGA_MENU_DATA[item.name].right[sub] || [])
+                                                        .slice(0, expandedSubs.includes(`${item.name}-${sub}`) ? undefined : 5)
+                                                        .map(link => {
+                                                            const getMobileLink = (btnLink) => {
+                                                                const map = {
+                                                                    "Company Registration": "/company-registration",
+                                                                    "LLP Registration": "/llp-registration",
+                                                                    "Public Limited Company Registration": "/public-limited-registration",
+                                                                    "One Person Company Registration": "/one-person-company-registration",
+                                                                    "Partnership Firm Registration": "/partnership-firm-registration",
+                                                                    "Sole Proprietorship Registration": "/sole-proprietorship-registration",
+                                                                    "Nidhi Company Registration": "/nidhi-company-registration",
+                                                                    "Producer Company Registration": "/producer-company-registration",
+                                                                    "Indian Subsidiary Company Registration": "/indian-subsidiary-company-registration",
+                                                                    "Clinical Establishment Registration": "/clinical-establishment-registration",
+                                                                    "Carbon Black Manufacturing": "/carbon-black-manufacturing-business-setup",
+                                                                    "Green Hydrogen Plant": "/green-hydrogen-plant-setup",
+                                                                    "Green Ammonia Plant": "/green-ammonia-plant-setup",
+                                                                    "Synthetic Rubber Business": "/synthetic-rubber-business-setup",
+                                                                    "Paper and Paperboard Packaging Industry": "/paper-and-paperboard-packaging-industry",
+                                                                    "Fermentation Industry": "/fermentation-industry-setup",
+                                                                    "Renewable energy business": "/renewable-energy-business-setup",
+                                                                    "Fire Equipment Plant Setup": "/fire-equipment-plant-setup",
+                                                                    "Virtual Office Space": "/virtual-office-space-setup",
 
-                                                                // FSSAI & Eating House
-                                                                "FSSAI License": "/fssai-license",
-                                                                "FSSAI License Renewal": "/fssai-license-renewal",
-                                                                "FSSAI State License": "/fssai-state-license",
-                                                                "Eating House License": "/eating-house-license",
-                                                                "Central FSSAI License": "/central-fssai-license",
-                                                                "FSSAI Annual Return": "/fssai-annual-return",
-                                                                "FSSAI Product Approval": "/fssai-product-approval",
-                                                                "Food Recycling License": "/food-recycling-license",
-                                                                "FPO Mark Certification": "/fpo-mark-certification",
+                                                                    // FSSAI & Eating House
+                                                                    "FSSAI License": "/fssai-license",
+                                                                    "FSSAI License Renewal": "/fssai-license-renewal",
+                                                                    "FSSAI State License": "/fssai-state-license",
+                                                                    "Eating House License": "/eating-house-license",
+                                                                    "Central FSSAI License": "/central-fssai-license",
+                                                                    "FSSAI Annual Return": "/fssai-annual-return",
+                                                                    "FSSAI Product Approval": "/fssai-product-approval",
+                                                                    "Food Recycling License": "/food-recycling-license",
+                                                                    "FPO Mark Certification": "/fpo-mark-certification",
 
-                                                                // Company
-                                                                "Career": "/career",
-                                                                "vyomBiz Reviews": "/reviews",
-                                                                "Work at vyomBiz": "/work-at-vyombiz"
+                                                                    // Company
+                                                                    "Career": "/career",
+                                                                    "vyomBiz Reviews": "/reviews",
+                                                                    "Work at vyomBiz": "/work-at-vyombiz"
+                                                                };
+                                                                return map[btnLink] || item.path;
                                                             };
-                                                            return map[btnLink] || item.path;
-                                                        };
-                                                        return (
-                                                            <Link
-                                                                key={link}
-                                                                to={getMobileLink(link)}
-                                                                onClick={() => setHamburger(false)}
-                                                                className="block text-[15px] font-semibold text-slate-600 hover:text-blue-600 transition-colors"
-                                                            >
-                                                                {link}
-                                                            </Link>
-                                                        );
-                                                    })}
+                                                            return (
+                                                                <Link
+                                                                    key={link}
+                                                                    to={getMobileLink(link)}
+                                                                    onClick={() => setHamburger(false)}
+                                                                    className="block text-[15px] font-semibold text-slate-600 hover:text-blue-600 transition-colors"
+                                                                >
+                                                                    {link}
+                                                                </Link>
+                                                            );
+                                                        })}
                                                     {(MEGA_MENU_DATA[item.name].right[sub] || []).length > 5 && (
-                                                        <Link to={item.path} onClick={() => setHamburger(false)} className="text-blue-600 text-sm font-bold hover:underline">
-                                                            + View More
-                                                        </Link>
+                                                        <button
+                                                            onClick={() => setExpandedSubs(prev =>
+                                                                prev.includes(`${item.name}-${sub}`)
+                                                                    ? prev.filter(s => s !== `${item.name}-${sub}`)
+                                                                    : [...prev, `${item.name}-${sub}`]
+                                                            )}
+                                                            className="text-blue-600 text-sm font-bold hover:underline py-1 mt-1 block"
+                                                        >
+                                                            {expandedSubs.includes(`${item.name}-${sub}`) ? "- View Less" : `+ View More (${(MEGA_MENU_DATA[item.name].right[sub] || []).length - 5} more)`}
+                                                        </button>
                                                     )}
                                                 </div>
                                             </div>

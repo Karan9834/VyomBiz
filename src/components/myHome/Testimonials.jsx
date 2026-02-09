@@ -1,5 +1,6 @@
 // Testimonials.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
 const testimonials = [
   {
@@ -63,9 +64,11 @@ const Testimonials = () => {
 
       {/* View More Reviews Button */}
       <div className="text-center mt-8">
-        <button className="bg-yellow-500 text-white font-semibold px-6 py-3 rounded hover:bg-yellow-600 transition">
-          View More Reviews
-        </button>
+        <Link to="/reviews">
+          <button className="bg-yellow-500 text-white font-semibold px-6 py-3 rounded hover:bg-yellow-600 transition shadow-lg hover:shadow-xl hover:-translate-y-1 transform active:scale-95 duration-200">
+            View More Reviews
+          </button>
+        </Link>
       </div>
 
       {/* Tailwind Animation */}

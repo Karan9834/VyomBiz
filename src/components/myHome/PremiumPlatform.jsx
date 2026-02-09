@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -90,7 +91,7 @@ const PremiumPlatform = () => {
                 </h4>
                 <p className="text-base text-gray-600 mt-1 leading-relaxed">
                   {item.desc}
-                  <span className="text-blue-600 cursor-pointer ml-1">read more</span>
+                  <Link to="/startup" className="text-blue-600 hover:underline ml-1 font-bold">read more</Link>
                 </p>
               </div>
             </div>
