@@ -18,7 +18,7 @@ const Publications = () => {
         backgroundSize: "cover",
         backgroundPosition: "left",
       }}>
-        <div className="w-full max-w-7xl px-4 md:px-6 ml-[-300px]">
+        <div className="w-full max-w-7xl px-4 md:px-6 ml-[-200px]">
           <h1 className="text-white" style={{ fontFamily: "Inter", fontWeight: 800, fontSize: "44px", lineHeight: "50px", letterSpacing: "-0.4px" }}>
             Publications
           </h1>

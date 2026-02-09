@@ -46,7 +46,7 @@ const tags = [
 
 export default function BlogLeftSection() {
   return (
-    <div className="w-100 space-y-8 mx-[-150px]">
+    <div className="w-100 space-y-8 mx-[-110px]">
       {/* ================= CATEGORIES ================= */}
       <div>
         <h3 className="text-lg font-semibold mb-3">Categories</h3>

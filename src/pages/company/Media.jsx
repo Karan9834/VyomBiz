@@ -20,7 +20,7 @@ function Media() {
         backgroundPosition: "left",
       }}
     >
-      <div className="w-full max-w-7xl px-4 md:px-6 ml-[-300px]">
+      <div className="w-full max-w-7xl px-4 md:px-6 ml-[-200px]">
         {/* H1 */}
         <h1
           className="text-white"

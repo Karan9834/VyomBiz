@@ -85,7 +85,7 @@ const trendingBlogs = [
 
 export default function BlogRightSection() {
   return (
-    <div className="w-90 space-y-10 mx-20">
+    <div className="w-90 space-y-10 mx-10">
     <div>
       <h3 className="text-lg font-semibold mb-4">Top Trending</h3>
 

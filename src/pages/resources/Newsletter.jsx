@@ -18,7 +18,7 @@ const Newsletter = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="w-full max-w-7xl px-6 ml-[-300px]">
+        <div className="w-full max-w-7xl px-6 ml-[-200px]">
           <h1 className="text-white text-[44px] font-extrabold">
             Newsletter
           </h1>
