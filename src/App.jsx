@@ -66,6 +66,9 @@ import FssaiProductApproval from "./pages/startup/FssaiEating/FssaiProductApprov
 import FoodRecyclingLicense from "./pages/startup/FssaiEating/FoodRecyclingLicense";
 import FPOMarkCertification from "./pages/startup/FssaiEating/FPOMarkCertification";
 
+// ISO Certification Pages
+import ISORegistration from "./pages/startup/ISO/ISORegistration";
+
 
 import About from "./pages/company/About";
 import Carrers from "./pages/Carrers";
@@ -155,6 +158,9 @@ function App() {
           <Route path="/fssai-product-approval" element={<FssaiProductApproval />} />
           <Route path="/food-recycling-license" element={<FoodRecyclingLicense />} />
           <Route path="/fpo-mark-certification" element={<FPOMarkCertification />} />
+
+          {/* ISO Certification Routes */}
+          <Route path="/iso-registration" element={<ISORegistration />} />
 
           {/* Company Routes */}
           <Route path="/about" element={<About />} />
