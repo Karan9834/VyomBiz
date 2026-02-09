@@ -15,12 +15,23 @@ const getLinkPath = (link, categoryPath) => {
         "Indian Subsidiary Company Registration": "/indian-subsidiary-company-registration",
 
         // NGO Routes
+        "NGO Registration": "/ngo-registration",
         "Trust Registration": "/trust-registration",
+        "FCRA Registration": "/fcra-registration",
         "Society Registration": "/society-registration",
+        "12AA Registration": "/12aa-registration",
+        "12AB Registration": "/12ab-registration",
         "Section 8 Company Registration": "/section-8-company",
+        "80G Registration": "/80g-registration",
         "80G and 12A Registration": "/80g-12a-registration",
         "NGO CSR-1 Filing": "/csr-1-registration",
         "NGO Darpan Registration": "/darpan-registration",
+        "NGO CSR Consultancy": "/ngo-csr-consultancy",
+        "NGO Income Tax Advisory": "/ngo-income-tax-advisory",
+        "NGO Project Report": "/ngo-project-report",
+        "NGO Accounting": "/ngo-accounting",
+        "Strike Off Section 8 Companies": "/strike-off-section-8-company",
+        "Trust Annual Compliance": "/trust-annual-compliance",
 
         // Global
         "Company Registration USA": "/usa-incorporation",
@@ -57,7 +68,7 @@ const getLinkPath = (link, categoryPath) => {
         "State FSSAI": "/state-fssai",
         "Central FSSAI": "/central-fssai",
         "Eating House License": "/eating-house-license",
-        "Eating House License": "/eating-house-license",
+
         "Liquor License": "/liquor-license",
         "Clinical Establishment Registration": "/clinical-establishment-registration",
         "Carbon Black Manufacturing": "/carbon-black-manufacturing-business-setup",

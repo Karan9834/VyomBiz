@@ -7,7 +7,7 @@ import {
     MonitorCheck
 } from "lucide-react";
 
-const TalkExpert = () => {
+const TalkExpert = ({ expertise = "Expertise in NGO CSR-1 Filing" }) => {
     return (
         <section className="w-full bg-white py-10 px-6 lg:px-16">
 
@@ -29,7 +29,7 @@ const TalkExpert = () => {
 
                         <div>
                             <h3 className="text-lg font-semibold">
-                                Expertise in NGO CSR-1 Filing
+                                {expertise}
                             </h3>
 
                             <div className="flex items-center gap-1 mt-1">
