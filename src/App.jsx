@@ -21,6 +21,17 @@ import Section8Company from "./pages/startup/NGOTrust/Section8Company";
 import EightyTwelve from "./pages/startup/NGOTrust/EightyTwelve";
 import NGOCSR1Registration from "./pages/startup/NGOTrust/NGOCSR1Registration";
 import NGODarpanRegistration from "./pages/startup/NGOTrust/NGODarpanRegistration";
+import Registration80G from "./pages/startup/NGOTrust/80GRegistration";
+import StrikeoffSection8Companies from "./pages/startup/NGOTrust/StrikeoffSection8Companies";
+import TrustAnnualCompliance from "./pages/startup/NGOTrust/TrustAnnualCompliance";
+import NGORegistration from "./pages/startup/NGOTrust/NGORegistration";
+import FCRARegistration from "./pages/startup/NGOTrust/FCRARegistration";
+import Registration12AA from "./pages/startup/NGOTrust/12AARegistration";
+import Registration12AB from "./pages/startup/NGOTrust/12ABRegistration";
+import NGOCSRCOnsultancy from "./pages/startup/NGOTrust/NGOCSRCOnsultancy";
+import NGOIncomeTaxAdvisory from "./pages/startup/NGOTrust/NGOIncomeTaxAdvisory";
+import NGOAccounting from "./pages/startup/NGOTrust/NGOAccounting";
+import NGOProjectReport from "./pages/startup/NGOTrust/NGOProjectReport";
 
 import CompanyRegistrationUSA from "./pages/startup/Global Incorporation/CompanyRegistrationUSA";
 import CompanyRegistrationUK from "./pages/startup/Global Incorporation/CompanyRegistrationUK";
@@ -100,6 +111,17 @@ function App() {
           <Route path="/80g-12a-registration" element={<EightyTwelve />} />
           <Route path="/csr-1-registration" element={<NGOCSR1Registration />} />
           <Route path="/darpan-registration" element={<NGODarpanRegistration />} />
+          <Route path="/80g-registration" element={<Registration80G />} />
+          <Route path="/strike-off-section-8-company" element={<StrikeoffSection8Companies />} />
+          <Route path="/trust-annual-compliance" element={<TrustAnnualCompliance />} />
+          <Route path="/ngo-registration" element={<NGORegistration />} />
+          <Route path="/fcra-registration" element={<FCRARegistration />} />
+          <Route path="/12aa-registration" element={<Registration12AA />} />
+          <Route path="/12ab-registration" element={<Registration12AB />} />
+          <Route path="/ngo-csr-consultancy" element={<NGOCSRCOnsultancy />} />
+          <Route path="/ngo-income-tax-advisory" element={<NGOIncomeTaxAdvisory />} />
+          <Route path="/ngo-accounting" element={<NGOAccounting />} />
+          <Route path="/ngo-project-report" element={<NGOProjectReport />} />
 
           <Route path="/usa-incorporation" element={<CompanyRegistrationUSA />} />
           <Route path="/uk-incorporation" element={<CompanyRegistrationUK />} />

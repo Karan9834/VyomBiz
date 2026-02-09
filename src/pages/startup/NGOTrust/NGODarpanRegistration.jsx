@@ -10,6 +10,7 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import PricingSection from "../../../components/CompanyRegistration/PricingSection.jsx";
 
+
 /**
  * DarpanRegistration Page
  * Refactored to match TrustRegistration design.
