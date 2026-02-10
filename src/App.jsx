@@ -68,6 +68,20 @@ import FPOMarkCertification from "./pages/startup/FssaiEating/FPOMarkCertificati
 
 // ISO Certification Pages
 import ISORegistration from "./pages/startup/ISO/ISORegistration";
+import ISO37001Registration from "./pages/startup/ISO/ISO37001Registration";
+import ISO14001Registration from "./pages/startup/ISO/ISO14001Registration";
+import ISO27001Registration from "./pages/startup/ISO/ISO27001Registration";
+import ISO22000Registration from "./pages/startup/ISO/ISO22000Registration";
+import ISO9001Registration from "./pages/startup/ISO/ISO9001Registration";
+import ISO50001Registration from "./pages/startup/ISO/ISO50001Registration";
+import ISO45001Registration from "./pages/startup/ISO/ISO45001Registration";
+import ISO20000Registration from "./pages/startup/ISO/ISO20000Registration";
+import ISO31000Registration from "./pages/startup/ISO/ISO31000Registration";
+import ISO13485Registration from "./pages/startup/ISO/ISO13485Registration";
+import ISO21101Registration from "./pages/startup/ISO/ISO21101Registration";
+import ISO16001Registration from "./pages/startup/ISO/ISO16001Registration";
+import ISO39001Registration from "./pages/startup/ISO/ISO39001Registration";
+import ISO2768Registration from "./pages/startup/ISO/ISO2768Registration";
 
 
 import About from "./pages/company/About";
@@ -161,6 +175,20 @@ function App() {
 
           {/* ISO Certification Routes */}
           <Route path="/iso-registration" element={<ISORegistration />} />
+          <Route path="/iso-37001-2016-certification" element={<ISO37001Registration />} />
+          <Route path="/iso-14001-ems" element={<ISO14001Registration />} />
+          <Route path="/iso-27001-isms" element={<ISO27001Registration />} />
+          <Route path="/iso-22000-fsms" element={<ISO22000Registration />} />
+          <Route path="/iso-9001-2015" element={<ISO9001Registration />} />
+          <Route path="/iso-50001-energy-management" element={<ISO50001Registration />} />
+          <Route path="/iso-45001-certification" element={<ISO45001Registration />} />
+          <Route path="/iso-20000-certification" element={<ISO20000Registration />} />
+          <Route path="/iso-31000-certification" element={<ISO31000Registration />} />
+          <Route path="/iso-13485-certification" element={<ISO13485Registration />} />
+          <Route path="/iso-21101-2014-certification" element={<ISO21101Registration />} />
+          <Route path="/iso-16001-certification" element={<ISO16001Registration />} />
+          <Route path="/iso-39001-certification" element={<ISO39001Registration />} />
+          <Route path="/iso-2768-1-certification" element={<ISO2768Registration />} />
 
           {/* Company Routes */}
           <Route path="/about" element={<About />} />

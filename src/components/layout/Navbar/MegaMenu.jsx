@@ -59,10 +59,20 @@ const getLinkPath = (link, categoryPath) => {
 
         // ISO
         "ISO Registration": "/iso-registration",
-        "ISO 9001:2015": "/iso-9001-2015",
-        "ISO 14001": "/iso-14001",
-        "ISO 27001": "/iso-27001",
-        "ISO 22000": "/iso-22000",
+        "ISO 14001 EMS": "/iso-14001-ems",
+        "ISO 22000 FSMS": "/iso-22000-fsms",
+        "ISO 9001 2015": "/iso-9001-2015",
+        "ISO 50001 Energy Management": "/iso-50001-energy-management",
+        "ISO 45001 certification": "/iso-45001-certification",
+        "ISO 20000 Certification": "/iso-20000-certification",
+        "ISO 31000 Certification": "/iso-31000-certification",
+        "ISO 13485 Certification": "/iso-13485-certification",
+        "ISO 21101:2014 Certification": "/iso-21101-2014-certification",
+        "ISO 37001:2016 Certification": "/iso-37001-2016-certification",
+        "ISO 27001 ISMS Certification": "/iso-27001-isms",
+        "ISO 16001 Certification": "/iso-16001-certification",
+        "ISO 39001 Certification": "/iso-39001-certification",
+        "ISO 2768-1 Certification": "/iso-2768-1-certification",
 
         // FSSAI
         "Basic FSSAI": "/basic-fssai",
