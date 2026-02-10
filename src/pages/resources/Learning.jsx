@@ -33,17 +33,37 @@ const Learning = () => {
           {/* RIGHT SEARCH */}
           
           <div className="pr-10 w-[520px]">
-      <p className="text-white mb-2 text-xl font-semibold">
+      <p className="text-white mb-2 text-2xl font-semibold">
         Search
       </p>
 
-      <div className="flex items-center bg-white rounded-md shadow-md overflow-hidden">
-        <input
+      <div className="flex items-center bg-white rounded-md shadow-md overflow-hidden w-132">
+        {/* <input
           type="text"
           placeholder="Search your related blogs.."
           className="px-5 py-4 w-full outline-none text-[16px] text-gray-700"
-        />
-        <button className="bg-[#f4a62a] px-6 py-4 text-white text-lg font-bold">
+        /> */}
+<div className="relative w-full">
+  {/* Search Icon */}
+  <img
+    src="https://corpbiz.io/img/search-blog.png"
+    alt="search"
+    className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5"
+  />
+
+  {/* Pipe */}
+  <span className="absolute left-12 top-1/2 -translate-y-1/2 text-gray-400">
+    |
+  </span>
+
+  {/* Input */}
+  <input
+    type="text"
+    placeholder="Search your related blogs.."
+    className="w-full py-4 pl-16 pr-5 outline-none text-[16px] text-gray-700 rounded-md"
+  />
+</div>
+        <button className="bg-[#f4a62a] px-4 mr-2 py-2 text-white text-lg font-bold">
           🔍
         </button>
       </div>

@@ -7,7 +7,7 @@ const trendingBlogs = [
       "Difference Between Trademark and Registe...",
     date: "Feb 06, 2026",
     image: "https://corpbiz.io/learning/wp-content/uploads/2026/02/Difference-Between-Trademark-and-Registered-Trademark-Legal-Protection-Benefits-and-Practical-Guide-2026-2.webp",
-    badgeColor: "bg-yellow-400",
+    badgeColor: "bg-[#EFA434]",
   },
   {
     category: "Legal Metrology",
@@ -15,7 +15,7 @@ const trendingBlogs = [
       "Legal Metrology (General) Amendment Rule...",
     date: "Feb 05, 2026",
     image: "https://corpbiz.io/learning/wp-content/uploads/2026/02/Legal-Metrology-General-Amendment-Rules-2026-Complete-Guide-to-Testing-of-Blood-Pressure-Devices.webp",
-    badgeColor: "bg-yellow-400",
+    badgeColor: "bg-[#EFA434]",
   },
   {
     category: "CDSCO",
@@ -23,7 +23,7 @@ const trendingBlogs = [
       "CDSCO Releases Risk Classification List...",
     date: "Feb 04, 2026",
     image: "https://corpbiz.io/learning/wp-content/uploads/2026/02/CDSCO-Releases-Risk-Classification-List-for-Oncology-Medical-Devices.webp",
-    badgeColor: "bg-yellow-400",
+    badgeColor: "bg-[#EFA434]",
   },
    {
     category: "Finance & Accounting",
@@ -31,7 +31,7 @@ const trendingBlogs = [
       "Union Budget 2026: Key Tax Changes, Sche...",
     date: "Feb 02, 2026",
     image: "https://corpbiz.io/learning/wp-content/uploads/2026/02/Union-Budget-2026-Key-Tax-Changes-Schemes-and-Fund-Allocations-Explained-1.jpg",
-    badgeColor: "bg-green-600",
+    badgeColor: "bg-[#EFA434]",
   },
    {
     category: "CDSCO",
@@ -39,7 +39,7 @@ const trendingBlogs = [
       "Penalties for Selling Products without C...",
     date: "Feb 02, 2026",
     image: "https://corpbiz.io/learning/wp-content/uploads/2026/02/Penalties-for-Selling-Products-without-CDSCO-Approval-in-India-Legal-Risks-Fines-and-Compliance-Guide-1.webp",
-    badgeColor: "bg-yellow-400",
+    badgeColor: "bg-[#EFA434]",
   },
    {
     category: "FSSAI License",
@@ -47,7 +47,7 @@ const trendingBlogs = [
       "FSSAI Introduced a Scientific Format for...",
     date: "Feb 02, 2026",
     image: "https://corpbiz.io/learning/wp-content/uploads/2026/02/FSSAI-Introduced-a-Scientific-Format-for-Food-Safety-Risk-Assessments-from-2026-1.webp",
-    badgeColor: "bg-yellow-400",
+    badgeColor: "bg-[#EFA434]",
   },
    {
     category: "Income Tax",
@@ -55,7 +55,7 @@ const trendingBlogs = [
       "Union Budget 2026 for Real Estate: Polic...",
     date: "Feb 02, 2026",
     image: "https://corpbiz.io/learning/wp-content/uploads/2026/01/Union-Budget-2026-for-Real-Estate-Policy-Expectations-Across-Housing-Tax-and-Infrastructure.jpg",
-    badgeColor: "bg-yellow-400",
+    badgeColor: "bg-[#EFA434]",
   },
    {
     category: "Spices board registration",
@@ -63,7 +63,7 @@ const trendingBlogs = [
       "How to Apply for Spice Board Registratio...",
     date: "Feb 02, 2026",
     image: "https://corpbiz.io/learning/wp-content/uploads/2026/01/How-to-Apply-for-Spice-Board-Registration-in-India-in-2026-1.webp",
-    badgeColor: "bg-yellow-400",
+    badgeColor: "bg-[#EFA434]",
   },
    {
     category: "Trademark",
@@ -71,7 +71,7 @@ const trendingBlogs = [
       "Logo vs Wordmark Confusion: Which Tradem...",
     date: "Feb 02, 2026",
     image: "https://corpbiz.io/learning/wp-content/uploads/2026/01/Logo-vs-Wordmark-Confusion-Which-Trademark-Should-You-Register.webp",
-    badgeColor: "bg-yellow-400",
+    badgeColor: "bg-[#EFA434]",
   },
    {
     category: "Taxation",
@@ -79,7 +79,7 @@ const trendingBlogs = [
       "Union Budget 2026 EV Expectations: What...",
     date: "Feb 02, 2026",
     image: "https://corpbiz.io/learning/wp-content/uploads/2026/01/Union-Budget-2026-EV-Expectations-What-is-the-Electric-Vehicle-Industry-Looking-for.webp",
-    badgeColor: "bg-yellow-400",
+    badgeColor: "bg-[#EFA434]",
   },
 ];
 
@@ -87,7 +87,7 @@ export default function BlogRightSection() {
   return (
     <div className="w-90 space-y-10 mx-10">
     <div>
-      <h3 className="text-lg font-semibold mb-4">Top Trending</h3>
+      <h3 className="text-2xl font-bold mb-4">Top Trending</h3>
 
       <div className="space-y-5">
         {trendingBlogs.map((blog, index) => (

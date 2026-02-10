@@ -98,8 +98,8 @@ export default function BlogCenterSection() {
   return (
     <div className="w-160">
       {/* HEADING */}
-      <h2 className="text-xl font-semibold mb-6">
-        Featured This Month
+      <h2 className="text-2xl font-semibold mb-6">
+       <span className="text-[#5D5FEF]">Featured</span>  This Month
       </h2>
 
       {/* BLOG LIST */}

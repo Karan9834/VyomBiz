@@ -49,19 +49,19 @@ export default function BlogLeftSection() {
     <div className="w-100 space-y-8 mx-[-110px]">
       {/* ================= CATEGORIES ================= */}
       <div>
-        <h3 className="text-lg font-semibold mb-3">Categories</h3>
+        <h3 className="text-2xl font-bold mb-3">Categories</h3>
 
-        <div className="border rounded-md h-96 overflow-y-auto">
+        <div className="border-gray-500 bg-gray-100 rounded-md h-96 overflow-y-auto">
           {categories.map((item, index) => (
             <div
               key={index}
-              className="flex items-center justify-between px-4 py-3 border-b text-sm hover:bg-gray-50 cursor-pointer"
+              className="flex items-center justify-between px-4 py-3 border-b-black text-sm hover:bg-gray-50 cursor-pointer"
             >
-              <span className="flex items-center gap-2">
-                <span className="text-red-500 font-bold text-24">+</span>
-                {item}
+              <span className="ml-4 flex items-center gap-2">
+                <span className="text-red-500 font-bold text-2xl">+</span>
+                <span className="text-black font-semibold">{item}</span>
               </span>
-              <span className="text-gray-500">›</span>
+              <span className="text-gray-500 text-xl">›</span>
             </div>
           ))}
         </div>

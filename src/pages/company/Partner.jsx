@@ -90,7 +90,7 @@ const Partner = () => {
 
     {/* LEFT CONTENT */}
     <div>
-      <h2 className="text-[48px] leading-[46px] font-extrabold text-[#222] mb-10">
+      <h2 className="text-[44px] leading-[46px] font-extrabold text-[#222] mb-10">
         Benefits of Partnering <br /> with Corpbiz
       </h2>
 
