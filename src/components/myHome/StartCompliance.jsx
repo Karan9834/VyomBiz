@@ -7,7 +7,7 @@ const StartCompliance = () => {
       {/* Background Image with Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/Start your 10,000+ compliance with us! bg-image.jpg')" }}
+        style={{ backgroundImage: "url('/compliance-banner-bg.jpg')" }}
       />
       <div className="absolute inset-0 bg-blue-900/70" />
 

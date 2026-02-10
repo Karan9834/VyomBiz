@@ -122,7 +122,7 @@ const ISORegistration = () => {
                 }}
                 whyUs={{
                     title: "Why Us",
-                    subtitle: "How Corpbiz’s ISO Certification Consultants help you get ISO Registration Done?",
+                    subtitle: "How VyomBiz’s ISO Certification Consultants help you get ISO Registration Done?",
                     list: [
                         { title: "Pre-Certification Consultation", desc: "Expert guidance on selecting the right ISO standard tailored to your industry." },
                         { title: "GAP Analysis & Readiness", desc: "Detailed GAP analysis and evaluation of existing processes requiring compliance." },

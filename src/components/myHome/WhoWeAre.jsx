@@ -1,36 +1,101 @@
-// WhoWeAre.jsx
 import React from "react";
-import processImage from "/images.jpeg"; // put your image in public folder
+import { CheckCircle, Play } from "lucide-react";
+import processImage from "/images.jpeg";
 
 const WhoWeAre = () => {
+  const processSteps = [
+    { text: "We Do Our Research.", delay: "0ms" },
+    { text: "We Meet Our Client.", delay: "100ms" },
+    { text: "We Create Ideas.", delay: "200ms" },
+    { text: "We Revise or Make Changes.", delay: "300ms" },
+    { text: "We Execute the Work.", delay: "400ms" },
+  ];
+
   return (
-    <section className="py-16 bg-white text-center">
-      {/* Paragraph */}
-      <p className="text-yellow-500 text-lg mb-4">
-        A business consulting company that constitutes faith.
-      </p>
+    <section className="py-20 bg-gradient-to-b from-white to-slate-50">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-6">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <p className="text-[#f1a134] text-lg font-bold mb-4 tracking-wide">
+            A business consulting company that constitutes faith.
+          </p>
+          <h2 className="text-4xl font-bold text-black mb-4 tracking-tight">
+            Who We Are
+          </h2>
+          <div className="w-16 h-1 bg-[#f1a134] mx-auto rounded"></div>
+        </div>
 
-      {/* Heading */}
-      <h2 className="text-3xl font-bold mb-12">Who We Are</h2>
+        {/* Main Content - Image with Overlay */}
+        <div className="relative max-w-7xl mx-auto rounded-3xl overflow-hidden shadow-2xl group">
+          {/* Background Image with Overlay */}
+          <div className="relative h-[500px] md:h-[600px]">
+            <img
+              src={processImage}
+              alt="Our Process"
+              className="w-full h-full object-cover"
+            />
+            {/* Dark Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30"></div>
+          </div>
 
-      {/* Image with overlay text */}
-      <div className="relative max-w-6xl mx-auto">
-        <img
-          src={processImage}
-          alt="Our Process"
-          className="w-full rounded-lg shadow-lg"
-        />
+          {/* Content Overlay */}
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full px-8 md:px-16 lg:px-20">
+              <div className="max-w-2xl">
+                {/* Title */}
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-8 md:mb-12 leading-tight">
+                  Watch Our Process
+                </h3>
 
-        {/* Text overlay on left */}
-        <div className="absolute top-1/2 left-12 transform -translate-y-1/2 text-left text-black max-w-md">
-          <h3 className="text-3xl font-bold mb-16">Watch Our Process</h3>
-          <ul className="list-disc list-inside space-y-2 text-sm">
-            <li>We Do Our Research.</li>
-            <li>We Meet Our Client.</li>
-            <li>We Create Ideas.</li>
-            <li>We Revise or Make Changes.</li>
-            <li>We Execute the Work.</li>
-          </ul>
+                {/* Process Steps */}
+                <div className="space-y-4 md:space-y-5">
+                  {processSteps.map((step, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center gap-4 group/item hover:translate-x-2 transition-transform duration-300"
+                      style={{ animationDelay: step.delay }}
+                    >
+                      {/* Check Icon */}
+                      <div className="shrink-0 w-8 h-8 bg-[#f1a134] rounded-full flex items-center justify-center shadow-lg group-hover/item:scale-110 transition-transform">
+                        <CheckCircle className="w-5 h-5 text-white" strokeWidth={3} />
+                      </div>
+                      {/* Text */}
+                      <p className="text-white text-base md:text-lg font-bold tracking-wide">
+                        {step.text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+              </div>
+            </div>
+
+            {/* Play Button in Center */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <button className="w-20 h-20 md:w-24 md:h-24 bg-white/10 backdrop-blur-sm border-4 border-white rounded-full flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all shadow-2xl group/play">
+                <Play className="w-10 h-10 md:w-12 md:h-12 text-white fill-white ml-1 group-hover/play:scale-110 transition-transform" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Stats Section */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {[
+            { number: "10+", label: "Years of Excellence", color: "bg-blue-50 text-blue-600" },
+            { number: "50K+", label: "Happy Clients", color: "bg-green-50 text-green-600" },
+            { number: "99%", label: "Success Rate", color: "bg-orange-50 text-orange-600" },
+          ].map((stat, idx) => (
+            <div
+              key={idx}
+              className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border border-slate-100"
+            >
+              <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full ${stat.color} mb-4`}>
+                <span className="text-2xl font-black">{stat.number}</span>
+              </div>
+              <p className="text-slate-700 font-bold text-base">{stat.label}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

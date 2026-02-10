@@ -7,7 +7,8 @@ import LegalServices from "../../components/myHome/LegalServices";
 import WhoWeAre from "../../components/myHome/WhoWeAre";
 import LegalFeatures from "../../components/myHome/LegalFeatures";
 import TrustedBrands from "../../components/myHome/TrustedBrands";
-import AppDownload from "../../components/myHome/AppDownload";
+import OldVsNewWay from "../../components/myHome/OldVsNewWay";
+// import AppDownload from "../../components/myHome/AppDownload";
 import Testimonials from "../../components/myHome/Testimonials";
 import SuccessStory from "../../components/myHome/SuccessStory";
 
@@ -19,10 +20,11 @@ const Home = () => {
             <StartCompliance />
             <WorkingProcess />
             <LegalServices />
+            <OldVsNewWay />
             <WhoWeAre />
             <LegalFeatures />
             <TrustedBrands />
-            <AppDownload />
+            {/* <AppDownload /> */}
             <Testimonials />
             <SuccessStory />
         </>
