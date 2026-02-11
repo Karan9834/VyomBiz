@@ -11,6 +11,7 @@ import IPTrademark from "./pages/ip-trademark/IPTrademark";
 import Compliance from "./pages/compliance/Compliance";
 import Regulatory from "./pages/regulatory/Regulatory";
 import Environmental from "./pages/environmental/Environmental";
+import LawyersServices from "./pages/lawyers-services/LawyersServices";
 import CompanyRegistration from "./pages/startup/CompanyRegistration";
 import LLPRegistration from "./pages/startup/LLPRegistration";
 import PublicLimitedRegistration from "./pages/startup/PublicLimitedRegistration";
@@ -148,6 +149,7 @@ function App() {
           <Route path="/producer-company-registration" element={<ProducerCompanyRegistration />} />
           <Route path="/indian-subsidiary-company-registration" element={<IndianSubsidiaryRegistration />} />
           <Route path="/ip-trademark" element={<IPTrademark />} />
+          <Route path="/lawyers-services" element={<LawyersServices />} />
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/regulatory" element={<Regulatory />} />
           <Route path="/environmental" element={<Environmental />} />

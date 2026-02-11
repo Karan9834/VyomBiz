@@ -427,11 +427,20 @@ const DetailsLayout = ({
                                 </p>
                                 <div className="space-y-4">
                                     {postCompliance.list.map((item, i) => (
-                                        <div key={i} className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 group hover:bg-white hover:border-[#f1a134]/30 hover:shadow-lg transition-all">
-                                            <div className="w-10 h-10 rounded-xl bg-white border border-slate-100 flex items-center justify-center text-[#f1a134] group-hover:bg-[#f1a134] group-hover:text-white transition-all">
+                                        <div key={i} className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 group hover:bg-white hover:border-[#f1a134]/30 hover:shadow-lg transition-all">
+                                            <div className="w-10 h-10 rounded-xl bg-white border border-slate-100 flex items-center justify-center text-[#f1a134] group-hover:bg-[#f1a134] group-hover:text-white transition-all shrink-0">
                                                 <TrendingUp size={20} />
                                             </div>
-                                            <span className="text-[15px] font-black text-slate-700">{item}</span>
+                                            <div className="flex flex-col">
+                                                <span className="text-[15px] font-black text-slate-700">
+                                                    {typeof item === 'string' ? item : item.title}
+                                                </span>
+                                                {typeof item !== 'string' && item.desc && (
+                                                    <span className="text-xs text-slate-500 font-bold mt-1 leading-relaxed">
+                                                        {item.desc}
+                                                    </span>
+                                                )}
+                                            </div>
                                         </div>
                                     ))}
                                 </div>

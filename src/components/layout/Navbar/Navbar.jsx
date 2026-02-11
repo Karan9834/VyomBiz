@@ -19,6 +19,7 @@ export default function Navbar() {
     useEffect(() => {
         if (activeTop === "Startup") setActiveSub("Business Registration");
         if (activeTop === "IP & Trademark ®") setActiveSub("Trademarks India");
+        if (activeTop === "Lawyers Services") setActiveSub("Lawyers Specialization");
         if (activeTop === "Compliance") setActiveSub("Secretarial");
         if (activeTop === "Regulatory") setActiveSub("RBI");
         if (activeTop === "Environmental") setActiveSub("Pollution NOC");
