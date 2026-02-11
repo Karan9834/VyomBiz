@@ -177,9 +177,7 @@ function App() {
           <Route path="/producer-company-registration" element={<ProducerCompanyRegistration />} />
           <Route path="/indian-subsidiary-company-registration" element={<IndianSubsidiaryRegistration />} />
           <Route path="/ip-trademark" element={<IPTrademark />} />
-<<<<<<< Updated upstream
           <Route path="/lawyers-services" element={<LawyersServices />} />
-=======
 
           {/* IP & Trademark Routes */}
           <Route path="/trademark-registration" element={<TrademarkRegistration />} />
@@ -190,7 +188,6 @@ function App() {
           <Route path="/copyright-registration" element={<CopyrightRegistration />} />
           <Route path="/patent-registration" element={<PatentRegistration />} />
           <Route path="/patent-due-diligence" element={<PatentDueDiligence />} />
->>>>>>> Stashed changes
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/regulatory" element={<Regulatory />} />
           <Route path="/environmental" element={<Environmental />} />
