@@ -8,7 +8,7 @@ import PricingSection from "../../../components/CompanyRegistration/PricingSecti
 
 /**
  * NGORegistration Page matching Vyombiz layout styles
- * URL: https://corpbiz.io/ngo-registration
+ * URL: https://VyomBiz.io/ngo-registration
  */
 
 const NGORegistration = () => {

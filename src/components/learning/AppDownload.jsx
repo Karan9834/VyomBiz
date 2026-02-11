@@ -29,12 +29,12 @@ const AppDownload = () => {
               <div className="flex items-center gap-4">
                 <div className="flex flex-col gap-3">
                   <img
-                    src="https://corpbiz.io/img/google-play-store.png"
+                    src="https://VyomBiz.io/img/google-play-store.png"
                     alt="Google Play"
                     className="h-14"
                   />
                   <img
-                    src="https://corpbiz.io/img/app-store.png"
+                    src="https://VyomBiz.io/img/app-store.png"
                     alt="App Store"
                     className="h-14"
                   />
@@ -42,7 +42,7 @@ const AppDownload = () => {
 
                 <div className="flex flex-col items-center text-sm">
                   <img
-                    src="https://corpbiz.io/img/qr-code.png"
+                    src="https://VyomBiz.io/img/qr-code.png"
                     alt="Android QR"
                     className="h-24 w-24 border-4 border-white rounded-md"
                   />
@@ -53,7 +53,7 @@ const AppDownload = () => {
 
                 <div className="flex flex-col items-center text-sm">
                   <img
-                    src="https://corpbiz.io/img/ios_qrcode.png"
+                    src="https://VyomBiz.io/img/ios_qrcode.png"
                     alt="iOS QR"
                     className="h-24 w-24 border-4 border-white rounded-md"
                   />
@@ -69,7 +69,7 @@ const AppDownload = () => {
           {/* RIGHT SIDE IMAGE */}
           <div className="lg:w-1/2 flex justify-end">
             <img
-              src="https://corpbiz.io/img/our-app.png"
+              src="https://VyomBiz.io/img/our-app.png"
               alt="App Preview"
               className="max-w-md w-full drop-shadow-xl"
             />

@@ -8,7 +8,7 @@ import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /**
  * NGOCSRCOnsultancy Page matching Vyombiz layout styles
- * URL: https://corpbiz.io/ngo-csr-consultancy
+ * URL: https://VyomBiz.io/ngo-csr-consultancy
  */
 
 const NGOCSRCOnsultancy = () => {

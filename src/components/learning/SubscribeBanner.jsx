@@ -4,7 +4,7 @@ export default function SubscribeBanner() {
   return (
     <div className="w-full bg-[rgb(11,79,124)] py-20 mt-20">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        
+
         {/* LEFT CONTENT */}
         <div className="text-white">
           <h2 className="text-4xl font-bold leading-snug">
@@ -41,7 +41,7 @@ export default function SubscribeBanner() {
         {/* RIGHT IMAGE */}
         <div className="flex justify-center md:justify-end">
           <img
-            src="https://corpbiz.io/img/blog-slides.png"
+            src="https://VyomBiz.io/img/blog-slides.png"
             alt="Newsletter Illustration"
             className="max-w-md w-full"
           />

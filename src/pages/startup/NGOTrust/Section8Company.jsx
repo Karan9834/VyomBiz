@@ -4,7 +4,7 @@ import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import PricingSection from "../../../components/CompanyRegistration/PricingSection.jsx";
-import TalkExpert from "../../../components/common/TalkExpert.jsx";
+
 
 /**
  * Section8Company Page
@@ -59,7 +59,7 @@ const Section8Company = () => {
 
             {/* ================= PRICING SECTION ================= */}
             <PricingSection />
-            <TalkExpert expertise="Expertise in Section 8 Company Registration" />
+
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
                 overview={{

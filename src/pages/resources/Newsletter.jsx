@@ -14,7 +14,7 @@ const Newsletter = () => {
         className="w-full h-[400px] flex justify-center items-center"
         style={{
           backgroundImage:
-            "url('https://corpbiz.io/learning/wp-content/themes/corpbiz2022/img/our-newsletter-banner.jpg')",
+            "url('https://VyomBiz.io/learning/wp-content/themes/VyomBiz2022/img/our-newsletter-banner.jpg')",
           backgroundSize: "cover",
         }}
       >

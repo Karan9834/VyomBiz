@@ -8,7 +8,7 @@ import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /**
  * NGOIncomeTaxAdvisory Page matching Vyombiz layout styles
- * URL: https://corpbiz.io/ngo-income-tax-advisory
+ * URL: https://VyomBiz.io/ngo-income-tax-advisory
  */
 
 const NGOIncomeTaxAdvisory = () => {

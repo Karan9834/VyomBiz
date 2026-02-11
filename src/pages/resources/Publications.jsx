@@ -13,7 +13,7 @@
 //       {/* Banner */}
 //       <section className="w-full h-[400px] flex justify-center items-center" style={{
 //         backgroundImage:
-//           "url('https://corpbiz.io/learning/wp-content/themes/corpbiz2022/img/our-newsletter-banner.jpg')",
+//           "url('https://VyomBiz.io/learning/wp-content/themes/VyomBiz2022/img/our-newsletter-banner.jpg')",
 //         backgroundRepeat: "no-repeat",
 //         backgroundSize: "cover",
 //         backgroundPosition: "left",
@@ -33,7 +33,7 @@
 //       <section className="bg-[#e6e9edb6] py-12">
 //         <div className="max-w-7xl mx-20 px-[-10px] flex items-center gap-3">
 //           <img
-//             src="https://corpbiz.io/learning/wp-content/themes/corpbiz2022/img/pdf-icon.svg"
+//             src="https://VyomBiz.io/learning/wp-content/themes/VyomBiz2022/img/pdf-icon.svg"
 //             alt="pdf"
 //             className="w-6 h-6"
 //           />
@@ -86,7 +86,7 @@ const Publications = () => {
         className="w-full h-[400px] flex justify-center items-center bg-left bg-no-repeat bg-cover"
         style={{
           backgroundImage:
-            "url('https://corpbiz.io/learning/wp-content/themes/corpbiz2022/img/our-newsletter-banner.jpg')",
+            "url('https://VyomBiz.io/learning/wp-content/themes/VyomBiz2022/img/our-newsletter-banner.jpg')",
         }}
       >
         <div className="w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12 ml-[-200px]">
@@ -104,7 +104,7 @@ const Publications = () => {
       <section className="bg-[#e6e9edb6] py-8 sm:py-10 md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 flex items-center gap-3 ml-[20px]">
           <img
-            src="https://corpbiz.io/learning/wp-content/themes/corpbiz2022/img/pdf-icon.svg"
+            src="https://VyomBiz.io/learning/wp-content/themes/VyomBiz2022/img/pdf-icon.svg"
             alt="pdf"
             className="w-6 h-6"
           />

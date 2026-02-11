@@ -8,6 +8,14 @@ import Home from "./pages/home/Home";
 // import Home from "./pages/home/Home1";
 import Startup from "./pages/startup/Startup";
 import IPTrademark from "./pages/ip-trademark/IPTrademark";
+import TrademarkRegistration from "./pages/ip-trademark/Trademarks India/TrademarkRegistration";
+import TrademarkWatchServices from "./pages/ip-trademark/TM Watch/TrademarkWatchServices";
+import InternationalTrademarkRegistration from "./pages/ip-trademark/InternationalTM/InternationalTrademarkRegistration";
+import DesignRegistration from "./pages/ip-trademark/Designs/DesignRegistration";
+import RegistrationOFGeographicalIndication from "./pages/ip-trademark/GI/RegistrationOFGeographicalIndication";
+import CopyrightRegistration from "./pages/ip-trademark/Copyright/CopyrightRegistration";
+import PatentRegistration from "./pages/ip-trademark/Patent/PatentRegistration";
+import PatentDueDiligence from "./pages/ip-trademark/Advisory/PatentDueDiligence";
 import Compliance from "./pages/compliance/Compliance";
 import Regulatory from "./pages/regulatory/Regulatory";
 import Environmental from "./pages/environmental/Environmental";
@@ -39,6 +47,16 @@ import CompanyRegistrationUK from "./pages/startup/Global Incorporation/CompanyR
 import CompanyRegistrationDubai from "./pages/startup/Global Incorporation/CompanyRegistrationDubai";
 import CompanyRegistrationMauritius from "./pages/startup/Global Incorporation/CompanyRegistrationMauritius";
 import CompanyRegistrationHongKong from "./pages/startup/Global Incorporation/CompanyRegistrationHongKong";
+import CompanyRegistrationSingapore from "./pages/startup/Global Incorporation/CompanyRegistrationSingapore";
+import CompanyRegistrationNewZeland from "./pages/startup/Global Incorporation/Company RegistrationNewZeland";
+import CompanyRegistrationAustralia from "./pages/startup/Global Incorporation/CompanyRegistrationAustralia";
+import CompanyRegistrationCanada from "./pages/startup/Global Incorporation/CompanyRegistrationCanada";
+import CompanyRegistrationRussia from "./pages/startup/Global Incorporation/CompanyRegistrationRussia";
+import CompanyRegistrationPoland from "./pages/startup/Global Incorporation/CompanyRegistrationPoland";
+import CompanyRegistrationJapan from "./pages/startup/Global Incorporation/CompanyRegistrationJapan";
+import CompanyRegistrationGermany from "./pages/startup/Global Incorporation/CompanyRegistrationGermany";
+import CompanyRegistrationFrance from "./pages/startup/Global Incorporation/CompanyRegistrationFrance";
+import CompanyRegistrationSouthAfrica from "./pages/startup/Global Incorporation/CompanyRegistrationSouthAfrica";
 import PartnershipRegistration from "./pages/startup/PartnershipRegistration";
 import SoleProprietorship from "./pages/startup/SoleProprietorship";
 import NidhiCompanyRegistration from "./pages/startup/NidhiCompanyRegistration";
@@ -143,13 +161,36 @@ function App() {
           <Route path="/dubai-company-setup" element={<CompanyRegistrationDubai />} />
           <Route path="/company-registration-mauritius" element={<CompanyRegistrationMauritius />} />
           <Route path="/hong-kong-incorporation" element={<CompanyRegistrationHongKong />} />
+          <Route path="/singapore-incorporation" element={<CompanyRegistrationSingapore />} />
+          <Route path="/new-zealand-incorporation" element={<CompanyRegistrationNewZeland />} />
+          <Route path="/australia-incorporation" element={<CompanyRegistrationAustralia />} />
+          <Route path="/canada-incorporation" element={<CompanyRegistrationCanada />} />
+          <Route path="/russia-incorporation" element={<CompanyRegistrationRussia />} />
+          <Route path="/poland-incorporation" element={<CompanyRegistrationPoland />} />
+          <Route path="/japan-incorporation" element={<CompanyRegistrationJapan />} />
+          <Route path="/germany-incorporation" element={<CompanyRegistrationGermany />} />
+          <Route path="/france-incorporation" element={<CompanyRegistrationFrance />} />
+          <Route path="/south-africa-incorporation" element={<CompanyRegistrationSouthAfrica />} />
           <Route path="/partnership-firm-registration" element={<PartnershipRegistration />} />
           <Route path="/sole-proprietorship-registration" element={<SoleProprietorship />} />
           <Route path="/nidhi-company-registration" element={<NidhiCompanyRegistration />} />
           <Route path="/producer-company-registration" element={<ProducerCompanyRegistration />} />
           <Route path="/indian-subsidiary-company-registration" element={<IndianSubsidiaryRegistration />} />
           <Route path="/ip-trademark" element={<IPTrademark />} />
+<<<<<<< Updated upstream
           <Route path="/lawyers-services" element={<LawyersServices />} />
+=======
+
+          {/* IP & Trademark Routes */}
+          <Route path="/trademark-registration" element={<TrademarkRegistration />} />
+          <Route path="/trademark-watch-services" element={<TrademarkWatchServices />} />
+          <Route path="/international-trademark-registration" element={<InternationalTrademarkRegistration />} />
+          <Route path="/design-registration" element={<DesignRegistration />} />
+          <Route path="/gi-registration" element={<RegistrationOFGeographicalIndication />} />
+          <Route path="/copyright-registration" element={<CopyrightRegistration />} />
+          <Route path="/patent-registration" element={<PatentRegistration />} />
+          <Route path="/patent-due-diligence" element={<PatentDueDiligence />} />
+>>>>>>> Stashed changes
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/regulatory" element={<Regulatory />} />
           <Route path="/environmental" element={<Environmental />} />

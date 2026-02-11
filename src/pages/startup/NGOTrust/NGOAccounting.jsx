@@ -9,7 +9,7 @@ import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /**
  * NGOAccounting Page matching Vyombiz layout styles
- * URL: https://corpbiz.io/ngo-accounting
+ * URL: https://VyomBiz.io/ngo-accounting
  */
 
 const NGOAccounting = () => {

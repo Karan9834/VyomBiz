@@ -6,7 +6,7 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
 
 /**
  * NGOProjectReport Page matching Vyombiz layout styles
- * URL: https://corpbiz.io/ngo-project-report
+ * URL: https://VyomBiz.io/ngo-project-report
  */
 
 const NGOProjectReport = () => {

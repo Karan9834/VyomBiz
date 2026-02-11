@@ -40,6 +40,26 @@ const getLinkPath = (link, categoryPath) => {
         "Company Registration Mauritius": "/company-registration-mauritius",
         "Company Registration Dubai": "/dubai-company-setup",
         "Company Registration Hong Kong": "/hong-kong-incorporation",
+        "Company Registration New Zealand": "/new-zealand-incorporation",
+        "Company Registration Australia": "/australia-incorporation",
+        "Company Registration Canada": "/canada-incorporation",
+        "Company Registration Russia": "/russia-incorporation",
+        "Company Registration Poland": "/poland-incorporation",
+        "Company Registration Japan": "/japan-incorporation",
+        "Company Registration Germany": "/germany-incorporation",
+        "Company Registration France": "/france-incorporation",
+        "Company Registration South Africa": "/south-africa-incorporation",
+
+        // IP & Trademark
+        "Trademark Registration": "/trademark-registration",
+        "Trademark Watch Services": "/trademark-watch-services",
+        "International Trademark Registration": "/international-trademark-registration",
+        "Design Registration": "/design-registration",
+        "Registration OF Geographical Indication (GI)": "/gi-registration",
+        "Copyright Registration": "/copyright-registration",
+        "Patent Registration": "/patent-registration",
+        // Advisory
+        "Patent Due Diligence": "/patent-due-diligence",
 
         // Industry
         "Factory License": "/factory-license",

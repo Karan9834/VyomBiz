@@ -6,7 +6,7 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
 
 /**
  * FCRARegistration Page matching Vyombiz layout styles
- * URL: https://corpbiz.io/fcra-registration
+ * URL: https://VyomBiz.io/fcra-registration
  */
 
 const FCRARegistration = () => {

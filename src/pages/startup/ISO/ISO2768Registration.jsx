@@ -82,7 +82,7 @@ const ISO2768Registration = () => {
                     ]
                 }}
                 whyUs={{
-                    title: "Why Choose Corpbiz?",
+                    title: "Why Choose VyomBiz?",
                     subtitle: "Our Advantage",
                     list: [
                         { title: "Expert Team", desc: "Experienced professionals to guide you through the entire process." },

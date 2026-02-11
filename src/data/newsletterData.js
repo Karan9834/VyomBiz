@@ -6,7 +6,7 @@ const pdfCards = [
     desc:
       "On 28th April 2023, the Ministry of Environment, Forest and Climate Change (MoEFCC) issued the Commission for Air Quality Management in National Capital Region and Adjoining Areas...",
     image:
-      "https://corpbiz.io/learning/wp-content/uploads/2023/05/MicrosoftTeams-image-43.jpg",
+      "https://VyomBiz.io/learning/wp-content/uploads/2023/05/MicrosoftTeams-image-43.jpg",
   },
   {
     date: "Published on 01 May, 2023",
@@ -15,7 +15,7 @@ const pdfCards = [
     desc:
       "On 27th April 2023, the Director General of Foreign Trade (DGFT) issued an amendment in details of an authorised agency under Appendix 2E of FTP 2023...",
     image:
-      "https://corpbiz.io/learning/wp-content/uploads/2023/05/DGFT-Amended.jpg",
+      "https://VyomBiz.io/learning/wp-content/uploads/2023/05/DGFT-Amended.jpg",
   },
   {
     date: "Published on 01 May, 2023",
@@ -24,7 +24,7 @@ const pdfCards = [
     desc:
       "On 27th April 2023, the Ministry of Heavy Industries announced the release of SOPs under the PLI Auto scheme to testing agencies...",
     image:
-      "https://corpbiz.io/learning/wp-content/uploads/2023/05/PLI-Auto-Scheme.jpg",
+      "https://VyomBiz.io/learning/wp-content/uploads/2023/05/PLI-Auto-Scheme.jpg",
   },
   {
     date: "Published on 01 May, 2023",
@@ -215,6 +215,6 @@ const pdfCards = [
     image:
       "",
   },
-  
+
 ];
 export default pdfCards;

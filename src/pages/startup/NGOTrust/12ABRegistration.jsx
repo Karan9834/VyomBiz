@@ -6,7 +6,7 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
 
 /**
  * 12ABRegistration Page matching Vyombiz layout styles
- * URL: https://corpbiz.io/12ab-registration
+ * URL: https://VyomBiz.io/12ab-registration
  */
 
 const Registration12AB = () => {

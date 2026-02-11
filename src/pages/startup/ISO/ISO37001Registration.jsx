@@ -127,7 +127,7 @@ const ISO37001Registration = () => {
                     ]
                 }}
                 whyUs={{
-                    title: "How can Corpbiz Help You?",
+                    title: "How can VyomBiz Help You?",
                     subtitle: "Our Comprehensive Support",
                     list: [
                         {
