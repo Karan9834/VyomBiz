@@ -121,6 +121,22 @@ const getLinkPath = (link, categoryPath) => {
         "Food Recycling License": "/food-recycling-license",
         "FPO Mark Certification": "/fpo-mark-certification",
 
+        // Compliance - Secretarial
+        "Closing a Limited Liability Partnership": "/closing-a-limited-liability-partnership",
+        "Annual Filing for LLP": "/annual-filing-for-llp",
+        "Change in Object Clause": "/change-in-object-clause",
+        "MCA Compliance": "/mca-compliance",
+        "Annual Compliance of a Pvt. Ltd. Company": "/annual-compliance-of-a-private-limited-company",
+        "Event Based Compliances in a Company": "/event-based-compliances-in-a-company",
+        "Change in Name Clause": "/change-in-name-clause",
+        "Nidhi Company Compliance": "/nidhi-company-compliance",
+        "NBFC Compliance": "/nbfc-compliance",
+        "Change in Share Capital": "/change-in-share-capital",
+        "Change in LLP Agreement": "/change-in-llp-agreement",
+        "AGR-Return Filing": "/agr-return-filing",
+        "Form MGT-7": "/form-mgt-7",
+        "AGILE PRO S": "/agile-pro-s",
+
         // Company
         "Career": "/career",
         "vyomBiz Reviews": "/reviews",

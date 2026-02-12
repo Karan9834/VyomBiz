@@ -102,6 +102,22 @@ import ISO16001Registration from "./pages/startup/ISO/ISO16001Registration";
 import ISO39001Registration from "./pages/startup/ISO/ISO39001Registration";
 import ISO2768Registration from "./pages/startup/ISO/ISO2768Registration";
 
+import ClosingLLP from "./pages/compliance/secretarial/ClosingLLP";
+import AnnualFilingLLP from "./pages/compliance/secretarial/AnnualFilingLLP";
+import ChangeInObjectClause from "./pages/compliance/secretarial/ChangeInObjectClause";
+import MCACompliance from "./pages/compliance/secretarial/MCACompliance";
+
+
+import AnnualCompliancePvtLtd from "./pages/compliance/secretarial/AnnualCompliancePvtLtd";
+import EventBasedCompliances from "./pages/compliance/secretarial/EventBasedCompliances";
+import ChangeInNameClause from "./pages/compliance/secretarial/ChangeInNameClause";
+import NidhiCompanyCompliance from "./pages/compliance/secretarial/NidhiCompanyCompliance";
+import NBFCCompliance from "./pages/compliance/secretarial/NBFCCompliance";
+import ChangeInShareCapital from "./pages/compliance/secretarial/ChangeInShareCapital";
+import ChangeInLLPAgreement from "./pages/compliance/secretarial/ChangeInLLPAgreement";
+import AGRReturnFiling from "./pages/compliance/secretarial/AGRReturnFiling";
+import FormMGT7 from "./pages/compliance/secretarial/FormMGT7";
+import AGILEPROS from "./pages/compliance/secretarial/AGILEPROS";
 
 import About from "./pages/company/About";
 import Carrers from "./pages/Carrers";
@@ -229,6 +245,24 @@ function App() {
           <Route path="/iso-16001-certification" element={<ISO16001Registration />} />
           <Route path="/iso-39001-certification" element={<ISO39001Registration />} />
           <Route path="/iso-2768-1-certification" element={<ISO2768Registration />} />
+
+          {/* Compliance - Secretarial Routes */}
+          <Route path="/closing-a-limited-liability-partnership" element={<ClosingLLP />} />
+          <Route path="/annual-filing-for-llp" element={<AnnualFilingLLP />} />
+          <Route path="/change-in-object-clause" element={<ChangeInObjectClause />} />
+          <Route path="/mca-compliance" element={<MCACompliance />} />
+
+          <Route path="/annual-compliance-of-a-private-limited-company" element={<AnnualCompliancePvtLtd />} />
+          <Route path="/event-based-compliances-in-a-company" element={<EventBasedCompliances />} />
+
+          <Route path="/change-in-name-clause" element={<ChangeInNameClause />} />
+          <Route path="/nidhi-company-compliance" element={<NidhiCompanyCompliance />} />
+          <Route path="/nbfc-compliance" element={<NBFCCompliance />} />
+          <Route path="/change-in-share-capital" element={<ChangeInShareCapital />} />
+          <Route path="/change-in-llp-agreement" element={<ChangeInLLPAgreement />} />
+          <Route path="/agr-return-filing" element={<AGRReturnFiling />} />
+          <Route path="/form-mgt-7" element={<FormMGT7 />} />
+          <Route path="/agile-pro-s" element={<AGILEPROS />} />
 
           {/* Company Routes */}
           <Route path="/about" element={<About />} />
