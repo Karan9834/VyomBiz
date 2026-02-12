@@ -1,7 +1,7 @@
 export const NAV_LINKS = [
     { name: "Startup", path: "/startup", dropdown: true },
     { name: "IP & Trademark ®", path: "/ip-trademark", dropdown: true },
-    { name: "Lawyers Services", path: "/lawyers-services", dropdown: true },
+    { name: "Lawyer Services", path: "/lawyers-services", dropdown: true },
     { name: "Compliance", path: "/compliance", dropdown: true },
     { name: "Regulatory", path: "/regulatory", dropdown: true },
     { name: "Environmental", path: "/environmental", dropdown: true },
@@ -47,7 +47,7 @@ export const MEGA_MENU_DATA = {
             "Advisory": ["Patent Due Diligence", "IP Valuation Services"]
         }
     },
-    "Lawyers Services": {
+    "Lawyer Services": {
         left: ["Lawyers Specialization", "Legal Notice", "Litigation", "Consumer Complaint"],
         right: {
             "Lawyers Specialization": ["Finance Lawyers", "Cheque Bounce Lawyers", "Child Custody Lawyers", "Civil Lawyers", "Consumer Protection Lawyers", "Contract Lawyers", "Corporate Lawyers", "Criminal Lawyers", "Cyber Crime Lawyers", "Property Lawyers", "Divorce Lawyers", "Family Lawyers", "GST Lawyers", "Intellectual Property Lawyers", "Labour Lawyers", "Money Recovery Lawyers", "Motor Accident Lawyers", "Muslim Law Lawyers"],
