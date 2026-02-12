@@ -124,22 +124,22 @@ import ISO16001Registration from "./pages/startup/ISO/ISO16001Registration";
 import ISO39001Registration from "./pages/startup/ISO/ISO39001Registration";
 import ISO2768Registration from "./pages/startup/ISO/ISO2768Registration";
 
-import ClosingLLP from "./pages/compliance/secretarial/ClosingLLP";
-import AnnualFilingLLP from "./pages/compliance/secretarial/AnnualFilingLLP";
-import ChangeInObjectClause from "./pages/compliance/secretarial/ChangeInObjectClause";
-import MCACompliance from "./pages/compliance/secretarial/MCACompliance";
+import ClosingLLP from "./pages/compliance/Secretarial/ClosingLLP";
+import AnnualFilingLLP from "./pages/compliance/Secretarial/AnnualFilingLLP";
+import ChangeInObjectClause from "./pages/compliance/Secretarial/ChangeInObjectClause";
+import MCACompliance from "./pages/compliance/Secretarial/MCACompliance";
 
 
-import AnnualCompliancePvtLtd from "./pages/compliance/secretarial/AnnualCompliancePvtLtd";
-import EventBasedCompliances from "./pages/compliance/secretarial/EventBasedCompliances";
-import ChangeInNameClause from "./pages/compliance/secretarial/ChangeInNameClause";
-import NidhiCompanyCompliance from "./pages/compliance/secretarial/NidhiCompanyCompliance";
-import NBFCCompliance from "./pages/compliance/secretarial/NBFCCompliance";
-import ChangeInShareCapital from "./pages/compliance/secretarial/ChangeInShareCapital";
-import ChangeInLLPAgreement from "./pages/compliance/secretarial/ChangeInLLPAgreement";
-import AGRReturnFiling from "./pages/compliance/secretarial/AGRReturnFiling";
-import FormMGT7 from "./pages/compliance/secretarial/FormMGT7";
-import AGILEPROS from "./pages/compliance/secretarial/AGILEPROS";
+import AnnualCompliancePvtLtd from "./pages/compliance/Secretarial/AnnualCompliancePvtLtd";
+import EventBasedCompliances from "./pages/compliance/Secretarial/EventBasedCompliances";
+import ChangeInNameClause from "./pages/compliance/Secretarial/ChangeInNameClause";
+import NidhiCompanyCompliance from "./pages/compliance/Secretarial/NidhiCompanyCompliance";
+import NBFCCompliance from "./pages/compliance/Secretarial/NBFCCompliance";
+import ChangeInShareCapital from "./pages/compliance/Secretarial/ChangeInShareCapital";
+import ChangeInLLPAgreement from "./pages/compliance/Secretarial/ChangeInLLPAgreement";
+import AGRReturnFiling from "./pages/compliance/Secretarial/AGRReturnFiling";
+import FormMGT7 from "./pages/compliance/Secretarial/FormMGT7";
+import AGILEPROS from "./pages/compliance/Secretarial/AGILEPROS";
 
 import About from "./pages/company/About";
 import Carrers from "./pages/Carrers";
