@@ -120,6 +120,40 @@ const getLinkPath = (link, categoryPath) => {
         "FSSAI Product Approval": "/fssai-product-approval",
         "Food Recycling License": "/food-recycling-license",
         "FPO Mark Certification": "/fpo-mark-certification",
+        "Succession Certificate in India": "/succession-certificate-in-india",
+        "Section 8-Demand Notice": "/section-8-demand-notice",
+        "RERA Complaint": "/rera-complaint",
+        "Public Interest Litigation": "/public-interest-litigation",
+        "Legal Notice": "/legal-notice",
+        "Legal Heir Certificate": "/legal-heir-certificate",
+        "Lease Agreement Drafting": "/lease-agreement-drafting",
+        "Consumer Complaint": "/consumer-complaint",
+        "Cheque Bounce Notice": "/cheque-bounce-notice",
+        "Caveat Petition": "/caveat-petition",
+        "Winding Up of Private Limited Company": "/winding-up-of-private-limited-company",
+        "Annual Compliance of a Pvt. Ltd. Company": "/annual-compliance-pvt-ltd",
+        "Appointment and Resignation of Directors": "/appointment-resignation-directors",
+        "Change in Directors": "/change-directors",
+        "Change in Registered Office": "/change-registered-office",
+        "Event Based Compliances in a Company": "/event-based-compliances",
+        "Form AOC-4": "/form-aoc-4",
+        "Liquidation of Company": "/liquidation-company",
+        "Removal of Director": "/removal-director",
+        "Revival of Struck Off Companies": "/revival-struck-off-companies",
+        "SPICE+ Form": "/spice-plus-form",
+        "Section 8 Company Compliance": "/section-8-compliance",
+
+
+
+
+
+
+
+
+
+
+
+
 
         // Compliance - Secretarial
         "Closing a Limited Liability Partnership": "/closing-a-limited-liability-partnership",

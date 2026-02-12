@@ -20,6 +20,28 @@ import Compliance from "./pages/compliance/Compliance";
 import Regulatory from "./pages/regulatory/Regulatory";
 import Environmental from "./pages/environmental/Environmental";
 import LawyersServices from "./pages/lawyers-services/LawyersServices";
+import SuccessionCertificateinIndia from "./pages/compliance/Legal Services/SuccessionCertificateinIndia";
+import Section8DemandNotice from "./pages/compliance/Legal Services/Section8DemandNotice";
+import RERAComplaint from "./pages/compliance/Legal Services/RERAComplaint";
+import PublicInterestLitigation from "./pages/compliance/Legal Services/PublicInterestLitigation";
+import LegalNotice from "./pages/compliance/Legal Services/LegalNotice";
+import LegalHeirCertificate from "./pages/compliance/Legal Services/LegalHeirCertificate";
+import LeaseAgreementDrafting from "./pages/compliance/Legal Services/LeaseAgreementDrafting";
+import ConsumerComplaint from "./pages/compliance/Legal Services/ConsumerComplaint";
+import ChequeBounceNotice from "./pages/compliance/Legal Services/ChequeBounceNotice";
+import ChangeinDirectors from "./pages/compliance/Secretarial/ChangeinDirectors";
+import AnnualComplianceofaPvtLtdCompany from "./pages/compliance/Secretarial/AnnualComplianceofaPvtLtdCompany";
+import AppointmentandResignationofDirectors from "./pages/compliance/Secretarial/AppointmentandResignationofDirectors";
+import ChangeinRegisteredOffice from "./pages/compliance/Secretarial/ChangeinRegisteredOffice";
+import EventBasedCompliancesinaCompany from "./pages/compliance/Secretarial/EventBasedCompliancesinaCompany";
+import FormAOC4 from "./pages/compliance/Secretarial/FormAOC4";
+import LiquidationofCompany from "./pages/compliance/Secretarial/LiquidationofCompany";
+import RemovalofDirector from "./pages/compliance/Secretarial/RemovalofDirector";
+import RevivalofStruckOffCompanies from "./pages/compliance/Secretarial/RevivalofStruckOffCompanies";
+import SPICEForm from "./pages/compliance/Secretarial/SPICEForm";
+import Section8CompanyCompliance from "./pages/compliance/Secretarial/Section8CompanyCompliance";
+import WindingUpofPrivateLimitedCompany from "./pages/compliance/Secretarial/WindingUpofPrivateLimitedCompany";
+import CaveatPetition from "./pages/compliance/Legal Services/CaveatPetition";
 import CompanyRegistration from "./pages/startup/CompanyRegistration";
 import LLPRegistration from "./pages/startup/LLPRegistration";
 import PublicLimitedRegistration from "./pages/startup/PublicLimitedRegistration";
@@ -217,6 +239,26 @@ function App() {
           <Route path="/renewable-energy-business-setup" element={<RenewableEnergyBusiness />} />
           <Route path="/fire-equipment-plant-setup" element={<FireEquipmentPlantSetup />} />
           <Route path="/virtual-office-space-setup" element={<VirtualOfficeSpace />} />
+          <Route path="/succession-certificate-in-india" element={<SuccessionCertificateinIndia />} />
+          <Route path="/section-8-demand-notice" element={<Section8DemandNotice />} />
+          <Route path="/rera-complaint" element={<RERAComplaint />} />
+          <Route path="/public-interest-litigation" element={<PublicInterestLitigation />} />
+          <Route path="/legal-notice" element={<LegalNotice />} />
+          <Route path="/legal-heir-certificate" element={<LegalHeirCertificate />} />
+          <Route path="/lease-agreement-drafting" element={<LeaseAgreementDrafting />} />
+          <Route path="/consumer-complaint" element={<ConsumerComplaint />} />
+          <Route path="/cheque-bounce-notice" element={<ChequeBounceNotice />} />
+          <Route path="/caveat-petition" element={<CaveatPetition />} />
+
+
+
+
+
+
+
+
+
+
 
           {/* FSSAI & Eating House Routes */}
           <Route path="/fssai-license" element={<FssaiLicense />} />
@@ -266,6 +308,19 @@ function App() {
 
           {/* Company Routes */}
           <Route path="/about" element={<About />} />
+          <Route path="/change-directors" element={<ChangeinDirectors />} />
+          <Route path="/winding-up-of-private-limited-company" element={<WindingUpofPrivateLimitedCompany />} />
+          <Route path="/annual-compliance-pvt-ltd" element={<AnnualComplianceofaPvtLtdCompany />} />
+          <Route path="/appointment-resignation-directors" element={<AppointmentandResignationofDirectors />} />
+          <Route path="/change-registered-office" element={<ChangeinRegisteredOffice />} />
+          <Route path="/event-based-compliances" element={<EventBasedCompliancesinaCompany />} />
+          <Route path="/form-aoc-4" element={<FormAOC4 />} />
+          <Route path="/liquidation-company" element={<LiquidationofCompany />} />
+          <Route path="/removal-director" element={<RemovalofDirector />} />
+          <Route path="/revival-struck-off-companies" element={<RevivalofStruckOffCompanies />} />
+          <Route path="/spice-plus-form" element={<SPICEForm />} />
+          <Route path="/section-8-compliance" element={<Section8CompanyCompliance />} />
+
           <Route path="/career" element={<Carrers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/media" element={<Media />} />
