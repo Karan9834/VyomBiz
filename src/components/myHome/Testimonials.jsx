@@ -48,7 +48,7 @@ const Testimonials = () => {
 
       {/* Slider */}
       <div className="overflow-hidden">
-        <div className="flex gap-6 animate-marquee">
+        <div className="flex gap-6 animate-marquee-slow">
           {testimonials.concat(testimonials).map((t, index) => (
             <div
               key={index}
@@ -72,20 +72,7 @@ const Testimonials = () => {
       </div>
 
       {/* Tailwind Animation */}
-      <style jsx>{`
-        @keyframes marquee {
-          0% {
-            transform: translateX(0%);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        .animate-marquee {
-          display: flex;
-          animation: marquee 25s linear infinite;
-        }
-      `}</style>
+      {/* Removed local style tag - marquee animation moved to index.css */}
     </section>
   );
 };

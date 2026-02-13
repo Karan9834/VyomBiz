@@ -220,16 +220,7 @@ const Partner = () => {
         </div>
 
         {/* Tailwind CSS animation */}
-        <style jsx>{`
-        @keyframes marquee {
-          0% { transform: translateX(0%); }
-          100% { transform: translateX(-50%); }
-        }
-        .animate-marquee {
-          display: flex;
-          animation: marquee 20s linear infinite;
-        }
-      `}</style>
+        {/* Removed local style tag - marquee animation moved to index.css */}
       </section>
 
 

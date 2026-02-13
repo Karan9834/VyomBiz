@@ -20,6 +20,7 @@ import Compliance from "./pages/compliance/Compliance";
 import Regulatory from "./pages/regulatory/Regulatory";
 import Environmental from "./pages/environmental/Environmental";
 import LawyersServices from "./pages/lawyers-services/LawyersServices";
+import LawyerSpecializationDynamic from "./pages/lawyers-services/LawyerSpecializationDynamic";
 import SuccessionCertificateinIndia from "./pages/compliance/Legal Services/SuccessionCertificateinIndia";
 import Section8DemandNotice from "./pages/compliance/Legal Services/Section8DemandNotice";
 import RERAComplaint from "./pages/compliance/Legal Services/RERAComplaint";
@@ -95,6 +96,21 @@ import FermentationIndustry from "./pages/startup/IndustrySetup/FermentationIndu
 import RenewableEnergyBusiness from "./pages/startup/IndustrySetup/RenewableEnergyBusiness";
 import FireEquipmentPlantSetup from "./pages/startup/IndustrySetup/FireEquipmentPlantSetup";
 import VirtualOfficeSpace from "./pages/startup/IndustrySetup/VirtualOfficeSpace";
+
+// Litigation Pages
+import DefamationComplaint from "./pages/lawyers-services/litigation/DefamationComplaint";
+import EmploymentDisputeLitigation from "./pages/lawyers-services/litigation/EmploymentDisputeLitigation";
+import ChequeBounceComplaint from "./pages/lawyers-services/litigation/ChequeBounceComplaint";
+import CyberCrimeLitigation from "./pages/lawyers-services/litigation/CyberCrimeLitigation";
+import ContestedDivorce from "./pages/lawyers-services/litigation/ContestedDivorce";
+import POSHCompliance from "./pages/lawyers-services/litigation/POSHCompliance";
+import USLitigationService from "./pages/lawyers-services/litigation/USLitigationService";
+import IntellectualPropertyInfringement from "./pages/lawyers-services/litigation/IntellectualPropertyInfringement";
+import ContractDisputeLitigation from "./pages/lawyers-services/litigation/ContractDisputeLitigation";
+import PropertyLitigation from "./pages/lawyers-services/litigation/PropertyLitigation";
+import MutualDivorceLitigation from "./pages/lawyers-services/litigation/MutualDivorceLitigation";
+import RestitutionOfConjugalRights from "./pages/lawyers-services/litigation/RestitutionOfConjugalRights";
+import RERAComplaintLitigation from "./pages/lawyers-services/litigation/RERAComplaintLitigation";
 
 // FSSAI & Eating House Pages
 import FssaiLicense from "./pages/startup/FssaiEating/FssaiLicense";
@@ -216,6 +232,31 @@ function App() {
           <Route path="/indian-subsidiary-company-registration" element={<IndianSubsidiaryRegistration />} />
           <Route path="/ip-trademark" element={<IPTrademark />} />
           <Route path="/lawyers-services" element={<LawyersServices />} />
+          <Route path="/lawyers-services/:type" element={<LawyerSpecializationDynamic />} />
+
+          {/* Litigation Routes */}
+          <Route path="/defamation-complaint" element={<DefamationComplaint />} />
+          <Route path="/employment-dispute-litigation" element={<EmploymentDisputeLitigation />} />
+          <Route path="/cheque-bounce-complaint" element={<ChequeBounceComplaint />} />
+          <Route path="/cyber-crime-litigation" element={<CyberCrimeLitigation />} />
+          <Route path="/contested-divorce" element={<ContestedDivorce />} />
+          <Route path="/posh-compliance" element={<POSHCompliance />} />
+          <Route path="/us-litigation-service" element={<USLitigationService />} />
+          <Route path="/intellectual-property-infringement" element={<IntellectualPropertyInfringement />} />
+          <Route path="/contract-dispute-litigation" element={<ContractDisputeLitigation />} />
+          <Route path="/property-litigation" element={<PropertyLitigation />} />
+          <Route path="/mutual-divorce" element={<MutualDivorceLitigation />} />
+          <Route path="/restitution-of-conjugal-rights" element={<RestitutionOfConjugalRights />} />
+          <Route path="/rera-complaint" element={<RERAComplaintLitigation />} />
+          <Route path="/succession-certificate-in-india" element={<SuccessionCertificateinIndia />} />
+          <Route path="/section-8-demand-notice" element={<Section8DemandNotice />} />
+          <Route path="/public-interest-litigation" element={<PublicInterestLitigation />} />
+          <Route path="/legal-notice" element={<LegalNotice />} />
+          <Route path="/legal-heir-certificate" element={<LegalHeirCertificate />} />
+          <Route path="/lease-agreement-drafting" element={<LeaseAgreementDrafting />} />
+          <Route path="/consumer-complaint" element={<ConsumerComplaint />} />
+          <Route path="/cheque-bounce-notice" element={<ChequeBounceNotice />} />
+          <Route path="/caveat-petition" element={<CaveatPetition />} />
 
           {/* IP & Trademark Routes */}
           <Route path="/trademark-registration" element={<TrademarkRegistration />} />
@@ -239,16 +280,6 @@ function App() {
           <Route path="/renewable-energy-business-setup" element={<RenewableEnergyBusiness />} />
           <Route path="/fire-equipment-plant-setup" element={<FireEquipmentPlantSetup />} />
           <Route path="/virtual-office-space-setup" element={<VirtualOfficeSpace />} />
-          <Route path="/succession-certificate-in-india" element={<SuccessionCertificateinIndia />} />
-          <Route path="/section-8-demand-notice" element={<Section8DemandNotice />} />
-          <Route path="/rera-complaint" element={<RERAComplaint />} />
-          <Route path="/public-interest-litigation" element={<PublicInterestLitigation />} />
-          <Route path="/legal-notice" element={<LegalNotice />} />
-          <Route path="/legal-heir-certificate" element={<LegalHeirCertificate />} />
-          <Route path="/lease-agreement-drafting" element={<LeaseAgreementDrafting />} />
-          <Route path="/consumer-complaint" element={<ConsumerComplaint />} />
-          <Route path="/cheque-bounce-notice" element={<ChequeBounceNotice />} />
-          <Route path="/caveat-petition" element={<CaveatPetition />} />
 
 
 

@@ -134,7 +134,7 @@ export default function Navbar() {
                                                     {(MEGA_MENU_DATA[item.name].right[sub] || [])
                                                         .slice(0, expandedSubs.includes(`${item.name}-${sub}`) ? undefined : 5)
                                                         .map(link => {
-                                                            const getMobileLink = (btnLink) => {
+                                                            const getMobileLink = (btnLink, parentName, subName) => {
                                                                 const map = {
                                                                     "Company Registration": "/company-registration",
                                                                     "LLP Registration": "/llp-registration",
@@ -172,12 +172,31 @@ export default function Navbar() {
                                                                     "vyomBiz Reviews": "/reviews",
                                                                     "Work at vyomBiz": "/work-at-vyombiz"
                                                                 };
+
+                                                                if (map[btnLink]) return map[btnLink];
+
+                                                                // Global Litigation Mapping
+                                                                const litigationLinks = [
+                                                                    "Defamation Complaint", "Intellectual Property Infringement", "Employment Dispute Litigation",
+                                                                    "Contract Dispute Litigation", "Cheque Bounce Complaint", "Property Litigation",
+                                                                    "Cyber Crime Litigation", "Mutual Divorce", "Contested Divorce",
+                                                                    "Restitution of Conjugal Rights", "POSH Compliance", "RERA Complaint", "US Litigation Service"
+                                                                ];
+
+                                                                if (litigationLinks.includes(btnLink)) {
+                                                                    return `/${btnLink.toLowerCase().replace(/\s+/g, '-')}`;
+                                                                }
+
+                                                                // Dynamic Lawyer Specialization Mapping
+                                                                if (subName === "Lawyers Specialization" || btnLink.endsWith("Lawyers")) {
+                                                                    return `/lawyers-services/${btnLink.toLowerCase().replace(/\s+/g, '-')}`;
+                                                                }
                                                                 return map[btnLink] || item.path;
                                                             };
                                                             return (
                                                                 <Link
                                                                     key={link}
-                                                                    to={getMobileLink(link)}
+                                                                    to={getMobileLink(link, item.name, sub)}
                                                                     onClick={() => setHamburger(false)}
                                                                     className="block text-[15px] font-semibold text-slate-600 hover:text-blue-600 transition-colors"
                                                                 >

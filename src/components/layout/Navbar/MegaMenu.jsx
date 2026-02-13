@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 
-const getLinkPath = (link, categoryPath) => {
+const getLinkPath = (link, categoryPath, activeSub) => {
     const routeMap = {
         "Company Registration": "/company-registration",
         "LLP Registration": "/llp-registration",
@@ -177,6 +177,27 @@ const getLinkPath = (link, categoryPath) => {
         "Work at vyomBiz": "/work-at-vyombiz"
     };
 
+    if (routeMap[link]) return routeMap[link];
+
+    // Auto-map Litigation links (Shared across Litigation & Legal Services)
+    const litigationLinks = [
+        "Defamation Complaint", "Intellectual Property Infringement", "Employment Dispute Litigation",
+        "Contract Dispute Litigation", "Cheque Bounce Complaint", "Property Litigation",
+        "Cyber Crime Litigation", "Mutual Divorce", "Contested Divorce",
+        "Restitution of Conjugal Rights", "POSH Compliance", "RERA Complaint", "US Litigation Service"
+    ];
+
+    if (litigationLinks.includes(link)) {
+        const slug = link.toLowerCase().replace(/\s+/g, '-');
+        return `/${slug}`;
+    }
+
+    // Auto-map Lawyer Specialization links
+    if (activeSub === "Lawyers Specialization" || link.endsWith("Lawyers")) {
+        const slug = link.toLowerCase().replace(/\s+/g, '-');
+        return `/lawyers-services/${slug}`;
+    }
+
     return routeMap[link] || (categoryPath || "/");
 };
 
@@ -211,7 +232,7 @@ const MegaMenu = ({ data, activeSub, setActiveSub, onItemClick, categoryPath }) 
                         {(data.right[activeSub] || []).map(link => (
                             <Link
                                 key={link}
-                                to={getLinkPath(link, categoryPath)}
+                                to={getLinkPath(link, categoryPath, activeSub)}
                                 onClick={onItemClick}
                                 className="group cursor-pointer block"
                             >
