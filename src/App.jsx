@@ -276,6 +276,11 @@ function App() {
           <Route path="/legal-heir-certificate" element={<LegalHeirCertificate />} />
           <Route path="/lease-agreement-drafting" element={<LeaseAgreementDrafting />} />
           <Route path="/consumer-complaint" element={<ConsumerComplaint />} />
+          <Route path="/consumer-complaint/automobile" element={<Automobile />} />
+          <Route path="/consumer-complaint/courier-logistics" element={<CourierLogistics />} />
+          <Route path="/consumer-complaint/bank" element={<Bank />} />
+          <Route path="/consumer-complaint/ecommerce" element={<Ecommerce />} />
+          <Route path="/consumer-complaint/education" element={<Education />} />
           <Route path="/cheque-bounce-notice" element={<ChequeBounceNotice />} />
           <Route path="/caveat-petition" element={<CaveatPetition />} />
 
@@ -305,24 +310,7 @@ function App() {
           <Route path="/renewable-energy-business-setup" element={<RenewableEnergyBusiness />} />
           <Route path="/fire-equipment-plant-setup" element={<FireEquipmentPlantSetup />} />
           <Route path="/virtual-office-space-setup" element={<VirtualOfficeSpace />} />
-<<<<<<< Updated upstream
-=======
-          <Route path="/succession-certificate-in-india" element={<SuccessionCertificateinIndia />} />
-          <Route path="/section-8-demand-notice" element={<Section8DemandNotice />} />
-          <Route path="/rera-complaint" element={<RERAComplaint />} />
-          <Route path="/public-interest-litigation" element={<PublicInterestLitigation />} />
-          <Route path="/legal-notice" element={<LegalNotice />} />
-          <Route path="/legal-heir-certificate" element={<LegalHeirCertificate />} />
-          <Route path="/lease-agreement-drafting" element={<LeaseAgreementDrafting />} />
-          <Route path="/consumer-complaint" element={<ConsumerComplaint />} />
-          <Route path="/consumer-complaint/automobile" element={<Automobile />} />
-          <Route path="/consumer-complaint/courier-logistics" element={<CourierLogistics />} />
-          <Route path="/consumer-complaint/bank" element={<Bank />} />
-          <Route path="/consumer-complaint/ecommerce" element={<Ecommerce />} />
-          <Route path="/consumer-complaint/education" element={<Education />} />
-          <Route path="/cheque-bounce-notice" element={<ChequeBounceNotice />} />
-          <Route path="/caveat-petition" element={<CaveatPetition />} />
->>>>>>> Stashed changes
+
 
 
 
