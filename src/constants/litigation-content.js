@@ -1987,4 +1987,808 @@ export const litigationContent = {
             }
         }
     },
+    "automobile-consumer-complaint": {
+        title: "Automobile Consumer Complaint",
+        hero: {
+            mainTitle: "Automobile Consumer Complaint",
+            bulletPoints: [
+                "Defective Vehicle Resolution",
+                "Service Center Disputes",
+                "Warranty Claim Rejections",
+                "Legal Notice Drafting"
+            ],
+            testimonial: {
+                text: "I was sold a defective car and the dealer refused to fix it. VyomBiz helped me file a complaint and I got a full refund.",
+                author: "Rahul Sharma",
+                verified: true,
+                avatar: "https://i.pravatar.cc/150?u=rahul"
+            }
+        },
+        tabs: [
+            { id: "overview", label: "Overview" },
+            { id: "types", label: "Types" },
+            { id: "when-to-file", label: "When To File" },
+            { id: "process", label: "Process" },
+            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "faqs", label: "FAQs" }
+        ],
+        sections: {
+            overview: {
+                title: "Automobile Complaints – An Overview",
+                image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                content: [
+                    "Automobile consumer complaints address issues faced by car buyers, such as manufacturing defects, poor workmanship, faulty components, or misleading advertising.",
+                    "A formal complaint can be filed against manufacturers, dealerships, or service providers for unfair trade practices or inadequate service.",
+                    "This legal recourse empowers consumers to seek redressal for issues related to purchase, leasing, or maintenance of their vehicles."
+                ]
+            },
+            types: {
+                title: "Common Reasons to File",
+                introduction: "Situations where you should consider filing a consumer complaint.",
+                items: [
+                    {
+                        title: "Defective Parts",
+                        description: "When essential components fail or don't work as advertised.",
+                        example: "Engine failure within the warranty period."
+                    },
+                    {
+                        title: "Safety Concerns",
+                        description: "Issues like brake failure, steering problems, or airbag malfunctions.",
+                        example: "Brakes failing on a new car."
+                    },
+                    {
+                        title: "Poor Service",
+                        description: "Inadequate repairs, delays, or rude behavior by dealership/service center staff.",
+                        example: "Service center keeping the car for weeks without fixing the issue."
+                    },
+                    {
+                        title: "Warranty Issues",
+                        description: "Unjustified rejection of valid warranty claims or refusal to cover repairs.",
+                        example: "Dealer refusing to honor warranty for a defective part."
+                    },
+                    {
+                        title: "False Advertising",
+                        description: "When the vehicle's performance or features don't match the promotional claims.",
+                        example: "Mileage significantly lower than advertised."
+                    }
+                ]
+            },
+            whenToFile: {
+                title: "Required Documents",
+                content: "Essential documents needed to substantiate your automobile complaint.",
+                parameters: [
+                    {
+                        title: "Purchase Proof",
+                        desc: "Vehicle Purchase Receipts/Invoice."
+                    },
+                    {
+                        title: "Warranty Docs",
+                        desc: "Warranty Cards/Papers."
+                    },
+                    {
+                        title: "Service Records",
+                        desc: "Service & Repair Invoices and Job Cards."
+                    },
+                    {
+                        title: "Evidence",
+                        desc: "Photographs/Videos of Defects."
+                    }
+                ],
+                image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            },
+            process: {
+                title: "Our Resolution Process",
+                introduction: "How Vyombiz helps resolve your automobile grievances.",
+                steps: [
+                    {
+                        title: "Document Collection",
+                        description: "We gather all necessary proofs like invoices and service records."
+                    },
+                    {
+                        title: "Legal Notice",
+                        description: "Our lawyers draft and send a strict legal notice to the dealer/manufacturer."
+                    },
+                    {
+                        title: "Negotiation",
+                        description: "We attempt to resolve the matter amicably through mediation if possible."
+                    },
+                    {
+                        title: "File Complaint",
+                        description: "If unresolved, we file a formal complaint in the appropriate Consumer Forum."
+                    },
+                    {
+                        title: "Representation",
+                        description: "Our experts represent your case during court hearings."
+                    },
+                    {
+                        title: "Resolution",
+                        description: "We strive to get you the repair, replacement, or refund you deserve."
+                    }
+                ]
+            },
+            whyChoose: {
+                title: "Why Choose Vyombiz?",
+                reasons: [
+                    "Auto Industry Expertise: Deep understanding of automobile laws and common dealership tactics.",
+                    "Proven Track Record: Successfully resolved numerous cases against major car manufacturers.",
+                    "Hassle-Free Process: We handle all the legal paperwork and court appearances for you.",
+                    "Transparent Pricing: Clear fee structure with no hidden charges.",
+                    "Consumer Rights Focus: We are dedicated to protecting your rights as a consumer."
+                ]
+            },
+            faqs: {
+                title: "Frequently Asked Questions",
+                items: [
+                    {
+                        question: "What if the warranty on my Vehicle has expired?",
+                        answer: "Even if your warranty has expired, you can still file a consumer complaint if you can prove that the defect was a manufacturing fault or existed during the warranty period but wasn't resolved."
+                    },
+                    {
+                        question: "What documents are needed to file an automobile complaint?",
+                        answer: "Key documents include purchase receipts, warranty papers, repair invoices from authorized service centers, photographs of defects, and records of communication with the dealer or manufacturer."
+                    },
+                    {
+                        question: "Can I file a complaint against a second-hand car dealer?",
+                        answer: "Yes, you can file a complaint against a used car dealer if they sold you a defective vehicle, reduced the odometer reading, or made false claims about the vehicle's condition."
+                    },
+                    {
+                        question: "How long does it take to resolve an automobile consumer case?",
+                        answer: "The time varies depending on the complexity of the case and the court's schedule. However, consumer courts aim to resolve disputes within 90-150 days."
+                    },
+                    {
+                        question: "Can I claim compensation for mental harassment?",
+                        answer: "Yes, consumer courts often award compensation for mental agony, harassment, and financial loss caused by the defective vehicle or poor service."
+                    }
+                ]
+            }
+        }
+    },
+    "bank-consumer-complaint": {
+        title: "Bank Consumer Complaint",
+        hero: {
+            mainTitle: "Bank Consumer Complaint",
+            bulletPoints: [
+                "Unauthorized Transaction Refunds",
+                "Hidden Charges Disputes",
+                "Loan Harassment Relief",
+                "Credit Card Disputes"
+            ],
+            testimonial: {
+                text: "VyomBiz helped me recover my money from a banking fraud case where the bank was refusing to cooperate.",
+                author: "Anjali Desai",
+                verified: true,
+                avatar: "https://i.pravatar.cc/150?u=anjali"
+            }
+        },
+        tabs: [
+            { id: "overview", label: "Overview" },
+            { id: "types", label: "Types" },
+            { id: "when-to-file", label: "When To File" },
+            { id: "process", label: "Process" },
+            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "faqs", label: "FAQs" }
+        ],
+        sections: {
+            overview: {
+                title: "Banking Complaints – An Overview",
+                image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                content: [
+                    "Banking disputes are increasingly common, ranging from hidden charges and unauthorized debits to harassment by recovery agents.",
+                    "The RBI has established the Banking Ombudsman scheme to address these grievances, but navigating it can be complex.",
+                    "Filing a formal consumer complaint holds banks accountable for service deficiencies and unfair trade practices."
+                ]
+            },
+            types: {
+                title: "Common Reasons to File",
+                introduction: "Valid grounds for a banking consumer complaint.",
+                items: [
+                    {
+                        title: "Unauthorized Debits",
+                        description: "Money deducted from account without consent or valid reason.",
+                        example: "Unknown transaction on credit card statement."
+                    },
+                    {
+                        title: "Hidden Charges",
+                        description: "Levying fees that were not disclosed or agreed upon.",
+                        example: "Annual charges on a 'lifetime free' card."
+                    },
+                    {
+                        title: "Loan Harassment",
+                        description: "Abusive calls or behavior by recovery agents.",
+                        example: "Recovery agents calling at odd hours or threatening violence."
+                    },
+                    {
+                        title: "Credit Card Issues",
+                        description: "Wrongful billing, refusal to close cards, or hidden interest.",
+                        example: "Continuing to bill after card closure request."
+                    },
+                    {
+                        title: "Cheque Bouncing",
+                        description: "Wrongful dishonor of cheques despite sufficient funds.",
+                        example: "Bank error leading to cheque bounce penalty."
+                    },
+                    {
+                        title: "Locker Theft",
+                        description: "Loss of valuables from bank lockers due to negligence.",
+                        example: "Bank locker found empty due to lack of security."
+                    },
+                    {
+                        title: "Digital Failure",
+                        description: "Transaction failures where money is debited but not credited.",
+                        example: "ATM cash withdrawal failed but amount debited."
+                    }
+                ]
+            },
+            whenToFile: {
+                title: "Required Documents",
+                content: "Key documents needed to build a strong case.",
+                parameters: [
+                    {
+                        title: "Bank Statements",
+                        desc: "Account Statement (Passbook)."
+                    },
+                    {
+                        title: "Proof of Transaction",
+                        desc: "Transaction Slips/Receipts."
+                    },
+                    {
+                        title: "Correspondence",
+                        desc: "Emails/Letters to Bank and Complaint Reference."
+                    },
+                    {
+                        title: "Agreements",
+                        desc: "Loan Agreement or Credit Card Statements."
+                    }
+                ],
+                image: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            },
+            process: {
+                title: "Our Resolution Process",
+                introduction: "How Vyombiz resolves your banking disputes.",
+                steps: [
+                    {
+                        title: "Review",
+                        description: "We analyze your account statements and complaint details."
+                    },
+                    {
+                        title: "Notice",
+                        description: "A formal legal notice is sent to the bank's nodal officer."
+                    },
+                    {
+                        title: "Ombudsman",
+                        description: "If unresolved, we escalate the matter to the RBI Banking Ombudsman."
+                    },
+                    {
+                        title: "Consumer Court",
+                        description: "For compensation claims, we file a case in the Consumer Commission."
+                    },
+                    {
+                        title: "Hearing",
+                        description: "Our lawyers represent your interests during hearings."
+                    }
+                ]
+            },
+            whyChoose: {
+                title: "Why Choose Vyombiz?",
+                reasons: [
+                    "Banking Experts: Lawyers specialized in RBI regulations and banking acts.",
+                    "Ombudsman Experience: Deep understanding of the Banking Ombudsman mechanism.",
+                    "End-to-End Support: From drafting letters to court representation.",
+                    "High Success Rate: Proven track record in recovering funds for clients.",
+                    "Financial Recovery: Retrieve money lost due to fraud, scams, or bank errors."
+                ]
+            },
+            faqs: {
+                title: "Frequently Asked Questions",
+                items: [
+                    {
+                        question: "How do I file a complaint against a bank?",
+                        answer: "You can start by filing a written complaint with the bank's branch manager. If unresolved, approach the Banking Ombudsman or a Consumer Court."
+                    },
+                    {
+                        question: "What is the Banking Ombudsman?",
+                        answer: "The Banking Ombudsman is a quasi-judicial authority created by the RBI to resolve complaints of customers of banks relating to certain services and deficiencies."
+                    },
+                    {
+                        question: "Can I file a complaint for unauthorized transactions?",
+                        answer: "Yes, you should immediately report unauthorized transactions to the bank. If they fail to refund the amount despite it not being your fault, you can file a case."
+                    },
+                    {
+                        question: "Is there a time limit to file a banking complaint?",
+                        answer: "Yes, generally you must approach the Ombudsman within one year of receiving a reply from the bank, or if the bank doesn't reply, within one year and one month of your complaint."
+                    },
+                    {
+                        question: "Can I claim compensation for harassment by recovery agents?",
+                        answer: "Absolutely. Banks are liable for the conduct of their recovery agents. Abusive behavior or harassment is valid ground for a consumer complaint and compensation."
+                    }
+                ]
+            }
+        }
+    },
+    "education-consumer-complaint": {
+        title: "Education Consumer Complaint",
+        hero: {
+            mainTitle: "Education Consumer Complaint",
+            bulletPoints: [
+                "Fee Refund Disputes",
+                "Fake Accreditation Claims",
+                "Poor Educational Quality",
+                "Legal Notice Drafting"
+            ],
+            testimonial: {
+                text: "The college refused to refund my fees after I withdrew admission. VyomBiz team helped me send a legal notice and I got my refund within weeks.",
+                author: "Sneha Gupta",
+                verified: true,
+                avatar: "https://i.pravatar.cc/150?u=sneha"
+            }
+        },
+        tabs: [
+            { id: "overview", label: "Overview" },
+            { id: "types", label: "Types" },
+            { id: "when-to-file", label: "When To File" },
+            { id: "process", label: "Process" },
+            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "faqs", label: "FAQs" }
+        ],
+        sections: {
+            overview: {
+                title: "Education Complaints – An Overview",
+                image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                content: [
+                    "Filing a consumer complaint is a vital step when encountering issues like fee refunds, fake degrees, or lack of facilities.",
+                    "Educational institutions are liable for service deficiencies under the Consumer Protection Act.",
+                    "Proper documentation and legal intervention can help resolve grievances and protect student interests."
+                ]
+            },
+            types: {
+                title: "Common Reasons to File",
+                introduction: "Valid grounds for an education consumer complaint.",
+                items: [
+                    {
+                        title: "Quality Issues",
+                        description: "Outdated curriculum, ineffective teaching, or lack of promised facilities.",
+                        example: "College lacking labs mentioned in the brochure."
+                    },
+                    {
+                        title: "Accreditation Fraud",
+                        description: "Falsely claiming AICTE/UGC approval or recognized status.",
+                        example: "Institute claiming university status without UGC recognition."
+                    },
+                    {
+                        title: "Fee Refund",
+                        description: "Refusal to refund fees upon withdrawal of admission.",
+                        example: "College denying refund despite withdrawal before cutoff date."
+                    },
+                    {
+                        title: "Discrimination",
+                        description: "Unfair treatment, harassment, or bias against specific students.",
+                        example: "Unjustified disciplinary action targeting specific students."
+                    },
+                    {
+                        title: "Misrepresentation",
+                        description: "Misleading claims about placement records or faculty qualifications.",
+                        example: "Fake placement statistics to lure students."
+                    },
+                    {
+                        title: "Student Services",
+                        description: "Poor housing, healthcare, or counseling services.",
+                        example: "Unsanitary hostel conditions despite high fees."
+                    },
+                    {
+                        title: "Security Issues",
+                        description: "Lack of safety measures leading to accidents or ragging incidents.",
+                        example: "Negligence in campus security leading to student injury."
+                    }
+                ]
+            },
+            whenToFile: {
+                title: "Required Documents",
+                content: "Key documents to support your complaint against an institution.",
+                parameters: [
+                    {
+                        title: "ID Proof",
+                        desc: "Admission Letter/ID Card."
+                    },
+                    {
+                        title: "Payment Proof",
+                        desc: "Fee Receipts/Challans."
+                    },
+                    {
+                        title: "Evidence of Claims",
+                        desc: "Prospectus/Brochure (for false claims)."
+                    },
+                    {
+                        title: "Communications",
+                        desc: "Correspondence with Institution and Withdrawal Application."
+                    }
+                ],
+                image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            },
+            process: {
+                title: "Our Resolution Process",
+                introduction: "How Vyombiz helps students getting justice.",
+                steps: [
+                    {
+                        title: "Review Case",
+                        description: "We analyze your grievance and the institution's policies."
+                    },
+                    {
+                        title: "Legal Notice",
+                        description: "A strong legal notice is sent to the institution's management."
+                    },
+                    {
+                        title: "Negotiation",
+                        description: "We attempt to resolve the matter amicably if possible."
+                    },
+                    {
+                        title: "File Complaint",
+                        description: "If needed, we file a case in the appropriate Consumer Forum."
+                    },
+                    {
+                        title: "Representation",
+                        description: "Our lawyers fight for your rights and compensation."
+                    }
+                ]
+            },
+            whyChoose: {
+                title: "Why Choose Vyombiz?",
+                reasons: [
+                    "Education Law Experts: Lawyers with deep knowledge of UGC/AICTE regulations.",
+                    "Personalized Attention: We treat every student's case with the urgency it deserves.",
+                    "Holistic Approach: Focus on academic career protection alongside legal relief.",
+                    "Proven Track Record: Success in fee refund and compensation cases.",
+                    "Student Rights Advocacy: Committed to empowering students against unfair practices."
+                ]
+            },
+            faqs: {
+                title: "Frequently Asked Questions",
+                items: [
+                    {
+                        question: "How long does it take for a complaint to be resolved?",
+                        answer: "The time taken for resolution varies depending on the complexity of the case and the responsiveness of the educational institution. Generally, it can take anywhere from a few weeks to a few months."
+                    },
+                    {
+                        question: "Can I file a complaint against a private coaching center?",
+                        answer: "Yes, private coaching centers are considered service providers. If there is a deficiency in service, such as false promises of results or non-refund of fees, you can file a complaint."
+                    },
+                    {
+                        question: "Is it mandatory to hire a lawyer to file an education complaint?",
+                        answer: "No, you can file a consumer complaint yourself. However, hiring a lawyer can significantly improve your chances of success, especially in complex cases involving legal arguments."
+                    },
+                    {
+                        question: "Can I get a refund of my fees if I withdraw admission?",
+                        answer: "According to UGC guidelines and consumer court rulings, institutions must refund fees if a student withdraws within a specified period. If they refuse, it amounts to unfair trade practice."
+                    },
+                    {
+                        question: "What if the college is not AICTE/UGC approved but claimed to be?",
+                        answer: "Misrepresenting accreditation status is a serious fraud. You can file a case for compensation for loss of academic years, mental agony, and refund of all fees paid."
+                    }
+                ]
+            }
+        }
+    },
+    "courier-logistics-consumer-complaint": {
+        title: "Courier & Logistics Consumer Complaint",
+        hero: {
+            mainTitle: "Courier & Logistics Consumer Complaint",
+            bulletPoints: [
+                "Lost Package Recovery",
+                "Delayed Delivery Compensation",
+                "Damaged Goods Claims",
+                "Legal Notice Drafting"
+            ],
+            testimonial: {
+                text: "The courier company lost my expensive package and offered a meager compensation. VyomBiz helped me fight for the full value and I got it.",
+                author: "Vikram Malhotra",
+                verified: true,
+                avatar: "https://i.pravatar.cc/150?u=vikram"
+            }
+        },
+        tabs: [
+            { id: "overview", label: "Overview" },
+            { id: "types", label: "Types" },
+            { id: "when-to-file", label: "When To File" },
+            { id: "process", label: "Process" },
+            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "faqs", label: "FAQs" }
+        ],
+        sections: {
+            overview: {
+                title: "Courier Complaints – An Overview",
+                image: "https://images.unsplash.com/photo-1566576912906-2531d013e9ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                content: [
+                    "Courier and Logistics services are essential for timely delivery, but issues like delays, lost items, and damages are common.",
+                    "Filing a formal consumer complaint allows you to officially report service failures and seek redressal.",
+                    "Documentation such as tracking numbers, receipts, and communication records is crucial for a strong case."
+                ]
+            },
+            types: {
+                title: "Common Reasons to File",
+                introduction: "Situations where a consumer complaint is valid.",
+                items: [
+                    {
+                        title: "Delivery Delays",
+                        description: "Failure to deliver the package within the promised timeframe.",
+                        example: "Critical documents delivered after the deadline."
+                    },
+                    {
+                        title: "Wrong Delivery",
+                        description: "Delivering an incorrect item, quantity, or to a wrong address.",
+                        example: "Package delivered to a neighbor without consent."
+                    },
+                    {
+                        title: "Service Quality",
+                        description: "Service did not meet reasonable standards (e.g., rude behavior).",
+                        example: "Delivery person mishandling the package visibly."
+                    },
+                    {
+                        title: "Payment Problems",
+                        description: "Incorrect charges, hidden fees, or payment disputes.",
+                        example: "Asking for extra money for doorstep delivery."
+                    },
+                    {
+                        title: "Confidentiality Breach",
+                        description: "Mishandling of personal information or private goods.",
+                        example: "Package opened or tampered with before delivery."
+                    },
+                    {
+                        title: "Missing Notification",
+                        description: "Failure to inform the client about delivery status or delays.",
+                        example: "No tracking updates for days."
+                    },
+                    {
+                        title: "Instruction Failure",
+                        description: "Ignoring special delivery instructions provided by the sender.",
+                        example: "Package left at door despite 'signature required' instruction."
+                    }
+                ]
+            },
+            whenToFile: {
+                title: "Required Documents",
+                content: "Essential documents to support your courier complaint.",
+                parameters: [
+                    {
+                        title: "Contracts",
+                        desc: "Agreements or Receipts/Invoices."
+                    },
+                    {
+                        title: "Proof of Booking",
+                        desc: "Tracking Number and Booking Receipt."
+                    },
+                    {
+                        title: "Evidence",
+                        desc: "Photos of damaged goods or Tracking INFO screenshots."
+                    },
+                    {
+                        title: "ID Proofs",
+                        desc: "Govt ID and Complaint Reference Number."
+                    }
+                ],
+                image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            },
+            process: {
+                title: "Our Resolution Process",
+                introduction: "How Vyombiz helps resolve your logistics grievances.",
+                steps: [
+                    {
+                        title: "Document Collection",
+                        description: "We gather all proofs like tracking info and receipts."
+                    },
+                    {
+                        title: "Notify Brand",
+                        description: "We formally notify the courier company of the grievance."
+                    },
+                    {
+                        title: "Legal Notice",
+                        description: "A legal notice is sent demanding resolution or compensation."
+                    },
+                    {
+                        title: "Prepare Case",
+                        description: "If unresolved, we prepare the necessary legal documents for court."
+                    },
+                    {
+                        title: "File Case",
+                        description: "Our lawyers file the consumer complaint in the appropriate forum."
+                    }
+                ]
+            },
+            whyChoose: {
+                title: "Why Choose Vyombiz?",
+                reasons: [
+                    "Industry Knowledge: We understand the specific challenges in the courier sector.",
+                    "Dedicated Support: Lawyers focused on strengthening your complaint.",
+                    "Clear Communication: We keep you informed at every step of the process.",
+                    "Proven Success: History of effectively resolving courier and logistics complaints.",
+                    "Compensation Focus: We aim to get you fair compensation for your loss."
+                ]
+            },
+            faqs: {
+                title: "Frequently Asked Questions",
+                items: [
+                    {
+                        question: "How will I know if my complaint has been resolved?",
+                        answer: "You will receive official communication from the consumer forum or the courier company regarding the status of your complaint. Additionally, if you use our service, we will keep you updated on every development."
+                    },
+                    {
+                        question: "Can I claim compensation for a lost package?",
+                        answer: "Yes, you can claim compensation for the value of the lost item as well as for any mental harassment or financial loss caused by the negligence of the courier service."
+                    },
+                    {
+                        question: "What proofs are needed to file a complaint?",
+                        answer: "You need proof of booking, tracking details, photographs of damaged goods (if applicable), and correspondence with the courier company."
+                    },
+                    {
+                        question: "Is it necessary to send a legal notice first?",
+                        answer: "While not mandatorily required by law, sending a legal notice is highly recommended as it often resolves the issue without needing to go to court."
+                    },
+                    {
+                        question: "How long does the consumer court take to decide?",
+                        answer: "Consumer courts aim to resolve cases within 3 to 5 months, but it can take longer depending on the specifics of the case and the court's workload."
+                    }
+                ]
+            }
+        }
+    },
+    "ecommerce-consumer-complaint": {
+        title: "E-commerce Consumer Complaint",
+        hero: {
+            mainTitle: "E-commerce Consumer Complaint",
+            bulletPoints: [
+                "Refund & Return Disputes",
+                "Defective Product Claims",
+                "Delivery Delay Compensation",
+                "Legal Notice to Sellers"
+            ],
+            testimonial: {
+                text: "I received a fake product and the seller refused to refund. VyomBiz helped me report it and I got my money back along with compensation.",
+                author: "Rohan Das",
+                verified: true,
+                avatar: "https://i.pravatar.cc/150?u=rohan"
+            }
+        },
+        tabs: [
+            { id: "overview", label: "Overview" },
+            { id: "types", label: "Types" },
+            { id: "when-to-file", label: "When To File" },
+            { id: "process", label: "Process" },
+            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "faqs", label: "FAQs" }
+        ],
+        sections: {
+            overview: {
+                title: "E-commerce Complaints – An Overview",
+                image: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                content: [
+                    "E-commerce disputes are common, involving issues like defective products, late deliveries, and refund refusals.",
+                    "A formal consumer complaint can be lodged against platforms or sellers for unfair trade practices and service deficiencies.",
+                    "Legal intervention ensures that big e-commerce players are held accountable for their actions."
+                ]
+            },
+            types: {
+                title: "Common Reasons to File",
+                introduction: "Situations where you should file an e-commerce complaint.",
+                items: [
+                    {
+                        title: "Product Defects",
+                        description: "Receiving damaged, defective, or poor-quality products.",
+                        example: "Smartphone screen cracked upon delivery."
+                    },
+                    {
+                        title: "Non-Delivery",
+                        description: "Order not delivered within the promised timeframe or at all.",
+                        example: "Package marked as delivered but not received."
+                    },
+                    {
+                        title: "Billing Issues",
+                        description: "Overcharging, unauthorized transactions, or pricing errors.",
+                        example: "Double deduction for a single order."
+                    },
+                    {
+                        title: "Poor Service",
+                        description: "Unresponsive customer support or rude behavior.",
+                        example: "Customer care closing tickets without resolution."
+                    },
+                    {
+                        title: "Fraudulent Activities",
+                        description: "Scams, counterfeit products, or fake listings.",
+                        example: "Receiving a soap bar instead of a mobile phone."
+                    },
+                    {
+                        title: "Data Privacy",
+                        description: "Mishandling of personal data or security breaches.",
+                        example: "Personal details leaked to third-party telemarketers."
+                    },
+                    {
+                        title: "Refund Refusal",
+                        description: "Unjustified rejection of return requests or refunds.",
+                        example: "Seller rejecting return despite valid reason."
+                    }
+                ]
+            },
+            whenToFile: {
+                title: "Required Documents",
+                content: "Essential proofs for your e-commerce complaint.",
+                parameters: [
+                    {
+                        title: "Order Details",
+                        desc: "Order Confirmation Email/Invoice."
+                    },
+                    {
+                        title: "Payment Proof",
+                        desc: "Bank/Card Statement showing transaction."
+                    },
+                    {
+                        title: "Evidence",
+                        desc: "Photos/Videos of Defective Product and Screenshots."
+                    },
+                    {
+                        title: "Communication",
+                        desc: "Email Correspondence with Support/Seller."
+                    }
+                ],
+                image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            },
+            process: {
+                title: "Our Resolution Process",
+                introduction: "How Vyombiz resolves your e-commerce disputes.",
+                steps: [
+                    {
+                        title: "Collect Documents",
+                        description: "We gather necessary proofs like invoices and screenshots."
+                    },
+                    {
+                        title: "Notify Platform",
+                        description: "We formally notify the e-commerce platform/seller."
+                    },
+                    {
+                        title: "Legal Notice",
+                        description: "A strong legal notice is sent demanding immediate redressal."
+                    },
+                    {
+                        title: "Escalation",
+                        description: "If needed, we escalate to consumer forums or courts."
+                    },
+                    {
+                        title: "Resolution",
+                        description: "We aim for a quick refund, replacement, or compensation."
+                    }
+                ]
+            },
+            whyChoose: {
+                title: "Why Choose Vyombiz?",
+                reasons: [
+                    "E-commerce Experts: Deep knowledge of online consumer protection laws.",
+                    "End-to-End Support: From drafting notices to handling court filings.",
+                    "Proven Success: Track record of resolving disputes with major platforms.",
+                    "Hassle-Free: We handle the legal complexities while you relax.",
+                    "Prompt Response: Legal notices often trigger a fast response protecting reputation."
+                ]
+            },
+            faqs: {
+                title: "Frequently Asked Questions",
+                items: [
+                    {
+                        question: "What should I do if I get charged twice for my order?",
+                        answer: "If you are charged twice, contact the e-commerce platform's customer support immediately with transaction details. If they fail to refund, you can raise a dispute with your bank or file a consumer complaint."
+                    },
+                    {
+                        question: "Can I file a complaint if the product delivered is fake?",
+                        answer: "Yes, selling counterfeit products is a serious offense. You can file a complaint for unfair trade practices and seek a refund along with compensation."
+                    },
+                    {
+                        question: "How long can I wait to file a complaint for a defective product?",
+                        answer: "It is advisable to report the defect immediately. Most platforms have a return window (e.g., 7-30 days). if they refuse to accept the return within this period, you can file a complaint."
+                    },
+                    {
+                        question: "Is it possible to take legal action against big e-commerce giants?",
+                        answer: "Yes, consumer laws apply to all sellers, regardless of their size. Consumer courts frequently rule in favor of consumers against major e-commerce platforms for service deficiencies."
+                    },
+                    {
+                        question: "What if the seller refuses to refund money after a return?",
+                        answer: "If the seller refuses a refund after a valid return, you can send a legal notice. If that doesn't work, filing a case in the Consumer Forum is the next step."
+                    }
+                ]
+            }
+        }
+    },
 };
