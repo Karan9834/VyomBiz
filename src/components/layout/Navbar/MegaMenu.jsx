@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
+import { getLinkPath as getUtilsLinkPath } from "../../../utils/navigationUtils";
 
 const getLinkPath = (link, categoryPath, activeSub) => {
     const routeMap = {
@@ -131,11 +131,9 @@ const getLinkPath = (link, categoryPath, activeSub) => {
         "Cheque Bounce Notice": "/cheque-bounce-notice",
         "Caveat Petition": "/caveat-petition",
         "Winding Up of Private Limited Company": "/winding-up-of-private-limited-company",
-        "Annual Compliance of a Pvt. Ltd. Company": "/annual-compliance-pvt-ltd",
         "Appointment and Resignation of Directors": "/appointment-resignation-directors",
         "Change in Directors": "/change-directors",
         "Change in Registered Office": "/change-registered-office",
-        "Event Based Compliances in a Company": "/event-based-compliances",
         "Form AOC-4": "/form-aoc-4",
         "Liquidation of Company": "/liquidation-company",
         "Removal of Director": "/removal-director",

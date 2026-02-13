@@ -15,6 +15,7 @@ import {
 const LitigationLayout = ({ content }) => {
     const [activeTab, setActiveTab] = useState('overview');
     const [scrolled, setScrolled] = useState(false);
+    const [openFaq, setOpenFaq] = useState(null);
     const sectionRefs = {
         overview: useRef(null),
         types: useRef(null),
@@ -81,7 +82,7 @@ const LitigationLayout = ({ content }) => {
                 <div className="max-w-[1440px] mx-auto px-4 md:px-6 relative z-10">
                     {/* Breadcrumb */}
                     <nav className="flex items-center gap-2 text-[13px] font-normal text-slate-500 mb-8">
-                        <a href="/" className="hover:text-blue-600 underline underline-offset-4">Home</a>
+                        <a href="/" className="hover:text-[#005a9c] underline underline-offset-4">Home</a>
                         <span>&gt;</span>
                         <span className="text-slate-600">{title}</span>
                     </nav>
@@ -91,7 +92,7 @@ const LitigationLayout = ({ content }) => {
                         <div className="w-full lg:w-[60%] space-y-10">
                             {/* ISO Badge */}
                             <div className="inline-flex items-center gap-2 bg-[#f0f7ff] border border-blue-100 rounded-full px-4 py-2 shadow-sm">
-                                <div className="bg-blue-600 p-1 rounded-full text-white">
+                                <div className="bg-[#005a9c] p-1 rounded-full text-white">
                                     <ShieldCheck size={14} />
                                 </div>
                                 <span className="text-[13px] font-bold text-[#072b47]">
@@ -107,7 +108,7 @@ const LitigationLayout = ({ content }) => {
                                 {hero.bulletPoints.map((point, i) => (
                                     <li key={i} className="flex items-start gap-4">
                                         <div className="shrink-0 mt-1 bg-white p-0.5">
-                                            <Check size={18} className="text-blue-600 stroke-[3]" />
+                                            <Check size={18} className="text-[#005a9c] stroke-[3]" />
                                         </div>
                                         <span className="text-[17px] text-slate-700 font-medium leading-relaxed">
                                             {point}
@@ -119,7 +120,7 @@ const LitigationLayout = ({ content }) => {
                             {/* Testimonial Card */}
                             <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm max-w-lg mt-12">
                                 <p className="text-[15px] text-slate-600 italic leading-relaxed mb-6">
-                                    "{hero.testimonial.text} <span className="text-blue-600 font-bold cursor-pointer hover:underline">see more...</span>"
+                                    "{hero.testimonial.text} <span className="text-[#005a9c] font-bold cursor-pointer hover:underline">see more...</span>"
                                 </p>
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-4">
@@ -224,12 +225,12 @@ const LitigationLayout = ({ content }) => {
                             <button
                                 key={tab.id}
                                 onClick={() => scrollToSection(tab.id)}
-                                className={`whitespace-nowrap py-4 px-2 text-[15px] font-semibold transition-all relative ${activeTab === tab.id ? 'text-blue-600' : 'text-slate-500 hover:text-slate-800'
+                                className={`whitespace-nowrap py-4 px-2 text-[15px] font-semibold transition-all relative ${activeTab === tab.id ? 'text-[#005a9c]' : 'text-slate-500 hover:text-slate-800'
                                     }`}
                             >
                                 {tab.label}
                                 {activeTab === tab.id && (
-                                    <div className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 rounded-full" />
+                                    <div className="absolute bottom-0 left-0 w-full h-0.5 bg-[#f1a134] rounded-full" />
                                 )}
                             </button>
                         ))}
@@ -241,20 +242,33 @@ const LitigationLayout = ({ content }) => {
             <div className="py-20 bg-white">
                 <div className="max-w-[1440px] mx-auto px-4 md:px-6">
                     <div className="flex flex-col lg:flex-row gap-16 items-start">
-                        {/* Left Content Area */}
-                        <div className="w-full lg:w-[65%] space-y-32">
+                        {/* Main Content Area */}
+                        <div className="w-full space-y-32">
                             {/* Overview Section */}
                             <section id="overview" ref={sectionRefs.overview} className="space-y-10 scroll-mt-32">
                                 <div className="space-y-8 animate-fadeIn">
-                                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-blue-600 pl-6">
+                                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-[#f1a134] pl-6">
                                         {sections.overview.title}
                                     </h2>
-                                    <div className="space-y-6">
-                                        {sections.overview.content.map((p, i) => (
-                                            <p key={i} className="text-[17px] text-slate-600 leading-[1.8] font-normal">
-                                                {p}
-                                            </p>
-                                        ))}
+                                    <div className="flex flex-col lg:flex-row gap-12 items-start justify-between">
+                                        <div className="flex-1 space-y-6">
+                                            {sections.overview.content.map((p, i) => (
+                                                <p key={i} className="text-[17px] text-slate-600 leading-[1.8] font-normal">
+                                                    {p}
+                                                </p>
+                                            ))}
+                                        </div>
+                                        {sections.overview.image && (
+                                            <div className="lg:w-[450px] w-full shrink-0">
+                                                <div className="rounded-3xl overflow-hidden">
+                                                    <img
+                                                        src={sections.overview.image}
+                                                        alt={sections.overview.title}
+                                                        className="w-full h-auto object-cover"
+                                                    />
+                                                </div>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             </section>
@@ -263,25 +277,41 @@ const LitigationLayout = ({ content }) => {
                             {sections.types && (
                                 <section id="types" ref={sectionRefs.types} className="space-y-10 scroll-mt-32">
                                     <div className="space-y-8 animate-fadeIn">
-                                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-blue-600 pl-6">
-                                            {sections.types.title}
-                                        </h2>
-                                        {sections.types.introduction && (
-                                            <p className="text-[17px] text-slate-600 leading-relaxed max-w-3xl">
-                                                {sections.types.introduction}
-                                            </p>
-                                        )}
+                                        <div className="flex flex-col lg:flex-row gap-12 items-start justify-between mb-4">
+                                            <div className="flex-1 space-y-10">
+                                                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-[#f1a134] pl-6">
+                                                    {sections.types.title}
+                                                </h2>
+                                                {sections.types.introduction && (
+                                                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                                        {sections.types.introduction}
+                                                    </p>
+                                                )}
+                                            </div>
+                                            {sections.types.image && (
+                                                <div className="lg:w-[300px] w-full shrink-0 mt-2">
+                                                    <div className="rounded-2xl overflow-hidden">
+                                                        <img
+                                                            src={sections.types.image}
+                                                            alt={sections.types.title}
+                                                            className="w-full h-auto object-cover"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                             {sections.types.items.map((item, i) => (
-                                                <div key={i} className="group p-8 bg-white rounded-3xl border border-slate-100 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300">
-                                                    <div className="mb-6 bg-blue-50 w-12 h-12 rounded-2xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                                                <div key={i} className="group p-8 bg-white rounded-3xl border border-slate-100 hover:shadow-xl hover:shadow-[#005a9c]/5 transition-all duration-300">
+                                                    <div className="mb-6 bg-[#f0f7ff] w-12 h-12 rounded-2xl flex items-center justify-center text-[#005a9c] group-hover:bg-[#005a9c] group-hover:text-white transition-colors duration-300">
                                                         <ShieldCheck size={24} />
                                                     </div>
                                                     <h4 className="text-xl font-bold text-[#072b47] mb-3">{item.title}</h4>
-                                                    <p className="text-slate-600 leading-relaxed text-[15px]">{item.description}</p>
+                                                    <p className="text-slate-600 leading-relaxed text-[15px] underline underline-offset-4 decoration-blue-100 decoration-1">{item.description}</p>
                                                     {item.example && (
                                                         <div className="mt-4 p-4 bg-slate-50 rounded-xl border border-slate-100">
-                                                            <span className="text-[13px] font-bold text-blue-600 uppercase tracking-wider block mb-1">Example:</span>
+                                                            <span className="text-[13px] font-bold text-[#005a9c] uppercase tracking-wider block mb-1">Example:</span>
                                                             <p className="text-[14px] text-slate-500 italic">{item.example}</p>
                                                         </div>
                                                     )}
@@ -296,24 +326,39 @@ const LitigationLayout = ({ content }) => {
                             {sections.whenToFile && (
                                 <section id="when-to-file" ref={sectionRefs['when-to-file']} className="space-y-10 scroll-mt-32">
                                     <div className="space-y-8 animate-fadeIn">
-                                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-blue-600 pl-6">
+                                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-[#f1a134] pl-6">
                                             {sections.whenToFile.title}
                                         </h2>
-                                        <p className="text-[17px] text-slate-600 leading-[1.8]">
-                                            {sections.whenToFile.content}
-                                        </p>
-                                        <div className="grid grid-cols-1 gap-6">
-                                            {sections.whenToFile.parameters.map((param, i) => (
-                                                <div key={i} className="flex gap-6 p-6 bg-slate-50 rounded-2xl border border-slate-100 items-start">
-                                                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0 shadow-sm">
-                                                        <Check className="text-blue-600" size={20} />
-                                                    </div>
-                                                    <div>
-                                                        <h4 className="text-lg font-bold text-[#072b47] mb-1">{param.title}</h4>
-                                                        <p className="text-slate-600">{param.desc}</p>
+                                        <div className="flex flex-col lg:flex-row gap-12 items-start justify-between">
+                                            <div className="flex-1 space-y-8">
+                                                <p className="text-[17px] text-slate-600 leading-[1.8]">
+                                                    {sections.whenToFile.content}
+                                                </p>
+                                                <div className="grid grid-cols-1 gap-6">
+                                                    {sections.whenToFile.parameters.map((param, i) => (
+                                                        <div key={i} className="flex gap-6 p-6 bg-slate-50 rounded-2xl border border-slate-100 items-start">
+                                                            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0 shadow-sm border border-slate-50">
+                                                                <Check className="text-[#005a9c]" size={20} />
+                                                            </div>
+                                                            <div>
+                                                                <h4 className="text-lg font-bold text-[#072b47] mb-1">{param.title}</h4>
+                                                                <p className="text-slate-600">{param.desc}</p>
+                                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                            {sections.whenToFile.image && (
+                                                <div className="lg:w-[450px] w-full shrink-0">
+                                                    <div className="rounded-3xl overflow-hidden">
+                                                        <img
+                                                            src={sections.whenToFile.image}
+                                                            alt={sections.whenToFile.title}
+                                                            className="w-full h-auto object-cover"
+                                                        />
                                                     </div>
                                                 </div>
-                                            ))}
+                                            )}
                                         </div>
                                     </div>
                                 </section>
@@ -322,7 +367,7 @@ const LitigationLayout = ({ content }) => {
                             {/* Process Section */}
                             <section id="process" ref={sectionRefs.process} className="space-y-10 scroll-mt-32">
                                 <div className="space-y-10 animate-fadeIn">
-                                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-blue-600 pl-6">
+                                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-[#f1a134] pl-6">
                                         {sections.process.title}
                                     </h2>
                                     {sections.process.introduction && (
@@ -333,7 +378,7 @@ const LitigationLayout = ({ content }) => {
                                     <div className="space-y-6 relative before:absolute before:left-[19px] before:top-2 before:bottom-2 before:w-0.5 before:bg-blue-100">
                                         {sections.process.steps.map((step, i) => (
                                             <div key={i} className="relative pl-14 group">
-                                                <div className="absolute left-0 top-0 w-10 h-10 bg-white border-2 border-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-sm group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all duration-300 z-10">
+                                                <div className="absolute left-0 top-0 w-10 h-10 bg-white border-2 border-[#f0f7ff] rounded-full flex items-center justify-center text-[#005a9c] font-bold text-sm group-hover:bg-[#005a9c] group-hover:text-white group-hover:border-[#005a9c] transition-all duration-300 z-10">
                                                     {i + 1}
                                                 </div>
                                                 <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100 group-hover:bg-white group-hover:shadow-md transition-all duration-300">
@@ -348,8 +393,8 @@ const LitigationLayout = ({ content }) => {
 
                             {/* CTA Section */}
                             <div className="relative overflow-hidden rounded-[2.5rem] bg-[#072b47] p-10 lg:p-16 text-white text-center">
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
-                                <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl" />
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
+                                <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl" />
 
                                 <div className="relative z-10 space-y-8 max-w-3xl mx-auto">
                                     <h3 className="text-3xl lg:text-4xl font-bold leading-tight">
@@ -372,13 +417,13 @@ const LitigationLayout = ({ content }) => {
                             {/* Why Choose Section */}
                             <section id="why-choose" ref={sectionRefs['why-choose']} className="space-y-10 scroll-mt-32">
                                 <div className="space-y-8 animate-fadeIn">
-                                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-blue-600 pl-6">
+                                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-[#f1a134] pl-6">
                                         {sections.whyChoose.title}
                                     </h2>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         {sections.whyChoose.reasons.map((reason, i) => (
                                             <div key={i} className="flex items-start gap-4 p-6 bg-blue-50/50 rounded-2xl border border-blue-100/50">
-                                                <div className="shrink-0 mt-1 bg-blue-600 rounded-full p-1">
+                                                <div className="shrink-0 mt-1 bg-[#005a9c] rounded-full p-1">
                                                     <Check size={14} className="text-white" />
                                                 </div>
                                                 <p className="text-[17px] text-slate-700 font-medium leading-relaxed">{reason}</p>
@@ -390,37 +435,48 @@ const LitigationLayout = ({ content }) => {
 
                             {/* FAQs Section */}
                             <section id="faqs" ref={sectionRefs.faqs} className="space-y-12 scroll-mt-32">
-                                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-blue-600 pl-6">
-                                    {sections.faqs.title}
-                                </h2>
-
                                 <div className="flex flex-col lg:flex-row gap-12 items-start">
-                                    {/* Sticky Left Image */}
-                                    <div className="w-full lg:w-[40%] sticky top-32">
-                                        <div className="relative rounded-3xl overflow-hidden shadow-2xl overflow-hidden group">
+                                    {/* Sticky Left Image and Title */}
+                                    <div className="w-full lg:w-[40%] sticky top-32 space-y-8">
+                                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-[#f1a134] pl-6">
+                                            {sections.faqs.title}
+                                        </h2>
+                                        <div className="relative rounded-3xl overflow-hidden">
                                             <img
-                                                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                                src={sections.overview.image || "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"}
                                                 alt="Legal Support"
-                                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                                className="w-full h-full object-cover"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-[#072b47]/80 to-transparent flex flex-col justify-end p-8">
                                                 <p className="text-white/90 text-[15px] font-medium italic">
-                                                    "Providing expert legal representation for high-stakes reputation defense cases nationwide."
+                                                    "Providing expert legal representation for high-stakes cases nationwide."
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    {/* Right Questions */}
-                                    <div className="w-full lg:w-[60%] space-y-6">
+                                    {/* Right Questions (Accordion) */}
+                                    <div className="w-full lg:w-[60%] space-y-4">
                                         {sections.faqs.items.map((item, i) => (
-                                            <div key={i} className="group border border-slate-200 rounded-3xl overflow-hidden bg-white hover:border-blue-300 transition-all duration-300">
-                                                <div className="p-8 bg-slate-50 group-hover:bg-blue-50/30 transition-colors font-bold text-[#072b47] text-lg flex justify-between items-center cursor-pointer">
-                                                    {item.question}
-                                                    <ChevronDown className="text-slate-400 group-hover:text-blue-600 transition-colors" />
-                                                </div>
-                                                <div className="p-8 text-slate-600 leading-relaxed text-[16px]">
-                                                    {item.answer}
+                                            <div
+                                                key={i}
+                                                className={`group border rounded-3xl overflow-hidden transition-all duration-300 ${openFaq === i ? 'border-[#f1a134]/50 bg-[#f1a134]/5' : 'border-slate-200 bg-white hover:border-[#f1a134]/30'}`}
+                                            >
+                                                <button
+                                                    onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                                                    className="w-full p-6 lg:p-8 flex justify-between items-center text-left"
+                                                >
+                                                    <span className={`font-bold text-lg transition-colors ${openFaq === i ? 'text-[#005a9c]' : 'text-[#072b47]'}`}>
+                                                        {item.question}
+                                                    </span>
+                                                    <ChevronDown className={`text-slate-400 transition-transform duration-300 ${openFaq === i ? 'rotate-180 text-[#005a9c]' : 'group-hover:text-[#005a9c]'}`} />
+                                                </button>
+                                                <div
+                                                    className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === i ? 'max-h-[500px]' : 'max-h-0'}`}
+                                                >
+                                                    <div className="px-8 pb-8 text-slate-600 leading-relaxed text-[16px] border-t border-slate-100 mt-2 pt-6">
+                                                        {item.answer}
+                                                    </div>
                                                 </div>
                                             </div>
                                         ))}
@@ -429,35 +485,6 @@ const LitigationLayout = ({ content }) => {
                             </section>
                         </div>
 
-                        {/* Right Sidebar Decoration / Image */}
-                        <div className="w-full lg:w-[30%] shrink-0">
-                            <div className="sticky top-24 relative rounded-3xl overflow-hidden bg-slate-50 aspect-[4/5] flex items-center justify-center group shadow-sm border border-slate-100">
-                                {/* Lawyer Illustration Mockup */}
-                                <div className="relative w-full h-full p-8 flex flex-col justify-end overflow-hidden">
-                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[60%] bg-blue-100 rounded-2xl opacity-20 blur-3xl animate-pulse" />
-
-                                    {/* Mock Computer Screen with Lawyer */}
-                                    <div className="relative z-10 bg-white rounded-xl shadow-xl border border-slate-200 p-2 transform -rotate-3 group-hover:rotate-0 transition-transform duration-500">
-                                        <div className="bg-slate-900 rounded-lg aspect-video overflow-hidden relative">
-                                            <img src="https://images.unsplash.com/photo-1556157382-979249746713?auto=format&fit=crop&q=80&w=400" alt="Lawyer" className="w-full h-full object-cover" />
-                                            <div className="absolute bottom-2 left-2 right-2 flex gap-1 justify-center">
-                                                <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
-                                                <div className="w-1.5 h-1.5 rounded-full bg-slate-400" />
-                                                <div className="w-1.5 h-1.5 rounded-full bg-slate-400" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Icons floating */}
-                                    <div className="absolute top-1/4 right-8 bg-white p-3 rounded-2xl shadow-lg border border-slate-50 transform rotate-12 scale-90 group-hover:scale-100 transition-all">
-                                        <Briefcase className="text-blue-600" size={20} />
-                                    </div>
-                                    <div className="absolute top-1/3 left-8 bg-white p-3 rounded-2xl shadow-lg border border-slate-50 transform -rotate-12 scale-90 group-hover:scale-100 transition-all">
-                                        <Star className="text-yellow-400 fill-yellow-400" size={20} />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

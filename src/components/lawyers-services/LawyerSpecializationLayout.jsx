@@ -80,7 +80,7 @@ const LawyerSpecializationLayout = ({
 
                     {/* Breadcrumb */}
                     <div className="flex items-center gap-2 text-[13px] font-normal text-slate-500 mb-8 mt-10">
-                        <a href="/" className="hover:text-blue-600 underline underline-offset-4">Home</a>
+                        <a href="/" className="hover:text-[#005a9c] underline underline-offset-4">Home</a>
                         <span>&gt;</span>
                         <span className="text-slate-600">{title}</span>
                     </div>
@@ -115,8 +115,8 @@ const LawyerSpecializationLayout = ({
                                 </div>
 
                                 <div className="flex items-center gap-3 bg-white border border-slate-100 shadow-sm rounded-xl px-4 py-2.5">
-                                    <div className="bg-green-100 p-1.5 rounded-full">
-                                        <Phone size={16} fill="currentColor" stroke="none" className="text-green-600" />
+                                    <div className="bg-[#f0f7ff] p-1.5 rounded-full">
+                                        <Phone size={16} fill="currentColor" stroke="none" className="text-[#005a9c]" />
                                     </div>
                                     <span className="text-sm font-bold text-slate-700">120+ ongoing calls</span>
                                     <div className="w-2.5 h-2.5 bg-orange-500 rounded-full shadow-[0_0_8px_rgba(249,115,22,0.6)] ml-1" />
@@ -159,19 +159,19 @@ const LawyerSpecializationLayout = ({
                                         <input
                                             type="email"
                                             placeholder="Email"
-                                            className="w-full px-5 py-4 rounded-xl border border-slate-300 bg-slate-50 focus:border-blue-500 focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium"
+                                            className="w-full px-5 py-4 rounded-xl border border-slate-300 bg-slate-50 focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium"
                                         />
                                     </div>
                                     <div className="relative">
                                         <input
                                             type="tel"
                                             placeholder="Mobile Number"
-                                            className="w-full px-5 py-4 rounded-xl border border-slate-300 bg-slate-50 focus:border-blue-500 focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium"
+                                            className="w-full px-5 py-4 rounded-xl border border-slate-300 bg-slate-50 focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium"
                                         />
                                     </div>
 
                                     <div className="text-[11px] text-center text-slate-400 font-bold uppercase tracking-wider">
-                                        By proceeding, you agree to our <a href="#" className="text-blue-500 hover:underline">T&C*</a>
+                                        By proceeding, you agree to our <a href="#" className="text-[#005a9c] hover:underline">T&C*</a>
                                     </div>
 
                                     <button
@@ -312,19 +312,19 @@ const LawyerSpecializationLayout = ({
 
                                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                                                 <div className="flex items-center gap-3 text-[14px] font-bold text-slate-600">
-                                                    <div className="bg-green-100 p-1.5 rounded-lg text-green-600">
+                                                    <div className="bg-[#f0f7ff] p-1.5 rounded-lg text-[#005a9c]">
                                                         <Briefcase size={14} fill="currentColor" stroke="none" />
                                                     </div>
                                                     <span>{lawyer.experience}</span>
                                                 </div>
                                                 <div className="flex items-center gap-3 text-[14px] font-bold text-slate-600">
-                                                    <div className="bg-green-100 p-1.5 rounded-lg text-green-600">
+                                                    <div className="bg-[#f0f7ff] p-1.5 rounded-lg text-[#005a9c]">
                                                         <MapPin size={14} fill="currentColor" stroke="none" />
                                                     </div>
                                                     <span>{lawyer.location}</span>
                                                 </div>
                                                 <div className="flex items-start gap-3 text-[14px] font-bold text-slate-600 col-span-full">
-                                                    <div className="bg-green-100 p-1.5 rounded-lg text-green-600 mt-0.5 shrink-0">
+                                                    <div className="bg-[#f0f7ff] p-1.5 rounded-lg text-[#005a9c] mt-0.5 shrink-0">
                                                         <Scale size={14} fill="currentColor" stroke="none" />
                                                     </div>
                                                     <span className="leading-relaxed">Practice area & skills: {lawyer.skills}</span>
@@ -353,9 +353,9 @@ const LawyerSpecializationLayout = ({
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8">
                         {cities && cities.map((city, idx) => (
-                            <a key={idx} href="#" className="flex items-center gap-3 text-blue-500 hover:text-blue-700 transition-all font-bold text-[16px] group">
-                                <span className="text-blue-300 group-hover:text-blue-600 group-hover:translate-x-1 transition-all">→</span>
-                                <span className="border-b border-transparent group-hover:border-blue-500 pb-0.5">{title} in {city}</span>
+                            <a key={idx} href="#" className="flex items-center gap-3 text-[#005a9c] hover:text-[#004a7c] transition-all font-bold text-[16px] group">
+                                <span className="text-[#f1a134] group-hover:translate-x-1 transition-all">→</span>
+                                <span className="border-b border-transparent group-hover:border-[#005a9c] pb-0.5">{title} in {city}</span>
                             </a>
                         ))}
                     </div>
@@ -387,7 +387,7 @@ const LawyerSpecializationLayout = ({
                                     >
                                         <div className="bg-white p-8 border border-[#072b47] rounded-sm flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
                                             <div className="flex items-start gap-4 mb-6">
-                                                <div className="w-16 h-16 rounded-full overflow-hidden bg-blue-50 flex items-center justify-center shrink-0">
+                                                <div className="w-16 h-16 rounded-full overflow-hidden bg-[#f0f7ff] flex items-center justify-center shrink-0">
                                                     <img
                                                         src={`https://api.dicebear.com/7.x/bottts/svg?seed=${review.name}&backgroundColor=b6e3f4,c0aede,d1d4f9`}
                                                         alt={review.name}
@@ -415,14 +415,14 @@ const LawyerSpecializationLayout = ({
                         {/* Navigation Buttons */}
                         <button
                             onClick={prevSlide}
-                            className="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full border border-slate-300 flex items-center justify-center text-slate-400 bg-white hover:text-blue-600 hover:border-blue-600 transition-all z-10"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full border border-slate-300 flex items-center justify-center text-slate-400 bg-white hover:text-[#005a9c] hover:border-[#005a9c] transition-all z-10"
                             aria-label="Previous"
                         >
                             <ChevronLeft size={24} />
                         </button>
                         <button
                             onClick={nextSlide}
-                            className="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full border border-slate-300 flex items-center justify-center text-slate-400 bg-white hover:text-blue-600 hover:border-blue-600 transition-all z-10"
+                            className="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full border border-slate-300 flex items-center justify-center text-slate-400 bg-white hover:text-[#005a9c] hover:border-[#005a9c] transition-all z-10"
                             aria-label="Next"
                         >
                             <ChevronRight size={24} />

@@ -25,7 +25,8 @@ export const litigationContent = {
         ],
         sections: {
             overview: {
-                title: "What Is Defamation?",
+                title: "Understanding Defamation in India",
+                image: "/lawyer-services-images/defamation-overview.png",
                 content: [
                     "Defamation is the act of communicating a false statement to a third party that results in damaging a person's reputation. It is the act of giving false information about a person that can harm their reputation, lower respect for them, or lead to bad opinions or sentiments against them. Defamation can either be criminal or civil. Types of defamation include libel, slander, false statement, publication, criminal defamation, and civil defamation.",
                     "Defamation litigation involves addressing harm caused by defamatory statements and false claims that damage a person’s reputation. Whether spoken (slander refers) or written (libel generally refers to written or printed words), such statements can have serious consequences. In defamation law, a false statement that is considered defamatory must be made to a third person and result in serious harm or serious financial loss. Both libel and slander fall under defamation and may give rise to a defamation claim, defamation suit, or defamation action in appropriate judicial proceedings.",
@@ -34,6 +35,7 @@ export const litigationContent = {
             },
             types: {
                 title: "Types of Defamation Cases We Handle",
+                image: "/lawyer-services-images/defamation-types.png",
                 introduction: "Spoken defamation or slander, and written statements or libel, both fall under civil liability if they constitute defamation. Defamatory content can include statements implying sexual misconduct, false information, or accusations leading to emotional distress.",
                 items: [
                     {
@@ -80,6 +82,7 @@ export const litigationContent = {
             },
             whenToFile: {
                 title: "When Can You File a Defamation Complaint?",
+                image: "/lawyer-services-images/when-defamation.png",
                 content: "One can start a Defamation litigation when an individual or an ordinary person or entity believes that their reputation has been harmed by false statements made publicly.",
                 parameters: [
                     { title: "Defamatory Statement", desc: "The statement ought to be untrue and have the ability to adversely affect the individual's reputation." },
@@ -126,6 +129,22 @@ export const litigationContent = {
                     {
                         question: "What is the time limit for filing?",
                         answer: "In India, the limitation period for civil defamation is usually 1 year from the date of publication."
+                    },
+                    {
+                        question: "Can a company file a defamation case?",
+                        answer: "Yes, a corporation or company can file a defamation suit if false statements harm its business reputation, financial standing, or goodwill."
+                    },
+                    {
+                        question: "What are the remedies available?",
+                        answer: "Remedies include monetary compensation (damages), a public apology, retraction of the defamatory statement, and permanent injunctions against further publication."
+                    },
+                    {
+                        question: "Is social media defamation actionable?",
+                        answer: "Absolutely. Defamation on platforms like Twitter, Facebook, or Instagram is treated as libel. Courts can order the removal of content and award damages for digital harm."
+                    },
+                    {
+                        question: "What is the difference between Libel and Slander?",
+                        answer: "Libel refers to defamatory statements in a permanent form (writing, pictures, videos), while Slander is temporary or oral (spoken words, gestures)."
                     }
                 ]
             }
@@ -158,6 +177,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Expert Employment & Labor Law Litigation",
+                image: "/lawyer-services-images/employment-dispute-overview.png",
                 content: [
                     "Employment disputes arise when there is a disagreement between an employer and an employee regarding the terms of employment, workplace conditions, or termination. In India, these are primarily governed by the Industrial Disputes Act (1947), the Shops and Establishments Act, and the newly introduced Labour Codes.",
                     "Our legal team specializes in navigating the complex web of labor regulations to protect the rights of both 'workmen' and managerial employees. We provide strategic counsel to resolve conflicts through mediation, conciliation, or rigorous litigation in Labour Courts and Industrial Tribunals.",
@@ -276,6 +296,22 @@ export const litigationContent = {
                     {
                         question: "Can I sue for workplace mental harassment?",
                         answer: "Yes, workplace harassment is actionable. While the POSH Act deals with sexual harassment, general mental harassment can be addressed through civil suits for damages or under specific state-level Shops and Establishment laws."
+                    },
+                    {
+                        question: "Are non-compete clauses valid in India?",
+                        answer: "Post-employment non-compete clauses are generally void under Section 27 of the Contract Act. However, reasonable restrictions during the term of employment are legally enforceable."
+                    },
+                    {
+                        question: "What is a 'Performance Improvement Plan' (PIP)?",
+                        answer: "A PIP is a formal process for underperforming employees. If used maliciously or without basis to force a resignation, it can be challenged as 'constructive discharge'."
+                    },
+                    {
+                        question: "Can I be fired while on maternity leave?",
+                        answer: "No. The Maternity Benefit Act strictly prohibits an employer from dismissing a woman during or on account of her maternity leave. Doing so can lead to severe legal penalties."
+                    },
+                    {
+                        question: "How do I recover unpaid bonuses or commissions?",
+                        answer: "Unpaid dues are governed by the Payment of Bonus Act and your employment contract. We can file a suit for recovery of money or approach the Labour Commissioner for intervention."
                     }
                 ]
             }
@@ -308,6 +344,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Legal Remedy for Dishonoured Cheques",
+                image: "/lawyer-services-images/check-bounce-overview.png",
                 content: [
                     "A cheque bounce (dishonour of cheque) is a serious criminal offense in India under Section 138 of the Negotiable Instruments Act, 1881. It occurs when a cheque is returned by the bank unpaid due to reasons like insufficient funds or account closure.",
                     "The law provides a powerful mechanism for the payee to recover their money. If the drawer fails to pay after receiving a formal demand notice, they can face up to 2 years of imprisonment and a fine of up to twice the cheque amount.",
@@ -421,6 +458,22 @@ export const litigationContent = {
                     {
                         question: "Can I file a civil suit along with a criminal case?",
                         answer: "Yes. You can file a Civil Recovery Suit (Order 37) to recover the money alongside the criminal complaint under Section 138. Both can run simultaneously."
+                    },
+                    {
+                        question: "What if the drawer of the cheque is a company?",
+                        answer: "In such cases, you must sue the company as well as the directors or officers who were in charge of the company's business at the time of the offense."
+                    },
+                    {
+                        question: "Does Section 138 apply to 'Security Cheques'?",
+                        answer: "Yes, as long as there was an existing legally enforceable debt or liability at the time the cheque was presented for payment."
+                    },
+                    {
+                        question: "What is 'Interim Compensation' under Section 143A?",
+                        answer: "The court can order the drawer to pay up to 20% of the cheque amount as interim compensation to the complainant while the trial is still ongoing."
+                    },
+                    {
+                        question: "Can I file a case for a post-dated cheque?",
+                        answer: "Yes. Once the date mentioned on the post-dated cheque arrives and it is presented and subsequently bounced, it qualifies for action under Section 138."
                     }
                 ]
             }
@@ -453,6 +506,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Your Defense in the Digital World",
+                image: "/lawyer-services-images/cyber-crime-litigation-overview.png",
                 content: [
                     "As the world moves online, digital crimes are skyrocketing. Cyber crime litigation in India is primarily governed by the Information Technology Act (2000) and the Indian Penal Code. These laws address unauthorized access, digital fraud, and online harassment.",
                     "Navigating a cybercrime case requires more than just legal knowledge; it requires technical expertise to preserve digital evidence, trace IP addresses, and deal with complex jurisdictional issues. Our team combines legal prowess with cyber-forensic understanding to protect victims of the digital era.",
@@ -566,6 +620,22 @@ export const litigationContent = {
                     {
                         question: "Can I get my money back from a UPI scam?",
                         answer: "If reported within the first 24-72 hours, there is a high probability of the bank freezing the amount in the perpetrator's account. Timely legal intervention is key."
+                    },
+                    {
+                        question: "Can I sue a social media platform for not removing content?",
+                        answer: "Under the IT Rules 2021, if a platform fails to remove prohibited content within 24-36 hours of a valid court order or complaint, they can lose their 'safe harbor' immunity."
+                    },
+                    {
+                        question: "What is 'Phishing' and is it a crime?",
+                        answer: "Phishing involves using deceptive emails or websites to steal sensitive data. It is a serious crime prosecuted under Sections 66C and 66D of the IT Act."
+                    },
+                    {
+                        question: "How is digital evidence proven in court?",
+                        answer: "Digital evidence must be accompanied by a 'Section 65B Certificate' under the Evidence Act, which validates that the data was source-captured without tampering."
+                    },
+                    {
+                        question: "Is online stalking actionable in India?",
+                        answer: "Yes. Online stalking is a criminal offense under Section 354D of the IPC and can also be prosecuted under the IT Act if it involves digital harassment or privacy violation."
                     }
                 ]
             }
@@ -598,6 +668,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Comprehensive Matrimonial Litigation",
+                image: "/lawyer-services-images/contested-divorce-overview.png",
                 content: [
                     "A contested divorce occurs when one spouse does not agree to the divorce or when terms like alimony, custody, or assets cannot be mutually settled. In India, these are primarily governed by personal laws such as the Hindu Marriage Act (1955) or the Special Marriage Act (1954).",
                     "Matrimonial litigation is often emotionally draining and legally complex, requiring a delicate balance of aggressive advocacy and strategic negotiation. Our team provides end-to-end support, from filing the petition and securing interim maintenance to representing you in high-stakes trials in Family Courts.",
@@ -716,6 +787,22 @@ export const litigationContent = {
                     {
                         question: "What is 'Mental Cruelty'?",
                         answer: "Mental cruelty is behavior that causes severe mental pain and suffering, such as humiliation, denial of food/basics, or false accusations of character."
+                    },
+                    {
+                        question: "Can I claim my 'Stridhan' back during a divorce?",
+                        answer: "Yes. Stridhan belongs exclusively to the woman. If the husband or his family refuses to return it, she can file a criminal complaint for criminal breach of trust."
+                    },
+                    {
+                        question: "Is 'Irretrievable Breakdown' a valid ground for divorce?",
+                        answer: "While not explicitly in the Hindu Marriage Act, the Supreme Court often uses its special powers to grant divorce if a marriage is completely dead and reconciliation is impossible."
+                    },
+                    {
+                        question: "Can I stop my spouse from taking children abroad?",
+                        answer: "Yes. You can move the court for an injunction or a 'Look Out Circular' (LOC) to prevent the children from being moved out of the country without your consent."
+                    },
+                    {
+                        question: "What happens if my spouse doesn't appear in court?",
+                        answer: "If the spouse avoids summons repeatedly, the court can proceed 'Ex-Parte', meaning it will hear only your side and can grant a divorce decree in their absence."
                     }
                 ]
             }
@@ -747,10 +834,12 @@ export const litigationContent = {
         ],
         sections: {
             overview: {
-                title: "US Litigation Service",
+                title: "POSH Compliance: Legal Framework",
+                image: "/lawyer-services-images/POSH-compliance-overview.png",
                 content: [
-                    "Navigating the US legal system can be daunting for Indian companies. Our US litigation services provide the bridge needed to handle complex corporate and individual legal issues in American jurisdictions.",
-                    "We work with a network of licensed US attorneys to provide cost-effective and strategy-driven support for litigation, arbitration, and mediation."
+                    "The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 (POSH Act) is a mandatory legislation in India. It requires every organization with 10 or more employees to constitute an Internal Committee (IC) to address complaints of sexual harassment.",
+                    "Compliance with POSH is not just a legal requirement but a commitment to creating a safe and inclusive workspace. Failure to comply can lead to heavy fines, cancellation of business licenses, and severe reputational damage.",
+                    "VyomBiz provides end-to-end POSH solutions, from legal policy drafting and IC constitution to employee sensitization training and external member support. We ensure your organization is 100% compliant and your employees feel protected."
                 ]
             },
             faqs: {
@@ -771,6 +860,22 @@ export const litigationContent = {
                     {
                         question: "What happens if a false complaint is filed?",
                         answer: "If the IC concludes that the allegation was malicious or the evidence was forged, action can be taken against the complainant according to the company's service rules."
+                    },
+                    {
+                        question: "Is POSH applicable to firms with fewer than 10 employees?",
+                        answer: "An Internal Committee (IC) is not mandatory for firms with <10 employees. However, any harassment complaint in such cases is handled by the District 'Local Committee'."
+                    },
+                    {
+                        question: "What is 'Quid Pro Quo' harassment?",
+                        answer: "It refers to situations where an employment benefit (like a promotion) is offered in exchange for sexual favors, or where refusal leads to a threat to the employee's career."
+                    },
+                    {
+                        question: "Can the IC order monetary compensation to the victim?",
+                        answer: "Yes. The IC can recommend that the employer deduct a sum from the respondent's wages or order the respondent to pay a lump sum to the victim for mental trauma and lost opportunities."
+                    },
+                    {
+                        question: "Is 'Hostile Work Environment' part of POSH?",
+                        answer: "Yes. Conduct that creates an intimidating, offensive, or terrifying workplace environment qualifies as sexual harassment, even if it doesn't involve a direct request for favors."
                     }
                 ]
             }
@@ -803,6 +908,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Global Legal Strategy for Indian Businesses",
+                image: "/lawyer-services-images/US-litigation-overview.png",
                 content: [
                     "Expanding into the US market brings immense opportunities but also complex legal challenges. US litigation service provides the essential bridge for Indian companies to effectively navigate the American judicial system.",
                     "Whether you are dealing with a contract dispute in New York or a patent infringement in California, our US litigation support team ensures that your interests are protected across jurisdictions. We specialize in cross-border coordination, ensuring that your Indian legal strategy aligns with US procedural requirements.",
@@ -911,6 +1017,22 @@ export const litigationContent = {
                     {
                         question: "Do I need to travel to the US for the case?",
                         answer: "Not necessarily. Modern US courts allow many hearings and even depositions to be conducted via video conferencing, saving significant travel costs."
+                    },
+                    {
+                        question: "Can a US court judgment be enforced in India?",
+                        answer: "Yes, if the US state is a 'reciprocating territory' and the judgment is conclusive as per Section 13 of the Code of Civil Procedure (CPC) in India."
+                    },
+                    {
+                        question: "What are 'Punitive Damages' in US litigation?",
+                        answer: "Unlike India, US courts can award 'Punitive Damages' intended to punish the defendant for egregious conduct, which can be much higher than the actual financial loss."
+                    },
+                    {
+                        question: "What is a 'Class Action' lawsuit?",
+                        answer: "It is a case where one or more plaintiffs sue on behalf of a larger group of people. Indian companies often face these in the US for securities or mass-tort issues."
+                    },
+                    {
+                        question: "How long does the 'Discovery' phase last?",
+                        answer: "Discovery typically lasts between 6 to 18 months. It is a grueling process of exchanging every relevant internal document and email with the opposing side."
                     }
                 ]
             }
@@ -943,6 +1065,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Strategic IP Rights Enforcement",
+                image: "/lawyer-services-images/inellectual-property-overview.png",
                 content: [
                     "In the modern economy, Intellectual Property (IP) is often a company's most valuable asset. Infringement occurs when your registered trademarks, patents, or copyrighted works are used without permission, leading to direct financial loss and irreparable brand dilution.",
                     "India’s legal system has evolved rapidly with the establishment of Specialized Commercial Courts to handle high-value IP disputes. From 'Passing Off' actions for unregistered marks to complex patent litigation, we provide a robust legal shield to protect your competitive edge.",
@@ -1056,6 +1179,22 @@ export const litigationContent = {
                     {
                         question: "How much can I claim in damages?",
                         answer: "You can claim the profits the infringer made, the losses you suffered, and in cases of 'flagrant' infringement, the court may award additional punitive damages."
+                    },
+                    {
+                        question: "What is a 'Cease and Desist' notice in IP?",
+                        answer: "It is a formal legal warning sent to an infringer to stop the unauthorized use immediately. In many cases, this resolves the dispute without needing a full trial."
+                    },
+                    {
+                        question: "Can I protect a 'Business Method' in India?",
+                        answer: "Generally, no. Pure business methods are excluded from patenting under Section 3(k) of the Patents Act, though the underlying technology or software might be protected."
+                    },
+                    {
+                        question: "What is 'Genericide' in trademarks?",
+                        answer: "It occurs when a brand name becomes so common (like 'Cellophane') that it loses its distinctiveness and legal protection as a trademark. We help brands prevent this."
+                    },
+                    {
+                        question: "How long is a trademark registration valid?",
+                        answer: "In India, a trademark is valid for 10 years from the date of application and can be renewed indefinitely every 10 years."
                     }
                 ]
             }
@@ -1088,6 +1227,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Resolving Commercial Contractual Conflicts",
+                image: "/lawyer-services-images/contract-dispute-overview.png",
                 content: [
                     "Contracts form the backbone of every business relationship. When one party fails to fulfill their obligations—whether it's non-payment, delay in delivery, or breach of confidentiality—it can paralyze operations and lead to massive financial losses.",
                     "Under the Indian Contract Act, 1872, you have powerful remedies ranging from 'Specific Performance' (forcing the other party to deliver) to the recovery of 'Liquidated Damages'. Our commercial litigation team focuses on the path of least resistance: securing your rights while minimizing the time spent in court.",
@@ -1201,6 +1341,22 @@ export const litigationContent = {
                     {
                         question: "Can I sue for a verbal contract in India?",
                         answer: "Yes, verbal contracts are valid under Indian law, but they are harder to prove. We use email trails, WhatsApp chats, and bank statements as evidence."
+                    },
+                    {
+                        question: "What is 'Force Majeure' and when does it apply?",
+                        answer: "It is a clause that excuses a party from performance due to unforeseeable 'Acts of God' (like COVID-19). Its applicability depends strictly on the contract's specific wording."
+                    },
+                    {
+                        question: "Can I get an injunction against a Bank Guarantee?",
+                        answer: "Courts are very reluctant to stop bank guarantee payments. It is only possible in cases of 'egregious fraud' that the bank is aware of, or 'irretrievable injustice'."
+                    },
+                    {
+                        question: "What is 'Quantum Meruit'?",
+                        answer: "It is a legal principle meaning 'as much as earned'. If a contract is terminated unexpectedly, you can claim payment for the value of the work you have already completed."
+                    },
+                    {
+                        question: "What is the difference between Arbitration and Litigation?",
+                        answer: "Arbitration is a private, confidential trial by an expert arbitrator chosen by the parties. Litigation is the public court process which is usually slower but less expensive in terms of forum fees."
                     }
                 ]
             }
@@ -1233,6 +1389,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Comprehensive Real Estate Litigation Support",
+                image: "/lawyer-services-images/property -litigation-overview.png",
                 content: [
                     "Real estate is often the most significant investment for any individual or corporation. Property disputes in India are notoriously complex, ranging from inheritance conflicts (partition suits) to landlord-tenant battles and title challenges.",
                     "Navigating 'Immovable Property' law requires a deep understanding of the Transfer of Property Act, the Limitation Act, and state-specific Rent Control Acts. Our property litigation team focuses on 'unblocking' your assets through strategic filings, injunctive reliefs, and rigorous evidence presentation.",
@@ -1346,6 +1503,22 @@ export const litigationContent = {
                     {
                         question: "Does a 'Will' guarantee property ownership?",
                         answer: "A Will is a strong document, but it can be challenged on grounds of authenticity or mental state. In some cities, a 'Probate' from the court is mandatory to make the Will effective."
+                    },
+                    {
+                        question: "What is a 'Mutation Entry' in land records?",
+                        answer: "Mutation is the process of updating the owner's name in revenue records (like 7/12 extract or Khata) after a sale or inheritance. It is vital for paying property taxes."
+                    },
+                    {
+                        question: "Can I sell a property that is currently under litigation?",
+                        answer: "Under the rule of 'Lis Pendens', any sale is subject to the final court decree. While not strictly illegal, it is difficult to find buyers for disputed properties."
+                    },
+                    {
+                        question: "What is an 'Occupancy Certificate' (OC) and why is it important?",
+                        answer: "An OC is issued by the local body stating the building is safe and built as per plans. Living in a building without an OC is technically illegal and risky."
+                    },
+                    {
+                        question: "Can a daughter claim a share in ancestral property?",
+                        answer: "Yes. After the 2005 amendment to the Hindu Succession Act, daughters have the exact same rights as sons in 'coparcenary' (ancestral) property by birth."
                     }
                 ]
             }
@@ -1378,6 +1551,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "The Most Dignified Way to Separate",
+                image: "/lawyer-services-images/mutual-divorce-overview.png",
                 content: [
                     "Mutual Divorce (under Section 13B of the Hindu Marriage Act or Section 28 of the Special Marriage Act) is the quickest and least painful way for couples to part ways when they agree that reconciliation is not possible.",
                     "Unlike contested divorces, this process focusing on 'Settlement' rather than 'Allegation'. It requires both spouses to mutually agree on critical factors such as child custody, alimony, and the division of shared assets and liabilities.",
@@ -1486,6 +1660,22 @@ export const litigationContent = {
                     {
                         question: "Is the settlement agreement legally binding?",
                         answer: "Yes. Once the MOU is part of the court's decree, it is a legally binding document. Failure to follow its terms (like not paying alimony) can lead to 'Contempt of Court'."
+                    },
+                    {
+                        question: "What happens to the child's custody in mutual divorce?",
+                        answer: "Parents must decide on Physical and Legal custody. The court will only approve the divorce if it is satisfied that the child's future is secure and well-provided for."
+                    },
+                    {
+                        question: "Can I get a mutual divorce without paying alimony?",
+                        answer: "Yes. If both spouses are financially independent and mutually agree to waive alimony in writing, the court will accept and record this in the final decree."
+                    },
+                    {
+                        question: "Do we need to separate all our joint bank accounts first?",
+                        answer: "It is highly recommended to settle all joint finances, loans, and credit cards before filing the 1st motion to ensure there are no pending liabilities after the divorce."
+                    },
+                    {
+                        question: "Is 'Virtual' presence allowed for NRI mutual divorces?",
+                        answer: "Yes. Most Family Courts now allow NRIs to record their statements via video link through the Indian Embassy or a designated official, saving travel time and costs."
                     }
                 ]
             }
@@ -1518,6 +1708,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "The Legal Bridge to Reconciliation",
+                image: "/lawyer-services-images/restitution-overview.png",
                 content: [
                     "Restitution of Conjugal Rights (RCR) is a unique legal remedy under Section 9 of the Hindu Marriage Act. It is designed for situations where one spouse has withdrawn from the society of the other without any 'reasonable excuse'.",
                     "Unlike a divorce which seeks to end a marriage, an RCR petition seeks the intervention of the court to preserve the marital bond. It provides a formal platform where the causes of the separation can be analyzed, and the court can order the spouse to return to the matrimonial home.",
@@ -1613,6 +1804,22 @@ export const litigationContent = {
                     {
                         question: "Does RCR apply to all religions?",
                         answer: "While Section 9 specifically applies to Hindus, similar provisions for 'Restitution of Conjugal Rights' exist under the Special Marriage Act and other personal laws."
+                    },
+                    {
+                        question: "Can a husband file for RCR?",
+                        answer: "Yes. Section 9 is gender-neutral and can be invoked by either the husband or the wife if the other spouse has left without a reasonable excuse."
+                    },
+                    {
+                        question: "Is RCR a mandatory step before filing for divorce?",
+                        answer: "No. You can file for divorce directly if you have grounds. RCR is usually for those who sincerely want to save the marriage or establish the fact of desertion."
+                    },
+                    {
+                        question: "Can I claim maintenance during an RCR proceeding?",
+                        answer: "Yes. Even in an RCR case, a wife can claim interim maintenance for herself and the children under Section 24 of the Hindu Marriage Act."
+                    },
+                    {
+                        question: "What is the success rate of RCR cases?",
+                        answer: "Success varies, but roughly 30-40% of cases lead to reconciliation through court-mandated mediation, while others may eventually progress toward divorce."
                     }
                 ]
             }
@@ -1645,6 +1852,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "The Homebuyer's Shield (RERA Act, 2016)",
+                image: "/lawyer-services-images/rera-overveiw.png",
                 content: [
                     "The Real Estate (Regulation and Development) Act, 2016 (RERA) was introduced to bring transparency and accountability to the real estate sector. It provides an efficient and specialized forum for homebuyers to resolve grievances against builders and developers.",
                     "Before RERA, homebuyers were often at the mercy of developers, facing years of delay and hidden charges. Today, RERA mandates that every project over 500 sqm must be registered, and 70% of buyer funds must be kept in a dedicated escrow account for construction.",
@@ -1758,6 +1966,22 @@ export const litigationContent = {
                     {
                         question: "Can I claim interest if I don't want to leave the project?",
                         answer: "Yes. You can stay in the project and claim monthly interest for every month of delay from the builder until they hand over the possession."
+                    },
+                    {
+                        question: "What is 'Project Completion' vs 'Actual Possession'?",
+                        answer: "Completion means the structure is ready (CC). Possession is when you get the keys after the OC is issued. RERA protection extends until the actual transfer of possession."
+                    },
+                    {
+                        question: "Does RERA help with 'Hidden Charges' in the bill?",
+                        answer: "Yes. Builders are legally prohibited from charging anything not explicitly mentioned in the Agreement to Sale or the RERA-approved project filing."
+                    },
+                    {
+                        question: "What is the 5-year 'Defect Liability' period?",
+                        answer: "Within 5 years of possession, the builder is legally bound to fix any structural or quality defects free of charge within 30 days of you reporting them."
+                    },
+                    {
+                        question: "Can a group of buyers file a single joint complaint?",
+                        answer: "Yes. RERA allows an 'Association of Allottees' to file a single joint complaint, which carries more weight and significantly reduces the per-person legal cost."
                     }
                 ]
             }
