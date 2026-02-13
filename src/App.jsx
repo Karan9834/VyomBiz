@@ -9,6 +9,10 @@ import Home from "./pages/home/Home";
 import Startup from "./pages/startup/Startup";
 import IPTrademark from "./pages/ip-trademark/IPTrademark";
 import TrademarkRegistration from "./pages/ip-trademark/Trademarks India/TrademarkRegistration";
+import TrademarkAssignment from "./pages/ip-trademark/Trademarks India/TrademarkAssignment";
+import TrademarkClassesFinder from "./pages/ip-trademark/Trademarks India/TrademarkClassesFinder";
+import TrademarkOpposition from "./pages/ip-trademark/Trademarks India/TrademarkOpposition";
+import IntellectualPropertyDispute from "./pages/ip-trademark/Trademarks India/IntellectualPropertyDispute";
 import TrademarkWatchServices from "./pages/ip-trademark/TM Watch/TrademarkWatchServices";
 import InternationalTrademarkRegistration from "./pages/ip-trademark/InternationalTM/InternationalTrademarkRegistration";
 import DesignRegistration from "./pages/ip-trademark/Designs/DesignRegistration";
@@ -29,6 +33,11 @@ import LegalNotice from "./pages/compliance/Legal Services/LegalNotice";
 import LegalHeirCertificate from "./pages/compliance/Legal Services/LegalHeirCertificate";
 import LeaseAgreementDrafting from "./pages/compliance/Legal Services/LeaseAgreementDrafting";
 import ConsumerComplaint from "./pages/compliance/Legal Services/ConsumerComplaint";
+import Automobile from "./pages/lawyers-services/Consumer Complaint/Automobile";
+import CourierLogistics from "./pages/lawyers-services/Consumer Complaint/CourierLogistics";
+import Bank from "./pages/lawyers-services/Consumer Complaint/Bank";
+import Ecommerce from "./pages/lawyers-services/Consumer Complaint/E-commerce";
+import Education from "./pages/lawyers-services/Consumer Complaint/Education";
 import ChequeBounceNotice from "./pages/compliance/Legal Services/ChequeBounceNotice";
 import ChangeinDirectors from "./pages/compliance/CompanySecretarial/ChangeinDirectors";
 import AnnualComplianceofaPvtLtdCompany from "./pages/compliance/CompanySecretarial/AnnualComplianceofaPvtLtdCompany";
@@ -64,6 +73,13 @@ import NGOCSRCOnsultancy from "./pages/startup/NGOTrust/NGOCSRCOnsultancy";
 import NGOIncomeTaxAdvisory from "./pages/startup/NGOTrust/NGOIncomeTaxAdvisory";
 import NGOAccounting from "./pages/startup/NGOTrust/NGOAccounting";
 import NGOProjectReport from "./pages/startup/NGOTrust/NGOProjectReport";
+import GSTAnnualReturnFiling from "./pages/compliance/Tax Filing - Compliance/GSTAnnualReturnFiling";
+import GSTComplianceServices from "./pages/compliance/Tax Filing - Compliance/GSTComplianceServices";
+import GSTRegistration from "./pages/compliance/Tax Filing - Compliance/GSTRegistration";
+import IncomeTaxReturnFiling from "./pages/compliance/Tax Filing - Compliance/IncomeTaxReturnFiling";
+import TDSReturnFiling from "./pages/compliance/Tax Filing - Compliance/TDSReturnFiling";
+
+
 
 import CompanyRegistrationUSA from "./pages/startup/Global Incorporation/CompanyRegistrationUSA";
 import CompanyRegistrationUK from "./pages/startup/Global Incorporation/CompanyRegistrationUK";
@@ -209,6 +225,11 @@ function App() {
           <Route path="/ngo-income-tax-advisory" element={<NGOIncomeTaxAdvisory />} />
           <Route path="/ngo-accounting" element={<NGOAccounting />} />
           <Route path="/ngo-project-report" element={<NGOProjectReport />} />
+          <Route path="/gst-annual-return-filing" element={<GSTAnnualReturnFiling />} />
+          <Route path="/gst-compliance-services" element={<GSTComplianceServices />} />
+          <Route path="/gst-registration" element={<GSTRegistration />} />
+          <Route path="/income-tax-return-filing" element={<IncomeTaxReturnFiling />} />
+          <Route path="/tds-return-filing" element={<TDSReturnFiling />} />
 
           <Route path="/usa-incorporation" element={<CompanyRegistrationUSA />} />
           <Route path="/uk-incorporation" element={<CompanyRegistrationUK />} />
@@ -260,6 +281,10 @@ function App() {
 
           {/* IP & Trademark Routes */}
           <Route path="/trademark-registration" element={<TrademarkRegistration />} />
+          <Route path="/trademark-assignment" element={<TrademarkAssignment />} />
+          <Route path="/trademark-classes-finder" element={<TrademarkClassesFinder />} />
+          <Route path="/trademark-opposition" element={<TrademarkOpposition />} />
+          <Route path="/intellectual-property-dispute" element={<IntellectualPropertyDispute />} />
           <Route path="/trademark-watch-services" element={<TrademarkWatchServices />} />
           <Route path="/international-trademark-registration" element={<InternationalTrademarkRegistration />} />
           <Route path="/design-registration" element={<DesignRegistration />} />
@@ -280,6 +305,24 @@ function App() {
           <Route path="/renewable-energy-business-setup" element={<RenewableEnergyBusiness />} />
           <Route path="/fire-equipment-plant-setup" element={<FireEquipmentPlantSetup />} />
           <Route path="/virtual-office-space-setup" element={<VirtualOfficeSpace />} />
+<<<<<<< Updated upstream
+=======
+          <Route path="/succession-certificate-in-india" element={<SuccessionCertificateinIndia />} />
+          <Route path="/section-8-demand-notice" element={<Section8DemandNotice />} />
+          <Route path="/rera-complaint" element={<RERAComplaint />} />
+          <Route path="/public-interest-litigation" element={<PublicInterestLitigation />} />
+          <Route path="/legal-notice" element={<LegalNotice />} />
+          <Route path="/legal-heir-certificate" element={<LegalHeirCertificate />} />
+          <Route path="/lease-agreement-drafting" element={<LeaseAgreementDrafting />} />
+          <Route path="/consumer-complaint" element={<ConsumerComplaint />} />
+          <Route path="/consumer-complaint/automobile" element={<Automobile />} />
+          <Route path="/consumer-complaint/courier-logistics" element={<CourierLogistics />} />
+          <Route path="/consumer-complaint/bank" element={<Bank />} />
+          <Route path="/consumer-complaint/ecommerce" element={<Ecommerce />} />
+          <Route path="/consumer-complaint/education" element={<Education />} />
+          <Route path="/cheque-bounce-notice" element={<ChequeBounceNotice />} />
+          <Route path="/caveat-petition" element={<CaveatPetition />} />
+>>>>>>> Stashed changes
 
 
 
