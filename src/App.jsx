@@ -38,6 +38,17 @@ import CourierLogistics from "./pages/lawyers-services/Consumer Complaint/Courie
 import Bank from "./pages/lawyers-services/Consumer Complaint/Bank";
 import Ecommerce from "./pages/lawyers-services/Consumer Complaint/E-commerce";
 import Education from "./pages/lawyers-services/Consumer Complaint/Education";
+import Travel from "./pages/lawyers-services/Consumer Complaint/Travel";
+import StreamingPlatforms from "./pages/lawyers-services/Consumer Complaint/StreamingPlatforms";
+import RetailBusiness from "./pages/lawyers-services/Consumer Complaint/RetailBusiness";
+import RealEstate from "./pages/lawyers-services/Consumer Complaint/RealEstate";
+import Medical from "./pages/lawyers-services/Consumer Complaint/Medical";
+import ITCompanies from "./pages/lawyers-services/Consumer Complaint/ITCompanies";
+import Grievances from "./pages/lawyers-services/Consumer Complaint/Grievances";
+import Insurance from "./pages/lawyers-services/Consumer Complaint/Insurance";
+import HomeAppliances from "./pages/lawyers-services/Consumer Complaint/HomeAppliances";
+import Hotels from "./pages/lawyers-services/Consumer Complaint/Hotels";
+import Investment from "./pages/lawyers-services/Consumer Complaint/Investment";
 import ChequeBounceNotice from "./pages/compliance/Legal Services/ChequeBounceNotice";
 import ChangeinDirectors from "./pages/compliance/CompanySecretarial/ChangeinDirectors";
 import AnnualComplianceofaPvtLtdCompany from "./pages/compliance/CompanySecretarial/AnnualComplianceofaPvtLtdCompany";
@@ -281,6 +292,17 @@ function App() {
           <Route path="/consumer-complaint/bank" element={<Bank />} />
           <Route path="/consumer-complaint/ecommerce" element={<Ecommerce />} />
           <Route path="/consumer-complaint/education" element={<Education />} />
+          <Route path="/consumer-complaint/grievances" element={<Grievances />} />
+          <Route path="/consumer-complaint/travel" element={<Travel />} />
+          <Route path="/consumer-complaint/streaming-platforms" element={<StreamingPlatforms />} />
+          <Route path="/consumer-complaint/retail-business" element={<RetailBusiness />} />
+          <Route path="/consumer-complaint/real-estate" element={<RealEstate />} />
+          <Route path="/consumer-complaint/medical" element={<Medical />} />
+          <Route path="/consumer-complaint/it-companies" element={<ITCompanies />} />
+          <Route path="/consumer-complaint/insurance" element={<Insurance />} />
+          <Route path="/consumer-complaint/home-appliances" element={<HomeAppliances />} />
+          <Route path="/consumer-complaint/hotels" element={<Hotels />} />
+          <Route path="/consumer-complaint/investment" element={<Investment />} />
           <Route path="/cheque-bounce-notice" element={<ChequeBounceNotice />} />
           <Route path="/caveat-petition" element={<CaveatPetition />} />
 

@@ -2,9 +2,8 @@ import React from 'react';
 import LitigationLayout from '../../../components/litigation/LitigationLayout';
 import { litigationContent } from '../../../constants/litigation-content';
 
-const Ecommerce = () => {
-    return <LitigationLayout content={litigationContent['ecommerce-consumer-complaint']} />;
+const StreamingPlatforms = () => {
+    return <LitigationLayout content={litigationContent['streaming-platforms-consumer-complaint']} />;
 };
 
-export default Ecommerce;
-
+export default StreamingPlatforms;
