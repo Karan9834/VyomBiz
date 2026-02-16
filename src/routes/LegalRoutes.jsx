@@ -28,6 +28,23 @@ const LegalNotice = lazy(() => import('../pages/compliance/Legal Services/LegalN
 const LegalHeirCertificate = lazy(() => import('../pages/compliance/Legal Services/LegalHeirCertificate'));
 const LeaseAgreementDrafting = lazy(() => import('../pages/compliance/Legal Services/LeaseAgreementDrafting'));
 const ConsumerComplaint = lazy(() => import('../pages/compliance/Legal Services/ConsumerComplaint'));
+const Automobile = lazy(() => import('../pages/lawyers-services/Consumer Complaint/Automobile'));
+const CourierLogistics = lazy(() => import('../pages/lawyers-services/Consumer Complaint/CourierLogistics'));
+const Bank = lazy(() => import('../pages/lawyers-services/Consumer Complaint/Bank'));
+const Ecommerce = lazy(() => import('../pages/lawyers-services/Consumer Complaint/E-commerce'));
+const Education = lazy(() => import('../pages/lawyers-services/Consumer Complaint/Education'));
+const Travel = lazy(() => import('../pages/lawyers-services/Consumer Complaint/Travel'));
+const StreamingPlatforms = lazy(() => import('../pages/lawyers-services/Consumer Complaint/StreamingPlatforms'));
+const RetailBusiness = lazy(() => import('../pages/lawyers-services/Consumer Complaint/RetailBusiness'));
+const RealEstate = lazy(() => import('../pages/lawyers-services/Consumer Complaint/RealEstate'));
+const Medical = lazy(() => import('../pages/lawyers-services/Consumer Complaint/Medical'));
+const ITCompanies = lazy(() => import('../pages/lawyers-services/Consumer Complaint/ITCompanies'));
+const Grievances = lazy(() => import('../pages/lawyers-services/Consumer Complaint/Grievances'));
+const Insurance = lazy(() => import('../pages/lawyers-services/Consumer Complaint/Insurance'));
+const HomeAppliances = lazy(() => import('../pages/lawyers-services/Consumer Complaint/HomeAppliances'));
+const Hotels = lazy(() => import('../pages/lawyers-services/Consumer Complaint/Hotels'));
+const Investment = lazy(() => import('../pages/lawyers-services/Consumer Complaint/Investment'));
+
 const ChequeBounceNotice = lazy(() => import('../pages/compliance/Legal Services/ChequeBounceNotice'));
 const CaveatPetition = lazy(() => import('../pages/compliance/Legal Services/CaveatPetition'));
 
@@ -64,6 +81,22 @@ const LegalRoutes = [
     <Route key="leg-heir" path="/legal-heir-certificate" element={<LegalHeirCertificate />} />,
     <Route key="leas-agr" path="/lease-agreement-drafting" element={<LeaseAgreementDrafting />} />,
     <Route key="cons-comp" path="/consumer-complaint" element={<ConsumerComplaint />} />,
+    <Route key="cons-auto" path="/consumer-complaint/automobile" element={<Automobile />} />,
+    <Route key="cons-courier" path="/consumer-complaint/courier-logistics" element={<CourierLogistics />} />,
+    <Route key="cons-bank" path="/consumer-complaint/bank" element={<Bank />} />,
+    <Route key="cons-ecom" path="/consumer-complaint/ecommerce" element={<Ecommerce />} />,
+    <Route key="cons-edu" path="/consumer-complaint/education" element={<Education />} />,
+    <Route key="cons-griev" path="/consumer-complaint/grievances" element={<Grievances />} />,
+    <Route key="cons-travel" path="/consumer-complaint/travel" element={<Travel />} />,
+    <Route key="cons-stream" path="/consumer-complaint/streaming-platforms" element={<StreamingPlatforms />} />,
+    <Route key="cons-retail" path="/consumer-complaint/retail-business" element={<RetailBusiness />} />,
+    <Route key="cons-real" path="/consumer-complaint/real-estate" element={<RealEstate />} />,
+    <Route key="cons-med" path="/consumer-complaint/medical" element={<Medical />} />,
+    <Route key="cons-it" path="/consumer-complaint/it-companies" element={<ITCompanies />} />,
+    <Route key="cons-ins" path="/consumer-complaint/insurance" element={<Insurance />} />,
+    <Route key="cons-home" path="/consumer-complaint/home-appliances" element={<HomeAppliances />} />,
+    <Route key="cons-hotel" path="/consumer-complaint/hotels" element={<Hotels />} />,
+    <Route key="cons-inv" path="/consumer-complaint/investment" element={<Investment />} />,
     <Route key="chq-bnc-not" path="/cheque-bounce-notice" element={<ChequeBounceNotice />} />,
     <Route key="cav-pet" path="/caveat-petition" element={<CaveatPetition />} />,
 

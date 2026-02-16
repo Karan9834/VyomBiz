@@ -30,8 +30,19 @@ const RevivalofStruckOffCompanies = lazy(() => import('../pages/compliance/Compa
 const SPICEForm = lazy(() => import('../pages/compliance/CompanySecretarial/SPICEForm'));
 const Section8CompanyCompliance = lazy(() => import('../pages/compliance/CompanySecretarial/Section8CompanyCompliance'));
 
+const GSTAnnualReturnFiling = lazy(() => import('../pages/compliance/Tax Filing - Compliance/GSTAnnualReturnFiling'));
+const GSTComplianceServices = lazy(() => import('../pages/compliance/Tax Filing - Compliance/GSTComplianceServices'));
+const GSTRegistration = lazy(() => import('../pages/compliance/Tax Filing - Compliance/GSTRegistration'));
+const IncomeTaxReturnFiling = lazy(() => import('../pages/compliance/Tax Filing - Compliance/IncomeTaxReturnFiling'));
+const TDSReturnFiling = lazy(() => import('../pages/compliance/Tax Filing - Compliance/TDSReturnFiling'));
+
 const ComplianceRoutes = [
     <Route key="compliance" path="/compliance" element={<Compliance />} />,
+    <Route key="gst-ann-ret" path="/gst-annual-return-filing" element={<GSTAnnualReturnFiling />} />,
+    <Route key="gst-comp" path="/gst-compliance-services" element={<GSTComplianceServices />} />,
+    <Route key="gst-reg" path="/gst-registration" element={<GSTRegistration />} />,
+    <Route key="it-ret" path="/income-tax-return-filing" element={<IncomeTaxReturnFiling />} />,
+    <Route key="tds-ret" path="/tds-return-filing" element={<TDSReturnFiling />} />,
     <Route key="close-llp" path="/closing-a-limited-liability-partnership" element={<ClosingLLP />} />,
     <Route key="ann-filing-llp" path="/annual-filing-for-llp" element={<AnnualFilingLLP />} />,
     <Route key="chg-obj-clause" path="/change-in-object-clause" element={<ChangeInObjectClause />} />,
