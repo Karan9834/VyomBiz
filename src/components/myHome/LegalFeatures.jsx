@@ -3,7 +3,7 @@ import { BarChart3, TrendingUp, Lightbulb, CheckCircle2 } from "lucide-react";
 
 const FeatureCard = ({ title, desc, icon: Icon, color, bgColor, isActive }) => (
   <div className={`p-8 rounded-[2rem] flex flex-col items-center text-center transition-all duration-300 h-full shadow-xl ${isActive
-    ? "bg-[#072b47] text-white"
+    ? "bg-[#072b47] text-white border border-[#072b47]"
     : "bg-white text-slate-700 border border-slate-100"
     }`}>
     <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-6 text-2xl font-bold shadow-sm transition-colors duration-300 ${isActive
@@ -74,7 +74,7 @@ const LegalFeatures = () => {
   ];
 
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-12 bg-[#ecf2fd] overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 flex flex-col lg:flex-row gap-16 items-start">
 
         {/* Left Side - Grid Cards */}
@@ -92,20 +92,20 @@ const LegalFeatures = () => {
 
         {/* Right Side - Features Content */}
         <div className="lg:w-[55%] pt-4">
-          <h2 className="text-4xl font-black text-[#072b47] mb-8">Features of Our Legal Service</h2>
-          <p className="text-slate-600 text-lg mb-10 leading-relaxed font-medium">
+          <h2 className="text-4xl font-black text-[#072b47] mb-6 leading-tight">Features of Our Legal Service</h2>
+          <p className="text-slate-600 text-lg mb-8 leading-relaxed font-medium">
             VyomBiz is a tech-driven platform committed to delivering professional services all over India. We deliver exceptional services to our clients, and our dedication and commitment can be seen in the following ways:
           </p>
 
-          <div className="space-y-8">
+          <div className="space-y-4">
             {features.map((item, index) => (
               <div key={index} className="flex gap-4 items-start group">
-                <div className="mt-1 shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center group-hover:bg-blue-600 transition-colors duration-300">
+                <div className="mt-1.5 shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center group-hover:bg-blue-600 transition-colors duration-300">
                   <CheckCircle2 size={16} className="text-blue-600 group-hover:text-white transition-colors duration-300" />
                 </div>
                 <div>
                   <h4 className="text-[#072b47] font-bold text-lg mb-1 group-hover:text-blue-600 transition-colors">{item.title}:</h4>
-                  <p className="text-slate-500 font-medium leading-relaxed text-[15px]">{item.desc}</p>
+                  <p className="text-slate-500 font-medium leading-normal text-[15px]">{item.desc}</p>
                 </div>
               </div>
             ))}

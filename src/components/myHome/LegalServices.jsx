@@ -83,34 +83,34 @@ const LegalServices = () => {
   const currentCards = options.find((opt) => opt.id === selectedOption).cards;
 
   return (
-    <section className="py-16 bg-slate-50">
+    <section className="py-10 bg-slate-50">
       {/* Heading */}
       <div className="text-center mb-12 px-4">
         <h2 className="text-4xl font-bold text-black mb-4 tracking-tight">Legal Help Across Wide Range of Services</h2>
         <div className="w-16 h-1 bg-[#f1a134] mx-auto rounded mb-6"></div>
-        <p className="text-gray-700 text-sm max-w-4xl mx-auto leading-relaxed">
+        <p className="text-gray-700 text-sm md:text-base lg:text-lg max-w-4xl mx-auto font-normal tracking-wide mt-4">
           Vyombiz focuses predominantly on assisting entrepreneurs or SMEs by providing services such as Business Registration, Government Registration, Regulatory Measures, Tax Filing, IPR, and much more.
         </p>
       </div>
 
       {/* Main Content */}
-      <div className="max-w-[1440px] mx-auto px-4 md:px-6 flex flex-col md:flex-row gap-0">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row gap-0">
         {/* Left side - Dark Blue Sidebar */}
-        <div className="md:w-[30%] bg-[#005a9c] rounded-2xl p-6 flex flex-col gap-0 relative">
+        <div className="md:w-[30%] bg-[#072b47] rounded-2xl p-6 flex flex-col gap-0 relative">
           {options.map((option) => (
             <button
               key={option.id}
               onClick={() => setSelectedOption(option.id)}
               className={`flex items-center gap-3 p-4 transition-all duration-300 text-left relative ${selectedOption === option.id
-                ? "bg-white text-[#005a9c] -mx-6 px-10 shadow-lg"
+                ? "bg-white text-[#072b47] -mx-6 px-10 shadow-lg"
                 : "bg-transparent text-white hover:bg-white/10 rounded-lg"
                 }`}
             >
-              <div className={`shrink-0 ${selectedOption === option.id ? "text-red-500" : "text-white"}`}>
+              <div className={`shrink-0 ${selectedOption === option.id ? "text-[#f1a134]" : "text-white"}`}>
                 <BarChart3 className="w-full h-full" />
               </div>
               <div className="flex-1">
-                <div className={`font-bold text-sm ${selectedOption === option.id ? "text-[#005a9c]" : "text-white"}`}>
+                <div className={`font-bold text-sm ${selectedOption === option.id ? "text-[#072b47]" : "text-white"}`}>
                   {option.name}
                 </div>
                 <div className={`text-xs mt-0.5 ${selectedOption === option.id ? "text-slate-600" : "text-white/80"}`}>
@@ -136,13 +136,13 @@ const LegalServices = () => {
             <div key={index} className="flex flex-col p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all group relative min-h-[180px]">
               <div className="flex gap-4">
                 {/* Chart Icon */}
-                <div className="shrink-0 w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center text-red-600">
+                <div className="shrink-0 w-10 h-10 bg-[#f1a134]/10 rounded-lg flex items-center justify-center text-[#f1a134]">
                   <BarChart3 className="w-full h-full" strokeWidth={2.5} />
                 </div>
 
                 {/* Text Content */}
                 <div className="flex-1 pb-12">
-                  <h4 className="font-bold text-[#005a9c] text-base mb-2 leading-tight">
+                  <h4 className="font-bold text-[#072b47] text-base mb-2 leading-tight">
                     {card.title}
                   </h4>
                   <p className="text-slate-600 text-sm leading-relaxed line-clamp-3">
@@ -152,7 +152,7 @@ const LegalServices = () => {
               </div>
 
               {/* Circular Arrow Button */}
-              <button className="absolute bottom-6 right-6 w-10 h-10 bg-[#005a9c] hover:bg-[#004a7c] text-white rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110">
+              <button className="absolute bottom-6 right-6 w-10 h-10 bg-[#072b47] hover:bg-[#0a3a5e] text-white rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110">
                 <ArrowRight size={20} strokeWidth={2.5} />
               </button>
             </div>

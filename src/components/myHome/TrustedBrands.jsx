@@ -16,7 +16,7 @@ const brandLogos = [
 
 const TrustedBrands = () => {
   return (
-    <section className="py-16 bg-white text-center overflow-hidden">
+    <section className="py-10 bg-white text-center overflow-hidden">
       {/* Heading */}
       <h2 className="text-xl font-bold mb-14">
         1 Lakh+ Global Brands That Trust Us!

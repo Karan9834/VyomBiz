@@ -7,7 +7,7 @@ const Media = lazy(() => import('../pages/company/Media'));
 const Partner = lazy(() => import('../pages/company/Partner'));
 const Carrers = lazy(() => import('../pages/Carrers'));
 const Reviews = lazy(() => import('../pages/Reviews'));
-const Contact = lazy(() => import('../components/Contact/ContactUs'));
+const Contact = lazy(() => import('../pages/company/Contact'));
 const WorkAtVyomBiz = lazy(() => import('../components/Contact/WorkAtVyombiz'));
 
 const Learning = lazy(() => import('../pages/resources/Learning'));

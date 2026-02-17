@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../../components/myHome/Hero";
+import BrandLogos from "../../components/myHome/BrandLogos";
 import PremiumPlatform from "../../components/myHome/PremiumPlatform";
 import WorkingProcess from "../../components/myHome/WorkingProcess";
 import StartCompliance from "../../components/myHome/StartCompliance";
@@ -12,10 +13,14 @@ import OldVsNewWay from "../../components/myHome/OldVsNewWay";
 import Testimonials from "../../components/myHome/Testimonials";
 import SuccessStory from "../../components/myHome/SuccessStory";
 
+import SuccessMantra from "../../components/myHome/SuccessMantra";
+
 const Home = () => {
     return (
         <>
             <Hero />
+            <BrandLogos />
+            <SuccessMantra />
             <PremiumPlatform />
             <StartCompliance />
             <WorkingProcess />
@@ -26,7 +31,7 @@ const Home = () => {
             <TrustedBrands />
             {/* <AppDownload /> */}
             <Testimonials />
-            <SuccessStory />
+            {/* <SuccessStory /> */}
         </>
     );
 };

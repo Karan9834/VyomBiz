@@ -34,7 +34,30 @@ const Footer = () => {
             </div>
 
             {/* 2. MAIN CATEGORIES GRID */}
-            <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-16">
+            <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-12 pb-16">
+                {/* Logo & Info Column */}
+                <div className="lg:col-span-2">
+                    <img
+                        src="/logo/vyombiz-logo-png.png"
+                        alt="VyomBiz Logo"
+                        className="h-12 w-auto object-contain mb-6"
+                    />
+                    <p className="text-white/70 text-base font-medium leading-relaxed max-w-sm mb-6">
+                        Empowering startups and established businesses with AI-driven compliance, legal, and growth solutions. Your partner in building a smarter business.
+                    </p>
+                    <div className="flex gap-4">
+                        <div className="bg-white/10 p-2.5 rounded-full hover:bg-[#f1a134] cursor-pointer transition-all group">
+                            <Facebook size={18} fill="currentColor" strokeWidth={0} />
+                        </div>
+                        <div className="bg-white/10 p-2.5 rounded-full hover:bg-[#f1a134] cursor-pointer transition-all group">
+                            <Twitter size={18} fill="currentColor" strokeWidth={0} />
+                        </div>
+                        <div className="bg-white/10 p-2.5 rounded-full hover:bg-[#f1a134] cursor-pointer transition-all group">
+                            <Linkedin size={18} fill="currentColor" strokeWidth={0} />
+                        </div>
+                    </div>
+                </div>
+
                 {Object.entries(FOOTER_LINKS).map(([title, links]) => (
                     <div key={title}>
                         <h3 className="text-[#f1a134] font-black text-lg mb-8 tracking-widest">{title}</h3>
@@ -49,19 +72,11 @@ const Footer = () => {
                 ))}
             </div>
 
-            {/* 3. SOCIALS & SECONDARY LINKS BAR */}
+            {/* 3. SECONDARY LINKS BAR */}
             <div className="bg-[#f1a134] py-5 px-6">
-                <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-                    {/* Social Icons */}
-                    <div className="flex gap-3">
-                        {[Facebook, Twitter, Instagram, Linkedin, Youtube].map((Icon, idx) => (
-                            <div key={idx} className="bg-[#063970]/20 p-2.5 rounded-full hover:bg-black/30 cursor-pointer transition-all group">
-                                <Icon size={18} fill="white" strokeWidth={0} className="text-white" />
-                            </div>
-                        ))}
-                    </div>
+                <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-center gap-6">
                     {/* Menu Links */}
-                    <div className="flex flex-wrap justify-start gap-x-6 gap-y-2 text-[15px] font-semibold text-white">
+                    <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-[15px] font-semibold text-white uppercase tracking-wider">
                         {SECONDARY_FOOTER_LINKS.map(item => (
                             <Link key={item.name} to={item.path} className="hover:text-[#072b47] cursor-pointer transition-all hover:underline">
                                 {item.name}
