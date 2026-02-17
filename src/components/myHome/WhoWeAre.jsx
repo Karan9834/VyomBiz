@@ -1,6 +1,7 @@
 import React from "react";
 import { CheckCircle, Play } from "lucide-react";
-import processImage from "/images.jpeg";
+import processImage from "/Home-page/who-we-are.png";
+import CTAButton from "../common/CTAButton";
 
 const WhoWeAre = () => {
   const processSteps = [
@@ -12,17 +13,17 @@ const WhoWeAre = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-slate-50">
-      <div className="max-w-[1440px] mx-auto px-4 md:px-6">
+    <section className="py-12 bg-gradient-to-b from-white to-slate-50">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-[#f1a134] text-lg font-bold mb-4 tracking-wide">
-            A business consulting company that constitutes faith.
-          </p>
           <h2 className="text-4xl font-bold text-black mb-4 tracking-tight">
             Who We Are
           </h2>
-          <div className="w-16 h-1 bg-[#f1a134] mx-auto rounded"></div>
+          <p className="text-[#f1a134] text-lg font-bold mb-4 tracking-wide">
+            A business consulting company that constitutes faith.
+          </p>
+          <div className="w-16 h-1 bg-[#f1a134] mx-auto rounded mt-4"></div>
         </div>
 
         {/* Main Content - Image with Overlay */}
@@ -48,7 +49,7 @@ const WhoWeAre = () => {
                 </h3>
 
                 {/* Process Steps */}
-                <div className="space-y-4 md:space-y-5">
+                <div className="space-y-4 md:space-y-5 mb-10">
                   {processSteps.map((step, index) => (
                     <div
                       key={index}
@@ -67,6 +68,11 @@ const WhoWeAre = () => {
                   ))}
                 </div>
 
+                {/* CTA Button */}
+                <div className="mt-4">
+                  <CTAButton label="Get Started" className="!px-10 !py-4 !text-lg" />
+                </div>
+
               </div>
             </div>
 
@@ -79,24 +85,6 @@ const WhoWeAre = () => {
           </div>
         </div>
 
-        {/* Bottom Stats Section */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {[
-            { number: "10+", label: "Years of Excellence", color: "bg-blue-50 text-blue-600" },
-            { number: "50K+", label: "Happy Clients", color: "bg-green-50 text-green-600" },
-            { number: "99%", label: "Success Rate", color: "bg-orange-50 text-orange-600" },
-          ].map((stat, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border border-slate-100"
-            >
-              <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full ${stat.color} mb-4`}>
-                <span className="text-2xl font-black">{stat.number}</span>
-              </div>
-              <p className="text-slate-700 font-bold text-base">{stat.label}</p>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

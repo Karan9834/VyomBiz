@@ -54,7 +54,7 @@ export default function Navbar() {
     return (
         <nav ref={ref} className="sticky top-0 z-[100] font-sans">
             {/* Header Content Wrapper with Ruler & Shadow */}
-            <div className="bg-white border-b border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.35)] relative z-20">
+            <div className="bg-[#072b47] relative z-20">
                 <div className="max-w-[1440px] mx-auto h-16 px-4 md:px-6 flex justify-between items-center gap-2">
 
                     {/* Logo Section */}
@@ -67,7 +67,7 @@ export default function Navbar() {
                         {NAV_LINKS.map(item => (
                             <li key={item.name}
                                 onClick={() => setActiveTop(activeTop === item.name ? null : item.name)}
-                                className={`px-3 h-full flex items-center gap-1 text-[16px] font-semibold tracking-tighter cursor-pointer transition-all border-b-2 border-transparent ${activeTop === item.name ? "text-[#f1a134] border-[#f1a134]" : "text-slate-700 hover:text-blue-600"}`}>
+                                className={`px-3 h-full flex items-center gap-1 text-[16px] font-semibold tracking-tighter cursor-pointer transition-all border-b-2 border-transparent ${activeTop === item.name ? "text-[#f1a134] border-[#f1a134]" : "text-white/90 hover:text-[#f1a134]"}`}>
                                 {item.name} <ChevronDown size={14} className={`mt-0.5 transition-transform ${activeTop === item.name ? "rotate-180" : ""}`} />
                             </li>
                         ))}
@@ -75,36 +75,36 @@ export default function Navbar() {
 
                     {/* Action Icons Section */}
                     <div className="flex items-center gap-2 md:gap-4">
-                        {/* Mobile Specific Icons (Visible on Mobile, semi-hidden/integrated on Desktop) */}
+                        {/* Mobile Specific Icons */}
                         <div className="flex items-center gap-3 mr-1 lg:hidden">
                             <a href="https://wa.me/yournumber" target="_blank" rel="noreferrer">
-                                <div className="w-10 h-10 bg-[#25D366]/10 rounded-full flex items-center justify-center text-[#25D366]">
+                                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white">
                                     <MessageCircle size={20} fill="currentColor" strokeWidth={0} />
                                 </div>
                             </a>
                             <a href="tel:+919121230280">
-                                <div className="w-10 h-10 bg-[#072b47]/10 rounded-full flex items-center justify-center text-[#072b47]">
+                                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white">
                                     <Phone size={20} fill="currentColor" strokeWidth={0} />
                                 </div>
                             </a>
                         </div>
 
                         {/* Desktop Only Icons */}
-                        <div className="hidden lg:flex items-center gap-5 border border-slate-200 bg-slate-50/50 rounded-full px-5 py-2.5 ml-2">
+                        <div className="hidden lg:flex items-center gap-5 border border-white/20 bg-white/5 rounded-full px-5 py-2.5 ml-2">
                             <Phone size={20} className="text-[#f1a134] cursor-pointer hover:scale-110 transition-transform" onClick={() => setContact(!contact)} />
-                            <Mail size={20} className="text-blue-500 cursor-pointer hover:scale-110 transition-transform" onClick={() => setContact(!contact)} />
-                            <MessageCircle size={20} className="text-green-500 cursor-pointer hover:scale-110 transition-transform" onClick={() => setContact(!contact)} />
+                            <Mail size={20} className="text-white cursor-pointer hover:scale-110 transition-transform" onClick={() => setContact(!contact)} />
+                            <MessageCircle size={20} className="text-green-400 cursor-pointer hover:scale-110 transition-transform" onClick={() => setContact(!contact)} />
                         </div>
 
-                        {/* Mobile & Tablet Hamburger (Opens Sidebar/Mobile Menu) */}
-                        <div className="xl:hidden p-2 hover:bg-slate-100 rounded-lg cursor-pointer transition-colors" onClick={() => setHamburger(!hamburger)}>
-                            {hamburger ? <X size={28} strokeWidth={3} /> : <Menu size={28} strokeWidth={3} className="text-slate-700" />}
+                        {/* Mobile & Tablet Hamburger */}
+                        <div className="xl:hidden p-2 hover:bg-white/10 rounded-lg cursor-pointer transition-colors" onClick={() => setHamburger(!hamburger)}>
+                            {hamburger ? <X size={28} strokeWidth={3} className="text-white" /> : <Menu size={28} strokeWidth={3} className="text-white" />}
                         </div>
 
-                        {/* Desktop Hamburger (Opens Dropdown) */}
-                        <div className="hidden xl:block p-2 hover:bg-slate-100 rounded-lg cursor-pointer transition-colors"
+                        {/* Desktop Hamburger */}
+                        <div className="hidden xl:block p-2 hover:bg-white/10 rounded-lg cursor-pointer transition-colors"
                             onClick={() => setHamburger(!hamburger)}>
-                            <Menu size={28} strokeWidth={3} className={`transition-colors ${hamburger ? "text-blue-600" : "text-slate-700"}`} />
+                            <Menu size={28} strokeWidth={3} className={`transition-colors ${hamburger ? "text-[#f1a134]" : "text-white"}`} />
                         </div>
                     </div>
                 </div>

@@ -10,8 +10,8 @@ const stats = [
 
 const SuccessStory = () => {
   return (
-    <section className="bg-blue-600 py-16 text-white">
-      <div className="container mx-auto px-4">
+    <section className="bg-blue-600 py-10 text-white">
+      <div className="max-w-7xl mx-auto px-4">
         {/* Section Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold">Our Success Story</h2>
