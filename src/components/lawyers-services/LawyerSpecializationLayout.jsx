@@ -75,7 +75,12 @@ const LawyerSpecializationLayout = ({
         <div className="bg-white min-h-screen font-sans text-slate-900">
 
             {/* 1. Hero Section */}
-            <section className="relative bg-white pt-6 pb-16 lg:pt-8 lg:pb-20 overflow-hidden border-b border-slate-50">
+            <section className="relative pt-6 pb-16 lg:pt-8 lg:pb-20 overflow-hidden border-b border-slate-50">
+                {/* Background Image */}
+                <div
+                    className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+                    style={{ backgroundImage: "url('/lawyer-service-hero-section-img/hero-section-bg-img.png')" }}
+                />
                 <div className="max-w-[1440px] mx-auto px-4 md:px-6 relative z-10">
 
                     {/* Breadcrumb */}

@@ -56,6 +56,7 @@ const ConsumerComplaint = () => {
                 heroTitleSuffix="Complaint"
                 heroSubtitle="Fight for Your Consumer Rights"
                 heroDescription="File a formal complaint against defective products, deficiency in service, or unfair trade practices. We assist you in sending legal notices and filing cases in Consumer Court."
+                bgImage="/lawyer-service-hero-section-img/hero-section-bg-img.png"
                 whatsIncludedList={[
                     "Legal Notice Drafting",
                     "Case Filing Support",

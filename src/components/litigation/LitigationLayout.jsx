@@ -69,7 +69,12 @@ const LitigationLayout = ({ content }) => {
     return (
         <div className="bg-white min-h-screen font-sans text-slate-900">
             {/* 1. Hero Section */}
-            <section className="relative pt-6 pb-16 lg:pt-10 lg:pb-24 bg-white overflow-hidden">
+            <section className="relative pt-6 pb-16 lg:pt-10 lg:pb-24 overflow-hidden">
+                {/* Background Image */}
+                <div
+                    className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+                    style={{ backgroundImage: "url('/lawyer-service-hero-section-img/hero-section-bg-img.png')" }}
+                />
                 {/* Background Pattern (Subtle stripes) */}
                 <div className="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none overflow-hidden">
                     <div className="absolute top-0 right-0 w-full h-full rotate-45 transform translate-x-1/2 -translate-y-1/2">

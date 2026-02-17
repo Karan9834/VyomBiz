@@ -56,6 +56,7 @@ const PublicInterestLitigation = () => {
                 heroTitleSuffix="(PIL)"
                 heroSubtitle="Justice for the Public Good"
                 heroDescription="File a PIL to protect public interest, enforce human rights, and hold authorities accountable. Expert legal assistance for filing in High Courts and the Supreme Court."
+                bgImage="/lawyer-service-hero-section-img/hero-section-bg-img.png"
                 whatsIncludedList={[
                     "Drafting of Writ Petition",
                     "Filing in High Court/Supreme Court",
