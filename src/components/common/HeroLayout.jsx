@@ -21,7 +21,8 @@ const HeroLayout = ({
     ],
     formTitle = "Get Free Expert Consultation",
     offerBannerTitle = "Republic Day",
-    offerBannerPrice = "₹499 — ₹0"
+    offerBannerPrice = "₹499 — ₹0",
+    bgImage = ""
 }) => {
     const [whatsappEnabled, setWhatsappEnabled] = useState(true);
 
@@ -38,11 +39,21 @@ const HeroLayout = ({
 
             {/* Main Hero Section */}
             <section className="relative lg:min-h-[calc(100vh-64px-36px)] flex items-center overflow-hidden py-12 lg:py-0">
-                {/* Background Design (Diagonal Shapes) */}
-                <div className="absolute top-0 right-0 w-[45%] h-full hidden lg:block pointer-events-none transition-transform duration-1000">
-                    <div className="absolute top-[-10%] right-[-10%] w-[120%] h-[70%] bg-[#1e40af] transform rotate-[-15deg] origin-top-right" />
-                    <div className="absolute bottom-[-10%] right-[-10%] w-[120%] h-[50%] bg-[#f1a134] transform rotate-[-15deg] origin-bottom-right" />
-                </div>
+                {/* Background Design */}
+                {bgImage ? (
+                    <>
+                        <div
+                            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+                            style={{ backgroundImage: `url('${bgImage}')` }}
+                        />
+                        <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px] z-[1]" />
+                    </>
+                ) : (
+                    <div className="absolute top-0 right-0 w-[45%] h-full hidden lg:block pointer-events-none transition-transform duration-1000">
+                        <div className="absolute top-[-10%] right-[-10%] w-[120%] h-[70%] bg-[#1e40af] transform rotate-[-15deg] origin-top-right" />
+                        <div className="absolute bottom-[-10%] right-[-10%] w-[120%] h-[50%] bg-[#f1a134] transform rotate-[-15deg] origin-bottom-right" />
+                    </div>
+                )}
 
                 <div className="container mx-auto px-6 lg:px-12 xl:pl-32 relative z-10 w-full">
                     <div className="grid lg:grid-cols-12 gap-8 items-center">
