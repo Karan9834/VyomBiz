@@ -1,217 +1,151 @@
-import React, { useState } from "react";
-import { CheckCircle2, Star, ChevronRight, Phone, MessageSquare } from "lucide-react";
+import React from "react";
+import { Phone, Star, CheckCircle2, ChevronRight, Users, Scale, ThumbsUp, Briefcase } from 'lucide-react';
 
 /**
  * Universal Hero Layout for Registration Pages
+ * Updated to match the Finance Lawyer page styling as per user request.
  */
 const HeroLayout = ({
-    announcementText = "We are India's leading brand for Business Registration.",
     heroTitlePrefix = "",
     heroTitleMain = "Registration",
     heroTitleSuffix = "in India",
-    heroSubtitle = "Avail 50% Off – Professional Services",
+    heroSubtitle = "",
     heroDescription = "Start your business journey with expert legal assistance and 100% money-back guarantee.",
-    whatsIncludedTitle = "What's included?",
-    whatsIncludedList = [],
-    successRateText = "Successfully Registered 50k+ Companies, 99% Success Rate",
     stats = [
-        { count: "42803+", label: "Happy Clients", icon: "🤝" },
-        { count: "3500+", label: "Expert Advisors", icon: "👥" },
-        { count: "50+", label: "Branch Offices", icon: "🏢" }
+        { count: "5,00,000+", label: "Happy User" },
+        { count: "1,00,000+", label: "Cases Resolved" },
+        { count: "300+", label: "Expert Advisors" },
+        { count: "50+", label: "Services" }
     ],
-    formTitle = "Get Free Expert Consultation",
-    offerBannerTitle = "Republic Day",
-    offerBannerPrice = "₹499 — ₹0",
-    bgImage = ""
+    formTitle = "Facing a Legal Issue? Connect with an Expert Lawyer Now!",
+    bgImage = "/lawyer-service-hero-section-img/hero-section-bg-img.png"
 }) => {
-    const [whatsappEnabled, setWhatsappEnabled] = useState(true);
 
     return (
-        <div className="relative bg-[#FFFAF5]">
-            {/* Top Announcement Bar */}
-            <div className="bg-[#FFF8ED] py-1.5 border-b border-orange-100/50">
-                <div className="container mx-auto px-6 text-center">
-                    <p className="text-[12px] md:text-[13px] font-medium text-slate-500">
-                        {announcementText} — <span className="text-[#f1a134] font-bold cursor-pointer hover:underline">Start your dream business with us!</span>
-                    </p>
+        <section className="relative pt-6 pb-16 lg:pt-8 lg:pb-20 overflow-hidden border-b border-slate-50 bg-white min-h-screen font-sans text-slate-900">
+            {/* Background Image */}
+            <div
+                className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+                style={{ backgroundImage: `url('${bgImage}')` }}
+            />
+
+            <div className="max-w-[1440px] mx-auto px-4 md:px-6 relative z-10">
+
+                {/* Breadcrumb - Dynamic based on title */}
+                <div className="flex items-center gap-2 text-[13px] font-normal text-slate-500 mb-8 mt-10">
+                    <a href="/" className="hover:text-[#005a9c] underline underline-offset-4">Home</a>
+                    <span>&gt;</span>
+                    <span className="text-slate-600">{heroTitleMain} {heroTitleSuffix}</span>
                 </div>
-            </div>
 
-            {/* Main Hero Section */}
-            <section className="relative lg:min-h-[calc(100vh-64px-36px)] flex items-center overflow-hidden py-12 lg:py-0">
-                {/* Background Design */}
-                {bgImage ? (
-                    <>
-                        <div
-                            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-                            style={{ backgroundImage: `url('${bgImage}')` }}
-                        />
-                        <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px] z-[1]" />
-                    </>
-                ) : (
-                    <div className="absolute top-0 right-0 w-[45%] h-full hidden lg:block pointer-events-none transition-transform duration-1000">
-                        <div className="absolute top-[-10%] right-[-10%] w-[120%] h-[70%] bg-[#1e40af] transform rotate-[-15deg] origin-top-right" />
-                        <div className="absolute bottom-[-10%] right-[-10%] w-[120%] h-[50%] bg-[#f1a134] transform rotate-[-15deg] origin-bottom-right" />
-                    </div>
-                )}
+                <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start mt-10">
 
-                <div className="container mx-auto px-6 lg:px-12 xl:pl-32 relative z-10 w-full">
-                    <div className="grid lg:grid-cols-12 gap-8 items-center">
+                    {/* Left Content */}
+                    <div className="w-full lg:w-[60%] space-y-8">
+                        <h1 className="text-4xl lg:text-5xl font-semibold text-[#072b47] leading-[1.15] tracking-tight">
+                            {heroTitlePrefix && <span>{heroTitlePrefix} </span>}
+                            {heroTitleMain} <br className="hidden lg:block" />
+                            {heroTitleSuffix}
+                        </h1>
 
-                        {/* Left Content */}
-                        <div className="lg:col-span-7 py-4 lg:py-0">
-                            <h1 className="text-3xl lg:text-5xl font-[900] text-[#111827] mb-3 leading-tight tracking-tight">
-                                {heroTitlePrefix && <span>{heroTitlePrefix} </span>}
-                                <span className="text-[#f1a134]">{heroTitleMain}</span> {heroTitleSuffix}
-                            </h1>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                            {heroDescription}
+                        </p>
 
-                            <h2 className="text-lg lg:text-2xl font-black text-slate-800 mb-4 italic">
-                                {heroSubtitle}
-                            </h2>
-
-                            <p className="text-slate-500 font-bold text-[15px] leading-relaxed mb-6 max-w-xl">
-                                {heroDescription}
-                            </p>
-
-                            <div className="mb-6">
-                                <p className="text-[#f1a134] font-black text-[15px] mb-3 tracking-wide uppercase">{whatsIncludedTitle}</p>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-2.5 gap-x-6">
-                                    {whatsIncludedList.map((item, idx) => (
-                                        <div key={idx} className="flex items-center gap-2.5">
-                                            <CheckCircle2 size={18} className="text-[#1e40af] shrink-0" strokeWidth={3} />
-                                            <span className="font-bold text-slate-700 text-sm">{item}</span>
+                        {/* Status Pills */}
+                        <div className="flex flex-wrap items-center gap-4">
+                            <div className="flex items-center gap-3 bg-white border border-slate-100 shadow-sm rounded-xl px-4 py-2.5">
+                                <div className="flex -space-x-2">
+                                    {[1, 2, 3].map((i) => (
+                                        <div key={i} className="w-8 h-8 rounded-full bg-slate-200 border-2 border-white overflow-hidden shadow-sm">
+                                            <img src={`https://i.pravatar.cc/100?img=${i + 20}`} alt="Expert" className="w-full h-full object-cover" />
                                         </div>
                                     ))}
                                 </div>
-                                <div className="mt-4 flex items-center gap-2">
-                                    <Star size={14} className="text-[#f1a134] fill-[#f1a134]" />
-                                    <p className="font-bold text-slate-700 text-sm">{successRateText}</p>
+                                <div className="flex items-center gap-2">
+                                    <div className="w-2.5 h-2.5 bg-green-500 rounded-full shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
+                                    <span className="text-sm font-bold text-slate-700">480+ Experts are online</span>
                                 </div>
                             </div>
 
-                            <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-6 mb-8">
-                                <button className="w-full sm:w-auto bg-[#1e40af] text-white px-7 py-3.5 rounded-lg font-black flex items-center justify-center gap-2 hover:bg-blue-800 transition-all shadow-lg text-sm">
-                                    Schedule a call
-                                    <ChevronRight size={18} />
-                                </button>
-
-                                <div className="flex items-center gap-4 md:gap-6 scale-90 sm:scale-100 origin-center sm:origin-left">
-                                    <div className="flex items-center gap-2">
-                                        <div className="w-9 h-9 bg-white shadow-md rounded-full flex items-center justify-center border border-slate-100 shrink-0">
-                                            <span className="text-[#4285F4] font-black text-lg">G</span>
-                                        </div>
-                                        <div>
-                                            <p className="text-[10px] font-black text-slate-400 uppercase tracking-tighter leading-none mb-0.5">Google Reviews</p>
-                                            <div className="flex items-center gap-1">
-                                                <span className="font-black text-sm text-slate-700">4.8</span>
-                                                <div className="flex text-[#f1a134]">
-                                                    {[1, 2, 3, 4, 5].map(i => <Star key={i} size={8} fill="currentColor" />)}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <div className="w-9 h-9 bg-white shadow-md rounded-full flex items-center justify-center border border-slate-100 shrink-0">
-                                            <Star size={18} className="text-[#00b67a] fill-[#00b67a]" />
-                                        </div>
-                                        <div>
-                                            <p className="text-[10px] font-black text-slate-400 uppercase tracking-tighter leading-none mb-0.5">Trustpilot</p>
-                                            <div className="flex text-[#00b67a] gap-0.5">
-                                                {[1, 2, 3, 4, 5].map(i => <div key={i} className="w-2.5 h-2.5 bg-[#00b67a]" />)}
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div className="flex items-center gap-3 bg-white border border-slate-100 shadow-sm rounded-xl px-4 py-2.5">
+                                <div className="bg-[#f0f7ff] p-1.5 rounded-full">
+                                    <Phone size={16} fill="currentColor" stroke="none" className="text-[#005a9c]" />
                                 </div>
-                            </div>
-
-                            {/* Bottom Stats Tiles - Compact */}
-                            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 max-w-2xl">
-                                {stats.map((stat, i) => (
-                                    <div key={i} className="flex items-center gap-2 md:gap-3 bg-[#FFF8ED]/50 p-2.5 md:p-3 rounded-xl border border-orange-100/50 shadow-sm transition-transform hover:scale-105">
-                                        <div className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-lg shadow-sm flex items-center justify-center text-base md:text-xl shrink-0">
-                                            {stat.icon}
-                                        </div>
-                                        <div>
-                                            <p className="text-sm md:text-lg font-black text-slate-900 leading-none mb-0.5">{stat.count}</p>
-                                            <p className="text-[9px] md:text-[10px] font-bold text-slate-500 uppercase tracking-tight">{stat.label}</p>
-                                        </div>
-                                    </div>
-                                ))}
+                                <span className="text-sm font-bold text-slate-700">120+ ongoing calls</span>
+                                <div className="w-2.5 h-2.5 bg-orange-500 rounded-full shadow-[0_0_8px_rgba(249,115,22,0.6)] ml-1" />
                             </div>
                         </div>
 
-                        {/* Right Form */}
-                        <div className="lg:col-span-5 relative">
-                            {/* Republic Day Special Offer Banner */}
-                            <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-2 z-20">
-                                <div className="relative transform rotate-[-8deg] origin-center scale-90">
-                                    <div className="bg-[#22c55e] text-white px-5 py-2 rounded shadow-xl border-2 border-white">
-                                        <p className="text-[9px] font-bold text-center leading-none mb-1 opacity-90 tracking-tighter line-through decoration-white/60">{offerBannerPrice}</p>
-                                        <h4 className="text-xs font-black text-center whitespace-nowrap mb-0.5 uppercase tracking-tighter">{offerBannerTitle}</h4>
-                                        <p className="text-[9px] font-bold text-center leading-none opacity-80 uppercase tracking-widest bg-white/20 rounded inline-block w-full">OFFER</p>
+                        {/* Bottom Stats Grid */}
+                        <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100/80 flex items-center justify-between max-w-3xl">
+                            {stats.slice(0, 4).map((stat, index) => (
+                                <React.Fragment key={index}>
+                                    <div className={`flex-1 ${index >= 3 ? 'hidden lg:block text-right' : ''}`}>
+                                        <h3 className="text-2xl font-semibold text-[#072b47]">{stat.count}</h3>
+                                        <p className="text-[13px] text-slate-400 font-bold uppercase tracking-wider mt-1">{stat.label}</p>
                                     </div>
-                                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[8px] border-t-[#22c55e]" />
-                                </div>
-                            </div>
+                                    {index < stats.slice(0, 4).length - 1 && (
+                                        <div className={`h-10 w-[1px] bg-slate-200 mx-6 ${index === 2 ? 'hidden lg:block' : 'hidden sm:block'}`} />
+                                    )}
+                                </React.Fragment>
+                            ))}
+                        </div>
+                    </div>
 
-                            <div className="bg-white rounded-xl p-6 lg:p-8 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] border border-slate-100 max-w-md mx-auto">
-                                <h3 className="text-xl font-extrabold text-slate-900 mb-6 text-center">{formTitle}</h3>
+                    {/* Right Form Card */}
+                    <div className="w-full lg:w-[35%] shrink-0">
+                        <div className="bg-white rounded-3xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.12)] border border-slate-100 p-8">
+                            <h3 className="text-[22px] font-semibold text-[#072b47] mb-8 leading-tight text-center">
+                                {formTitle}
+                            </h3>
 
-                                <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                                    <input
-                                        type="text"
-                                        placeholder="Your Name"
-                                        className="w-full px-5 py-3.5 bg-white border border-slate-200 rounded-lg focus:border-[#f1a134] outline-none transition-all font-medium text-slate-700 text-sm"
-                                    />
+                            <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+                                <div className="relative">
                                     <input
                                         type="email"
-                                        placeholder="Email Address"
-                                        className="w-full px-5 py-3.5 bg-white border border-slate-200 rounded-lg focus:border-[#f1a134] outline-none transition-all font-medium text-slate-700 text-sm"
+                                        placeholder="Email"
+                                        className="w-full px-5 py-4 rounded-xl border border-slate-300 bg-slate-50 focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium"
                                     />
-                                    <div className="flex gap-0 border border-slate-200 rounded-lg overflow-hidden focus-within:border-[#f1a134] transition-all">
-                                        <div className="px-3 py-3.5 bg-slate-50 border-r border-slate-200 flex items-center gap-1.5">
-                                            <img src="https://flagcdn.com/w20/in.png" alt="IN" className="w-5" />
-                                            <span className="font-bold text-slate-600 text-sm">+91</span>
-                                        </div>
-                                        <input
-                                            type="tel"
-                                            placeholder="Mobile Number"
-                                            className="w-full px-5 py-3.5 outline-none font-medium text-slate-700 text-sm"
-                                        />
-                                    </div>
-                                    <select className="w-full px-5 py-3.5 bg-white border border-slate-200 rounded-lg focus:border-[#f1a134] outline-none transition-all font-medium text-slate-700 text-sm appearance-none bg-[url('https://cdn0.iconfinder.com/data/icons/font-awesome-solid-vol-1/512/chevron-down-512.png')] bg-[length:12px] bg-[right_15px_center] bg-no-repeat">
-                                        <option value="">Select State</option>
-                                        <option>Delhi</option>
-                                        <option>Maharashtra</option>
-                                        <option>Karnataka</option>
-                                    </select>
+                                </div>
+                                <div className="relative">
+                                    <input
+                                        type="tel"
+                                        placeholder="Mobile Number"
+                                        className="w-full px-5 py-4 rounded-xl border border-slate-300 bg-slate-50 focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium"
+                                    />
+                                </div>
 
-                                    <div className="flex items-center justify-between pt-1">
-                                        <div className="flex items-center gap-2">
-                                            <div className="flex items-center gap-1 bg-green-50 px-2 py-0.5 rounded border border-green-100">
-                                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Whatsapp" className="w-3.5 h-3.5" />
-                                                <span className="text-[11px] font-black text-green-600 uppercase">Whatsapp</span>
-                                            </div>
-                                        </div>
-                                        <button
-                                            type="button"
-                                            onClick={() => setWhatsappEnabled(!whatsappEnabled)}
-                                            className={`w-10 h-5 rounded-full relative transition-all duration-300 ${whatsappEnabled ? 'bg-green-500' : 'bg-slate-300'}`}
-                                        >
-                                            <div className={`absolute top-0.5 w-4 h-4 bg-white rounded-full transition-all duration-300 ${whatsappEnabled ? 'left-5.5' : 'left-0.5'}`} />
-                                        </button>
-                                    </div>
+                                <div className="text-[11px] text-center text-slate-400 font-bold uppercase tracking-wider">
+                                    By proceeding, you agree to our <a href="#" className="text-[#005a9c] hover:underline">T&C*</a>
+                                </div>
 
-                                    <button className="w-full py-4 bg-[#f1a134] text-white font-black rounded-lg shadow-lg hover:brightness-105 transition-all uppercase tracking-widest text-sm">
-                                        GET STARTED NOW
-                                    </button>
-                                </form>
+                                <button
+                                    type="submit"
+                                    className="w-full bg-[#072b47] text-white font-semibold text-[17px] py-4 rounded-xl hover:bg-slate-800 transition-all shadow-xl shadow-slate-200 active:scale-95"
+                                >
+                                    Connect with Expert
+                                </button>
+                            </form>
+
+                            <div className="mt-8 flex items-center justify-center gap-4 pt-8 border-t border-slate-100">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="w-8 h-8" />
+                                <div className="text-left">
+                                    <h4 className="font-black text-[#072b47] text-[15px]">Google Reviews</h4>
+                                    <div className="flex items-center gap-2">
+                                        <div className="flex text-yellow-400 text-sm gap-0.5">
+                                            {'★'.repeat(5)}
+                                        </div>
+                                        <span className="text-[13px] font-black text-slate-600">4.5/5</span>
+                                        <span className="text-[12px] text-slate-400 font-bold ml-1">20k+ Happy Reviews</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     );
 };
 

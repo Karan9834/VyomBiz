@@ -67,7 +67,7 @@ export default function Navbar() {
                         {NAV_LINKS.map(item => (
                             <li key={item.name}
                                 onClick={() => setActiveTop(activeTop === item.name ? null : item.name)}
-                                className={`px-3 h-full flex items-center gap-1 text-[16px] font-semibold tracking-tighter cursor-pointer transition-all border-b-2 border-transparent ${activeTop === item.name ? "text-[#f1a134] border-[#f1a134]" : "text-white/90 hover:text-[#f1a134]"}`}>
+                                className={`px-3 h-full flex items-center gap-1 text-[16px] font-semibold tracking-tighter cursor-pointer transition-all border-b-2 border-transparent ${activeTop === item.name ? "text-[#005a9c] border-[#005a9c]" : "text-white/90 hover:text-[#005a9c]"}`}>
                                 {item.name} <ChevronDown size={14} className={`mt-0.5 transition-transform ${activeTop === item.name ? "rotate-180" : ""}`} />
                             </li>
                         ))}
@@ -91,7 +91,7 @@ export default function Navbar() {
 
                         {/* Desktop Only Icons */}
                         <div className="hidden lg:flex items-center gap-5 border border-white/20 bg-white/5 rounded-full px-5 py-2.5 ml-2">
-                            <Phone size={20} className="text-[#f1a134] cursor-pointer hover:scale-110 transition-transform" onClick={() => setContact(!contact)} />
+                            <Phone size={20} className="text-[#005a9c] cursor-pointer hover:scale-110 transition-transform" onClick={() => setContact(!contact)} />
                             <Mail size={20} className="text-white cursor-pointer hover:scale-110 transition-transform" onClick={() => setContact(!contact)} />
                             <MessageCircle size={20} className="text-green-400 cursor-pointer hover:scale-110 transition-transform" onClick={() => setContact(!contact)} />
                         </div>
@@ -104,7 +104,7 @@ export default function Navbar() {
                         {/* Desktop Hamburger */}
                         <div className="hidden xl:block p-2 hover:bg-white/10 rounded-lg cursor-pointer transition-colors"
                             onClick={() => setHamburger(!hamburger)}>
-                            <Menu size={28} strokeWidth={3} className={`transition-colors ${hamburger ? "text-[#f1a134]" : "text-white"}`} />
+                            <Menu size={28} strokeWidth={3} className={`transition-colors ${hamburger ? "text-[#005a9c]" : "text-white"}`} />
                         </div>
                     </div>
                 </div>
