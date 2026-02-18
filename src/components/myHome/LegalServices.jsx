@@ -87,7 +87,7 @@ const LegalServices = () => {
       {/* Heading */}
       <div className="text-center mb-12 px-4">
         <h2 className="text-4xl font-bold text-black mb-4 tracking-tight">Legal Help Across Wide Range of Services</h2>
-        <div className="w-16 h-1 bg-[#f1a134] mx-auto rounded mb-6"></div>
+        <div className="w-16 h-1 bg-[#005a9c] mx-auto rounded mb-6"></div>
         <p className="text-gray-700 text-sm md:text-base lg:text-lg max-w-4xl mx-auto font-normal tracking-wide mt-4">
           Vyombiz focuses predominantly on assisting entrepreneurs or SMEs by providing services such as Business Registration, Government Registration, Regulatory Measures, Tax Filing, IPR, and much more.
         </p>
@@ -106,7 +106,7 @@ const LegalServices = () => {
                 : "bg-transparent text-white hover:bg-white/10 rounded-lg"
                 }`}
             >
-              <div className={`shrink-0 ${selectedOption === option.id ? "text-[#f1a134]" : "text-white"}`}>
+              <div className={`shrink-0 ${selectedOption === option.id ? "text-[#005a9c]" : "text-white"}`}>
                 <BarChart3 className="w-full h-full" />
               </div>
               <div className="flex-1">
@@ -127,8 +127,8 @@ const LegalServices = () => {
           ))}
         </div>
 
-        {/* Orange Vertical Separator Line */}
-        <div className="hidden md:block w-1 bg-[#f1a134] mx-6 rounded-full"></div>
+        {/* Vertical Separator Line */}
+        <div className="hidden md:block w-1 bg-[#005a9c] mx-6 rounded-full"></div>
 
         {/* Right side - White Cards Grid with Shadow */}
         <div className="md:w-[70%] grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -136,7 +136,7 @@ const LegalServices = () => {
             <div key={index} className="flex flex-col p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all group relative min-h-[180px]">
               <div className="flex gap-4">
                 {/* Chart Icon */}
-                <div className="shrink-0 w-10 h-10 bg-[#f1a134]/10 rounded-lg flex items-center justify-center text-[#f1a134]">
+                <div className="shrink-0 w-10 h-10 bg-[#005a9c]/10 rounded-lg flex items-center justify-center text-[#005a9c]">
                   <BarChart3 className="w-full h-full" strokeWidth={2.5} />
                 </div>
 

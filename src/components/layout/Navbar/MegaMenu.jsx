@@ -238,7 +238,7 @@ const MegaMenu = ({ data, activeSub, setActiveSub, onItemClick, categoryPath }) 
                         <div key={sub}
                             onMouseEnter={() => setActiveSub(sub)}
                             className={`flex justify-between items-center px-5 py-3 mb-1.5 rounded-lg text-[15px] font-semibold cursor-pointer transition-all ${activeSub === sub
-                                ? "bg-[#f1a134] text-white shadow-lg shadow-orange-100"
+                                ? "bg-[#005a9c] text-white shadow-lg shadow-blue-100"
                                 : "text-slate-600 hover:bg-slate-50 hover:text-[#072b47]"
                                 }`}>
                             {sub} <ChevronRight size={16} className={`${activeSub === sub ? "text-white" : "text-slate-400"}`} />
@@ -259,7 +259,7 @@ const MegaMenu = ({ data, activeSub, setActiveSub, onItemClick, categoryPath }) 
                                 onClick={onItemClick}
                                 className="group cursor-pointer block"
                             >
-                                <span className="text-[15.5px] text-slate-500 group-hover:text-[#f1a134] font-medium transition-colors">
+                                <span className="text-[15.5px] text-slate-500 group-hover:text-[#005a9c] font-medium transition-colors">
                                     {link}
                                 </span>
                             </Link>

@@ -44,15 +44,15 @@ const WorkingProcess = () => {
                 {ipServices.map((service, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50 hover:shadow-sm cursor-pointer transition-all duration-300 group border border-transparent hover:border-blue-200"
+                    className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50/50 hover:shadow-sm cursor-pointer transition-all duration-300 group border border-transparent hover:border-[#005a9c]/20"
                   >
-                    <div className="w-8 h-8 flex items-center justify-center bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg shrink-0 group-hover:from-blue-200 group-hover:to-blue-300 transition-all duration-300">
-                      <Shield className="w-4 h-4 text-blue-700" strokeWidth={2} />
+                    <div className="w-8 h-8 flex items-center justify-center bg-[#005a9c]/10 rounded-lg shrink-0 group-hover:bg-[#005a9c]/20 transition-all duration-300">
+                      <Shield className="w-4 h-4 text-[#005a9c]" strokeWidth={2} />
                     </div>
-                    <span className="text-[#072b47] font-semibold text-base group-hover:text-blue-700 transition-colors flex-1 leading-snug">
+                    <span className="text-[#072b47] font-semibold text-base group-hover:text-[#005a9c] transition-colors flex-1 leading-snug">
                       {service}
                     </span>
-                    <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all duration-300 opacity-0 group-hover:opacity-100" />
+                    <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#005a9c] group-hover:translate-x-1 transition-all duration-300 opacity-0 group-hover:opacity-100" />
                   </div>
                 ))}
               </div>
