@@ -4,7 +4,9 @@ import { Phone, Mail, MessageCircle, Menu, ChevronDown, X } from "lucide-react";
 import Logo from "../../common/Logo";
 import MegaMenu from "./MegaMenu";
 import ContactPopup from "./ContactPopup";
-import { NAV_LINKS, SIDEBAR_LINKS, MEGA_MENU_DATA } from "../../../constants/navigation";
+import { NAV_LINKS, SIDEBAR_LINKS, MEGA_MENU_DATA, DISABLED_LINKS } from "../../../constants/navigation";
+import { getLinkPath } from "../../../utils/navigationUtils";
+
 
 export default function Navbar() {
     const [activeTop, setActiveTop] = useState(null);
@@ -134,69 +136,18 @@ export default function Navbar() {
                                                     {(MEGA_MENU_DATA[item.name].right[sub] || [])
                                                         .slice(0, expandedSubs.includes(`${item.name}-${sub}`) ? undefined : 5)
                                                         .map(link => {
-                                                            const getMobileLink = (btnLink, parentName, subName) => {
-                                                                const map = {
-                                                                    "Company Registration": "/company-registration",
-                                                                    "LLP Registration": "/llp-registration",
-                                                                    "Public Limited Company Registration": "/public-limited-registration",
-                                                                    "One Person Company Registration": "/one-person-company-registration",
-                                                                    "Partnership Firm Registration": "/partnership-firm-registration",
-                                                                    "Sole Proprietorship Registration": "/sole-proprietorship-registration",
-                                                                    "Nidhi Company Registration": "/nidhi-company-registration",
-                                                                    "Producer Company Registration": "/producer-company-registration",
-                                                                    "Indian Subsidiary Company Registration": "/indian-subsidiary-company-registration",
-                                                                    "Clinical Establishment Registration": "/clinical-establishment-registration",
-                                                                    "Carbon Black Manufacturing": "/carbon-black-manufacturing-business-setup",
-                                                                    "Green Hydrogen Plant": "/green-hydrogen-plant-setup",
-                                                                    "Green Ammonia Plant": "/green-ammonia-plant-setup",
-                                                                    "Synthetic Rubber Business": "/synthetic-rubber-business-setup",
-                                                                    "Paper and Paperboard Packaging Industry": "/paper-and-paperboard-packaging-industry",
-                                                                    "Fermentation Industry": "/fermentation-industry-setup",
-                                                                    "Renewable energy business": "/renewable-energy-business-setup",
-                                                                    "Fire Equipment Plant Setup": "/fire-equipment-plant-setup",
-                                                                    "Virtual Office Space": "/virtual-office-space-setup",
-
-                                                                    // FSSAI & Eating House
-                                                                    "FSSAI License": "/fssai-license",
-                                                                    "FSSAI License Renewal": "/fssai-license-renewal",
-                                                                    "FSSAI State License": "/fssai-state-license",
-                                                                    "Eating House License": "/eating-house-license",
-                                                                    "Central FSSAI License": "/central-fssai-license",
-                                                                    "FSSAI Annual Return": "/fssai-annual-return",
-                                                                    "FSSAI Product Approval": "/fssai-product-approval",
-                                                                    "Food Recycling License": "/food-recycling-license",
-                                                                    "FPO Mark Certification": "/fpo-mark-certification",
-
-                                                                    // Company
-                                                                    "Career": "/career",
-                                                                    "vyomBiz Reviews": "/reviews",
-                                                                    "Work at vyomBiz": "/work-at-vyombiz"
-                                                                };
-
-                                                                if (map[btnLink]) return map[btnLink];
-
-                                                                // Global Litigation Mapping
-                                                                const litigationLinks = [
-                                                                    "Defamation Complaint", "Intellectual Property Infringement", "Employment Dispute Litigation",
-                                                                    "Contract Dispute Litigation", "Cheque Bounce Complaint", "Property Litigation",
-                                                                    "Cyber Crime Litigation", "Mutual Divorce", "Contested Divorce",
-                                                                    "Restitution of Conjugal Rights", "POSH Compliance", "RERA Complaint", "US Litigation Service"
-                                                                ];
-
-                                                                if (litigationLinks.includes(btnLink)) {
-                                                                    return `/${btnLink.toLowerCase().replace(/\s+/g, '-')}`;
-                                                                }
-
-                                                                // Dynamic Lawyer Specialization Mapping
-                                                                if (subName === "Lawyers Specialization" || btnLink.endsWith("Lawyers")) {
-                                                                    return `/lawyers-services/${btnLink.toLowerCase().replace(/\s+/g, '-')}`;
-                                                                }
-                                                                return map[btnLink] || item.path;
-                                                            };
+                                                            const isDisabled = DISABLED_LINKS.includes(link);
+                                                            if (isDisabled) {
+                                                                return (
+                                                                    <div key={link} className="block text-[15px] font-semibold text-slate-400 opacity-50 cursor-default">
+                                                                        {link}
+                                                                    </div>
+                                                                );
+                                                            }
                                                             return (
                                                                 <Link
                                                                     key={link}
-                                                                    to={getMobileLink(link, item.name, sub)}
+                                                                    to={getLinkPath(link, item.name, sub)}
                                                                     onClick={() => setHamburger(false)}
                                                                     className="block text-[15px] font-semibold text-slate-600 hover:text-blue-600 transition-colors"
                                                                 >
@@ -259,6 +210,7 @@ export default function Navbar() {
             <MegaMenu
                 data={activeTop ? MEGA_MENU_DATA[activeTop] : null}
                 categoryPath={NAV_LINKS.find(l => l.name === activeTop)?.path}
+                categoryName={activeTop}
                 activeSub={activeSub}
                 setActiveSub={setActiveSub}
                 onItemClick={() => setActiveTop(null)}

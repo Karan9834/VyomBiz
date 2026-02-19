@@ -251,7 +251,7 @@ const LitigationLayout = ({ content }) => {
                         <div className="w-full space-y-32">
                             {/* Overview Section */}
                             <section id="overview" ref={sectionRefs.overview} className="space-y-10 scroll-mt-32">
-                                <div className="space-y-8 animate-fadeIn">
+                                <div className="space-y-8">
                                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-[#f1a134] pl-6">
                                         {sections.overview.title}
                                     </h2>
@@ -281,7 +281,7 @@ const LitigationLayout = ({ content }) => {
                             {/* Types Section */}
                             {sections.types && (
                                 <section id="types" ref={sectionRefs.types} className="space-y-10 scroll-mt-32">
-                                    <div className="space-y-8 animate-fadeIn">
+                                    <div className="space-y-8">
                                         <div className="flex flex-col lg:flex-row gap-12 items-start justify-between mb-4">
                                             <div className="flex-1 space-y-10">
                                                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-[#f1a134] pl-6">
@@ -330,7 +330,7 @@ const LitigationLayout = ({ content }) => {
                             {/* When to File Section */}
                             {sections.whenToFile && (
                                 <section id="when-to-file" ref={sectionRefs['when-to-file']} className="space-y-10 scroll-mt-32">
-                                    <div className="space-y-8 animate-fadeIn">
+                                    <div className="space-y-8">
                                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-[#f1a134] pl-6">
                                             {sections.whenToFile.title}
                                         </h2>
@@ -371,7 +371,7 @@ const LitigationLayout = ({ content }) => {
 
                             {/* Process Section */}
                             <section id="process" ref={sectionRefs.process} className="space-y-10 scroll-mt-32">
-                                <div className="space-y-10 animate-fadeIn">
+                                <div className="space-y-10">
                                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-[#f1a134] pl-6">
                                         {sections.process.title}
                                     </h2>
@@ -421,7 +421,7 @@ const LitigationLayout = ({ content }) => {
 
                             {/* Why Choose Section */}
                             <section id="why-choose" ref={sectionRefs['why-choose']} className="space-y-10 scroll-mt-32">
-                                <div className="space-y-8 animate-fadeIn">
+                                <div className="space-y-8">
                                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] tracking-tight border-l-4 border-[#f1a134] pl-6">
                                         {sections.whyChoose.title}
                                     </h2>

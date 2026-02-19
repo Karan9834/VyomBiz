@@ -11,7 +11,7 @@ const ContactBannerAbout = () => {
                 <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-8">
                     <div>
                         <h2 className="text-3xl md:text-4xl font-[900] text-white mb-2 tracking-tight">How To Reach Us?</h2>
-                        <p className="text-lg text-white/50 font-bold italic">You can reach out to us :-</p>
+                        <p className="text-lg text-white/50 font-bold italic">Expert help is just a message away :-</p>
                     </div>
                     <button className="px-8 py-4 bg-[#f1a134] text-white font-black rounded-xl shadow-2xl shadow-orange-900/40 hover:scale-105 active:scale-95 transition-all uppercase tracking-widest text-sm">
                         Get Started
@@ -42,21 +42,6 @@ const ContactBannerAbout = () => {
                             <Globe size={20} />
                         </div>
                         <span className="text-white font-black text-base">www.vyombiz.io</span>
-                    </div>
-                </div>
-
-                <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                        <div className="w-7 h-7 bg-blue-400/20 rounded flex items-center justify-center text-blue-400 shrink-0">
-                            <ClipboardCheck size={16} strokeWidth={3} />
-                        </div>
-                        <p className="text-white/80 font-bold text-base">Submit your query and state your requirements.</p>
-                    </div>
-                    <div className="flex items-center gap-3">
-                        <div className="w-7 h-7 bg-green-400/20 rounded flex items-center justify-center text-green-400 shrink-0">
-                            <Headphones size={16} strokeWidth={3} />
-                        </div>
-                        <p className="text-white/80 font-bold text-base">Receive a call back from our experts as per your query for free legal advice.</p>
                     </div>
                 </div>
             </div>

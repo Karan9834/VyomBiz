@@ -63,7 +63,7 @@ export const MEGA_MENU_DATA = {
             "Tax Filing/Compliance": ["GST Registration", "GST Return Filing", "TDS Return Filing", "Professional Tax Registration", "Income Tax Return Filing", "GST Advisory Services", "GST Annual Return Filing", "GST LUT Form", "GST Compliance Services", "Income Tax Compliance", "Income Tax Advisory", "XBRL Filing", "GST Registration for NRI"],
             "Accounting & CFO": ["Due Diligence", "Business Plan", "Virtual CFO Services", "Accounts Payable Service", "Accounts Receivable Services", "Tax Audit", "Forensic Audit", "Bookkeeping Services", "Fundraising Services", "Term sheet", "Manufacturing Audit", "Technical Audit", "Factory Sanitation Audit", "M2M Communications", "Ethical Audits", "Insurance Audit", "Fractional CFO Services", "MIS Reporting"],
             "Contracts & Agreements": ["Service Level Agreement", "Share Purchase Agreement", "Franchise Agreement", "Sale Deed Registration", "Gift Deed", "Residential Rental Agreement", "Commercial Rental Agreement", "Relinquishment Deed", "Probate of Will", "Shareholder’s Agreement", "Joint Venture Agreement"],
-            "Legal Services": ["Legal Notice", "RERA Complaint", "Cheque Bounce Notice", "Consumer Complaint", "Public Interest Litigation", "Caveat Petition", "Legal Heir Certificate", "Section 8-Demand Notice", "Succession Certificate in India", "Lease Agreement Drafting", "Will Drafting", "Mutual Divorce", "Marriage Registration", "Divorce Notice", "Property Registration", "Property Valuation", "Property Verification", "Lease Registration", "Will Registration", "Power of Attorney (POA)", "Vendor Agreement", "License Agreement", "Legal Notice for Defamation", "Legal Notice for Non-Payment of Salary", "Quashing of FIR", "Asset Purchase Agreement", "Writ Petition", "Domestic Violence", "Defamation Law in India", "Legal Notice for Non-Payment of Dues", "Online Dispute Resolution", "Online Legal India Services", "Company Dispute Resolution", "Consumer Dispute Resolution"],
+            "Legal Services": ["Legal Notice", "RERA Complaint", "Consumer Complaint", "Public Interest Litigation", "Caveat Petition", "Legal Heir Certificate", "Section 8-Demand Notice", "Succession Certificate in India", "Lease Agreement Drafting", "Will Drafting", "Mutual Divorce", "Marriage Registration", "Divorce Notice", "Property Registration", "Property Valuation", "Property Verification", "Lease Registration", "Will Registration", "Power of Attorney (POA)", "Vendor Agreement", "License Agreement", "Legal Notice for Defamation", "Legal Notice for Non-Payment of Salary", "Quashing of FIR", "Asset Purchase Agreement", "Writ Petition", "Domestic Violence", "Defamation Law in India", "Legal Notice for Non-Payment of Dues", "Online Dispute Resolution", "Online Legal India Services", "Company Dispute Resolution", "Consumer Dispute Resolution"],
 
 
             "Convert Your Business": ["Secretarial Audit", "Sole Proprietorship to Pvt. Ltd. Company", "Conversion of Pvt. Ltd. to Public Limited", "Conversion of LLP to Private Company", "Partnership Firm into Pvt. Ltd. Company"]
@@ -105,3 +105,9 @@ export const MEGA_MENU_DATA = {
         }
     }
 };
+
+export const DISABLED_LINKS = [
+    "Reply to ITR Notice",
+    "Caveat Petition",
+    "Tenant Rental Notice"
+];

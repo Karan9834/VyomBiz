@@ -12,12 +12,12 @@ const AboutBanner = () => {
             </div>
 
             <div className="container mx-auto px-6 relative z-10 text-center">
-                <h1 className="text-2xl md:text-4xl font-black text-white mb-1">
-                    Who we are?
+                <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+                    Who We Are
                 </h1>
-                <div className="w-12 h-0.5 bg-[#f1a134] mx-auto mb-4 rounded-full" />
-                <p className="text-sm md:text-base text-white/90 font-bold max-w-2xl mx-auto leading-relaxed">
-                    We serve many customers, ranging from small businesses, medium entrepreneurs, to world-renowned companies.
+                <div className="w-16 h-1 bg-[#f1a134] mx-auto mb-6 rounded-full" />
+                <p className="text-base md:text-lg text-white/90 font-normal max-w-2xl mx-auto leading-relaxed">
+                    We serve a diverse range of clients, from budding entrepreneurs to global enterprises, providing the foundation for their success.
                 </p>
             </div>
         </section>

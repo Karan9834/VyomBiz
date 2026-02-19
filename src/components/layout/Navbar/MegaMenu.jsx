@@ -1,230 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 import { getLinkPath as getUtilsLinkPath } from "../../../utils/navigationUtils";
+import { DISABLED_LINKS } from "../../../constants/navigation";
 
-const getLinkPath = (link, categoryPath, activeSub) => {
-    const routeMap = {
-        "Company Registration": "/company-registration",
-        "LLP Registration": "/llp-registration",
-        "Public Limited Company Registration": "/public-limited-registration",
-        "One Person Company Registration": "/one-person-company-registration",
-        "Partnership Firm Registration": "/partnership-firm-registration",
-        "Sole Proprietorship Registration": "/sole-proprietorship-registration",
-        "Nidhi Company Registration": "/nidhi-company-registration",
-        "Producer Company Registration": "/producer-company-registration",
-        "Indian Subsidiary Company Registration": "/indian-subsidiary-company-registration",
-
-        // NGO Routes
-        "NGO Registration": "/ngo-registration",
-        "Trust Registration": "/trust-registration",
-        "FCRA Registration": "/fcra-registration",
-        "Society Registration": "/society-registration",
-        "12AA Registration": "/12aa-registration",
-        "12AB Registration": "/12ab-registration",
-        "Section 8 Company Registration": "/section-8-company",
-        "80G Registration": "/80g-registration",
-        "80G and 12A Registration": "/80g-12a-registration",
-        "NGO CSR-1 Filing": "/csr-1-registration",
-        "NGO Darpan Registration": "/darpan-registration",
-        "NGO CSR Consultancy": "/ngo-csr-consultancy",
-        "NGO Income Tax Advisory": "/ngo-income-tax-advisory",
-        "NGO Project Report": "/ngo-project-report",
-        "NGO Accounting": "/ngo-accounting",
-        "Strike Off Section 8 Companies": "/strike-off-section-8-company",
-        "Trust Annual Compliance": "/trust-annual-compliance",
-        "GST Annual Return Filing": "/gst-annual-return-filing",
-        "GST Compliance Services": "/gst-compliance-services",
-        "GST Registration": "/gst-registration",
-        "Income Tax Return Filing": "/income-tax-return-filing",
-        "TDS Return Filing": "/tds-return-filing",
-
-        // Global
-        "Company Registration USA": "/usa-incorporation",
-        "Company Registration UK": "/uk-incorporation",
-        "Company Registration Singapore": "/singapore-incorporation",
-        "Company Registration Mauritius": "/company-registration-mauritius",
-        "Company Registration Dubai": "/dubai-company-setup",
-        "Company Registration Hong Kong": "/hong-kong-incorporation",
-        "Company Registration New Zealand": "/new-zealand-incorporation",
-        "Company Registration Australia": "/australia-incorporation",
-        "Company Registration Canada": "/canada-incorporation",
-        "Company Registration Russia": "/russia-incorporation",
-        "Company Registration Poland": "/poland-incorporation",
-        "Company Registration Japan": "/japan-incorporation",
-        "Company Registration Germany": "/germany-incorporation",
-        "Company Registration France": "/france-incorporation",
-        "Company Registration South Africa": "/south-africa-incorporation",
-
-        // IP & Trademark
-        "Trademark Registration": "/trademark-registration",
-        "Trademark Assignment": "/trademark-assignment",
-        "Trademark Classes Finder": "/trademark-classes-finder",
-        "Trademark Opposition": "/trademark-opposition",
-        "Trademark Objection": "/trademark-objection",
-        "Trademark Rectification": "/trademark-rectification",
-        "Intellectual Property Dispute": "/intellectual-property-dispute",
-        "Trademark Watch Services": "/trademark-watch-services",
-        "International Trademark Registration": "/international-trademark-registration",
-        "Design Registration": "/design-registration",
-        "Registration OF Geographical Indication (GI)": "/gi-registration",
-        "Copyright Registration": "/copyright-registration",
-        "Patent Registration": "/patent-registration",
-        // Advisory
-        "Patent Due Diligence": "/patent-due-diligence",
-
-        // Industry
-        "Factory License": "/factory-license",
-        "Boiler Registration": "/boiler-registration",
-        "MSME Registration": "/msme-registration",
-        "NSIC Registration": "/nsic-registration",
-
-        // Government
-        "Import Export Code": "/import-export-code",
-        "PSARA License": "/psara-license",
-        "Drug License": "/drug-license",
-        "APEDA Registration": "/apeda-registration",
-
-        "Professional Tax": "/professional-tax",
-        "Shop & Establishment": "/shop-establishment",
-        "ESI & PF Registration": "/esi-pf-registration",
-
-        // ISO
-        "ISO Registration": "/iso-registration",
-        "ISO 14001 EMS": "/iso-14001-ems",
-        "ISO 22000 FSMS": "/iso-22000-fsms",
-        "ISO 9001 2015": "/iso-9001-2015",
-        "ISO 50001 Energy Management": "/iso-50001-energy-management",
-        "ISO 45001 certification": "/iso-45001-certification",
-        "ISO 20000 Certification": "/iso-20000-certification",
-        "ISO 31000 Certification": "/iso-31000-certification",
-        "ISO 13485 Certification": "/iso-13485-certification",
-        "ISO 21101:2014 Certification": "/iso-21101-2014-certification",
-        "ISO 37001:2016 Certification": "/iso-37001-2016-certification",
-        "ISO 27001 ISMS Certification": "/iso-27001-isms",
-        "ISO 16001 Certification": "/iso-16001-certification",
-        "ISO 39001 Certification": "/iso-39001-certification",
-        "ISO 2768-1 Certification": "/iso-2768-1-certification",
-
-        // FSSAI
-        "Basic FSSAI": "/basic-fssai",
-        "State FSSAI": "/state-fssai",
-        "Central FSSAI": "/central-fssai",
-        "Eating House License": "/eating-house-license",
-        "Liquor License": "/liquor-license",
-        "Clinical Establishment Registration": "/clinical-establishment-registration",
-        "Carbon Black Manufacturing": "/carbon-black-manufacturing-business-setup",
-        "Green Hydrogen Plant": "/green-hydrogen-plant-setup",
-        "Green Ammonia Plant": "/green-ammonia-plant-setup",
-        "Synthetic Rubber Business": "/synthetic-rubber-business-setup",
-        "Paper and Paperboard Packaging Industry": "/paper-and-paperboard-packaging-industry",
-        "Fermentation Industry": "/fermentation-industry-setup",
-        "Renewable energy business": "/renewable-energy-business-setup",
-        "Fire Equipment Plant Setup": "/fire-equipment-plant-setup",
-        "Virtual Office Space": "/virtual-office-space-setup",
-
-        // FSSAI & Eating House
-        "FSSAI License": "/fssai-license",
-        "FSSAI License Renewal": "/fssai-license-renewal",
-        "FSSAI State License": "/fssai-state-license",
-        "Central FSSAI License": "/central-fssai-license",
-        "FSSAI Annual Return": "/fssai-annual-return",
-        "FSSAI Product Approval": "/fssai-product-approval",
-        "Food Recycling License": "/food-recycling-license",
-        "FPO Mark Certification": "/fpo-mark-certification",
-        "Succession Certificate in India": "/succession-certificate-in-india",
-        "Section 8-Demand Notice": "/section-8-demand-notice",
-        "RERA Complaint": "/rera-complaint",
-        "Public Interest Litigation": "/public-interest-litigation",
-        "Legal Notice": "/legal-notice",
-        "Legal Heir Certificate": "/legal-heir-certificate",
-        "Lease Agreement Drafting": "/lease-agreement-drafting",
-        "Consumer Complaint": "/consumer-complaint",
-        "Automobile": "/consumer-complaint/automobile",
-        "Courier Logistics": "/consumer-complaint/courier-logistics",
-        "Bank": "/consumer-complaint/bank",
-        "E-commerce": "/consumer-complaint/ecommerce",
-        "Education": "/consumer-complaint/education",
-        "Grievances": "/consumer-complaint/grievances",
-        "Travel": "/consumer-complaint/travel",
-        "Streaming Platforms": "/consumer-complaint/streaming-platforms",
-        "Retail Business": "/consumer-complaint/retail-business",
-        "Real Estate": "/consumer-complaint/real-estate",
-        "Medical": "/consumer-complaint/medical",
-        "IT Companies": "/consumer-complaint/it-companies",
-        "Insurance": "/consumer-complaint/insurance",
-        "Home Appliances": "/consumer-complaint/home-appliances",
-        "Hotels": "/consumer-complaint/hotels",
-        "Investment": "/consumer-complaint/investment",
-        "Cheque Bounce Notice": "/cheque-bounce-notice",
-        "Caveat Petition": "/caveat-petition",
-        "Winding Up of Private Limited Company": "/winding-up-of-private-limited-company",
-        "Appointment and Resignation of Directors": "/appointment-resignation-directors",
-        "Change in Directors": "/change-directors",
-        "Change in Registered Office": "/change-registered-office",
-        "Form AOC-4": "/form-aoc-4",
-        "Liquidation of Company": "/liquidation-company",
-        "Removal of Director": "/removal-director",
-        "Revival of Struck Off Companies": "/revival-struck-off-companies",
-        "SPICE+ Form": "/spice-plus-form",
-        "Section 8 Company Compliance": "/section-8-compliance",
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // Compliance - Secretarial
-        "Closing a Limited Liability Partnership": "/closing-a-limited-liability-partnership",
-        "Annual Filing for LLP": "/annual-filing-for-llp",
-        "Change in Object Clause": "/change-in-object-clause",
-        "MCA Compliance": "/mca-compliance",
-        "Change in Name Clause": "/change-in-name-clause",
-        "Nidhi Company Compliance": "/nidhi-company-compliance",
-        "NBFC Compliance": "/nbfc-compliance",
-        "Change in Share Capital": "/change-in-share-capital",
-        "Change in LLP Agreement": "/change-in-llp-agreement",
-        "AGR-Return Filing": "/agr-return-filing",
-        "Form MGT-7": "/form-mgt-7",
-        "AGILE PRO S": "/agile-pro-s",
-
-        // Company
-        "Career": "/career",
-        "vyomBiz Reviews": "/reviews",
-        "Work at vyomBiz": "/work-at-vyombiz"
-    };
-
-    if (routeMap[link]) return routeMap[link];
-
-    // Auto-map Litigation links (Shared across Litigation & Legal Services)
-    const litigationLinks = [
-        "Defamation Complaint", "Intellectual Property Infringement", "Employment Dispute Litigation",
-        "Contract Dispute Litigation", "Cheque Bounce Complaint", "Property Litigation",
-        "Cyber Crime Litigation", "Mutual Divorce", "Contested Divorce",
-        "Restitution of Conjugal Rights", "POSH Compliance", "RERA Complaint", "US Litigation Service"
-    ];
-
-    if (litigationLinks.includes(link)) {
-        const slug = link.toLowerCase().replace(/\s+/g, '-');
-        return `/${slug}`;
-    }
-
-    // Auto-map Lawyer Specialization links
-    if (activeSub === "Lawyers Specialization" || link.endsWith("Lawyers")) {
-        const slug = link.toLowerCase().replace(/\s+/g, '-');
-        return `/lawyers-services/${slug}`;
-    }
-
-    return routeMap[link] || (categoryPath || "/");
-};
-
-const MegaMenu = ({ data, activeSub, setActiveSub, onItemClick, categoryPath }) => {
+const MegaMenu = ({ data, activeSub, setActiveSub, onItemClick, categoryPath, categoryName }) => {
     if (!data) return null;
 
     return (
@@ -252,18 +31,32 @@ const MegaMenu = ({ data, activeSub, setActiveSub, onItemClick, categoryPath }) 
                         {activeSub}
                     </h3>
                     <div className="grid grid-cols-2 gap-x-12 gap-y-3.5">
-                        {(data.right[activeSub] || []).map(link => (
-                            <Link
-                                key={link}
-                                to={getLinkPath(link, categoryPath, activeSub)}
-                                onClick={onItemClick}
-                                className="group cursor-pointer block"
-                            >
-                                <span className="text-[15.5px] text-slate-500 group-hover:text-[#005a9c] font-medium transition-colors">
-                                    {link}
-                                </span>
-                            </Link>
-                        ))}
+                        {(data.right[activeSub] || []).map(link => {
+                            const isDisabled = DISABLED_LINKS.includes(link);
+
+                            if (isDisabled) {
+                                return (
+                                    <div key={link} className="block cursor-default opacity-50">
+                                        <span className="text-[15.5px] text-slate-400 font-medium">
+                                            {link}
+                                        </span>
+                                    </div>
+                                );
+                            }
+
+                            return (
+                                <Link
+                                    key={link}
+                                    to={getUtilsLinkPath(link, categoryName, activeSub)}
+                                    onClick={onItemClick}
+                                    className="group cursor-pointer block"
+                                >
+                                    <span className="text-[15.5px] text-slate-500 group-hover:text-[#005a9c] font-medium transition-colors">
+                                        {link}
+                                    </span>
+                                </Link>
+                            );
+                        })}
                     </div>
                 </div>
             </div>

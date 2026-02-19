@@ -38,8 +38,6 @@
 
 
 
-import React from "react";
-
 const PageTemplate = ({ title, children }) => {
   return (
     <>

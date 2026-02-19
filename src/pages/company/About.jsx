@@ -10,22 +10,21 @@ import SuccessStory from '../../components/myHome/SuccessStory';
 import WorkingProcess from '../../components/myHome/WorkingProcess';
 import TrustedBrands from '../../components/myHome/TrustedBrands';
 
+import IPLegalServices from '../../components/AboutUs/IPLegalServices';
+import AboutFooterCTA from '../../components/AboutUs/AboutFooterCTA';
+
 const About = () => {
   return (
     <div className="bg-white">
-      {/* New Sections based on user images */}
       <AboutBanner />
       <AboutIntro />
       <ComplianceIllustration />
       <ContactBannerAbout />
       <ClientNetwork />
-
-      {/* Existing Core Content */}
-      <SuccessStory />
-      <WorkingProcess />
-      <TrustedBrands />
+      <IPLegalServices />
       <VisionMission />
       <OurJourney />
+      <AboutFooterCTA />
     </div>
   );
 };

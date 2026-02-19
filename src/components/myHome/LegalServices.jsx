@@ -86,7 +86,7 @@ const LegalServices = () => {
     <section className="py-10 bg-slate-50">
       {/* Heading */}
       <div className="text-center mb-12 px-4">
-        <h2 className="text-4xl font-bold text-black mb-4 tracking-tight">Legal Help Across Wide Range of Services</h2>
+        <h2 className="text-4xl font-bold text-[#072b47] mb-4 tracking-tight">Legal Help Across Wide Range of Services</h2>
         <div className="w-16 h-1 bg-[#005a9c] mx-auto rounded mb-6"></div>
         <p className="text-gray-700 text-sm md:text-base lg:text-lg max-w-4xl mx-auto font-normal tracking-wide mt-4">
           Vyombiz focuses predominantly on assisting entrepreneurs or SMEs by providing services such as Business Registration, Government Registration, Regulatory Measures, Tax Filing, IPR, and much more.
