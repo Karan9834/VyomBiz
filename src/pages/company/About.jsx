@@ -21,7 +21,7 @@ const About = () => {
       <ComplianceIllustration />
       <ContactBannerAbout />
       <ClientNetwork />
-      <IPLegalServices />
+      {/* <IPLegalServices /> */}
       <VisionMission />
       <OurJourney />
       <AboutFooterCTA />
