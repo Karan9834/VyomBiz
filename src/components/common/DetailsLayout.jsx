@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { CheckCircle2, FileText, TrendingUp, ChevronRight, Shield, Award, Users, ArrowRight } from "lucide-react";
+import InsideNavbar from "./InsideNavbar";
 
 /**
  * Universal SaaS-Style Details Layout for Registration Pages
@@ -13,9 +14,9 @@ const DetailsLayout = ({
     process = null,
     features = null,
     whyChooseUs = null, // fallback for features
-    postCompliance = null
+    postCompliance = null,
+    navLabels = {} // optional: override tab labels { overview, advantages, eligibility, documents, process, features, postCompliance }
 }) => {
-    const navContainerRef = useRef(null);
     const [activeSection, setActiveSection] = useState("");
     const sectionRefs = {
         overview: useRef(null),
@@ -28,16 +29,16 @@ const DetailsLayout = ({
         postCompliance: useRef(null),
     };
 
-    // Navigation items based on provided props
+    // Navigation items based on provided props, with optional custom labels
     const navItems = [
-        { id: "overview", label: "Overview", show: !!overview },
-        { id: "advantages", label: "Advantages", show: !!advantages },
-        { id: "eligibility", label: "Eligibility Criteria", show: !!eligibility },
-        { id: "documents", label: "Documents Required", show: !!documents },
-        { id: "process", label: "Process", show: !!process },
-        { id: "features", label: "Features", show: !!(features || whyChooseUs) },
-        { id: "postCompliance", label: "Post Compliance", show: !!postCompliance },
-        { id: "faq", label: "FAQs", show: true },
+        { id: "overview", label: navLabels.overview || "Overview", show: !!overview },
+        { id: "advantages", label: navLabels.advantages || "Advantages", show: !!advantages },
+        { id: "eligibility", label: navLabels.eligibility || "Eligibility Criteria", show: !!eligibility },
+        { id: "documents", label: navLabels.documents || "Documents Required", show: !!documents },
+        { id: "process", label: navLabels.process || "Process", show: !!process },
+        { id: "features", label: navLabels.features || "Features", show: !!(features || whyChooseUs) },
+        { id: "postCompliance", label: navLabels.postCompliance || "Post Compliance", show: !!postCompliance },
+        { id: "faq", label: navLabels.faq || "FAQs", show: true },
     ].filter(item => item.show);
 
     useEffect(() => {
@@ -50,18 +51,6 @@ const DetailsLayout = ({
                     const { offsetTop, offsetHeight } = element;
                     if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
                         setActiveSection(item.id);
-
-                        // Auto-scroll the nav item into view on mobile
-                        if (window.innerWidth < 768 && navContainerRef.current) {
-                            const activeButton = navContainerRef.current.querySelector(`[data-id="${item.id}"]`);
-                            if (activeButton) {
-                                activeButton.scrollIntoView({
-                                    behavior: 'smooth',
-                                    block: 'nearest',
-                                    inline: 'center'
-                                });
-                            }
-                        }
                         break;
                     }
                 }
@@ -82,48 +71,14 @@ const DetailsLayout = ({
 
     return (
         <div className="bg-white">
-            {/* Sticky Sub-Navigation with Yellow Background */}
-            <div className="sticky top-[64px] z-40 bg-[#f1a134] shadow-lg overflow-x-auto no-scrollbar hidden md:block">
-                <div className="container mx-auto px-4 md:px-6">
-                    <div ref={navContainerRef} className="flex items-center md:justify-center min-w-max">
-                        {navItems.map((item) => (
-                            <button
-                                key={item.id}
-                                data-id={item.id}
-                                onClick={() => scrollToSection(item.id)}
-                                className={`px-5 md:px-8 py-4 md:py-5 text-[11px] md:text-[13px] font-black uppercase tracking-widest transition-all relative group shrink-0 ${activeSection === item.id ? "text-[#072b47]" : "text-white/80 hover:text-white"
-                                    }`}
-                            >
-                                {item.label}
-                                {activeSection === item.id && (
-                                    <div className="absolute bottom-0 left-0 w-full h-1.5 bg-[#072b47] rounded-t-full" />
-                                )}
-                                <div className={`absolute bottom-0 left-0 w-full h-1.5 bg-white/30 rounded-t-full scale-x-0 group-hover:scale-x-100 transition-transform ${activeSection === item.id ? 'hidden' : 'block'}`} />
-                            </button>
-                        ))}
-                    </div>
-                </div>
-            </div>
-
-            {/* Mobile Nav */}
-            <div className="sticky top-[64px] z-40 bg-[#f1a134] md:hidden shadow-lg overflow-x-auto no-scrollbar">
-                <div ref={navContainerRef} className="flex items-center min-w-max">
-                    {navItems.map((item) => (
-                        <button
-                            key={item.id}
-                            data-id={item.id}
-                            onClick={() => scrollToSection(item.id)}
-                            className={`px-5 py-4 text-[11px] font-black uppercase tracking-widest relative ${activeSection === item.id ? "text-[#072b47]" : "text-white/80"
-                                }`}
-                        >
-                            {item.label}
-                            {activeSection === item.id && (
-                                <div className="absolute bottom-0 left-0 w-full h-1 bg-[#072b47]" />
-                            )}
-                        </button>
-                    ))}
-                </div>
-            </div>
+            {/* ─── Sticky Inside Navbar ─── */}
+            <InsideNavbar
+                tabs={navItems.map(item => ({ id: item.id, label: item.label }))}
+                activeTab={activeSection}
+                onTabClick={scrollToSection}
+                topOffset={64}
+                centered={true}
+            />
 
             <div className="container mx-auto px-6 lg:px-24">
 

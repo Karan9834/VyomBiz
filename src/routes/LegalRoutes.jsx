@@ -45,8 +45,14 @@ const HomeAppliances = lazy(() => import('../pages/lawyers-services/Consumer Com
 const Hotels = lazy(() => import('../pages/lawyers-services/Consumer Complaint/Hotels'));
 const Investment = lazy(() => import('../pages/lawyers-services/Consumer Complaint/Investment'));
 
-const ChequeBounceNotice = lazy(() => import('../pages/compliance/Legal Services/ChequeBounceNotice'));
+const ChequeBounceNotice = lazy(() => import('../pages/lawyers-services/ChequeBounceNotice'));
+
 const CaveatPetition = lazy(() => import('../pages/compliance/Legal Services/CaveatPetition'));
+const LegalNoticeMoneyRecovery = lazy(() => import('../pages/compliance/Legal Services/LegalNoticeMoneyRecovery'));
+const LegalNoticeRecoveryDues = lazy(() => import('../pages/lawyers-services/LegalNoticeRecoveryDues'));
+const LegalNoticeConsumerProtection = lazy(() => import('../pages/lawyers-services/LegalNoticeConsumerProtection'));
+
+
 
 // Policies
 const PrivacyPolicy = lazy(() => import('../pages/legal/PrivacyPolicy'));
@@ -99,6 +105,11 @@ const LegalRoutes = [
     <Route key="cons-inv" path="/consumer-complaint/investment" element={<Investment />} />,
     <Route key="chq-bnc-not" path="/cheque-bounce-notice" element={<ChequeBounceNotice />} />,
     <Route key="cav-pet" path="/caveat-petition" element={<CaveatPetition />} />,
+    <Route key="leg-not-money" path="/legal-notice-for-money-recovery" element={<LegalNoticeMoneyRecovery />} />,
+    <Route key="leg-not-dues" path="/legal-notice-recovery-of-dues" element={<LegalNoticeRecoveryDues />} />,
+    <Route key="leg-not-cons" path="/legal-notice-under-consumer-protection-act" element={<LegalNoticeConsumerProtection />} />,
+
+
 
     // Policies
     <Route key="priv-pol" path="/privacy-policy" element={<PrivacyPolicy />} />,

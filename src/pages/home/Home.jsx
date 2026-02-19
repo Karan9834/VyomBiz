@@ -11,10 +11,9 @@ import TrustedBrands from "../../components/myHome/TrustedBrands";
 import OldVsNewWay from "../../components/myHome/OldVsNewWay";
 // import AppDownload from "../../components/myHome/AppDownload";
 import Testimonials from "../../components/myHome/Testimonials";
+import HeroCTA from "../../components/myHome/HeroCTA";
 import SuccessStory from "../../components/myHome/SuccessStory";
-
 import SuccessMantra from "../../components/myHome/SuccessMantra";
-
 const Home = () => {
     return (
         <>
@@ -28,8 +27,9 @@ const Home = () => {
             <OldVsNewWay />
             <WhoWeAre />
             <LegalFeatures />
-            <TrustedBrands />
+            {/* <TrustedBrands /> */}
             {/* <AppDownload /> */}
+            <HeroCTA />
             <Testimonials />
             {/* <SuccessStory /> */}
         </>

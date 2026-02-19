@@ -8,7 +8,7 @@ import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <Navbar />
       <main className="min-h-screen">
@@ -17,7 +17,7 @@ function App() {
         </Suspense>
       </main>
       <Footer />
-    </Router>
+    </>
   );
 }
 

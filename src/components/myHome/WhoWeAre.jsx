@@ -17,7 +17,7 @@ const WhoWeAre = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-black mb-4 tracking-tight">
+          <h2 className="text-4xl font-bold text-[#072b47] mb-4 tracking-tight">
             Who We Are
           </h2>
           <p className="text-[#f1a134] text-lg font-bold mb-4 tracking-wide">
