@@ -13,6 +13,95 @@ import FAQLayout from "../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../components/common/TalkExpert.jsx";
 
+
+
+const ProducerCompanyOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            Agricultural Business
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            Producer Company Registration – <span className="text-[#005a9c]">Growth for Producers</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            A Producer Company is a hybrid between a private limited company and a cooperative society. It combines the efficiency of a company and the spirit of a cooperative. It is formed by primary producers (farmers, artisans, etc.) to improve their income and standard of living.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Regulated under the Companies Act, it allows producers to carry out activities like production, harvesting, procurement, grading, pooling, handling, marketing, selling, and export of primary produce.
+                        </p>
+                        <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                            Why go for a Producer Company?
+                        </h3>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            It provides a structured platform for farmers and small scales producers to aggregate their produce, gain better market access, and avail themselves of various government schemes and subsidies specifically designed for FPOs (Farmer Producer Organizations).
+                        </p>
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1625246333195-5848c4282185?auto=format&fit=crop&q=80"
+                            alt="Producer Company Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const ProducerCompanyAdvantages = () => {
+    return (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Why It Is Vital
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Benefits of Registration
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Professionalize your produce business with corporate status.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1625246333195-5848c4282185?auto=format&fit=crop&q=80"
+                            alt="Producer Company Advantages"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Corporate Identity", desc: "Enjoy the status of a separate legal entity with perpetual succession." },
+                        { title: "Bargaining Power", desc: "Bulk procurement of inputs and collective sale of outputs leads to better margins." },
+                        { title: "Access to NABARD", desc: "Eligibility for various credit and grant schemes from NABARD and SFAC." },
+                        { title: "Professional Management", desc: "The company structure allows for the appointment of professionals to manage operations effectively." },
+                        { title: "Processing & Branding", desc: "Aids in setting up processing units and creating a brand for the produce." },
+                        { title: "Export Opportunities", desc: "Easier to comply with export regulations and tap into international markets." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const ProducerCompanyRegistration = () => {
     const faqs = [
         {
@@ -69,36 +158,8 @@ const ProducerCompanyRegistration = () => {
 
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
-                overview={{
-                    badge: "Agricultural Business",
-                    title: "Producer Company Registration –",
-                    highlightTitle: "Growth for Producers",
-                    description: [
-                        "A Producer Company is a hybrid between a private limited company and a cooperative society. It combines the efficiency of a company and the spirit of a cooperative. It is formed by primary producers (farmers, artisans, etc.) to improve their income and standard of living.",
-                        "Regulated under the Companies Act, it allows producers to carry out activities like production, harvesting, procurement, grading, pooling, handling, marketing, selling, and export of primary produce.",
-                        <strong>Why go for a Producer Company?</strong>,
-                        "It provides a structured platform for farmers and small scales producers to aggregate their produce, gain better market access, and avail themselves of various government schemes and subsidies specifically designed for FPOs (Farmer Producer Organizations)."
-                    ],
-                    whyIdealTitle: "Unique Features",
-                    whyIdealList: [
-                        { title: "Limited Liability", desc: "Members' liability is limited to the extent of their shareholding." },
-                        { title: "Democratic Control", desc: "Works on 'one member, one vote' principle regardless of shareholding." },
-                        { title: "Better Credit", desc: "Easier to obtain loans from banks and financial institutions as a corporate entity." },
-                        { title: "Tax Benefits", desc: "Agricultural income of a producer company is exempt from tax under some conditions." }
-                    ]
-                }}
-                advantages={{
-                    title: "Benefits of Registration",
-                    subtitle: "Professionalize your produce business with corporate status.",
-                    list: [
-                        { title: "Corporate Identity", desc: "Enjoy the status of a separate legal entity with perpetual succession." },
-                        { title: "Bargaining Power", desc: "Bulk procurement of inputs and collective sale of outputs leads to better margins." },
-                        { title: "Access to NABARD", desc: "Eligibility for various credit and grant schemes from NABARD and SFAC." },
-                        { title: "Professional Management", desc: "The company structure allows for the appointment of professionals to manage operations effectively." },
-                        { title: "Processing & Branding", desc: "Aids in setting up processing units and creating a brand for the produce." },
-                        { title: "Export Opportunities", desc: "Easier to comply with export regulations and tap into international markets." }
-                    ]
-                }}
+                overview={<ProducerCompanyOverview />}
+                advantages={<ProducerCompanyAdvantages />}
                 eligibility={{
                     title: "Eligibility Checklist",
                     subtitle: "Who can form a Producer Company?",

@@ -4,44 +4,137 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 
 /**
- * PatentDueDiligence Page matching TrustRegistration layout styles
- * Content Sourced from: https://VyomBiz.io/patent-due-diligence
+ * PatentDueDiligence Page
  */
+
+const PatentDueDiligenceOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            IP Advisory
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            Patent Due Diligence – <span className="text-[#005a9c]">An Overview</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Patent Due Diligence is the comprehensive assessment of the legal, functional, and economic health of a patent or patent portfolio.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            It includes Defensive Diligence (freedom to operate) and Offensive Diligence (strength evaluation).
+                        </p>
+                        <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                            Why it Matters
+                        </h3>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Ensures IP assets are legally sound and commercially valuable before transactions.
+                        </p>
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80"
+                            alt="Patent Due Diligence Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
 
 const PatentDueDiligence = () => {
 
     const faqs = [
         {
             question: "What does 'patent due diligence' entail?",
-            answer: "Patent due diligence is the process of examining a patent or a portfolio of patents to evaluate their legal status, enforceability, and commercial value to support business goals like mergers, acquisitions, or licensing."
+            answer: "Evaluation of legal status, enforceability, and commercial value."
         },
         {
-            question: "What is the main goal of conducting due diligence?",
-            answer: "The primary goal is to gather sufficient information about the target patent assets to make informed decisions regarding purchase, investment, or licensing, minimizing risks and validating value."
+            question: "What is the main goal?",
+            answer: "Minimize risks and validate IP value."
         },
         {
-            question: "Who performs the due diligence?",
-            answer: "It is typically performed by legal experts, patent attorneys, and business advisors who have the expertise to analyze legal validity, scope of claims, and market potential."
+            question: "Who performs it?",
+            answer: "Patent attorneys and business advisors."
         },
         {
-            question: "What is an FTO (Freedom to Operate) Search?",
-            answer: "An FTO search determines whether a proposed product or commercial activity can be launched without infringing on the valid intellectual property rights of others."
+            question: "What is an FTO Search?",
+            answer: "Determines freedom to operate without infringement."
         },
         {
-            question: "Why is checking patent ownership important?",
-            answer: "Verifying the chain of title ensures that the seller has the legal right to transfer the patent. Errors in ownership or unpaid maintenance fees can invalidate the patent or lead to legal disputes."
+            question: "Why verify ownership?",
+            answer: "Ensures legal right to transfer patents."
         }
     ];
+
+    /* ================= STICKY ADVANTAGES SECTION ================= */
+
+    const advantagesContent = (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Strategic Evaluation
+                    </span>
+
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Purposes & Benefits
+                    </h2>
+
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Evaluate patent strength, reduce legal exposure, and maximize commercial returns.
+                    </p>
+
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1554224154-260327c00c4c?auto=format&fit=crop&q=80"
+                            alt="Patent Due Diligence Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Risk Mitigation", desc: "Identifies legal and financial threats before deal closure." },
+                        { title: "Valuation Accuracy", desc: "Determines true patent portfolio value." },
+                        { title: "Strategic Decision Making", desc: "Supports mergers, acquisitions, licensing decisions." },
+                        { title: "Negotiation Leverage", desc: "Strengthens bargaining position." },
+                        { title: "Avoid Infringement", desc: "Ensures freedom to operate." },
+                        { title: "Secure Investment", desc: "Confirms enforceability of IP assets." }
+                    ].map((item, index) => (
+                        <div
+                            key={index}
+                            className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300"
+                        >
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+
+            </div>
+        </div>
+    );
 
     return (
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
 
-            {/* ================= SECTION 1: HERO ================= */}
             <HeroLayout
                 heroTitleMain="Patent Due Diligence"
                 heroTitleSuffix="Advisory"
                 heroSubtitle="Assess Value & Mitigate Risks"
-                heroDescription="In-depth analysis of patent portfolios to support mergers, acquisitions, and licensing. Validate enforceability, check for infringement risks, and ensure freedom to operate with our expert due diligence services."
+                heroDescription="In-depth analysis of patent portfolios to support mergers, acquisitions, and licensing."
                 whatsIncludedList={[
                     "Validity & Enforceability Analysis",
                     "Freedom to Operate (FTO) Search",
@@ -55,80 +148,60 @@ const PatentDueDiligence = () => {
                 ]}
             />
 
-            {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
-                overview={{
-                    badge: "IP Advisory",
-                    title: "Patent Due Diligence –",
-                    highlightTitle: "An Overview",
-                    description: [
-                        "Patent Due Diligence is the comprehensive assessment of the legal, functional, and economic health of a patent or patent portfolio. It is crucial for businesses involved in mergers, acquisitions, technology transfers, or investment rounds.",
-                        "The process involves two main aspects: **Defensive Diligence**, which ensures you have the freedom to operate without infringing on others' rights, and **Offensive Diligence**, which assesses the strength of your patents against potential infringers.",
-                        <strong>Why it Matters</strong>,
-                        "Proper due diligence uncovers hidden risks such as invalidity claims, ownership disputes, or lapsed maintenance fees, ensuring that the IP assets you are acquiring or leveraging are legally sound and commercially valuable."
-                    ],
-                    whyIdealTitle: "Key Components of Analysis",
-                    whyIdealList: [
-                        { title: "Validity Check", desc: "Assessing if the patent is legally enforceable and not vulnerable to invalidation.", icon: <Shield size={20} /> },
-                        { title: "Infringement Analysis", desc: "Determining if the patent covers the target products or if your products infringe others.", icon: <AlertTriangle size={20} /> },
-                        { title: "Ownership Verification", desc: "Confirming clear chain of title and absence of encumbrances.", icon: <FileCheck size={20} /> },
-                        { title: "FTO Search", desc: "Ensuring Freedom to Operate in specific markets.", icon: <Search size={20} /> },
-                        { title: "Litigation History", desc: "Reviewing past or pending legal disputes involving the patent.", icon: <FileText size={20} /> },
-                        { title: "Maintenance Status", desc: "Verifying payment of all renewal fees to keep the patent alive.", icon: <Clock size={20} /> }
-                    ]
-                }}
-                advantages={{
-                    title: "Purposes & Benefits",
-                    subtitle: "Why conduct Patent Due Diligence?",
+                overview={<PatentDueDiligenceOverview />}
+                advantages={advantagesContent}
+                eligibility={{
+                    title: "Who Requires Patent Due Diligence?",
+                    subtitle: "Situations where due diligence is essential.",
                     list: [
-                        { title: "Risk Mitigation", desc: "Identifies potential legal threats and financial liabilities before closing a deal." },
-                        { title: "Valuation Accuracy", desc: "Helps in determining the true monetary value of the patent portfolio." },
-                        { title: "Strategic Decision Making", desc: "Informs whether to proceed with a merger, acquisition, or licensing agreement." },
-                        { title: "Negotiation Leverage", desc: "Provides factual data to negotiate better terms or price adjustments." },
-                        { title: "Avoid Infringement", desc: "Prevents costly lawsuits by ensuring your products don't violate existing patents." },
-                        { title: "Secure Investment", desc: "Ensures that the IP assets backing an investment are valid and enforceable." }
+                        { title: "Mergers & Acquisitions", desc: "Companies acquiring IP-heavy businesses." },
+                        { title: "Investors", desc: "VCs and private equity validating IP assets." },
+                        { title: "Technology Buyers", desc: "Businesses purchasing patented technology." },
+                        { title: "Startups", desc: "Validating portfolio before fundraising." },
+                        { title: "Licensors & Licensees", desc: "Ensuring enforceability before agreements." },
+                        { title: "Corporate Strategy Teams", desc: "Evaluating competitor patent portfolios." }
                     ]
                 }}
                 documents={{
                     title: "Documents & Info Required",
                     description: "Data needed for a thorough due diligence process.",
                     list: [
-                        "List of Patents & Applications (Portfolio)",
-                        "Maintenance Fee Payment Records",
-                        "Assignment Deeds & Transfer Documents",
-                        "File Wrappers (Prosecution History)",
-                        "Prior Art Search Reports",
-                        "Details of Current/Past Litigation",
-                        "License Agreements (if any)"
+                        "Patent Portfolio List",
+                        "Maintenance Fee Records",
+                        "Assignment Deeds",
+                        "Prosecution History",
+                        "Prior Art Reports",
+                        "Litigation Details",
+                        "License Agreements"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1350&q=80"
                 }}
                 process={{
                     title: "Due Diligence Process",
-                    subtitle: "Our systematic approach to evaluating patents.",
+                    subtitle: "Our systematic approach.",
                     steps: [
-                        { step: "01", title: "Preparation", desc: "Defining objectives, scope, and assembling the expert team." },
-                        { step: "02", title: "Data Collection", desc: "Gathering patent data, ownership records, and litigation history." },
-                        { step: "03", title: "In-Depth Inspection", desc: "Analyzing validity, claims scope, FTO, and encumbrances." },
-                        { step: "04", title: "Risk Assessment", desc: "Identifying red flags like lapses or ownership gaps." },
-                        { step: "05", title: "Reporting", desc: "Delivering a comprehensive report with SWOT analysis and recommendations." }
+                        { step: "01", title: "Preparation", desc: "Define scope and team." },
+                        { step: "02", title: "Data Collection", desc: "Gather records." },
+                        { step: "03", title: "Inspection", desc: "Analyze validity & FTO." },
+                        { step: "04", title: "Risk Assessment", desc: "Identify red flags." },
+                        { step: "05", title: "Reporting", desc: "Comprehensive advisory report." }
                     ]
                 }}
                 whyChooseUs={{
                     title: "Why Choose VyomBiz?",
-                    subtitle: "Expertise you can trust for critical IP decisions.",
+                    subtitle: "Expert IP advisory.",
                     list: [
-                        { title: "Global Experts", desc: "Network of specialized patent attorneys and technical experts." },
-                        { title: "Comprehensive Reporting", desc: "Detailed insights into legal and commercial risks." },
-                        { title: "Fast Turnaround", desc: "Efficient processes to meet deal timelines." },
-                        { title: "Confidentiality", desc: "Strict data privacy and NDA compliance." },
-                        { title: "Cost-Effective", desc: "Competitive pricing for high-quality advisory services." },
-                        { title: "Holistic Approach", desc: "Combining legal, technical, and business perspectives." }
+                        { title: "Global Experts", desc: "Specialized patent attorneys." },
+                        { title: "Comprehensive Reporting", desc: "Detailed risk insights." },
+                        { title: "Fast Turnaround", desc: "Meet deal timelines." },
+                        { title: "Confidentiality", desc: "Strict NDA compliance." },
+                        { title: "Cost-Effective", desc: "Competitive pricing." },
+                        { title: "Holistic Approach", desc: "Legal + technical + business." }
                     ]
                 }}
             />
 
-            {/* ================= FAQ SECTION ================= */}
             <FAQLayout
                 title="Frequently Asked Questions"
                 subtitle="Common queries about Patent Due Diligence"

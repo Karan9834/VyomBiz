@@ -39,6 +39,7 @@ const Testimonials = () => {
   return (
     <section className="py-14 md:py-20 bg-white overflow-hidden">
       {/* Section Header */}
+<<<<<<< Updated upstream
       <div className="text-center mb-12 px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-4 tracking-tight">
           Voices of <span className="text-[#f1a134]">Success</span>
@@ -46,6 +47,12 @@ const Testimonials = () => {
         <div className="w-16 h-1 bg-[#f1a134] mx-auto rounded mb-6"></div>
         <p className="text-slate-500 text-sm md:text-base mt-2 max-w-2xl mx-auto font-medium">
           Hear from the entrepreneurs who have grown with VyomBiz.
+=======
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold text-[#005a9c]">Testimonials</h2>
+        <p className="text-black text-lg mt-2">
+          Updated testimonials from our customers
+>>>>>>> Stashed changes
         </p>
       </div>
 
@@ -90,6 +97,7 @@ const Testimonials = () => {
       {/* View More Reviews Button */}
       <div className="text-center mt-12 px-4">
         <Link to="/reviews">
+<<<<<<< Updated upstream
           <button className="bg-[#072b47] text-white font-bold text-sm px-8 py-3.5 rounded-xl hover:bg-slate-800 transition-all shadow-md active:scale-95 duration-200 group">
             <span className="flex items-center gap-2">
               Explore All Stories
@@ -97,6 +105,10 @@ const Testimonials = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </span>
+=======
+          <button className="bg-[#005a9c] text-white font-semibold px-6 py-3 rounded hover:bg-blue-700 transition shadow-lg hover:shadow-xl hover:-translate-y-1 transform active:scale-95 duration-200">
+            View More Reviews
+>>>>>>> Stashed changes
           </button>
         </Link>
       </div>

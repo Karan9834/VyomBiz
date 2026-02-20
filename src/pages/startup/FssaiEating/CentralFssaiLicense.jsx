@@ -13,6 +13,87 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
+const CentralFssaiOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            National Level
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            Central FSSAI Authority – <span className="text-[#005a9c]">Global Footprint</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            The FSSAI Central License is the highest level of food safety certification in India. It is specifically designed for Large Food Business Operators (FBOs) that have reached a massive scale or are involved in international trade.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            This license ensures that your products meet the highest safety norms formulated under the FSS Act, 2006. It is a mandatory requirement for e-commerce platforms, importers, and entities operating across multiple states.
+                        </p>
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1542601906990-b4d3fb7d5fa5?auto=format&fit=crop&q=80"
+                            alt="Central FSSAI License Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const CentralFssaiAdvantages = () => {
+    return (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Key Benefits
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Benefits of Central License
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Why large-scale enterprises trust Central FSSAI certification.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80"
+                            alt="Central FSSAI Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Nationwide Operations", desc: "Operate across all states under a single, centralized licensing system." },
+                        { title: "Investor Confidence", desc: "Makes it significantly easier to secure funding and loans for expansion." },
+                        { title: "Consumer Awareness", desc: "Gain an advantage with an increasingly safety-conscious consumer base." },
+                        { title: "Hygiene Benchmarking", desc: "Adhere to advanced hygiene norms that cater to premium market segments." },
+                        { title: "Export Facilitation", desc: "Essential for shipping food articles abroad with an IEC certificate." },
+                        { title: "Regulatory Security", desc: "Stay safe from heavy fines by following the most stringent safety norms." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const CentralFssaiLicense = () => {
     const faqs = [
         {
@@ -56,35 +137,8 @@ const CentralFssaiLicense = () => {
             <TalkExpert />
 
             <DetailsLayout
-                overview={{
-                    badge: "National Level",
-                    title: "Central FSSAI Authority –",
-                    highlightTitle: "Global Footprint",
-                    description: [
-                        "The FSSAI Central License is the highest level of food safety certification in India. It is specifically designed for Large Food Business Operators (FBOs) that have reached a massive scale or are involved in international trade.",
-                        "This license ensures that your products meet the highest safety norms formulated under the FSS Act, 2006. It is a mandatory requirement for e-commerce platforms, importers, and entities operating across multiple states.",
-                        <strong>Key Eligibility:</strong>,
-                        "Mandatory for all FBOs with annual revenues over ₹20 Crore, 100% Export-Oriented Units, food units in central government agencies, seaports, and airports."
-                    ],
-                    whyIdealTitle: "Strategic Advantages",
-                    whyIdealList: [
-                        { title: "Worldwide Identity", desc: "Helps establish a global reputation and brand name in international markets." },
-                        { title: "Business Expansion", desc: "Easily open new outlets and extend your footprint to any location in India." },
-                        { title: "Legal Advantage", desc: "Acting as definitive evidence that food quality meets the highest standards." }
-                    ]
-                }}
-                advantages={{
-                    title: "Benefits of Central License",
-                    subtitle: "Why large-scale enterprises trust Central FSSAI certification.",
-                    list: [
-                        { title: "Nationwide Operations", desc: "Operate across all states under a single, centralized licensing system." },
-                        { title: "Investor Confidence", desc: "Makes it significantly easier to secure funding and loans for expansion." },
-                        { title: "Consumer Awareness", desc: "Gain an advantage with an increasingly safety-conscious consumer base." },
-                        { title: "Hygiene Benchmarking", desc: "Adhere to advanced hygiene norms that cater to premium market segments." },
-                        { title: "Export Facilitation", desc: "Essential for shipping food articles abroad with an IEC certificate." },
-                        { title: "Regulatory Security", desc: "Stay safe from heavy fines by following the most stringent safety norms." }
-                    ]
-                }}
+                overview={<CentralFssaiOverview />}
+                advantages={<CentralFssaiAdvantages />}
                 eligibility={{
                     title: "Eligibility Criteria",
                     subtitle: "Who must apply for a Central FSSAI License?",

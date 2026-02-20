@@ -43,6 +43,82 @@ const TrademarkOpposition = () => {
         }
     ];
 
+    const oppositionOverviewContent = (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    {/* Left Content */}
+                    <div>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            Trademark Opposition – An Overview
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            A trademark opposition is a formal objection filed by a third party against the registration of a trademark that has been accepted by the Registrar and published in the Trademark Journal.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            It allows brand owners and the public to prevent the registration of marks that are identical, similar, or likely to cause confusion with existing marks.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                            The opposition must be filed within a strict timeline of 4 months from the date of advertisement in the journal.
+                        </p>
+                    </div>
+
+                    {/* Right Image */}
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1505664194779-8beaceb930b5?auto=format&fit=crop&q=80"
+                            alt="Trademark Opposition"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+
+    const advantagesContent = (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Brand Defense
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Grounds for Opposition
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Valid reasons to oppose a trademark application in India.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&q=80"
+                            alt="Trademark Opposition Grounds"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Similarity", desc: "The mark is identical or deceptively similar to an existing registered trademark." },
+                        { title: "Descriptiveness", desc: "The mark lacks distinctiveness or is purely descriptive of the goods/services." },
+                        { title: "Bad Faith", desc: "The application was made in bad faith or with dishonest intentions." },
+                        { title: "Public Confusion", desc: "The mark is likely to deceive the public or cause confusion." },
+                        { title: "Prohibited Marks", desc: "The mark contains matter that is illegal, offensive, or prohibited under the Emblems and Names Act." },
+                        { title: "Customary Language", desc: "The mark consists of terms common in current language or established trade practices." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">{item.title}</h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">{item.desc}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+
     return (
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
 
@@ -69,35 +145,8 @@ const TrademarkOpposition = () => {
 
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
-                overview={{
-                    badge: "Brand Defense",
-                    title: "Trademark Opposition –",
-                    highlightTitle: "An Overview",
-                    description: [
-                        "A trademark opposition is a formal objection filed by a third party against the registration of a trademark that has been accepted by the Registrar and published in the Trademark Journal.",
-                        "It allows brand owners and the public to prevent the registration of marks that are identical, similar, or likely to cause confusion with existing marks.",
-                        "The opposition must be filed within a strict timeline of 4 months from the date of advertisement in the journal."
-                    ],
-                    whyIdealTitle: "Why File an Opposition?",
-                    whyIdealList: [
-                        { title: "Prevent Conclusion", desc: "Stop similar marks from entering the market and causing consumer confusion." },
-                        { title: "Protect Reputation", desc: "Safeguard your brand's goodwill from being diluted or misused." },
-                        { title: "Legal Right", desc: "Exercise your statutory right to oppose under Section 21 of the Trademarks Act." },
-                        { title: "Maintain Exclusivity", desc: "Ensure your trademark remains unique and distinctive in your industry." }
-                    ]
-                }}
-                advantages={{
-                    title: "Grounds for Opposition",
-                    subtitle: "Valid reasons to oppose a trademark application in India.",
-                    list: [
-                        { title: "Similarity", desc: "The mark is identical or deceptively similar to an existing registered trademark." },
-                        { title: "Descriptiveness", desc: "The mark lacks distinctiveness or is purely descriptive of the goods/services." },
-                        { title: "Bad Faith", desc: "The application was made in bad faith or with dishonest intentions." },
-                        { title: "Public Confusion", desc: "The mark is likely to deceive the public or cause confusion." },
-                        { title: "Prohibited Marks", desc: "The mark contains matter that is illegal, offensive, or prohibited under the Emblems and Names Act." },
-                        { title: "Customary Language", desc: "The mark consists of terms common in current language or established trade practices." }
-                    ]
-                }}
+                overview={oppositionOverviewContent}
+                advantages={advantagesContent}
                 eligibility={{
                     title: "Who Can Oppose?",
                     subtitle: "Eligibility criteria for filing a trademark opposition.",

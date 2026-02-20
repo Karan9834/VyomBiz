@@ -13,6 +13,87 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
+const FssaiStateOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            State Level
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            FSSAI State License – <span className="text-[#005a9c]">Mid-Scale Operations</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            FSSAI (Food Safety and Standards Authority of India) regulates the mid-sized food sector through State Licensing. It ensures that businesses operating within a specific state adhere to stringent quality and hygiene provisions.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Functioning without a valid state food license registration is a punishable offense under the FSS Act, 2006. The State Authority conducts thorough scrutiny of paperwork and may arrange on-site inspections before granting the license.
+                        </p>
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80"
+                            alt="FSSAI State License Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const FssaiStateLicenseAdvantages = () => {
+    return (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Why It Is Vital
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Advantages of State License
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Why mid-sized FBOs must secure this certification.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80"
+                            alt="FSSAI State License Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Business Credibility", desc: "Significantly improves the creditability of your food brand in the state." },
+                        { title: "Consumer Attraction", desc: "A valid FSSAI logo on products helps attract safety-conscious customers." },
+                        { title: "Safety Best Practices", desc: "Mandates hygiene protocols that improve overall product safety." },
+                        { title: "Government Support", desc: "Opens doors for state-level subsidies and MSME incentives." },
+                        { title: "Penalty Avoidance", desc: "Stay safe from heavy fines ranging up to ₹5 Lakhs for non-compliance." },
+                        { title: "Operational Growth", desc: "Enables hassle-free expansion within the state boundary." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const FssaiStateLicense = () => {
     const faqs = [
         {
@@ -56,35 +137,8 @@ const FssaiStateLicense = () => {
             <TalkExpert />
 
             <DetailsLayout
-                overview={{
-                    badge: "State Level",
-                    title: "FSSAI State License –",
-                    highlightTitle: "Mid-Scale Operations",
-                    description: [
-                        "FSSAI (Food Safety and Standards Authority of India) regulates the mid-sized food sector through State Licensing. It ensures that businesses operating within a specific state adhere to stringent quality and hygiene provisions.",
-                        "Functioning without a valid state food license registration is a punishable offense under the FSS Act, 2006. The State Authority conducts thorough scrutiny of paperwork and may arrange on-site inspections before granting the license.",
-                        <strong>Who Needs It?</strong>,
-                        "Applicable for FBOs with turnover between ₹12 Lakhs and ₹20 Crores, hotels with 4-star ratings or less, dairy units (500-50,000 L/day), and slaughterhouses with moderate daily capacities."
-                    ],
-                    whyIdealTitle: "Key Benefits",
-                    whyIdealList: [
-                        { title: "Brand Recognition", desc: "Builds trust among local consumers and end-users." },
-                        { title: "Legal Stability", desc: "Provides a strong legal foundation that unregistered counterparts lack." },
-                        { title: "Market Access", desc: "Facilitates business deals with larger retailers and supply chains." }
-                    ]
-                }}
-                advantages={{
-                    title: "Advantages of State License",
-                    subtitle: "Why mid-sized FBOs must secure this certification.",
-                    list: [
-                        { title: "Business Credibility", desc: "Significantly improves the creditability of your food brand in the state." },
-                        { title: "Consumer Attraction", desc: "A valid FSSAI logo on products helps attract safety-conscious customers." },
-                        { title: "Safety Best Practices", desc: "Mandates hygiene protocols that improve overall product safety." },
-                        { title: "Government Support", desc: "Opens doors for state-level subsidies and MSME incentives." },
-                        { title: "Penalty Avoidance", desc: "Stay safe from heavy fines ranging up to ₹5 Lakhs for non-compliance." },
-                        { title: "Operational Growth", desc: "Enables hassle-free expansion within the state boundary." }
-                    ]
-                }}
+                overview={<FssaiStateOverview />}
+                advantages={<FssaiStateLicenseAdvantages />}
                 eligibility={{
                     title: "Eligibility Criteria",
                     subtitle: "Check if your business qualifies for a State License.",

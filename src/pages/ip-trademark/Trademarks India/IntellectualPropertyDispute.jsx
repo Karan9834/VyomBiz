@@ -43,6 +43,82 @@ const IntellectualPropertyDispute = () => {
         }
     ];
 
+    const disputeOverviewContent = (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    {/* Left Content */}
+                    <div>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            Intellectual Property Dispute – An Overview
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Intellectual Property disputes often arise when someone uses copyrighted content, patented inventions, or trademarked signs without authorization, leading to infringement. These conflicts can jeopardize your brand's reputation and revenue.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            At Vyombiz, our experienced legal professionals help you navigate the complexities of IP litigation across India. We provide end-to-end support tailored to your business needs to conflict resolution and rights restoration.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                            We handle disputes related to patents, trademarks, copyrights, and designs, ensuring your intangible assets are safeguarded against unauthorized use.
+                        </p>
+                    </div>
+
+                    {/* Right Image */}
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80"
+                            alt="Intellectual Property Dispute"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+
+    const advantagesContent = (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Legal Protection
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Common IP Disputes
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Understanding the different types of intellectual property conflicts.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1505664194779-8beaceb930b5?auto=format&fit=crop&q=80"
+                            alt="IP Disputes"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Patent Infringement", desc: "Unauthorized making, using, or selling of a patented invention. Defenses include challenging validity or asserting non-infringement." },
+                        { title: "Trademark Infringement", desc: "Use of an identical or confusingly similar mark by a third party, causing consumer confusion and brand damage." },
+                        { title: "Copyright Infringement", desc: "Unauthorized use of creative works like music, films, or software. Requires proving originality and substantial similarity." },
+                        { title: "Design Rights Violation", desc: "Copying the aesthetic features of a product. Owners must prove the design is new, original, and visually similar." },
+                        { title: "Passing Off", desc: "Misrepresenting goods as those of another to capitalize on their goodwill, common in unregistered trademark disputes." },
+                        { title: "Trade Secret Theft", desc: "Unauthorized acquisition or disclosure of confidential business information or processes." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">{item.title}</h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">{item.desc}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+
     return (
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
 
@@ -69,35 +145,8 @@ const IntellectualPropertyDispute = () => {
 
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
-                overview={{
-                    badge: "Legal Protection",
-                    title: "Intellectual Property Dispute –",
-                    highlightTitle: "An Overview",
-                    description: [
-                        "Intellectual Property disputes often arise when someone uses copyrighted content, patented inventions, or trademarked signs without authorization, leading to infringement. These conflicts can jeopardize your brand's reputation and revenue.",
-                        "At Vyombiz, our experienced legal professionals help you navigate the complexities of IP litigation across India. We provide end-to-end support tailored to your business needs to conflict resolution and rights restoration.",
-                        "We handle disputes related to patents, trademarks, copyrights, and designs, ensuring your intangible assets are safeguarded against unauthorized use."
-                    ],
-                    whyIdealTitle: "Types of IP Rights Protected",
-                    whyIdealList: [
-                        { title: "Copyright", desc: "For literary, artistic, musical works, cinematography, and software." },
-                        { title: "Patent", desc: "Exclusive rights for inventions, designs, and novel processes." },
-                        { title: "Trademark", desc: "Symbols, signs, or logos identifying goods/services." },
-                        { title: "Industrial Designs", desc: "Aesthetic features like shape, pattern, or color of an article." }
-                    ]
-                }}
-                advantages={{
-                    title: "Common IP Disputes",
-                    subtitle: "Understanding the different types of intellectual property conflicts.",
-                    list: [
-                        { title: "Patent Infringement", desc: "Unauthorized making, using, or selling of a patented invention. Defenses include challenging validity or asserting non-infringement." },
-                        { title: "Trademark Infringement", desc: "Use of an identical or confusingly similar mark by a third party, causing consumer confusion and brand damage." },
-                        { title: "Copyright Infringement", desc: "Unauthorized use of creative works like music, films, or software. Requires proving originality and substantial similarity." },
-                        { title: "Design Rights Violation", desc: "Copying the aesthetic features of a product. Owners must prove the design is new, original, and visually similar." },
-                        { title: "Passing Off", desc: "Misrepresenting goods as those of another to capitalize on their goodwill, common in unregistered trademark disputes." },
-                        { title: "Trade Secret Theft", desc: "Unauthorized acquisition or disclosure of confidential business information or processes." }
-                    ]
-                }}
+                overview={disputeOverviewContent}
+                advantages={advantagesContent}
                 eligibility={{
                     title: "Legal Framework",
                     subtitle: "Key Acts governing Intellectual Property disputes in India.",

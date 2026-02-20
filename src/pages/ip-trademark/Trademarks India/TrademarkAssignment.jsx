@@ -43,6 +43,82 @@ const TrademarkAssignment = () => {
         }
     ];
 
+    const assignmentOverviewContent = (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    {/* Left Content */}
+                    <div>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            Trademark Assignment – An Overview
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Trademark Assignment is a process where the ownership of a trademark is transferred from one person/entity (Assignor) to another (Assignee). This can legally transfer all rights, title, and interest in the mark.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Assignments can be made for both registered and unregistered trademarks, with or without the goodwill of the business.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                            Types of Assignments include Complete Assignment (all rights transferred), Partial Assignment (specific products/services), Assignment with Goodwill (brand value transferred), and Assignment without Goodwill (brand used for different purpose).
+                        </p>
+                    </div>
+
+                    {/* Right Image */}
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1521791136064-7984c1bc8179?auto=format&fit=crop&q=80"
+                            alt="Trademark Assignment"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+
+    const advantagesContent = (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Brand Transfer
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Benefits of Assignment
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Why assigning a trademark can be beneficial for your business.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80"
+                            alt="Trademark Assignment Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Brand Monetization", desc: "Unlocking the financial value of the trademark for the owner." },
+                        { title: "Resources Saving", desc: "The assignee saves time, money, and effort required to build a brand from scratch." },
+                        { title: "Valid Legal Proof", desc: "The assignment deed serves as concrete evidence of ownership transfer." },
+                        { title: "Business Expansion", desc: "Facilitates entering new markets or industries with an established name." },
+                        { title: "IP Maintenance", desc: "Ensures the trademark remains active and protected under new ownership." },
+                        { title: "Goodwill Transfer", desc: "Allows the new owner to capitalize on the existing reputation of the brand." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">{item.title}</h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">{item.desc}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+
     return (
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
 
@@ -69,35 +145,8 @@ const TrademarkAssignment = () => {
 
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
-                overview={{
-                    badge: "Brand Transfer",
-                    title: "Trademark Assignment –",
-                    highlightTitle: "An Overview",
-                    description: [
-                        "Trademark Assignment is a process where the ownership of a trademark is transferred from one person/entity (Assignor) to another (Assignee). This can legally transfer all rights, title, and interest in the mark.",
-                        "Assignments can be made for both registered and unregistered trademarks, with or without the goodwill of the business.",
-                        "Types of Assignments include Complete Assignment (all rights transferred), Partial Assignment (specific products/services), Assignment with Goodwill (brand value transferred), and Assignment without Goodwill (brand used for different purpose)."
-                    ],
-                    whyIdealTitle: "Why Assign a Trademark?",
-                    whyIdealList: [
-                        { title: "Monetization", desc: "Monetize the value of your brand and get returns on your investment." },
-                        { title: "Expansion", desc: "Helps in business expansion by allowing others to use the brand in new markets." },
-                        { title: "Restructuring", desc: "Essential during mergers, acquisitions, or organizational changes." },
-                        { title: "Legal Proof", desc: "Acts as valid proof of ownership transfer in case of future disputes." }
-                    ]
-                }}
-                advantages={{
-                    title: "Benefits of Assignment",
-                    subtitle: "Why assigning a trademark can be beneficial for your business.",
-                    list: [
-                        { title: "Brand Monetization", desc: "Unlocking the financial value of the trademark for the owner." },
-                        { title: "Resources Saving", desc: "The assignee saves time, money, and effort required to build a brand from scratch." },
-                        { title: "Valid Legal Proof", desc: "The assignment deed serves as concrete evidence of ownership transfer." },
-                        { title: "Business Expansion", desc: "Facilitates entering new markets or industries with an established name." },
-                        { title: "IP Maintenance", desc: "Ensures the trademark remains active and protected under new ownership." },
-                        { title: "Goodwill Transfer", desc: "Allows the new owner to capitalize on the existing reputation of the brand." }
-                    ]
-                }}
+                overview={assignmentOverviewContent}
+                advantages={advantagesContent}
                 eligibility={{
                     title: "Restrictions & Requirements",
                     subtitle: "Key considerations before initiating a trademark assignment.",

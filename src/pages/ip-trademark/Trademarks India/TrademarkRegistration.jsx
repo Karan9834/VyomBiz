@@ -1,12 +1,61 @@
+
+import React from 'react';
 import { ShieldCheck, Award, Globe, Search, FileText, CheckCircle, Clock, Users } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 
-/**
- * TrademarkRegistration Page matching TrustRegistration layout styles
- * Content Sourced from: https://VyomBiz.io/trademark-registration
- */
+// Placeholder for the missing image
+const overviewImg = "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80";
+
+const TrademarkOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+
+                    {/* Left Content */}
+                    <div>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            Trademark Registration – An Overview
+                        </h2>
+
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Trademark registration in India is a process that safeguards your brand legally.
+                            The process protects brand names, logos, symbols, or slogans, facilitating
+                            exclusive rights to the businesses to use their mark. Trademark prevents the
+                            unauthorized use of your brand's originality in the market. However, to register
+                            a trademark, you must follow a series of steps, including filing an application
+                            with the Indian Trademark Office, undergoing verification, and responding if
+                            any objections are raised. A registered trademark is valid for 10 years and can
+                            be renewed.
+                        </p>
+
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                            Trademark registration is essential for boosting your business's credibility,
+                            offering protection against infringements, creating a valuable asset, and
+                            facilitating global trademark protection. A trademark registered in India helps
+                            you expand your business globally by safeguarding your interests internationally.
+                            If you are looking to register trademark, you must connect with our seasoned IPR
+                            experts today.
+                        </p>
+                    </div>
+
+                    {/* Right Image */}
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src={overviewImg}
+                            alt="Trademark Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    );
+};
 
 const TrademarkRegistration = () => {
 
@@ -33,6 +82,79 @@ const TrademarkRegistration = () => {
         }
     ];
 
+    const advantagesContent = (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Brand Protection
+                    </span>
+
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Benefits of Trademark Registration
+                    </h2>
+
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Secure your brand's future with legal protection and exclusive rights.
+                    </p>
+
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1554224154-260327c00c4c?auto=format&fit=crop&q=80"
+                            alt="Trademark Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        {
+                            title: "Brand Protection",
+                            desc: "Grants exclusive rights, preventing unauthorized use of your brand name or logo."
+                        },
+                        {
+                            title: "Legal Rights",
+                            desc: "Offers legal ownership and facilitates actions against infringers for compensation."
+                        },
+                        {
+                            title: "Business Credibility",
+                            desc: "Boosts brand credibility, demonstrating professionalism and promoting trust with customers and investors."
+                        },
+                        {
+                            title: "Market Differentiation",
+                            desc: "Distinguishes your products from competitors and strengthens brand recognition in the marketplace."
+                        },
+                        {
+                            title: "Asset Creation",
+                            desc: "Becomes an intangible business asset that can be licensed or franchised for long-term financial benefits."
+                        },
+                        {
+                            title: "Global Protection",
+                            desc: "Helps secure international trademark protection and safeguards your brand across different markets worldwide."
+                        }
+                    ].map((item, index) => (
+                        <div
+                            key={index}
+                            className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300"
+                        >
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+
+            </div>
+        </div>
+    );
+
     return (
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
 
@@ -57,40 +179,8 @@ const TrademarkRegistration = () => {
 
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
-                overview={{
-                    badge: "Brand Protection",
-                    title: "Trademark Registration –",
-                    highlightTitle: "An Overview",
-                    description: [
-                        "A trademark is a distinctive symbol, word, logo, or name a business uses to identify its products or services, distinguishing a brand from its competitors through its unique identity.",
-                        "Registering a trademark offers legal protection, thwarting others from using or copying the brand and its identity. It also helps build customer trust by providing authenticity.",
-                        <strong>Why Register?</strong>,
-                        "Trademark registration is essential for boosting your business's credibility, offering protection against infringements, creating a valuable asset, and facilitating global trademark protection.",
-                        "A registered trademark is valid for 10 years and can be renewed indefinitely."
-                    ],
-                    whyIdealTitle: "Types of Trademarks",
-                    whyIdealList: [
-                        { title: "Product Mark", desc: "Ensures protection for goods and products by distinguishing them from competitors." },
-                        { title: "Service Mark", desc: "Ensures protection for services, distinguishing one service provider from another." },
-                        { title: "Collective Mark", desc: "Identifies products or services delivered by a group, organization, or association." },
-                        { title: "Certification Mark", desc: "Signifies that the product has fulfilled specific quality standards or certification criteria." },
-                        { title: "Shape Mark", desc: "Offers protection to a product's specific shape or packaging." },
-                        { title: "Sound Mark", desc: "Protects unique sounds associated with a brand, such as jingles." },
-                        { title: "Pattern Mark", desc: "Safeguards distinct patterns used on products or services." }
-                    ]
-                }}
-                advantages={{
-                    title: "Benefits of Trademark Registration",
-                    subtitle: "Secure your brand's future with legal protection and exclusive rights.",
-                    list: [
-                        { title: "Brand Protection", desc: "Grants exclusive rights, preventing unauthorized use of your brand name or logo." },
-                        { title: "Legal Rights", desc: "Offers legal ownership and facilitates actions against infringers for compensation." },
-                        { title: "Business Credibility", desc: "Boosts brand’s credibility, demonstrating legitimacy and professionalism." },
-                        { title: "Market Differentiation", desc: "Helps distinguish your products from competitors, reflecting unique brand identity." },
-                        { title: "Asset Creation", desc: "Becomes an intangible business asset that can be franchised or licensed for revenue." },
-                        { title: "Global Protection", desc: "Helps secure international protection, making it easy to penetrate global markets." }
-                    ]
-                }}
+                overview={<TrademarkOverview />}
+                advantages={advantagesContent}
                 eligibility={{
                     title: "Who Should Register?",
                     subtitle: "Entities and individuals who benefit from Trademark Registration.",

@@ -11,7 +11,7 @@ const OldVsNewWay = () => {
                     <h2 className="text-4xl font-bold text-[#072b47] mb-4 tracking-tight">
                         Everything Your Business Needs to Grow, Right Here
                     </h2>
-                    <div className="w-16 h-1 bg-[#f1a134] mx-auto rounded"></div>
+                    <div className="w-16 h-1 bg-[#005a9c] mx-auto rounded"></div>
                     <p className="text-gray-700 text-sm md:text-base lg:text-lg mt-6 max-w-3xl mx-auto font-normal tracking-wide">
                         Stop juggling manual processes and start expanding with automated business solutions.
                     </p>
@@ -53,6 +53,7 @@ const OldVsNewWay = () => {
                                 Quick, AI-powered automation. Real-time tracking, secure storage, and instant expert support at your fingertips.
                             </p>
 
+<<<<<<< Updated upstream
                             {/* Image Area */}
                             <div className="relative w-full max-w-sm mx-auto mb-8 flex items-center justify-center">
                                 <img
@@ -60,6 +61,67 @@ const OldVsNewWay = () => {
                                     alt="The VyomBiz Way Processes"
                                     className="w-full h-auto object-contain"
                                 />
+=======
+                            {/* Circular Network Diagram */}
+                            <div className="relative w-full aspect-square max-w-sm mx-auto mb-12 flex items-center justify-center">
+                                {/* Center Icon */}
+                                <div className="absolute w-28 h-28 bg-gradient-to-br from-[#005a9c] to-blue-400 rounded-full shadow-[0_0_30px_rgba(0,90,156,0.4)] flex items-center justify-center z-20 border-4 border-white animate-pulse-slow">
+                                    <Zap className="w-12 h-12 text-white fill-white" />
+                                </div>
+
+                                {/* Orbiting Icons */}
+                                {newWaySteps.map((step, index) => {
+                                    const angle = (index * 360) / newWaySteps.length;
+                                    const radius = 38;
+                                    const x = 50 + radius * Math.cos((angle - 90) * (Math.PI / 180));
+                                    const y = 50 + radius * Math.sin((angle - 90) * (Math.PI / 180));
+
+                                    return (
+                                        <div
+                                            key={index}
+                                            className="absolute z-10"
+                                            style={{ left: `${x}%`, top: `${y}%`, transform: 'translate(-50%, -50%)' }}
+                                        >
+                                            <div className="bg-white rounded-full p-3.5 shadow-lg border-2 border-[#005a9c]/30 hover:scale-110 transition-transform hover:border-[#005a9c]">
+                                                <step.icon className="w-6 h-6 text-[#005a9c]" />
+                                            </div>
+                                            <p className="text-[10px] font-bold text-white/90 mt-2 whitespace-nowrap uppercase tracking-tighter">
+                                                {step.label}
+                                            </p>
+                                        </div>
+                                    );
+                                })}
+
+                                <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-30">
+                                    {newWaySteps.map((_, index) => {
+                                        const angle = (index * 360) / newWaySteps.length;
+                                        const radius = 38;
+                                        const x = 50 + radius * Math.cos((angle - 90) * (Math.PI / 180));
+                                        const y = 50 + radius * Math.sin((angle - 90) * (Math.PI / 180));
+                                        return <line key={index} x1="50%" y1="50%" x2={`${x}%`} y2={`${y}%`} stroke="#005a9c" strokeWidth="1.5" />;
+                                    })}
+                                </svg>
+                            </div>
+
+                            {/* Key Highlights */}
+                            <div className="grid grid-cols-2 gap-4">
+                                {[
+                                    { text: "AI Automation", sub: "Reduced Errors" },
+                                    { text: "Real-time", sub: "Status Updates" },
+                                    { text: "Expert Help", sub: "24/7 Support" },
+                                    { text: "Security", sub: "Bank-grade" }
+                                ].map((item, idx) => (
+                                    <div key={idx} className="flex items-center gap-3 bg-white/5 backdrop-blur-md rounded-2xl p-3 border border-white/10 text-left">
+                                        <div className="w-8 h-8 rounded-lg bg-[#005a9c] flex items-center justify-center shrink-0">
+                                            <CheckCircle className="w-5 h-5 text-white" />
+                                        </div>
+                                        <div>
+                                            <p className="text-white text-xs font-bold leading-none mb-1">{item.text}</p>
+                                            <p className="text-white/60 text-[10px] uppercase font-bold tracking-wider leading-none">{item.sub}</p>
+                                        </div>
+                                    </div>
+                                ))}
+>>>>>>> Stashed changes
                             </div>
                         </div>
                     </div>

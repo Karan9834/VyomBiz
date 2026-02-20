@@ -13,6 +13,87 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
+const EatingHouseOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            Police Department
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            Eating House Permit – <span className="text-[#005a9c]">Legal Consent</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            An Eating House License is legal consent required for undertaking any business where food or beverages are supplied for public consumption. This is a mandatory prerequisite along with FSSAI and Health Trade licenses.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            The license is governed by the City Police Act (e.g., Delhi Police Act) and must be applied for under the City Police Headquarters or Police Commissioner. Authorities grant the license after a rigorous inspection of the premises and documentation.
+                        </p>
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80"
+                            alt="Eating House License Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const EatingHouseAdvantages = () => {
+    return (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Why It Is Vital
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Benefits of Eating House License
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Benefits and legal importance of the Eating House License.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80"
+                            alt="Eating House License Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Full Legal Compliance", desc: "Operating without this license is a punishable offense under police regulations." },
+                        { title: "Operational Security", desc: "Ensures your business can run without fear of sudden police shutdowns." },
+                        { title: "Public Safety Assurance", desc: "Validates that your premises meet building and electrical safety standards." },
+                        { title: "Staff Credibility", desc: "Includes police verification of employees for enhanced security." },
+                        { title: "Hygienic Environment", desc: "Requirement for medical certificates ensures high staff hygiene." },
+                        { title: "Brand Reputation", desc: "Proper licensing reflects a professional and trustworthy establishment." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const EatingHouseLicense = () => {
     const faqs = [
         {
@@ -60,35 +141,8 @@ const EatingHouseLicense = () => {
             <TalkExpert />
 
             <DetailsLayout
-                overview={{
-                    badge: "Police Department",
-                    title: "Eating House Permit –",
-                    highlightTitle: "Legal Consent",
-                    description: [
-                        "An Eating House License is legal consent required for undertaking any business where food or beverages are supplied for public consumption. This is a mandatory prerequisite along with FSSAI and Health Trade licenses.",
-                        "The license is governed by the City Police Act (e.g., Delhi Police Act) and must be applied for under the City Police Headquarters or Police Commissioner. Authorities grant the license after a rigorous inspection of the premises and documentation.",
-                        <strong>Applicable Establishments:</strong>,
-                        "This encompasses all retail outlets, dhabas, restaurants, cafes, eateries, food trucks, and any other establishments providing food and drink to the masses."
-                    ],
-                    whyIdealTitle: "Essential Pre-requisites",
-                    whyIdealList: [
-                        { title: "Business Registration", desc: "Your entity must be legally incorporated (Pvt Ltd, Firm, etc.)." },
-                        { title: "FSSAI Certificate", desc: "Mandatory food safety certification must be secured first." },
-                        { title: "Fire & Health NOC", desc: "Clearance from the Fire Department and Local Health Authority is vital." }
-                    ]
-                }}
-                advantages={{
-                    title: "Why It Is Vital",
-                    subtitle: "Benefits and legal importance of the Eating House License.",
-                    list: [
-                        { title: "Full Legal Compliance", desc: "Operating without this license is a punishable offense under police regulations." },
-                        { title: "Operational Security", desc: "Ensures your business can run without fear of sudden police shutdowns." },
-                        { title: "Public Safety Assurance", desc: "Validates that your premises meet building and electrical safety standards." },
-                        { title: "Staff Credibility", desc: "Includes police verification of employees for enhanced security." },
-                        { title: "Hygienic Environment", desc: "Requirement for medical certificates ensures high staff hygiene." },
-                        { title: "Brand Reputation", desc: "Proper licensing reflects a professional and trustworthy establishment." }
-                    ]
-                }}
+                overview={<EatingHouseOverview />}
+                advantages={<EatingHouseAdvantages />}
                 eligibility={{
                     title: "Eligibility Criteria",
                     subtitle: "Who can apply for an Eating House License?",

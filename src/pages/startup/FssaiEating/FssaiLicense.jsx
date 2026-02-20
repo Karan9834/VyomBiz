@@ -13,6 +13,88 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
+const FssaiLicenseOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            Legal Mandate
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            FSSAI License in India – <span className="text-[#005a9c]">Compliance Guide</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            A Food Safety and Standards Authority of India (FSSAI) license is mandatory for operating a food business in India. Any person or entity engaged in manufacturing, processing, distribution, and sale of food products must obtain FSSAI license registration.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            The FSSAI food license ensures that business owners and operators follow safety and quality compliances, which helps keep public health under check and promotes consumer confidence in the products sold.
+                        </p>
+
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80"
+                            alt="FSSAI License Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const FssaiLicenseAdvantages = () => {
+    return (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Why It Is Vital
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Benefits of FSSAI License
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Why obtaining FSSAI certification is vital for your business.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1579621970588-a35d487ce5b6?auto=format&fit=crop&q=80"
+                            alt="FSSAI License Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Legal Compliance", desc: "Avoid heavy penalties and legal actions by following mandatory food safety laws." },
+                        { title: "Consumer Trust", desc: "Build brand loyalty by showcasing your commitment to high safety standards." },
+                        { title: "Market Expansion", desc: "FSSAI license is a gateway to retail outlets, malls, and online delivery platforms." },
+                        { title: "Business Credibility", desc: "Enhance your reputation with investors, partners, and customers." },
+                        { title: "Improved Hygiene", desc: "Adherence to FSSAI norms helps maintain better hygiene and product quality." },
+                        { title: "Govt. Support", desc: "Become eligible for various government schemes, subsidies, and financial initiatives." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const FssaiLicense = () => {
     const faqs = [
         {
@@ -56,35 +138,8 @@ const FssaiLicense = () => {
             <TalkExpert />
 
             <DetailsLayout
-                overview={{
-                    badge: "Legal Mandate",
-                    title: "FSSAI License in India –",
-                    highlightTitle: "Compliance Guide",
-                    description: [
-                        "A Food Safety and Standards Authority of India (FSSAI) license is mandatory for operating a food business in India. Any person or entity engaged in manufacturing, processing, distribution, and sale of food products must obtain FSSAI license registration.",
-                        "The FSSAI food license ensures that business owners and operators follow safety and quality compliances, which helps keep public health under check and promotes consumer confidence in the products sold.",
-                        <strong>Who needs it?</strong>,
-                        "Food Business Operators (FBOs) including manufacturers, importers, storage units, transporters, retailers, and even home kitchens or online food platforms must secure the appropriate license based on their turnover and business type."
-                    ],
-                    whyIdealTitle: "Key FSSAI Categories",
-                    whyIdealList: [
-                        { title: "FSSAI Registration", desc: "For petty food businesses with an annual turnover under ₹12 Lakhs." },
-                        { title: "State License", desc: "For FBOs with turnover between ₹12 Lakhs and ₹20 Crores per annum." },
-                        { title: "Central License", desc: "For FBOs with turnover above ₹20 Crores or those in import/export." }
-                    ]
-                }}
-                advantages={{
-                    title: "Benefits of FSSAI License",
-                    subtitle: "Why obtaining FSSAI certification is vital for your business.",
-                    list: [
-                        { title: "Legal Compliance", desc: "Avoid heavy penalties and legal actions by following mandatory food safety laws." },
-                        { title: "Consumer Trust", desc: "Build brand loyalty by showcasing your commitment to high safety standards." },
-                        { title: "Market Expansion", desc: "FSSAI license is a gateway to retail outlets, malls, and online delivery platforms." },
-                        { title: "Business Credibility", desc: "Enhance your reputation with investors, partners, and customers." },
-                        { title: "Improved Hygiene", desc: "Adherence to FSSAI norms helps maintain better hygiene and product quality." },
-                        { title: "Govt. Support", desc: "Become eligible for various government schemes, subsidies, and financial initiatives." }
-                    ]
-                }}
+                overview={<FssaiLicenseOverview />}
+                advantages={<FssaiLicenseAdvantages />}
                 eligibility={{
                     title: "Eligibility Criteria",
                     subtitle: "Who can apply for FSSAI registration?",

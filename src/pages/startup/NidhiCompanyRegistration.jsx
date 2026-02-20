@@ -10,6 +10,95 @@ import FAQLayout from "../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../components/common/TalkExpert.jsx";
 
+
+
+const NidhiCompanyOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            Mutual Benefit Society
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            Nidhi Company Registration – <span className="text-[#005a9c]">An Overview</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            A Nidhi Company is a type of Non-Banking Financial Company (NBFC) that is formed to borrow and lend money among its members. It works on the principle of mutual benefit and helps cultivate the habit of savings and thrift.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Regulated by the Ministry of Corporate Affairs (MCA) under the Nidhi Rules, 2014, these companies are popular for their ease of governance and the fact that they do not require an RBI license to operate.
+                        </p>
+                        <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                            Key Objective:
+                        </h3>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            The primary objective of a Nidhi Company is to encourage savings among its members and provide them with credit facilities at reasonable interest rates against security such as gold, property, or fixed deposits.
+                        </p>
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1604594849809-dfedbc827105?auto=format&fit=crop&q=80"
+                            alt="Nidhi Company Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const NidhiCompanyAdvantages = () => {
+    return (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Why It Is Vital
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Benefits of Nidhi Registration
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Enjoy the advantages of a financial institution with simplified regulatory compliance.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1604594849809-dfedbc827105?auto=format&fit=crop&q=80"
+                            alt="Nidhi Company Advantages"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Separate Legal Entity", desc: "The company exists as a separate legal person from its members." },
+                        { title: "Easy Fund Mobilization", desc: "Allows members to deposit and earn interest on their savings." },
+                        { title: "Secure Lending", desc: "Lending is strictly against security, minimizing the risk of bad debts." },
+                        { title: "Perpetual Succession", desc: "The company continues its existence even if members change or pass away." },
+                        { title: "Easy Governance", desc: "Governed by simple Nidhi Rules rather than complex banking laws." },
+                        { title: "Cost-Effective", desc: "Low operational and incorporation costs compared to other financial entities." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const NidhiCompanyRegistration = () => {
     const faqs = [
         {
@@ -66,36 +155,8 @@ const NidhiCompanyRegistration = () => {
 
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
-                overview={{
-                    badge: "Mutual Benefit Society",
-                    title: "Nidhi Company Registration –",
-                    highlightTitle: "An Overview",
-                    description: [
-                        "A Nidhi Company is a type of Non-Banking Financial Company (NBFC) that is formed to borrow and lend money among its members. It works on the principle of mutual benefit and helps cultivate the habit of savings and thrift.",
-                        "Regulated by the Ministry of Corporate Affairs (MCA) under the Nidhi Rules, 2014, these companies are popular for their ease of governance and the fact that they do not require an RBI license to operate.",
-                        <strong>Key Objective:</strong>,
-                        "The primary objective of a Nidhi Company is to encourage savings among its members and provide them with credit facilities at reasonable interest rates against security such as gold, property, or fixed deposits."
-                    ],
-                    whyIdealTitle: "Why is it Ideal?",
-                    whyIdealList: [
-                        { title: "No RBI License", desc: "Exempted from many stringent RBI regulations compared to other NBFCs." },
-                        { title: "Limited Liability", desc: "The liability of members and directors is limited to their share capital." },
-                        { title: "Mutually Beneficial", desc: "Focuses on providing financial assistance to members within a closed group." },
-                        { title: "Low Capital", desc: "Can be started with a relatively lower capital compared to full-scale NBFCs." }
-                    ]
-                }}
-                advantages={{
-                    title: "Benefits of Nidhi Registration",
-                    subtitle: "Enjoy the advantages of a financial institution with simplified regulatory compliance.",
-                    list: [
-                        { title: "Separate Legal Entity", desc: "The company exists as a separate legal person from its members." },
-                        { title: "Easy Fund Mobilization", desc: "Allows members to deposit and earn interest on their savings." },
-                        { title: "Secure Lending", desc: "Lending is strictly against security, minimizing the risk of bad debts." },
-                        { title: "Perpetual Succession", desc: "The company continues its existence even if members change or pass away." },
-                        { title: "Easy Governance", desc: "Governed by simple Nidhi Rules rather than complex banking laws." },
-                        { title: "Cost-Effective", desc: "Low operational and incorporation costs compared to other financial entities." }
-                    ]
-                }}
+                overview={<NidhiCompanyOverview />}
+                advantages={<NidhiCompanyAdvantages />}
                 eligibility={{
                     title: "Eligibility Criteria",
                     subtitle: "Requirements to form and maintain a Nidhi Company.",

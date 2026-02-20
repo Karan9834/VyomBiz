@@ -17,14 +17,22 @@ const ISODetailsLayout = ({
     const navContainerRef = useRef(null);
     const [activeSection, setActiveSection] = useState("overview");
 
+    const overviewRef = useRef(null);
+    const advantagesRef = useRef(null);
+    const eligibilityRef = useRef(null);
+    const documentsRef = useRef(null);
+    const processRef = useRef(null);
+    const whyUsRef = useRef(null);
+    const faqRef = useRef(null);
+
     const sectionRefs = {
-        overview: useRef(null),
-        advantages: useRef(null),
-        eligibility: useRef(null),
-        documents: useRef(null),
-        process: useRef(null),
-        whyUs: useRef(null),
-        faq: useRef(null),
+        overview: overviewRef,
+        advantages: advantagesRef,
+        eligibility: eligibilityRef,
+        documents: documentsRef,
+        process: processRef,
+        whyUs: whyUsRef,
+        faq: faqRef,
     };
 
     const navItems = [
@@ -108,7 +116,7 @@ const ISODetailsLayout = ({
             <div className="container mx-auto px-6 lg:px-24">
                 {/* 1. OVERVIEW SECTION */}
                 {overview && (
-                    <section id="overview" ref={sectionRefs.overview} className="py-20 md:py-28 scroll-mt-24">
+                    <section id="overview" ref={overviewRef} className="py-20 md:py-28 scroll-mt-24">
                         <div className="flex flex-col lg:flex-row gap-16 items-center">
                             <div className="lg:w-3/5">
                                 <h2 className="text-3xl lg:text-4xl font-black text-[#1a1a1a] mb-8 leading-tight">
@@ -142,7 +150,7 @@ const ISODetailsLayout = ({
 
                 {/* 2. ADVANTAGES SECTION */}
                 {advantages && (
-                    <section id="advantages" ref={sectionRefs.advantages} className="py-20 border-t border-slate-50 scroll-mt-24">
+                    <section id="advantages" ref={advantagesRef} className="py-20 border-t border-slate-50 scroll-mt-24">
                         <div className="text-center max-w-3xl mx-auto mb-16">
                             <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-6 tracking-tight">{advantages.title}</h2>
                             <p className="text-slate-500 font-bold text-lg italic">"{advantages.subtitle}"</p>
@@ -163,7 +171,7 @@ const ISODetailsLayout = ({
 
                 {/* 3. ELIGIBILITY SECTION */}
                 {eligibility && (
-                    <section id="eligibility" ref={sectionRefs.eligibility} className="py-16 border-t border-slate-50 scroll-mt-24">
+                    <section id="eligibility" ref={eligibilityRef} className="py-16 border-t border-slate-50 scroll-mt-24">
                         <div className="bg-[#072b47] rounded-[2.5rem] p-10 md:p-12 text-white relative overflow-hidden shadow-xl">
                             <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-white opacity-[0.02] rounded-full translate-x-1/2 -translate-y-1/2" />
                             <div className="relative z-10 flex flex-col lg:flex-row gap-10 items-center">
@@ -190,7 +198,7 @@ const ISODetailsLayout = ({
 
                 {/* 4. DOCUMENTS SECTION */}
                 {documents && (
-                    <section id="documents" ref={sectionRefs.documents} className="py-20 border-t border-slate-50 scroll-mt-24">
+                    <section id="documents" ref={documentsRef} className="py-20 border-t border-slate-50 scroll-mt-24">
                         <div className="flex flex-col lg:flex-row gap-16 items-center">
                             <div className="lg:w-1/2 order-2 lg:order-1 relative">
                                 <div className="absolute -inset-4 bg-orange-50 rounded-[3rem] blur-xl opacity-50" />
@@ -214,7 +222,7 @@ const ISODetailsLayout = ({
 
                 {/* 5. PROCESS SECTION */}
                 {process && (
-                    <section id="process" ref={sectionRefs.process} className="py-20 border-t border-slate-50 scroll-mt-24">
+                    <section id="process" ref={processRef} className="py-20 border-t border-slate-50 scroll-mt-24">
                         <div className="text-center mb-20 max-w-4xl mx-auto">
                             <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-6">{process.title}</h2>
                             <p className="text-slate-500 font-bold text-lg italic">"{process.subtitle}"</p>
@@ -236,7 +244,7 @@ const ISODetailsLayout = ({
 
                 {/* 6. WHY US SECTION */}
                 {whyUs && (
-                    <section id="whyUs" ref={sectionRefs.whyUs} className="py-20 border-t border-slate-50 scroll-mt-24">
+                    <section id="whyUs" ref={whyUsRef} className="py-20 border-t border-slate-50 scroll-mt-24">
                         <div className="bg-orange-50/40 rounded-[4rem] p-10 lg:p-20 border border-orange-100/50 shadow-sm">
                             <div className="text-center mb-16 max-w-4xl mx-auto">
                                 <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-6 uppercase tracking-tighter">{whyUs.title}</h2>
@@ -257,7 +265,7 @@ const ISODetailsLayout = ({
 
                 {/* 7. FAQ SECTION */}
                 {faqs && faqs.length > 0 && (
-                    <section id="faq" ref={sectionRefs.faq} className="py-20 border-t border-slate-50 scroll-mt-24">
+                    <section id="faq" ref={faqRef} className="py-20 border-t border-slate-50 scroll-mt-24">
                         <div className="max-w-4xl mx-auto">
                             <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] text-center mb-16 uppercase tracking-tighter">Frequently Asked Questions</h2>
                             <div className="space-y-6">

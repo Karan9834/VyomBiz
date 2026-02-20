@@ -43,6 +43,82 @@ const TrademarkClassesFinder = () => {
         }
     ];
 
+    const classesFinderOverviewContent = (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    {/* Left Content */}
+                    <div>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            Trademark Class Finder – An Overview
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            A trademark class finder is an essential tool for protecting business identification. It helps matches your goods or services with the correct classification category under the 45 distinct classes of the International NICE Classification system.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Choosing the right category and classification for your trade name accurately reflects the goods or services it represents, ensuring proper legal protection and avoiding infringement issues.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                            Trademark classes act as an identifier for the sector to which your product or service belongs.
+                        </p>
+                    </div>
+
+                    {/* Right Image */}
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80"
+                            alt="Trademark Classes Finder"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+
+    const advantagesContent = (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Classification Tool
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Benefits of Classification
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Why performing trademark classification is crucial for your brand.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80"
+                            alt="Trademark Classification Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Reduces Conflicts", desc: "Minimizes the risk of trademark infringement issues with existing registrations." },
+                        { title: "Brand Protection", desc: "Protects brand identity or mark in the specific appropriate class." },
+                        { title: "Market Expansion", desc: "Allows expansion into new product or service categories under the same mark." },
+                        { title: "Smoother Registration", desc: "Categorizing correctly facilitates a seamless trademark registration process." },
+                        { title: "Legal Security", desc: "Ensures proper legal protection within the relevant goods or services sector." },
+                        { title: "Global Compatibility", desc: "Aligns with international standards for easier global registration." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">{item.title}</h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">{item.desc}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+
     return (
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
 
@@ -69,35 +145,8 @@ const TrademarkClassesFinder = () => {
 
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
-                overview={{
-                    badge: "Classification Tool",
-                    title: "Trademark Class Finder –",
-                    highlightTitle: "An Overview",
-                    description: [
-                        "A trademark class finder is an essential tool for protecting business identification. It helps matches your goods or services with the correct classification category under the 45 distinct classes of the International NICE Classification system.",
-                        "Choosing the right category and classification for your trade name accurately reflects the goods or services it represents, ensuring proper legal protection and avoiding infringement issues.",
-                        "Trademark classes act as an identifier for the sector to which your product or service belongs."
-                    ],
-                    whyIdealTitle: "Categories of Trademark Classes",
-                    whyIdealList: [
-                        { title: "Classes 1-34", desc: "Cover physical goods and products, such as chemicals, machinery, clothing, and pharmaceuticals." },
-                        { title: "Classes 35-45", desc: "Cover services, such as advertising, insurance, telecommunications, and education." },
-                        { title: "Global Standard", desc: "Follows the WIPO Nice Classification used internationally." },
-                        { title: "Annual Updates", desc: "The classification is reviewed and updated annually to stay relevant." }
-                    ]
-                }}
-                advantages={{
-                    title: "Benefits of Classification",
-                    subtitle: "Why performing trademark classification is crucial for your brand.",
-                    list: [
-                        { title: "Reduces Conflicts", desc: "Minimizes the risk of trademark infringement issues with existing registrations." },
-                        { title: "Brand Protection", desc: "Protects brand identity or mark in the specific appropriate class." },
-                        { title: "Market Expansion", desc: "Allows expansion into new product or service categories under the same mark." },
-                        { title: "Smoother Registration", desc: "Categorizing correctly facilitates a seamless trademark registration process." },
-                        { title: "Legal Security", desc: "Ensures proper legal protection within the relevant goods or services sector." },
-                        { title: "Global Compatibility", desc: "Aligns with international standards for easier global registration." }
-                    ]
-                }}
+                overview={classesFinderOverviewContent}
+                advantages={advantagesContent}
                 eligibility={{
                     title: "Class Lists & Considerations",
                     subtitle: "Detailed lists and factors to consider for classification.",

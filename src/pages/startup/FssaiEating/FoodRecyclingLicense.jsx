@@ -13,6 +13,87 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
+const FoodRecyclingOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            Circular Economy
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            Food Waste Recovery – <span className="text-[#005a9c]">Environmental Impact</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Food waste is a significant global problem, and in India, it translates to a loss of approximately ₹92,000 Crores per annum. This waste ends up in landfills, generating methane—a potent greenhouse gas with severe environmental effects.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Food recycling through composting and other treatments offers a sustainable solution. By converting organics into valuable fertilizer, businesses can reduce methane emissions, eliminate the need for chemical fertilizers, and improve soil health.
+                        </p>
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80"
+                            alt="Food Recycling Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const FoodRecyclingAdvantages = () => {
+    return (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Why It Is Vital
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Benefits of Food Recycling
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Why businesses should invest in recycling infrastructure.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1542601906990-b4d3fb7d5fa5?auto=format&fit=crop&q=80"
+                            alt="Food Recycling Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Soil Health", desc: "Compost promotes higher agricultural yields and prevents soil erosion." },
+                        { title: "Cost Savings", desc: "Significantly reduces solid waste disposal fees for large food units." },
+                        { title: "Greenhouse Gas Reduction", desc: "Minimizes methane emissions that would otherwise occur in landfills." },
+                        { title: "Water Conservation", desc: "Compost improves soil quality, leading to better water retention." },
+                        { title: "Regulatory Compliance", desc: "Securing PCB NOC protects your business from environmental lawsuits." },
+                        { title: "Community Impact", desc: "Directly assists local farmers by providing organic fertilizers." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const FoodRecyclingLicense = () => {
     const faqs = [
         {
@@ -60,35 +141,8 @@ const FoodRecyclingLicense = () => {
             <TalkExpert />
 
             <DetailsLayout
-                overview={{
-                    badge: "Circular Economy",
-                    title: "Food Waste Recovery –",
-                    highlightTitle: "Environmental Impact",
-                    description: [
-                        "Food waste is a significant global problem, and in India, it translates to a loss of approximately ₹92,000 Crores per annum. This waste ends up in landfills, generating methane—a potent greenhouse gas with severe environmental effects.",
-                        "Food recycling through composting and other treatments offers a sustainable solution. By converting organics into valuable fertilizer, businesses can reduce methane emissions, eliminate the need for chemical fertilizers, and improve soil health.",
-                        <strong>Licensing Requirement:</strong>,
-                        "A Food Recycling License involves obtaining the 'Consent to Establish' (CTE) and 'Consent to Operate' (CTO) from the State Pollution Control Board (SPCB) to ensure the facility meets environmental safety standards."
-                    ],
-                    whyIdealTitle: "Waste Management Steps",
-                    whyIdealList: [
-                        { title: "Prevention", desc: "Focus on reducing food wastage at the primary source." },
-                        { title: "Redistribution", desc: "Donating or selling excess food before it reaches waste stage." },
-                        { title: "Recycling", desc: "Treating food waste to create compost or energy." }
-                    ]
-                }}
-                advantages={{
-                    title: "Benefits of Food Recycling",
-                    subtitle: "Why businesses should invest in recycling infrastructure.",
-                    list: [
-                        { title: "Soil Health", desc: "Compost promotes higher agricultural yields and prevents soil erosion." },
-                        { title: "Cost Savings", desc: "Significantly reduces solid waste disposal fees for large food units." },
-                        { title: "Greenhouse Gas Reduction", desc: "Minimizes methane emissions that would otherwise occur in landfills." },
-                        { title: "Water Conservation", desc: "Compost improves soil quality, leading to better water retention." },
-                        { title: "Regulatory Compliance", desc: "Securing PCB NOC protects your business from environmental lawsuits." },
-                        { title: "Community Impact", desc: "Directly assists local farmers by providing organic fertilizers." }
-                    ]
-                }}
+                overview={<FoodRecyclingOverview />}
+                advantages={<FoodRecyclingAdvantages />}
                 eligibility={{
                     title: "Eligibility Criteria",
                     subtitle: "Who needs a Food Recycling License?",

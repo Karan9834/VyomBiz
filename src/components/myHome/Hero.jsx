@@ -67,15 +67,15 @@ const Hero = () => {
         <div className="text-center mb-16 md:mb-20">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-[1.2] mb-4 max-w-4xl mx-auto tracking-wide">
             Build Your Business with Passion. <br />
-            Run It Smarter with <span className="text-[#f1a134]">VyomBiz</span>.
+            Run It Smarter with <span className="text-[#005a9c]">VyomBiz</span>.
           </h1>
 
           <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-6">
             Simplifying Legal, Tax, and Compliance, the{" "}
-            <span className="bg-purple-500/30 text-purple-200 px-2 py-1 rounded-md font-semibold text-sm">
+            <span className="bg-[#005a9c]/30 text-blue-200 px-2 py-1 rounded-md font-semibold text-sm">
               AI-Driven
             </span>{" "}
-            Way. Trusted by millions. Backed by real experts.
+            Trusted by millions. Backed by real experts.
           </p>
 
           {/* Navigation Buttons Below Heading */}
@@ -83,7 +83,7 @@ const Hero = () => {
             {topButtons.map((button, index) => (
               <button
                 key={index}
-                className="px-4 md:px-5 py-2 bg-white/10 backdrop-blur-sm border border-white/30 rounded-full text-white text-xs md:text-sm font-medium hover:bg-white/20 hover:border-white/50 transition-all duration-300"
+                className="px-4 md:px-5 py-2 bg-[#005a9c] border border-blue-400/30 rounded-full text-white text-xs md:text-sm font-medium hover:bg-blue-700 hover:border-blue-400/50 transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 {button}
               </button>
@@ -103,7 +103,7 @@ const Hero = () => {
               <div
                 key={card.id}
                 onClick={() => scrollToSection(card.sectionId)}
-                className={`group w-full md:w-[28%] bg-white rounded-3xl p-6 md:p-8 cursor-pointer shadow-[0_10px_40px_rgba(241,161,52,0.3)] hover:shadow-[0_20px_60px_rgba(241,161,52,0.5)] transition-all duration-500 hover:scale-[1.02] relative overflow-hidden ring-1 ring-[#f1a134]/30 flex flex-col min-h-[260px] md:min-h-[350px] ${arrangementClasses}`}
+                className={`group w-full md:w-[28%] bg-white rounded-3xl p-6 md:p-8 cursor-pointer shadow-[0_10px_40px_rgba(0,90,156,0.2)] hover:shadow-[0_20px_60px_rgba(0,90,156,0.4)] transition-all duration-500 hover:scale-[1.02] relative overflow-hidden ring-1 ring-[#005a9c]/30 flex flex-col min-h-[260px] md:min-h-[350px] ${arrangementClasses}`}
               >
                 {/* Card Content */}
                 <div className="relative z-10 h-full flex flex-col">

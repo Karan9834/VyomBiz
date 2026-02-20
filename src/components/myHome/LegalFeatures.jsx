@@ -45,8 +45,8 @@ const LegalFeatures = () => {
       title: "Excellent Advisory Services",
       desc: "With the largest professional network, we are dedicated to offering the best advisory services so that you don't face any complications in your entrepreneurial journey.",
       icon: Lightbulb,
-      color: "text-yellow-500",
-      bgColor: "bg-yellow-50",
+      color: "text-[#005a9c]",
+      bgColor: "bg-[#005a9c]/10",
     },
   ];
 

@@ -20,10 +20,10 @@ const WhoWeAre = () => {
           <h2 className="text-4xl font-bold text-[#072b47] mb-4 tracking-tight">
             Who We Are
           </h2>
-          <p className="text-[#f1a134] text-lg font-bold mb-4 tracking-wide">
+          <p className="text-[#005a9c] text-lg font-bold mb-4 tracking-wide">
             A business consulting company that constitutes faith.
           </p>
-          <div className="w-16 h-1 bg-[#f1a134] mx-auto rounded mt-4"></div>
+          <div className="w-16 h-1 bg-[#005a9c] mx-auto rounded mt-4"></div>
         </div>
 
         {/* Main Content - Image with Overlay */}
@@ -57,7 +57,7 @@ const WhoWeAre = () => {
                       style={{ animationDelay: step.delay }}
                     >
                       {/* Check Icon */}
-                      <div className="shrink-0 w-8 h-8 bg-[#f1a134] rounded-full flex items-center justify-center shadow-lg group-hover/item:scale-110 transition-transform">
+                      <div className="shrink-0 w-8 h-8 bg-[#005a9c] rounded-full flex items-center justify-center shadow-lg group-hover/item:scale-110 transition-transform">
                         <CheckCircle className="w-5 h-5 text-white" strokeWidth={3} />
                       </div>
                       {/* Text */}

@@ -4,44 +4,137 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 
 /**
- * PatentRegistration Page matching TrustRegistration layout styles
- * Content Sourced from: https://VyomBiz.io/patent-registration
+ * PatentRegistration Page
  */
+
+const PatentRegistrationOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            Intellectual Property
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            Patent Registration – <span className="text-[#005a9c]">An Overview</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Patent registration in India grants inventors exclusive rights for 20 years.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            It ensures inventors can commercially benefit from their work.
+                        </p>
+                        <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                            Key Criteria
+                        </h3>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Must be novel, non-obvious, and industrially applicable.
+                        </p>
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80"
+                            alt="Patent Registration Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
 
 const PatentRegistration = () => {
 
     const faqs = [
         {
             question: "What is Patent Agent Registration?",
-            answer: "A Patent Agent is a professional registered to practice before the Indian Patent Office. To register, one must be an Indian citizen, at least 21 years old, have a degree in science, engineering, or technology, and handle the registration process and fees."
+            answer: "A professional registered to practice before the Patent Office."
         },
         {
-            question: "What is the procedure for Patent Registration?",
-            answer: "The process involves: 1. Pre-filing Search (Novelty search), 2. Drafting the Application (Provisional/Complete), 3. Filing the Application, 4. Publication (after 18 months), 5. Examination Request, 6. Responding to Objections, and 7. Grant of Patent."
+            question: "What is the procedure?",
+            answer: "Search → Drafting → Filing → Publication → Examination → Grant."
         },
         {
-            question: "When can one NOT apply for a patent?",
-            answer: "You cannot patent an invention if it is already on sale, in public use, or has been published/disclosed to the public more than one year before the filing date (grace period varies by country)."
+            question: "When can one NOT apply?",
+            answer: "If invention is already publicly disclosed."
         },
         {
-            question: "What are the requirements to file a patent?",
-            answer: "The invention must meet five criteria: 1. Patentable subject matter, 2. Utility (Industrial application), 3. Novelty (New invention), 4. Non-obviousness (Inventive step), and 5. Enablement (Sufficient disclosure)."
+            question: "What are the requirements?",
+            answer: "Novelty, utility, non-obviousness, enablement."
         },
         {
-            question: "How long is a patent valid in India?",
-            answer: "A patent in India is generally valid for 20 years from the date of filing the application, subject to the payment of annual renewal fees."
+            question: "How long is it valid?",
+            answer: "20 years from filing date."
         }
     ];
+
+    /* ================= UPDATED STICKY ADVANTAGES SECTION ================= */
+
+    const advantagesContent = (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Innovation Protection
+                    </span>
+
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Benefits of Patent Registration
+                    </h2>
+
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Secure exclusive rights, increase business value, and gain a competitive advantage.
+                    </p>
+
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+                            alt="Patent Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CARDS) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Exclusive Rights", desc: "Monopoly over the invention preventing unauthorized use." },
+                        { title: "Monetization", desc: "License or sell patent for royalties." },
+                        { title: "Market Value", desc: "Enhances valuation and attracts investors." },
+                        { title: "Competitive Edge", desc: "Prevents competitors from copying innovation." },
+                        { title: "Legal Protection", desc: "Right to sue infringers and claim damages." },
+                        { title: "Global Expansion", desc: "Foundation for international protection." }
+                    ].map((item, index) => (
+                        <div
+                            key={index}
+                            className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300"
+                        >
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+
+            </div>
+        </div>
+    );
 
     return (
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
 
-            {/* ================= SECTION 1: HERO ================= */}
             <HeroLayout
                 heroTitleMain="Patent Registration"
                 heroTitleSuffix="in India"
                 heroSubtitle="Protect Your Innovations"
-                heroDescription="Secure exclusive rights to your inventions for 20 years. Prevent unauthorized use, making, or selling of your unique products and processes with official Patent Registration."
+                heroDescription="Secure exclusive rights to your inventions for 20 years."
                 whatsIncludedList={[
                     "Comprehensive Patent Search",
                     "Drafting Provisional/Complete Specification",
@@ -55,92 +148,60 @@ const PatentRegistration = () => {
                 ]}
             />
 
-            {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
-                overview={{
-                    badge: "Intellectual Property",
-                    title: "Patent Registration –",
-                    highlightTitle: "An Overview",
-                    description: [
-                        "Patent registration in India grants inventors exclusive rights, preventing others from making, using, or selling their inventions without authorization. It is a territorial right governed by the Patent Act, 1970.",
-                        "A patent is a legal document that gives the patent holder a monopoly over their invention for a limited period, typically 20 years. This encourages innovation by ensuring inventors can commercially benefit from their work.",
-                        <strong>Key Criteria</strong>,
-                        "To be patentable, an invention must be novel (new), have an inventive step (non-obvious), and have industrial applicability. It effectively safeguards technical innovations against infringement."
-                    ],
-                    whyIdealTitle: "Types of Patent Applications",
-                    whyIdealList: [
-                        { title: "Provisional Application", desc: "Secures a priority date; complete spec to be filed within 12 months.", icon: <ClipboardList size={20} /> },
-                        { title: "Complete Application", desc: "Full description of invention & claims for final grant.", icon: <FileText size={20} /> },
-                        { title: "Ordinary Patent", desc: "Standard application without claiming priority from earlier filings.", icon: <Settings size={20} /> },
-                        { title: "Convention Patent", desc: "Filed claiming priority from a convention country application.", icon: <Globe size={20} /> },
-                        { title: "Patent of Addition", desc: "For improvements or modifications to an already patented invention.", icon: <Lightbulb size={20} /> },
-                        { title: "PCT National Phase", desc: "International filing entering the national phase in India.", icon: <Globe size={20} /> }
-                    ]
-                }}
-                advantages={{
-                    title: "Benefits of Patent Registration",
-                    subtitle: "Why secure a patent for your invention?",
-                    list: [
-                        { title: "Exclusive Rights", desc: "Monopoly over the invention, preventing others from using/selling it without permission." },
-                        { title: "Monetization", desc: "Opportunity to license or sell the patent for royalties and revenue generation." },
-                        { title: "Market Value", desc: "Enhances business valuation and credibility, attracting investors and partners." },
-                        { title: "Competitive Edge", desc: "Keeps competitors at bay by legally barring them from copying your technology." },
-                        { title: "Legal Protection", desc: "Right to sue infringers and claim damages for unauthorized use." },
-                        { title: "Global Expansion", desc: "Basis for seeking protection in other countries via international treaties." }
-                    ]
-                }}
+                overview={<PatentRegistrationOverview />}
+                advantages={advantagesContent}
                 eligibility={{
                     title: "Eligibility & Requirements",
                     subtitle: "Who can apply and what is needed?",
                     list: [
-                        { title: "Applicant", desc: "True and first inventor, or their assignee/legal representative." },
-                        { title: "Novelty", desc: "Invention must be new and not published/used before." },
-                        { title: "Inventive Step", desc: "Must not be obvious to a person skilled in the art." },
-                        { title: "Industrial Use", desc: "Must be capable of being made or used in an industry." },
-                        { title: "Patentable Subject", desc: "Must not fall under non-patentable categories (e.g., natural laws)." }
+                        { title: "Applicant", desc: "True inventor or assignee." },
+                        { title: "Novelty", desc: "Must be new." },
+                        { title: "Inventive Step", desc: "Must not be obvious." },
+                        { title: "Industrial Use", desc: "Must be applicable in industry." },
+                        { title: "Patentable Subject", desc: "Must not fall under excluded categories." }
                     ]
                 }}
                 documents={{
                     title: "Documents Required",
-                    description: "Essential paperwork for filing a patent.",
+                    description: "Essential paperwork.",
                     list: [
-                        "Form 1 (Application for Grant of Patent)",
-                        "Prov./Complete Specification (Form 2)",
-                        "Statement & Undertaking (Form 3)",
-                        "Declaration of Inventorship (Form 5)",
-                        "Power of Attorney (if filed by agent)",
-                        "Priority Documents (for Convention apps)",
-                        "Request for Examination (Form 18)"
+                        "Form 1",
+                        "Form 2",
+                        "Form 3",
+                        "Form 5",
+                        "Power of Attorney",
+                        "Priority Documents",
+                        "Form 18"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1350&q=80"
                 }}
                 process={{
                     title: "Registration Process",
-                    subtitle: "Step-by-step guide to getting a Patent.",
+                    subtitle: "Step-by-step guide.",
                     steps: [
-                        { step: "01", title: "Patent Search", desc: "Check novelty to ensure no prior art exists." },
-                        { step: "02", title: "Invention Drafting", desc: "Drafting complete specification with claims." },
-                        { step: "03", title: "Filing Application", desc: "Submitting application to the Patent Office." },
-                        { step: "04", title: "Publication", desc: "Application is published in the journal (after 18 months)." },
-                        { step: "05", title: "Examination", desc: "Patent Office examines compliance and novelty." },
-                        { step: "06", title: "Grant of Patent", desc: "Certificate issued if all objections are cleared." }
+                        { step: "01", title: "Patent Search", desc: "Check novelty." },
+                        { step: "02", title: "Drafting", desc: "Prepare specification." },
+                        { step: "03", title: "Filing", desc: "Submit application." },
+                        { step: "04", title: "Publication", desc: "Published in journal." },
+                        { step: "05", title: "Examination", desc: "Patent office review." },
+                        { step: "06", title: "Grant", desc: "Certificate issued." }
                     ]
                 }}
                 whyChooseUs={{
                     title: "Why Choose VyomBiz?",
-                    subtitle: "Expert support for your innovations.",
+                    subtitle: "Expert support.",
                     list: [
-                        { title: "Technical Expertise", desc: "Team of engineers and legal experts." },
-                        { title: "98% Success Rate", desc: "High approval rate for filed patents." },
-                        { title: "End-to-End Service", desc: "From search to grant and renewal management." },
-                        { title: "Affordable", desc: "Transparent pricing packages for startups." },
-                        { title: "Confidentiality", desc: "100% data privacy and NDA protection." },
-                        { title: "Global Network", desc: "Assistance with PCT and international filings." }
+                        { title: "Technical Expertise", desc: "Engineers + legal team." },
+                        { title: "98% Success Rate", desc: "High approval rate." },
+                        { title: "End-to-End Service", desc: "Search to renewal." },
+                        { title: "Affordable", desc: "Transparent pricing." },
+                        { title: "Confidentiality", desc: "NDA protection." },
+                        { title: "Global Network", desc: "PCT support." }
                     ]
                 }}
             />
 
-            {/* ================= FAQ SECTION ================= */}
             <FAQLayout
                 title="Frequently Asked Questions"
                 subtitle="Common queries about Patent Registration"

@@ -13,6 +13,88 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
+const FssaiProductApprovalOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            Novel Foods
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            FSSAI Product Approval – <span className="text-[#005a9c]">Innovation Guide</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            The FSSAI product approval process is mandatory for products not covered under the existing standards set by the FSS Act. It ensures that innovative products are safe for human consumption before they are introduced to the market.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Many new ingredients and food products are introduced each year by Food Business Operators (FBOs). These products require a thorough safety evaluation by the FSSAI authorities through the Food Product Approval System (FPAS).
+                        </p>
+
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1579165466949-3180a3d056d5?auto=format&fit=crop&q=80"
+                            alt="FSSAI Product Approval Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const FssaiProductApprovalAdvantages = () => {
+    return (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Why It Is Vital
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Strategic Advantages
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Why FSSAI product approval is a must for your brand.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80"
+                            alt="FSSAI Product Approval Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Minimal Reputation Risk", desc: "Standardized inspection ensures your brand isn't tarnished by safety issues." },
+                        { title: "Meets Global Standards", desc: "Safety tests meet global norms, gaining confidence from international customers." },
+                        { title: "Network Growth", desc: "Better engagement with industry stakeholders and supply chain partners." },
+                        { title: "Avoid Severe Penalties", desc: "Stay safe from heavy fines (up to ₹5 Lakhs) for non-standardized sales." },
+                        { title: "Competitive Edge", desc: "Authorization to sell unique items that competitors might not have cleared yet." },
+                        { title: "Investor Readiness", desc: "Regulatory approval is a major plus for startups seeking food-tech funding." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const FssaiProductApproval = () => {
     const faqs = [
         {
@@ -56,35 +138,8 @@ const FssaiProductApproval = () => {
             <TalkExpert />
 
             <DetailsLayout
-                overview={{
-                    badge: "Novel Foods",
-                    title: "FSSAI Product Approval –",
-                    highlightTitle: "Innovation Guide",
-                    description: [
-                        "The FSSAI product approval process is mandatory for products not covered under the existing standards set by the FSS Act. It ensures that innovative products are safe for human consumption before they are introduced to the market.",
-                        "Many new ingredients and food products are introduced each year by Food Business Operators (FBOs). These products require a thorough safety evaluation by the FSSAI authorities through the Food Product Approval System (FPAS).",
-                        <strong>Core Objective:</strong>,
-                        "To ensure that only safe, tested, and approved food ingredients and items are sold across the Indian market, particularly those involving novel technologies or dietary claims."
-                    ],
-                    whyIdealTitle: "Key Benefits",
-                    whyIdealList: [
-                        { title: "Public Confidence", desc: "Approved products carry a high mark of safety and quality for consumers." },
-                        { title: "Legal Permission", desc: "Grants authorization to sell non-standardized food products legally in India." },
-                        { title: "Market Access", desc: "Opens doors to the PAN India market and premium retail sectors." }
-                    ]
-                }}
-                advantages={{
-                    title: "Strategic Advantages",
-                    subtitle: "Why FSSAI product approval is a must for your brand.",
-                    list: [
-                        { title: "Minimal Reputation Risk", desc: "Standardized inspection ensures your brand isn't tarnished by safety issues." },
-                        { title: "Meets Global Standards", desc: "Safety tests meet global norms, gaining confidence from international customers." },
-                        { title: "Network Growth", desc: "Better engagement with industry stakeholders and supply chain partners." },
-                        { title: "Avoid Severe Penalties", desc: "Stay safe from heavy fines (up to ₹5 Lakhs) for non-standardized sales." },
-                        { title: "Competitive Edge", desc: "Authorization to sell unique items that competitors might not have cleared yet." },
-                        { title: "Investor Readiness", desc: "Regulatory approval is a major plus for startups seeking food-tech funding." }
-                    ]
-                }}
+                overview={<FssaiProductApprovalOverview />}
+                advantages={<FssaiProductApprovalAdvantages />}
                 eligibility={{
                     title: "Eligibility Criteria",
                     subtitle: "Who needs Product Approval?",

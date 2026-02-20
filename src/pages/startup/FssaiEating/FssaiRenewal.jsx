@@ -13,6 +13,88 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
+const FssaiRenewalOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            Time-Sensitive
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            FSSAI Renewal Guide – <span className="text-[#005a9c]">Business Continuity</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Running a food business in India requires active compliance. Every Food Business Operator (FBO) must renew their FSSAI license within its validity period, which typically ranges from 1 to 5 years.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Operating with an expired license can damage your business reputation and lead to severe legal action. The Food Safety Compliance System (FoSCoS) allows businesses to apply for renewals seamlessly online.
+                        </p>
+
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1542601906990-b4d3fb7d5c73?auto=format&fit=crop&q=80"
+                            alt="FSSAI Renewal Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const FssaiRenewalAdvantages = () => {
+    return (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Why It Is Vital
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Strategic Advantages
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Why prioritize timely FSSAI license renewal?
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1542601906990-b4d3fb7d5c73?auto=format&fit=crop&q=80"
+                            alt="FSSAI Renewal Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Avoid Late Penalties", desc: "Save on the ₹100/day fine by filing at least 30 days before expiry." },
+                        { title: "Build Brand Trust", desc: "A valid, updated certificate is a mark of reliability for your consumers." },
+                        { title: "Seamless Operations", desc: "Ensure no hurdles in supply chains, exports, or retail partnerships." },
+                        { title: "Global Alignment", desc: "Stay aligned with international safety standards for food quality." },
+                        { title: "Risk Mitigation", desc: "Reduce safety hazards and risks through regular compliance checks." },
+                        { title: "Expert Support", desc: "Navigate the complex documentation with ease through our specialists." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const FssaiRenewal = () => {
     const faqs = [
         {
@@ -56,35 +138,8 @@ const FssaiRenewal = () => {
             <TalkExpert />
 
             <DetailsLayout
-                overview={{
-                    badge: "Time-Sensitive",
-                    title: "FSSAI Renewal Guide –",
-                    highlightTitle: "Business Continuity",
-                    description: [
-                        "Running a food business in India requires active compliance. Every Food Business Operator (FBO) must renew their FSSAI license within its validity period, which typically ranges from 1 to 5 years.",
-                        "Operating with an expired license can damage your business reputation and lead to severe legal action. The Food Safety Compliance System (FoSCoS) allows businesses to apply for renewals seamlessly online.",
-                        <strong>Consequences of Non-Renewal:</strong>,
-                        "If not filed on time, FBOs are charged a penalty of ₹100 per day. Once the license expiry date passes, the business is legally unauthorized to operate until a new license is obtained."
-                    ],
-                    whyIdealTitle: "Renewal Benefits",
-                    whyIdealList: [
-                        { title: "Legal Safety", desc: "Avoid daily penalties and potential suspension of business operations." },
-                        { title: "Consumer Confidence", desc: "Show customers your ongoing commitment to food safety standards." },
-                        { title: "Updated Standards", desc: "Get access to the latest food safety regulations and guidelines." }
-                    ]
-                }}
-                advantages={{
-                    title: "Strategic Advantages",
-                    subtitle: "Why prioritize timely FSSAI license renewal?",
-                    list: [
-                        { title: "Avoid Late Penalties", desc: "Save on the ₹100/day fine by filing at least 30 days before expiry." },
-                        { title: "Build Brand Trust", desc: "A valid, updated certificate is a mark of reliability for your consumers." },
-                        { title: "Seamless Operations", desc: "Ensure no hurdles in supply chains, exports, or retail partnerships." },
-                        { title: "Global Alignment", desc: "Stay aligned with international safety standards for food quality." },
-                        { title: "Risk Mitigation", desc: "Reduce safety hazards and risks through regular compliance checks." },
-                        { title: "Expert Support", desc: "Navigate the complex documentation with ease through our specialists." }
-                    ]
-                }}
+                overview={<FssaiRenewalOverview />}
+                advantages={<FssaiRenewalAdvantages />}
                 eligibility={{
                     title: "Eligibility Criteria",
                     subtitle: "Who needs to renew their FSSAI license?",

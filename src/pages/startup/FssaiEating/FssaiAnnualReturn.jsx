@@ -13,6 +13,88 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
+const FssaiAnnualReturnOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            Mandatory Filing
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            FSSAI Yearly Returns – <span className="text-[#005a9c]">Compliance Management</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            FSSAI annual return filing is a mandatory requirement for food business operators including manufacturers, importers, packers, and labellers. It involves submitting essential information regarding production, handling, and storage to the FSSAI authorities.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            The revised guidelines mandate online filing through the FoSCoS portal. This process ensures transparency in the food supply chain and helps the government monitor food safety across the nation.
+                        </p>
+
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80"
+                            alt="FSSAI Annual Return Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const FssaiAnnualReturnAdvantages = () => {
+    return (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Why It Is Vital
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Advantages of Filing
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Why staying up-to-date with FSSAI returns is crucial.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80"
+                            alt="FSSAI Annual Return Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Maintain Brand Trust", desc: "Showcase transparency in your food production and sale operations." },
+                        { title: "Government Support", desc: "Compliant entities are more likely to receive government subsidies." },
+                        { title: "Improved Efficiency", desc: "Regular filing helps in tracking production trends and business growth." },
+                        { title: "Consumer Safety", desc: "Ensures adherence to safety standards that protect the end consumer." },
+                        { title: "Smooth Licensing", desc: "A clean filing record makes the FSSAI license renewal process much easier." },
+                        { title: "Legal Defense", desc: "Acting as proof that your business follows all mandated safety regulations." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const FssaiAnnualReturn = () => {
     const faqs = [
         {
@@ -60,35 +142,8 @@ const FssaiAnnualReturn = () => {
             <TalkExpert />
 
             <DetailsLayout
-                overview={{
-                    badge: "Mandatory Filing",
-                    title: "FSSAI Yearly Returns –",
-                    highlightTitle: "Compliance Management",
-                    description: [
-                        "FSSAI annual return filing is a mandatory requirement for food business operators including manufacturers, importers, packers, and labellers. It involves submitting essential information regarding production, handling, and storage to the FSSAI authorities.",
-                        "The revised guidelines mandate online filing through the FoSCoS portal. This process ensures transparency in the food supply chain and helps the government monitor food safety across the nation.",
-                        <strong>Who must file?</strong>,
-                        "Every FBO with a business turnover exceeding ₹12 Lakhs and those engaged in manufacturing, repackaging, or importing food products must file their returns annually."
-                    ],
-                    whyIdealTitle: "Key Benefits",
-                    whyIdealList: [
-                        { title: "Market Reputation", desc: "Demonstrates commitment to food safety, enhancing your public image." },
-                        { title: "Brand Value", desc: "Showcases compliance with regulations, increasing consumer trust." },
-                        { title: "Legal Safety", desc: "Avoid daily penalties and hurdles during license renewals." }
-                    ]
-                }}
-                advantages={{
-                    title: "Advantages of Filing",
-                    subtitle: "Why staying up-to-date with FSSAI returns is crucial.",
-                    list: [
-                        { title: "Maintain Brand Trust", desc: "Showcase transparency in your food production and sale operations." },
-                        { title: "Government Support", desc: "Compliant entities are more likely to receive government subsidies." },
-                        { title: "Improved Efficiency", desc: "Regular filing helps in tracking production trends and business growth." },
-                        { title: "Consumer Safety", desc: "Ensures adherence to safety standards that protect the end consumer." },
-                        { title: "Smooth Licensing", desc: "A clean filing record makes the FSSAI license renewal process much easier." },
-                        { title: "Legal Defense", desc: "Acting as proof that your business follows all mandated safety regulations." }
-                    ]
-                }}
+                overview={<FssaiAnnualReturnOverview />}
+                advantages={<FssaiAnnualReturnAdvantages />}
                 eligibility={{
                     title: "Eligibility Criteria",
                     subtitle: "Who is required to file FSSAI Annual Returns?",

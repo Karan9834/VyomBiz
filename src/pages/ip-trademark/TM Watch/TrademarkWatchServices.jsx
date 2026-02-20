@@ -8,6 +8,87 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
  * Content Sourced from: https://VyomBiz.io/trademark-watch-services
  */
 
+const TrademarkWatchServicesAdvantages = () => {
+    return (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Brand Protection
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Benefits of Monitoring
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Stay one step ahead of potential infringers.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80"
+                            alt="Trademark Watch Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Early Detection", desc: "Identify conflicting marks before they are registered and fully enforced." },
+                        { title: "Cost Savings", desc: "Avoid expensive legal battles and litigation by stopping infringement at the application stage." },
+                        { title: "Brand Integrity", desc: "Maintain the exclusivity and strength of your brand name in the market." },
+                        { title: "Market Insight", desc: "Gain awareness of competitors' naming trends and business directions." },
+                        { title: "Asset Protection", desc: "Safeguard your most valuable intangible business assets continuously." },
+                        { title: "Timely Action", desc: "Ensures you never miss the deadline to file a formal opposition." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+const TrademarkWatchServicesOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            Continuous Surveillance
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            Trademark Watch Services – <span className="text-[#005a9c]">An Overview</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Trademark watch is a monitoring service that helps businesses identify potential trademark infringements by third parties. It involves tracking new trademark applications that may conflict with your existing registered marks.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Identifying these conflicts early is crucial because it allows you to file an opposition within the statutory period, which is typically much easier and cheaper than attempting to cancel a mark after it has already been registered.
+                        </p>
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80"
+                            alt="Trademark Watch Services Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
 const TrademarkWatchServices = () => {
 
     const faqs = [
@@ -57,35 +138,8 @@ const TrademarkWatchServices = () => {
 
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
-                overview={{
-                    badge: "Continuous Surveillance",
-                    title: "Trademark Watch Services –",
-                    highlightTitle: "An Overview",
-                    description: [
-                        "Trademark watch is a monitoring service that helps businesses identify potential trademark infringements by third parties. It involves tracking new trademark applications that may conflict with your existing registered marks.",
-                        "Identifying these conflicts early is crucial because it allows you to file an opposition within the statutory period, which is typically much easier and cheaper than attempting to cancel a mark after it has already been registered.",
-                        "Enforce your rights: Registration gives you the right to the mark, but the responsibility to enforce that right lies with the owner. Trademark watch acts as a security system for your brand assets, ensuring that no one else can ride on your brand's reputation."
-                    ],
-                    whyIdealTitle: "Scope of Monitoring",
-                    whyIdealList: [
-                        { title: "Word Marks", desc: "Covers identical or confusingly similar brand names and slogans." },
-                        { title: "Phonetic Similarity", desc: "Identifies marks that sound the same as yours even if spelled differently." },
-                        { title: "Logo & Graphics", desc: "Monitoring for similar visual designs and patterns." },
-                        { title: "International Registers", desc: "Watching applications filed through WIPO and other global offices." }
-                    ]
-                }}
-                advantages={{
-                    title: "Benefits of Monitoring",
-                    subtitle: "Stay one step ahead of potential infringers.",
-                    list: [
-                        { title: "Early Detection", desc: "Identify conflicting marks before they are registered and fully enforced." },
-                        { title: "Cost Savings", desc: "Avoid expensive legal battles and litigation by stopping infringement at the application stage." },
-                        { title: "Brand Integrity", desc: "Maintain the exclusivity and strength of your brand name in the market." },
-                        { title: "Market Insight", desc: "Gain awareness of competitors' naming trends and business directions." },
-                        { title: "Asset Protection", desc: "Safeguard your most valuable intangible business assets continuously." },
-                        { title: "Timely Action", desc: "Ensures you never miss the deadline to file a formal opposition." }
-                    ]
-                }}
+                overview={<TrademarkWatchServicesOverview />}
+                advantages={<TrademarkWatchServicesAdvantages />}
                 eligibility={{
                     title: "Who Needs This Service?",
                     subtitle: "Essential for businesses with established brand value.",

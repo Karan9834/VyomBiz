@@ -13,6 +13,92 @@ import FAQLayout from "../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../components/common/TalkExpert.jsx";
 
+const IndianSubsidiaryOverview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            Global Expansion
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            Indian Subsidiary Registration – <span className="text-[#005a9c]">Global Business, Local Roots</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            An Indian Subsidiary is a company whose commanding control is held by a foreign company. It allows international businesses to enter the vast Indian market while maintaining control over operations and brand identity.
+                        </p>
+                        <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                            Market Entry
+                        </h3>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Subsidiaries are treated as Indian residents for tax and regulatory purposes, allowing them to enjoy the same benefits, exemptions, and deductions as any other domestic Indian company.
+                        </p>
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80"
+                            alt="Indian Subsidiary Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+
+
+const IndianSubsidiaryAdvantages = () => {
+    return (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Why It Is Vital
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Benefits of Indian Subsidiary
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Strategic benefits of choosing the subsidiary model for Indian market entry.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80"
+                            alt="Indian Subsidiary Advantages"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Brand Recognition", desc: "Operate under your global brand name while complying with local laws." },
+                        { title: "Ease of Operation", desc: "Can buy property, sign contracts, and hire employees directly in India." },
+                        { title: "Capital Infusion", desc: "Easier to bring in foreign capital and repatriate profits to the parent company." },
+                        { title: "Credit Worthiness", desc: "The subsidiary can raise funds from Indian banks and financial institutions." },
+                        { title: "Strategic Growth", desc: "Ideal for setting up manufacturing (Make in India) or R&D centers." },
+                        { title: "Lower Entry Barrier", desc: "Simplified registration process for foreign nationals and entities." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const IndianSubsidiaryRegistration = () => {
     const faqs = [
         {
@@ -87,18 +173,7 @@ const IndianSubsidiaryRegistration = () => {
                         { title: "Market Access", desc: "Direct access to India's massive consumer base and professional talent pool." }
                     ]
                 }}
-                advantages={{
-                    title: "Benefits of Indian Subsidiary",
-                    subtitle: "Strategic benefits of choosing the subsidiary model for Indian market entry.",
-                    list: [
-                        { title: "Brand Recognition", desc: "Operate under your global brand name while complying with local laws." },
-                        { title: "Ease of Operation", desc: "Can buy property, sign contracts, and hire employees directly in India." },
-                        { title: "Capital Infusion", desc: "Easier to bring in foreign capital and repatriate profits to the parent company." },
-                        { title: "Credit Worthiness", desc: "The subsidiary can raise funds from Indian banks and financial institutions." },
-                        { title: "Strategic Growth", desc: "Ideal for setting up manufacturing (Make in India) or R&D centers." },
-                        { title: "Lower Entry Barrier", desc: "Simplified registration process for foreign nationals and entities." }
-                    ]
-                }}
+                advantages={<IndianSubsidiaryAdvantages />}
                 eligibility={{
                     title: "Eligibility Checklist",
                     subtitle: "Basic requirements to incorporate an Indian Subsidiary.",

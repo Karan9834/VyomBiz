@@ -15,6 +15,386 @@ import TalkExpert from "../../../components/common/TalkExpert.jsx";
  * Refactored to match TrustRegistration design.
  */
 
+const CSR1Overview = () => {
+    return (
+        <section className="w-full py-10 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                    <div>
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                            Corporate Funding
+                        </span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                            CSR-1 Filing & Registration – <span className="text-[#005a9c]">An Overview</span>
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            Form CSR-1 is a mandatory registration form for NGOs, Trusts, and Section 8 Companies that intend to undertake Corporate Social Responsibility (CSR) activities funded by corporations. This registry allows the Ministry of Corporate Affairs (MCA) to monitor CSR spending effectively.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            By registering with the Central Government through Form CSR-1, your NGO acquires a unique CSR Registration Number, making it eligible to receive funding and grants from corporate entities complying with Section 135 of the Companies Act, 2013.
+                        </p>
+
+
+                    </div>
+                    <div className="flex justify-center lg:justify-end">
+                        <img
+                            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80"
+                            alt="CSR-1 Registration Overview"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const CSR1RegistrationAdvantages = () => {
+    return (
+        <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-16 w-full">
+                {/* LEFT SIDE (STICKY) */}
+                <div className="lg:sticky lg:top-28 h-fit self-start">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                        Corporate Funding
+                    </span>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
+                        Benefits of CSR-1 Registration
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                        Registering your NGO via Form CSR-1 opens doors to sustainable funding and partnerships.
+                    </p>
+                    <div className="mt-10">
+                        <img
+                            src="https://images.unsplash.com/photo-1521791136064-7985c2d11e61?auto=format&fit=crop&q=80"
+                            alt="CSR-1 Benefits"
+                            className="w-full rounded-2xl shadow-xl"
+                        />
+                    </div>
+                </div>
+
+                {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
+                <div className="space-y-6">
+                    {[
+                        { title: "Corporate Funding", desc: "Gain legal eligibility to receive CSR funds from profitable companies in India." },
+                        { title: "Enhanced Credibility", desc: "Being registered with the MCA boosts the NGO's goodwill and public image." },
+                        { title: "Organized Database", desc: "Part of a central repository of CSR-implementing agencies, increasing visibility." },
+                        { title: "Hassle-free Operations", desc: "Smooth processing of donations and compliance with less legal hurdles." },
+                        { title: "Government Recognition", desc: "Official recognition by the Central Government as a valid CSR entity." },
+                        { title: "Partner Eligibility", desc: "Become a preferred partner for corporates looking to outsource CSR projects." }
+                    ].map((item, index) => (
+                        <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
+                                {item.title}
+                            </h3>
+                            <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+const CSR1Eligibility = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Who Can File Form CSR-1?
+                </h2>
+
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
+                    To file Form CSR-1, it's essential to understand the eligibility criteria first.
+                    Entities eligible to register for CSR funding are mentioned below-
+                </p>
+
+                {/* Registered Entities */}
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Registered Entities
+                    </h3>
+                    <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed">
+                        <li>
+                            <span className="font-semibold text-[#072b47]">
+                                Section 8 Company –
+                            </span>{" "}
+                            Companies registered under Section 8 of the Companies Act, 2013.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">
+                                Public Trust –
+                            </span>{" "}
+                            Registered Public Trusts with 12A and 80G registrations.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">
+                                Registered Society –
+                            </span>{" "}
+                            Registered Societies with 12A and 80G registrations.
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Other Conditions */}
+                <div className="space-y-5 text-[17px] text-slate-600 leading-relaxed">
+                    <p>
+                        <span className="font-semibold text-[#072b47]">State/Parliament Entity – </span>
+                        Entity established under an Act of Parliament or State Legislature.
+                    </p>
+
+                    <p>
+                        <span className="font-semibold text-[#072b47]">Track Record – </span>
+                        3 years of established track record (for some private entities).
+                    </p>
+
+                    <p>
+                        <span className="font-semibold text-[#072b47]">Compliance – </span>
+                        Must have valid PAN, 12A, and 80G registrations.
+                    </p>
+                </div>
+
+                <div className="mt-12 text-center">
+                    <button className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                        Check Your Eligibility Now
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    );
+};
+
+const CSR1DocumentsSection = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+
+                {/* Main Heading */}
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Documents Required for CSR-1 Registration
+                </h2>
+
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-8">
+                    To file Form CSR-1, you need to submit the following documents.
+                    Essential documents for filing Form CSR-1 are mentioned below:
+                </p>
+
+                {/* Documents List */}
+                <div className="space-y-4 mb-8">
+                    <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed">
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Certificate of Registration – </span>
+                            Certificate of Registration of the NGO.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">PAN Card – </span>
+                            PAN Card of the NGO.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">12A & 80G Approval Orders – </span>
+                            Copies of 12A & 80G Approval Orders.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Trust Deed / MoA & AoA – </span>
+                            Copy of Trust Deed or Memorandum and Articles of Association.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Resolution – </span>
+                            Resolution for Authorized Signatory.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Members Details – </span>
+                            Details of Members (Name, Email, PAN).
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Digital Signature Certificate (DSC) – </span>
+                            DSC of Signatory for online filing.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Contact Details – </span>
+                            Valid Email ID & Mobile Number (OTP linked).
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Activity Report – </span>
+                            Activity Report for the last 3 years.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Certification – </span>
+                            Certification by Practicing CA/CS/CMA.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    );
+};
+
+const CSR1ProcessSection = () => {
+    const steps = [
+        {
+            title: "Preparation",
+            desc: "Gather documents & obtain Digital Signature Certificate (DSC) for authorized signatory."
+        },
+        {
+            title: "Filing",
+            desc: "Fill Form CSR-1 on MCA portal with all required details and documents."
+        },
+        {
+            title: "Certification",
+            desc: "CA/CS/CMA verifies and certifies the form before submission."
+        },
+        {
+            title: "Approval",
+            desc: "Unique CSR Registration Number is generated via email upon successful submission."
+        }
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+
+                {/* Heading */}
+                <div className="text-center mb-10">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
+                        How to Apply for CSR-1 Registration?
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                        The procedure for CSR-1 registration involves structured documentation,
+                        online filing, and certification. The step-by-step process is outlined below:
+                    </p>
+                </div>
+
+                {/* Layout */}
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+
+                    {/* Left Image */}
+                    <div className="lg:col-span-1">
+                        <img
+                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            alt="CSR-1 Registration Process"
+                            className="w-full rounded-lg shadow-sm"
+                        />
+                    </div>
+
+                    {/* Steps */}
+                    <div className="lg:col-span-2">
+
+                        {steps.map((step, index) => (
+                            <div
+                                key={index}
+                                className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200"
+                            >
+                                {/* Step Number */}
+                                <div className="text-[16px] font-semibold text-[#072b47]">
+                                    {index + 1}.
+                                </div>
+
+                                {/* Content */}
+                                <div>
+                                    <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                        {step.title}
+                                    </h3>
+                                    <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                        {step.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+
+                        {/* Bottom border */}
+                        <div className="border-t border-slate-200"></div>
+
+                        {/* CTA */}
+                        <div className="mt-12 text-center">
+                            <button className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                                Start Your CSR-1 Registration Now
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const CSR1FeaturesSection = () => {
+    const features = [
+        {
+            title: "Expert DSC Assistance",
+            desc: "Assistance in obtaining Digital Signatures for authorized signatories."
+        },
+        {
+            title: "Professional Certification",
+            desc: "Form certification by experienced CA/CS/CMA ensuring accuracy."
+        },
+        {
+            title: "Correct Filing",
+            desc: "Error-free data entry and submission to avoid rejections."
+        },
+        {
+            title: "Quick Turnaround",
+            desc: "Fast processing to get your CSR Registration Number quickly."
+        },
+        {
+            title: "12A & 80G Guidance",
+            desc: "Support with prerequisite registrations before CSR-1 filing."
+        },
+        {
+            title: "Post-Registration Compliance",
+            desc: "Guidance on ongoing CSR compliance and reporting requirements."
+        }
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+
+                {/* Corrected Heading */}
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
+                        Features of CSR-1 Registration Services
+                    </h2>
+                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        CSR-1 registration enables NGOs to receive corporate funding, enhances credibility,
+                        and ensures compliance with MCA regulations.
+                    </p>
+                </div>
+
+                {/* Features Rows */}
+                <div>
+                    {features.map((feature, index) => (
+                        <div
+                            key={index}
+                            className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300"
+                        >
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                {index + 1}.
+                            </div>
+
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    {feature.title}
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    {feature.desc}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+
+                    <div className="border-t border-slate-300"></div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
 const CSR1Registration = () => {
     const faqs = [
         {
@@ -69,90 +449,12 @@ const CSR1Registration = () => {
 
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
-                overview={{
-                    badge: "Corporate Funding",
-                    title: "CSR-1 Filing & Registration –",
-                    highlightTitle: "An Overview",
-                    description: [
-                        "Form CSR-1 is a mandatory registration form for NGOs, Trusts, and Section 8 Companies that intend to undertake Corporate Social Responsibility (CSR) activities funded by corporations. This registry allows the Ministry of Corporate Affairs (MCA) to monitor CSR spending effectively.",
-                        "By registering with the Central Government through Form CSR-1, your NGO acquires a unique CSR Registration Number, making it eligible to receive funding and grants from corporate entities complying with Section 135 of the Companies Act, 2013.",
-                        <strong>Why is CSR-1 Filing Important?</strong>,
-                        "Corporates can only donate CSR funds to entities that have a valid CSR Registration Number. Without this, your NGO cannot legally accept CSR donations.",
-                        "It creates a national database of NGOs undertaking CSR activities, ensuring transparency and proper monitoring of social welfare projects."
-                    ],
-                    whyIdealTitle: "Key Benefits",
-                    whyIdealList: [
-                        { title: "Corporate Funds", desc: "Gain eligibility to receive CSR funds from profitable companies." },
-                        { title: "Credibility", desc: "Boosts goodwill and public image with MCA recognition." },
-                        { title: "Database", desc: "Listed in a central repository of CSR-implementing agencies." },
-                        { title: "Compliance", desc: "Ensures smooth processing of donations and legal compliance." }
-                    ]
-                }}
-                advantages={{
-                    title: "Benefits of CSR-1 Registration",
-                    subtitle: "Registering your NGO via Form CSR-1 opens doors to sustainable funding and partnerships.",
-                    list: [
-                        { title: "Corporate Funding", desc: "Gain legal eligibility to receive CSR funds from profitable companies in India." },
-                        { title: "Enhanced Credibility", desc: "Being registered with the MCA boosts the NGO's goodwill and public image." },
-                        { title: "Organized Database", desc: "Part of a central repository of CSR-implementing agencies, increasing visibility." },
-                        { title: "Hassle-free Operations", desc: "Smooth processing of donations and compliance with less legal hurdles." },
-                        { title: "Government Recognition", desc: "Official recognition by the Central Government as a valid CSR entity." },
-                        { title: "Partner Eligibility", desc: "Become a preferred partner for corporates looking to outsource CSR projects." }
-                    ]
-                }}
-                eligibility={{
-                    title: "Who Can File Form CSR-1?",
-                    subtitle: "Entities eligible to register for CSR funding.",
-                    list: [
-                        { title: "Section 8 Company", desc: "Companies registered under Section 8 of the Companies Act, 2013." },
-                        { title: "Public Trust", desc: "Registered Public Trusts with 12A and 80G registrations." },
-                        { title: "Registered Society", desc: "Registered Societies with 12A and 80G registrations." },
-                        { title: "State/Parliament Entity", desc: "Entity established under an Act of Parliament or State Legislature." },
-                        { title: "Track Record", desc: "3 years of established track record (for some private entities)." },
-                        { title: "Compliance", desc: "Must have valid PAN, 12A, and 80G registrations." }
-                    ]
-                }}
-                documents={{
-                    title: "Required Documents",
-                    description: "Essential documents for filing Form CSR-1.",
-                    list: [
-                        "Certificate of Registration of the NGO",
-                        "PAN Card of the NGO",
-                        "12A & 80G Approval Order Copies",
-                        "Trust Deed / MoA & AoA",
-                        "Resolution for Authorized Signatory",
-                        "Details of Members (Name, Email, PAN)",
-                        "Digital Signature Certificate (DSC) of Signatory",
-                        "Valid Email ID & Mobile Number (OTP linked)",
-                        "Activity Report (Last 3 Years)",
-                        "Certification by Practicing CA/CS/CMA"
-                    ],
-                    imageUrl: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&q=80&w=1000"
-                }}
-                process={{
-                    title: "Filing Procedure",
-                    subtitle: "Step-by-step process for CSR-1 Registration.",
-                    steps: [
-                        { step: "01", title: "Preparation", desc: "Gather documents & obtain DSC." },
-                        { step: "02", title: "Filing", desc: "Fill Form CSR-1 on MCA portal." },
-                        { step: "03", title: "Certification", desc: "CA/CS/CMA verifies and certifies the form." },
-                        { step: "04", title: "Approval", desc: "Unique CSR Reg. Number is generated via email." }
-                    ]
-                }}
-                whyChooseUs={{
-                    title: "Why Choose VyomBiz",
-                    subtitle: "Professional support for your CSR-1 filing.",
-                    list: [
-                        { title: "Expert DSC Assistance", desc: "Assistance in obtaining Digital Signatures." },
-                        { title: "Professional Certification", desc: "Form certification by experienced CA/CS/CMA." },
-                        { title: "Correct Filing", desc: "Error-free data entry and submission." },
-                        { title: "Quick Turnaround", desc: "Fast processing to get your CSR number." },
-                        { title: "12A & 80G Guidance", desc: "Support with prerequisite registrations." },
-                        { title: "Affordable Pricing", desc: "Transparent and competitive service charges." },
-                        { title: "Post-Reg Compliance", desc: "Guidance on ongoing CSR compliance." },
-                        { title: "Trusted by NGOs", desc: "Reliable partner for thousands of non-profits." }
-                    ]
-                }}
+                overview={<CSR1Overview />}
+                advantages={<CSR1RegistrationAdvantages />}
+                eligibility={<CSR1Eligibility />}
+                documents={<CSR1DocumentsSection />}
+                process={<CSR1ProcessSection />}
+                features={<CSR1FeaturesSection />}
             />
 
             {/* ================= FAQ SECTION ================= */}
