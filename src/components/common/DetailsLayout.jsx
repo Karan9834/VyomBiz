@@ -55,7 +55,15 @@ const DetailsLayout = ({
             const scrollPosition = window.scrollY + 150;
 
             for (const item of navItems) {
-                const element = item.id === "faq" ? document.getElementById("faq") : sectionRefs[item.id].current;
+                let element;
+                if (item.id === "faq") {
+                    element = document.getElementById("faq");
+                } else if (item.id === "features") {
+                    // Handle both features and whyChooseUs refs
+                    element = (features ? featuresRef : whyChooseUsRef).current;
+                } else {
+                    element = sectionRefs[item.id].current;
+                }
                 if (element) {
                     const { offsetTop, offsetHeight } = element;
                     if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
@@ -68,10 +76,18 @@ const DetailsLayout = ({
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [navItems]);
+    }, [navItems, features, whyChooseUs]);
 
     const scrollToSection = (id) => {
-        const element = id === "faq" ? document.getElementById("faq") : sectionRefs[id].current;
+        let element;
+        if (id === "faq") {
+            element = document.getElementById("faq");
+        } else if (id === "features") {
+            // Handle both features and whyChooseUs refs
+            element = (features ? featuresRef : whyChooseUsRef).current;
+        } else {
+            element = sectionRefs[id].current;
+        }
         if (element) {
             const offset = element.offsetTop - 120;
             window.scrollTo({ top: offset, behavior: "smooth" });
@@ -349,7 +365,7 @@ const DetailsLayout = ({
                 {(features || whyChooseUs) && (
                     <section
                         id="features"
-                        ref={featuresRef || whyChooseUsRef}
+                        ref={features ? featuresRef : whyChooseUsRef}
                         className="py-24 border-b border-slate-50 scroll-mt-24"
                     >
                         {React.isValidElement(features || whyChooseUs) ? (
