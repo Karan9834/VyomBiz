@@ -1,5 +1,5 @@
 import React from "react";
-import { Users, Briefcase, Building2, TrendingUp, BookOpen, Globe } from "lucide-react";
+import { Users, Briefcase, Building2, TrendingUp } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
