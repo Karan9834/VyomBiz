@@ -3,6 +3,8 @@ import { Users, Briefcase, Building2 } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
+import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /**
  * GSTComplianceServices Page matching Vyombiz layout styles
@@ -41,7 +43,7 @@ const GSTComplianceServices = () => {
                 heroTitleMain="GST Compliance"
                 heroTitleSuffix="Services"
                 heroSubtitle="Simplify Tax Filing with Experts"
-                heroDescription="Ensure timely and accurate GST filings with Corpbiz's expert compliance services. We help manage the complexities of GST laws, minimize penalties, and boost operational efficiency. Trusted by 42,800+ clients for hassle-free tax solutions."
+                heroDescription="Ensure timely and accurate GST filings with Vyombiz's expert compliance services. We help manage the complexities of GST laws, minimize penalties, and boost operational efficiency. Trusted by 42,800+ clients for hassle-free tax solutions."
                 whatsIncludedList={[
                     "GST Registration & Filings",
                     "GST Notice Handling",
@@ -55,6 +57,9 @@ const GSTComplianceServices = () => {
                 ]}
             />
 
+            <TrustedBrands />
+            <TalkExpert />
+
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
                 overview={{
@@ -63,7 +68,7 @@ const GSTComplianceServices = () => {
                     highlightTitle: "An Overview",
                     description: [
                         "GST compliance services include mandatory adherence to the Goods & Services Act of 2017. Our compliance solutions include registration, tax invoicing, return filing, payment to the government, and record maintenance.",
-                        "Corpbiz experts will help you obtain a GST unique identification number, update your GST portal at regular intervals, create a standard invoice, and establish an automated mechanism for various GST return filings.",
+                        "Vyombiz experts will help you obtain a GST unique identification number, update your GST portal at regular intervals, create a standard invoice, and establish an automated mechanism for various GST return filings.",
                         <strong>Why Opt for GST Compliance Solutions?</strong>,
                         "Our GST compliance solutions help mitigate legal and financial risks and streamline tax processes. Having a strong track record of GST compliance will help you secure loans more easily and build your credibility in the industry.",
                         "Through our services, you can register for GST, file your returns monthly, quarterly, and annually, conduct audits, and represent yourself in court in case of legal proceedings."
@@ -119,7 +124,7 @@ const GSTComplianceServices = () => {
                 }}
                 process={{
                     title: "Compliance Process",
-                    subtitle: "Step-by-step guide to GST compliance with Corpbiz.",
+                    subtitle: "Step-by-step guide to GST compliance with Vyombiz.",
                     steps: [
                         { step: "01", title: "Registration", desc: "Obtain unique GSTIN through the online portal." },
                         { step: "02", title: "Invoicing", desc: "Issue GST compliant invoices and upload to IRP if required." },
@@ -130,7 +135,7 @@ const GSTComplianceServices = () => {
                     ]
                 }}
                 whyChooseUs={{
-                    title: "Why Trust Corpbiz?",
+                    title: "Why Trust Vyombiz?",
                     subtitle: "Your partner for end-to-end GST compliance.",
                     list: [
                         { title: "10+ Years Experience", desc: "Expert team of CAs, CS, and auditors." },

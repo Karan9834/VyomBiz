@@ -3,10 +3,11 @@ import { Users, Briefcase, Building2 } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
+import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /**
- * IncomeTaxReturnFiling Page matchin Vyombiz layout styles
- * Content fetched from: https://corpbiz.io/income-tax-return-filing
+ * IncomeTaxReturnFiling Page matching Vyombiz layout styles
  */
 
 const IncomeTaxReturnFiling = () => {
@@ -55,6 +56,9 @@ const IncomeTaxReturnFiling = () => {
                     { count: "99%", label: "Accuracy Rate", icon: <Building2 size={20} /> }
                 ]}
             />
+
+            <TrustedBrands />
+            <TalkExpert />
 
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
@@ -132,7 +136,7 @@ const IncomeTaxReturnFiling = () => {
                     ]
                 }}
                 whyChooseUs={{
-                    title: "Why Partner with Corpbiz?",
+                    title: "Why Partner with Vyombiz?",
                     subtitle: "Expert consultancy for seamless ITR filing.",
                     list: [
                         { title: "Expert Assistance", desc: "Team of dedicated tax experts and CAs." },
