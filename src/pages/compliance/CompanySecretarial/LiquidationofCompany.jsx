@@ -1,168 +1,231 @@
 import React from "react";
-import { Users, Briefcase, Building2 } from "lucide-react";
+import { CheckCircle2, AlertTriangle, Clock, Users, FileText, Shield, BookOpen, Building2, BarChart2 } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
+import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /**
- * Liquidation of Company Page matching Vyombiz layout styles
- * Sections:
- * 1. Hero Section (Left Content, Right Form)
- * 2. Stats Strip
- * 3. Overview Section
- * 4. Benefits Section
- * 5. Eligibility/Checklist
- * 6. Documents Required
- * 7. Registration Process
- * 8. Why Choose Us
- * 9. FAQ
+ * Liquidation of Company
+ * Nav: Overview | Types | Process | Advantage | Vyombiz Support | FAQs
  */
-
 const LiquidationofCompany = () => {
-
     const faqs = [
-        {
-            question: "What is the difference between Voluntary and Compulsory Liquidation?",
-            answer: "Voluntary Liquidation is initiated by the company's members or creditors without any external default, whereas Compulsory Liquidation is ordered by a Tribunal (NCLT) usually upon a petition by creditors due to the company's inability to pay debts."
-        },
-        {
-            question: "Who is a Liquidator?",
-            answer: "A Liquidator is an authorized Insolvency Professional appointed to take custody of the company's assets, verify claims, sell assets, and distribute proceeds to creditors and shareholders."
-        },
-        {
-            question: "How long does the liquidation process take?",
-            answer: "Voluntary liquidation under IBC typically takes about 270 days (9 months) to complete. Compulsory liquidation can take significantly longer, up to 2 years, depending on legal complexities."
-        },
-        {
-            question: "What happens to the directors during liquidation?",
-            answer: "Upon the appointment of a liquidator, the powers of the Board of Directors are suspended and vested in the liquidator. Directors must cooperate with the liquidator."
-        },
-        {
-            question: "Can creditors claim money during liquidation?",
-            answer: "Yes, creditors must submit their claims to the liquidator within the specified time. Repayment is made based on the priority of claims (waterfall mechanism) defined in the IBC."
-        },
-        {
-            question: "What is the role of NCLT in liquidation?",
-            answer: "The National Company Law Tribunal (NCLT) is the adjudicating authority. It approves the liquidation order, appoints the liquidator, and sanctions the final dissolution of the company."
-        }
+        { question: "What happens when liquidating a company?", answer: "A company after liquidating shall no longer function and will stop doing business and employing people. It will permanently cease its existence from the company's registration. When the company is liquidated, its assets sold are used to pay off debts and surplus money shall be distributed among the shareholders." },
+        { question: "Is liquidation good or bad?", answer: "Liquidation is a formal legal process used to close a business. It is generally seen as a last resort when a company cannot meet its financial obligations. While it removes pressure from creditors and allows orderly asset distribution, it permanently ends the company's operations — making it neither inherently good nor bad, but context-dependent." },
+        { question: "What happens to directors when a company goes into liquidation?", answer: "Once a company enters liquidation, its directors lose control over the company's operations. Directors must fully cooperate with the liquidator and are prohibited from engaging in wrongful trading. If found to have acted unlawfully prior to liquidation, they may face personal liability for the company's debts." },
+        { question: "How long does the liquidation process take in India?", answer: "The timeframe for liquidation may take up to two years from the date of application for liquidation submitted before the adjudicating authority. Voluntary liquidation must be completed within 12 months of commencement." },
+        { question: "Who benefits from liquidation?", answer: "Creditors — especially secured and preferential creditors — benefit the most from liquidation as they are paid from the proceeds of the company's asset sales. Employees may receive unpaid wages and redundancy payments. Shareholders may receive any surplus after all debts are repaid." },
+        { question: "What is the difference between voluntary and compulsory liquidation in India?", answer: "Voluntary liquidation is initiated by the company's members or creditors when the company can no longer operate or the owners wish to cease operations. Compulsory liquidation is ordered by the NCLT, usually at the request of creditors, when the company is unable to repay its debts." },
+        { question: "What is the role of the liquidator in the liquidation process in India?", answer: "A liquidator manages the sale of company assets, uses the proceeds to repay creditors in the legal order of priority, distributes any remaining surplus to shareholders, and reports the liquidation process to stakeholders. They also submit a final report to the ROC and IBBI upon completion." },
+        { question: "Who controls a company in liquidation?", answer: "Once a company is placed in liquidation, the liquidator (appointed by the NCLT or creditors) takes over full control of the company. Directors lose all management authority and must cooperate fully with the liquidator." },
     ];
+
+    /* ─── Types (custom JSX → advantages slot) ─────────── */
+    const typesContent = (
+        <div className="space-y-8">
+            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
+                <BarChart2 size={18} className="text-[#005a9c]" />
+                Types of Liquidation of Company in India
+            </h3>
+            <div className="grid gap-6">
+                {[
+                    {
+                        num: "01", title: "Voluntary Liquidation",
+                        desc: "In a voluntary liquidation, the company is not compelled to undergo the insolvency process. The decision to cease operations is made voluntarily by the owners or shareholders. This typically occurs when the company is solvent and capable of repaying its creditors in full.",
+                        sub: [
+                            { name: "Member's Voluntary Liquidation (MVL)", desc: "Initiated by the company's shareholders when they decide the company should no longer operate. Starts with the directors signing a declaration of solvency — confirming the company can repay all debts within a specified period." },
+                            { name: "Creditors' Voluntary Liquidation (CVL)", desc: "Initiated when a company is insolvent or no longer capable of fulfilling its financial obligations. Used when a company is facing significant financial constraints and is incapable of recovery." },
+                        ]
+                    },
+                    {
+                        num: "02", title: "Compulsory Liquidation",
+                        desc: "Compulsory liquidation occurs when a company is ordered by the adjudicating authority to shut down its business operations, usually at the request of creditors. This typically happens when the company is unable to pay its debts, making liquidation a viable solution for creditors to recover their money.",
+                        sub: []
+                    },
+                ].map((item, i) => (
+                    <div key={i} className="border border-slate-200 rounded-xl overflow-hidden">
+                        <div className="flex items-center gap-4 bg-[#072b47] px-5 py-3">
+                            <span className="text-[22px] font-black text-white/20">{item.num}</span>
+                            <p className="text-[14px] font-bold text-white">{item.title}</p>
+                        </div>
+                        <div className="p-5">
+                            <p className="text-[14px] text-slate-700 leading-relaxed mb-4">{item.desc}</p>
+                            {item.sub.length > 0 && (
+                                <div className="grid gap-3">
+                                    {item.sub.map((s, j) => (
+                                        <div key={j} className="bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
+                                            <p className="text-[13px] font-bold text-[#072b47] mb-1">{s.name}</p>
+                                            <p className="text-[13px] text-slate-600 leading-relaxed">{s.desc}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+
+    /* ─── Process (custom JSX → eligibility slot) ─────────── */
+    const processContent = (
+        <div className="space-y-8">
+            <div>
+                <h3 className="text-lg font-bold text-[#072b47] mb-4">Compulsory Liquidation Process</h3>
+                <div className="grid gap-3 mb-6">
+                    {[
+                        { step: "1", title: "Application to the Tribunal", desc: "Financial or operational creditors file an application with the NCLT for default exceeding ₹1 lakh. This initiates the Corporate Insolvency Resolution Process (CIRP)." },
+                        { step: "2", title: "Appointment of IRP", desc: "Upon admitting the application, the tribunal appoints an Interim Resolution Professional (IRP) who takes over the management of the company." },
+                        { step: "3", title: "Moratorium Period", desc: "A moratorium is imposed, halting all operations and preventing the transfer of assets, goods, or services until the completion of CIRP." },
+                        { step: "4", title: "Verification of Claims", desc: "The IRP verifies creditor claims within 30 days and prepares a list for the Committee of Creditors (CoC)." },
+                        { step: "5", title: "Appointment of Resolution Professional", desc: "The CoC may either confirm the IRP as the Resolution Professional (RP) or appoint a new one." },
+                        { step: "6", title: "Resolution Plan", desc: "The RP drafts a resolution plan detailing how creditors will be paid. The CoC has 180 days to approve the plan." },
+                        { step: "7", title: "Sanction by NCLT", desc: "Once the CoC approves the plan, it must be sanctioned by the NCLT. All actions must be completed within one year of NCLT approval." },
+                        { step: "8", title: "Liquidation Order", desc: "If the resolution process fails, the NCLT permits the company's liquidation, allowing debt repayment to creditors." },
+                    ].map((item, i) => (
+                        <div key={i} className="flex items-start gap-4 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
+                            <div className="w-8 h-8 rounded-full bg-[#072b47] text-white flex items-center justify-center shrink-0 text-[12px] font-bold">{item.step}</div>
+                            <div>
+                                <p className="text-[14px] font-bold text-[#072b47] mb-0.5">{item.title}</p>
+                                <p className="text-[13px] text-slate-600 leading-relaxed">{item.desc}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+                <h3 className="text-lg font-bold text-[#072b47] mb-4">Voluntary Liquidation Process</h3>
+                <div className="grid gap-3">
+                    {[
+                        { step: "1", title: "Declaration of Solvency", desc: "Company directors must declare solvency via an affidavit, confirming no default has occurred and debts can be repaid. Must confirm the process is not intended to defraud anyone." },
+                        { step: "2", title: "Board Meeting", desc: "The board approves the liquidation process, decides on appointment of a liquidator, and prepares a statement for shareholders outlining reasons for liquidation." },
+                        { step: "3", title: "General Meeting of Shareholders", desc: "A general meeting must be convened within four weeks of the solvency declaration. A special resolution is passed to approve the liquidation and appoint the liquidator." },
+                        { step: "4", title: "Responsibilities of the Liquidator", desc: "The liquidator announces the winding-up in English and regional newspapers, inviting claims from stakeholders. Assesses, finalizes all claims, and liquidates company assets to pay creditors and stakeholders." },
+                        { step: "5", title: "Completion of Liquidation", desc: "Liquidation must be completed within 12 months. The liquidator prepares a final report detailing all settlements and submits it to the ROC and the IBBI." },
+                        { step: "6", title: "Application to NCLT", desc: "After completing the process, an application is submitted to the NCLT for the company's dissolution. Once the NCLT issues the dissolution order, the company ceases operations." },
+                    ].map((item, i) => (
+                        <div key={i} className="flex items-start gap-4 bg-[#e8f1fb] border border-[#c0d8f0] rounded-xl p-4">
+                            <div className="w-8 h-8 rounded-full bg-[#005a9c] text-white flex items-center justify-center shrink-0 text-[12px] font-bold">{item.step}</div>
+                            <div>
+                                <p className="text-[14px] font-bold text-[#072b47] mb-0.5">{item.title}</p>
+                                <p className="text-[13px] text-slate-600 leading-relaxed">{item.desc}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+
+    /* ─── Advantages tab (custom JSX → features slot) ─────────── */
+    const advantagesContent = (
+        <div className="space-y-8">
+            <div className="grid sm:grid-cols-2 gap-4 mb-6">
+                <div>
+                    <h4 className="text-[15px] font-bold text-green-700 mb-3 flex items-center gap-2"><CheckCircle2 size={16} className="text-green-500" />Advantages</h4>
+                    {["Removes the pressure from all the creditors.", "Prevents potential legal action against the liquidated company.", "Allows time for realizing the company's assets, ensuring creditors receive the best possible return."].map((item, i) => (
+                        <div key={i} className="flex items-start gap-2 bg-green-50 border border-green-100 rounded-lg px-4 py-2.5 mb-2">
+                            <CheckCircle2 size={14} className="text-green-500 mt-0.5 shrink-0" />
+                            <p className="text-[13px] text-slate-700 leading-relaxed">{item}</p>
+                        </div>
+                    ))}
+                </div>
+                <div>
+                    <h4 className="text-[15px] font-bold text-red-700 mb-3 flex items-center gap-2"><AlertTriangle size={16} className="text-red-500" />Disadvantages</h4>
+                    {["The liquidated company can no longer trade on a similar company name.", "The company's reputation, assets, and licenses will be instantly removed from company ownership.", "The company cannot recover any tax loss that may have been incurred during trading years."].map((item, i) => (
+                        <div key={i} className="flex items-start gap-2 bg-red-50 border border-red-100 rounded-lg px-4 py-2.5 mb-2">
+                            <AlertTriangle size={14} className="text-red-400 mt-0.5 shrink-0" />
+                            <p className="text-[13px] text-slate-700 leading-relaxed">{item}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div>
+                <h4 className="text-[15px] font-bold text-[#072b47] mb-3">Consequences of Liquidation of Company in India</h4>
+                <div className="grid gap-3">
+                    {[
+                        "The company's legal existence comes to an end after the completion of the liquidation process. The company shall be removed from the official company registry and will no longer be allowed to operate, trade, or enter into new contracts.",
+                        "The liquidator, after collecting and selling the company's assets, shall distribute the funds to creditors as per the legal hierarchy. Any remaining funds after all debts are paid may be distributed to shareholders.",
+                        "Employees are among the most affected stakeholders — liquidation results in job losses. Shareholders are the last to receive any proceeds — only after all creditor debts are paid are remaining funds distributed.",
+                    ].map((item, i) => (
+                        <div key={i} className="flex items-start gap-3 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
+                            <Shield size={15} className="text-[#005a9c] mt-0.5 shrink-0" />
+                            <p className="text-[13px] text-slate-700 leading-relaxed">{item}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div>
+                <h4 className="text-[15px] font-bold text-[#072b47] mb-3">Reasons for Liquidation of Company in India</h4>
+                <div className="grid sm:grid-cols-2 gap-4">
+                    {[
+                        { title: "Insolvency", desc: "The most common reason for liquidation — when a company is incapable of paying its debts due to poor cash flow management, rising debts, or an unexpected downturn in revenue." },
+                        { title: "Business Failures", desc: "When business operations are no longer sustainable due to poor management, declining market demand, or economic downturns." },
+                        { title: "Voluntary Exit", desc: "Sometimes liquidation is voluntary — owners may wish to exit the business for reasons such as retirement or to pursue other opportunities." },
+                        { title: "Court Orders or Legal Issues", desc: "Mandatory liquidation occurs when a company is compelled to wind up due to legal actions, failure to repay debts, tax disputes, or regulatory violations." },
+                    ].map((item, i) => (
+                        <div key={i} className="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                            <p className="text-[14px] font-bold text-[#072b47] mb-1">{item.title}</p>
+                            <p className="text-[13px] text-slate-600 leading-relaxed">{item.desc}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
 
     return (
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
-
-            {/* ================= SECTION 1: HERO ================= */}
             <HeroLayout
                 heroTitleMain="Liquidation of "
                 heroTitleSuffix="Company"
-                heroSubtitle="Winding Up & Asset Distribution"
-                heroDescription="Formal legal process to close a company's operations, sell assets, and settle debts under the Insolvency and Bankruptcy Code (IBC), 2016. We assist with both Voluntary and Compulsory Liquidation."
-                whatsIncludedList={[
-                    "Voluntary Liquidation Support",
-                    "Insolvency Professional (Liquidator)",
-                    "Claim Verification & Asset Sale",
-                    "NCLT Representation"
-                ]}
+                heroSubtitle="Company Liquidation under the Insolvency & Bankruptcy Code, 2016 — NCLT Process"
+                heroDescription="Navigate the complex liquidation process with expert guidance from Vyombiz. From assessing solvency and appointing a liquidator to filing with NCLT, distributing assets, and obtaining the dissolution order — complete end-to-end support."
+                whatsIncludedList={["Solvency Assessment & Evaluation", "Liquidator Appointment Support", "NCLT Filing & Dissolution Order", "Creditor Claims & Asset Distribution"]}
                 stats={[
-                    { count: "IBC 2016", label: "Compliant", icon: <Users size={20} /> },
-                    { count: "End-to-End", label: "Support", icon: <Briefcase size={20} /> },
-                    { count: "NCLT", label: "Advisory", icon: <Building2 size={20} /> }
+                    { count: "12 Months", label: "Voluntary Liquidation Timeline", icon: <Clock size={20} /> },
+                    { count: "2 Years", label: "Max Compulsory Liquidation Time", icon: <FileText size={20} /> },
+                    { count: "24/7", label: "Expert Availability", icon: <Users size={20} /> }
                 ]}
             />
-
-            {/* ================= DETAILS SECTION ================= */}
+            <TrustedBrands />
+            <TalkExpert />
             <DetailsLayout
+                navLabels={{ overview: "Overview", advantages: "Types", eligibility: "Process", features: "Advantage", faq: "FAQs" }}
                 overview={{
-                    badge: "Insolvency & Bankruptcy Code",
-                    title: "Company Liquidation –",
-                    highlightTitle: "Overview",
+                    badge: "Insolvency & Bankruptcy Code 2016 | NCLT | Company Liquidation",
+                    title: "Liquidation of Company —",
+                    highlightTitle: "An Overview",
                     description: [
-                        "Liquidation is the formal process of bringing a company's existence to an end. It involves selling the company's assets and using the proceeds to pay off creditors and shareholders.",
-                        "Under the Insolvency and Bankruptcy Code (IBC), liquidation can be initiated voluntarily by solvent companies or compulsorily by creditors for insolvent ones.",
-                        "The process ensures an orderly distribution of assets and final dissolution of the corporate entity."
+                        "In finance and economics, liquidation of a company refers to the process of ending a company's operations and distributing its assets to settle claims. This typically occurs when a company is unable to meet its financial obligations or repay its debts. During liquidation, the company's assets are sold and the proceeds are used to pay off creditors and shareholders.",
+                        "Liquidation is a formal process through which a company winds up its operations. The company's assets are sold to repay its liabilities, and if any surplus remains, it is distributed among the shareholders. In simple terms, liquidation marks the end of a company's business by converting its assets into cash to settle debts and distribute any remaining balance.",
                     ],
-                    whyIdealTitle: "Types of Liquidation",
+                    whyIdealTitle: "How Company Liquidation Works in India",
                     whyIdealList: [
-                        { title: "Member’s Voluntary Liquidation (MVL)", desc: "Initiated by shareholders when the company is solvent and able to pay debts in full." },
-                        { title: "Creditors’ Voluntary Liquidation (CVL)", desc: "Initiated when the company is insolvent and shareholders/creditors agree to wind up." },
-                        { title: "Compulsory Liquidation", desc: "Ordered by the Tribunal (NCLT) on petition by creditors due to default or other grounds." }
+                        { title: "Governed by IBC 2016", desc: "The Insolvency and Bankruptcy Code, 2016 establishes a time-bound framework for resolving insolvency in companies. The IBC outlines the procedure for terminating a company's assets and liabilities and distributing them to entitled parties." },
+                        { title: "NCLT as Adjudicating Authority", desc: "The National Company Law Tribunal (NCLT) is the adjudicating authority for companies under the IBC. The Debt Recovery Tribunal (DRT) handles individuals and partnerships." },
+                        { title: "Liquidation Order Triggers", desc: "NCLT passes a liquidation order when: the business resolution plan is not submitted on time, the plan is rejected by the NCLT, the Committee of Creditors (CoC) approves liquidation, or the corporate debtor opposes the approved resolution plan." },
+                        { title: "Role of the Liquidator", desc: "A liquidator is appointed by the adjudicating authority. Their primary responsibility is to manage the sale of company assets, use proceeds to repay creditors, and distribute any remaining surplus to shareholders." },
                     ]
                 }}
-                advantages={{
-                    title: "Implications of Liquidation",
-                    subtitle: "Why proceed with liquidation?",
-                    list: [
-                        { title: "Closure", desc: "Provides a formal legal exit for a business that is no longer viable." },
-                        { title: "Debt Resolution", desc: "Stops legal actions from creditors and provides a structured repayment mechanism." },
-                        { title: "Director Liability", desc: "Clarifies director responsibilities and can mitigate personal liability if procedures are followed." },
-                        { title: "Asset Distribution", desc: "Ensures fair distribution of remaining assets among stakeholders." },
-                        { title: "Employee Claims", desc: "Addresses employee dues and claims through the liquidation estate." },
-                        { title: "Legal Compliance", desc: "Avoids penalties associated with maintaining a defunct company." }
-                    ]
-                }}
-                eligibility={{
-                    title: "Pre-requisites",
-                    subtitle: "Before You Start",
-                    list: [
-                        { title: "Solvency Declaration", desc: "For voluntary liquidation, directors must declare the company is solvent." },
-                        { title: "Shareholder Approval", desc: "Special Resolution by shareholders is required." },
-                        { title: "Creditor Consent", desc: "Approval from creditors representing 2/3rds of debt value." },
-                        { title: "Insolvency Practitioner", desc: "Appointment of a licensed IP to act as Liquidator." },
-                        { title: "Audit", desc: "Up-to-date financial statements are necessary." }
-                    ]
-                }}
-                documents={{
-                    title: "Documents Required",
-                    description: "Essential documentation for Liquidation.",
-                    list: [
-                        "Declaration of Solvency by Directors",
-                        "Audited Financial Statements (Last 2 years)",
-                        "Board Resolution for Liquidation",
-                        "Special Resolution by Shareholders",
-                        "No Objection Certificate from Creditors",
-                        "Statement of Assets and Liabilities",
-                        "Indemnity Bond",
-                        "Proof of Appointment of Liquidator",
-                        "Pan Card & ID Proofs of Directors"
-                    ],
-                    imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                }}
-                process={{
-                    title: "Liquidation Process",
-                    subtitle: "Step-by-step Procedure (Voluntary)",
-                    steps: [
-                        { step: "01", title: "Declaration", desc: "Directors file Declaration of Solvency with ROC." },
-                        { step: "02", title: "Resolution", desc: "Shareholders pass Special Resolution to liquidate and appoint Liquidator." },
-                        { step: "03", title: "Public Announcement", desc: "Liquidator makes public announcement inviting claims." },
-                        { step: "04", title: "Claim Verification", desc: "Liquidator verifies claims from creditors and employees." },
-                        { step: "05", title: "Asset Sale", desc: "Liquidator realizes assets and forms Liquidation Estate." },
-                        { step: "06", title: "Distribution", desc: "Proceeds distributed in order of priority (waterfall)." },
-                        { step: "07", title: "Final Report", desc: "Liquidator submits Final Report to NCLT." },
-                        { step: "08", title: "Dissolution", desc: "NCLT passes Dissolution Order; Company ceases to exist." }
-                    ]
-                }}
+                advantages={typesContent}
+                eligibility={processContent}
+                features={advantagesContent}
                 whyChooseUs={{
-                    title: "Why Choose VyomBiz?",
-                    subtitle: "Expert Insolvency Professionals",
+                    title: "Why Choose Vyombiz for Company Liquidation?",
+                    subtitle: "Expert guidance through every phase of the company liquidation process.",
                     list: [
-                        { title: "Licensed IPs", desc: "Team includes licensed Insolvency Professionals." },
-                        { title: "IBC Expertise", desc: "Deep understanding of the Insolvency and Bankruptcy Code." },
-                        { title: "Creditor negotiation", desc: "Skilled in negotiating and settling creditor claims." },
-                        { title: "Asset Valuation", desc: "Assistance with accurate valuation of company assets." },
-                        { title: "NCLT Representation", desc: "Legal representation during tribunal hearings." },
-                        { title: "Compliance Management", desc: "Handling all ROC and IBBI filings." },
-                        { title: "Transparent Process", desc: "Clear communication and reporting throughout." },
-                        { title: "Efficient Closure", desc: "Striving for the fastest possible resolution." }
+                        { title: "Expert Guidance", desc: "Access to experienced professionals for legal and financial support throughout the liquidation process." },
+                        { title: "Tailored Solutions", desc: "Customized approaches for voluntary or compulsory liquidation, based on your company's specific financial situation." },
+                        { title: "Comprehensive Services", desc: "Full management of the liquidation process, including documentation, regulatory compliance, and ROC/IBBI filings." },
+                        { title: "Transparent Communication", desc: "Regular updates and clear communication throughout the process to all stakeholders." },
+                        { title: "Post-Liquidation Support", desc: "Assistance with any residual matters after liquidation, including tax implications and final regulatory submissions." },
                     ]
                 }}
             />
-
-            {/* ================= FAQ SECTION ================= */}
-            <FAQLayout
-                title="Frequently Asked Questions"
-                subtitle="Common queries about Company Liquidation"
-                faqs={faqs}
-            />
-
+            <FAQLayout title="FAQs on Liquidation of Company" subtitle="Common questions about company liquidation answered by our experts" faqs={faqs} />
         </div>
     );
 };

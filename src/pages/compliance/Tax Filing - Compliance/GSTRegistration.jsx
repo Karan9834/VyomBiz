@@ -3,10 +3,11 @@ import { Users, Briefcase, Building2 } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
+import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /**
  * GSTRegistration Page matching Vyombiz layout styles
- * Content fetched from: https://corpbiz.io/gst-registration
  */
 
 const GSTRegistration = () => {
@@ -42,7 +43,7 @@ const GSTRegistration = () => {
                 heroTitleMain="GST Registration"
                 heroTitleSuffix="Online"
                 heroSubtitle="Step-by-Step (REG-01) & Expert Help"
-                heroDescription="Are you facing challenges during GST registration? Get your GSTIN quickly with Corpbiz® CA/CS guidance. We complete REG-01, verify documents, track your ARN, and ensure error-free application processing."
+                heroDescription="Are you facing challenges during GST registration? Get your GSTIN quickly with Vyombiz CA/CS guidance. We complete REG-01, verify documents, track your ARN, and ensure error-free application processing."
                 whatsIncludedList={[
                     "Document Preparation",
                     "Get ARN in 2-3 Days",
@@ -55,6 +56,9 @@ const GSTRegistration = () => {
                     { count: "50+", label: "Branch Offices", icon: <Building2 size={20} /> }
                 ]}
             />
+
+            <TrustedBrands />
+            <TalkExpert />
 
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
@@ -131,7 +135,7 @@ const GSTRegistration = () => {
                     ]
                 }}
                 whyChooseUs={{
-                    title: "Why Trust Corpbiz?",
+                    title: "Why Trust Vyombiz?",
                     subtitle: "Simplified registration with high success rates.",
                     list: [
                         { title: "Simiplified Registration", desc: "Processed and simplified 5000+ GST registration applications." },

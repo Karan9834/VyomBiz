@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Users, Briefcase, Building2, ChevronDown, Phone, CheckCircle2, Shield, FileText, Scale, AlertCircle, BookOpen, Gavel } from "lucide-react";
 import InsideNavbar from "../../../components/common/InsideNavbar.jsx";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
+import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
+import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /* ─────────────────────────────────────────────────────────
    SECTION TABS CONFIG
@@ -229,6 +231,9 @@ const LegalNoticeMoneyRecovery = () => {
                     { count: "24–48 hrs", label: "Draft Ready", icon: <Building2 size={20} /> }
                 ]}
             />
+
+            <TrustedBrands />
+            <TalkExpert />
 
             {/* ═══════════════════════════════════════════
                 STICKY INSIDE NAVBAR
