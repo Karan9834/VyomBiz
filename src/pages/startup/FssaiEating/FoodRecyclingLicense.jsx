@@ -94,6 +94,192 @@ const FoodRecyclingAdvantages = () => {
     );
 };
 
+const FoodRecyclingEligibility = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Eligibility Criteria
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
+                    Who needs a Food Recycling License?
+                </p>
+                <div className="mb-10">
+                    <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed">
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Waste Management Firms – </span>
+                            Companies specialized in processing municipal or industrial food waste.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Composting Units – </span>
+                            Facilities turning organic waste into fertilizers or soil conditioners.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Bio-Gas Plants – </span>
+                            Units converting food waste into renewable methane or energy.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Large Food Parks – </span>
+                            Industrial zones requiring an integrated waste management clearance.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Hotel Chains – </span>
+                            Large hospitality groups managing their own on-site recovery systems.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const FoodRecyclingDocuments = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Documents Required
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-8">
+                    Mandatory papers for SPCB clearance.
+                </p>
+                <div className="mb-8">
+                    <ul className="list-disc pl-6 space-y-2 text-[17px] text-slate-600 leading-relaxed">
+                        <li>Proof of Site Possession (Sale Deed/Lease)</li>
+                        <li>Detailed Site Layout Plan (Equipment/ETP location)</li>
+                        <li>Environmental Impact Assessment (EIA) Report</li>
+                        <li>Process Flowchart for waste treatment</li>
+                        <li>CA Certified Gross Fixed Asset Certificate</li>
+                        <li>Copy of Factory License/Business Incorporation</li>
+                        <li>Detailed Project Report (DPR) of the facility</li>
+                        <li>Water and Electricity availability certificate</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const FoodRecyclingProcess = () => {
+    const steps = [
+        { step: "01", title: "Site Selection", desc: "Choosing a location compliant with industrial zone norms." },
+        { step: "02", title: "CTE Application", desc: "Submitting 'Consent to Establish' forms before construction starts." },
+        { step: "03", title: "Board Review", desc: "Technical scrutiny of environmental impact and process flow." },
+        { step: "04", title: "CTO Filing", desc: "Applying for 'Consent to Operate' once the unit is ready to run." },
+        { step: "05", title: "Final Inspection", desc: "SPCB officials visit to verify the installation of treatment plants." },
+        { step: "06", title: "NOC Grant", desc: "Issuance of the official pollution clearance certificate." }
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-10">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
+                        The Licensing Procedure
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                        Path to obtaining CTE and CTO from the board.
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                    <div className="lg:col-span-1">
+                        <img
+                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            alt="The Licensing Procedure"
+                            className="w-full rounded-lg shadow-sm"
+                        />
+                    </div>
+                    <div className="lg:col-span-2">
+                        {steps.map((step, index) => (
+                            <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                                <div className="text-[16px] font-semibold text-[#072b47]">{index + 1}.</div>
+                                <div>
+                                    <h3 className="text-[18px] font-semibold text-[#072b47]">{step.title}</h3>
+                                    <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">{step.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                        <div className="border-t border-slate-200"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const FoodRecyclingFeatures = () => {
+    const features = [
+        { title: "PCB Liaisoning", desc: "Direct interaction with Pollution Control Board for faster clearance." },
+        { title: "Design Support", desc: "Assistance in designing efficient waste treatment and ETP layouts." },
+        { title: "Quarterly Audits", desc: "Regular internal audits to ensure the unit stays within emission limits." },
+        { title: "Renewal Reminders", desc: "Alerts for CTO renewals which typically happen every 2-5 years." }
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
+                        Service Features
+                    </h2>
+                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        Our environmental compliance support.
+                    </p>
+                </div>
+                <div>
+                    {features.map((feature, index) => (
+                        <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">{index + 1}.</div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">{feature.title}</h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">{feature.desc}</p>
+                            </div>
+                        </div>
+                    ))}
+                    <div className="border-t border-slate-300"></div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const FoodRecyclingCompliance = () => {
+    const compliance = [
+        "Submission of Annual Environmental Statements",
+        "Regular testing of effluent and flue gas emissions",
+        "Maintaining records of waste received and processed",
+        "Periodic maintenance of treatment machinery",
+        "Display of green metrics at the facility entrance",
+        "Informing the board about any process alterations"
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
+                        Post Compliance
+                    </h2>
+                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        Maintain your green status legally.
+                    </p>
+                </div>
+                <div>
+                    {compliance.map((item, index) => (
+                        <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">{index + 1}.</div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">{item}</h3>
+                            </div>
+                        </div>
+                    ))}
+                    <div className="border-t border-slate-300"></div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
 const FoodRecyclingLicense = () => {
     const faqs = [
         {
@@ -143,65 +329,11 @@ const FoodRecyclingLicense = () => {
             <DetailsLayout
                 overview={<FoodRecyclingOverview />}
                 advantages={<FoodRecyclingAdvantages />}
-                eligibility={{
-                    title: "Eligibility Criteria",
-                    subtitle: "Who needs a Food Recycling License?",
-                    list: [
-                        { title: "Waste Management Firms", desc: "Companies specialized in processing municipal or industrial food waste." },
-                        { title: "Composting Units", desc: "Facilities turning organic waste into fertilizers or soil conditioners." },
-                        { title: "Bio-Gas Plants", desc: "Units converting food waste into renewable methane or energy." },
-                        { title: "Large Food Parks", desc: "Industrial zones requiring an integrated waste management clearance." },
-                        { title: "Hotel Chains", desc: "Large hospitality groups managing their own on-site recovery systems." }
-                    ]
-                }}
-                documents={{
-                    title: "Documents Required",
-                    description: "Mandatory papers for SPCB clearance.",
-                    list: [
-                        "Proof of Site Possession (Sale Deed/Lease)",
-                        "Detailed Site Layout Plan (Equipment/ETP location)",
-                        "Environmental Impact Assessment (EIA) Report",
-                        "Process Flowchart for waste treatment",
-                        "CA Certified Gross Fixed Asset Certificate",
-                        "Copy of Factory License/Business Incorporation",
-                        "Detailed Project Report (DPR) of the facility",
-                        "Water and Electricity availability certificate"
-                    ]
-                }}
-                process={{
-                    title: "The Licensing Procedure",
-                    subtitle: "Path to obtaining CTE and CTO from the board.",
-                    steps: [
-                        { step: "01", title: "Site Selection", desc: "Choosing a location compliant with industrial zone norms." },
-                        { step: "02", title: "CTE Application", desc: "Submitting 'Consent to Establish' forms before construction starts." },
-                        { step: "03", title: "Board Review", desc: "Technical scrutiny of environmental impact and process flow." },
-                        { step: "04", title: "CTO Filing", desc: "Applying for 'Consent to Operate' once the unit is ready to run." },
-                        { step: "05", title: "Final Inspection", desc: "SPCB officials visit to verify the installation of treatment plants." },
-                        { step: "06", title: "NOC Grant", desc: "Issuance of the official pollution clearance certificate." }
-                    ]
-                }}
-                features={{
-                    title: "Service Features",
-                    subtitle: "Our environmental compliance support.",
-                    list: [
-                        { title: "PCB Liaisoning", desc: "Direct interaction with Pollution Control Board for faster clearance." },
-                        { title: "Design Support", desc: "Assistance in designing efficient waste treatment and ETP layouts." },
-                        { title: "Quarterly Audits", desc: "Regular internal audits to ensure the unit stays within emission limits." },
-                        { title: "Renewal Reminders", desc: "Alerts for CTO renewals which typically happen every 2-5 years." }
-                    ]
-                }}
-                postCompliance={{
-                    title: "Post Compliance",
-                    subtitle: "Maintain your green status legally.",
-                    list: [
-                        "Submission of Annual Environmental Statements",
-                        "Regular testing of effluent and flue gas emissions",
-                        "Maintaining records of waste received and processed",
-                        "Periodic maintenance of treatment machinery",
-                        "Display of green metrics at the facility entrance",
-                        "Informing the board about any process alterations"
-                    ]
-                }}
+                eligibility={<FoodRecyclingEligibility />}
+                documents={<FoodRecyclingDocuments />}
+                process={<FoodRecyclingProcess />}
+                features={<FoodRecyclingFeatures />}
+                postCompliance={<FoodRecyclingCompliance />}
             />
 
             <FAQLayout faqs={faqs} />

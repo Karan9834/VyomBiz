@@ -57,6 +57,354 @@ const TrademarkOverview = () => {
     );
 };
 
+
+const TrademarkRegistrationEligibility = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Who Should Register?
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
+                    Entities and individuals who benefit from Trademark Registration.
+                </p>
+
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Business Owners
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        To protect their names, logos, and products from being copied.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Startups
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        To ensure a unique brand identity and to attract investors.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Service Providers
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        To protect their goodwill in the competitive market landscape.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Entrepreneurs
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        To build their brand reputation and legal ownership.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        NGOs
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        To protect their logos or slogans that reflect their mission and cause.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Artists/Designers
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        To safeguard intellectual property rights for their distinctive designs.
+                    </p>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const TrademarkRegistrationDocumentsSection = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Required Documents
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-8">
+                    Documents needed to initiate the Trademark Registration process.
+                </p>
+                <div className="space-y-4">
+
+                    <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Identity Proof (PAN / Aadhaar) of Applicant</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Address Proof (Utility Bill / Passport)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Incorporation Certificate / Partnership Deed (if applicable)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Trademark Details (Logo, Slogan, Brand Name)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Form TM-48 (Power of Attorney)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">MSME / Udyog Aadhaar Certificate (for fee concession)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">User Affidavit (if claiming prior use)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Business Objectives & Description of Goods/Services</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const TrademarkRegistrationProcessSection = () => {
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-10">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
+                        Registration Process
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                        Step-by-step guide to protect your brand identity.
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                    <div className="lg:col-span-1">
+                        <img
+                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            alt="Process"
+                            className="w-full rounded-lg shadow-sm"
+                        />
+                    </div>
+                    <div className="lg:col-span-2">
+
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                1.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Trademark Search
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Conducting an in-depth search to ensure the trademark is unique.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                2.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Application Filing
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Submitting the application with applicant details and trademark graphic.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                3.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Office Review
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Examination by the Trademark Office for distinctiveness and objections.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                4.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Objection Response
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Clarifying any objections raised by the office within the stipulated time.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                5.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Journal Publication
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Publication in the Trademark Journal for third-party opposition.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                6.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Registration
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Issuance of Registration Certificate if no opposition is filed.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="border-t border-slate-200"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const TrademarkRegistrationFeaturesSection = () => {
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
+                        Why Choose VyomBiz?
+                    </h2>
+                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        Your trusted partner for Intellectual Property Rights.
+                    </p>
+                </div>
+                <div>
+
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            1.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Expert Consultation
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Guiding you through eligibility to safeguard brand identity.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            2.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Comprehensive Search
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Conducting detailed searches to ensure unique and available trademarks.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            3.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Document Preparation
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Assisting in collecting documents to reduce errors and delays.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            4.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Application Filing
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Managing the entire filing process ensuring legal compliance.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            5.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Real-Time Updates
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Regular updates on application status throughout the process.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            6.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Objection Handling
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Drafting strong replies to trademark objections.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            7.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Cost Transparency
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Clear cost breakdowns with no hidden charges.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            8.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Post-Reg Support
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Continued support for renewals and enforcement.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="border-t border-slate-300"></div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
 const TrademarkRegistration = () => {
 
     const faqs = [
@@ -181,59 +529,10 @@ const TrademarkRegistration = () => {
             <DetailsLayout
                 overview={<TrademarkOverview />}
                 advantages={advantagesContent}
-                eligibility={{
-                    title: "Who Should Register?",
-                    subtitle: "Entities and individuals who benefit from Trademark Registration.",
-                    list: [
-                        { title: "Business Owners", desc: "To protect their names, logos, and products from being copied." },
-                        { title: "Startups", desc: "To ensure a unique brand identity and to attract investors." },
-                        { title: "Service Providers", desc: "To protect their goodwill in the competitive market landscape." },
-                        { title: "Entrepreneurs", desc: "To build their brand reputation and legal ownership." },
-                        { title: "NGOs", desc: "To protect their logos or slogans that reflect their mission and cause." },
-                        { title: "Artists/Designers", desc: "To safeguard intellectual property rights for their distinctive designs." }
-                    ]
-                }}
-                documents={{
-                    title: "Required Documents",
-                    description: "Documents needed to initiate the Trademark Registration process.",
-                    list: [
-                        "Identity Proof (PAN / Aadhaar) of Applicant",
-                        "Address Proof (Utility Bill / Passport)",
-                        "Incorporation Certificate / Partnership Deed (if applicable)",
-                        "Trademark Details (Logo, Slogan, Brand Name)",
-                        "Form TM-48 (Power of Attorney)",
-                        "MSME / Udyog Aadhaar Certificate (for fee concession)",
-                        "User Affidavit (if claiming prior use)",
-                        "Business Objectives & Description of Goods/Services"
-                    ],
-                    imageUrl: "https://images.unsplash.com/photo-1554224155-1696413575b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                }}
-                process={{
-                    title: "Registration Process",
-                    subtitle: "Step-by-step guide to protect your brand identity.",
-                    steps: [
-                        { step: "01", title: "Trademark Search", desc: "Conducting an in-depth search to ensure the trademark is unique." },
-                        { step: "02", title: "Application Filing", desc: "Submitting the application with applicant details and trademark graphic." },
-                        { step: "03", title: "Office Review", desc: "Examination by the Trademark Office for distinctiveness and objections." },
-                        { step: "04", title: "Objection Response", desc: "Clarifying any objections raised by the office within the stipulated time." },
-                        { step: "05", title: "Journal Publication", desc: "Publication in the Trademark Journal for third-party opposition." },
-                        { step: "06", title: "Registration", desc: "Issuance of Registration Certificate if no opposition is filed." }
-                    ]
-                }}
-                whyChooseUs={{
-                    title: "Why Choose VyomBiz?",
-                    subtitle: "Your trusted partner for Intellectual Property Rights.",
-                    list: [
-                        { title: "Expert Consultation", desc: "Guiding you through eligibility to safeguard brand identity." },
-                        { title: "Comprehensive Search", desc: "Conducting detailed searches to ensure unique and available trademarks." },
-                        { title: "Document Preparation", desc: "Assisting in collecting documents to reduce errors and delays." },
-                        { title: "Application Filing", desc: "Managing the entire filing process ensuring legal compliance." },
-                        { title: "Real-Time Updates", desc: "Regular updates on application status throughout the process." },
-                        { title: "Objection Handling", desc: "Drafting strong replies to trademark objections." },
-                        { title: "Cost Transparency", desc: "Clear cost breakdowns with no hidden charges." },
-                        { title: "Post-Reg Support", desc: "Continued support for renewals and enforcement." }
-                    ]
-                }}
+                eligibility={<TrademarkRegistrationEligibility />}
+                documents={<TrademarkRegistrationDocumentsSection />}
+                process={<TrademarkRegistrationProcessSection />}
+                features={<TrademarkRegistrationFeaturesSection />}
             />
 
             {/* ================= FAQ SECTION ================= */}

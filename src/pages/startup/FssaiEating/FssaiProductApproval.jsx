@@ -95,6 +95,191 @@ const FssaiProductApprovalAdvantages = () => {
     );
 };
 
+const FssaiProductApprovalEligibility = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Eligibility Criteria
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
+                    Who needs Product Approval?
+                </p>
+                <div className="mb-10">
+                    <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed">
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Novel Food Makers – </span>
+                            Creators of food items with no prior history of consumption in India.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Supplement Brands – </span>
+                            Manufacturers of health supplements and nutraceuticals.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Novel Technology Users – </span>
+                            Businesses using new processing methods that alter food composition.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Proprietary Food Importers – </span>
+                            Entities bringing unique international food formulations to India.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-[#072b47]">Special Medical Foods – </span>
+                            Products designed for specific dietary management of diseases.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const FssaiProductApprovalDocuments = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Documents Required
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-8">
+                    Technical paperwork for Product Approval.
+                </p>
+                <div className="mb-8">
+                    <ul className="list-disc pl-6 space-y-2 text-[17px] text-slate-600 leading-relaxed">
+                        <li>Technical data sheet of the product</li>
+                        <li>Complete list of ingredients and additives</li>
+                        <li>NABL-accredited laboratory test reports</li>
+                        <li>Brief description of the manufacturing process</li>
+                        <li>Draft of the product label (FSSAI compliant)</li>
+                        <li>Safety and Efficacy data for novel ingredients</li>
+                        <li>Certificate of Analysis (COA) for raw materials</li>
+                        <li>Existing FSSAI License copy (if any)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const FssaiProductApprovalProcess = () => {
+    const steps = [
+        { step: "01", title: "Assessment", desc: "Determining if the product is standardized or requires special approval." },
+        { step: "02", title: "Technical Drafting", desc: "Compiling a scientific dossier with safety and toxicology reports." },
+        { step: "03", title: "FPAS Submission", desc: "Online application through the Food Product Approval System." },
+        { step: "04", title: "Scientific Review", desc: "A panel of scientists at FSSAI reviews the product's safety data." },
+        { step: "05", title: "Final Approval", desc: "Grant of a-no objection certificate (NOC) or regular approval." }
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-10">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
+                        The Approval Process
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                        Step-by-step path to clearing your innovation.
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                    <div className="lg:col-span-1">
+                        <img
+                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            alt="The Approval Process"
+                            className="w-full rounded-lg shadow-sm"
+                        />
+                    </div>
+                    <div className="lg:col-span-2">
+                        {steps.map((step, index) => (
+                            <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                                <div className="text-[16px] font-semibold text-[#072b47]">{index + 1}.</div>
+                                <div>
+                                    <h3 className="text-[18px] font-semibold text-[#072b47]">{step.title}</h3>
+                                    <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">{step.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                        <div className="border-t border-slate-200"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const FssaiProductApprovalFeatures = () => {
+    const features = [
+        { title: "Scientific Advisory", desc: "Liaison with food scientists to validate your product's safety claims." },
+        { title: "Label Rectification", desc: "Ensuring your packaging claims do not mislead and are legally sound." },
+        { title: "Lab Support", desc: "Coordination with NABL labs for necessary microbial and chemical testing." },
+        { title: "Dossier Management", desc: "Professional preparation of the complex technical dossier required by FPAS." }
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
+                        Service Features
+                    </h2>
+                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        Our specialized support for innovators.
+                    </p>
+                </div>
+                <div>
+                    {features.map((feature, index) => (
+                        <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">{index + 1}.</div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">{feature.title}</h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">{feature.desc}</p>
+                            </div>
+                        </div>
+                    ))}
+                    <div className="border-t border-slate-300"></div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const FssaiProductApprovalCompliance = () => {
+    const compliance = [
+        "Ensuring batch-wise testing of the approved product",
+        "Promptly reporting any adverse reactions to FSSAI",
+        "Updating labels if regulations for additives change",
+        "Maintaining records of the approval letter (NOC)",
+        "Periodic renewal of the primary FSSAI license",
+        "Informing the authority about any change in formulation"
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
+                        Post Compliance
+                    </h2>
+                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        Maintaining your product's market status.
+                    </p>
+                </div>
+                <div>
+                    {compliance.map((item, index) => (
+                        <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">{index + 1}.</div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">{item}</h3>
+                            </div>
+                        </div>
+                    ))}
+                    <div className="border-t border-slate-300"></div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
 const FssaiProductApproval = () => {
     const faqs = [
         {
@@ -140,64 +325,11 @@ const FssaiProductApproval = () => {
             <DetailsLayout
                 overview={<FssaiProductApprovalOverview />}
                 advantages={<FssaiProductApprovalAdvantages />}
-                eligibility={{
-                    title: "Eligibility Criteria",
-                    subtitle: "Who needs Product Approval?",
-                    list: [
-                        { title: "Novel Food Makers", desc: "Creators of food items with no prior history of consumption in India." },
-                        { title: "Supplement Brands", desc: "Manufacturers of health supplements and nutraceuticals." },
-                        { title: "Novel Technology Users", desc: "Businesses using new processing methods that alter food composition." },
-                        { title: "Proprietary Food Importers", desc: "Entities bringing unique international food formulations to India." },
-                        { title: "Special Medical Foods", desc: "Products designed for specific dietary management of diseases." }
-                    ]
-                }}
-                documents={{
-                    title: "Documents Required",
-                    description: "Technical paperwork for Product Approval.",
-                    list: [
-                        "Technical data sheet of the product",
-                        "Complete list of ingredients and additives",
-                        "NABL-accredited laboratory test reports",
-                        "Brief description of the manufacturing process",
-                        "Draft of the product label (FSSAI compliant)",
-                        "Safety and Efficacy data for novel ingredients",
-                        "Certificate of Analysis (COA) for raw materials",
-                        "Existing FSSAI License copy (if any)"
-                    ]
-                }}
-                process={{
-                    title: "The Approval Process",
-                    subtitle: "Step-by-step path to clearing your innovation.",
-                    steps: [
-                        { step: "01", title: "Assessment", desc: "Determining if the product is standardized or requires special approval." },
-                        { step: "02", title: "Technical Drafting", desc: "Compiling a scientific dossier with safety and toxicology reports." },
-                        { step: "03", title: "FPAS Submission", desc: "Online application through the Food Product Approval System." },
-                        { step: "04", title: "Scientific Review", desc: "A panel of scientists at FSSAI reviews the product's safety data." },
-                        { step: "05", title: "Final Approval", desc: "Grant of a-no objection certificate (NOC) or regular approval." }
-                    ]
-                }}
-                features={{
-                    title: "Service Features",
-                    subtitle: "Our specialized support for innovators.",
-                    list: [
-                        { title: "Scientific Advisory", desc: "Liaison with food scientists to validate your product's safety claims." },
-                        { title: "Label Rectification", desc: "Ensuring your packaging claims do not mislead and are legally sound." },
-                        { title: "Lab Support", desc: "Coordination with NABL labs for necessary microbial and chemical testing." },
-                        { title: "Dossier Management", desc: "Professional preparation of the complex technical dossier required by FPAS." }
-                    ]
-                }}
-                postCompliance={{
-                    title: "Post Compliance",
-                    subtitle: "Maintaining your product's market status.",
-                    list: [
-                        "Ensuring batch-wise testing of the approved product",
-                        "Promptly reporting any adverse reactions to FSSAI",
-                        "Updating labels if regulations for additives change",
-                        "Maintaining records of the approval letter (NOC)",
-                        "Periodic renewal of the primary FSSAI license",
-                        "Informing the authority about any change in formulation"
-                    ]
-                }}
+                eligibility={<FssaiProductApprovalEligibility />}
+                documents={<FssaiProductApprovalDocuments />}
+                process={<FssaiProductApprovalProcess />}
+                features={<FssaiProductApprovalFeatures />}
+                postCompliance={<FssaiProductApprovalCompliance />}
             />
 
             <FAQLayout faqs={faqs} />

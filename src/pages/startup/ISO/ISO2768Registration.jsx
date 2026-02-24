@@ -91,6 +91,45 @@ const ISO2768Advantages = () => {
     );
 };
 
+const ISO2768Benefits = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Key Advantages Received
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
+                    Fulfilling compliance measures intrinsically establishes several operational and structural benefits:
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div className="mb-10">
+                        <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                            Business Marketability
+                        </h3>
+                        <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed list-disc list-inside bg-[#f8fafc] p-6 rounded-xl border border-slate-100">
+                            <li><strong>Global Recognition:</strong> Instantly elevates consumer and vendor trust globally as compliance meets international hardware safety limits natively.</li>
+                            <li><strong>Increased Marketability:</strong> Gives your mechanical supply a massive edge over uncertified machinery rivals globally.</li>
+                            <li><strong>Tendering Opportunities:</strong> Heavily aids organizations correctly receiving massive manufacturing tenders sourced by the Government.</li>
+                        </ul>
+                    </div>
+
+                    <div className="mb-10">
+                        <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                            Operational Excellence
+                        </h3>
+                        <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed list-disc list-inside bg-[#f8fafc] p-6 rounded-xl border border-slate-100">
+                            <li><strong>Improved Efficiency:</strong> Actively guarantees smoother assemblies reducing scrap materials and downtime effectively.</li>
+                            <li><strong>Heightened Standards:</strong> Provides strict baseline rules actively aligning facility engineering methods minimizing dangerous dimensional drifting.</li>
+                            <li><strong>Customer Satisfaction:</strong> Diminishes product failures drastically driving consistent functional performance dependably.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
 const ISODocumentsSection = () => {
     return (
         <section className="w-full py-12 bg-white">
@@ -198,6 +237,61 @@ const ISO2768ProcessSection = () => {
     );
 };
 
+const ISO2768FeaturesSection = () => {
+    const features = [
+        {
+            title: "Expert Measurement Guidance",
+            desc: "Gain explicit deep assistance charting correct manufacturing discrepancies intelligently safely scaling rigid bounds strictly."
+        },
+        {
+            title: "Quick Query Resolution",
+            desc: "Directly resolve intricate dimensional or angular compliance hurdles swiftly connecting with dedicated expert hardware auditors natively."
+        },
+        {
+            title: "End-to-End Application Planning",
+            desc: "Formally execute and organize complex applications fulfilling deep exact measurement eligibility criteria consistently."
+        },
+        {
+            title: "Regulatory Management",
+            desc: "Secure unhindered expert compliance frameworks smoothly completing procedural actions fulfilling rigid legal demands thoroughly."
+        }
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
+                        Corpbiz Compliance Support Hub
+                    </h2>
+                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        Corpbiz significantly aids seamless ISO compliance intelligently securely mapping specific engineering directives thoroughly.
+                    </p>
+                </div>
+
+                <div>
+                    {features.map((feature, index) => (
+                        <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                {index + 1}.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    {feature.title}
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    {feature.desc}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+                    <div className="border-t border-slate-300"></div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
 const ISO2768Registration = () => {
     const faqs = [
         {
@@ -243,10 +337,10 @@ const ISO2768Registration = () => {
             <DetailsLayout
                 overview={<ISO2768Overview />}
                 advantages={<ISO2768Advantages />}
-                eligibility={<></>}
+                eligibility={<ISO2768Benefits />}
                 documents={<ISODocumentsSection />}
                 process={<ISO2768ProcessSection />}
-                features={<></>}
+                features={<ISO2768FeaturesSection />}
             />
 
             {/* ================= FAQ SECTION ================= */}
