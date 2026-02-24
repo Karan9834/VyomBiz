@@ -1,4 +1,22 @@
-import React from "react";
+const fs = require('fs');
+const path = require('path');
+
+const files = [
+    'ISO27001Registration',
+    'ISO9001Registration',
+    'ISO20000Registration',
+    'ISO31000Registration',
+    'ISO13485Registration',
+    'ISO21101Registration',
+    'ISO16001Registration',
+    'ISO2768Registration'
+];
+
+const basePath = 'd:/Vyombiz/VyomBiz/src/pages/startup/ISO';
+
+files.forEach(file => {
+    const title = file.replace('Registration', '');
+    const content = `import React from "react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
@@ -8,21 +26,21 @@ const Overview = () => {
         <section className="w-full py-10 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
-                    Overview of ISO20000
+                    Overview of ${title}
                 </h2>
                 <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
-                    Content for ISO20000 is currently being updated.
+                    Content for ${title} is currently being updated.
                 </p>
             </div>
         </section>
     );
 };
 
-const ISO20000Registration = () => {
+const ${file} = () => {
     return (
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
             <HeroLayout
-                heroTitleMain="ISO20000"
+                heroTitleMain="${title}"
                 heroTitleSuffix="Certification"
                 heroSubtitle="Standardization"
                 heroDescription="Ensure your business meets international standards."
@@ -38,7 +56,7 @@ const ISO20000Registration = () => {
                 features={<></>}
             />
             <FAQLayout
-                title="FAQs on ISO20000 Certification"
+                title="FAQs on ${title} Certification"
                 subtitle="Frequently Asked Questions"
                 faqs={[]}
             />
@@ -46,4 +64,10 @@ const ISO20000Registration = () => {
     );
 };
 
-export default ISO20000Registration;
+export default ${file};
+`;
+
+    fs.writeFileSync(path.join(basePath, file + '.jsx'), content);
+});
+
+console.log("Files created successfully.");

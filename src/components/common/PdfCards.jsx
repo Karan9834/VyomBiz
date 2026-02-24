@@ -15,7 +15,7 @@ const PdfCards = ({ card, showLogo = false }) => {
           <div className="w-full h-[250px] bg-gray-200 border-[3px] border-orange-500" />
         )}
 
-        
+
       </div>
 
       {/* Content */}
