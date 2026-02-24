@@ -160,7 +160,7 @@ const Hero = () => {
           }}></div>
 
           {/* Attractive Trust Text inside the black curve */}
-          <div className="absolute top-10 md:top-16 left-1/2 -translate-x-1/2 w-full flex flex-col items-center text-center px-4">
+          <div className="absolute top-16 md:top-20 left-1/2 -translate-x-1/2 w-full flex flex-col items-center text-center px-4">
             <h3 className="text-gray-200 text-xs md:text-base lg:text-lg font-medium tracking-[0.15em] uppercase mb-2 md:mb-3 drop-shadow-md">
               Empowering <span className="text-sky-400 font-bold drop-shadow-[0_0_8px_rgba(56,189,248,0.8)]">10,000+</span> Businesses Nationwide
             </h3>
