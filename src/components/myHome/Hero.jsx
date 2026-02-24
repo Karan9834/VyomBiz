@@ -125,22 +125,54 @@ const Hero = () => {
       </div>
 
       {/* Massive Convex Curve Bottom Section - The "Floor" */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[160%] h-[200px] md:h-[320px] bg-black rounded-[100%] z-40 translate-y-1/2 overflow-hidden pointer-events-none">
-        {/* Decorative Grid Pattern for Depth */}
-        <div className="absolute inset-0 opacity-20" style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.1) 1px, transparent 0)`,
-          backgroundSize: '40px 40px'
-        }}></div>
-        {/* Subtle Diagonal Lines */}
-        <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: `repeating-linear-gradient(
-            45deg,
-            transparent,
-            transparent 15px,
-            rgba(255, 255, 255, 0.08) 15px,
-            rgba(255, 255, 255, 0.08) 30px
-          )`,
-        }}></div>
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[120%] h-[260px] md:h-[420px] z-40 translate-y-1/2 pointer-events-none">
+
+        {/* Base Black Layer (solid across) */}
+        <div className="absolute inset-0 bg-black rounded-[100%]"></div>
+
+        {/* Faded Glow Layer (Less glow from right and left edges) */}
+        <div
+          className="absolute inset-0 rounded-[100%]"
+          style={{
+            borderTop: '5px solid rgba(56, 189, 248, 0.9)',
+            boxShadow: '0 -8px 30px rgba(56, 189, 248, 0.8), 0 -25px 90px rgba(79, 70, 229, 0.6), inset 0 8px 30px rgba(56, 189, 248, 0.6)',
+            maskImage: 'linear-gradient(to right, transparent 2%, black 25%, black 75%, transparent 98%)',
+            WebkitMaskImage: 'linear-gradient(to right, transparent 2%, black 25%, black 75%, transparent 98%)'
+          }}
+        ></div>
+
+        {/* Content layer (clipped by rounded-[100%]) */}
+        <div className="absolute inset-0 rounded-[100%] overflow-hidden">
+          {/* Decorative Grid Pattern for Depth */}
+          <div className="absolute inset-0 opacity-20" style={{
+            backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.1) 1px, transparent 0)`,
+            backgroundSize: '40px 40px'
+          }}></div>
+          {/* Subtle Diagonal Lines */}
+          <div className="absolute inset-0 opacity-10" style={{
+            backgroundImage: `repeating-linear-gradient(
+              45deg,
+              transparent,
+              transparent 15px,
+              rgba(255, 255, 255, 0.08) 15px,
+              rgba(255, 255, 255, 0.08) 30px
+            )`,
+          }}></div>
+
+          {/* Attractive Trust Text inside the black curve */}
+          <div className="absolute top-10 md:top-16 left-1/2 -translate-x-1/2 w-full flex flex-col items-center text-center px-4">
+            <h3 className="text-gray-200 text-xs md:text-base lg:text-lg font-medium tracking-[0.15em] uppercase mb-2 md:mb-3 drop-shadow-md">
+              Empowering <span className="text-sky-400 font-bold drop-shadow-[0_0_8px_rgba(56,189,248,0.8)]">10,000+</span> Businesses Nationwide
+            </h3>
+            <div className="flex items-center justify-center gap-2 md:gap-4 opacity-90 mx-auto">
+              <div className="h-[1px] w-8 md:w-20 bg-gradient-to-r from-transparent to-indigo-500"></div>
+              <p className="text-[9px] md:text-xs text-indigo-300 font-light tracking-[0.2em] md:tracking-[0.3em]">
+                YOUR VISION • OUR EXPERTISE
+              </p>
+              <div className="h-[1px] w-8 md:w-20 bg-gradient-to-l from-transparent to-indigo-500"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
