@@ -104,6 +104,7 @@ export const ROUTE_MAP = {
     "GST Annual Return Filing": "/gst-annual-return-filing",
     "GST Compliance Services": "/gst-compliance-services",
     "GST Registration": "/gst-registration",
+    "Income Tax Advisory": "/income-tax-advisory",
     "Income Tax Return Filing": "/income-tax-return-filing",
     "TDS Return Filing": "/tds-return-filing",
     "Closing a Limited Liability Partnership": "/closing-a-limited-liability-partnership",
