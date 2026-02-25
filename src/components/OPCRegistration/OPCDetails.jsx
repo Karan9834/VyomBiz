@@ -1,5 +1,6 @@
 import React from "react";
 import DetailsLayout from "../common/DetailsLayout";
+import { CheckCircle2 } from "lucide-react";
 
 const OPCRegistrationOverview = () => {
     return (
@@ -138,12 +139,15 @@ const OPCEligibility = () => {
                 <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
                     The legal criteria you must meet to form an Indian One Person Company.
                 </p>
-                <div className="space-y-5 text-[17px] text-slate-600 leading-relaxed">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {list.map((item, i) => (
-                        <p key={i}>
-                            <span className="font-semibold text-[#072b47]">{item.title} – </span>
-                            {item.desc}
-                        </p>
+                        <div key={i} className="flex gap-3 p-4 bg-[#e6f0fa] rounded-xl">
+                            <CheckCircle2 className="text-[#005a9c] shrink-0 mt-0.5" size={20} />
+                            <div>
+                                <span className="font-semibold text-[#072b47]">{item.title}</span>
+                                <span className="text-slate-600"> – {item.desc}</span>
+                            </div>
+                        </div>
                     ))}
                 </div>
                 <div className="mt-12 text-center">
@@ -176,11 +180,14 @@ const OPCDocumentsSection = () => {
                 <p className="text-[17px] text-slate-600 leading-relaxed mb-8">
                     Digital copies for both the founder and the registered office address.
                 </p>
-                <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {list.map((item, i) => (
-                        <li key={i}>{item}</li>
+                        <div key={i} className="flex gap-3 p-4 bg-[#e6f0fa] rounded-xl">
+                            <CheckCircle2 className="text-[#005a9c] shrink-0 mt-0.5" size={20} />
+                            <span className="text-slate-700">{item}</span>
+                        </div>
                     ))}
-                </ul>
+                </div>
             </div>
         </section>
     );
@@ -252,17 +259,16 @@ const OPCFeaturesSection = () => {
                         Expert support for your solo business venture.
                     </p>
                 </div>
-                <div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {features.map((feature, index) => (
-                        <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">{index + 1}.</div>
+                        <div key={index} className="flex gap-3 p-5 bg-[#e6f0fa] rounded-xl">
+                            <CheckCircle2 className="text-[#005a9c] shrink-0 mt-0.5" size={20} />
                             <div>
                                 <h3 className="text-[16px] font-semibold text-[#072b47]">{feature.title}</h3>
                                 <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">{feature.desc}</p>
                             </div>
                         </div>
                     ))}
-                    <div className="border-t border-slate-300" />
                 </div>
             </div>
         </section>
