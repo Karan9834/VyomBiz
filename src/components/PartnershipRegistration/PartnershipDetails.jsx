@@ -31,7 +31,7 @@ const PartnershipRegistrationOverview = () => {
 
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80"
+                            src="/Partnership Firm Registration/overview.....jpg"
                             alt="Partnership Firm Registration Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -63,7 +63,7 @@ const PartnershipRegistrationAdvantages = () => {
 
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80"
+src="/Partnership Firm Registration/benefits.....jpg"
                             alt="Partnership Firm Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -197,7 +197,7 @@ const PartnershipProcessSection = () => {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80" alt="Partnership Registration Process" className="w-full rounded-lg shadow-sm" />
+                        <img src="/Partnership Firm Registration/process.....jpg" alt="Partnership Registration Process" className="w-full rounded-lg shadow-sm" />
                     </div>
                     <div className="lg:col-span-2">
                         {steps.map((step, index) => (
