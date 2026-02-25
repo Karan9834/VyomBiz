@@ -17,9 +17,11 @@ const Publications = lazy(() => import('../pages/resources/Publications'));
 const Regulatory = lazy(() => import('../pages/regulatory/Regulatory'));
 const Environmental = lazy(() => import('../pages/environmental/Environmental'));
 const NotFound = lazy(() => import('../pages/error/NotFound'));
+const BusinessRegistration = lazy(() => import('../pages/footer/BusinessRegistration'));
 
 const MainRoutes = [
     <Route key="home" path="/" element={<Home />} />,
+    <Route key="business-registration" path="/business-registration" element={<BusinessRegistration />} />,
     <Route key="about" path="/about" element={<About />} />,
     <Route key="career" path="/career" element={<Carrers />} />,
     <Route key="contact" path="/contact" element={<Contact />} />,

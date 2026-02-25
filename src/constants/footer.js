@@ -1,6 +1,6 @@
 export const FOOTER_LINKS = {
     STARTUP: [
-        { name: "Business Registration", path: "/startup" },
+        { name: "Business Registration", path: "/business-registration" },
         { name: "NGO / Trust", path: "/startup" },
         { name: "Global Incorporation", path: "/startup" },
         { name: "Industry Setup", path: "/startup" },
