@@ -56,10 +56,11 @@ const Hero = () => {
         <div className="absolute bottom-40 left-1/4 w-28 h-28 border-2 border-blue-400 rounded-lg rotate-12 transform"></div>
         <div className="absolute top-72 right-1/3 w-16 h-16 border-2 border-blue-300 rounded-lg transform -rotate-12"></div>
         <div className="absolute bottom-32 right-16 w-20 h-20 border-2 border-blue-400 rounded-lg rotate-45"></div>
-        {/* Faint rocket icon */}
-        <div className="absolute top-24 right-20 opacity-10">
-          <Rocket className="w-32 h-32 text-blue-300" strokeWidth={1} />
-        </div>
+      </div>
+
+      {/* Yellow rocket icon */}
+      <div className="absolute top-24 right-20 opacity-50 z-0">
+        <Rocket className="w-32 h-32 text-yellow-400 drop-shadow-md" strokeWidth={1} />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
@@ -72,7 +73,7 @@ const Hero = () => {
 
           <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-6">
             Simplifying Legal, Tax, and Compliance, the{" "}
-            <span className="bg-[#005a9c]/30 text-blue-200 px-2 py-1 rounded-md font-semibold text-sm">
+            <span className="bg-yellow-500/30 text-yellow-300 px-2 py-1 rounded-md font-semibold text-sm">
               AI-Driven
             </span>{" "}
             Trusted by millions. Backed by real experts.
@@ -162,7 +163,7 @@ const Hero = () => {
           {/* Attractive Trust Text inside the black curve */}
           <div className="absolute top-16 md:top-20 left-1/2 -translate-x-1/2 w-full flex flex-col items-center text-center px-4">
             <h3 className="text-gray-200 text-xs md:text-base lg:text-lg font-medium tracking-[0.15em] uppercase mb-2 md:mb-3 drop-shadow-md">
-              Empowering <span className="text-sky-400 font-bold drop-shadow-[0_0_8px_rgba(56,189,248,0.8)]">10,000+</span> Businesses Nationwide
+              Empowering <span className="text-yellow-400 font-bold drop-shadow-[0_0_8px_rgba(56,189,248,0.8)]">10,000+</span> Businesses Nationwide
             </h3>
             <div className="flex items-center justify-center gap-2 md:gap-4 opacity-90 mx-auto">
               <div className="h-[1px] w-8 md:w-20 bg-gradient-to-r from-transparent to-indigo-500"></div>
