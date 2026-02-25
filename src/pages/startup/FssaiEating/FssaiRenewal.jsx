@@ -225,7 +225,7 @@ const FssaiRenewalProcess = () => {
 
 const FssaiRenewalFeatures = () => {
     const features = [
-        { title: "All-in-One Legal and Compliance Partner", desc: "Corpbiz offers a complete range of legal services, dealing in all types of licenses and taxation compliances. We work on behalf of our clients so they can focus on running their business." },
+        { title: "All-in-One Legal and Compliance Partner", desc: "VyomBiz offers a complete range of legal services, dealing in all types of licenses and taxation compliances. We work on behalf of our clients so they can focus on running their business." },
         { title: "Specialized Expertise in FSSAI Renewal", desc: "Our team of experts specializes in FSSAI License Renewal and related services, ensuring every step complies with the Food Safety and Standards Act, 2006." },
         { title: "Personalized Assistance Based on Your Business", desc: "We assist in the renewal process based on the nature and size of your business, ensuring you meet the exact requirements for your category." },
         { title: "Document Verification and Preparation", desc: "Our experts verify all requisite documents, including the category list, Form A, Form B, and NOC, before filing the renewal application." },
@@ -242,7 +242,7 @@ const FssaiRenewalFeatures = () => {
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
-                        Reason to Trust Corpbiz for FSSAI Renewal Online
+                        Reason to Trust VyomBiz for FSSAI Renewal Online
                     </h2>
                     <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
                         Features of our services:

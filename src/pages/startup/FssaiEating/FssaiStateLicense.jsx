@@ -250,7 +250,7 @@ const FssaiStateFeatures = () => {
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
-                        Why Choose Corpbiz for FSSAI State License?
+                        Why Choose VyomBiz for FSSAI State License?
                     </h2>
                     <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
                         Illuminate your FSSAI state food license registration journey with us.

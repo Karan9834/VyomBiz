@@ -312,10 +312,10 @@ const ISO16001FeaturesSection = () => {
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
-                        Corpbiz Assistance
+                        VyomBiz Assistance
                     </h2>
                     <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                        Corpbiz cooperates in assisting all your operational constraints elegantly securely mapping accurate compliance structures seamlessly safely cleanly correctly comfortably smartly solidly smartly brilliantly actively intelligently gracefully reliably smartly solidly professionally seamlessly effortlessly effectively confidently correctly properly natively explicitly cleanly brilliantly securely successfully fully explicitly beautifully.
+                        VyomBiz cooperates in assisting all your operational constraints elegantly securely mapping accurate compliance structures seamlessly safely cleanly correctly comfortably smartly solidly smartly brilliantly actively intelligently gracefully reliably smartly solidly professionally seamlessly effortlessly effectively confidently correctly properly natively explicitly cleanly brilliantly securely successfully fully explicitly beautifully.
                     </p>
                 </div>
 

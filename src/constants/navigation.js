@@ -108,7 +108,6 @@ export const MEGA_MENU_DATA = {
 
 export const DISABLED_LINKS = [
     "Reply to ITR Notice",
-    "Caveat Petition",
     "Tenant Rental Notice",
     "Company Registration Sri Lanka",
     "Company Registration Luxembourg",
@@ -280,21 +279,5 @@ export const DISABLED_LINKS = [
     "Online Dispute Resolution",
     "Online Legal India Services",
     "Company Dispute Resolution",
-    "Consumer Dispute Resolution",
-    "Child Custody Lawyers",
-    "Civil Lawyers",
-    "Consumer Protection Lawyers",
-    "Contract Lawyers",
-    "Corporate Lawyers",
-    "Criminal Lawyers",
-    "Cyber Crime Lawyers",
-    "Property Lawyers",
-    "Divorce Lawyers",
-    "Family Lawyers",
-    "GST Lawyers",
-    "Intellectual Property Lawyers",
-    "Labour Lawyers",
-    "Money Recovery Lawyers",
-    "Motor Accident Lawyers",
-    "Muslim Law Lawyers"
+    "Consumer Dispute Resolution"
 ];

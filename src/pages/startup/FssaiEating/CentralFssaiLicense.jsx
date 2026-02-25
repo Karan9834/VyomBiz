@@ -202,10 +202,10 @@ const CentralFssaiProcess = () => {
 
 const CentralFssaiFeatures = () => {
     const features = [
-        { title: "Class-Leading Licensing Platform", desc: "Corpbiz offers a comprehensive portfolio of services, including all types of food licenses." },
+        { title: "Class-Leading Licensing Platform", desc: "VyomBiz offers a comprehensive portfolio of services, including all types of food licenses." },
         { title: "Simplified Process", desc: "Professionals at this platform simplify the licensing process via seamless paper handling." },
         { title: "Unprecedented Professionalism", desc: "Rely on expert guidance to smoothly navigate complex regulatory compliances." },
-        { title: "Complete Transparency", desc: "Corpbiz allows its esteemed clients to keep a constant tab on the Application's progress." }
+        { title: "Complete Transparency", desc: "VyomBiz allows its esteemed clients to keep a constant tab on the Application's progress." }
     ];
 
     return (
@@ -213,7 +213,7 @@ const CentralFssaiFeatures = () => {
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
-                        Secure FSSAI Central License with Corpbiz
+                        Secure FSSAI Central License with VyomBiz
                     </h2>
                     <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
                         Secure your license in a Hassle-free way.

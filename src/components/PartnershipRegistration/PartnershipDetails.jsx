@@ -21,11 +21,11 @@ const PartnershipRegistrationOverview = () => {
                         </p>
 
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
-                            Our legal consultants at Corpbiz will draft a partnership deed, apply for registration with notarized documents, reserve your desired firm name, enroll for PAN/GST, file your taxes, and complete post-enrolment compliance mandates.
+                            Our legal consultants at VyomBiz will draft a partnership deed, apply for registration with notarized documents, reserve your desired firm name, enroll for PAN/GST, file your taxes, and complete post-enrolment compliance mandates.
                         </p>
 
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
-                            Take Corpbiz’s assistance for partnership company registration in top cities, namely, Mumbai, Delhi, Hyderabad, Pune, Bengaluru, Chennai, and Nagpur.
+                            Take VyomBiz’s assistance for partnership company registration in top cities, namely, Mumbai, Delhi, Hyderabad, Pune, Bengaluru, Chennai, and Nagpur.
                         </p>
                     </div>
 

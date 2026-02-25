@@ -234,11 +234,11 @@ const ISO27001ProcessSection = () => {
     const steps = [
         {
             title: "Documentation",
-            desc: "Corpbiz evaluates your paper works & company records."
+            desc: "VyomBiz evaluates your paper works & company records."
         },
         {
             title: "On-Site Audit",
-            desc: "Then, Corpbiz reviews the compliance of your actual activities to ISO 27001 requirements and company records."
+            desc: "Then, VyomBiz reviews the compliance of your actual activities to ISO 27001 requirements and company records."
         },
         {
             title: "Close the Gap",
@@ -295,7 +295,7 @@ const ISO27001ProcessSection = () => {
 
                         <div className="mt-12 text-center">
                             <button className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
-                                Request Corpbiz Assistance
+                                Request VyomBiz Assistance
                             </button>
                         </div>
                     </div>
@@ -317,7 +317,7 @@ const ISO27001FeaturesSection = () => {
         },
         {
             title: "Provide Documents",
-            desc: "Provide required Documents to Corpbiz Expert."
+            desc: "Provide required Documents to VyomBiz Expert."
         },
         {
             title: "Complete Process",
@@ -330,10 +330,10 @@ const ISO27001FeaturesSection = () => {
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
-                        Corpbiz Assistance
+                        VyomBiz Assistance
                     </h2>
                     <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                        Corpbiz cooperates in assisting all your legal and financial requirements being fulfilled and by connecting you with our experts.
+                        VyomBiz cooperates in assisting all your legal and financial requirements being fulfilled and by connecting you with our experts.
                     </p>
                 </div>
 

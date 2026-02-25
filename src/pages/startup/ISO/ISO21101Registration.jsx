@@ -233,7 +233,7 @@ const ISO21101FeaturesSection = () => {
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
-                        Why Opt for Corpbiz Assistance?
+                        Why Opt for VyomBiz Assistance?
                     </h2>
                     <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
                         Navigate global safety standard uncertainties accurately establishing deep proactive standard compliance systematically structurally tracking accurately efficiently gracefully safely neatly correctly.

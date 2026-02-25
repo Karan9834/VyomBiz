@@ -202,7 +202,7 @@ const ISO37001FeaturesSection = () => {
     const features = [
         {
             title: "Purchase a Plan",
-            desc: "Purchase a Plan for Expert Assistance from Corpbiz."
+            desc: "Purchase a Plan for Expert Assistance from VyomBiz."
         },
         {
             title: "Add Queries",
@@ -210,7 +210,7 @@ const ISO37001FeaturesSection = () => {
         },
         {
             title: "Provide Documents",
-            desc: "Provide Documents to Corpbiz Expert and Prepare Application for ISO 37001:2016 Certification."
+            desc: "Provide Documents to VyomBiz Expert and Prepare Application for ISO 37001:2016 Certification."
         },
         {
             title: "Complete Process",
@@ -223,10 +223,10 @@ const ISO37001FeaturesSection = () => {
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
-                        How can Corpbiz Help You?
+                        How can VyomBiz Help You?
                     </h2>
                     <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                        Corpbiz cooperates in assisting all your legal and financial requirements being fulfilled and by connecting you with our experts in the appropriate field of law.
+                        VyomBiz cooperates in assisting all your legal and financial requirements being fulfilled and by connecting you with our experts in the appropriate field of law.
                     </p>
                 </div>
 
