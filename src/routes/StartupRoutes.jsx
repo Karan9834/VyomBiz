@@ -60,6 +60,31 @@ const RenewableEnergyBusiness = lazy(() => import('../pages/startup/IndustrySetu
 const FireEquipmentPlantSetup = lazy(() => import('../pages/startup/IndustrySetup/FireEquipmentPlantSetup'));
 const VirtualOfficeSpace = lazy(() => import('../pages/startup/IndustrySetup/VirtualOfficeSpace'));
 
+// Government Licenses
+const ShopAndEstablishmentLicense = lazy(() => import('../pages/startup/Government Licenses/Shop&EstablishmentLicense'));
+const CECertification = lazy(() => import('../pages/startup/Government Licenses/CECertification'));
+const PSARALicense = lazy(() => import('../pages/startup/Government Licenses/PSARALicense'));
+const TradeLicense = lazy(() => import('../pages/startup/Government Licenses/TradeLicense'));
+const MusicLicense = lazy(() => import('../pages/startup/Government Licenses/MusicLicense'));
+const HealthTradeLicense = lazy(() => import('../pages/startup/Government Licenses/HealthTradeLicense'));
+
+// Government Registration
+const MSMERegistration = lazy(() => import('../pages/startup/Government Registration/MSMERegistration'));
+const IECRegistration = lazy(() => import('../pages/startup/Government Registration/IECRegistration'));
+const EPFRegistration = lazy(() => import('../pages/startup/Government Registration/EPFRegistration'));
+const RERARaegistration = lazy(() => import('../pages/startup/Government Registration/RERARaegistration'));
+const NSICRegistration = lazy(() => import('../pages/startup/Government Registration/NSICRegistration'));
+const ESIRegistration = lazy(() => import('../pages/startup/Government Registration/ESIRegistration'));
+
+// ISO Registration
+const ISORegistration = lazy(() => import('../pages/startup/ISO/ISORegistration'));
+const ISO50001Registration = lazy(() => import('../pages/startup/ISO/ISO50001Registration'));
+const ISO45001Registration = lazy(() => import('../pages/startup/ISO/ISO45001Registration'));
+const ISO39001Registration = lazy(() => import('../pages/startup/ISO/ISO39001Registration'));
+const ISO14001 = lazy(() => import('../pages/startup/ISO/ISO14001'));
+const ISO370012016 = lazy(() => import('../pages/startup/ISO/ISO370012016'));
+const ISO22000 = lazy(() => import('../pages/startup/ISO/ISO22000'));
+
 const StartupRoutes = [
     <Route key="startup" path="/startup" element={<Startup />} />,
     <Route key="comp-reg" path="/company-registration" element={<CompanyRegistration />} />,
@@ -118,6 +143,31 @@ const StartupRoutes = [
     <Route key="renew-en" path="/renewable-energy-business-setup" element={<RenewableEnergyBusiness />} />,
     <Route key="fire-eq" path="/fire-equipment-plant-setup" element={<FireEquipmentPlantSetup />} />,
     <Route key="virt-off" path="/virtual-office-space-setup" element={<VirtualOfficeSpace />} />,
+
+    // Government Licenses
+    <Route key="shop-est-lic" path="/shop-establishment-license" element={<ShopAndEstablishmentLicense />} />,
+    <Route key="ce-cert" path="/ce-certification" element={<CECertification />} />,
+    <Route key="psara-lic" path="/psara-license" element={<PSARALicense />} />,
+    <Route key="trade-lic" path="/trade-license" element={<TradeLicense />} />,
+    <Route key="music-lic" path="/music-license" element={<MusicLicense />} />,
+    <Route key="health-trade-lic" path="/health-trade-license" element={<HealthTradeLicense />} />,
+
+    // Government Registration
+    <Route key="msme-reg" path="/msme-registration" element={<MSMERegistration />} />,
+    <Route key="iec-reg" path="/iec-registration" element={<IECRegistration />} />,
+    <Route key="epf-reg" path="/epf-registration" element={<EPFRegistration />} />,
+    <Route key="rera-reg" path="/rera-registration" element={<RERARaegistration />} />,
+    <Route key="nsic-reg" path="/nsic-registration" element={<NSICRegistration />} />,
+    <Route key="esi-reg" path="/esi-registration" element={<ESIRegistration />} />,
+
+    // ISO Registration
+    <Route key="iso-reg" path="/iso-registration" element={<ISORegistration />} />,
+    <Route key="iso-50001-reg" path="/iso-50001-energy-management" element={<ISO50001Registration />} />,
+    <Route key="iso-45001-reg" path="/iso-45001-certification" element={<ISO45001Registration />} />,
+    <Route key="iso-39001-reg" path="/iso-39001-certification" element={<ISO39001Registration />} />,
+    <Route key="iso-14001-reg" path="/iso-certification-14001-ems" element={<ISO14001 />} />,
+    <Route key="iso-37001-2016-reg" path="/iso-37001-2016-certification" element={<ISO370012016 />} />,
+    <Route key="iso-22000-reg" path="/iso-22000-certification-fsms" element={<ISO22000 />} />,
 ];
 
 export default StartupRoutes;

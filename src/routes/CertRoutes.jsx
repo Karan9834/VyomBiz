@@ -14,10 +14,10 @@ const FPOMarkCertification = lazy(() => import('../pages/startup/FssaiEating/FPO
 
 // ISO
 const ISORegistration = lazy(() => import('../pages/startup/ISO/ISORegistration'));
-const ISO37001Registration = lazy(() => import('../pages/startup/ISO/ISO37001Registration'));
-const ISO14001Registration = lazy(() => import('../pages/startup/ISO/ISO14001Registration'));
+const ISO37001Registration = lazy(() => import('../pages/startup/ISO/ISO370012016'));
+const ISO14001Registration = lazy(() => import('../pages/startup/ISO/ISO14001'));
 const ISO27001Registration = lazy(() => import('../pages/startup/ISO/ISO27001Registration'));
-const ISO22000Registration = lazy(() => import('../pages/startup/ISO/ISO22000Registration'));
+const ISO22000Registration = lazy(() => import('../pages/startup/ISO/ISO22000'));
 const ISO9001Registration = lazy(() => import('../pages/startup/ISO/ISO9001Registration'));
 const ISO50001Registration = lazy(() => import('../pages/startup/ISO/ISO50001Registration'));
 const ISO45001Registration = lazy(() => import('../pages/startup/ISO/ISO45001Registration'));

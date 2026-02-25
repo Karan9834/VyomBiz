@@ -56,10 +56,11 @@ const Hero = () => {
         <div className="absolute bottom-40 left-1/4 w-28 h-28 border-2 border-blue-400 rounded-lg rotate-12 transform"></div>
         <div className="absolute top-72 right-1/3 w-16 h-16 border-2 border-blue-300 rounded-lg transform -rotate-12"></div>
         <div className="absolute bottom-32 right-16 w-20 h-20 border-2 border-blue-400 rounded-lg rotate-45"></div>
-        {/* Faint rocket icon */}
-        <div className="absolute top-24 right-20 opacity-10">
-          <Rocket className="w-32 h-32 text-blue-300" strokeWidth={1} />
-        </div>
+      </div>
+
+      {/* Yellow rocket icon */}
+      <div className="absolute top-24 right-20 opacity-50 z-0">
+        <Rocket className="w-32 h-32 text-yellow-400 drop-shadow-md" strokeWidth={1} />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
@@ -73,7 +74,7 @@ const Hero = () => {
 
           <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-6">
             Simplifying Legal, Tax, and Compliance, the{" "}
-            <span className="bg-[#005a9c]/30 text-blue-200 px-2 py-1 rounded-md font-semibold text-sm">
+            <span className="bg-yellow-500/30 text-yellow-300 px-2 py-1 rounded-md font-semibold text-sm">
               AI-Driven
             </span>{" "}
             Trusted by millions. Backed by real experts.

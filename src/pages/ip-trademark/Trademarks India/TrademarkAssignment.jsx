@@ -18,6 +18,341 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
  * 9. FAQ
  */
 
+
+const TrademarkAssignmentEligibility = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Restrictions & Requirements
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
+                    Key considerations before initiating a trademark assignment.
+                </p>
+                
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Multiple Rights Creation
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Restriction on assignments that result in the creation of multiple exclusive rights in different people for the same goods/services.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Geographical Split
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Restriction on splitting rights based on different parts of India for the same goods/services.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        TM Agreement
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        A written agreement is mandatory to authorize the assignment.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Registrar Direction
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Mandatory for assignments with goodwill to seek Registrar's direction within specified timelines.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Public Notice
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Advertisement in the defined manner is required for certain types of assignments.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Time Limit
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Application to register the assignment must be filed within 3 months (extendable) of the transfer.
+                    </p>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const TrademarkAssignmentDocumentsSection = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Required Documents
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-8">
+                    Documents needed to process the Trademark Assignment.
+                </p>
+                <div className="space-y-4">
+                    
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Duly Stamped Assignment Deed</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Affidavit of No Legal Proceedings</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">NOC from the Original Owner (Assignor)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Identity & Address Proof of Assignor & Assignee</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Trademark Registration Certificate</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Form TM-P (Application Form)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Power of Attorney</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Goodwill Assessment (if applicable)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const TrademarkAssignmentProcessSection = () => {
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-10">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
+                        Assignment Procedure
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                        Steps to legally transfer trademark ownership.
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                    <div className="lg:col-span-1">
+                        <img
+                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            alt="Process"
+                            className="w-full rounded-lg shadow-sm"
+                        />
+                    </div>
+                    <div className="lg:col-span-2">
+                        
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                1.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Application Filing
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    File Form TM-P with the Registrar of Trademarks.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                2.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Registrar Review
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Registrar reviews the application and may ask for clarifications.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                3.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Advertisement
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    For assignments with goodwill, advertisement as per Registrar's direction.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                4.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Approval
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    On satisfaction, the Registrar approves the assignment.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                5.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    ownership Update
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    The register is updated with the name of the new owner (Assignee).
+                                </p>
+                            </div>
+                        </div>
+                        <div className="border-t border-slate-200"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const TrademarkAssignmentFeaturesSection = () => {
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
+                        Why Choose Vyombiz?
+                    </h2>
+                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        Expert assistance for a hassle-free trademark assignment experience.
+                    </p>
+                </div>
+                <div>
+                    
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                1.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    4.9/5 Rating
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Trusted by thousands of customers globally.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                2.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Expert Legal Team
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    10+ years of experience in IP and trademark laws.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                3.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Seamless Process
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    We handle drafting, filing, and follow-ups end-to-end.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                4.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Fast Turnaround
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Committed to delivering services within agreed timelines.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                5.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Cost-Effective
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Transparent pricing with no hidden charges.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                6.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Global Reach
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Ability to assist with international trademark assignments.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                7.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Dedicated Support
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Relationship manager assigned for personalized assistance.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                8.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Tech-Driven
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Online tracking and updates for your application.
+                                </p>
+                            </div>
+                        </div>
+                    <div className="border-t border-slate-300"></div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
 const TrademarkAssignment = () => {
 
     const faqs = [
@@ -147,58 +482,10 @@ const TrademarkAssignment = () => {
             <DetailsLayout
                 overview={assignmentOverviewContent}
                 advantages={advantagesContent}
-                eligibility={{
-                    title: "Restrictions & Requirements",
-                    subtitle: "Key considerations before initiating a trademark assignment.",
-                    list: [
-                        { title: "Multiple Rights Creation", desc: "Restriction on assignments that result in the creation of multiple exclusive rights in different people for the same goods/services." },
-                        { title: "Geographical Split", desc: "Restriction on splitting rights based on different parts of India for the same goods/services." },
-                        { title: "TM Agreement", desc: "A written agreement is mandatory to authorize the assignment." },
-                        { title: "Registrar Direction", desc: "Mandatory for assignments with goodwill to seek Registrar's direction within specified timelines." },
-                        { title: "Public Notice", desc: "Advertisement in the defined manner is required for certain types of assignments." },
-                        { title: "Time Limit", desc: "Application to register the assignment must be filed within 3 months (extendable) of the transfer." }
-                    ]
-                }}
-                documents={{
-                    title: "Required Documents",
-                    description: "Documents needed to process the Trademark Assignment.",
-                    list: [
-                        "Duly Stamped Assignment Deed",
-                        "Affidavit of No Legal Proceedings",
-                        "NOC from the Original Owner (Assignor)",
-                        "Identity & Address Proof of Assignor & Assignee",
-                        "Trademark Registration Certificate",
-                        "Form TM-P (Application Form)",
-                        "Power of Attorney",
-                        "Goodwill Assessment (if applicable)"
-                    ],
-                    imageUrl: "https://images.unsplash.com/photo-1554224155-1696413575b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                }}
-                process={{
-                    title: "Assignment Procedure",
-                    subtitle: "Steps to legally transfer trademark ownership.",
-                    steps: [
-                        { step: "01", title: "Application Filing", desc: "File Form TM-P with the Registrar of Trademarks." },
-                        { step: "02", title: "Registrar Review", desc: "Registrar reviews the application and may ask for clarifications." },
-                        { step: "03", title: "Advertisement", desc: "For assignments with goodwill, advertisement as per Registrar's direction." },
-                        { step: "04", title: "Approval", desc: "On satisfaction, the Registrar approves the assignment." },
-                        { step: "05", title: "ownership Update", desc: "The register is updated with the name of the new owner (Assignee)." }
-                    ]
-                }}
-                whyChooseUs={{
-                    title: "Why Choose Vyombiz?",
-                    subtitle: "Expert assistance for a hassle-free trademark assignment experience.",
-                    list: [
-                        { title: "4.9/5 Rating", desc: "Trusted by thousands of customers globally." },
-                        { title: "Expert Legal Team", desc: "10+ years of experience in IP and trademark laws." },
-                        { title: "Seamless Process", desc: "We handle drafting, filing, and follow-ups end-to-end." },
-                        { title: "Fast Turnaround", desc: "Committed to delivering services within agreed timelines." },
-                        { title: "Cost-Effective", desc: "Transparent pricing with no hidden charges." },
-                        { title: "Global Reach", desc: "Ability to assist with international trademark assignments." },
-                        { title: "Dedicated Support", desc: "Relationship manager assigned for personalized assistance." },
-                        { title: "Tech-Driven", desc: "Online tracking and updates for your application." }
-                    ]
-                }}
+                eligibility={<TrademarkAssignmentEligibility />}
+                documents={<TrademarkAssignmentDocumentsSection />}
+                process={<TrademarkAssignmentProcessSection />}
+                features={<TrademarkAssignmentFeaturesSection />}
             />
 
             {/* ================= FAQ SECTION ================= */}

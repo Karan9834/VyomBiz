@@ -18,6 +18,341 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
  * 9. FAQ
  */
 
+
+const IntellectualPropertyDisputeEligibility = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Legal Framework
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
+                    Key Acts governing Intellectual Property disputes in India.
+                </p>
+                
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        The Patents Act, 1970
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Governs patent filing, grants, operational mechanisms, and infringement remedies.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        The Trademark Act, 1999
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Regulates trademark registration, protection, opposition, and penalties for infringement.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        The Copyright Act, 1957
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Protects original works and grants exclusive rights to authors and creators.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        The Designs Act, 2000
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Protects industrial designs and their visual features.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Commercial Courts Act
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Facilitates expedited resolution of commercial disputes, including IP cases.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Geographical Indications Act
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Protects goods with specific geographical origins and qualities.
+                    </p>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const IntellectualPropertyDisputeDocumentsSection = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Required Documents / Information
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-8">
+                    Essential information and documents needed for IP dispute resolution.
+                </p>
+                <div className="space-y-4">
+                    
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Registration Certificates (Trademark/Copyright/Patent)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Proof of First Use / Priority Dates</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Evidence of Infringement (Photos, Screenshots, Samples)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Copy of Opposing Party's Mark/Product</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Legal Notices Sent/Received</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Reply to Notices (if any)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Authorization Letters / Power of Attorney</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Details of Damages/Losses Incurred</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const IntellectualPropertyDisputeProcessSection = () => {
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-10">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
+                        Litigation Process
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                        Step-by-step approach to resolving IP disputes in India.
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                    <div className="lg:col-span-1">
+                        <img
+                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            alt="Process"
+                            className="w-full rounded-lg shadow-sm"
+                        />
+                    </div>
+                    <div className="lg:col-span-2">
+                        
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                1.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Amicable Resolution
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Attempt negotiation or mediation to settle outside court.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                2.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Cease & Desist
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Send a legal notice demanding the infringer to stop conflicting activities.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                3.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Filing Suit
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    If unresolved, file a plaint in the appropriate court detailing infringement.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                4.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Court Proceedings
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Includes hearings, evidence presentation, cross-examination, and arguments.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                5.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Final Judgment
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Court issues verdict, potentially awarding injunctions and damages.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="border-t border-slate-200"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const IntellectualPropertyDisputeFeaturesSection = () => {
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
+                        Why Choose Vyombiz?
+                    </h2>
+                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        Your trusted partner for Intellectual Property protection and dispute resolution.
+                    </p>
+                </div>
+                <div>
+                    
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                1.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    10+ Years Experience
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Proven track record in resolving complex IP disputes.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                2.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Strategic Advisory
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Tailored legal strategies for your specific industry and case.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                3.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Litigation Audit
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    In-depth case evaluation to ensure compliance and success.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                4.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Documentation Support
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Expert handling of legal notices, plaints, and counter-statements.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                5.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Court Representation
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Professional representation in IP Tribunals, High Courts, and Supreme Court.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                6.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Tech-Driven Solutions
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Leveraging legal tech for data analysis and stronger case building.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                7.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Government Liaison
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Strong rapport with regulatory bodies for smoother progression.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                8.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Post-Dispute Support
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Assistance with enforcement of orders and future protection.
+                                </p>
+                            </div>
+                        </div>
+                    <div className="border-t border-slate-300"></div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
 const IntellectualPropertyDispute = () => {
 
     const faqs = [
@@ -147,58 +482,10 @@ const IntellectualPropertyDispute = () => {
             <DetailsLayout
                 overview={disputeOverviewContent}
                 advantages={advantagesContent}
-                eligibility={{
-                    title: "Legal Framework",
-                    subtitle: "Key Acts governing Intellectual Property disputes in India.",
-                    list: [
-                        { title: "The Patents Act, 1970", desc: "Governs patent filing, grants, operational mechanisms, and infringement remedies." },
-                        { title: "The Trademark Act, 1999", desc: "Regulates trademark registration, protection, opposition, and penalties for infringement." },
-                        { title: "The Copyright Act, 1957", desc: "Protects original works and grants exclusive rights to authors and creators." },
-                        { title: "The Designs Act, 2000", desc: "Protects industrial designs and their visual features." },
-                        { title: "Commercial Courts Act", desc: "Facilitates expedited resolution of commercial disputes, including IP cases." },
-                        { title: "Geographical Indications Act", desc: "Protects goods with specific geographical origins and qualities." }
-                    ]
-                }}
-                documents={{
-                    title: "Required Documents / Information",
-                    description: "Essential information and documents needed for IP dispute resolution.",
-                    list: [
-                        "Registration Certificates (Trademark/Copyright/Patent)",
-                        "Proof of First Use / Priority Dates",
-                        "Evidence of Infringement (Photos, Screenshots, Samples)",
-                        "Copy of Opposing Party's Mark/Product",
-                        "Legal Notices Sent/Received",
-                        "Reply to Notices (if any)",
-                        "Authorization Letters / Power of Attorney",
-                        "Details of Damages/Losses Incurred"
-                    ],
-                    imageUrl: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                }}
-                process={{
-                    title: "Litigation Process",
-                    subtitle: "Step-by-step approach to resolving IP disputes in India.",
-                    steps: [
-                        { step: "01", title: "Amicable Resolution", desc: "Attempt negotiation or mediation to settle outside court." },
-                        { step: "02", title: "Cease & Desist", desc: "Send a legal notice demanding the infringer to stop conflicting activities." },
-                        { step: "03", title: "Filing Suit", desc: "If unresolved, file a plaint in the appropriate court detailing infringement." },
-                        { step: "04", title: "Court Proceedings", desc: "Includes hearings, evidence presentation, cross-examination, and arguments." },
-                        { step: "05", title: "Final Judgment", desc: "Court issues verdict, potentially awarding injunctions and damages." }
-                    ]
-                }}
-                whyChooseUs={{
-                    title: "Why Choose Vyombiz?",
-                    subtitle: "Your trusted partner for Intellectual Property protection and dispute resolution.",
-                    list: [
-                        { title: "10+ Years Experience", desc: "Proven track record in resolving complex IP disputes." },
-                        { title: "Strategic Advisory", desc: "Tailored legal strategies for your specific industry and case." },
-                        { title: "Litigation Audit", desc: "In-depth case evaluation to ensure compliance and success." },
-                        { title: "Documentation Support", desc: "Expert handling of legal notices, plaints, and counter-statements." },
-                        { title: "Court Representation", desc: "Professional representation in IP Tribunals, High Courts, and Supreme Court." },
-                        { title: "Tech-Driven Solutions", desc: "Leveraging legal tech for data analysis and stronger case building." },
-                        { title: "Government Liaison", desc: "Strong rapport with regulatory bodies for smoother progression." },
-                        { title: "Post-Dispute Support", desc: "Assistance with enforcement of orders and future protection." }
-                    ]
-                }}
+                eligibility={<IntellectualPropertyDisputeEligibility />}
+                documents={<IntellectualPropertyDisputeDocumentsSection />}
+                process={<IntellectualPropertyDisputeProcessSection />}
+                features={<IntellectualPropertyDisputeFeaturesSection />}
             />
 
             {/* ================= FAQ SECTION ================= */}

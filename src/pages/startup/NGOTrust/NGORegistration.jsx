@@ -33,7 +33,6 @@ const NGOOverview = () => {
                             An NGO is a non-profit organisation founded by a group of people with a shared goal in philanthropy and social service. It covers a wide gamut of charitable services across art, science, sports, education, research, social welfare, religion, charity, environment, sustainability, etc. An NGO uses all its earnings and funds to fulfil its non-profitable objectives.
                         </p>
 
-
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
@@ -47,6 +46,7 @@ const NGOOverview = () => {
         </section>
     );
 };
+
 
 const NGORegistrationAdvantages = () => {
     return (
@@ -72,6 +72,7 @@ const NGORegistrationAdvantages = () => {
                     </div>
                 </div>
 
+
                 {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
                 <div className="space-y-6">
                     {[
@@ -96,6 +97,7 @@ const NGORegistrationAdvantages = () => {
         </div>
     );
 };
+
 
 const NGOEligibility = () => {
     return (

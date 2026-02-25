@@ -18,6 +18,346 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
  * 9. FAQ
  */
 
+
+const TrademarkOppositionEligibility = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Who Can Oppose?
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
+                    Eligibility criteria for filing a trademark opposition.
+                </p>
+                
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Any Person
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        The law allows 'any person' to tile an opposition, not just registered owners.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Prior Users
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Owners of unregistered marks who have been using the mark prior to the applicant.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Registered Owners
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Proprietors of existing registered trademarks.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Customers/Public
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Members of the public who believe the mark is deceptive.
+                    </p>
+                </div>
+                <div className="mb-10">
+                    <h3 className="text-xl font-semibold text-[#072b47] mb-4">
+                        Competitors
+                    </h3>
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        Business rivals wishing to prevent unfair monopoly over common terms.
+                    </p>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const TrademarkOppositionDocumentsSection = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Form TM-5 & Requirements
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-8">
+                    Details required to file a Notice of Opposition (Form TM-O/TM-5).
+                </p>
+                <div className="space-y-4">
+                    
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Details of the Opponent (Name, Address)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Details of the Applicant & Application Number</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Grounds of Opposition (Detailed Statement)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Verification by the Opponent</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Power of Attorney (if filed by agent)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Evidence of Prior Use (if applicable)</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Details of Conflicting Mark</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Fees Receipt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const TrademarkOppositionProcessSection = () => {
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-10">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
+                        Opposition Procedure
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                        Step-by-step legal process for trademark opposition.
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                    <div className="lg:col-span-1">
+                        <img
+                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            alt="Process"
+                            className="w-full rounded-lg shadow-sm"
+                        />
+                    </div>
+                    <div className="lg:col-span-2">
+                        
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                1.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Notice of Opposition
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    File Form TM-O within 4 months of journal advertisement.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                2.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Counter-Statement
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Applicant must file a counter-statement (Form TM-O) within 2 months of receiving the notice.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                3.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Evidence by Opponent
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Opponent files evidence in support of opposition (Rule 45) within 2 months.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                4.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Evidence by Applicant
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Applicant files evidence in support of application (Rule 46) within 2 months.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                5.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Hearing
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Registrar conducts a hearing where both parties present their arguments.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                            <div className="text-[16px] font-semibold text-[#072b47]">
+                                6.
+                            </div>
+                            <div>
+                                <h3 className="text-[18px] font-semibold text-[#072b47]">
+                                    Final Decision
+                                </h3>
+                                <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
+                                    Registrar passes an order either allowing the opposition or registering the trademark.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="border-t border-slate-200"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const TrademarkOppositionFeaturesSection = () => {
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
+                        Why Choose Vyombiz?
+                    </h2>
+                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        Expert legal representation for your trademark disputes.
+                    </p>
+                </div>
+                <div>
+                    
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                1.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Strategic Defense
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Customized legal strategies to strengthen your opposition case.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                2.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Experienced Attorneys
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Team of specialized IP lawyers with years of litigation experience.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                3.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Document Drafting
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Precise drafting of notices, counter-statements, and evidence affidavits.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                4.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Timely Filing
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Ensuring all documents are filed within statutory deadlines to avoid abandonment.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                5.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Hearing Representation
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Strong representation before the Trademark Registrar and IPAB.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                6.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Cost-Effective
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Transparent pricing models tailored to your business needs.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                7.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Regular Updates
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Keep you informed at every stage of the legal proceedings.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                8.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    Comprehensive Support
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    Assistance from filing the notice to the final order.
+                                </p>
+                            </div>
+                        </div>
+                    <div className="border-t border-slate-300"></div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
 const TrademarkOpposition = () => {
 
     const faqs = [
@@ -147,58 +487,10 @@ const TrademarkOpposition = () => {
             <DetailsLayout
                 overview={oppositionOverviewContent}
                 advantages={advantagesContent}
-                eligibility={{
-                    title: "Who Can Oppose?",
-                    subtitle: "Eligibility criteria for filing a trademark opposition.",
-                    list: [
-                        { title: "Any Person", desc: "The law allows 'any person' to tile an opposition, not just registered owners." },
-                        { title: "Prior Users", desc: "Owners of unregistered marks who have been using the mark prior to the applicant." },
-                        { title: "Registered Owners", desc: "Proprietors of existing registered trademarks." },
-                        { title: "Customers/Public", desc: "Members of the public who believe the mark is deceptive." },
-                        { title: "Competitors", desc: "Business rivals wishing to prevent unfair monopoly over common terms." }
-                    ]
-                }}
-                documents={{
-                    title: "Form TM-5 & Requirements",
-                    description: "Details required to file a Notice of Opposition (Form TM-O/TM-5).",
-                    list: [
-                        "Details of the Opponent (Name, Address)",
-                        "Details of the Applicant & Application Number",
-                        "Grounds of Opposition (Detailed Statement)",
-                        "Verification by the Opponent",
-                        "Power of Attorney (if filed by agent)",
-                        "Evidence of Prior Use (if applicable)",
-                        "Details of Conflicting Mark",
-                        "Fees Receipt"
-                    ],
-                    imageUrl: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                }}
-                process={{
-                    title: "Opposition Procedure",
-                    subtitle: "Step-by-step legal process for trademark opposition.",
-                    steps: [
-                        { step: "01", title: "Notice of Opposition", desc: "File Form TM-O within 4 months of journal advertisement." },
-                        { step: "02", title: "Counter-Statement", desc: "Applicant must file a counter-statement (Form TM-O) within 2 months of receiving the notice." },
-                        { step: "03", title: "Evidence by Opponent", desc: "Opponent files evidence in support of opposition (Rule 45) within 2 months." },
-                        { step: "04", title: "Evidence by Applicant", desc: "Applicant files evidence in support of application (Rule 46) within 2 months." },
-                        { step: "05", title: "Hearing", desc: "Registrar conducts a hearing where both parties present their arguments." },
-                        { step: "06", title: "Final Decision", desc: "Registrar passes an order either allowing the opposition or registering the trademark." }
-                    ]
-                }}
-                whyChooseUs={{
-                    title: "Why Choose Vyombiz?",
-                    subtitle: "Expert legal representation for your trademark disputes.",
-                    list: [
-                        { title: "Strategic Defense", desc: "Customized legal strategies to strengthen your opposition case." },
-                        { title: "Experienced Attorneys", desc: "Team of specialized IP lawyers with years of litigation experience." },
-                        { title: "Document Drafting", desc: "Precise drafting of notices, counter-statements, and evidence affidavits." },
-                        { title: "Timely Filing", desc: "Ensuring all documents are filed within statutory deadlines to avoid abandonment." },
-                        { title: "Hearing Representation", desc: "Strong representation before the Trademark Registrar and IPAB." },
-                        { title: "Cost-Effective", desc: "Transparent pricing models tailored to your business needs." },
-                        { title: "Regular Updates", desc: "Keep you informed at every stage of the legal proceedings." },
-                        { title: "Comprehensive Support", desc: "Assistance from filing the notice to the final order." }
-                    ]
-                }}
+                eligibility={<TrademarkOppositionEligibility />}
+                documents={<TrademarkOppositionDocumentsSection />}
+                process={<TrademarkOppositionProcessSection />}
+                features={<TrademarkOppositionFeaturesSection />}
             />
 
             {/* ================= FAQ SECTION ================= */}

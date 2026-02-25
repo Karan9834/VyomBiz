@@ -23,13 +23,17 @@ const EatingHouseOverview = () => {
                             Police Department
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            Eating House Permit – <span className="text-[#005a9c]">Legal Consent</span>
+                            Eating House License – <span className="text-[#005a9c]">Overview</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
-                            An Eating House License is legal consent required for undertaking any business where food or beverages are supplied for public consumption. This is a mandatory prerequisite along with FSSAI and Health Trade licenses.
+                            An Eating House License refers to legal consent for undertaking business where any kind of food or beverages is supplied for consumption legally. The Eating house license serves as a mandatory prerequisite for conducting food business along with other fundamental licenses.
                         </p>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
-                            The license is governed by the City Police Act (e.g., Delhi Police Act) and must be applied for under the City Police Headquarters or Police Commissioner. Authorities grant the license after a rigorous inspection of the premises and documentation.
+                            The Eating House refers to a place where various food-related items along with beverages are being served to the masses for consumption. This encompasses all retail outlets, dhabas, restaurants, cafes, food trucks, & any other establishments to facilitate food & drink.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            <strong className="text-[#072b47]">Authority Issuing the License</strong><br />
+                            The license is a legal compulsion as per the Delhi Police Act and should be applied under State/city police headquarters & the Police commissioner. The authority will grant the license after inspecting all the submitted documents.
                         </p>
                     </div>
                     <div className="flex justify-center lg:justify-end">
@@ -58,7 +62,7 @@ const EatingHouseAdvantages = () => {
                         Benefits of Eating House License
                     </h2>
                     <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
-                        Benefits and legal importance of the Eating House License.
+                        The Eating House License is a mandatory prerequisite for operating a food business. Here are the reasons why it's crucial:
                     </p>
                     <div className="mt-10">
                         <img
@@ -91,6 +95,181 @@ const EatingHouseAdvantages = () => {
                 </div>
             </div>
         </div>
+    );
+};
+
+const EatingHouseEligibility = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Eligibility & Other Licenses
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
+                    Who can apply for an Eating House License, and what other licenses are required?
+                </p>
+                <div className="mb-10">
+                    <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed list-disc pl-6">
+                        <li><span className="font-semibold text-[#072b47]">Establishment Scope – </span>Encompasses all retail outlets, dhabas, restaurants, cafes, food trucks, & any other establishments that facilitate food & drink.</li>
+                        <li><span className="font-semibold text-[#072b47]">Business Registration – </span>A valid business entity registration is required.</li>
+                        <li><span className="font-semibold text-[#072b47]">Food/FSSAI License – </span>A mandatory prerequisite to applying for this license.</li>
+                        <li><span className="font-semibold text-[#072b47]">Health Trade License – </span>Necessary clearance from the local civic body.</li>
+                        <li><span className="font-semibold text-[#072b47]">Fire NOC & Lift Clearance – </span>Required for premises safety.</li>
+                        <li><span className="font-semibold text-[#072b47]">Other Clearances – </span>Environmental Clearance, Registration under Shops & Establishment Act, Insurance, and Weights & Measures Approval.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const EatingHouseDocuments = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Mandatory Documents
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-8">
+                    Following is the list of Documents that need to be uploaded along with the Application:
+                </p>
+                <div className="mb-8">
+                    <ul className="list-disc pl-6 space-y-2 text-[17px] text-slate-600 leading-relaxed grid sm:grid-cols-2 gap-x-6">
+                        <li>Identity proof (Aadhar/Passport/Voter ID/Driving License/PAN)</li>
+                        <li>Address proof (Electricity/Landline Bill, Rent/lease deed)</li>
+                        <li>Certificate of incorporation & Name of directors/Board Resolution</li>
+                        <li>Proof of ownership or Tenancy agreement of the premises</li>
+                        <li>Copy of paid water & Electricity Bill</li>
+                        <li>Safety certificate of building (by architect/structural engineer)</li>
+                        <li>Electrical safety certificate & Lift fitness certificate</li>
+                        <li>Details of property tax, regularization, or conversion charges paid</li>
+                        <li>FSSAI certificate & GST Certificate</li>
+                        <li>Medical certificate of employees with photographs</li>
+                        <li>Details of all employees with police verification certificate</li>
+                        <li>Environment clearance certificate & Pollution NOC</li>
+                        <li>PAN of the proprietor or company</li>
+                        <li>Details of layout plan, pest control, and rainwater harvesting</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const EatingHouseProcess = () => {
+    const steps = [
+        { step: "01", title: "Fill out Application", desc: "The applicant is required to apply for online Eating House Registration in the prescribed Application Form." },
+        { step: "02", title: "Submission of Documents", desc: "Upload all the required Documents along with the necessary declaration and certification." },
+        { step: "03", title: "Document Verification", desc: "Go to Addl. Commissioner of Police Licensing of the concerned state for an Application and Documents verification." },
+        { step: "04", title: "Follow-up", desc: "The applicant is required to keep a regular follow-up with the concerned department for updates regarding the Application." },
+        { step: "05", title: "Issuance of License", desc: "Issuance of license takes 30-60 days. If the licensing authority is satisfied, it will issue a license within this period." }
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-10">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
+                        Step-by-step Procedure
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                        Procedure for obtaining an Eating House license in India.
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                    <div className="lg:col-span-1">
+                        <img
+                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            alt="The Licensing Flow"
+                            className="w-full rounded-lg shadow-sm"
+                        />
+                    </div>
+                    <div className="lg:col-span-2">
+                        {steps.map((step, index) => (
+                            <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                                <div className="text-[16px] font-semibold text-[#072b47]">{index + 1}.</div>
+                                <div>
+                                    <h3 className="text-[18px] font-semibold text-[#072b47]">{step.title}</h3>
+                                    <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">{step.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                        <div className="border-t border-slate-200"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const EatingHouseFeatures = () => {
+    const features = [
+        { title: "Vast Experience", desc: "Vast experience in dealing with Government licenses and Registration." },
+        { title: "Prompt Delivery", desc: "Ensure prompt delivery of license in the agreed time span." },
+        { title: "Reduce Intricacies", desc: "Reduce intricacies in the registration process through efficient handling of paperwork." },
+        { title: "In-depth Knowledge", desc: "In-depth knowledge of applicable legalities and underlying compliances for registering an entity." }
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
+                        Trusted Eating House License Support
+                    </h2>
+                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        Here's Why You Might Want To Consider Our Expertise.
+                    </p>
+                </div>
+                <div>
+                    {features.map((feature, index) => (
+                        <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">{index + 1}.</div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">{feature.title}</h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">{feature.desc}</p>
+                            </div>
+                        </div>
+                    ))}
+                    <div className="border-t border-slate-300"></div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const EatingHouseCompliance = () => {
+    const compliance = [
+        { title: "Renewal of the License", desc: "When the validity expires, it must be renewed. The validity varies state-wise, typically 3 years. The renewal process is identical to a new license." },
+        { title: "Duplicate License", desc: "If the license gets damaged or lost, the applicant can opt for a duplicate license against standard fees via the portal." },
+        { title: "Health Trade Validity", desc: "The license validity often depends on the validity of the health trade license issued by the local civic body." }
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
+                        Renewal & Duplicates
+                    </h2>
+                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        Post Compliance procedures for your Eating House License.
+                    </p>
+                </div>
+                <div>
+                    {compliance.map((item, index) => (
+                        <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">{index + 1}.</div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">{item.title}</h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">{item.desc}</p>
+                            </div>
+                        </div>
+                    ))}
+                    <div className="border-t border-slate-300"></div>
+                </div>
+            </div>
+        </section>
     );
 };
 
@@ -143,65 +322,11 @@ const EatingHouseLicense = () => {
             <DetailsLayout
                 overview={<EatingHouseOverview />}
                 advantages={<EatingHouseAdvantages />}
-                eligibility={{
-                    title: "Eligibility Criteria",
-                    subtitle: "Who can apply for an Eating House License?",
-                    list: [
-                        { title: "Owner Integrity", desc: "The applicant must have no criminal record related to food safety or public order." },
-                        { title: "Premises Suitability", desc: "The location must be in a commercial zone with approved building plans." },
-                        { title: "Safety Compliant", desc: "Must have valid Fire Safety and Health Trade certificates." },
-                        { title: "Mandatory FSSAI", desc: "A valid FSSAI license is a non-negotiable prerequisite." },
-                        { title: "Citizen Identity", desc: "Open to Indian citizens and companies registered in India." }
-                    ]
-                }}
-                documents={{
-                    title: "Documents Required",
-                    description: "Key papers required for police verification.",
-                    list: [
-                        "Identity and Address Proof of the Applicant",
-                        "Proof of Possession (Ownership/Lease/Rent Agreement)",
-                        "FSSAI License Certificate",
-                        "Fire Department No Objection Certificate (NOC)",
-                        "Health Trade License from Municipality",
-                        "Site Plan/Blueprint of the eating house",
-                        "Logo and Passport size photographs of the applicant",
-                        "Pollution NOC from State Board"
-                    ]
-                }}
-                process={{
-                    title: "The Licensing Flow",
-                    subtitle: "Step-by-step procedure to secure the Eating House License.",
-                    steps: [
-                        { step: "01", title: "Registration", desc: "Register on the Police Licensing portal and obtain unique login IDs." },
-                        { step: "02", title: "Online Application", desc: "Fill out the comprehensive application form with all business details." },
-                        { step: "03", title: "Document Upload", desc: "Upload clear, scanned copies of all safety and legal documents." },
-                        { step: "04", title: "Physical Verification", desc: "Visit the licensing unit for original document verification if summoned." },
-                        { step: "05", title: "Inspector Visit", desc: "Premises inspection by a police officer to check safety and layout." },
-                        { step: "06", title: "Grant", desc: "The license is issued via the online portal after final approval." }
-                    ]
-                }}
-                features={{
-                    title: "Service Features",
-                    subtitle: "How we assist with Eating House Permits.",
-                    list: [
-                        { title: "End-to-End Assistance", desc: "From police portal registration to the final license grant." },
-                        { title: "NOC Coordination", desc: "We help you obtain Fire and Health NOCs required for this permit." },
-                        { title: "Staff Verification", desc: "Assistance in employee police verification forms and filings." },
-                        { title: "Compliance Reminders", desc: "Timely alerts for license renewals to avoid illegal operations." }
-                    ]
-                }}
-                postCompliance={{
-                    title: "Post Compliance",
-                    subtitle: "Operate your eating house legally and safely.",
-                    list: [
-                        "Display of license at a prominent place in the outlet",
-                        "Ensuring CCTV cameras are operational as per police norms",
-                        "Renewal of the license before its expiration date",
-                        "Updating the authority about changes in management/ownership",
-                        "Maintaining medical fitness records for all food handlers",
-                        "Adhering to closing time regulations set by city police"
-                    ]
-                }}
+                eligibility={<EatingHouseEligibility />}
+                documents={<EatingHouseDocuments />}
+                process={<EatingHouseProcess />}
+                features={<EatingHouseFeatures />}
+                postCompliance={<EatingHouseCompliance />}
             />
 
             <FAQLayout faqs={faqs} />

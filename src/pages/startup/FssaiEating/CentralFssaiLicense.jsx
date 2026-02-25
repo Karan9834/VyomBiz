@@ -23,13 +23,17 @@ const CentralFssaiOverview = () => {
                             National Level
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            Central FSSAI Authority – <span className="text-[#005a9c]">Global Footprint</span>
+                            FSSAI Central License – <span className="text-[#005a9c]">An Overview</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
-                            The FSSAI Central License is the highest level of food safety certification in India. It is specifically designed for Large Food Business Operators (FBOs) that have reached a massive scale or are involved in international trade.
+                            FSSAI is a leading government agency that works for the well-being of the masses by implementing relevant food safety norms. Its ultimate objective is to formulate various guidelines and norms to incentivise food safety awareness in India. FSSAI formulates food safety norms and guidelines in view of the Food Safety and Standard Act, 2006.
                         </p>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
-                            This license ensures that your products meet the highest safety norms formulated under the FSS Act, 2006. It is a mandatory requirement for e-commerce platforms, importers, and entities operating across multiple states.
+                            FSSAI Central License is obtained by an FBO (Food Business Operator) with a turnover of more than Rs. 20 Crores or those involved in exporting and importing food products in India.
+                        </p>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
+                            <strong className="text-[#072b47]">Fundamental Duties of FSSAI</strong><br />
+                            Formulating Guidelines for food safety, launching nationwide initiatives to create awareness, granting mandatory food licenses, facilitating recommendations to GOI in outlining new policies, and taking legal actions against food businesses involved in illicit practices like food adulteration.
                         </p>
                     </div>
                     <div className="flex justify-center lg:justify-end">
@@ -55,10 +59,10 @@ const CentralFssaiAdvantages = () => {
                         Key Benefits
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                        Benefits of Central License
+                        Benefits of getting an FSSAI Central License
                     </h2>
                     <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
-                        Why large-scale enterprises trust Central FSSAI certification.
+                        Following are the advantages of obtaining an FSSAI Central License:
                     </p>
                     <div className="mt-10">
                         <img
@@ -72,12 +76,10 @@ const CentralFssaiAdvantages = () => {
                 {/* RIGHT SIDE (SCROLLABLE CONTENT) */}
                 <div className="space-y-6">
                     {[
-                        { title: "Nationwide Operations", desc: "Operate across all states under a single, centralized licensing system." },
-                        { title: "Investor Confidence", desc: "Makes it significantly easier to secure funding and loans for expansion." },
-                        { title: "Consumer Awareness", desc: "Gain an advantage with an increasingly safety-conscious consumer base." },
-                        { title: "Hygiene Benchmarking", desc: "Adhere to advanced hygiene norms that cater to premium market segments." },
-                        { title: "Export Facilitation", desc: "Essential for shipping food articles abroad with an IEC certificate." },
-                        { title: "Regulatory Security", desc: "Stay safe from heavy fines by following the most stringent safety norms." }
+                        { title: "Worldwide Identity", desc: "The FSSAI License helps to establish a reputation all over the world. It creates the brand name of the business at a global level." },
+                        { title: "Business Expansion", desc: "With an FSSAI Central License, extending the food business to any new location and opening new outlets is easy. It even makes it easier to get a loan or other funding." },
+                        { title: "Legal Advantage", desc: "FSSAI License gives a sense of security and legal right to all those who are involved in the food business. It acts as evidence that the food quality has not been compromised." },
+                        { title: "Consumer Awareness", desc: "Consumers are more alert about the quality of their food nowadays. The food with FSSAI License gives the businesses an advantage in a rapidly increasing consumer base." }
                     ].map((item, index) => (
                         <div key={index} className="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
                             <h3 className="text-[20px] font-semibold text-[#072b47] mb-3">
@@ -91,6 +93,181 @@ const CentralFssaiAdvantages = () => {
                 </div>
             </div>
         </div>
+    );
+};
+
+const CentralFssaiEligibility = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Essential Criteria & Businesses that Require it
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
+                    FSSAI Central License is legal consent granted to the food businesses which have:
+                </p>
+                <div className="mb-10">
+                    <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed list-disc pl-6">
+                        <li>Annual turnover of more than <span className="font-semibold text-[#072b47]">Rs 20 crores</span>.</li>
+                        <li>Various units running in <span className="font-semibold text-[#072b47]">multiple states</span>.</li>
+                        <li>Business of <span className="font-semibold text-[#072b47]">import/export</span> of food items.</li>
+                        <li>Selling food items on their own <span className="font-semibold text-[#072b47]">E-Commerce</span> website (like Amazon, Flipkart, Zomato, Swiggy).</li>
+                        <li>Establishing Business of <span className="font-semibold text-[#072b47]">Nutraceutical and Health Supplement</span>.</li>
+                        <li>Running hotels with <span className="font-semibold text-[#072b47]">5-star or 7-stars</span>.</li>
+                        <li>Transporting Business with <span className="font-semibold text-[#072b47]">more than 100 vehicles</span>.</li>
+                        <li>Other specific high-capacity productions like <span className="font-semibold text-[#072b47]">dairy (&gt;50k litres/day)</span> or <span className="font-semibold text-[#072b47]">meat processing</span>.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const CentralFssaiDocuments = () => {
+    return (
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-6xl mx-auto px-6 lg:px-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                    Documents Required to Secure License
+                </h2>
+                <p className="text-[17px] text-slate-600 leading-relaxed mb-8">
+                    Following is the listicle of fundamental Documents required to be submitted at the time of application:
+                </p>
+                <div className="mb-8">
+                    <ul className="list-disc pl-6 space-y-2 text-[17px] text-slate-600 leading-relaxed grid sm:grid-cols-2 gap-x-6">
+                        <li>Form B (duly filled and signed by the applicant)</li>
+                        <li>Floor plan of the production or processing facility</li>
+                        <li>Complete list of key management personnel (for companies)</li>
+                        <li>Copy of MOA, AOA & COI (if applicable)</li>
+                        <li>List of partners & partnership deed (if partnership)</li>
+                        <li>Utility bills of the business place for address proof</li>
+                        <li>Food Safety Management Plan (FSMS) or identical protocol</li>
+                        <li>Name & the list of machines present at the plant</li>
+                        <li>List of active raw material suppliers</li>
+                        <li>Concerned local authorities no objection certificate</li>
+                        <li>Tourism certificate (if the license seeker is a hotel owner)</li>
+                        <li>IEC certificate accorded by DGFT (for exports)</li>
+                        <li>Import Export Code &amp; Declaration (turnover &gt; Rs. 20 crores)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const CentralFssaiProcess = () => {
+    const steps = [
+        { step: "01", title: "Application Filing Via Form B", desc: "First, the license seeker is required to file Form B with the licensing Authority. The applicant must keep basic turnover criteria in mind." },
+        { step: "02", title: "Applicant Scrutiny by FSSAI Officials", desc: "Once submitted, the Application accompanied by requested Documents will be sent to the concerned officials for in-depth scrutiny." },
+        { step: "03", title: "On-Site Inspection", desc: "The FSSAI will send designated officials to the business place to determine the level of compliance. Non-conformity could increase cancellation chances." },
+        { step: "04", title: "Approval & Grant", desc: "Once the licensing Authority approves the Application, the certificate will be issued. Displaying the Certificate at The Business Place Is a Legal Mandate." }
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-10">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
+                        Procedure to Obtain FSSAI Central License
+                    </h2>
+                    <p className="text-[17px] text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                        Step-by-Step processes for Securing Central FSSAI License:
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                    <div className="lg:col-span-1">
+                        <img
+                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            alt="The Central Process"
+                            className="w-full rounded-lg shadow-sm"
+                        />
+                    </div>
+                    <div className="lg:col-span-2">
+                        {steps.map((step, index) => (
+                            <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
+                                <div className="text-[16px] font-semibold text-[#072b47]">{index + 1}.</div>
+                                <div>
+                                    <h3 className="text-[18px] font-semibold text-[#072b47]">{step.title}</h3>
+                                    <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">{step.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                        <div className="border-t border-slate-200"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const CentralFssaiFeatures = () => {
+    const features = [
+        { title: "Class-Leading Licensing Platform", desc: "VyomBiz offers a comprehensive portfolio of services, including all types of food licenses." },
+        { title: "Simplified Process", desc: "Professionals at this platform simplify the licensing process via seamless paper handling." },
+        { title: "Unprecedented Professionalism", desc: "Rely on expert guidance to smoothly navigate complex regulatory compliances." },
+        { title: "Complete Transparency", desc: "VyomBiz allows its esteemed clients to keep a constant tab on the Application's progress." }
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
+                        Secure FSSAI Central License with VyomBiz
+                    </h2>
+                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        Secure your license in a Hassle-free way.
+                    </p>
+                </div>
+                <div>
+                    {features.map((feature, index) => (
+                        <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">{index + 1}.</div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">{feature.title}</h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">{feature.desc}</p>
+                            </div>
+                        </div>
+                    ))}
+                    <div className="border-t border-slate-300"></div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const CentralFssaiCompliance = () => {
+    const compliance = [
+        { title: "Validity Period", desc: "The Central FSSAI license comes with a flexible validity duration ranging from 1-5 years. The cost increases in accordance with the validity period." },
+        { title: "Renewal Timeline", desc: "The FSSAI Central License should be renewed before the 30 days of the expiration date, or else penalties would be levied." },
+        { title: "Renewal Process", desc: "The renewal process is as simple as applying for a new one. Provide Passport Photo, ID Proof, PAN, Address proof, and proof of ownership/rental agreement." }
+    ];
+
+    return (
+        <section className="w-full py-14 bg-white">
+            <div className="max-w-6xl mx-auto px-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
+                        Validity and Renewal
+                    </h2>
+                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        Crucial information to maintain your Central FSSAI License.
+                    </p>
+                </div>
+                <div>
+                    {compliance.map((item, index) => (
+                        <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                            <div className="text-[15px] font-semibold text-[#072b47]">{index + 1}.</div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">{item.title}</h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">{item.desc}</p>
+                            </div>
+                        </div>
+                    ))}
+                    <div className="border-t border-slate-300"></div>
+                </div>
+            </div>
+        </section>
     );
 };
 
@@ -139,64 +316,11 @@ const CentralFssaiLicense = () => {
             <DetailsLayout
                 overview={<CentralFssaiOverview />}
                 advantages={<CentralFssaiAdvantages />}
-                eligibility={{
-                    title: "Eligibility Criteria",
-                    subtitle: "Who must apply for a Central FSSAI License?",
-                    list: [
-                        { title: "Large Manufacturers", desc: "FBOs with an annual turnover exceeding ₹20 Crores." },
-                        { title: "Importers & Exporters", desc: "Any entity involved in the international trade of food products." },
-                        { title: "E-commerce Platforms", desc: "Food aggregators and online delivery systems operating nationally." },
-                        { title: "Central Gov. Agencies", desc: "Eateries at airports, seaports, and railway stations." },
-                        { title: "Multi-State Units", desc: "Businesses having units in more than one state." }
-                    ]
-                }}
-                documents={{
-                    title: "Documents Required",
-                    description: "Comprehensive list for central level filing.",
-                    list: [
-                        "Form B (Designated Officer signature required)",
-                        "Blueprint/Layout plan of the processing unit",
-                        "List of Directors/Partners with full contact details",
-                        "Certificate of Incorporation/Partnership Deed",
-                        "Import Export Code (IEC) from DGFT",
-                        "Food Safety Management System (FSMS) Plan",
-                        "Analysis report of water from a recognized lab",
-                        "NOC from the Ministry of Tourism (for hotels)"
-                    ]
-                }}
-                process={{
-                    title: "The Central Process",
-                    subtitle: "Path to securing national food safety approval.",
-                    steps: [
-                        { step: "01", title: "Registration", desc: "Start by registering on the FoSCoS portal as a Central License applicant." },
-                        { step: "02", title: "Form B Filing", desc: "Submit Form B with accurate financial and operational details." },
-                        { step: "03", title: "Doc Verification", desc: "Central officials conduct a thorough audit of the submitted documents." },
-                        { step: "04", title: "High-Level Inspection", desc: "Premises inspection by central authorities to verify global safety norms." },
-                        { step: "05", title: "License Issuance", desc: "The Central License is granted and mailed to the registered business." }
-                    ]
-                }}
-                features={{
-                    title: "Service Features",
-                    subtitle: "Tailored support for major corporations.",
-                    list: [
-                        { title: "Dedicated Liaison", desc: "Direct contact point for interacting with central FSSAI officials." },
-                        { title: "Complex FSMS Drafting", desc: "Expert drafting of high-level Food Safety Management Systems." },
-                        { title: "IEC Integration", desc: "Seamless integration of your Import-Export data with FSSAI filings." },
-                        { title: "Multi-State Consolidation", desc: "Manage all your state-level units through a single central dashboard." }
-                    ]
-                }}
-                postCompliance={{
-                    title: "Post Compliance",
-                    subtitle: "Mandatory actions for central license holders.",
-                    list: [
-                        "Filing of Annual Returns (Form D1) by 31st May",
-                        "Display of 14-digit FSSAI license number on all packages",
-                        "Regular testing of water and food products at NABL labs",
-                        "Quarterly health checks for all production staff",
-                        "Maintaining detailed records of raw material sourcing",
-                        "Immediate notification of changes in production capacity"
-                    ]
-                }}
+                eligibility={<CentralFssaiEligibility />}
+                documents={<CentralFssaiDocuments />}
+                process={<CentralFssaiProcess />}
+                features={<CentralFssaiFeatures />}
+                postCompliance={<CentralFssaiCompliance />}
             />
 
             <FAQLayout faqs={faqs} />

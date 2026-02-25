@@ -122,7 +122,7 @@ const DetailsLayout = ({
 
                 {/* 1. OVERVIEW SECTION */}
                 {overview && (
-                    <section id="overview" ref={overviewRef} className="py-20 border-b border-slate-50 scroll-mt-24">
+                    <section id="overview" ref={overviewRef} className="py-14 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(overview) ? overview : (
                             <div className="flex flex-col lg:flex-row gap-16 items-center">
                                 <div className="lg:w-3/5">
@@ -168,10 +168,10 @@ const DetailsLayout = ({
 
                 {/* 2. ADVANTAGES SECTION */}
                 {advantages && (
-                    <section id="advantages" ref={advantagesRef} className="py-20 border-b border-slate-50 scroll-mt-24">
+                    <section id="advantages" ref={advantagesRef} className="py-14 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(advantages) ? advantages : (
                             <>
-                                <div className="text-center max-w-3xl mx-auto mb-16">
+                                <div className="text-center max-w-3xl mx-auto mb-10">
                                     <h2 className="text-3xl md:text-5xl font-black text-[#072b47] mb-6">{advantages.title}</h2>
                                     <p className="text-slate-500 font-bold text-lg italic tracking-tight">"{advantages.subtitle}"</p>
                                 </div>
@@ -193,7 +193,7 @@ const DetailsLayout = ({
 
                 {/* 3. ELIGIBILITY / CHECKLIST */}
                 {eligibility && (
-                    <section id="eligibility" ref={eligibilityRef} className="py-20 border-b border-slate-50 scroll-mt-24">
+                    <section id="eligibility" ref={eligibilityRef} className="py-14 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(eligibility) ? eligibility : (
                             <div className="bg-[#1e40af] rounded-[4rem] p-10 lg:p-20 text-white relative overflow-hidden shadow-2xl">
                                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white opacity-[0.03] rounded-full translate-x-1/2 -translate-y-1/2" />
@@ -224,7 +224,7 @@ const DetailsLayout = ({
 
                 {/* 4. DOCUMENTS SECTION */}
                 {documents && (
-                    <section id="documents" ref={documentsRef} className="py-20 border-b border-slate-50 scroll-mt-24">
+                    <section id="documents" ref={documentsRef} className="py-14 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(documents) ? documents : (
                             <div className="flex flex-col lg:flex-row gap-20 items-center">
                                 <div className="lg:w-1/2 order-2 lg:order-1 relative w-full">
@@ -252,7 +252,7 @@ const DetailsLayout = ({
 
                 {/* 5. PROCESS SECTION */}
                 {process && (
-                    <section id="process" ref={processRef} className="py-20 border-b border-slate-50 scroll-mt-24">
+                    <section id="process" ref={processRef} className="py-14 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(process) ? process : (
                             <>
                                 <div className="text-center max-w-3xl mx-auto mb-20">
@@ -282,8 +282,8 @@ const DetailsLayout = ({
 
                 {/* 6. TYPES OF COMPLIANCE */}
                 {typesOfCompliance && (
-                    <section id="typesOfCompliance" ref={typesOfComplianceRef} className="py-20 border-b border-slate-50 scroll-mt-24">
-                        <div className="text-center max-w-3xl mx-auto mb-16">
+                    <section id="typesOfCompliance" ref={typesOfComplianceRef} className="py-14 border-b border-slate-50 scroll-mt-24">
+                        <div className="text-center max-w-3xl mx-auto mb-10">
                             <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-6">{typesOfCompliance.title}</h2>
                             <p className="text-slate-500 font-bold text-lg italic">"{typesOfCompliance.subtitle}"</p>
                         </div>
@@ -301,8 +301,8 @@ const DetailsLayout = ({
 
                 {/* 7. DUE DATES SECTION (Table) */}
                 {dueDates && (
-                    <section id="dueDates" ref={dueDatesRef} className="py-20 border-b border-slate-50 scroll-mt-24">
-                        <div className="text-center max-w-3xl mx-auto mb-16">
+                    <section id="dueDates" ref={dueDatesRef} className="py-14 border-b border-slate-50 scroll-mt-24">
+                        <div className="text-center max-w-3xl mx-auto mb-10">
                             <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-6">{dueDates.title}</h2>
                             <p className="text-slate-500 font-bold text-lg italic">"{dueDates.subtitle}"</p>
                         </div>
@@ -331,7 +331,7 @@ const DetailsLayout = ({
 
                 {/* 8. EVENT-BASED COMPLIANCE */}
                 {eventBasedCompliance && (
-                    <section id="eventBasedCompliance" ref={eventBasedComplianceRef} className="py-20 border-b border-slate-50 scroll-mt-24">
+                    <section id="eventBasedCompliance" ref={eventBasedComplianceRef} className="py-14 border-b border-slate-50 scroll-mt-24">
                         <div className="flex flex-col lg:flex-row gap-16 items-center">
                             <div className="lg:w-1/2">
                                 <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-8 tracking-tight">{eventBasedCompliance.title}</h2>
@@ -362,8 +362,8 @@ const DetailsLayout = ({
 
                 {/* 9. NON-REGISTRAR FILINGS */}
                 {nonRegistrarFilings && (
-                    <section id="nonRegistrarFilings" ref={nonRegistrarFilingsRef} className="py-20 border-b border-slate-50 scroll-mt-24">
-                        <div className="text-center max-w-3xl mx-auto mb-16">
+                    <section id="nonRegistrarFilings" ref={nonRegistrarFilingsRef} className="py-14 border-b border-slate-50 scroll-mt-24">
+                        <div className="text-center max-w-3xl mx-auto mb-10">
                             <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-6">{nonRegistrarFilings.title}</h2>
                             <p className="text-slate-500 font-bold text-lg italic">"{nonRegistrarFilings.subtitle}"</p>
                         </div>
@@ -380,7 +380,7 @@ const DetailsLayout = ({
 
                 {/* 10. VYOMBIZ SUPPORT / RESIGNATION / CUSTOM SECTION */}
                 {(features || whyChooseUs) && (
-                    <section id="features" ref={features ? featuresRef : whyChooseUsRef} className="py-20 scroll-mt-24">
+                    <section id="features" ref={features ? featuresRef : whyChooseUsRef} className="py-14 scroll-mt-24">
                         {React.isValidElement(features || whyChooseUs) ? (
                             <div className="max-w-[1440px] mx-auto">
                                 {features || whyChooseUs}
@@ -409,14 +409,14 @@ const DetailsLayout = ({
 
                 {/* 11. POST COMPLIANCE SECTION */}
                 {postCompliance && (
-                    <section id="postCompliance" ref={postComplianceRef} className="py-20 border-b border-slate-50 scroll-mt-24">
+                    <section id="postCompliance" ref={postComplianceRef} className="py-14 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(postCompliance) ? (
                             <div className="max-w-[1440px] mx-auto">
                                 {postCompliance}
                             </div>
                         ) : (
                             <div className="bg-slate-50 rounded-[4rem] p-10 lg:p-20 border border-slate-100 relative overflow-hidden">
-                                <div className="text-center max-w-3xl mx-auto mb-16 relative z-10">
+                                <div className="text-center max-w-3xl mx-auto mb-10 relative z-10">
                                     <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-6">{postCompliance.title}</h2>
                                     <p className="text-slate-500 font-bold text-lg italic leading-relaxed">"{postCompliance.subtitle}"</p>
                                 </div>
