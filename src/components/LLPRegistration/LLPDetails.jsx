@@ -22,7 +22,7 @@ const LLPRegistrationOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80"
+                            src="/Llp registration/overview..png"
                             alt="LLP Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -50,7 +50,7 @@ const LLPRegistrationAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80"
+                            src="/Llp registration/advantages..png"
                             alt="LLP Registration Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -177,7 +177,7 @@ const LLPProcessSection = () => {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
-                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80" alt="LLP Registration Process" className="w-full rounded-lg shadow-sm" />
+                        <img src="/Llp registration/process..png" alt="LLP Registration Process" className="w-full rounded-lg shadow-sm" />
                     </div>
                     <div className="lg:col-span-2">
                         {steps.map((step, index) => (
