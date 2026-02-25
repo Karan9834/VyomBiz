@@ -35,7 +35,7 @@ const OPCRegistrationOverview = () => {
 
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80"
+                            src="/OPC Registration/overview....png"
                             alt="OPC Registration Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -68,7 +68,7 @@ const OPCRegistrationAdvantages = () => {
 
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80"
+src="/OPC Registration/benefits.png"
                             alt="OPC Registration Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -207,7 +207,7 @@ const OPCProcessSection = () => {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
-                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80" alt="OPC Registration Process" className="w-full rounded-lg shadow-sm" />
+                        <img src="/OPC Registration/process. ...png" alt="OPC Registration Process" className="w-full rounded-lg shadow-sm" />
                     </div>
                     <div className="lg:col-span-2">
                         {steps.map((step, index) => (
