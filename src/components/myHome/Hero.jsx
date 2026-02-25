@@ -66,10 +66,11 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
         {/* Hero Content */}
         <div className="text-center mb-16 md:mb-20">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-[1.2] mb-4 max-w-4xl mx-auto tracking-wide">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-[1.15] mb-4 max-w-4xl mx-auto tracking-wide group">
             Build Your Business with Passion. <br />
-            Run It Smarter with <span className="text-[#005a9c]">VyomBiz</span>.
+            Run It Smarter with <span className="text-[#FFE90A] relative inline-block">VyomBiz <div className="absolute -bottom-1 left-0 w-full h-[2px] bg-[#FFE90A] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div></span>.
           </h1>
+          <div className="w-24 h-1 bg-[#FFE90A] mx-auto rounded-full mb-8"></div>
 
           <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-6">
             Simplifying Legal, Tax, and Compliance, the{" "}
@@ -84,7 +85,7 @@ const Hero = () => {
             {topButtons.map((button, index) => (
               <button
                 key={index}
-                className="px-4 md:px-5 py-2 bg-[#005a9c] border border-blue-400/30 rounded-full text-white text-xs md:text-sm font-medium hover:bg-blue-700 hover:border-blue-400/50 transition-all duration-300 shadow-md hover:shadow-lg"
+                className="px-4 md:px-5 py-2 bg-[#FFE90A] border border-[#FFE90A]/60 rounded-full text-[#072b47] text-xs md:text-sm font-bold hover:bg-white hover:border-white hover:text-[#072b47] transition-all duration-300 shadow-md hover:shadow-lg active:scale-95"
               >
                 {button}
               </button>
@@ -163,7 +164,7 @@ const Hero = () => {
           {/* Attractive Trust Text inside the black curve */}
           <div className="absolute top-16 md:top-20 left-1/2 -translate-x-1/2 w-full flex flex-col items-center text-center px-4">
             <h3 className="text-gray-200 text-xs md:text-base lg:text-lg font-medium tracking-[0.15em] uppercase mb-2 md:mb-3 drop-shadow-md">
-              Empowering <span className="text-yellow-400 font-bold drop-shadow-[0_0_8px_rgba(56,189,248,0.8)]">10,000+</span> Businesses Nationwide
+              Empowering <span className="text-[#FFE90A] font-bold drop-shadow-[0_0_8px_rgba(255,233,10,0.6)]">10,000+</span> Businesses Nationwide
             </h3>
             <div className="flex items-center justify-center gap-2 md:gap-4 opacity-90 mx-auto">
               <div className="h-[1px] w-8 md:w-20 bg-gradient-to-r from-transparent to-indigo-500"></div>

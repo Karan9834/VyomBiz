@@ -18,12 +18,12 @@ const WhoWeAre = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-[#072b47] mb-4 tracking-tight">
-            Who We Are
+            Who <span className="text-[#d99e00]">We Are</span>
           </h2>
           <p className="text-[#005a9c] text-lg font-bold mb-4 tracking-wide">
             A business consulting company that constitutes faith.
           </p>
-          <div className="w-16 h-1 bg-[#005a9c] mx-auto rounded mt-4"></div>
+          <div className="w-16 h-1 bg-[#FFE90A] mx-auto rounded mt-4"></div>
         </div>
 
         {/* Main Content - Image with Overlay */}
@@ -57,8 +57,8 @@ const WhoWeAre = () => {
                       style={{ animationDelay: step.delay }}
                     >
                       {/* Check Icon */}
-                      <div className="shrink-0 w-8 h-8 bg-[#005a9c] rounded-full flex items-center justify-center shadow-lg group-hover/item:scale-110 transition-transform">
-                        <CheckCircle className="w-5 h-5 text-white" strokeWidth={3} />
+                      <div className="shrink-0 w-8 h-8 bg-[#FFE90A] rounded-full flex items-center justify-center shadow-lg group-hover/item:scale-110 transition-transform">
+                        <CheckCircle className="w-5 h-5 text-[#072b47]" strokeWidth={3} />
                       </div>
                       {/* Text */}
                       <p className="text-white text-base md:text-lg font-bold tracking-wide">
@@ -70,7 +70,8 @@ const WhoWeAre = () => {
 
                 {/* CTA Button */}
                 <div className="mt-4">
-                  <CTAButton label="Get Started" className="!px-10 !py-4 !text-lg" />
+                  <CTAButton label="Get Started" className="!px-10 !py-4 !text-lg" variant="yellow" />
+
                 </div>
 
               </div>

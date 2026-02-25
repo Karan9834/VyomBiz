@@ -18,8 +18,8 @@ const TrustedBrands = () => {
   return (
     <section className="py-10 bg-white text-center overflow-hidden">
       {/* Heading */}
-      <h2 className="text-xl font-bold mb-14">
-        1 Lakh+ Global Brands That Trust Us!
+      <h2 className="text-xl font-bold text-[#072b47] mb-14">
+        1 Lakh+ Global Brands <span className="text-[#d99e00]">That Trust Us!</span>
       </h2>
 
       {/* Marquee Logos */}

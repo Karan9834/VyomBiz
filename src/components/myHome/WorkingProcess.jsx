@@ -20,10 +20,10 @@ const WorkingProcess = () => {
           {/* Header Section with Enhanced Typography */}
           <div className="mb-12 md:mb-16 relative">
             <div className="flex items-start gap-4 mb-4">
-              <div className="w-4 h-4 rounded-full bg-[#072b47] mt-3 shrink-0"></div>
+              <div className="w-4 h-4 rounded-full bg-[#FFE90A] mt-3 shrink-0 shadow-[0_0_10px_rgba(255,233,10,0.4)]"></div>
               <div className="flex-1">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] leading-tight mb-3">
-                  Protect Your IP & Legal Rights
+                  Protect Your <span className="text-[#d99e00]">IP & Legal Rights</span>
                 </h2>
                 <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                   Secure your brand with trademark registration, contracts, and legal support from trusted experts.
@@ -46,8 +46,8 @@ const WorkingProcess = () => {
                     key={index}
                     className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50/50 hover:shadow-sm cursor-pointer transition-all duration-300 group border border-transparent hover:border-[#005a9c]/20"
                   >
-                    <div className="w-8 h-8 flex items-center justify-center bg-[#005a9c]/10 rounded-lg shrink-0 group-hover:bg-[#005a9c]/20 transition-all duration-300">
-                      <Shield className="w-4 h-4 text-[#005a9c]" strokeWidth={2} />
+                    <div className="w-8 h-8 flex items-center justify-center bg-[#005a9c]/10 rounded-lg shrink-0 group-hover:bg-[#FFE90A]/20 transition-all duration-300">
+                      <Shield className="w-4 h-4 text-[#005a9c] group-hover:text-[#072b47]" strokeWidth={2} />
                     </div>
                     <span className="text-[#072b47] font-semibold text-base group-hover:text-[#005a9c] transition-colors flex-1 leading-snug">
                       {service}

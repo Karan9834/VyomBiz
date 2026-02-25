@@ -9,9 +9,9 @@ const OldVsNewWay = () => {
                 {/* Header */}
                 <div className="mb-14">
                     <h2 className="text-4xl font-bold text-[#072b47] mb-4 tracking-tight">
-                        Everything Your Business Needs to Grow, Right Here
+                        Everything Your Business Needs to <span className="text-[#d99e00]">Grow, Right Here</span>
                     </h2>
-                    <div className="w-16 h-1 bg-[#005a9c] mx-auto rounded"></div>
+                    <div className="w-16 h-1 bg-[#FFE90A] mx-auto rounded"></div>
                     <p className="text-gray-700 text-sm md:text-base lg:text-lg mt-6 max-w-3xl mx-auto font-normal tracking-wide">
                         Stop juggling manual processes and start expanding with automated business solutions.
                     </p>
@@ -65,8 +65,8 @@ const OldVsNewWay = () => {
                                     { text: "Security", sub: "Bank-grade" }
                                 ].map((item, idx) => (
                                     <div key={idx} className="flex items-center gap-3 bg-white/5 backdrop-blur-md rounded-2xl p-3 border border-white/10 text-left">
-                                        <div className="w-8 h-8 rounded-lg bg-[#005a9c] flex items-center justify-center shrink-0">
-                                            <CheckCircle className="w-5 h-5 text-white" />
+                                        <div className="w-8 h-8 rounded-lg bg-[#FFE90A] flex items-center justify-center shrink-0">
+                                            <CheckCircle className="w-5 h-5 text-[#072b47]" />
                                         </div>
                                         <div>
                                             <p className="text-white text-xs font-bold leading-none mb-1">{item.text}</p>
@@ -83,7 +83,9 @@ const OldVsNewWay = () => {
                     <CTAButton
                         label="Get Started with VyomBiz Today"
                         className="!px-12 !py-4 !text-lg !rounded-2xl tracking-wide"
+                        variant="yellow"
                     />
+
                 </div>
             </div>
         </section>

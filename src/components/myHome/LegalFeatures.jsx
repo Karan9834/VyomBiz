@@ -92,7 +92,7 @@ const LegalFeatures = () => {
 
         {/* Right Side - Features Content */}
         <div className="lg:w-[55%] pt-4">
-          <h2 className="text-4xl font-black text-[#072b47] mb-6 leading-tight">Features of Our Legal Service</h2>
+          <h2 className="text-4xl font-black text-[#072b47] mb-6 leading-tight">Features of Our <span className="text-[#d99e00]">Legal Service</span></h2>
           <p className="text-slate-600 text-lg mb-8 leading-relaxed font-medium">
             VyomBiz is a tech-driven platform committed to delivering professional services all over India. We deliver exceptional services to our clients, and our dedication and commitment can be seen in the following ways:
           </p>
@@ -100,8 +100,8 @@ const LegalFeatures = () => {
           <div className="space-y-4">
             {features.map((item, index) => (
               <div key={index} className="flex gap-4 items-start group">
-                <div className="mt-1.5 shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center group-hover:bg-blue-600 transition-colors duration-300">
-                  <CheckCircle2 size={16} className="text-blue-600 group-hover:text-white transition-colors duration-300" />
+                <div className="mt-1.5 shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center group-hover:bg-[#FFE90A] transition-colors duration-300">
+                  <CheckCircle2 size={16} className="text-blue-600 group-hover:text-[#072b47] transition-colors duration-300" />
                 </div>
                 <div>
                   <h4 className="text-[#072b47] font-bold text-lg mb-1 group-hover:text-blue-600 transition-colors">{item.title}:</h4>
