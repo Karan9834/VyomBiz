@@ -39,7 +39,7 @@ const NidhiCompanyOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1604594849809-dfedbc827105?auto=format&fit=crop&q=80"
+                            src="/Nidhi Company Registration/overview.png"
                             alt="Nidhi Company Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -67,8 +67,7 @@ const NidhiCompanyAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1604594849809-dfedbc827105?auto=format&fit=crop&q=80"
-                            alt="Nidhi Company Advantages"
+src="/Nidhi Company Registration/benefits....png"
                             className="w-full rounded-2xl shadow-xl"
                         />
                     </div>
@@ -184,7 +183,7 @@ const NidhiCompanyRegistration = () => {
                         "Memorandum of Association (MOA)",
                         "Articles of Association (AOA)"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1000"
+                    imageUrl: "/Nidhi Company Registration/documents....png"
                 }}
                 process={{
                     title: "Registration Process",
