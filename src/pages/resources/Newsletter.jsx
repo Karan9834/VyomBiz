@@ -175,7 +175,7 @@ const Newsletter = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {otherNewsletters.slice(0, visibleCount).map((card, index) => (
-                <div key={index}>
+                <div key={index} className="h-full">
                   <PdfCards card={card} />
                 </div>
               ))}

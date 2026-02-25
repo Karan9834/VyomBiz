@@ -86,8 +86,10 @@ const LegalServices = () => {
     <section className="py-10 bg-slate-50">
       {/* Heading */}
       <div className="text-center mb-12 px-4">
-        <h2 className="text-4xl font-bold text-[#072b47] mb-4 tracking-tight">Legal Help Across Wide Range of Services</h2>
-        <div className="w-16 h-1 bg-[#005a9c] mx-auto rounded mb-6"></div>
+        <h2 className="text-4xl font-bold text-[#072b47] mb-4 tracking-tight">
+          Legal Help Across Wide Range of <span className="text-[#d99e00]">Services.</span>
+        </h2>
+        <div className="w-16 h-1 bg-[#FFE90A] mx-auto rounded mb-6"></div>
         <p className="text-gray-700 text-sm md:text-base lg:text-lg max-w-4xl mx-auto font-normal tracking-wide mt-4">
           Vyombiz focuses predominantly on assisting entrepreneurs or SMEs by providing services such as Business Registration, Government Registration, Regulatory Measures, Tax Filing, IPR, and much more.
         </p>
@@ -152,7 +154,7 @@ const LegalServices = () => {
               </div>
 
               {/* Circular Arrow Button */}
-              <button className="absolute bottom-6 right-6 w-10 h-10 bg-[#072b47] hover:bg-[#0a3a5e] text-white rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110">
+              <button className="absolute bottom-6 right-6 w-10 h-10 bg-[#072b47] hover:bg-[#FFE90A] text-white hover:text-[#072b47] rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110">
                 <ArrowRight size={20} strokeWidth={2.5} />
               </button>
             </div>

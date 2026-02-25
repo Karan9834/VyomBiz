@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Phone, Mail, MessageCircle, Menu, ChevronDown, X } from "lucide-react";
 import Logo from "../../common/Logo";
 import MegaMenu from "./MegaMenu";
 import ContactPopup from "./ContactPopup";
 import { NAV_LINKS, SIDEBAR_LINKS, MEGA_MENU_DATA, DISABLED_LINKS } from "../../../constants/navigation";
-import { getLinkPath } from "../../../utils/navigationUtils";
+import { getLinkPath, isCategoryActive } from "../../../utils/navigationUtils";
 
 
 export default function Navbar() {
@@ -16,6 +16,7 @@ export default function Navbar() {
     const [expandedSubs, setExpandedSubs] = useState([]); // State for mobile sub-category expansion
     const ref = useRef();
     const navigate = useNavigate();
+    const location = useLocation();
 
     // Mapping states for each main category to their default sub-category
     useEffect(() => {
@@ -66,13 +67,18 @@ export default function Navbar() {
 
                     {/* Desktop Nav Links (Hidden on Mobile) */}
                     <ul className="hidden xl:flex items-center h-full gap-2">
-                        {NAV_LINKS.map(item => (
-                            <li key={item.name}
-                                onClick={() => setActiveTop(activeTop === item.name ? null : item.name)}
-                                className={`px-3 h-full flex items-center gap-1 text-[16px] font-semibold tracking-tighter cursor-pointer transition-all border-b-2 border-transparent ${activeTop === item.name ? "text-[#005a9c] border-[#005a9c]" : "text-white/90 hover:text-[#005a9c]"}`}>
-                                {item.name} <ChevronDown size={14} className={`mt-0.5 transition-transform ${activeTop === item.name ? "rotate-180" : ""}`} />
-                            </li>
-                        ))}
+                        {NAV_LINKS.map(item => {
+                            const isRouteActive = isCategoryActive(item.name, location.pathname);
+                            const isHighlighted = activeTop === item.name || isRouteActive;
+
+                            return (
+                                <li key={item.name}
+                                    onClick={() => setActiveTop(activeTop === item.name ? null : item.name)}
+                                    className={`relative px-3 h-full flex items-center gap-1 text-[16px] font-semibold tracking-tighter cursor-pointer transition-colors duration-200 ${isHighlighted ? "text-[#FFE90A]" : "text-white/90 hover:text-[#FFE90A]"}`}>
+                                    {item.name} <ChevronDown size={14} className={`mt-0.5 transition-transform ${activeTop === item.name ? "rotate-180" : ""}`} />
+                                </li>
+                            );
+                        })}
                     </ul>
 
                     {/* Action Icons Section */}

@@ -20,13 +20,13 @@ import React from "react";
 
 const AppDownload = () => {
   return (
-    <section className="bg-blue-600 py-16 text-white">
+    <section className="bg-gradient-to-b from-[#072b47] to-[#0a3d64] py-16 md:py-20 text-white border-y border-white/5">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
 
         {/* Left Side */}
         <div className="lg:w-1/2 flex flex-col gap-6">
-          <h2 className="text-3xl font-bold">
-            Vyombiz – Legal Advisory Services
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
+            <span className="text-[#FFE90A]">VyomBiz</span> – Legal Advisory Services
           </h2>
           <p className="text-white text-lg">
             Vyombiz is a technology driven platform which provides legal & financial services through its team of professionals.
