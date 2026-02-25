@@ -1,5 +1,6 @@
 import React from "react";
 import DetailsLayout from "../common/DetailsLayout";
+import { CheckCircle2 } from "lucide-react";
 
 const SoleProprietorshipOverview = () => {
     return (
@@ -27,7 +28,7 @@ const SoleProprietorshipOverview = () => {
 
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80"
+                            src="/Sole Proprietor Registration/overview.....png"
                             alt="Sole Proprietorship Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -55,7 +56,7 @@ const SoleProprietorshipAdvantages = () => {
 
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80"
+                            src="/Sole Proprietor Registration/benefits.jpeg"
                             alt="Sole Proprietorship Advantages"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -124,12 +125,15 @@ const SoleProprietorshipEligibility = () => {
                 <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
                     Simple eligibility criteria for single-owner businesses in India.
                 </p>
-                <div className="space-y-5 text-[17px] text-slate-600 leading-relaxed">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {list.map((item, i) => (
-                        <p key={i}>
-                            <span className="font-semibold text-[#072b47]">{item.title} – </span>
-                            {item.desc}
-                        </p>
+                        <div key={i} className="flex gap-3 p-4 bg-[#e6f0fa] rounded-xl">
+                            <CheckCircle2 className="text-[#005a9c] shrink-0 mt-0.5" size={20} />
+                            <div>
+                                <span className="font-semibold text-[#072b47]">{item.title}</span>
+                                <span className="text-slate-600"> – {item.desc}</span>
+                            </div>
+                        </div>
                     ))}
                 </div>
                 <div className="mt-12 text-center">
@@ -162,11 +166,14 @@ const SoleProprietorshipDocumentsSection = () => {
                 <p className="text-[17px] text-slate-600 leading-relaxed mb-8">
                     Digital copies required for a lightning-fast registration cycle.
                 </p>
-                <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {list.map((item, i) => (
-                        <li key={i}>{item}</li>
+                        <div key={i} className="flex gap-3 p-4 bg-[#e6f0fa] rounded-xl">
+                            <CheckCircle2 className="text-[#005a9c] shrink-0 mt-0.5" size={20} />
+                            <span className="text-slate-700">{item}</span>
+                        </div>
                     ))}
-                </ul>
+                </div>
             </div>
         </section>
     );
@@ -193,7 +200,7 @@ const SoleProprietorshipProcessSection = () => {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80" alt="Sole Proprietorship Registration Process" className="w-full rounded-lg shadow-sm" />
+                        <img src="/Sole Proprietor Registration/process ....jpg" alt="Sole Proprietorship Registration Process" className="w-full rounded-lg shadow-sm" />
                     </div>
                     <div className="lg:col-span-2">
                         {steps.map((step, index) => (
@@ -238,17 +245,16 @@ const SoleProprietorshipFeaturesSection = () => {
                         Join the market leaders who trust us with their setup.
                     </p>
                 </div>
-                <div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {features.map((feature, index) => (
-                        <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">{index + 1}.</div>
+                        <div key={index} className="flex gap-3 p-5 bg-[#e6f0fa] rounded-xl">
+                            <CheckCircle2 className="text-[#005a9c] shrink-0 mt-0.5" size={20} />
                             <div>
                                 <h3 className="text-[16px] font-semibold text-[#072b47]">{feature.title}</h3>
                                 <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">{feature.desc}</p>
                             </div>
                         </div>
                     ))}
-                    <div className="border-t border-slate-300" />
                 </div>
             </div>
         </section>
