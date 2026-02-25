@@ -19,7 +19,7 @@ const FAQLayout = ({
     const [openIndex, setOpenIndex] = useState(0);
 
     return (
-        <section id="faq" className="py-20 bg-white scroll-mt-32 relative z-10">
+        <section id="faq" className="py-14 bg-white scroll-mt-32 relative z-10">
             <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16 xl:px-24">
                 <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
 

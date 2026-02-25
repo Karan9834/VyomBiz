@@ -37,7 +37,7 @@ const IndianSubsidiaryOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80"
+                            src="/Indian Subsidiary Registration/overview...,.png"
                             alt="Indian Subsidiary Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -67,7 +67,7 @@ const IndianSubsidiaryAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80"
+                            src="/Indian Subsidiary Registration/overview...,.png"
                             alt="Indian Subsidiary Advantages"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -200,7 +200,7 @@ const IndianSubsidiaryRegistration = () => {
                         "Photographs of all Directors",
                         "Digital Signature Certificates (DSC) of all Directors"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1000"
+                    imageUrl: "/Indian Subsidiary Registration/documents...,.png"
                 }}
                 process={{
                     title: "Registration Roadmap",

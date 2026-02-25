@@ -42,7 +42,7 @@ const ProducerCompanyOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1625246333195-5848c4282185?auto=format&fit=crop&q=80"
+                            src="/Producer Company Registration/overview....,.png"
                             alt="Producer Company Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -70,7 +70,7 @@ const ProducerCompanyAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1625246333195-5848c4282185?auto=format&fit=crop&q=80"
+                            src="/Company Registration/advantages.png"
                             alt="Producer Company Advantages"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -186,7 +186,7 @@ const ProducerCompanyRegistration = () => {
                         "Digital Signature Certificates (DSC)",
                         "MOA & AOA (to be drafted by experts)"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=1000"
+                    imageUrl: "/Producer Company Registration/documents.jpg"
                 }}
                 process={{
                     title: "Our Simplified Process",

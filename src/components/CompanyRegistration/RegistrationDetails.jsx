@@ -1,11 +1,12 @@
 import React from "react";
 import DetailsLayout from "../common/DetailsLayout";
+import { CheckCircle2 } from "lucide-react";
 
 const CompanyRegistrationOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
-                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-14">
                     <div>
                         <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
                             Structure
@@ -18,9 +19,9 @@ const CompanyRegistrationOverview = () => {
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             This type is suited for businesses that aim to raise funds for operations in the long run. It allows shareholders to transfer their shares by the company's Articles of Association (AOA) rules. However, unlike public limited companies, private limited companies cannot offer shares to the general public or trade them on the stock exchange. These companies must comply with regulations, including audits, annual filings and corporate governance norms. This structure is ideal for small and medium enterprises as it offers management flexibility and a specific degree of financial privacy.                        </p>
                     </div>
-                    <div className="flex justify-center lg:justify-end">
+                    <div className="flex justify-center lg:justify-end items-center">
                         <img
-                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+                            src="/Company Registration/overview.png"
                             alt="Company Registration Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -33,8 +34,8 @@ const CompanyRegistrationOverview = () => {
 
 const CompanyRegistrationAdvantages = () => {
     return (
-        <div className="flex flex-col lg:flex-row gap-16 items-center">
-            <div className="grid lg:grid-cols-2 gap-16 w-full">
+        <div className="flex flex-col lg:flex-row gap-10 items-center">
+            <div className="grid lg:grid-cols-2 gap-10 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
                     <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
@@ -43,11 +44,11 @@ const CompanyRegistrationAdvantages = () => {
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
                         Advantages of Registering
                     </h2>
-                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                    <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-5">
                         Registering a private limited company offers various benefits to the shareholders, including a flexible management structure, legal identity and limited liability protection. Let us explore some of the most important benefits below:                    </p>
-                    <div className="mt-10">
+                    <div className="mt-10 flex justify-center items-center">
                         <img
-                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+                            src="/Company Registration/advantages.png"
                             alt="Company Registration Advantages"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -88,26 +89,42 @@ const CompanyEligibility = () => {
         { title: "Capital Norms", desc: "No minimum capital requirement (₹1 Lakh recommended for credibility)." }
     ];
     return (
-        <section className="w-full py-12 bg-white">
-            <div className="max-w-6xl mx-auto px-6 lg:px-12">
-                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
-                    What are the Eligibility Criteria for Private Limited Company Registration?
-                </h2>
-                <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
-                    The legal foundation requires meeting these baseline criteria defined in the Companies Act 2013.
-                </p>
-                <div className="space-y-5 text-[17px] text-slate-600 leading-relaxed">
-                    {list.map((item, i) => (
-                        <p key={i}>
-                            <span className="font-semibold text-[#072b47]">{item.title} – </span>
-                            {item.desc}
+        <section className="w-full py-12 bg-[#f8fafc]">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-14">
+                    <div>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                            Eligibility Criteria for Private Limited Company Registration
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                            The legal foundation requires meeting these baseline criteria defined in the Companies Act 2013.
                         </p>
-                    ))}
-                </div>
-                <div className="mt-12 text-center">
-                    <button className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
-                        Check Your Eligibility Now
-                    </button>
+                        <div className="space-y-5">
+                            {list.map((item, i) => (
+                                <div key={i} className="flex gap-4">
+                                    <div className="mt-1 bg-[#e6f0fa] p-1 rounded-full text-[#005a9c] shrink-0 self-start">
+                                        <CheckCircle2 size={18} />
+                                    </div>
+                                    <div>
+                                        <span className="font-semibold text-[#072b47] text-lg block">{item.title}</span>
+                                        <span className="text-slate-600 text-base">{item.desc}</span>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="mt-10">
+                            <button className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-xl shadow-md transition-all hover:scale-[1.02] active:scale-[0.98]">
+                                Check Your Eligibility Now
+                            </button>
+                        </div>
+                    </div>
+                    <div className="flex justify-center lg:justify-end items-center order-first lg:order-last">
+                        <img
+                            src="/Company Registration/eligibility.png"
+                            alt="Company Eligibility"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
                 </div>
             </div>
         </section>
@@ -127,18 +144,32 @@ const CompanyDocumentsSection = () => {
     ];
     return (
         <section className="w-full py-12 bg-white">
-            <div className="max-w-6xl mx-auto px-6 lg:px-12">
-                <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
-                    Documents Required for Private Limited Company Registration
-                </h2>
-                <p className="text-[17px] text-slate-600 leading-relaxed mb-8">
-                    Digital copies of ID proofs and office documentation for the SPICe+ filing.
-                </p>
-                <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed">
-                    {list.map((item, i) => (
-                        <li key={i}>{item}</li>
-                    ))}
-                </ul>
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-14">
+                    <div className="flex justify-center lg:justify-start items-center">
+                        <img
+                            src="/Company Registration/documents.png"
+                            alt="Documents Required"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
+                    <div>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                            Documents Required for Company Registration
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-8">
+                            Digital copies of ID proofs and office documentation for the SPICe+ filing.
+                        </p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            {list.map((item, i) => (
+                                <div key={i} className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100 shadow-sm hover:bg-white transition-colors">
+                                    <div className="w-2 h-2 rounded-full bg-[#005a9c]" />
+                                    <span className="text-[16px] text-slate-700 font-medium">{item}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );
@@ -152,7 +183,7 @@ const CompanyProcessSection = () => {
         { title: "Incorporation", desc: "Final filing with the MCA (Ministry of Corporate Affairs) and receiving the COI." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-10 bg-[#f0f4f8]">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -162,10 +193,10 @@ const CompanyProcessSection = () => {
                         Simplified 4-stage journey to your incorporation.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-                    <div className="lg:col-span-1">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                    <div className="lg:col-span-1 flex items-center justify-center">
                         <img
-                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+                            src="/Company Registration/Process.png"
                             alt="Company Registration Process"
                             className="w-full rounded-lg shadow-sm"
                         />
@@ -203,27 +234,35 @@ const CompanyFeaturesSection = () => {
         { title: "Direct Expert Access", desc: "Direct access to our senior CAs and CSs for every query." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
-            <div className="max-w-6xl mx-auto px-6">
-                <div className="text-center mb-8">
-                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
-                        Features of Private Limited Company Registration Services
-                    </h2>
-                    <p className="text-[16px] text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                        End-to-end support for your company formation.
-                    </p>
-                </div>
-                <div>
-                    {features.map((feature, index) => (
-                        <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">{index + 1}.</div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">{feature.title}</h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">{feature.desc}</p>
-                            </div>
+        <section className="w-full py-12 bg-white">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-14">
+                    <div>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
+                            Service Features & Support
+                        </h2>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-10">
+                            End-to-end support for your company formation with expert guidance at every step.
+                        </p>
+                        <div className="space-y-4">
+                            {features.map((feature, index) => (
+                                <div key={index} className="flex gap-4 p-5 border border-slate-100 rounded-2xl hover:shadow-md transition-all group hover:border-[#005a9c]/20">
+                                    <div className="text-xl font-bold text-[#005a9c] group-hover:scale-110 transition-transform">{index + 1}.</div>
+                                    <div>
+                                        <h3 className="text-[18px] font-semibold text-[#072b47]">{feature.title}</h3>
+                                        <p className="text-slate-600 mt-1 leading-relaxed text-[15px]">{feature.desc}</p>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                    ))}
-                    <div className="border-t border-slate-300" />
+                    </div>
+                    <div className="flex justify-center lg:justify-end items-center">
+                        <img
+                            src="/Company Registration/support.png"
+                            alt="Service Features"
+                            className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
+                        />
+                    </div>
                 </div>
             </div>
         </section>
