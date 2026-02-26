@@ -36,14 +36,12 @@ import ConvertYourBusiness from '../pages/footer/compliance/ConvertYourBusiness'
 const MainRoutes = [
     <Route key="home" path="/" element={<Home />} />,
     <Route key="business-registration" path="/business-registration" element={<BusinessRegistration />} />,
-<<<<<<< Updated upstream
     <Route key="compliance" path="/tax-filling-compliance" element={<TaxFilingCompliance />} />,
     <Route key="compliance" path="/secretarial-compliance" element={<SecretarialCompliance />} />,
     <Route key="compliance" path="/accounting-cfo" element={<AccountingCFO />} />,
     <Route key="compliance" path="/contracts-agreements" element={<ContractsAgreements />} />,
     <Route key="compliance" path="/legal-services" element={<LegalServices />} />,
     <Route key="compliance" path="/convert-your-business" element={<ConvertYourBusiness />} />,
-=======
     <Route key="ngo" path="/ngo" element={<NGOTrust />} />,
     <Route key="global-incorporation" path="/global-incorporation" element={<GlobalIncorporation />} />,
     <Route key="industry-setup" path="/industry-setup" element={<IndustrySetup />} />,
@@ -51,7 +49,6 @@ const MainRoutes = [
     <Route key="government-registration" path="/government-registration" element={<GovernmentRegistration />} />,
     <Route key="iso-certifications" path="/iso-certifications" element={<ISOCertifications />} />,
     <Route key="fssai-eating-license" path="/fssai-eating-license" element={<FssaiEatingLicense />} />,
->>>>>>> Stashed changes
     <Route key="about" path="/about" element={<About />} />,
     <Route key="career" path="/career" element={<Carrers />} />,
     <Route key="contact" path="/contact" element={<Contact />} />,
