@@ -54,6 +54,6 @@ export const LEGAL_LINKS = [
     { name: "Terms & Conditions", path: "/terms-conditions" },
     { name: "Privacy Policy", path: "/privacy-policy" },
     { name: "Refund Policy", path: "/refund-policy" },
-    { name: "Confidentiality Policy", path: "/privacy-policy" },
-    { name: "Disclaimer", path: "/privacy-policy" }
+    { name: "Confidentiality Policy", path: "/confidentiality-policy" },
+    { name: "Disclaimer", path: "/disclaimer" }
 ];

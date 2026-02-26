@@ -1,6 +1,10 @@
 import React, { lazy } from 'react';
 import { Route } from 'react-router-dom';
 
+import ConfidentialityPolicy from '../pages/legal/ConfidentialityPolicy';
+import PrivacyPolicy from '../pages/legal/PrivacyPolicy';
+import Disclaimer from '../pages/legal/Disclaimer';
+
 const LawyersServices = lazy(() => import('../pages/lawyers-services/LawyersServices'));
 const LawyerSpecializationDynamic = lazy(() => import('../pages/lawyers-services/LawyerSpecializationDynamic'));
 
@@ -55,10 +59,10 @@ const LegalNoticeConsumerProtection = lazy(() => import('../pages/lawyers-servic
 
 
 // Policies
-const PrivacyPolicy = lazy(() => import('../pages/legal/PrivacyPolicy'));
+
 const RefundPolicy = lazy(() => import('../pages/legal/RefundPolicy'));
 const TermsConditions = lazy(() => import('../pages/legal/TermsConditions'));
-const Sitemap = lazy(() => import('../pages/legal/Sitemap'));
+const Sitemap = lazy(() => import('../pages/legal/Disclaimer'));
 
 const LegalRoutes = [
     <Route key="law-srv" path="/lawyers-services" element={<LawyersServices />} />,
@@ -112,10 +116,12 @@ const LegalRoutes = [
 
 
     // Policies
-    <Route key="priv-pol" path="/privacy-policy" element={<PrivacyPolicy />} />,
+    <Route key="priv-pol" path="/privacy-policy" element={<PrivacyPolicy/>} />,
+    <Route key="priv-pol" path="/confidentiality-policy" element={<ConfidentialityPolicy/>} />,
     <Route key="ref-pol" path="/refund-policy" element={<RefundPolicy />} />,
     <Route key="term-cond" path="/terms-conditions" element={<TermsConditions />} />,
-    <Route key="sitemap" path="/sitemap" element={<Sitemap />} />,
+    <Route key="disclaimer" path="/disclaimer" element={<Disclaimer />} />,
+    
 ];
 
 export default LegalRoutes;
