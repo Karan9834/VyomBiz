@@ -1,6 +1,7 @@
 import React, { lazy } from 'react';
 import { Route } from 'react-router-dom';
 
+
 const Compliance = lazy(() => import('../pages/compliance/Compliance'));
 const ClosingLLP = lazy(() => import('../pages/compliance/CompanySecretarial/ClosingLLP'));
 const AnnualFilingLLP = lazy(() => import('../pages/compliance/CompanySecretarial/AnnualFilingLLP'));
@@ -38,7 +39,9 @@ const IncomeTaxReturnFiling = lazy(() => import('../pages/compliance/Tax Filing 
 const TDSReturnFiling = lazy(() => import('../pages/compliance/Tax Filing - Compliance/TDSReturnFiling'));
 
 const ComplianceRoutes = [
+ 
     <Route key="compliance" path="/compliance" element={<Compliance />} />,
+    
     <Route key="gst-ann-ret" path="/gst-annual-return-filing" element={<GSTAnnualReturnFiling />} />,
     <Route key="gst-comp" path="/gst-compliance-services" element={<GSTComplianceServices />} />,
     <Route key="gst-reg" path="/gst-registration" element={<GSTRegistration />} />,

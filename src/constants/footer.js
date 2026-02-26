@@ -10,12 +10,12 @@ export const FOOTER_LINKS = {
         { name: "Fssai & Eating License", path: "/startup" }
     ],
     COMPLIANCE: [
-        { name: "Secretarial", path: "/compliance" },
-        { name: "Tax Filing/Compliance", path: "/compliance" },
-        { name: "Accounting & CFO", path: "/compliance" },
-        { name: "Contracts & Agreements", path: "/compliance" },
-        { name: "Legal Services", path: "/compliance" },
-        { name: "Convert Your Business", path: "/compliance" }
+        { name: "Secretarial", path: "/secretarial-compliance" },
+        { name: "Tax Filing/Compliance", path: "/tax-filling-compliance" },
+        { name: "Accounting & CFO", path: "/accounting-cfo" },
+        { name: "Contracts & Agreements", path: "/contracts-agreements" },
+        { name: "Legal Services", path: "/legal-services" },
+        { name: "Convert Your Business", path: "/convert-your-business" }
     ],
     REGULATORY: [
         { name: "RBI", path: "/regulatory" },

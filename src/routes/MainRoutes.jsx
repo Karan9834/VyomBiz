@@ -19,9 +19,22 @@ const Environmental = lazy(() => import('../pages/environmental/Environmental'))
 const NotFound = lazy(() => import('../pages/error/NotFound'));
 const BusinessRegistration = lazy(() => import('../pages/footer/BusinessRegistration'));
 
+import SecretarialCompliance from '../pages/footer/compliance/SecretarialCompliance';
+import TaxFilingCompliance from '../pages/footer/compliance/TaxFilingCompliance';
+import AccountingCFO from '../pages/footer/compliance/AccountingCFO';
+import ContractsAgreements from '../pages/footer/compliance/ContractsAgreements';
+import LegalServices from '../pages/footer/compliance/LegalServices';
+import ConvertYourBusiness from '../pages/footer/compliance/ConvertYourBusiness';
+
 const MainRoutes = [
     <Route key="home" path="/" element={<Home />} />,
     <Route key="business-registration" path="/business-registration" element={<BusinessRegistration />} />,
+    <Route key="compliance" path="/tax-filling-compliance" element={<TaxFilingCompliance />} />,
+    <Route key="compliance" path="/secretarial-compliance" element={<SecretarialCompliance />} />,
+    <Route key="compliance" path="/accounting-cfo" element={<AccountingCFO />} />,
+    <Route key="compliance" path="/contracts-agreements" element={<ContractsAgreements />} />,
+    <Route key="compliance" path="/legal-services" element={<LegalServices />} />,
+    <Route key="compliance" path="/convert-your-business" element={<ConvertYourBusiness />} />,
     <Route key="about" path="/about" element={<About />} />,
     <Route key="career" path="/career" element={<Carrers />} />,
     <Route key="contact" path="/contact" element={<Contact />} />,
