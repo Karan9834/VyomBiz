@@ -1,40 +1,40 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Testimonials from '../../components/myHome/Testimonials';
-import { CheckCircle, Search, Star, MapPin, ArrowRight, Rocket, Smile, PieChart, Shield } from 'lucide-react';
+import { CheckCircle, Search, Star, MapPin, ArrowRight, Rocket, Smile, PieChart, Shield, Users, Heart } from 'lucide-react';
 
 const stats = [
     {
         id: 1,
-        value: "8+",
-        text: "Years of Experience",
+        value: "250+",
+        text: "Highly Experienced Experts",
         bgColor: "bg-yellow-400",
         textColor: "text-yellow-500",
     },
     {
         id: 2,
-        value: "500+",
-        text: "Startup Consultants",
+        value: "2500+",
+        text: "NGO Registered",
         bgColor: "bg-red-500",
         textColor: "text-red-500",
     },
     {
         id: 3,
-        value: "20+",
-        text: "Countries",
+        value: "9.5/10",
+        text: "Customer Satisfaction Rate",
         bgColor: "bg-green-500",
         textColor: "text-green-500",
     },
     {
         id: 4,
-        value: "25k+",
-        text: "Startups Registered",
+        value: "50+",
+        text: "Govt. Projects Approved",
         bgColor: "bg-indigo-500",
         textColor: "text-indigo-500",
     },
 ];
 
-const BusinessRegistration = () => {
+const NGOTrust = () => {
     const navigate = useNavigate();
 
     return (
@@ -45,15 +45,15 @@ const BusinessRegistration = () => {
                     {/* Left Content */}
                     <div className="w-full lg:w-[60%]">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-8">
-                            <Rocket size={16} />
-                            <span>Business Registration</span>
+                            <Heart size={16} />
+                            <span>NGO Registration</span>
                         </div>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#072b47] leading-[1.1] mb-8">
-                            Make Your Business Ready to <br className="hidden md:block" />
-                            <span className="text-[#dead01]">Scale</span> with Us
+                            Get Your Online NGO Registration in <br className="hidden md:block" />
+                            <span className="text-[#dead01]">India</span> With Us!
                         </h1>
                         <p className="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed font-medium">
-                            Join 50,000+ successful start-ups that have scaled new heights with our expert registration and compliance services. Our network of 250+ professionals ensures your global expansion is seamless and secure.
+                            Registering NGO as Trust, Society, or Section 8 Company brings a perfect business structure including other non-profit groups. Contact us, if you want to open an NGO which can perform PAN India with flexibility.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center gap-6 mb-12">
@@ -64,7 +64,7 @@ const BusinessRegistration = () => {
                                 <div className="flex -space-x-3">
                                     {[1, 2, 3].map((i) => (
                                         <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden shadow-sm">
-                                            <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="User" />
+                                            <img src={`https://i.pravatar.cc/100?img=${i + 20}`} alt="User" />
                                         </div>
                                     ))}
                                 </div>
@@ -74,7 +74,7 @@ const BusinessRegistration = () => {
                                             <Star key={i} className="w-4 h-4 fill-[#dead01] text-[#dead01]" />
                                         ))}
                                     </div>
-                                    <p className="text-sm font-bold text-slate-500">30k+ Happy Customers</p>
+                                    <p className="text-sm font-bold text-slate-500">Rated 4.9 By 30,000+ Customers</p>
                                 </div>
                             </div>
                         </div>
@@ -84,17 +84,16 @@ const BusinessRegistration = () => {
                     <div className="w-full lg:w-[40%] relative">
                         <div className="absolute inset-0 bg-blue-400/10 blur-[120px] rounded-full scale-150 animate-pulse"></div>
                         <img
-                            src="/Footer-pages/business-registration/hero-image.avif"
-                            alt="Business Registration"
+                            src="/Footer-pages/ngo-trust/hero-image.avif"
+                            alt="NGO Trust Registration"
                             className="relative z-10 w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
                             onError={(e) => {
-                                e.target.src = "https://illustrations.popsy.co/amber/startup.svg"
+                                e.target.src = "https://illustrations.popsy.co/amber/volunteer.svg"
                             }}
                         />
                     </div>
                 </div>
             </section>
-
 
             {/* 2. TRUST METRICS STRIP */}
             <section className="bg-[#FEF9C3] py-20 relative z-20">
@@ -103,11 +102,11 @@ const BusinessRegistration = () => {
                         {/* Card 1 */}
                         <div className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
                             <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">
-                                <Rocket className="w-8 h-8 text-[#005a9c]" fill="currentColor" fillOpacity={0.2} />
+                                <Users className="w-8 h-8 text-[#005a9c]" fill="currentColor" fillOpacity={0.2} />
                             </div>
-                            <h3 className="text-xl font-bold text-[#072b47] mb-4">50,000+ Start-ups</h3>
+                            <h3 className="text-xl font-bold text-[#072b47] mb-4">250+ Highly Experienced Experts</h3>
                             <p className="text-slate-600 text-[15px] leading-relaxed font-medium">
-                                We have helped 50,000+ start-ups all around the world and help them to reached new heights in minimal time.
+                                We have a highly experienced and dedicated team of professionals ready to assist you.
                             </p>
                         </div>
 
@@ -115,24 +114,24 @@ const BusinessRegistration = () => {
                         <div className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
                             <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">
                                 <div className="relative">
-                                    <Smile className="w-8 h-8 text-[#005a9c]" />
+                                    <Heart className="w-8 h-8 text-[#005a9c]" />
                                     <div className="absolute top-1 right-1 w-2 h-2 bg-orange-400 rounded-full"></div>
                                 </div>
                             </div>
-                            <h3 className="text-xl font-bold text-[#072b47] mb-4">8+ Years of Experience</h3>
+                            <h3 className="text-xl font-bold text-[#072b47] mb-4">2500+ NGO Registered</h3>
                             <p className="text-slate-600 text-[15px] leading-relaxed font-medium">
-                                We are experts in our field, our team has over 8 years of experience.
+                                We have successfully registered more than 2500 NGOs successfully shaping the future.
                             </p>
                         </div>
 
                         {/* Card 3 */}
                         <div className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
                             <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">
-                                <MapPin className="w-8 h-8 text-[#005a9c]" fill="currentColor" fillOpacity={0.2} />
+                                <Smile className="w-8 h-8 text-[#005a9c]" fill="currentColor" fillOpacity={0.2} />
                             </div>
-                            <h3 className="text-xl font-bold text-[#072b47] mb-4">250+ Locations</h3>
+                            <h3 className="text-xl font-bold text-[#072b47] mb-4">9.5/10 Satisfaction Rate</h3>
                             <p className="text-slate-600 text-[15px] leading-relaxed font-medium">
-                                We are located in 250+ different locations in India.
+                                Our customer satisfaction is always our top priority, shown by an excellent rating.
                             </p>
                         </div>
 
@@ -140,13 +139,13 @@ const BusinessRegistration = () => {
                         <div className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
                             <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">
                                 <div className="relative">
-                                    <PieChart className="w-8 h-8 text-[#005a9c]" />
+                                    <Shield className="w-8 h-8 text-[#005a9c]" />
                                     <div className="absolute top-0 right-0 w-4 h-4 rounded-full border-2 border-white bg-orange-400"></div>
                                 </div>
                             </div>
-                            <h3 className="text-xl font-bold text-[#072b47] mb-4">Privacy & Security</h3>
+                            <h3 className="text-xl font-bold text-[#072b47] mb-4">50+ Govt. Projects</h3>
                             <p className="text-slate-600 text-[15px] leading-relaxed font-medium">
-                                Privacy & Security of a Customer is paramount. We ensure your payment, company & personal details are protected at the highest level.
+                                With approvals of over 50 government projects effectively showcasing our reliability.
                             </p>
                         </div>
                     </div>
@@ -158,11 +157,11 @@ const BusinessRegistration = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-4">
-                            Services We Offer
+                            Services We Offered
                         </h2>
                         <div className="w-24 h-1 bg-[#dead01] shadow-[0_0_8px_rgba(255,233,10,0.6)] mx-auto rounded mb-6"></div>
                         <p className="text-lg text-slate-600 font-medium max-w-2xl mx-auto">
-                            We make business registration and compliance effortless.
+                            We make technical compliance certifications effortless and convenient.
                         </p>
                     </div>
 
@@ -170,49 +169,89 @@ const BusinessRegistration = () => {
                         {/* Map through services */}
                         {[
                             {
-                                title: "Company Registration",
-                                desc: "Register your company in India with expert guidance. Save time, avoid errors, and launch faster with complete compliance support.",
-                                link: "/company-registration"
+                                title: "NGO Registration",
+                                desc: "Looking for NGO registration online in India, but confused between trust, society, or Section 8? Get a completely guided registration process.",
+                                link: "/ngo-registration"
                             },
                             {
-                                title: "LLP Registration",
-                                desc: "Register your Limited Liability Partnership within 1 week with end-to-end legal and documentation assistance.",
-                                link: "/llp-registration"
+                                title: "80G and 12A Registration",
+                                desc: "Want donors to save 40% tax legally? 80G and 12A registration in India is hassle-free and smooth with us. Avail tax deductions.",
+                                link: "/80g-12a-registration"
                             },
                             {
-                                title: "Public Limited Company Registration",
-                                desc: "Professional services to register a public limited company smoothly with up to 50% savings on expert fees.",
-                                link: "/public-limited-registration"
+                                title: "Section 8 Company Registration",
+                                desc: "Want fast Section 8 company registration in India? File application in minutes and enjoy quick approval with our expert consulting.",
+                                link: "/section-8-company"
                             },
                             {
-                                title: "One Person Company Registration",
-                                desc: "Ideal for solopreneurs. Get seamless OPC registration with expert handling of legal formalities.",
-                                link: "/one-person-company-registration"
+                                title: "Society Registration",
+                                desc: "Struggling with legal formalities delaying your society registration? Check society name securely and successfully register with our help.",
+                                link: "/society-registration"
                             },
                             {
-                                title: "Partnership Firm Registration",
-                                desc: "Quick and hassle-free partnership firm registration with complete compliance coverage.",
-                                link: "/partnership-firm-registration"
+                                title: "FCRA Registration",
+                                desc: "Are you seeking foreign donations for your cause? Partner with us for a seamless FCRA registration process and explore international funding.",
+                                link: "/fcra-registration"
                             },
                             {
-                                title: "Sole Proprietorship Registration",
-                                desc: "Start your business today with fast and reliable sole proprietorship registration services.",
-                                link: "/sole-proprietorship-registration"
+                                title: "12AA Registration",
+                                desc: "Tired of the complex 12AA registration process? Let our experts help you streamline your process and get compliance quickly.",
+                                link: "/12aa-registration"
                             },
                             {
-                                title: "Nidhi Company Registration",
-                                desc: "Launch your Nidhi Company with a structured compliance roadmap guided by experienced professionals.",
-                                link: "/nidhi-company-registration"
+                                title: "Trust Registration",
+                                desc: "Are you looking for expert-led support for trust registration in India? We help you stay 100% legally compliant and active.",
+                                link: "/trust-registration"
                             },
                             {
-                                title: "Producer Company Registration",
-                                desc: "Convert your farmer group into a legally recognized producer company with expert assistance.",
-                                link: "/producer-company-registration"
+                                title: "12AB Registration",
+                                desc: "Are you worried about hurdles in the path of 12AB registration for your NGO? Get the 12AB certificate and enjoy proper approvals.",
+                                link: "/12ab-registration"
                             },
                             {
-                                title: "Indian Subsidiary Company Registration",
-                                desc: "Set up your Indian subsidiary without compliance stress, supported by experienced legal experts.",
-                                link: "/indian-subsidiary-company-registration"
+                                title: "Strike Off Section 8 Companies",
+                                desc: "Strike off refers to a process in which ROC removes the Company's name from the register safely with standard compliant procedures.",
+                                link: "/strike-off-section-8-company"
+                            },
+                            {
+                                title: "NGO CSR-1 Filing",
+                                desc: "Ensure your NGO is eligible for CSR funding by seamlessly filing the mandatory Form CSR-1 with our expert guidance.",
+                                link: "/csr-1-registration"
+                            },
+                            {
+                                title: "NGO CSR Consultancy",
+                                desc: "Get comprehensive consultation for your NGO to structure, strategize, and execute impactful corporate social responsibility initiatives.",
+                                link: "/ngo-csr-consultancy"
+                            },
+                            {
+                                title: "NGO Income Tax Advisory",
+                                desc: "Navigate complex NGO tax regulations and optimize tax liabilities with our expert income tax advisory and planning services.",
+                                link: "/ngo-income-tax-advisory"
+                            },
+                            {
+                                title: "NGO Accounting",
+                                desc: "Maintain transparent and compliant financial records with our specialized accounting and bookkeeping services tailored for NGOs.",
+                                link: "/ngo-accounting"
+                            },
+                            {
+                                title: "NGO Project Report",
+                                desc: "Get detailed, professional project reports created to secure funding, showcase impact, and ensure project feasibility.",
+                                link: "/ngo-project-report"
+                            },
+                            {
+                                title: "Trust Annual Compliance",
+                                desc: "Stay ahead of statutory deadlines and maintain active legal status with complete, hassle-free annual compliance solutions.",
+                                link: "/trust-annual-compliance"
+                            },
+                            {
+                                title: "NGO Darpan Registration",
+                                desc: "Improve credibility and eligibility for government grants by easily registering your NGO on the NITI Aayog Darpan portal.",
+                                link: "/darpan-registration"
+                            },
+                            {
+                                title: "80G Registration",
+                                desc: "Avail 50% tax exemption for your donors by registering your NGO exclusively under Section 80G of the Income Tax Act.",
+                                link: "/80g-registration"
                             }
                         ].map((service, index) => (
                             <div key={index} className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-[#FFE90A]/40 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full group relative">
@@ -255,59 +294,63 @@ const BusinessRegistration = () => {
                 </div>
             </section>
 
-            {/* 4. AN OVERVIEW OF START-UPS */}
+            {/* 4. AN OVERVIEW OF NGOS */}
             < section className="py-20 bg-[#FEF9C3]" >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row items-center gap-16">
                         <div className="w-full lg:w-1/2">
                             <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-6">
-                                An Overview of Start-ups
+                                What is an NGO?
                             </h2>
                             <div className="w-16 h-1 bg-[#072b47] rounded mb-8 shadow-sm"></div>
                             <div className="space-y-6 text-[#072b47]/90 text-lg leading-relaxed font-medium">
                                 <p>
-                                    Start-ups are ventures built around a single product or service designed to solve real-world problems. These businesses often begin with limited capital and evolving business models.
+                                    NGO or Non-Governmental Organisation is an association that is registered under the sanction of the Government & primarily works for the upliftment of society. The association has a clear & definite social program/cause, which it supports. The causes a Non-Governmental Organisation can support mat be cultural, social, education, or religious in nature.
                                 </p>
                                 <p>
-                                    In the early stages, founders typically self-fund operations before seeking investments from family, friends, angel investors, or venture capitalists. While innovation fuels start-ups, long-term success depends on scalability, compliance, and execution.
+                                    Commencing and running your NGO in India can be very tedious and difficult. So, to run a successful NGO in India, not only do you have to be good at marketing your cause, but you also need to be on top of the legal compliance involved in operating one. Therefore, one can determine that commencing an NGO in India requires adequate legal planning, a robust desire and a lot of hard work.
                                 </p>
                             </div>
                         </div>
                         <div className="w-full lg:w-1/2 flex justify-center">
                             <img
-                                src="/Footer-pages/business-registration/startup-overview.jpg"
-                                alt="Startup Overview"
+                                src="/Footer-pages/ngo-trust/ngo-overview.jpg"
+                                alt="NGO Overview"
                                 className="w-full max-w-lg h-auto object-contain rounded-2xl shadow-lg"
+                                onError={(e) => {
+                                    e.target.src = "https://illustrations.popsy.co/amber/student-going-to-school.svg"
+                                }}
                             />
                         </div>
                     </div>
                 </div>
             </section >
 
-            {/* 5. PROS & CONS OF START-UPS */}
+            {/* 5. FEATURES & BENEFITS */}
             <section className="py-24 bg-slate-50/50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-black text-[#072b47] mb-4">
-                            Pros & Cons of Start-ups
+                            Features & Benefits of NGO Registration
                         </h2>
                         <div className="w-24 h-1.5 bg-[#dead01] mx-auto rounded-full shadow-sm"></div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 max-w-5xl mx-auto">
-                        {/* Pros Card */}
+                        {/* Features Card */}
                         <div className="bg-white rounded-3xl p-10 lg:p-12 border border-slate-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 relative group">
                             <div className="absolute -top-5 left-10 bg-[#005a9c] text-[#dead01] px-10 py-2.5 rounded-2xl font-black text-xs tracking-[0.2em] shadow-xl border-2 border-white uppercase">
-                                PROS
+                                FEATURES
                             </div>
                             <ul className="space-y-6 mt-8">
                                 {[
-                                    "Greater learning opportunities",
-                                    "Flexible work culture",
-                                    "Encourages innovation",
-                                    "Increased responsibility"
+                                    "Own set of rules, regulations & policies depending on their cause",
+                                    "Vital role in international development, philanthropy, and aid",
+                                    "Voluntary groups, created by like-minded people",
+                                    "Generate funds through contributions & donations",
+                                    "Not profit-making companies, helps in empowering society"
                                 ].map((item, i) => (
-                                    <li key={i} className="flex items-start gap-4 text-slate-700 font-bold text-lg leading-snug group/item">
+                                    <li key={i} className="flex items-start gap-4 text-slate-700 font-bold text-[16px] leading-snug group/item">
                                         <div className="mt-1.5 w-2.5 h-2.5 rounded-full bg-[#dead01] shrink-0 shadow-[0_0_10px_rgba(222,173,1,0.5)] group-hover/item:scale-125 transition-transform"></div>
                                         <span>{item}</span>
                                     </li>
@@ -315,19 +358,20 @@ const BusinessRegistration = () => {
                             </ul>
                         </div>
 
-                        {/* Cons Card */}
+                        {/* Benefits Card */}
                         <div className="bg-white rounded-3xl p-10 lg:p-12 border border-slate-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 relative group">
                             <div className="absolute -top-5 left-10 bg-[#072b47] text-white px-10 py-2.5 rounded-2xl font-black text-xs tracking-[0.2em] shadow-xl border-2 border-white uppercase opacity-90">
-                                CONS
+                                BENEFITS
                             </div>
                             <ul className="space-y-6 mt-8">
                                 {[
-                                    "Risk of failure",
-                                    "High stress environment",
-                                    "Fundraising challenges",
-                                    "Competitive market pressure"
+                                    "Trusts can apply to get land from the Government",
+                                    "Eligible to apply for 80G Deductions Certificate benefits",
+                                    "Long-term taxation benefits & exemptions",
+                                    "Ease in property acquisition and fund donations",
+                                    "Recognised as a separate legal entity like Section 8 Company"
                                 ].map((item, i) => (
-                                    <li key={i} className="flex items-start gap-4 text-slate-700 font-bold text-lg leading-snug group/item">
+                                    <li key={i} className="flex items-start gap-4 text-slate-700 font-bold text-[16px] leading-snug group/item">
                                         <div className="mt-1.5 w-2.5 h-2.5 rounded-full bg-slate-300 shrink-0 group-hover/item:bg-[#dead01] transition-colors"></div>
                                         <span>{item}</span>
                                     </li>
@@ -338,56 +382,51 @@ const BusinessRegistration = () => {
                 </div>
             </section>
 
-            {/* 6. HOW TO START A START-UP */}
+            {/* 6. OUR WORKING PROCESS */}
             <section className="py-24 bg-[#FEF9C3] relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-black text-[#072b47] mb-4">
-                            How to Start a Start-up
+                            Our Working Process
                         </h2>
                         <div className="w-24 h-1.5 bg-[#dead01] mx-auto rounded-full shadow-sm"></div>
                         <p className="text-lg text-slate-600 font-medium max-w-2xl mx-auto mt-6">
-                            Follow these 5 essential steps to build a strong foundation for your business.
+                            Our working process is especially designed to provide you with the best possible experience & to make sure that your goals are achieved.
                         </p>
                     </div>
 
                     <div className="relative">
                         {/* Desktop Connecting Line */}
-                        <div className="hidden lg:block absolute top-10 left-[10%] right-[10%] h-0.5 bg-slate-100 z-0">
+                        <div className="hidden lg:block absolute top-10 left-[12%] right-[12%] h-0.5 bg-slate-100 z-0">
                             <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-transparent via-[#dead01]/20 to-transparent"></div>
                         </div>
 
-                        <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-4">
+                        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-4 justify-center">
                             {[
                                 {
                                     num: "1",
-                                    title: "Idea Validation",
-                                    desc: "Start with a strong idea backed by thorough market research."
+                                    title: "Consultation",
+                                    desc: "Our experts will consult with you to understand your business needs & goals."
                                 },
                                 {
                                     num: "2",
-                                    title: "Business Planning",
-                                    desc: "Define your business structure, goals, mission, and roadmap."
+                                    title: "Planning",
+                                    desc: "Once we understand all your needs, we will develop an effective plan."
                                 },
                                 {
                                     num: "3",
-                                    title: "Funding",
-                                    desc: "Raise capital through savings, investors, family, or loans."
+                                    title: "Execution",
+                                    desc: "Once the plan is finalised, our experts will execute it effectively."
                                 },
                                 {
                                     num: "4",
-                                    title: "Legal Registration",
-                                    desc: "Register your business and obtain required licenses and permits."
-                                },
-                                {
-                                    num: "5",
-                                    title: "Operational Setup",
-                                    desc: "Establish location, hire talent, and execute your growth strategy."
+                                    title: "Review",
+                                    desc: "After the project is completed, we will review the work done."
                                 }
                             ].map((step, index) => (
                                 <div key={index} className="flex flex-row lg:flex-col items-start lg:items-center relative group z-10">
                                     {/* Mobile Vertical Line */}
-                                    {index !== 4 && (
+                                    {index !== 3 && (
                                         <div className="lg:hidden absolute left-10 top-20 w-0.5 h-12 bg-slate-100"></div>
                                     )}
 
@@ -410,12 +449,12 @@ const BusinessRegistration = () => {
                 </div>
             </section>
 
-            {/* 7. WHY CHOOSE US */}
+            {/* 7. TYPES OF NGO REGISTRATION */}
             <section className="py-24 bg-white border-t border-slate-100 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center mb-20">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#072b47] mb-6">
-                            Why Choose <span className="text-[#dead01]">Us</span>
+                            Types of <span className="text-[#dead01]">NGO Registration</span> in India
                         </h2>
                         <div className="w-24 h-1.5 bg-[#dead01] mx-auto rounded-full shadow-sm"></div>
                     </div>
@@ -423,16 +462,16 @@ const BusinessRegistration = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
                         {[
                             {
-                                title: "Better Business Models",
-                                desc: "Our teams have built or worked with start-ups for 5+ years, enabling scalable and innovative business models."
+                                title: "Section 8 Company Registration",
+                                desc: "It incorporates the purpose of social welfare. Established to promote art, commerce, science, religion, charity or relevant cause to society progress."
                             },
                             {
-                                title: "Worldwide Reach",
-                                desc: "Over 8+ years, we’ve delivered innovation outcomes across 80+ countries with a strong global network."
+                                title: "Trust Registration",
+                                desc: "Entities who go for Trust under the NGO Registration procedure are generally those which work with the elimination of poverty, providing medical relief."
                             },
                             {
-                                title: "On-Time Results",
-                                desc: "We focus on solving real problems while ensuring timely delivery and measurable outcomes."
+                                title: "Society Registration",
+                                desc: "Named as member-based organisations that work for charitable goals. These organisations are always run under governing body or a management committee."
                             }
                         ].map((item, index) => (
                             <div
@@ -496,4 +535,4 @@ const BusinessRegistration = () => {
     );
 };
 
-export default BusinessRegistration;
+export default NGOTrust;
