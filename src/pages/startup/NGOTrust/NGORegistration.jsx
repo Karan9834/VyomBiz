@@ -4,6 +4,8 @@ import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import PricingSection from "../../../components/CompanyRegistration/PricingSection.jsx";
+import ngobenefits from '../../../assets/ngo/ngoregistration/ngo benefits.jpg'
+import overview from '../../../assets/ngo/ngoregistration/overview.jpg'
 
 
 /**
@@ -36,7 +38,7 @@ const NGOOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="NGO Registration Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -65,7 +67,7 @@ const NGORegistrationAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80"
+                            src={ngobenefits}
                             alt="NGO Registration Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />

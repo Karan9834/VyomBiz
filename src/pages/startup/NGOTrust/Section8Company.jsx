@@ -5,7 +5,8 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import PricingSection from "../../../components/CompanyRegistration/PricingSection.jsx";
 
-
+import ngobenefits from '../../../assets/ngo/section8/benefits.png'
+import overview from '../../../assets/ngo/section8//overview.png'
 /**
  * Section8Company Page
  * Refactored to match TrustRegistration & SocietyRegistration design.
@@ -37,7 +38,7 @@ const Section8Overview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="Section 8 Company Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -65,7 +66,7 @@ const Section8CompanyAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+                            src={ngobenefits}
                             alt="Section 8 Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />

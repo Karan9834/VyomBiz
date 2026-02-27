@@ -7,7 +7,9 @@ import {
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-
+import eightG from "../../../assets/ngo/80G12A/80G & 12A Registration overview.png"
+import benefits from "../../../assets/ngo/80G12A/benefits.png"
+import process from "../../../assets/ngo/80G12A/process.png"
 /**
  * EightyTwenty Page (80G & 12A Registration)
  * Refactored to match TrustRegistration design.
@@ -39,7 +41,7 @@ const EightyTwelveOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80"
+                            src={eightG}
                             alt="80G & 12A Registration Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -67,7 +69,7 @@ const EightyTwelveAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="80G & 12A Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -279,7 +281,7 @@ const EightyTwelveProcessSection = () => {
                     {/* Left Image */}
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="12A & 80G Registration Process"
                             className="w-full rounded-lg shadow-sm"
                         />

@@ -3,6 +3,9 @@ import { Users, Briefcase, Building2, FileText, CheckCircle, TrendingUp } from "
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import benefit1 from "../../../assets/ngo1/12AA Registration/benefits1.png"
+import benefit2 from "../../../assets/ngo1/12AA Registration/benefits2.png"
+import overview from "../../../assets/ngo1/12AA Registration/overview.png"
 
 /**
  * 12AARegistration Page matching Vyombiz layout styles
@@ -35,7 +38,7 @@ const Registration12AAOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="12AA Registration Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -63,7 +66,7 @@ const Registration12AAAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80"
+                            src={benefit1}
                             alt="12AA Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -288,7 +291,7 @@ const Registration12AAProcessSection = () => {
                     {/* Left Image */}
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            src={benefit2}
                             alt="12AA Registration Process"
                             className="w-full rounded-lg shadow-sm"
                         />

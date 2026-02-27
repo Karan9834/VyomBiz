@@ -5,6 +5,10 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
+import benefits from "../../../assets/ngo1/NGO Income Tax Advisory Services/benefits.png"
+import overview from "../../../assets/ngo1/NGO Income Tax Advisory Services/overview.png"
+import process from "../../../assets/ngo1/NGO Income Tax Advisory Services/process.png"
+
 
 /**
  * NGOIncomeTaxAdvisory Page matching Vyombiz layout styles
@@ -34,7 +38,7 @@ const IncomeTaxOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1554224155-1696413575b8?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="NGO Income Tax Advisory Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -62,7 +66,7 @@ const NGOIncomeTaxAdvisoryAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="Tax Advisory Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -260,7 +264,7 @@ const IncomeTaxAdvisoryProcessSection = () => {
                     {/* Left Image */}
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="Income Tax Advisory Process"
                             className="w-full rounded-lg shadow-sm"
                         />

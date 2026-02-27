@@ -1,13 +1,13 @@
 export const FOOTER_LINKS = {
     STARTUP: [
         { name: "Business Registration", path: "/business-registration" },
-        { name: "NGO / Trust", path: "/ngo" },
-        { name: "Global Incorporation", path: "/global-incorporation" },
-        { name: "Industry Setup", path: "/industry-setup" },
-        { name: "Government Licenses", path: "/government-licenses" },
-        { name: "Government Registration", path: "/government-registration" },
-        { name: "ISO Certifications", path: "/iso-certifications" },
-        { name: "Fssai & Eating License", path: "/fssai-eating-license" }
+        { name: "NGO / Trust", path: "/startup" },
+        { name: "Global Incorporation", path: "/startup" },
+        { name: "Industry Setup", path: "/startup" },
+        { name: "Government Licenses", path: "/startup" },
+        { name: "Government Registration", path: "/startup" },
+        { name: "ISO Certifications", path: "/startup" },
+        { name: "Fssai & Eating License", path: "/startup" }
     ],
     COMPLIANCE: [
         { name: "Secretarial", path: "/secretarial-compliance" },
@@ -28,15 +28,15 @@ export const FOOTER_LINKS = {
         { name: "Telecom", path: "/regulatory" }
     ],
     ENVIRONMENTAL: [
-        { name: "Pollution NOC", path: "/environmental" },
-        { name: "E-Waste Management", path: "/environmental" },
-        { name: "Plastic Waste Management", path: "/environmental" },
-        { name: "Hazardous Waste Management", path: "/environmental" },
-        { name: "Battery Waste Management", path: "/environmental" },
-        { name: "Environmental Licensing", path: "/environmental" },
-        { name: "Environmental Advisory", path: "/environmental" },
-        { name: "EIA", path: "/environmental" },
-        { name: "Environmental Industry", path: "/environmental" }
+        { name: "Pollution NOC", path: "/pollution-noc" },
+        { name: "E-Waste Management", path: "/e-waste-management" },
+        { name: "Plastic Waste Management", path: "/plastic-waste-management" },
+        { name: "Hazardous Waste Management", path: "/hazardous-waste-management" },
+        { name: "Battery Waste Management", path: "/battery-waste-management" },
+        { name: "Environmental Licensing", path: "/environmental-licensing" },
+        { name: "Environmental Advisory", path: "/environmental-advisory" },
+        { name: "EIA", path: "/eia" },
+        { name: "Environmental Industry", path: "/environmental-industry" }
     ]
 };
 

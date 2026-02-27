@@ -1,42 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import Testimonials from '../../components/myHome/Testimonials';
 import { CheckCircle, Search, Star, MapPin, ArrowRight, Rocket, Smile, PieChart, Shield } from 'lucide-react';
 
-const stats = [
-    {
-        id: 1,
-        value: "8+",
-        text: "Years of Experience",
-        bgColor: "bg-yellow-400",
-        textColor: "text-yellow-500",
-    },
-    {
-        id: 2,
-        value: "500+",
-        text: "Startup Consultants",
-        bgColor: "bg-red-500",
-        textColor: "text-red-500",
-    },
-    {
-        id: 3,
-        value: "20+",
-        text: "Countries",
-        bgColor: "bg-green-500",
-        textColor: "text-green-500",
-    },
-    {
-        id: 4,
-        value: "25k+",
-        text: "Startups Registered",
-        bgColor: "bg-indigo-500",
-        textColor: "text-indigo-500",
-    },
-];
-
 const BusinessRegistration = () => {
-    const navigate = useNavigate();
-
     return (
         <div className="bg-white min-h-screen font-sans">
             {/* 1. HERO SECTION */}
@@ -171,48 +136,39 @@ const BusinessRegistration = () => {
                         {[
                             {
                                 title: "Company Registration",
-                                desc: "Register your company in India with expert guidance. Save time, avoid errors, and launch faster with complete compliance support.",
-                                link: "/company-registration"
+                                desc: "Register your company in India with expert guidance. Save time, avoid errors, and launch faster with complete compliance support."
                             },
                             {
                                 title: "LLP Registration",
-                                desc: "Register your Limited Liability Partnership within 1 week with end-to-end legal and documentation assistance.",
-                                link: "/llp-registration"
+                                desc: "Register your Limited Liability Partnership within 1 week with end-to-end legal and documentation assistance."
                             },
                             {
                                 title: "Public Limited Company Registration",
-                                desc: "Professional services to register a public limited company smoothly with up to 50% savings on expert fees.",
-                                link: "/public-limited-registration"
+                                desc: "Professional services to register a public limited company smoothly with up to 50% savings on expert fees."
                             },
                             {
                                 title: "One Person Company Registration",
-                                desc: "Ideal for solopreneurs. Get seamless OPC registration with expert handling of legal formalities.",
-                                link: "/one-person-company-registration"
+                                desc: "Ideal for solopreneurs. Get seamless OPC registration with expert handling of legal formalities."
                             },
                             {
                                 title: "Partnership Firm Registration",
-                                desc: "Quick and hassle-free partnership firm registration with complete compliance coverage.",
-                                link: "/partnership-firm-registration"
+                                desc: "Quick and hassle-free partnership firm registration with complete compliance coverage."
                             },
                             {
                                 title: "Sole Proprietorship Registration",
-                                desc: "Start your business today with fast and reliable sole proprietorship registration services.",
-                                link: "/sole-proprietorship-registration"
+                                desc: "Start your business today with fast and reliable sole proprietorship registration services."
                             },
                             {
                                 title: "Nidhi Company Registration",
-                                desc: "Launch your Nidhi Company with a structured compliance roadmap guided by experienced professionals.",
-                                link: "/nidhi-company-registration"
+                                desc: "Launch your Nidhi Company with a structured compliance roadmap guided by experienced professionals."
                             },
                             {
                                 title: "Producer Company Registration",
-                                desc: "Convert your farmer group into a legally recognized producer company with expert assistance.",
-                                link: "/producer-company-registration"
+                                desc: "Convert your farmer group into a legally recognized producer company with expert assistance."
                             },
                             {
                                 title: "Indian Subsidiary Company Registration",
-                                desc: "Set up your Indian subsidiary without compliance stress, supported by experienced legal experts.",
-                                link: "/indian-subsidiary-company-registration"
+                                desc: "Set up your Indian subsidiary without compliance stress, supported by experienced legal experts."
                             }
                         ].map((service, index) => (
                             <div key={index} className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-[#FFE90A]/40 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full group relative">
@@ -234,14 +190,10 @@ const BusinessRegistration = () => {
                                         </div>
 
                                         <div className="flex items-center justify-between gap-4">
-                                            <button
-                                                onClick={() => navigate(service.link)}
-                                                className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all shadow-md hover:shadow-lg active:scale-[0.97]">
+                                            <button className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all shadow-md hover:shadow-lg active:scale-[0.97]">
                                                 Get Started
                                             </button>
-                                            <button
-                                                onClick={() => navigate(service.link)}
-                                                className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read relative py-1">
+                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read relative py-1">
                                                 <span>Read More</span>
                                                 <ArrowRight className="w-4 h-4 group-hover/read:translate-x-1.5 transition-transform duration-300" />
                                                 <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#FFE90A] group-hover/read:w-full transition-all duration-300 rounded-full"></div>
@@ -256,7 +208,7 @@ const BusinessRegistration = () => {
             </section>
 
             {/* 4. AN OVERVIEW OF START-UPS */}
-            <section className="py-20 bg-[#FEF9C3]">
+            < section className="py-20 bg-[#FEF9C3]" >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row items-center gap-16">
                         <div className="w-full lg:w-1/2">
@@ -282,7 +234,7 @@ const BusinessRegistration = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* 5. PROS & CONS OF START-UPS */}
             <section className="py-24 bg-slate-50/50">
@@ -456,42 +408,6 @@ const BusinessRegistration = () => {
                     </div>
                 </div>
             </section >
-
-            {/* 8. STATS SECTION */}
-            <div className="w-full  py-12">
-                <div className="max-w-7xl mx-auto px-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {stats.map((item) => (
-                            <div
-                                key={item.id}
-                                className="relative bg-white rounded-xl border border-gray-200 shadow-sm py-8 px-6 flex flex-col items-center justify-center text-center"
-                            >
-                                {/* Circle Icon */}
-                                <div
-                                    className={`absolute -top-6 w-14 h-14 rounded-full flex items-center justify-center ${item.bgColor}`}
-                                >
-                                    <Rocket className="text-white" size={22} />
-                                </div>
-
-                                {/* Content */}
-                                <div className="mt-6">
-                                    <span
-                                        className={`font-semibold text-lg ${item.textColor}`}
-                                    >
-                                        {item.value}
-                                    </span>{" "}
-                                    <span className="text-gray-700 text-lg font-medium">
-                                        {item.text}
-                                    </span>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-
-            {/* 9. TESTIMONIALS SECTION */}
-            <Testimonials />
         </div >
     );
 };
