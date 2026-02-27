@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import React from "react";
 import { Mail, Phone, Globe, MessageSquare, ClipboardCheck, Headphones } from "lucide-react";
 
 const ContactBannerAbout = () => {
+  const navigate = useNavigate();
     return (
         <section className="py-12 bg-[#072b47] relative overflow-hidden">
             {/* Background pattern */}

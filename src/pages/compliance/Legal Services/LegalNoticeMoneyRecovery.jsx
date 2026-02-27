@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import { Users, Briefcase, Building2, ChevronDown, Phone, CheckCircle2, Shield, FileText, Scale, AlertCircle, BookOpen, Gavel } from "lucide-react";
 import InsideNavbar from "../../../components/common/InsideNavbar.jsx";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
@@ -116,6 +117,7 @@ const FAQItem = ({ question, answer }) => {
    MAIN PAGE
 ───────────────────────────────────────────────────────── */
 const LegalNoticeMoneyRecovery = () => {
+    const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState("overview");
     const sectionRefs = useRef({});
     const isClickScrolling = useRef(false);
@@ -714,10 +716,16 @@ const LegalNoticeMoneyRecovery = () => {
                             Get a professionally drafted legal notice within 24–48 hours. Connect with our expert team now.
                         </p>
                         <div className="flex items-center justify-center gap-4 flex-wrap">
-                            <button className="bg-[#005a9c] hover:bg-[#004a85] text-white font-semibold text-[14px] px-8 py-3.5 rounded-xl transition-colors shadow-lg">
+                            <button
+                                onClick={() => navigate('/contact')}
+                                className="bg-[#005a9c] hover:bg-[#004a85] text-white font-semibold text-[14px] px-8 py-3.5 rounded-xl transition-colors shadow-lg"
+                            >
                                 Get Started
                             </button>
-                            <button className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-[14px] px-6 py-3.5 rounded-xl transition-colors border border-white/20">
+                            <button
+                                onClick={() => navigate('/#free-consultation')}
+                                className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-[14px] px-6 py-3.5 rounded-xl transition-colors border border-white/20"
+                            >
                                 <Phone size={16} />
                                 Talk to a Lawyer
                             </button>

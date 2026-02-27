@@ -3,7 +3,8 @@ import HeroLayout from "../common/HeroLayout";
 
 const PartnershipHero = () => {
     return (
-        <HeroLayout
+        <div id="registration-hero">
+            <HeroLayout
             announcementText="We are India's leading brand for Partnership Firm Registration."
             heroTitleMain="Partnership Firm"
             heroTitleSuffix="Registration"
@@ -17,6 +18,7 @@ const PartnershipHero = () => {
             ]}
             successRateText="Successfully Registered 30,000+ Firms, 99% Success Rate"
         />
+        </div>
     );
 };
 

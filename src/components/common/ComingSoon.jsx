@@ -5,6 +5,7 @@ const ComingSoon = ({ title }) => {
     return (
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
             {/* ================= SECTION 1: HERO ================= */}
+            <div id="registration-hero">
             <HeroLayout
                 heroTitleMain={title || "Coming "}
                 heroTitleSuffix="Soon"
@@ -14,6 +15,8 @@ const ComingSoon = ({ title }) => {
                 whatsIncludedList={[]}
                 stats={[]}
             />
+            </div>
+ </div>
         </div>
     );
 };

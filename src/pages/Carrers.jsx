@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { FiUser, FiExternalLink, FiBriefcase, FiMapPin } from "react-icons/fi";
 
 const jobData = [
@@ -33,6 +34,8 @@ const jobData = [
 ];
 
 const Careers = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-gray-50 min-h-screen">
 
@@ -129,8 +132,11 @@ const Careers = () => {
               </div>
 
               {/* RIGHT BUTTON */}
-              <div className="mt-6 md:mt-0 md:ml-6">
-                <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2.5 rounded-md flex items-center gap-2 transition">
+              <div className="mt-6 md:mt-0 md:ml-6 flex items-center">
+                <button
+                  onClick={() => navigate('/pending', { state: { title: 'Career Application' } })}
+                  className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2.5 rounded-md flex items-center gap-2 transition"
+                >
                   Apply Now
                   <FiExternalLink size={16} />
                 </button>

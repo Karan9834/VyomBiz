@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import PageTemplate from "../../components/common/PageTemplate";
 import pdfCards from "../../data/newsletterData.js";
 import PdfCards from "../../components/common/PdfCards";
@@ -9,6 +10,7 @@ import { Mail, Bell, ShieldCheck, ArrowRight, TrendingUp, Users, CheckCircle2, Z
  * Simplified version to ensure visibility and restore functionality.
  */
 const Newsletter = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
@@ -183,11 +185,10 @@ const Newsletter = () => {
 
             <div className="mt-20 text-center">
               <button
-                onClick={handleLoadMore}
-                disabled={isLoadingMore || visibleCount >= otherNewsletters.length}
-                className={`bg-white border-2 border-slate-200 text-[#072b47] px-12 py-5 rounded-2xl font-black text-sm uppercase transition-all shadow-sm active:scale-95 ${isLoadingMore ? 'opacity-70' : 'hover:border-[#072b47]'}`}
+                onClick={() => navigate('/pending')}
+                className={`bg-white border-2 border-slate-200 text-[#072b47] px-12 py-5 rounded-2xl font-black text-sm uppercase transition-all shadow-sm active:scale-95 hover:border-[#072b47]`}
               >
-                {isLoadingMore ? 'Loading...' : 'View More Issues'}
+                View More Issues
               </button>
             </div>
           </div>

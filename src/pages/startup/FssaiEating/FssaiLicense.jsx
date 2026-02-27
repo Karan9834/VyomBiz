@@ -23,7 +23,7 @@ const FssaiLicenseOverview = () => {
                             Legal Mandate
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            FSSAI License and Registration in India –  <span className="text-[#005a9c]">An Overview</span>
+                            FSSAI License and Registration in India – <span className="text-[#005a9c]">An Overview</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             A Food Safety and Standards Authority of India (FSSAI) license is mandatory for operating a food business in India. Any person or entity engaged in this industry -manufacturing, processing, distribution and sale of food products - must obtain FSSAI license registration, enabling them to operate their business legally.

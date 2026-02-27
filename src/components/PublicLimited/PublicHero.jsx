@@ -3,7 +3,8 @@ import HeroLayout from "../common/HeroLayout";
 
 const PublicHero = () => {
     return (
-        <HeroLayout
+        <div id="registration-hero">
+            <HeroLayout
             announcementText="We are India's leading brand for Public Limited Registration."
             heroTitleMain="Public Limited"
             heroTitleSuffix="Registration"
@@ -17,6 +18,7 @@ const PublicHero = () => {
             ]}
             successRateText="Successfully Registered 500+ Public Entities, 99% Success Rate"
         />
+        </div>
     );
 };
 

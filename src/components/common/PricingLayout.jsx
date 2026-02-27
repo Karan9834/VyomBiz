@@ -1,5 +1,6 @@
 import React from "react";
 import { Check, ShieldCheck } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 /**
  * Reusable Pricing Layout Component for all Startup/Registration pages.
@@ -12,6 +13,7 @@ const PricingLayout = ({
     subtitle = "*Government Fee and GST will be extra as applicable. 100% Money-Back Guarantee.",
     packages = []
 }) => {
+    const navigate = useNavigate();
     return (
         <section className="py-16 bg-slate-50">
             <div className="container mx-auto px-6">
@@ -69,10 +71,12 @@ const PricingLayout = ({
                                 ))}
                             </div>
 
-                            <button className={`w-full py-5 rounded-2xl font-black transition-all shadow-lg flex items-center justify-center gap-2 group uppercase tracking-widest text-sm ${pkg.popular
-                                ? "bg-[#f1a134] text-white hover:brightness-105 shadow-orange-100"
-                                : "bg-[#072b47] text-white hover:bg-[#072b47]/90 shadow-blue-100"
-                                }`}>
+                            <button
+                                onClick={() => navigate('/#free-consultation')}
+                                className={`w-full py-5 rounded-2xl font-black transition-all shadow-lg flex items-center justify-center gap-2 group uppercase tracking-widest text-sm ${pkg.popular
+                                    ? "bg-[#f1a134] text-white hover:brightness-105 shadow-orange-100"
+                                    : "bg-[#072b47] text-white hover:bg-[#072b47]/90 shadow-blue-100"
+                                    }`}>
                                 {pkg.buttonText || "Get Started Now"}
                                 <ShieldCheck size={18} className="group-hover:rotate-12 transition-transform" />
                             </button>

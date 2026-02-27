@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Download, FileText, ArrowRight } from "lucide-react";
 
 /**
@@ -7,6 +8,7 @@ import { Download, FileText, ArrowRight } from "lucide-react";
  * Refined for visual rhythm, interaction, and brand consistency.
  */
 const PdfCards = ({ card }) => {
+  const navigate = useNavigate();
   return (
     <div className="group h-full bg-white rounded-3xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_25px_50px_-12px_rgba(7,43,71,0.15)] border border-slate-100 flex flex-col transition-all duration-500 hover:-translate-y-2">
       {/* Image Container */}
@@ -54,12 +56,16 @@ const PdfCards = ({ card }) => {
 
         {/* Action Area - Visual Hierarchy */}
         <div className="flex items-center gap-3 pt-6 border-t border-slate-50 mt-auto">
-          <button className="flex-[3] bg-[#072b47] hover:bg-[#114a7c] text-white font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 transition-all active:scale-[0.98] shadow-md hover:shadow-lg shadow-blue-900/10 group/btn-dl">
+          <button
+            onClick={() => navigate('/pending')}
+            className="flex-[3] bg-[#072b47] hover:bg-[#114a7c] text-white font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 transition-all active:scale-[0.98] shadow-md hover:shadow-lg shadow-blue-900/10 group/btn-dl">
             <Download size={18} className="group-hover/btn-dl:animate-pulse" />
             <span className="text-sm">Download</span>
           </button>
 
-          <button className="flex-[1] h-[52px] border-2 border-slate-100 rounded-xl flex items-center justify-center text-slate-400 hover:text-[#072b47] hover:border-[#FFE90A] hover:bg-[#FFE90A]/5 transition-all group/arrow">
+          <button
+            onClick={() => navigate('/pending')}
+            className="flex-[1] h-[52px] border-2 border-slate-100 rounded-xl flex items-center justify-center text-slate-400 hover:text-[#072b47] hover:border-[#FFE90A] hover:bg-[#FFE90A]/5 transition-all group/arrow">
             <ArrowRight size={20} className="group-hover/arrow:translate-x-1.5 transition-transform duration-300" />
           </button>
         </div>

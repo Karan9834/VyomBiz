@@ -33,6 +33,28 @@ import ContractsAgreements from '../pages/footer/compliance/ContractsAgreements'
 import LegalServices from '../pages/footer/compliance/LegalServices';
 import ConvertYourBusiness from '../pages/footer/compliance/ConvertYourBusiness';
 
+const Pending = lazy(() => import('../pages/pending/Pending'));
+
+const pendingPaths = [
+    "/fundraising-startup",
+    "/startup-india-registration",
+    "/labour-compliance",
+    "/free-legal-documents",
+    "/drone-registration",
+    "/gst-return-filing",
+    "/professional-tax-registration",
+    "/trademark-objection",
+    "/trademark-rectification",
+    "/nbfc-registration",
+    "/nbfc-takeover",
+    "/ffmc-license",
+    "/microfinance-company-registration",
+    "/epr-fulfillment-ewaste",
+    "/ewaste-recycling-authorization",
+    "/refurbisher-authorization",
+    "/plastic-waste-authorization"
+];
+
 const MainRoutes = [
     <Route key="home" path="/" element={<Home />} />,
     <Route key="business-registration" path="/business-registration" element={<BusinessRegistration />} />,
@@ -63,6 +85,8 @@ const MainRoutes = [
 
     <Route key="regu" path="/regulatory" element={<Regulatory />} />,
     <Route key="env" path="/environmental" element={<Environmental />} />,
+
+    ...pendingPaths.map(path => <Route key={`pending-${path}`} path={path} element={<Pending />} />),
 
     <Route key="not-found" path="*" element={<NotFound />} />,
 ];

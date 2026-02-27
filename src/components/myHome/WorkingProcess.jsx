@@ -1,18 +1,19 @@
-// WorkingProcess.tsx
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Shield, CheckCircle2, FileText, ArrowRight, Clock } from "lucide-react";
 
 const ipServices = [
-  "Trademark Registration",
-  "Copyright Registration",
-  "Patent Registration",
-  "IP Infringement",
-  "Design Registration",
-  "Free Legal Documents",
-  "Business Contracts",
+  { name: "Trademark Registration", path: "/trademark-registration" },
+  { name: "Copyright Registration", path: "/copyright-registration" },
+  { name: "Patent Registration", path: "/patent-registration" },
+  { name: "IP Infringement", path: "/intellectual-property-infringement" },
+  { name: "Design Registration", path: "/design-registration" },
+  { name: "Free Legal Documents", path: "/free-legal-documents" },
+  { name: "Business Contracts", path: "/contracts-agreements" },
 ];
 
 const WorkingProcess = () => {
+  const navigate = useNavigate();
   return (
     <section id="working-process-section" className="w-full bg-white py-6 md:py-8">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
@@ -44,13 +45,14 @@ const WorkingProcess = () => {
                 {ipServices.map((service, index) => (
                   <div
                     key={index}
+                    onClick={() => service.path !== "#" && navigate(service.path)}
                     className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50/50 hover:shadow-sm cursor-pointer transition-all duration-300 group border border-transparent hover:border-[#005a9c]/20"
                   >
                     <div className="w-8 h-8 flex items-center justify-center bg-[#005a9c]/10 rounded-lg shrink-0 group-hover:bg-[#FFE90A]/20 transition-all duration-300">
                       <Shield className="w-4 h-4 text-[#005a9c] group-hover:text-[#072b47]" strokeWidth={2} />
                     </div>
                     <span className="text-[#072b47] font-semibold text-base group-hover:text-[#005a9c] transition-colors flex-1 leading-snug">
-                      {service}
+                      {service.name}
                     </span>
                     <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#005a9c] group-hover:translate-x-1 transition-all duration-300 opacity-0 group-hover:opacity-100" />
                   </div>

@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { CheckCircle, Play } from "lucide-react";
 import processImage from "/Home-page/who-we-are.png";
 import CTAButton from "../common/CTAButton";
 
 const WhoWeAre = () => {
+  const navigate = useNavigate();
   const processSteps = [
     { text: "We Do Our Research.", delay: "0ms" },
     { text: "We Meet Our Client.", delay: "100ms" },
@@ -70,8 +72,12 @@ const WhoWeAre = () => {
 
                 {/* CTA Button */}
                 <div className="mt-4">
-                  <CTAButton label="Get Started" className="!px-10 !py-4 !text-lg" variant="yellow" />
-
+                  <CTAButton
+                    label="Get Started"
+                    onClick={() => navigate('/contact')}
+                    className="!px-10 !py-4 !text-lg"
+                    variant="yellow"
+                  />
                 </div>
 
               </div>

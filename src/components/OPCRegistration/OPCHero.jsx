@@ -3,7 +3,8 @@ import HeroLayout from "../common/HeroLayout";
 
 const OPCHero = () => {
     return (
-        <HeroLayout
+        <div id="registration-hero">
+            <HeroLayout
             announcementText="We are India's leading brand for One Person Company Registration."
             heroTitleMain="OPC Registration"
             heroSubtitle="Avail 50% Off – Professional Services"
@@ -16,6 +17,7 @@ const OPCHero = () => {
             ]}
             successRateText="Successfully Registered 12,000+ OPCs, 99% Success Rate"
         />
+        </div>
     );
 };
 

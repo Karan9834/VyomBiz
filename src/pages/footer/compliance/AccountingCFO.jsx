@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import React from 'react';
 import complainceimg from '../../../assets/compliancefooter/compliance.png';
 import { 
@@ -11,6 +12,7 @@ import {
 } from 'lucide-react';
 
 const AccountingCFO = () => {
+  const navigate = useNavigate();
     // Accounting & CFO services based on the HTML
     const accountingServices = [
         {

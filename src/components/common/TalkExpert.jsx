@@ -6,8 +6,11 @@ import {
     Users,
     MonitorCheck
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const TalkExpert = ({ expertise = "Expertise in NGO CSR-1 Filing" }) => {
+    const navigate = useNavigate();
+
     return (
         <section className="w-full bg-white py-10 px-6 lg:px-16">
 
@@ -40,15 +43,23 @@ const TalkExpert = ({ expertise = "Expertise in NGO CSR-1 Filing" }) => {
                     </div>
 
                     <div className="flex gap-4 mt-6">
-                        <button className="flex items-center justify-center gap-2 bg-white text-[#0B4C7C] font-medium px-6 py-3 rounded-md w-full transition hover:scale-105">
+                        <button
+                            onClick={() => navigate('/#free-consultation')}
+                            className="flex items-center justify-center gap-2 bg-white text-[#0B4C7C] font-medium px-6 py-3 rounded-md w-full transition hover:scale-105"
+                        >
                             <Phone size={18} />
                             Call Now
                         </button>
 
-                        <button className="flex items-center justify-center gap-2 bg-green-500 text-white font-medium px-6 py-3 rounded-md w-full transition hover:scale-105">
+                        <a
+                            href="https://wa.me/919121230280"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center gap-2 bg-green-500 text-white font-medium px-6 py-3 rounded-md w-full transition hover:scale-105"
+                        >
                             <MessageCircle size={18} />
                             Chat With Us
-                        </button>
+                        </a>
                     </div>
                 </div>
 

@@ -1,19 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Building2, CheckCircle2, ArrowRight } from "lucide-react";
 
 const businessServices = [
-  "Private Limited Company Registration",
-  "Limited Liability Partnership Registration",
-  "One Person Company Registration",
-  "Sole Proprietorship Registration",
-  "Producer Company Registration",
-  "Partnership Firm Registration",
-  "Startup India Registration",
-  "NGO Registration",
-  "Fundraising for startup",
+  { name: "Private Limited Company Registration", path: "/company-registration" },
+  { name: "Limited Liability Partnership Registration", path: "/llp-registration" },
+  { name: "One Person Company Registration", path: "/one-person-company-registration" },
+  { name: "Sole Proprietorship Registration", path: "/sole-proprietorship-registration" },
+  { name: "Producer Company Registration", path: "/producer-company-registration" },
+  { name: "Partnership Firm Registration", path: "/partnership-firm-registration" },
+  { name: "Startup India Registration", path: "/startup-india-registration" },
+  { name: "NGO Registration", path: "/ngo-registration" },
+  { name: "Fundraising for startup", path: "/fundraising-startup" },
 ];
 
 const PremiumPlatform = () => {
+  const navigate = useNavigate();
   return (
     <section id="premium-platform-section" className="w-full bg-white py-6 md:py-8">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
@@ -46,13 +48,14 @@ const PremiumPlatform = () => {
                 {businessServices.map((service, index) => (
                   <div
                     key={index}
+                    onClick={() => service.path !== "#" && navigate(service.path)}
                     className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-50/50 hover:shadow-sm cursor-pointer transition-all duration-300 group border border-transparent hover:border-[#005a9c]/20"
                   >
                     <div className="w-8 h-8 flex items-center justify-center bg-[#005a9c]/10 rounded-lg shrink-0 group-hover:bg-[#FFE90A]/20 transition-all duration-300">
                       <Building2 className="w-4 h-4 text-[#005a9c] group-hover:text-[#072b47]" strokeWidth={2} />
                     </div>
                     <span className="text-[#072b47] font-semibold text-base group-hover:text-[#005a9c] transition-colors flex-1 leading-snug">
-                      {service}
+                      {service.name}
                     </span>
                     <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#005a9c] group-hover:translate-x-1 transition-all duration-300 opacity-0 group-hover:opacity-100" />
                   </div>

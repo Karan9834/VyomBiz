@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import CTAButton from "../common/CTAButton";
 
 const AboutFooterCTA = () => {
+    const navigate = useNavigate();
     return (
         <section className="py-20 bg-slate-50">
             <div className="container mx-auto px-6">
@@ -26,6 +28,7 @@ const AboutFooterCTA = () => {
                             <div className="flex flex-col sm:flex-row gap-6 mt-4">
                                 <CTAButton
                                     label="Connect with Experts"
+                                    onClick={() => navigate('/contact')}
                                     className="!px-10 !py-5 !text-base !rounded-2xl shadow-xl shadow-blue-900/40"
                                 />
                                 <button className="px-10 py-5 rounded-2xl border border-white/20 text-white font-bold hover:bg-white/5 transition-all text-base">

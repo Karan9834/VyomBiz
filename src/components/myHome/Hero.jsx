@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { ChevronRight, Rocket, FileText, CheckCircle2, Shield, Upload, FileCheck } from "lucide-react";
 
 const Hero = () => {
+  const navigate = useNavigate();
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -17,10 +19,10 @@ const Hero = () => {
   };
 
   const topButtons = [
-    "Trademark Registration",
-    "GST Registration",
-    "Company Registration",
-    "Lawyer Consultation",
+    { name: "Trademark Registration", path: "/trademark-registration" },
+    { name: "GST Registration", path: "/gst-registration" },
+    { name: "Company Registration", path: "/company-registration" },
+    { name: "Lawyer Consultation", path: "/lawyers-services" },
   ];
 
   const cards = [
@@ -85,9 +87,10 @@ const Hero = () => {
             {topButtons.map((button, index) => (
               <button
                 key={index}
+                onClick={() => navigate(button.path)}
                 className="px-4 md:px-5 py-2 bg-[#FFE90A] border border-[#FFE90A]/60 rounded-full text-[#072b47] text-xs md:text-sm font-bold hover:bg-white hover:border-white hover:text-[#072b47] transition-all duration-300 shadow-md hover:shadow-lg active:scale-95"
               >
-                {button}
+                {button.name}
               </button>
             ))}
           </div>

@@ -127,7 +127,7 @@ const TradeEligibility = () => {
                 </div>
 
                 <div className="mt-12 text-center">
-                    <button className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                    <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
                         Find My Trade Category
                     </button>
                 </div>
@@ -242,7 +242,7 @@ const TradeProcessSection = () => {
                         ))}
                         <div className="border-t border-slate-200"></div>
                         <div className="mt-12 text-center">
-                            <button className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
                                 Let Experts Manage Your Application
                             </button>
                         </div>

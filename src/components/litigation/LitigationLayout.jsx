@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
     Check,
     Star,
@@ -13,6 +14,7 @@ import {
 } from 'lucide-react';
 
 const LitigationLayout = ({ content }) => {
+    const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('overview');
     const [scrolled, setScrolled] = useState(false);
     const [openFaq, setOpenFaq] = useState(null);
@@ -409,7 +411,10 @@ const LitigationLayout = ({ content }) => {
                                         Contact our expert defamation lawyers today for a confidential evaluation of your case.
                                     </p>
                                     <div className="flex flex-wrap justify-center gap-4">
-                                        <button className="bg-white text-[#072b47] px-8 py-4 rounded-xl font-bold hover:bg-blue-50 transition-all active:scale-95 flex items-center gap-2">
+                                        <button
+                                            onClick={() => navigate('/#free-consultation')}
+                                            className="bg-white text-[#072b47] px-8 py-4 rounded-xl font-bold hover:bg-blue-50 transition-all active:scale-95 flex items-center gap-2"
+                                        >
                                             Get Free Consultation <ArrowRight size={20} />
                                         </button>
                                         <button className="bg-transparent border-2 border-white/20 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all">

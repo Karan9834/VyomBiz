@@ -144,7 +144,7 @@ const AccountingEligibility = () => {
                 </div>
 
                 <div className="mt-12 text-center">
-                    <button className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                    <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
                         Get Accounting Support Now
                     </button>
                 </div>
@@ -301,7 +301,7 @@ const AccountingProcessSection = () => {
 
                         {/* CTA */}
                         <div className="mt-12 text-center">
-                            <button className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
                                 Start Your Accounting Setup Now
                             </button>
                         </div>

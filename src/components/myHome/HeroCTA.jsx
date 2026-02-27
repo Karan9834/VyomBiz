@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { MapPin, Phone, Mail, ArrowRight, CheckCircle2, ShieldCheck, Loader2 } from "lucide-react";
 
 /**
@@ -7,6 +8,7 @@ import { MapPin, Phone, Mail, ArrowRight, CheckCircle2, ShieldCheck, Loader2 } f
  * Strictly adheres to VyomBiz brand guidelines.
  */
 const HeroCTA = () => {
+    const location = useLocation();
     const [formData, setFormData] = useState({
         fullName: "",
         email: "",
@@ -18,6 +20,18 @@ const HeroCTA = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
     const [isValid, setIsValid] = useState(false);
+
+    // Scroll into view if URL contains #free-consultation
+    useEffect(() => {
+        if (location.hash === '#free-consultation') {
+            const element = document.getElementById('free-consultation');
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+        }
+    }, [location.hash]);
 
     // Real-time validation
     useEffect(() => {
@@ -64,7 +78,7 @@ const HeroCTA = () => {
     };
 
     return (
-        <section className="relative w-full overflow-hidden bg-white py-4 md:py-6">
+        <section id="free-consultation" className="relative w-full overflow-hidden bg-white py-4 md:py-6">
             <div className="max-w-[1440px] mx-auto px-4 md:px-10 lg:px-12 animate-fade-in">
                 <div className="relative flex flex-col lg:flex-row items-stretch overflow-hidden rounded-[2rem] bg-white shadow-[0_40px_80px_-20px_rgba(7,43,71,0.08)] border border-slate-50 min-h-[450px]">
 

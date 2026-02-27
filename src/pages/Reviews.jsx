@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { BsArrowRight, BsChevronLeft, BsChevronRight } from "react-icons/bs";
@@ -53,6 +54,7 @@ const reviewsData = [
 ];
 
 const Reviews = () => {
+    const navigate = useNavigate();
     const [active, setActive] = useState("All");
 
     const filteredReviews =
@@ -77,7 +79,10 @@ const Reviews = () => {
                             reviews with a rating of 4.9/5.
                         </p>
 
-                        <button className="mt-6 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full flex items-center gap-2 font-medium transition">
+                        <button
+                            onClick={() => navigate('/pending', { state: { title: 'Write a Review' } })}
+                            className="mt-6 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full flex items-center gap-2 font-medium transition"
+                        >
                             Write a Review
                             <BsArrowRight />
                         </button>

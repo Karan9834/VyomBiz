@@ -3,7 +3,8 @@ import HeroLayout from "../common/HeroLayout";
 
 const LLPHero = () => {
     return (
-        <HeroLayout
+        <div id="registration-hero">
+            <HeroLayout
             announcementText="We are India's leading brand for LLP Registration."
             heroTitleMain="LLP Registration"
             heroSubtitle="Avail 50% Off – Professional Services"
@@ -16,6 +17,7 @@ const LLPHero = () => {
             ]}
             successRateText="Successfully Registered 3,000+ LLPs, 99% Success Rate"
         />
+        </div>
     );
 };
 

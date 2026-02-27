@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import React from 'react';
 import { 
     CheckCircle, Search, Star, MapPin, ArrowRight, Rocket, 
@@ -10,6 +11,7 @@ import {
 import complainceimg from '../../../assets/compliancefooter/compliance.png';
 
 const TaxFilingCompliance = () => {
+  const navigate = useNavigate();
     // Tax filing services based on the HTML
     const taxServices = [
         {

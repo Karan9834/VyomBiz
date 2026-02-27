@@ -57,7 +57,7 @@ const BusinessRegistration = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center gap-6 mb-12">
-                            <button className="w-full sm:w-auto bg-[#005a9c] text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 shadow-2xl shadow-blue-900/20 active:scale-95 transition-all">
+                            <button onClick={() => navigate('/#free-consultation')} className="w-full sm:w-auto bg-[#005a9c] text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 shadow-2xl shadow-blue-900/20 active:scale-95 transition-all">
                                 Get Started Now
                             </button>
                             <div className="flex items-center gap-4">

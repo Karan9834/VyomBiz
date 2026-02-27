@@ -1,8 +1,10 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import CTAButton from "../common/CTAButton";
 
 const OldVsNewWay = () => {
+    const navigate = useNavigate();
     return (
         <section className="py-16 md:py-20 bg-[#ecf2fd]">
             <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
@@ -84,6 +86,7 @@ const OldVsNewWay = () => {
                         label="Get Started with VyomBiz Today"
                         className="!px-12 !py-4 !text-lg !rounded-2xl tracking-wide"
                         variant="yellow"
+                        onClick={() => navigate('/contact')}
                     />
 
                 </div>

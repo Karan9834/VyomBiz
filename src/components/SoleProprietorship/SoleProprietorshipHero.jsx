@@ -3,7 +3,8 @@ import HeroLayout from "../common/HeroLayout";
 
 const SoleProprietorshipHero = () => {
     return (
-        <HeroLayout
+        <div id="registration-hero">
+            <HeroLayout
             announcementText="We are India's leading brand for Sole Proprietorship Registration."
             heroTitleMain="Sole Proprietorship"
             heroTitleSuffix="Registration"
@@ -19,6 +20,7 @@ const SoleProprietorshipHero = () => {
             ]}
             successRateText="Successfully Registered 2,00,000+ Proprietorships, 99% Success Rate"
         />
+        </div>
     );
 };
 
