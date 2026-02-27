@@ -1,0 +1,179 @@
+import React, { lazy } from 'react';
+import { Route } from 'react-router-dom';
+
+// Lazy imports for Environmental pages
+const LithiumIonBatteryImportLicense = lazy(() => import('../pages/environmental/BatteryWasteManagement/LithiumIonBatteryImportLicense'));
+const NewLeadAcidBatteryImportLicense = lazy(() => import('../pages/environmental/BatteryWasteManagement/NewLeadAcidBatteryImportLicense'));
+const RegistrationForLeadAcidBatteryRecycling = lazy(() => import('../pages/environmental/BatteryWasteManagement/RegistrationForLeadAcidBatteryRecycling'));
+const RegistrationForScrapBatteryImport = lazy(() => import('../pages/environmental/BatteryWasteManagement/RegistrationForScrapBatteryImport'));
+const CDPReporting = lazy(() => import('../pages/environmental/EIA/CDPReporting'));
+const ConsentForOperationFO = lazy(() => import('../pages/environmental/EIA/ConsentForOperationFO'));
+const EnvironmentalAuditing = lazy(() => import('../pages/environmental/EIA/EnvironmentalAuditing'));
+const EnvironmentalClearance = lazy(() => import('../pages/environmental/EIA/EnvironmentalClearance'));
+const EnvironmentalImpactAssessmentIA = lazy(() => import('../pages/environmental/EIA/EnvironmentalImpactAssessmentIA'));
+const EnvironmentalManagementPlanReport = lazy(() => import('../pages/environmental/EIA/EnvironmentalManagementPlanReport'));
+const ExtendedProducerResponsibility = lazy(() => import('../pages/environmental/EIA/ExtendedProducerResponsibility'));
+const HalfYearlyEnvironmentalCompliance = lazy(() => import('../pages/environmental/EIA/HalfYearlyEnvironmentalCompliance'));
+const HydrogeologicalSurveyReport = lazy(() => import('../pages/environmental/EIA/HydrogeologicalSurveyReport'));
+const SocialImpactAssessment = lazy(() => import('../pages/environmental/EIA/SocialImpactAssessment'));
+const SoilTesting = lazy(() => import('../pages/environmental/EIA/SoilTesting'));
+const StatePollutionControlBoardPCBOC = lazy(() => import('../pages/environmental/EIA/StatePollutionControlBoardPCBOC'));
+const WildlifeConservationPlan = lazy(() => import('../pages/environmental/EIA/WildlifeConservationPlan'));
+const CarbonCreditTradingScheme = lazy(() => import('../pages/environmental/EnvironmentalAdvisory/CarbonCreditTradingScheme'));
+const ConstructionAndDemolitionDasteRecycling = lazy(() => import('../pages/environmental/EnvironmentalAdvisory/ConstructionAndDemolitionDasteRecycling'));
+const EnvironmentalDueDiligenceServices = lazy(() => import('../pages/environmental/EnvironmentalAdvisory/EnvironmentalDueDiligenceServices'));
+const EnvironmentocialAndGovernanceSGtrategies = lazy(() => import('../pages/environmental/EnvironmentalAdvisory/EnvironmentocialAndGovernanceSGtrategies'));
+const RiskAssessment = lazy(() => import('../pages/environmental/EnvironmentalAdvisory/RiskAssessment'));
+const SupplyChainAndHumanRightsAndEnvironmentalDueDiligence = lazy(() => import('../pages/environmental/EnvironmentalAdvisory/SupplyChainAndHumanRightsAndEnvironmentalDueDiligence'));
+const ESDDInAerospaceIndustry = lazy(() => import('../pages/environmental/EnvironmentalIndustry/ESDDInAerospaceIndustry'));
+const ESDDInAgriculturalEquipmentManufacturingIndustry = lazy(() => import('../pages/environmental/EnvironmentalIndustry/ESDDInAgriculturalEquipmentManufacturingIndustry'));
+const ESDDInDairyIndustry = lazy(() => import('../pages/environmental/EnvironmentalIndustry/ESDDInDairyIndustry'));
+const ESDDInFinancialankingSector = lazy(() => import('../pages/environmental/EnvironmentalIndustry/ESDDInFinancialankingSector'));
+const ESDDInFoodProcessingIndustry = lazy(() => import('../pages/environmental/EnvironmentalIndustry/ESDDInFoodProcessingIndustry'));
+const ESDDInFurnitureAndFixturesIndustry = lazy(() => import('../pages/environmental/EnvironmentalIndustry/ESDDInFurnitureAndFixturesIndustry'));
+const ESDDInIronAndSteelIndustry = lazy(() => import('../pages/environmental/EnvironmentalIndustry/ESDDInIronAndSteelIndustry'));
+const ESDDInRenewableEnergyIndustry = lazy(() => import('../pages/environmental/EnvironmentalIndustry/ESDDInRenewableEnergyIndustry'));
+const ESDDInSolarEnergyIndustry = lazy(() => import('../pages/environmental/EnvironmentalIndustry/ESDDInSolarEnergyIndustry'));
+const ESDDInTheSugarIndustry = lazy(() => import('../pages/environmental/EnvironmentalIndustry/ESDDInTheSugarIndustry'));
+const ESDDInTobaccoIndustry = lazy(() => import('../pages/environmental/EnvironmentalIndustry/ESDDInTobaccoIndustry'));
+const AuthorizedVehicleScrappingFacilityVSF = lazy(() => import('../pages/environmental/EnvironmentalLicensing/AuthorizedVehicleScrappingFacilityVSF'));
+const CarbonCreditAccounting = lazy(() => import('../pages/environmental/EnvironmentalLicensing/CarbonCreditAccounting'));
+const CarbonFootprintCalculationConsulting = lazy(() => import('../pages/environmental/EnvironmentalLicensing/CarbonFootprintCalculationConsulting'));
+const FSCCertification = lazy(() => import('../pages/environmental/EnvironmentalLicensing/FSCCertification'));
+const GreenBuildingCertification = lazy(() => import('../pages/environmental/EnvironmentalLicensing/GreenBuildingCertification'));
+const ICATCertification = lazy(() => import('../pages/environmental/EnvironmentalLicensing/ICATCertification'));
+const LEEDZeroCarbonCertification = lazy(() => import('../pages/environmental/EnvironmentalLicensing/LEEDZeroCarbonCertification'));
+const LEEDZeroWaterCertification = lazy(() => import('../pages/environmental/EnvironmentalLicensing/LEEDZeroWaterCertification'));
+const PEFCCertification = lazy(() => import('../pages/environmental/EnvironmentalLicensing/PEFCCertification'));
+const TSDFFacilityServices = lazy(() => import('../pages/environmental/EnvironmentalLicensing/TSDFFacilityServices'));
+const VrikshCertification = lazy(() => import('../pages/environmental/EnvironmentalLicensing/VrikshCertification'));
+const AuthorizationForExportOfEWaste = lazy(() => import('../pages/environmental/EWasteManagement/AuthorizationForExportOfEWaste'));
+const EPRAuthorizationForBatteryWaste = lazy(() => import('../pages/environmental/EWasteManagement/EPRAuthorizationForBatteryWaste'));
+const EPRAuthorizationForEWaste = lazy(() => import('../pages/environmental/EWasteManagement/EPRAuthorizationForEWaste'));
+const EPRCompliance = lazy(() => import('../pages/environmental/EWasteManagement/EPRCompliance'));
+const EPRCredits = lazy(() => import('../pages/environmental/EWasteManagement/EPRCredits'));
+const EPRCreditsFromPlasticWasteRecyclers = lazy(() => import('../pages/environmental/EWasteManagement/EPRCreditsFromPlasticWasteRecyclers'));
+const EPRForImporters = lazy(() => import('../pages/environmental/EWasteManagement/EPRForImporters'));
+const EPRFulfillmentInEWasteManagement = lazy(() => import('../pages/environmental/EWasteManagement/EPRFulfillmentInEWasteManagement'));
+const EPRPostComplianceWaste = lazy(() => import('../pages/environmental/EWasteManagement/EPRPostComplianceWaste'));
+const EPRRegistration = lazy(() => import('../pages/environmental/EWasteManagement/EPRRegistration'));
+const EPRRegistrationForProducersAndBrandOwners = lazy(() => import('../pages/environmental/EWasteManagement/EPRRegistrationForProducersAndBrandOwners'));
+const EPRTargetFulfilment = lazy(() => import('../pages/environmental/EWasteManagement/EPRTargetFulfilment'));
+const EWasteRecyclingAuthorization = lazy(() => import('../pages/environmental/EWasteManagement/EWasteRecyclingAuthorization'));
+const EWasteRecyclingLicense = lazy(() => import('../pages/environmental/EWasteManagement/EWasteRecyclingLicense'));
+const PlasticWasteAuthorization = lazy(() => import('../pages/environmental/EWasteManagement/PlasticWasteAuthorization'));
+const PROAuthorization = lazy(() => import('../pages/environmental/EWasteManagement/PROAuthorization'));
+const RefurbisherAuthorizationAndLicense = lazy(() => import('../pages/environmental/EWasteManagement/RefurbisherAuthorizationAndLicense'));
+const AuthorizationForExportOfHazardousWaste = lazy(() => import('../pages/environmental/HazardousWasteManagement/AuthorizationForExportOfHazardousWaste'));
+const AuthorizationForImportOfHazardousWaste = lazy(() => import('../pages/environmental/HazardousWasteManagement/AuthorizationForImportOfHazardousWaste'));
+const BioMedicalWasteRecyclingPlant = lazy(() => import('../pages/environmental/HazardousWasteManagement/BioMedicalWasteRecyclingPlant'));
+const HazardousWasteExportAuthorisation = lazy(() => import('../pages/environmental/HazardousWasteManagement/HazardousWasteExportAuthorisation'));
+const HazardousWasteManagementAndComplianceAssurance = lazy(() => import('../pages/environmental/HazardousWasteManagement/HazardousWasteManagementAndComplianceAssurance'));
+const HazardousWasteManagementAuthorization = lazy(() => import('../pages/environmental/HazardousWasteManagement/HazardousWasteManagementAuthorization'));
+const IndustrialWasteManagement = lazy(() => import('../pages/environmental/HazardousWasteManagement/IndustrialWasteManagement'));
+const LandWasteManagement = lazy(() => import('../pages/environmental/HazardousWasteManagement/LandWasteManagement'));
+const SolidWasteManagementAuthorization = lazy(() => import('../pages/environmental/HazardousWasteManagement/SolidWasteManagementAuthorization'));
+const EPRAuthorizationForPlasticWasteManagement = lazy(() => import('../pages/environmental/PlasticWasteManagement/EPRAuthorizationForPlasticWasteManagement'));
+const EPRFulfilmentForPlasticWasteManagement = lazy(() => import('../pages/environmental/PlasticWasteManagement/EPRFulfilmentForPlasticWasteManagement'));
+const EPRPostCompliancelasticWaste = lazy(() => import('../pages/environmental/PlasticWasteManagement/EPRPostCompliancelasticWaste'));
+const PlasticWasteProcessorsAuthorisation = lazy(() => import('../pages/environmental/PlasticWasteManagement/PlasticWasteProcessorsAuthorisation'));
+const PlasticWasteRecyclingPlantWM = lazy(() => import('../pages/environmental/PlasticWasteManagement/PlasticWasteRecyclingPlantWM'));
+const CGWAWaterBoring = lazy(() => import('../pages/environmental/PollutionNOC/CGWAWaterBoring'));
+const ConsentForEstablishmentFromSPCB = lazy(() => import('../pages/environmental/PollutionNOC/ConsentForEstablishmentFromSPCB'));
+const DelhiPollutionControlCommittee = lazy(() => import('../pages/environmental/PollutionNOC/DelhiPollutionControlCommittee'));
+const EWasteLicenseForDismantling = lazy(() => import('../pages/environmental/PollutionNOC/EWasteLicenseForDismantling'));
+const FireDepartmentNOC = lazy(() => import('../pages/environmental/PollutionNOC/FireDepartmentNOC'));
+const LicenseForChargingStationInUP = lazy(() => import('../pages/environmental/PollutionNOC/LicenseForChargingStationInUP'));
+const NOCPollutionControlBoard = lazy(() => import('../pages/environmental/PollutionNOC/NOCPollutionControlBoard'));
+const PhaseIISoilAndGroundwaterInvestigations = lazy(() => import('../pages/environmental/PollutionNOC/PhaseIISoilAndGroundwaterInvestigations'));
+const UttarPradeshPollutionControlBoard = lazy(() => import('../pages/environmental/PollutionNOC/UttarPradeshPollutionControlBoard'));
+
+const EnvironmentalRoutes = [
+    <Route key="lithium-ion-battery-import-license" path="/lithium-ion-battery-import-license" element={<LithiumIonBatteryImportLicense />} />,
+    <Route key="new-lead-acid-battery-import-license" path="/new-lead-acid-battery-import-license" element={<NewLeadAcidBatteryImportLicense />} />,
+    <Route key="registration-for-lead-acid-battery-recycling" path="/registration-for-lead-acid-battery-recycling" element={<RegistrationForLeadAcidBatteryRecycling />} />,
+    <Route key="registration-for-scrap-battery-import" path="/registration-for-scrap-battery-import" element={<RegistrationForScrapBatteryImport />} />,
+    <Route key="cdp-reporting" path="/cdp-reporting" element={<CDPReporting />} />,
+    <Route key="consent-for-operation-fo" path="/consent-for-operation-fo" element={<ConsentForOperationFO />} />,
+    <Route key="environmental-auditing" path="/environmental-auditing" element={<EnvironmentalAuditing />} />,
+    <Route key="environmental-clearance" path="/environmental-clearance" element={<EnvironmentalClearance />} />,
+    <Route key="environmental-impact-assessment-ia" path="/environmental-impact-assessment-ia" element={<EnvironmentalImpactAssessmentIA />} />,
+    <Route key="environmental-management-plan-report" path="/environmental-management-plan-report" element={<EnvironmentalManagementPlanReport />} />,
+    <Route key="extended-producer-responsibility" path="/extended-producer-responsibility" element={<ExtendedProducerResponsibility />} />,
+    <Route key="half-yearly-environmental-compliance" path="/half-yearly-environmental-compliance" element={<HalfYearlyEnvironmentalCompliance />} />,
+    <Route key="hydrogeological-survey-report" path="/hydrogeological-survey-report" element={<HydrogeologicalSurveyReport />} />,
+    <Route key="social-impact-assessment" path="/social-impact-assessment" element={<SocialImpactAssessment />} />,
+    <Route key="soil-testing" path="/soil-testing" element={<SoilTesting />} />,
+    <Route key="state-pollution-control-board-pcboc" path="/state-pollution-control-board-pcboc" element={<StatePollutionControlBoardPCBOC />} />,
+    <Route key="wildlife-conservation-plan" path="/wildlife-conservation-plan" element={<WildlifeConservationPlan />} />,
+    <Route key="carbon-credit-trading-scheme" path="/carbon-credit-trading-scheme" element={<CarbonCreditTradingScheme />} />,
+    <Route key="construction-and-demolition-daste-recycling" path="/construction-and-demolition-daste-recycling" element={<ConstructionAndDemolitionDasteRecycling />} />,
+    <Route key="environmental-due-diligence-services" path="/environmental-due-diligence-services" element={<EnvironmentalDueDiligenceServices />} />,
+    <Route key="environmentocial-and-governance-s-gtrategies" path="/environmentocial-and-governance-s-gtrategies" element={<EnvironmentocialAndGovernanceSGtrategies />} />,
+    <Route key="risk-assessment" path="/risk-assessment" element={<RiskAssessment />} />,
+    <Route key="supply-chain-and-human-rights-and-environmental-due-diligence" path="/supply-chain-and-human-rights-and-environmental-due-diligence" element={<SupplyChainAndHumanRightsAndEnvironmentalDueDiligence />} />,
+    <Route key="esdd-in-aerospace-industry" path="/esdd-in-aerospace-industry" element={<ESDDInAerospaceIndustry />} />,
+    <Route key="esdd-in-agricultural-equipment-manufacturing-industry" path="/esdd-in-agricultural-equipment-manufacturing-industry" element={<ESDDInAgriculturalEquipmentManufacturingIndustry />} />,
+    <Route key="esdd-in-dairy-industry" path="/esdd-in-dairy-industry" element={<ESDDInDairyIndustry />} />,
+    <Route key="esdd-in-financialanking-sector" path="/esdd-in-financialanking-sector" element={<ESDDInFinancialankingSector />} />,
+    <Route key="esdd-in-food-processing-industry" path="/esdd-in-food-processing-industry" element={<ESDDInFoodProcessingIndustry />} />,
+    <Route key="esdd-in-furniture-and-fixtures-industry" path="/esdd-in-furniture-and-fixtures-industry" element={<ESDDInFurnitureAndFixturesIndustry />} />,
+    <Route key="esdd-in-iron-and-steel-industry" path="/esdd-in-iron-and-steel-industry" element={<ESDDInIronAndSteelIndustry />} />,
+    <Route key="esdd-in-renewable-energy-industry" path="/esdd-in-renewable-energy-industry" element={<ESDDInRenewableEnergyIndustry />} />,
+    <Route key="esdd-in-solar-energy-industry" path="/esdd-in-solar-energy-industry" element={<ESDDInSolarEnergyIndustry />} />,
+    <Route key="esdd-in-the-sugar-industry" path="/esdd-in-the-sugar-industry" element={<ESDDInTheSugarIndustry />} />,
+    <Route key="esdd-in-tobacco-industry" path="/esdd-in-tobacco-industry" element={<ESDDInTobaccoIndustry />} />,
+    <Route key="authorized-vehicle-scrapping-facility-vsf" path="/authorized-vehicle-scrapping-facility-vsf" element={<AuthorizedVehicleScrappingFacilityVSF />} />,
+    <Route key="carbon-credit-accounting" path="/carbon-credit-accounting" element={<CarbonCreditAccounting />} />,
+    <Route key="carbon-footprint-calculation-consulting" path="/carbon-footprint-calculation-consulting" element={<CarbonFootprintCalculationConsulting />} />,
+    <Route key="fsc-certification" path="/fsc-certification" element={<FSCCertification />} />,
+    <Route key="green-building-certification" path="/green-building-certification" element={<GreenBuildingCertification />} />,
+    <Route key="icat-certification" path="/icat-certification" element={<ICATCertification />} />,
+    <Route key="leed-zero-carbon-certification" path="/leed-zero-carbon-certification" element={<LEEDZeroCarbonCertification />} />,
+    <Route key="leed-zero-water-certification" path="/leed-zero-water-certification" element={<LEEDZeroWaterCertification />} />,
+    <Route key="pefc-certification" path="/pefc-certification" element={<PEFCCertification />} />,
+    <Route key="tsdf-facility-services" path="/tsdf-facility-services" element={<TSDFFacilityServices />} />,
+    <Route key="vriksh-certification" path="/vriksh-certification" element={<VrikshCertification />} />,
+    <Route key="authorization-for-export-of-e-waste" path="/authorization-for-export-of-e-waste" element={<AuthorizationForExportOfEWaste />} />,
+    <Route key="epr-authorization-for-battery-waste" path="/epr-authorization-for-battery-waste" element={<EPRAuthorizationForBatteryWaste />} />,
+    <Route key="epr-authorization-for-e-waste" path="/epr-authorization-for-e-waste" element={<EPRAuthorizationForEWaste />} />,
+    <Route key="epr-compliance" path="/epr-compliance" element={<EPRCompliance />} />,
+    <Route key="epr-credits" path="/epr-credits" element={<EPRCredits />} />,
+    <Route key="epr-credits-from-plastic-waste-recyclers" path="/epr-credits-from-plastic-waste-recyclers" element={<EPRCreditsFromPlasticWasteRecyclers />} />,
+    <Route key="epr-for-importers" path="/epr-for-importers" element={<EPRForImporters />} />,
+    <Route key="epr-fulfillment-in-e-waste-management" path="/epr-fulfillment-in-e-waste-management" element={<EPRFulfillmentInEWasteManagement />} />,
+    <Route key="epr-post-compliance-waste" path="/epr-post-compliance-waste" element={<EPRPostComplianceWaste />} />,
+    <Route key="epr-registration" path="/epr-registration" element={<EPRRegistration />} />,
+    <Route key="epr-registration-for-producers-and-brand-owners" path="/epr-registration-for-producers-and-brand-owners" element={<EPRRegistrationForProducersAndBrandOwners />} />,
+    <Route key="epr-target-fulfilment" path="/epr-target-fulfilment" element={<EPRTargetFulfilment />} />,
+    <Route key="e-waste-recycling-authorization" path="/e-waste-recycling-authorization" element={<EWasteRecyclingAuthorization />} />,
+    <Route key="e-waste-recycling-license" path="/e-waste-recycling-license" element={<EWasteRecyclingLicense />} />,
+    <Route key="plastic-waste-authorization" path="/plastic-waste-authorization" element={<PlasticWasteAuthorization />} />,
+    <Route key="pro-authorization" path="/pro-authorization" element={<PROAuthorization />} />,
+    <Route key="refurbisher-authorization-and-license" path="/refurbisher-authorization-and-license" element={<RefurbisherAuthorizationAndLicense />} />,
+    <Route key="authorization-for-export-of-hazardous-waste" path="/authorization-for-export-of-hazardous-waste" element={<AuthorizationForExportOfHazardousWaste />} />,
+    <Route key="authorization-for-import-of-hazardous-waste" path="/authorization-for-import-of-hazardous-waste" element={<AuthorizationForImportOfHazardousWaste />} />,
+    <Route key="bio-medical-waste-recycling-plant" path="/bio-medical-waste-recycling-plant" element={<BioMedicalWasteRecyclingPlant />} />,
+    <Route key="hazardous-waste-export-authorisation" path="/hazardous-waste-export-authorisation" element={<HazardousWasteExportAuthorisation />} />,
+    <Route key="hazardous-waste-management-and-compliance-assurance" path="/hazardous-waste-management-and-compliance-assurance" element={<HazardousWasteManagementAndComplianceAssurance />} />,
+    <Route key="hazardous-waste-management-authorization" path="/hazardous-waste-management-authorization" element={<HazardousWasteManagementAuthorization />} />,
+    <Route key="industrial-waste-management" path="/industrial-waste-management" element={<IndustrialWasteManagement />} />,
+    <Route key="land-waste-management" path="/land-waste-management" element={<LandWasteManagement />} />,
+    <Route key="solid-waste-management-authorization" path="/solid-waste-management-authorization" element={<SolidWasteManagementAuthorization />} />,
+    <Route key="epr-authorization-for-plastic-waste-management" path="/epr-authorization-for-plastic-waste-management" element={<EPRAuthorizationForPlasticWasteManagement />} />,
+    <Route key="epr-fulfilment-for-plastic-waste-management" path="/epr-fulfilment-for-plastic-waste-management" element={<EPRFulfilmentForPlasticWasteManagement />} />,
+    <Route key="epr-post-compliancelastic-waste" path="/epr-post-compliancelastic-waste" element={<EPRPostCompliancelasticWaste />} />,
+    <Route key="plastic-waste-processors-authorisation" path="/plastic-waste-processors-authorisation" element={<PlasticWasteProcessorsAuthorisation />} />,
+    <Route key="plastic-waste-recycling-plant-wm" path="/plastic-waste-recycling-plant-wm" element={<PlasticWasteRecyclingPlantWM />} />,
+    <Route key="cgwa-water-boring" path="/cgwa-water-boring" element={<CGWAWaterBoring />} />,
+    <Route key="consent-for-establishment-from-spcb" path="/consent-for-establishment-cfe-from-spcb" element={<ConsentForEstablishmentFromSPCB />} />,
+    <Route key="delhi-pollution-control-committee" path="/delhi-pollution-control-committee" element={<DelhiPollutionControlCommittee />} />,
+    <Route key="e-waste-license-for-dismantling" path="/e-waste-license-for-dismantling" element={<EWasteLicenseForDismantling />} />,
+    <Route key="fire-department-noc" path="/fire-department-noc" element={<FireDepartmentNOC />} />,
+    <Route key="license-for-charging-station-in-up" path="/license-for-charging-station-in-up" element={<LicenseForChargingStationInUP />} />,
+    <Route key="noc-pollution-control-board" path="/noc-pollution-control-board" element={<NOCPollutionControlBoard />} />,
+    <Route key="phase-ii-soil-and-groundwater-investigations" path="/phase-ii-soil-and-groundwater-investigations" element={<PhaseIISoilAndGroundwaterInvestigations />} />,
+    <Route key="uttar-pradesh-pollution-control-board" path="/uttar-pradesh-pollution-control-board" element={<UttarPradeshPollutionControlBoard />} />,
+];
+
+export default EnvironmentalRoutes;

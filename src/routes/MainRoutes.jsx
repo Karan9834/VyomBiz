@@ -92,8 +92,6 @@ const MainRoutes = [
     <Route key="hazardous-waste-management" path="/hazardous-waste-management" element={<HazardousWasteManagement />} />,
     <Route key="plastic-waste-management" path="/plastic-waste-management" element={<PlasticWasteManagement />} />,
     <Route key="pollution-noc" path="/pollution-noc" element={<PollutionNOC />} />,
-
-    <Route key="not-found" path="*" element={<NotFound />} />,
 ];
 
 export default MainRoutes;

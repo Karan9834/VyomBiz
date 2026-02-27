@@ -19,7 +19,8 @@ const DetailsLayout = ({
     features = null,
     whyChooseUs = null, // fallback for features
     postCompliance = null,
-    navLabels = {} // optional: override tab labels
+    navLabels = {}, // optional: override tab labels
+    showSectionImages = false
 }) => {
     const [activeSection, setActiveSection] = useState("");
     const overviewRef = useRef(null);
@@ -163,6 +164,12 @@ const DetailsLayout = ({
                                 </div>
                             </div>
                         )}
+
+                        {showSectionImages && (
+                            <div className="mt-12 max-w-5xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100">
+                                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1200" alt="Section Context" className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-1000" />
+                            </div>
+                        )}
                     </section>
                 )}
 
@@ -187,6 +194,12 @@ const DetailsLayout = ({
                                     ))}
                                 </div>
                             </>
+                        )}
+
+                        {showSectionImages && (
+                            <div className="mt-12 max-w-5xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100">
+                                <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=1200" alt="Section Context" className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-1000" />
+                            </div>
                         )}
                     </section>
                 )}
@@ -219,6 +232,12 @@ const DetailsLayout = ({
                                 </div>
                             </div>
                         )}
+
+                        {showSectionImages && (
+                            <div className="mt-12 max-w-5xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100">
+                                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1200" alt="Section Context" className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-1000" />
+                            </div>
+                        )}
                     </section>
                 )}
 
@@ -245,6 +264,12 @@ const DetailsLayout = ({
                                         ))}
                                     </div>
                                 </div>
+                            </div>
+                        )}
+
+                        {showSectionImages && (
+                            <div className="mt-12 max-w-5xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100">
+                                <img src="https://images.unsplash.com/photo-1421789665209-c9b2a435e3fc?auto=format&fit=crop&q=80&w=1200" alt="Section Context" className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-1000" />
                             </div>
                         )}
                     </section>
@@ -277,104 +302,148 @@ const DetailsLayout = ({
                                 </div>
                             </>
                         )}
+
+                        {showSectionImages && (
+                            <div className="mt-12 max-w-5xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100">
+                                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=1200" alt="Section Context" className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-1000" />
+                            </div>
+                        )}
                     </section>
                 )}
 
                 {/* 6. TYPES OF COMPLIANCE */}
                 {typesOfCompliance && (
                     <section id="typesOfCompliance" ref={typesOfComplianceRef} className="py-14 border-b border-slate-50 scroll-mt-24">
-                        <div className="text-center max-w-3xl mx-auto mb-10">
-                            <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-6">{typesOfCompliance.title}</h2>
-                            <p className="text-slate-500 font-bold text-lg italic">"{typesOfCompliance.subtitle}"</p>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {typesOfCompliance.list.map((item, i) => (
-                                <div key={i} className="p-8 bg-slate-50/50 border border-slate-100 rounded-[2rem] hover:bg-white hover:border-[#f1a134]/30 hover:shadow-xl transition-all group">
-                                    <div className="w-10 h-10 bg-[#f1a134]/10 rounded-xl flex items-center justify-center text-[#f1a134] mb-6 font-black">{i + 1}</div>
-                                    <h4 className="text-lg font-black text-[#072b47] mb-3 group-hover:text-[#1e40af] transition-colors">{item.title}</h4>
-                                    <p className="text-xs text-slate-500 font-bold leading-relaxed">{item.desc}</p>
+                        {React.isValidElement(typesOfCompliance) ? typesOfCompliance : (
+                            <>
+                                <div className="text-center max-w-3xl mx-auto mb-10">
+                                    <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-6">{typesOfCompliance.title}</h2>
+                                    <p className="text-slate-500 font-bold text-lg italic">"{typesOfCompliance.subtitle}"</p>
                                 </div>
-                            ))}
-                        </div>
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                    {typesOfCompliance.list.map((item, i) => (
+                                        <div key={i} className="p-8 bg-slate-50/50 border border-slate-100 rounded-[2rem] hover:bg-white hover:border-[#f1a134]/30 hover:shadow-xl transition-all group">
+                                            <div className="w-10 h-10 bg-[#f1a134]/10 rounded-xl flex items-center justify-center text-[#f1a134] mb-6 font-black">{i + 1}</div>
+                                            <h4 className="text-lg font-black text-[#072b47] mb-3 group-hover:text-[#1e40af] transition-colors">{item.title}</h4>
+                                            <p className="text-xs text-slate-500 font-bold leading-relaxed">{item.desc}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </>
+                        )}
+
+                        {showSectionImages && (
+                            <div className="mt-12 max-w-5xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100">
+                                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1200" alt="Section Context" className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-1000" />
+                            </div>
+                        )}
                     </section>
                 )}
 
                 {/* 7. DUE DATES SECTION (Table) */}
                 {dueDates && (
                     <section id="dueDates" ref={dueDatesRef} className="py-14 border-b border-slate-50 scroll-mt-24">
-                        <div className="text-center max-w-3xl mx-auto mb-10">
-                            <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-6">{dueDates.title}</h2>
-                            <p className="text-slate-500 font-bold text-lg italic">"{dueDates.subtitle}"</p>
-                        </div>
-                        <div className="overflow-hidden rounded-[2.5rem] border border-slate-100 shadow-2xl overflow-x-auto">
-                            <table className="w-full text-left border-collapse min-w-[600px]">
-                                <thead className="bg-[#072b47] text-white">
-                                    <tr>
-                                        {dueDates.columns.map((col, i) => (
-                                            <th key={i} className="px-8 py-6 font-black text-sm uppercase tracking-widest">{col}</th>
-                                        ))}
-                                    </tr>
-                                </thead>
-                                <tbody className="bg-white">
-                                    {dueDates.rows.map((row, i) => (
-                                        <tr key={i} className="border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
-                                            {row.map((cell, j) => (
-                                                <td key={j} className={`px-8 py-5 text-[14px] font-bold ${j === 0 ? 'text-[#072b47]' : 'text-slate-500'}`}>{cell}</td>
+                        {React.isValidElement(dueDates) ? dueDates : (
+                            <>
+                                <div className="text-center max-w-3xl mx-auto mb-10">
+                                    <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-6">{dueDates.title}</h2>
+                                    <p className="text-slate-500 font-bold text-lg italic">"{dueDates.subtitle}"</p>
+                                </div>
+                                <div className="overflow-hidden rounded-[2.5rem] border border-slate-100 shadow-2xl overflow-x-auto">
+                                    <table className="w-full text-left border-collapse min-w-[600px]">
+                                        <thead className="bg-[#072b47] text-white">
+                                            <tr>
+                                                {dueDates.columns.map((col, i) => (
+                                                    <th key={i} className="px-8 py-6 font-black text-sm uppercase tracking-widest">{col}</th>
+                                                ))}
+                                            </tr>
+                                        </thead>
+                                        <tbody className="bg-white">
+                                            {dueDates.rows.map((row, i) => (
+                                                <tr key={i} className="border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
+                                                    {row.map((cell, j) => (
+                                                        <td key={j} className={`px-8 py-5 text-[14px] font-bold ${j === 0 ? 'text-[#072b47]' : 'text-slate-500'}`}>{cell}</td>
+                                                    ))}
+                                                </tr>
                                             ))}
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </>
+                        )}
+
+                        {showSectionImages && (
+                            <div className="mt-12 max-w-5xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100">
+                                <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=1200" alt="Section Context" className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-1000" />
+                            </div>
+                        )}
                     </section>
                 )}
 
                 {/* 8. EVENT-BASED COMPLIANCE */}
                 {eventBasedCompliance && (
                     <section id="eventBasedCompliance" ref={eventBasedComplianceRef} className="py-14 border-b border-slate-50 scroll-mt-24">
-                        <div className="flex flex-col lg:flex-row gap-16 items-center">
-                            <div className="lg:w-1/2">
-                                <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-8 tracking-tight">{eventBasedCompliance.title}</h2>
-                                <p className="text-slate-500 font-bold text-lg italic border-l-4 border-[#f1a134] pl-6 mb-12">"{eventBasedCompliance.subtitle}"</p>
-                                <div className="grid gap-4">
-                                    {eventBasedCompliance.list.map((item, i) => (
-                                        <div key={i} className="flex items-center gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100 hover:bg-white hover:border-orange-200 transition-all">
-                                            <div className="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center text-[#f1a134]"><CheckCircle2 size={16} /></div>
-                                            <span className="font-black text-[#072b47] text-sm">{typeof item === 'string' ? item : item.title}</span>
-                                        </div>
-                                    ))}
+                        {React.isValidElement(eventBasedCompliance) ? eventBasedCompliance : (
+                            <div className="flex flex-col lg:flex-row gap-16 items-center">
+                                <div className="lg:w-1/2">
+                                    <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-8 tracking-tight">{eventBasedCompliance.title}</h2>
+                                    <p className="text-slate-500 font-bold text-lg italic border-l-4 border-[#f1a134] pl-6 mb-12">"{eventBasedCompliance.subtitle}"</p>
+                                    <div className="grid gap-4">
+                                        {eventBasedCompliance.list.map((item, i) => (
+                                            <div key={i} className="flex items-center gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100 hover:bg-white hover:border-orange-200 transition-all">
+                                                <div className="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center text-[#f1a134]"><CheckCircle2 size={16} /></div>
+                                                <span className="font-black text-[#072b47] text-sm">{typeof item === 'string' ? item : item.title}</span>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="lg:w-1/2">
-                                <div className="bg-[#072b47] p-12 rounded-[3rem] text-white shadow-2xl relative overflow-hidden">
-                                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full translate-x-1/3 -translate-y-1/3" />
-                                    <h3 className="text-2xl font-black mb-6 relative z-10">Penalty Warning</h3>
-                                    <p className="text-blue-100/70 font-bold text-sm leading-relaxed mb-8 relative z-10">Any non-compliance for event-based activities results in substantial penalties and legal scrutiny. Ensure every change is reported within 30 days.</p>
-                                    <div className="flex items-center gap-4 p-4 bg-white/10 rounded-2xl border border-white/10 relative z-10">
-                                        <div className="text-[#f1a134] font-black text-xl">30 Days</div>
-                                        <div className="text-[10px] font-bold uppercase tracking-widest text-blue-200">Mandatory ROC notification window</div>
+                                <div className="lg:w-1/2">
+                                    <div className="bg-[#072b47] p-12 rounded-[3rem] text-white shadow-2xl relative overflow-hidden">
+                                        <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full translate-x-1/3 -translate-y-1/3" />
+                                        <h3 className="text-2xl font-black mb-6 relative z-10">Penalty Warning</h3>
+                                        <p className="text-blue-100/70 font-bold text-sm leading-relaxed mb-8 relative z-10">Any non-compliance for event-based activities results in substantial penalties and legal scrutiny. Ensure every change is reported within 30 days.</p>
+                                        <div className="flex items-center gap-4 p-4 bg-white/10 rounded-2xl border border-white/10 relative z-10">
+                                            <div className="text-[#f1a134] font-black text-xl">30 Days</div>
+                                            <div className="text-[10px] font-bold uppercase tracking-widest text-blue-200">Mandatory ROC notification window</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        )}
+
+                        {showSectionImages && (
+                            <div className="mt-12 max-w-5xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100">
+                                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1200" alt="Section Context" className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-1000" />
+                            </div>
+                        )}
                     </section>
                 )}
 
                 {/* 9. NON-REGISTRAR FILINGS */}
                 {nonRegistrarFilings && (
                     <section id="nonRegistrarFilings" ref={nonRegistrarFilingsRef} className="py-14 border-b border-slate-50 scroll-mt-24">
-                        <div className="text-center max-w-3xl mx-auto mb-10">
-                            <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-6">{nonRegistrarFilings.title}</h2>
-                            <p className="text-slate-500 font-bold text-lg italic">"{nonRegistrarFilings.subtitle}"</p>
-                        </div>
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-                            {nonRegistrarFilings.list.map((item, i) => (
-                                <div key={i} className="p-8 bg-white border border-slate-100 rounded-3xl text-center shadow-lg hover:-translate-y-2 transition-all group">
-                                    <div className="text-[#f1a134] mb-4 group-hover:scale-110 transition-transform"><FileText size={32} className="mx-auto" /></div>
-                                    <h4 className="font-black text-[#072b47] text-sm group-hover:text-[#1e40af] transition-colors">{typeof item === 'string' ? item : item.title}</h4>
+                        {React.isValidElement(nonRegistrarFilings) ? nonRegistrarFilings : (
+                            <>
+                                <div className="text-center max-w-3xl mx-auto mb-10">
+                                    <h2 className="text-3xl lg:text-5xl font-black text-[#072b47] mb-6">{nonRegistrarFilings.title}</h2>
+                                    <p className="text-slate-500 font-bold text-lg italic">"{nonRegistrarFilings.subtitle}"</p>
                                 </div>
-                            ))}
-                        </div>
+                                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                                    {nonRegistrarFilings.list.map((item, i) => (
+                                        <div key={i} className="p-8 bg-white border border-slate-100 rounded-3xl text-center shadow-lg hover:-translate-y-2 transition-all group">
+                                            <div className="text-[#f1a134] mb-4 group-hover:scale-110 transition-transform"><FileText size={32} className="mx-auto" /></div>
+                                            <h4 className="font-black text-[#072b47] text-sm group-hover:text-[#1e40af] transition-colors">{typeof item === 'string' ? item : item.title}</h4>
+                                        </div>
+                                    ))}
+                                </div>
+                            </>
+                        )}
+
+                        {showSectionImages && (
+                            <div className="mt-12 max-w-5xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100">
+                                <img src="https://images.unsplash.com/photo-1421789665209-c9b2a435e3fc?auto=format&fit=crop&q=80&w=1200" alt="Section Context" className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-1000" />
+                            </div>
+                        )}
                     </section>
                 )}
 
@@ -404,6 +473,12 @@ const DetailsLayout = ({
                                 </div>
                             </div>
                         )}
+
+                        {showSectionImages && (
+                            <div className="mt-12 max-w-5xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100">
+                                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=1200" alt="Section Context" className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-1000" />
+                            </div>
+                        )}
                     </section>
                 )}
 
@@ -431,6 +506,12 @@ const DetailsLayout = ({
                                         </div>
                                     ))}
                                 </div>
+                            </div>
+                        )}
+
+                        {showSectionImages && (
+                            <div className="mt-12 max-w-5xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100">
+                                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1200" alt="Section Context" className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-1000" />
                             </div>
                         )}
                     </section>
