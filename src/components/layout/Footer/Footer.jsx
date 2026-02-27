@@ -42,7 +42,7 @@ const Footer = () => {
                                     </button>
                                 </div>
                                 <p className="text-[12px] text-slate-500 mt-4 text-center sm:text-left font-medium">
-                                    By subscribing, you agree to our <Link to="/privacy-policy" className="text-white hover:underline">Privacy Policy</Link>.
+                                    By subscribing, you agree to our <Link to="/privacy-policy" className="text-white hover:text-[#FFE90A] transition-colors duration-300">Privacy Policy</Link>.
                                 </p>
                             </form>
                         </div>
@@ -62,15 +62,15 @@ const Footer = () => {
                         </p>
 
                         <div className="space-y-4 pt-4">
-                            <div className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors cursor-default group">
-                                <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center group-hover:bg-[#005a9c] transition-all">
-                                    <Phone size={18} />
+                            <div className="flex items-center gap-4 text-slate-300 hover:text-[#FFE90A] transition-colors duration-300 cursor-default group">
+                                <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center group-hover:bg-[#FFE90A] transition-all duration-300">
+                                    <Phone size={18} className="group-hover:text-[#072b47] transition-colors duration-300" />
                                 </div>
                                 <span className="font-bold">+91 98765 43210</span>
                             </div>
-                            <div className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors cursor-default group">
-                                <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center group-hover:bg-[#005a9c] transition-all">
-                                    <Mail size={18} />
+                            <div className="flex items-center gap-4 text-slate-300 hover:text-[#FFE90A] transition-colors duration-300 cursor-default group">
+                                <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center group-hover:bg-[#FFE90A] transition-all duration-300">
+                                    <Mail size={18} className="group-hover:text-[#072b47] transition-colors duration-300" />
                                 </div>
                                 <span className="font-bold">support@vyombiz.com</span>
                             </div>
@@ -78,7 +78,7 @@ const Footer = () => {
 
                         <div className="flex gap-3 pt-6">
                             {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
-                                <a key={i} href="#" className="w-11 h-11 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center hover:bg-[#005a9c] hover:border-blue-500/50 transition-all text-slate-300 hover:text-white group">
+                                <a key={i} href="#" className="w-11 h-11 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center hover:bg-[#FFE90A] hover:border-[#FFE90A] hover:-translate-y-1.5 transition-all duration-300 text-slate-300 hover:text-[#072b47] group">
                                     <Icon size={20} strokeWidth={1.5} />
                                 </a>
                             ))}
@@ -97,7 +97,7 @@ const Footer = () => {
                                         <li key={link.name}>
                                             <Link
                                                 to={link.path}
-                                                className="text-[14px] font-medium text-slate-400 hover:text-[#005a9c] transition-colors flex items-center group"
+                                                className="text-[14px] font-medium text-slate-400 hover:text-[#FFE90A] transition-colors duration-300 flex items-center group"
                                             >
                                                 <ChevronRight size={12} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all mr-1.5" />
                                                 {link.name}
@@ -128,7 +128,7 @@ const Footer = () => {
 
                         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 pt-2">
                             {LEGAL_LINKS.map(item => (
-                                <Link key={item.name} to={item.path} className="text-[12px] font-bold text-slate-400 hover:text-white transition-colors">
+                                <Link key={item.name} to={item.path} className="text-[12px] font-bold text-slate-400 hover:text-[#FFE90A] transition-colors duration-300">
                                     {item.name}
                                 </Link>
                             ))}
