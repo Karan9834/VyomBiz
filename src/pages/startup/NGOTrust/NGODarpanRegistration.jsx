@@ -9,6 +9,9 @@ import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import PricingSection from "../../../components/CompanyRegistration/PricingSection.jsx";
+import overview from '../../../assets/ngo1/NGO Darpan Registration/overview.png'
+import benefits from '../../../assets/ngo1/NGO Darpan Registration/benefits.png'
+import process from '../../../assets/ngo1/NGO Darpan Registration/process.png'
 
 
 /**
@@ -39,7 +42,7 @@ const DarpanOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="NGO Darpan Registration Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -67,7 +70,7 @@ const DarpanRegistrationAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="Darpan Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -280,7 +283,7 @@ const DarpanProcessSection = () => {
                     {/* Left Image */}
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="NGO Darpan Registration Process"
                             className="w-full rounded-lg shadow-sm"
                         />

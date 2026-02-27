@@ -3,6 +3,10 @@ import { Users, Briefcase, Building2, Globe, FileText, CheckCircle } from "lucid
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import benefits from '../../../assets/ngo/FCRA Registration/benefits.png'
+import overview from '../../../assets/ngo/FCRA Registration/overview.png'
+
+import Process from '../../../assets/ngo/FCRA Registration/process.png'
 
 /**
  * FCRARegistration Page matching Vyombiz layout styles
@@ -32,7 +36,7 @@ const FCRAOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1526304640152-d4619684e484?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="FCRA Registration Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -60,7 +64,7 @@ const FCRARegistrationAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="FCRA Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -276,7 +280,7 @@ const FCRAProcessSection = () => {
                     {/* Left Image */}
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            src={Process}
                             alt="FCRA Registration Process"
                             className="w-full rounded-lg shadow-sm"
                         />

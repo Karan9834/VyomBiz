@@ -2,7 +2,9 @@ import { Users, Briefcase, Building2 } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-
+import overview from "../../../assets/ngo1/Trust Registration/overview.png"
+import img1 from "../../../assets/ngo1/Trust Registration/img1.png"
+import img2 from "../../../assets/ngo1/Trust Registration/img2.png"
 /**
  * TrustRegistration Page matching Vyombiz layout styles
  * Sections:
@@ -46,7 +48,7 @@ const TrustOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="Trust Registration Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -74,7 +76,7 @@ const TrustRegistrationAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80"
+                            src={img1}
                             alt="Trust Registration Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -286,7 +288,7 @@ const TrustProcessSection = () => {
                     {/* Left Image */}
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            src={img2}
                             alt="Trust Registration Process"
                             className="w-full rounded-lg shadow-sm"
                         />
