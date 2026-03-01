@@ -1,151 +1,170 @@
 import React from 'react';
-import { CheckCircle, ArrowRight, Rocket, Smile, MapPin, PieChart, Shield } from 'lucide-react';
-
-const services = [
-    { title: "Refurbisher Authorization And License Consultation", desc: "Expert guidance and consultation for obtaining your Refurbisher Authorization And License smoothly and efficiently.", price: "₹2,999" },
-    { title: "Application Preparation", desc: "Complete documentation preparation and application filing for E Waste Management compliance.", price: "₹4,999" },
-    { title: "Follow-up & Liaison", desc: "Regular follow-ups with relevant authorities to ensure faster processing of your application.", price: "₹3,499" },
-    { title: "Compliance Audit", desc: "Pre-application audit to ensure your premises/business meets all statutory requirements.", price: "₹5,999" },
-    { title: "Renewal Submissions", desc: "Timely submission of renewal applications to prevent lapses in your compliance status.", price: "₹1,999" },
-    { title: "Annual Returns Filing", desc: "Preparation and filing of statutory annual returns and compliance reports as mandated.", price: "₹2,499" },
-];
+import HeroLayout from '../../../components/common/HeroLayout';
+import DetailsLayout from '../../../components/common/DetailsLayout';
+import FAQLayout from '../../../components/common/FAQLayout';
+import ReviewsSection from '../../../components/common/ReviewsSection';
 
 const RefurbisherAuthorizationAndLicense = () => {
     return (
-        <div className="bg-white min-h-screen font-sans">
-            <section className="relative min-h-[90vh] bg-white flex items-center pt-24 pb-12 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 mb-20">
-                    <div className="w-full lg:w-[60%]">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#005a9c]/10 border border-[#005a9c]/20 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-8">
-                            <Shield size={16} /><span>E Waste Management Services</span>
-                        </div>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#072b47] leading-[1.1] mb-8">
-                            Refurbisher <br className="hidden md:block" />
-                            <span className="text-[#dead01]">Authorization And License</span>
-                        </h1>
-                        <p className="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed font-medium">
-                            End-to-end support for Refurbisher Authorization And License. We manage the entire lifecycle of compliance to ensure your business operations remain uninterrupted and legally sound.
-                        </p>
-                        <div className="flex flex-wrap gap-4 mb-8">
-                            {["Certification", "Compliance", "Advisory", "Renewals"].map((tag, i) => (
-                                <span key={i} className="px-4 py-2 bg-slate-100 text-[#072b47] rounded-full text-sm font-bold">{tag}</span>
-                            ))}
-                        </div>
-                        <button className="bg-[#005a9c] text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 shadow-2xl shadow-blue-900/20 active:scale-95 transition-all">Get Started Now</button>
-                    </div>
-                    <div className="w-full lg:w-[40%] relative">
-                        <div className="absolute inset-0 bg-[#005a9c]/10 blur-[120px] rounded-full scale-150 animate-pulse"></div>
-                        <img src="/environmental/placeholder/hero.avif" alt="Refurbisher Authorization And License"
-                            className="relative z-10 w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
-                            onError={(e) => { e.target.src = "https://illustrations.popsy.co/amber/plant.svg" }} />
-                    </div>
-                </div>
-            </section>
+        <div className="bg-[#f8f9fa] min-h-screen relative font-sans">
+            <div className="relative z-10 space-y-2 lg:space-y-4">
+                <HeroLayout
+                    heroTitleMain="Refurbisher Authorization & License"
+                    heroTitleSuffix="— E-Waste Refurbishing"
+                    heroDescription="Get your CPCB e-waste refurbisher authorization to legally operate an electronics refurbishing business in India. Expert guidance on documentation, BIS compliance, and CPCB portal registration."
+                    stats={[
+                        { count: "43298 +", label: "Happy Clients" },
+                        { count: "3500 +", label: "Expert Advisors" },
+                        { count: "50 +", label: "Branch Offices" },
+                        { count: "10k+", label: "Pin codes" }
+                    ]}
+                    formTitle="Get Free Expert Consultation"
+                />
 
-            <section className="bg-[#FEF9C3] py-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[
-                            { icon: <Rocket className="w-8 h-8 text-[#005a9c]" />, title: "Track Record", desc: "Successfully processed thousands of applications for clients across India." },
-                            { icon: <Smile className="w-8 h-8 text-[#005a9c]" />, title: "Domain Expertise", desc: "Deep knowledge of specific regulatory frameworks and compliance timelines." },
-                            { icon: <MapPin className="w-8 h-8 text-[#005a9c]" />, title: "Pan-India Reach", desc: "We provide comprehensive regulatory coverage spanning all states and territories." },
-                            { icon: <PieChart className="w-8 h-8 text-[#005a9c]" />, title: "Data Security", desc: "Your business secrets, process details, and critical data are held in strict confidence." },
-                        ].map((card, i) => (
-                            <div key={i} className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">{card.icon}</div>
-                                <h3 className="text-xl font-bold text-[#072b47] mb-4">{card.title}</h3>
-                                <p className="text-slate-600 text-[15px] leading-relaxed font-medium">{card.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                <DetailsLayout
+                    overview={{
+                        title: "Refurbisher Authorization —",
+                        highlightTitle: "An Overview",
+                        description: [
+                            "Refurbisher authorization is an official approval that regulates the refurbishing of electrical and electronic equipment (EEE), ensuring adherence to environmental, safety, and quality standards. The certification issued by the Central Pollution Control Board (CPCB) serves as legal authorization for refurbishers to operate and sell refurbished electronic equipment in the market.",
+                            "The refurbisher authorization ensures efficient management and organization of e-waste, providing a structured framework for its proper handling and systemization.",
+                            "A refurbisher is a person or entity responsible for repairing or assembling used electrical equipment, as listed in Schedule I. The refurbisher ensures completely refurbishing to enhance the quality of used electronic goods, extending the lifespan of the used electrical and electronic equipment while maintaining its authenticity and originality.",
+                            "The refurbisher employs an effective technique/strategy to cater to huge amounts of e-wastes for the re-utilization of components in working conditions in new products. Additionally, the refurbisher must obtain a certificate of registration and proof of installed capacity from the District Industries Centre or any other government agency."
+                        ],
+                        whyIdealTitle: "Responsibilities of Refurbisher",
+                        whyIdealList: [
+                            { title: "Collect & Channel E-Waste", desc: "Must collect the E-waste generated throughout the process of refurbishment and send it to the authorized dismantler or recycler." },
+                            { title: "Ensure BIS Compliance", desc: "Refurbished equipment shall be in accordance with the Compulsory Registration Scheme of the Ministry of Electronics and Information Technology and BIS Standards." },
+                            { title: "File Annual & Quarterly Returns", desc: "Must file annual and quarterly returns on the portal on or before the end of the month succeeding the quarter or year." },
+                            { title: "Environmental Compliance", desc: "Must ensure compliance with environmental degradation due to the storage and transportation of e-waste." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-4">Services Addressed</h2>
-                        <div className="w-24 h-1 bg-[#dead01] shadow-[0_0_8px_rgba(255,233,10,0.6)] mx-auto rounded mb-6"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
-                            <div key={index} className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-[#FFE90A]/40 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full group relative">
-                                <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
-                                <div className="p-8 flex flex-col h-full pt-10">
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{service.title}</h3>
-                                    <p className="text-slate-600 text-[15px] leading-relaxed mb-10 flex-grow font-medium">{service.desc}</p>
-                                    <div className="mt-auto pt-6">
-                                        <div className="flex flex-col mb-6">
-                                            <span className="text-[11px] uppercase tracking-widest font-black text-slate-400 mb-1">Starting at</span>
-                                            <span className="text-[#dead01] text-3xl font-black leading-none">{service.price}</span>
-                                        </div>
-                                        <div className="flex items-center justify-between gap-4">
-                                            <button className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all">Get Started</button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read py-1">
-                                                <span>Read More</span><ArrowRight className="w-4 h-4 group-hover/read:translate-x-1.5 transition-transform duration-300" />
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    advantages={{
+                        title: "Advantages of Obtaining E-Waste Refurbisher License",
+                        subtitle: "Significant benefits for businesses engaged in e-waste management",
+                        list: [
+                            { title: "Legitimacy", desc: "The e-waste refurbisher license legally authorizes businesses to refurbish and sell e-waste, providing them with legitimacy and credibility in the market." },
+                            { title: "Quality Assurance", desc: "The e-waste refurbisher license ensures refurbishment process adherence to industry standards, guaranteeing quality assurance and environmental safety compliance." },
+                            { title: "Cost-Effective", desc: "The grant of refurbisher authorization for e-waste management is cost effective, which helps bridge the digital divide and enables broader access to technology." },
+                            { title: "Competitive Advantage", desc: "The refurbisher authorization offers businesses a significant competitive advantage in the market by ensuring compliance and building credibility towards sustainable waste management." },
+                            { title: "Environmental Benefit", desc: "The e-waste refurbisher license minimizes the release of hazardous substances into the environment by effectively reducing and recycling electronic waste." },
+                            { title: "Resource Conservation", desc: "The e-waste refurbisher license reduces the strain on mining, raw materials, and scarce resources used for the refurbishment and proper management of electronic waste." },
+                            { title: "Balance Product's Work-Life", desc: "The e-waste refurbisher authorization is not just limited to reducing the e-waste, but it also improves the work-life of the products." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-[#FEF9C3]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-6">About Refurbisher Authorization And License</h2>
-                            <div className="w-16 h-1 bg-[#072b47] rounded mb-8"></div>
-                            <div className="space-y-6 text-[#072b47]/90 text-lg leading-relaxed font-medium">
-                                <p>Ensuring compliance with Refurbisher Authorization And License is crucial for businesses operating in today's regulated environment under the broader framework of E Waste Management. Failure to comply can result in severe legal consequences, operational halts, and financial penalties.</p>
-                                <p>Our comprehensive assistance covers everything from initial evaluation and strategy formulation to execution and final approval. Whether you are establishing a new entity or operating an existing one, we provide clear roadmaps to maintain unblemished compliance records.</p>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/2">
-                            <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
-                                <h3 className="text-xl font-black text-[#072b47] mb-6">Core Requirements</h3>
-                                <ul className="space-y-4">
-                                    {["Business Incorporation Details", "Authorized Person KYC", "Facility Setup Plans", "List of Machinery/Process Details", "Past Compliance Records (if any)", "Site Clearance Approvals", "Local Body NOCs"].map((doc, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
-                                            <CheckCircle className="w-5 h-5 text-[#005a9c] mt-0.5 shrink-0" />
-                                            <span>{doc}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    eligibility={{
+                        title: "Eligibility Criteria for Refurbisher Authorization",
+                        subtitle: "Requirements for securing refurbisher authorization in India",
+                        list: [
+                            { title: "Land Requirement", desc: "The applicants seeking refurbisher license must comprise a land or external space required for the setup of small or large-scale refurbishment business." },
+                            { title: "Technicians and Labours", desc: "The businesses seeking refurbisher authorization must appoint technicians and labourers capable of analysing the technology-related advanced machines." },
+                            { title: "Factory Setup", desc: "A minimum 150 sq. m. water-proof premises is required for the setup of factory and storage of around 1 ton of e-waste generated through refurbishing of electrical and electronic equipment." },
+                            { title: "Network Connection", desc: "The businesses must establish a stable network connection and necessary working equipment, facilitating a decent supply of refurbished electrical and electronic equipment." }
+                        ]
+                    }}
 
-            <section className="py-24 bg-white border-t border-slate-100">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-5xl font-black text-[#072b47] mb-6">Why Choose <span className="text-[#dead01]">Us</span></h2>
-                        <div className="w-24 h-1.5 bg-[#dead01] mx-auto rounded-full"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            { title: "Specialized Experts", desc: "Dedicated professionals focused specifically on navigating complex environmental guidelines." },
-                            { title: "Assured Approvals", desc: "A robust vetting process of document filings severely limits the chance of application pushback." },
-                            { title: "Lifecycle Management", desc: "Beyond simple acquisition, we maintain a proactive posture toward your ongoing compliance schedule." },
-                        ].map((item, index) => (
-                            <div key={index} className="relative p-10 rounded-[2.5rem] border border-slate-200 bg-white shadow-sm hover:shadow-2xl hover:border-[#dead01]/30 hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-                                <div className="mb-8">
-                                    <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:bg-[#dead01]/10 transition-all duration-500">
-                                        <CheckCircle className="w-8 h-8 text-[#dead01]" />
-                                    </div>
-                                </div>
-                                <h3 className="text-xl font-black text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium text-[15px]">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    documents={{
+                        title: "Documents Required for Refurbisher Authorization and License",
+                        description: "The list of documents required for obtaining the refurbisher registration:",
+                        list: [
+                            "Form 1(a)",
+                            "Cover Letter",
+                            "PAN Card Details",
+                            "Address Proof",
+                            "Incorporation Certificate",
+                            "Details of the recycling facility",
+                            "Copy of Incorporation Certificate (CIN - optional)",
+                            "Photo ID Proof of Business Owner",
+                            "Board Resolution",
+                            "Consent to Establish and Operate",
+                            "Business Owner Address Proof",
+                            "Self-Declaration on Letterhead of the Company",
+                            "Affidavit for Correctness of Qualities Mentioned",
+                            "List of Producers attached with Refurbishers",
+                            "GST Registration Certificate",
+                            "Proof of Possession of Premises (sale deed, rent agreement, electricity bill, etc.)",
+                            "Company Registration Documents (MoA & AoA) & Partnership Deed",
+                            "Layout Map of Business Premises"
+                        ]
+                    }}
+
+                    process={{
+                        title: "How to Apply for Refurbisher Authorization Online",
+                        subtitle: "Under the E-Waste (Management) Rules, 2022",
+                        steps: [
+                            { step: "01", title: "Filing of Application", desc: "The applicant seeking refurbishment of e-waste must file an online application in Form 1 to the Central Pollution Control Board." },
+                            { step: "02", title: "Document Submission", desc: "The e-waste refurbishers must further submit the required documents, including details of the electronic waste, along with a self-declaration confirming safety measures at the plant." },
+                            { step: "03", title: "Evaluation/Review of Application", desc: "Once the documents are submitted, the authority is authorized for the evaluation and further review of the application for refurbisher authorization in India." },
+                            { step: "04", title: "Grant of Refurbisher Authorization", desc: "Following the final evaluation, the concerned authority must grant the refurbisher authorization (in digital format) within 30 working days, provided the application is complete in all respects." },
+                            { step: "05", title: "Verification of Refurbishing Facility", desc: "The concerned authority is further authorized to conduct verification of the refurbishing facility within 120 working days from the grant of registration through the EPR portal." }
+                        ]
+                    }}
+
+                    features={{
+                        title: "Why Opt for Corpbiz for E-waste Refurbisher License?",
+                        subtitle: "India's leading environmental compliance partner",
+                        list: [
+                            { title: "99% Success Rate", desc: "99% Success Rate in Securing E-waste Refurbisher License." },
+                            { title: "Pan-India Network", desc: "Ensuring Refurbisher Registration across 10,000+ Pin Codes." },
+                            { title: "Expert Team", desc: "200+ Environmental Experts to Guide you Through the Journey of Refurbisher Registration." },
+                            { title: "Documentation Support", desc: "Complete documentation support for refurbisher authorization." },
+                            { title: "Expert Consultation", desc: "Expert Consultation Assistance in Acquiring Refurbisher Authorization." },
+                            { title: "End-to-end Guidance", desc: "End-to-end Guidance in Obtaining E-waste Refurbisher License." }
+                        ]
+                    }}
+
+                    postCompliance={{
+                        title: "Validity and Renewal of Refurbisher Authorization",
+                        subtitle: "Key timelines and fees for refurbisher registration",
+                        list: [
+                            { title: "Validity Period", desc: "The validity for refurbisher authorization is five (05) years from the date of the grant of its registration on the EPR portal." },
+                            { title: "Renewal Timeline", desc: "The application for the renewal of the refurbisher authorization must be submitted within 60 days from the date of its expiry." },
+                            { title: "Renewal Charges", desc: "The registration charges for the renewal of the refurbisher authorization after the period of 5 years costs around Rs. 7500/- excluding 0.625/MT for quantity of refurbishing certificate transaction in the preceding 5 years." },
+                            { title: "First-Time Registration Fee", desc: "The first-time registration fee required for obtaining a new refurbisher authorization through EPR portal under the E-Waste (Management) Rules, 2022 costs around Rs. 15,000/-." },
+                            { title: "Timeline for Authorization", desc: "It typically takes around 45 to 60 working days for the preparation and issuance of refurbisher authorization." },
+                            { title: "Market Opportunity", desc: "The refurbished electronics market is anticipated to grow to $11 billion in gross value by March 2026, making it a highly profitable sector." }
+                        ]
+                    }}
+                />
+
+                <FAQLayout
+                    title="Frequently Asked Questions"
+                    subtitle="Get answers to the most common questions about this service."
+                    faqs={[
+          {
+                    "question": "What is e-waste refurbisher authorization?",
+                    "answer": "E-waste refurbisher authorization is an official certificate issued by CPCB that authorizes a business to repair, test, and refurbish used electrical and electronic equipment to extend its usable life. Refurbishers must comply with BIS standards and CPCB guidelines."
+          },
+          {
+                    "question": "What is the difference between a refurbisher and a recycler?",
+                    "answer": "A refurbisher restores used electronic equipment to working condition for resale. A recycler processes end-of-life e-waste to recover raw materials. Refurbishers generate e-waste as a by-product of their operations and must channel it to authorized dismantlers or recyclers."
+          },
+          {
+                    "question": "What BIS standards apply to refurbished electronics?",
+                    "answer": "Refurbished equipment must comply with the Compulsory Registration Scheme of the Ministry of Electronics and Information Technology (MeitY) and applicable BIS standards for the product category. Products must pass quality and safety testing before resale."
+          },
+          {
+                    "question": "What is the refurbisher authorization registration fee?",
+                    "answer": "The first-time registration fee for refurbisher authorization is ₹15,000. Renewal after 5 years costs ₹7,500 plus ₹0.625 per MT for the quantity of refurbishing certificates transacted in the preceding 5 years."
+          },
+          {
+                    "question": "Do refurbishers need to file annual and quarterly returns?",
+                    "answer": "Yes. Refurbishers must file annual and quarterly returns on the CPCB EPR portal on or before the end of the month succeeding the relevant quarter or year. Returns must include details of quantity of EEE refurbished and e-waste channeled to authorized recyclers."
+          },
+          {
+                    "question": "What is the minimum infrastructure required for refurbisher authorization?",
+                    "answer": "A minimum water-proof premises of 150 sq.m. is required for facility setup and storage of around 1 tonne of e-waste generated through refurbishing. The premises must also have stable network connectivity and appropriate testing equipment."
+          },
+          {
+                    "question": "How long does it take to get refurbisher authorization from CPCB?",
+                    "answer": "After complete application submission, CPCB must grant refurbisher authorization within 30 working days. A physical or video verification of the refurbishing facility is then carried out within 120 working days of authorization."
+          }
+]}
+                />
+                <ReviewsSection />
+            </div>
         </div>
     );
 };

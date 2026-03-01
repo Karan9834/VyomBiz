@@ -1,151 +1,163 @@
 import React from 'react';
-import { CheckCircle, ArrowRight, Rocket, Smile, MapPin, PieChart, Shield } from 'lucide-react';
-
-const services = [
-    { title: "P R O Authorization Consultation", desc: "Expert guidance and consultation for obtaining your P R O Authorization smoothly and efficiently.", price: "₹2,999" },
-    { title: "Application Preparation", desc: "Complete documentation preparation and application filing for E Waste Management compliance.", price: "₹4,999" },
-    { title: "Follow-up & Liaison", desc: "Regular follow-ups with relevant authorities to ensure faster processing of your application.", price: "₹3,499" },
-    { title: "Compliance Audit", desc: "Pre-application audit to ensure your premises/business meets all statutory requirements.", price: "₹5,999" },
-    { title: "Renewal Submissions", desc: "Timely submission of renewal applications to prevent lapses in your compliance status.", price: "₹1,999" },
-    { title: "Annual Returns Filing", desc: "Preparation and filing of statutory annual returns and compliance reports as mandated.", price: "₹2,499" },
-];
+import HeroLayout from '../../../components/common/HeroLayout';
+import DetailsLayout from '../../../components/common/DetailsLayout';
+import FAQLayout from '../../../components/common/FAQLayout';
+import ReviewsSection from '../../../components/common/ReviewsSection';
 
 const PROAuthorization = () => {
     return (
-        <div className="bg-white min-h-screen font-sans">
-            <section className="relative min-h-[90vh] bg-white flex items-center pt-24 pb-12 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 mb-20">
-                    <div className="w-full lg:w-[60%]">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#005a9c]/10 border border-[#005a9c]/20 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-8">
-                            <Shield size={16} /><span>E Waste Management Services</span>
-                        </div>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#072b47] leading-[1.1] mb-8">
-                            P <br className="hidden md:block" />
-                            <span className="text-[#dead01]">R O Authorization</span>
-                        </h1>
-                        <p className="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed font-medium">
-                            End-to-end support for P R O Authorization. We manage the entire lifecycle of compliance to ensure your business operations remain uninterrupted and legally sound.
-                        </p>
-                        <div className="flex flex-wrap gap-4 mb-8">
-                            {["Certification", "Compliance", "Advisory", "Renewals"].map((tag, i) => (
-                                <span key={i} className="px-4 py-2 bg-slate-100 text-[#072b47] rounded-full text-sm font-bold">{tag}</span>
-                            ))}
-                        </div>
-                        <button className="bg-[#005a9c] text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 shadow-2xl shadow-blue-900/20 active:scale-95 transition-all">Get Started Now</button>
-                    </div>
-                    <div className="w-full lg:w-[40%] relative">
-                        <div className="absolute inset-0 bg-[#005a9c]/10 blur-[120px] rounded-full scale-150 animate-pulse"></div>
-                        <img src="/environmental/placeholder/hero.avif" alt="P R O Authorization"
-                            className="relative z-10 w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
-                            onError={(e) => { e.target.src = "https://illustrations.popsy.co/amber/plant.svg" }} />
-                    </div>
-                </div>
-            </section>
+        <div className="bg-[#f8f9fa] min-h-screen relative font-sans">
+            <div className="relative z-10 space-y-2 lg:space-y-4">
+                <HeroLayout
+                    heroTitleMain="PRO Authorization"
+                    heroTitleSuffix="— Producer Responsibility Org"
+                    heroDescription="Setting up a Producer Responsibility Organization? Get complete PRO authorization from CPCB. Expert assistance for documentation, application, and compliance management for e-waste PROs."
+                    stats={[
+                        { count: "43298 +", label: "Happy Clients" },
+                        { count: "3500 +", label: "Expert Advisors" },
+                        { count: "50 +", label: "Branch Offices" },
+                        { count: "10k+", label: "Pin codes" }
+                    ]}
+                    formTitle="Get Free Expert Consultation"
+                />
 
-            <section className="bg-[#FEF9C3] py-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[
-                            { icon: <Rocket className="w-8 h-8 text-[#005a9c]" />, title: "Track Record", desc: "Successfully processed thousands of applications for clients across India." },
-                            { icon: <Smile className="w-8 h-8 text-[#005a9c]" />, title: "Domain Expertise", desc: "Deep knowledge of specific regulatory frameworks and compliance timelines." },
-                            { icon: <MapPin className="w-8 h-8 text-[#005a9c]" />, title: "Pan-India Reach", desc: "We provide comprehensive regulatory coverage spanning all states and territories." },
-                            { icon: <PieChart className="w-8 h-8 text-[#005a9c]" />, title: "Data Security", desc: "Your business secrets, process details, and critical data are held in strict confidence." },
-                        ].map((card, i) => (
-                            <div key={i} className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">{card.icon}</div>
-                                <h3 className="text-xl font-bold text-[#072b47] mb-4">{card.title}</h3>
-                                <p className="text-slate-600 text-[15px] leading-relaxed font-medium">{card.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                <DetailsLayout
+                    overview={{
+                        title: "PRO Authorization —",
+                        highlightTitle: "An Overview",
+                        description: [
+                            "PRO Authorization is the process of securing the approval of CPCB (Central Pollution Control Board) for the PRO registration (Producer Responsibility Organisation Registration). Producer Responsibility Organisation (PRO) is an entity responsible for collecting as well as channelizing the e-waste generated from the end-of-life EEE (Electrical and Electronic Equipment) on behalf of the producers.",
+                            "PRO Authorization is essential to make sure that e-waste is utilized and managed in an eco-friendly way. It ensures that the producers meet Extended Producer Responsibility obligations under the E-waste (Management) Rules, 2016.",
+                            "Producer Responsibility Organisation Authorization is a legal mandate under the Environment (Protection) Act, 1986 and E-waste (Management) Rules, 2016.",
+                            "The management of e-waste recycling is governed under the PRO Authorization whereby the producers have to adhere to the policies framed by the CPCB."
+                        ],
+                        whyIdealTitle: "Functions of PRO Certification",
+                        whyIdealList: [
+                            { title: "Logistics Arrangement", desc: "Helps in the arrangement of logistics for e-waste collection and transportation." },
+                            { title: "Collection Targets", desc: "To help in accomplishing the target of the collection as assigned by CPCB." },
+                            { title: "Take-Back Implementation", desc: "Helps in taking back the implementation of used electronic equipment." },
+                            { title: "Waste Collection Setup", desc: "Help in setting up waste collection method and network across India." },
+                            { title: "Annual Returns Filing", desc: "Helps the producers in the filing of quarterly and annual return on the EPR portal." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-4">Services Addressed</h2>
-                        <div className="w-24 h-1 bg-[#dead01] shadow-[0_0_8px_rgba(255,233,10,0.6)] mx-auto rounded mb-6"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
-                            <div key={index} className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-[#FFE90A]/40 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full group relative">
-                                <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
-                                <div className="p-8 flex flex-col h-full pt-10">
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{service.title}</h3>
-                                    <p className="text-slate-600 text-[15px] leading-relaxed mb-10 flex-grow font-medium">{service.desc}</p>
-                                    <div className="mt-auto pt-6">
-                                        <div className="flex flex-col mb-6">
-                                            <span className="text-[11px] uppercase tracking-widest font-black text-slate-400 mb-1">Starting at</span>
-                                            <span className="text-[#dead01] text-3xl font-black leading-none">{service.price}</span>
-                                        </div>
-                                        <div className="flex items-center justify-between gap-4">
-                                            <button className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all">Get Started</button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read py-1">
-                                                <span>Read More</span><ArrowRight className="w-4 h-4 group-hover/read:translate-x-1.5 transition-transform duration-300" />
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    advantages={{
+                        title: "Benefits of PRO Authorization in India",
+                        subtitle: "Significant advantages for Producer Responsibility Organisations",
+                        list: [
+                            { title: "Regulatory Compliance", desc: "Producer Responsibility Organisation Registration ensures that you adhere to the regulations related to waste management, leaving no scope for potential penalties or legal issues." },
+                            { title: "Sustainable Practices", desc: "By registering for PRO Authorization, you ensure that you are following the best sustainable practices and contributing to responsible waste management." },
+                            { title: "Government Incentives", desc: "PRO Authorization opens the door for government incentives, subsidies, and other forms of financial support." },
+                            { title: "Competitive Edge", desc: "Producer Responsibility Organisation Certification showcases your commitment towards environmental sustainability and thereby keeps you ahead of your competitors." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-[#FEF9C3]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-6">About P R O Authorization</h2>
-                            <div className="w-16 h-1 bg-[#072b47] rounded mb-8"></div>
-                            <div className="space-y-6 text-[#072b47]/90 text-lg leading-relaxed font-medium">
-                                <p>Ensuring compliance with P R O Authorization is crucial for businesses operating in today's regulated environment under the broader framework of E Waste Management. Failure to comply can result in severe legal consequences, operational halts, and financial penalties.</p>
-                                <p>Our comprehensive assistance covers everything from initial evaluation and strategy formulation to execution and final approval. Whether you are establishing a new entity or operating an existing one, we provide clear roadmaps to maintain unblemished compliance records.</p>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/2">
-                            <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
-                                <h3 className="text-xl font-black text-[#072b47] mb-6">Core Requirements</h3>
-                                <ul className="space-y-4">
-                                    {["Business Incorporation Details", "Authorized Person KYC", "Facility Setup Plans", "List of Machinery/Process Details", "Past Compliance Records (if any)", "Site Clearance Approvals", "Local Body NOCs"].map((doc, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
-                                            <CheckCircle className="w-5 h-5 text-[#005a9c] mt-0.5 shrink-0" />
-                                            <span>{doc}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    eligibility={{
+                        title: "Eligibility Criteria for PRO Authorization",
+                        subtitle: "Requirements for PRO Authorization in India",
+                        list: [
+                            { title: "Legal Entity", desc: "The applicant must be a legal entity registered under the Companies Act, 2013, or Indian Trusts Act, 1882, or Societies Registration Act, 1860." },
+                            { title: "Valid GSTIN & PAN", desc: "Must possess a valid GSTIN and PAN Card." },
+                            { title: "Minimum Net Worth", desc: "Minimum Net Worth – ₹10 Crore (Latest Audited Balance Sheet)." },
+                            { title: "Experience", desc: "At least 3 years of experience in e-waste management or related fields." },
+                            { title: "Producer Agreements", desc: "Valid agreements/MoUs with producers for e-waste collection." },
+                            { title: "Recycler Agreements", desc: "Agreements/MoUs with registered e-waste recyclers, collection centers, etc." },
+                            { title: "SPCB Collaboration", desc: "Collaboration with Pollution Control Committees/State Pollution Control Boards." },
+                            { title: "Testing Lab MoUs", desc: "MoUs with authorized testing labs for RoHS compliance." }
+                        ]
+                    }}
 
-            <section className="py-24 bg-white border-t border-slate-100">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-5xl font-black text-[#072b47] mb-6">Why Choose <span className="text-[#dead01]">Us</span></h2>
-                        <div className="w-24 h-1.5 bg-[#dead01] mx-auto rounded-full"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            { title: "Specialized Experts", desc: "Dedicated professionals focused specifically on navigating complex environmental guidelines." },
-                            { title: "Assured Approvals", desc: "A robust vetting process of document filings severely limits the chance of application pushback." },
-                            { title: "Lifecycle Management", desc: "Beyond simple acquisition, we maintain a proactive posture toward your ongoing compliance schedule." },
-                        ].map((item, index) => (
-                            <div key={index} className="relative p-10 rounded-[2.5rem] border border-slate-200 bg-white shadow-sm hover:shadow-2xl hover:border-[#dead01]/30 hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-                                <div className="mb-8">
-                                    <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:bg-[#dead01]/10 transition-all duration-500">
-                                        <CheckCircle className="w-8 h-8 text-[#dead01]" />
-                                    </div>
-                                </div>
-                                <h3 className="text-xl font-black text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium text-[15px]">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    documents={{
+                        title: "Documents Needed for PRO Registration in India",
+                        description: "The documents required for PRO Registration in India:",
+                        list: [
+                            "GST Registration Certificate",
+                            "Details of the Items in Excel sheet",
+                            "PAN Card of the company",
+                            "Proprietor or authorized signatory KYC",
+                            "Rent/Lease/Proof of ownership of the site",
+                            "List of producers attached with PRO",
+                            "Agreement with authorized transporters for e-waste handling",
+                            "Agreement with authorized facilities for hazardous waste disposal",
+                            "MoUs with authorized testing labs for RoHS compliance",
+                            "Net Worth Certificate from CA (minimum ₹10 Crore)"
+                        ]
+                    }}
+
+                    process={{
+                        title: "PRO Authorization Registration Process",
+                        subtitle: "Stepwise guide for PRO authorization registration",
+                        steps: [
+                            { step: "01", title: "Get Application Form", desc: "Get the application form for PRO registration from CPCB's official portal." },
+                            { step: "02", title: "Fill Application", desc: "Fill out the application form by providing all the relevant details accurately." },
+                            { step: "03", title: "Submit Documents", desc: "Submit the application form and the documents to the Central Pollution Control Board." },
+                            { step: "04", title: "CPCB Review", desc: "Review of the application and documents by the CPCB. Usually gives a response within 30 days." },
+                            { step: "05", title: "Certificate Issued", desc: "Post-approval, a PRO authorization certificate will be issued by the CPCB, valid for 5 years." }
+                        ]
+                    }}
+
+                    postCompliance={{
+                        title: "Responsibilities of a Recycler under PRO Authorization",
+                        subtitle: "Compliance obligations for recyclers and PROs",
+                        list: [
+                            { title: "SPCB Registration", desc: "Those interested in recycling or processing E-waste and plastic waste shall submit to the State Pollution Control Board and Pollution Control Committee for registration." },
+                            { title: "Proper Waste Management", desc: "It should be the responsibility of the recycler that waste should be managed properly and disposed of safely." },
+                            { title: "Pollution Control Equipment", desc: "Pollution control equipment should be used by the recycler to prevent environmental pollution." },
+                            { title: "Annual Report Submission", desc: "Those engaged in recycling or processing plastic waste should submit an annual report to the concerned local body, intimating the State Pollution Control Board every year." },
+                            { title: "Renewal Before Expiry", desc: "The validity for the renewal of registration shall be made 60 days before the expiration. The registration under E-waste management rules shall be effective for a duration of three years." }
+                        ]
+                    }}
+
+                    features={{
+                        title: "Why Trust Corpbiz for Online PRO Authorization Certificate?",
+                        subtitle: "India's leading PRO authorization partner",
+                        list: [
+                            { title: "200+ PRO Certificates", desc: "Successfully Secured 200+ PRO Authorization Certificates." },
+                            { title: "10+ Years Experience", desc: "More than 10 Years of Experience in Environmental Licensing and Consulting." },
+                            { title: "Documentation Support", desc: "Complete Documentation Support for EPR PRO Certification in India." },
+                            { title: "99% Success Rate", desc: "99% Success Rate in Getting a PRO Authorization Certificate." },
+                            { title: "End-to-End Assistance", desc: "End-to-end Assistance for PRO Authorization in India." },
+                            { title: "24/7 Support", desc: "24/7 Dedicated Support to Resolve Queries for Producer Responsibility Organisation Registration." }
+                        ]
+                    }}
+                />
+
+                <FAQLayout
+                    title="Frequently Asked Questions"
+                    subtitle="Get answers to the most common questions about this service."
+                    faqs={[
+          {
+                    "question": "What is a Producer Responsibility Organization (PRO)?",
+                    "answer": "A PRO is a registered entity that collects and channels e-waste on behalf of multiple producers. It organizes the logistics of e-waste collection, take-back programs, and reporting, helping producers meet their EPR targets without managing their own collection infrastructure."
+          },
+          {
+                    "question": "What is the minimum net worth required for PRO authorization?",
+                    "answer": "CPCB requires a minimum net worth of ₹10 Crore (as per the latest audited balance sheet) for entities applying for PRO authorization. This ensures PROs have adequate financial resources to manage large-scale e-waste collection operations."
+          },
+          {
+                    "question": "How many producers can a single PRO serve?",
+                    "answer": "There is no regulatory cap on the number of producers a PRO can serve. However, the PRO must have sufficient operational capacity — collection points, transportation agreements, and recycler partnerships — to meet the combined EPR targets of all its registered producers."
+          },
+          {
+                    "question": "What is the process for PRO authorization from CPCB?",
+                    "answer": "The process involves submitting Form-4 on the CPCB portal with all required documents, CPCB review (typically 30 days), physical verification of operational capacity, and issuance of PRO authorization certificate valid for 5 years."
+          },
+          {
+                    "question": "Can a recycler also be a PRO?",
+                    "answer": "A single entity cannot simultaneously hold both e-waste recycler authorization and PRO authorization under the E-Waste (Management) Rules, 2022 to avoid conflict of interest. Separate entities must be registered for these activities."
+          },
+          {
+                    "question": "What is the validity and renewal period for PRO authorization?",
+                    "answer": "PRO authorization is valid for 5 years from the date of issue. Renewal applications must be filed 60 days before expiry. The same documentation requirements and net worth criteria apply at the time of renewal."
+          },
+          {
+                    "question": "Do producers still have EPR liability if they enroll with a PRO?",
+                    "answer": "Yes. Producers remain ultimately liable for EPR compliance even if they engage a PRO. The PRO fulfills the EPR targets on the producer's behalf, but the compliance is tracked against the producer's EPR registration on the CPCB portal."
+          }
+]}
+                />
+                <ReviewsSection />
+            </div>
         </div>
     );
 };

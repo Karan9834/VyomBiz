@@ -1,151 +1,167 @@
 import React from 'react';
-import { CheckCircle, ArrowRight, Rocket, Smile, MapPin, PieChart, Shield } from 'lucide-react';
-
-const services = [
-    { title: "E P R For Importers Consultation", desc: "Expert guidance and consultation for obtaining your E P R For Importers smoothly and efficiently.", price: "₹2,999" },
-    { title: "Application Preparation", desc: "Complete documentation preparation and application filing for E Waste Management compliance.", price: "₹4,999" },
-    { title: "Follow-up & Liaison", desc: "Regular follow-ups with relevant authorities to ensure faster processing of your application.", price: "₹3,499" },
-    { title: "Compliance Audit", desc: "Pre-application audit to ensure your premises/business meets all statutory requirements.", price: "₹5,999" },
-    { title: "Renewal Submissions", desc: "Timely submission of renewal applications to prevent lapses in your compliance status.", price: "₹1,999" },
-    { title: "Annual Returns Filing", desc: "Preparation and filing of statutory annual returns and compliance reports as mandated.", price: "₹2,499" },
-];
+import HeroLayout from '../../../components/common/HeroLayout';
+import DetailsLayout from '../../../components/common/DetailsLayout';
+import FAQLayout from '../../../components/common/FAQLayout';
+import ReviewsSection from '../../../components/common/ReviewsSection';
 
 const EPRForImporters = () => {
     return (
-        <div className="bg-white min-h-screen font-sans">
-            <section className="relative min-h-[90vh] bg-white flex items-center pt-24 pb-12 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 mb-20">
-                    <div className="w-full lg:w-[60%]">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#005a9c]/10 border border-[#005a9c]/20 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-8">
-                            <Shield size={16} /><span>E Waste Management Services</span>
-                        </div>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#072b47] leading-[1.1] mb-8">
-                            E <br className="hidden md:block" />
-                            <span className="text-[#dead01]">P R For Importers</span>
-                        </h1>
-                        <p className="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed font-medium">
-                            End-to-end support for E P R For Importers. We manage the entire lifecycle of compliance to ensure your business operations remain uninterrupted and legally sound.
-                        </p>
-                        <div className="flex flex-wrap gap-4 mb-8">
-                            {["Certification", "Compliance", "Advisory", "Renewals"].map((tag, i) => (
-                                <span key={i} className="px-4 py-2 bg-slate-100 text-[#072b47] rounded-full text-sm font-bold">{tag}</span>
-                            ))}
-                        </div>
-                        <button className="bg-[#005a9c] text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 shadow-2xl shadow-blue-900/20 active:scale-95 transition-all">Get Started Now</button>
-                    </div>
-                    <div className="w-full lg:w-[40%] relative">
-                        <div className="absolute inset-0 bg-[#005a9c]/10 blur-[120px] rounded-full scale-150 animate-pulse"></div>
-                        <img src="/environmental/placeholder/hero.avif" alt="E P R For Importers"
-                            className="relative z-10 w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
-                            onError={(e) => { e.target.src = "https://illustrations.popsy.co/amber/plant.svg" }} />
-                    </div>
-                </div>
-            </section>
+        <div className="bg-[#f8f9fa] min-h-screen relative font-sans">
+            <div className="relative z-10 space-y-2 lg:space-y-4">
+                <HeroLayout
+                    heroTitleMain="EPR Registration for Importers"
+                    heroTitleSuffix="— Port Clearance Fast"
+                    heroDescription="Containers detained at Indian port? Get your EPR certificate for importers fast. Expert guidance to prevent demurrage charges and supply chain delays across all regulated product categories."
+                    stats={[
+                        { count: "43298 +", label: "Happy Clients" },
+                        { count: "3500 +", label: "Expert Advisors" },
+                        { count: "50 +", label: "Branch Offices" },
+                        { count: "10k+", label: "Pin codes" }
+                    ]}
+                    formTitle="Get Free Expert Consultation"
+                />
 
-            <section className="bg-[#FEF9C3] py-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[
-                            { icon: <Rocket className="w-8 h-8 text-[#005a9c]" />, title: "Track Record", desc: "Successfully processed thousands of applications for clients across India." },
-                            { icon: <Smile className="w-8 h-8 text-[#005a9c]" />, title: "Domain Expertise", desc: "Deep knowledge of specific regulatory frameworks and compliance timelines." },
-                            { icon: <MapPin className="w-8 h-8 text-[#005a9c]" />, title: "Pan-India Reach", desc: "We provide comprehensive regulatory coverage spanning all states and territories." },
-                            { icon: <PieChart className="w-8 h-8 text-[#005a9c]" />, title: "Data Security", desc: "Your business secrets, process details, and critical data are held in strict confidence." },
-                        ].map((card, i) => (
-                            <div key={i} className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">{card.icon}</div>
-                                <h3 className="text-xl font-bold text-[#072b47] mb-4">{card.title}</h3>
-                                <p className="text-slate-600 text-[15px] leading-relaxed font-medium">{card.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                <DetailsLayout
+                    overview={{
+                        title: "EPR For Importers —",
+                        highlightTitle: "An Overview",
+                        description: [
+                            "Importers of electronic items, plastic packaging products, batteries, and tyres are strictly governed by Extended Producer Responsibility (EPR) regulations in India. Customs authorities at Indian ports require a valid EPR Certificate before clearing imported consignments.",
+                            "Under the E-Waste (Management) Rules, 2022, Plastic Waste Management Rules, 2016, Battery Waste Management Rules, 2022, and Tyre Waste Management Rules, 2022 — all importers are considered 'Producers' and must obtain EPR authorization before placing regulated products on the Indian market.",
+                            "The Import Export Code (IEC) alone is insufficient to clear regulated products at Indian ports. Without an EPR registration certificate, shipments are detained by customs, leading to costly demurrage charges, supply chain disruptions, and potential forced re-export of goods.",
+                            "We offer specialized EPR registration services for importers with expedited processing to prevent port detention and supply chain delays. Our services cover all four regulatory frameworks — E-waste, Plastic, Battery, and Tyre EPR."
+                        ],
+                        whyIdealTitle: "Products Requiring EPR Registration for Import",
+                        whyIdealList: [
+                            { title: "Electronic & Electrical Equipment (EEE)", desc: "Computers, mobile phones, televisions, white goods, and all EEE in Schedule I of E-Waste Rules." },
+                            { title: "Plastic-Packaged Products", desc: "Any products imported in plastic packaging, including FMCG, food, pharmaceutical, and industrial goods." },
+                            { title: "Batteries", desc: "All battery types — EV, portable, automotive, and industrial batteries and battery packs." },
+                            { title: "Tyres", desc: "New, retreaded, and used pneumatic rubber tyres of all categories." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-4">Services Addressed</h2>
-                        <div className="w-24 h-1 bg-[#dead01] shadow-[0_0_8px_rgba(255,233,10,0.6)] mx-auto rounded mb-6"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
-                            <div key={index} className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-[#FFE90A]/40 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full group relative">
-                                <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
-                                <div className="p-8 flex flex-col h-full pt-10">
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{service.title}</h3>
-                                    <p className="text-slate-600 text-[15px] leading-relaxed mb-10 flex-grow font-medium">{service.desc}</p>
-                                    <div className="mt-auto pt-6">
-                                        <div className="flex flex-col mb-6">
-                                            <span className="text-[11px] uppercase tracking-widest font-black text-slate-400 mb-1">Starting at</span>
-                                            <span className="text-[#dead01] text-3xl font-black leading-none">{service.price}</span>
-                                        </div>
-                                        <div className="flex items-center justify-between gap-4">
-                                            <button className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all">Get Started</button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read py-1">
-                                                <span>Read More</span><ArrowRight className="w-4 h-4 group-hover/read:translate-x-1.5 transition-transform duration-300" />
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    advantages={{
+                        title: "Benefits of EPR Registration for Importers",
+                        subtitle: "Why EPR registration is critical for smooth import operations",
+                        list: [
+                            { title: "Smooth Customs Clearance", desc: "EPR registration ensures your shipments clear customs without detention, preventing costly port delays and demurrage charges." },
+                            { title: "Avoid Demurrage & Storage Charges", desc: "Containers detained at Indian ports accumulate demurrage of ₹5,000 to ₹30,000 per day. Fast-tracked EPR registration saves these costs." },
+                            { title: "Legal Compliance", desc: "Importers without valid EPR certificates are liable for penalties under the Environment Protection Act, 1986, which may also result in import bans." },
+                            { title: "Market Access for Regulated Products", desc: "EPR registration unlocks access to the Indian market for regulated product categories, enabling e-commerce listings, B2B contracts, and retail distribution." },
+                            { title: "End-to-End Regulatory Handling", desc: "Our experts manage everything from DIC registration, recycler agreements, and CPCB portal coordination to final certificate issuance." },
+                            { title: "Pre-Shipment EPR Certificate", desc: "For regular importers, we obtain EPR certificates in advance before shipment dispatch, ensuring zero port detention on arrival." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-[#FEF9C3]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-6">About E P R For Importers</h2>
-                            <div className="w-16 h-1 bg-[#072b47] rounded mb-8"></div>
-                            <div className="space-y-6 text-[#072b47]/90 text-lg leading-relaxed font-medium">
-                                <p>Ensuring compliance with E P R For Importers is crucial for businesses operating in today's regulated environment under the broader framework of E Waste Management. Failure to comply can result in severe legal consequences, operational halts, and financial penalties.</p>
-                                <p>Our comprehensive assistance covers everything from initial evaluation and strategy formulation to execution and final approval. Whether you are establishing a new entity or operating an existing one, we provide clear roadmaps to maintain unblemished compliance records.</p>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/2">
-                            <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
-                                <h3 className="text-xl font-black text-[#072b47] mb-6">Core Requirements</h3>
-                                <ul className="space-y-4">
-                                    {["Business Incorporation Details", "Authorized Person KYC", "Facility Setup Plans", "List of Machinery/Process Details", "Past Compliance Records (if any)", "Site Clearance Approvals", "Local Body NOCs"].map((doc, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
-                                            <CheckCircle className="w-5 h-5 text-[#005a9c] mt-0.5 shrink-0" />
-                                            <span>{doc}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    eligibility={{
+                        title: "Eligibility for EPR Registration as an Importer",
+                        subtitle: "Types of importers required to obtain EPR registration in India",
+                        list: [
+                            { title: "Commercial Importers of EEE", desc: "Importing electronic and electrical equipment for sale to Indian distributors, retailers, or end users." },
+                            { title: "Importers of Plastic-Packaged Goods", desc: "Importing products packaged in any form of plastic, including flexible, rigid, or multi-layer plastic packaging." },
+                            { title: "Battery Importers", desc: "Importing batteries including EV batteries, portable batteries, automotive batteries, and battery assemblies." },
+                            { title: "Tyre Importers", desc: "Importing new, retreaded, or second-hand tyres for sale or distribution in India." },
+                            { title: "Captive Consumption Importers", desc: "Entities importing regulated products for their own organizational or manufacturing use must also comply." },
+                            { title: "E-Commerce Sellers (Cross-Border)", desc: "Foreign brands selling directly to Indian consumers through e-commerce platforms must obtain EPR registration." }
+                        ]
+                    }}
 
-            <section className="py-24 bg-white border-t border-slate-100">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-5xl font-black text-[#072b47] mb-6">Why Choose <span className="text-[#dead01]">Us</span></h2>
-                        <div className="w-24 h-1.5 bg-[#dead01] mx-auto rounded-full"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            { title: "Specialized Experts", desc: "Dedicated professionals focused specifically on navigating complex environmental guidelines." },
-                            { title: "Assured Approvals", desc: "A robust vetting process of document filings severely limits the chance of application pushback." },
-                            { title: "Lifecycle Management", desc: "Beyond simple acquisition, we maintain a proactive posture toward your ongoing compliance schedule." },
-                        ].map((item, index) => (
-                            <div key={index} className="relative p-10 rounded-[2.5rem] border border-slate-200 bg-white shadow-sm hover:shadow-2xl hover:border-[#dead01]/30 hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-                                <div className="mb-8">
-                                    <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:bg-[#dead01]/10 transition-all duration-500">
-                                        <CheckCircle className="w-8 h-8 text-[#dead01]" />
-                                    </div>
-                                </div>
-                                <h3 className="text-xl font-black text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium text-[15px]">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    documents={{
+                        title: "Documents Required for EPR Registration for Importers",
+                        description: "Key documents required for EPR registration as an importer in India:",
+                        list: [
+                            "Import Export Code (IEC) Certificate",
+                            "Customs House Agent (CHA) registration details",
+                            "Bill of Entry / Invoice copies of recent imports",
+                            "Product details & technical specifications",
+                            "GST Registration Certificate",
+                            "PAN Card of the company",
+                            "Certificate of Incorporation",
+                            "MoA / AoA of the company",
+                            "Authorized Signatory KYC",
+                            "Letter of Authorization from Foreign Manufacturer (for brand representatives)",
+                            "EPR Action Plan in CPCB format",
+                            "MoU with authorized recyclers or PRO",
+                            "Awareness Plan / Website content proofs"
+                        ]
+                    }}
+
+                    process={{
+                        title: "EPR Registration Process for Importers",
+                        subtitle: "Stepwise EPR registration for importers — from application to certificate",
+                        steps: [
+                            { step: "01", title: "Identify Waste Category", desc: "Determine which EPR category applies to your imports — E-waste (EEE), Plastic Waste, Battery Waste, or Tyre Waste — as each has a separate portal and process." },
+                            { step: "02", title: "Document Preparation", desc: "Gather all required documents and prepare the EPR Action Plan based on your import history and projected annual import volumes." },
+                            { step: "03", title: "EPR Portal Registration", desc: "Create an account on the relevant CPCB EPR portal. For E-waste: cpcb.nic.in/Ewaste. For Plastic: eprnational.cpcb.gov.in. For Battery: batteryepr.cpcb.gov.in." },
+                            { step: "04", title: "Application Filing", desc: "Fill in the application form with all importer details, product categories, import quantities, and recycler partnerships. Upload all supporting documents." },
+                            { step: "05", title: "CPCB Query Resolution", desc: "Address any clarifications or additional information sought by CPCB officials during the 15–30 day review period." },
+                            { step: "06", title: "Certificate Issuance", desc: "Receive the EPR Authorization Certificate required by Customs for port clearance. Certificate is issued digitally on the CPCB portal." }
+                        ]
+                    }}
+
+                    postCompliance={{
+                        title: "Post-Registration Compliance for Importers",
+                        subtitle: "Ongoing EPR obligations after obtaining your importer EPR certificate",
+                        list: [
+                            { title: "Annual EPR Target Fulfilment", desc: "Meet your annual EPR target for the product category imported. Targets are based on import volume in the reference year." },
+                            { title: "Physical Collection or Credit Purchase", desc: "Either physically collect and recycle the target quantity through authorized recyclers, or purchase EPR credits from the CPCB portal to offset shortfalls." },
+                            { title: "Quarterly Progress Reporting", desc: "File quarterly reports on the CPCB portal showing collection and recycling progress against quarterly milestones." },
+                            { title: "Annual Return Filing", desc: "File annual returns by the deadline with full details of products imported, EPR actions taken, and credits purchased if applicable." },
+                            { title: "Awareness Programme", desc: "Conduct and document consumer awareness programs about responsible product disposal as mandated by the relevant EPR rules." },
+                            { title: "Certificate Renewal", desc: "EPR certificates are typically valid for 5 years. Submit renewal application 60 days before expiry to avoid lapse of compliance status." }
+                        ]
+                    }}
+
+                    features={{
+                        title: "Why Choose Corpbiz for EPR Registration for Importers?",
+                        subtitle: "Trusted by 1000+ importers across India for EPR compliance",
+                        list: [
+                            { title: "Emergency Port-Clearance Service", desc: "Fastest EPR certificate issuance for importers with urgent port detention situations. We have resolved 200+ emergency port clearance cases." },
+                            { title: "All Category Expertise", desc: "Single-window EPR registration for all import categories — E-waste, Plastic, Battery, and Tyre EPR." },
+                            { title: "Pre-Shipment Certificate Planning", desc: "For regular importers, we plan EPR certificates proactively before your shipments arrive, ensuring zero port detention." },
+                            { title: "Multi-State IEC Coverage", desc: "If importing into multiple states, we ensure your EPR registration covers all states of operation under a single CPCB certificate." },
+                            { title: "1000+ Importer Clients", desc: "Successfully registered 1000+ importers across electronics, FMCG, pharmaceuticals, and industrial goods for EPR compliance." },
+                            { title: "Ongoing Compliance Management", desc: "Year-round compliance management including target tracking, credit procurement, and annual return filing for importer clients." }
+                        ]
+                    }}
+                />
+
+                <FAQLayout
+                    title="Frequently Asked Questions"
+                    subtitle="Get answers to the most common questions about this service."
+                    faqs={[
+          {
+                    "question": "Do importers need EPR registration before shipping products to India?",
+                    "answer": "Yes. Customs authorities require a valid EPR certificate before clearing regulated products at Indian ports. Without EPR registration, your consignment will be detained, leading to demurrage charges and potential forced re-export."
+          },
+          {
+                    "question": "Can an importer use the same EPR certificate for multiple product categories?",
+                    "answer": "No. Each waste category (e-waste, plastic, battery, tyre) has a separate EPR portal and registration. An importer dealing in multiple regulated product types must obtain separate registrations for each category."
+          },
+          {
+                    "question": "How quickly can an importer get an EPR certificate for port clearance?",
+                    "answer": "In standard processing, EPR certificates take 15–30 working days. Corpbiz offers an emergency fast-track service that can resolve critical port detention situations within 5–10 working days in many cases."
+          },
+          {
+                    "question": "What if imported products are both electronic AND have plastic packaging?",
+                    "answer": "The EPR obligation follows the primary regulated product category. Electronics are governed by e-waste EPR rules. If plastic packaging is significant and sold as standalone, separate plastic EPR registration may also be required."
+          },
+          {
+                    "question": "Does an importer need separate EPR registration for each state?",
+                    "answer": "No. A single CPCB EPR registration covers operations across all states and UTs of India. This is one of the key advantages of the centralized CPCB portal — national coverage with a single certificate."
+          },
+          {
+                    "question": "What are the EPR targets for importers?",
+                    "answer": "EPR targets for importers are calculated based on import volumes in the previous financial year. For plastic, targets are 100% of the eligible quantity. For e-waste, targets are 60–80% of EEE placed in market (Y-X years prior)."
+          },
+          {
+                    "question": "Can a foreign company importing directly to Indian customers get EPR registration?",
+                    "answer": "Yes. Foreign companies selling directly to Indian consumers (e.g., through cross-border e-commerce) must appoint a local India-registered authorized representative to obtain an EPR certificate on their behalf."
+          }
+]}
+                />
+                <ReviewsSection />
+            </div>
         </div>
     );
 };

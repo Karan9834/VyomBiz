@@ -1,151 +1,162 @@
 import React from 'react';
-import { CheckCircle, ArrowRight, Rocket, Smile, MapPin, PieChart, Shield } from 'lucide-react';
-
-const services = [
-    { title: "E P R Fulfillment In E Waste Management Consultation", desc: "Expert guidance and consultation for obtaining your E P R Fulfillment In E Waste Management smoothly and efficiently.", price: "₹2,999" },
-    { title: "Application Preparation", desc: "Complete documentation preparation and application filing for E Waste Management compliance.", price: "₹4,999" },
-    { title: "Follow-up & Liaison", desc: "Regular follow-ups with relevant authorities to ensure faster processing of your application.", price: "₹3,499" },
-    { title: "Compliance Audit", desc: "Pre-application audit to ensure your premises/business meets all statutory requirements.", price: "₹5,999" },
-    { title: "Renewal Submissions", desc: "Timely submission of renewal applications to prevent lapses in your compliance status.", price: "₹1,999" },
-    { title: "Annual Returns Filing", desc: "Preparation and filing of statutory annual returns and compliance reports as mandated.", price: "₹2,499" },
-];
+import HeroLayout from '../../../components/common/HeroLayout';
+import DetailsLayout from '../../../components/common/DetailsLayout';
+import FAQLayout from '../../../components/common/FAQLayout';
+import ReviewsSection from '../../../components/common/ReviewsSection';
 
 const EPRFulfillmentInEWasteManagement = () => {
     return (
-        <div className="bg-white min-h-screen font-sans">
-            <section className="relative min-h-[90vh] bg-white flex items-center pt-24 pb-12 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 mb-20">
-                    <div className="w-full lg:w-[60%]">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#005a9c]/10 border border-[#005a9c]/20 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-8">
-                            <Shield size={16} /><span>E Waste Management Services</span>
-                        </div>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#072b47] leading-[1.1] mb-8">
-                            E <br className="hidden md:block" />
-                            <span className="text-[#dead01]">P R Fulfillment In E Waste Management</span>
-                        </h1>
-                        <p className="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed font-medium">
-                            End-to-end support for E P R Fulfillment In E Waste Management. We manage the entire lifecycle of compliance to ensure your business operations remain uninterrupted and legally sound.
-                        </p>
-                        <div className="flex flex-wrap gap-4 mb-8">
-                            {["Certification", "Compliance", "Advisory", "Renewals"].map((tag, i) => (
-                                <span key={i} className="px-4 py-2 bg-slate-100 text-[#072b47] rounded-full text-sm font-bold">{tag}</span>
-                            ))}
-                        </div>
-                        <button className="bg-[#005a9c] text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 shadow-2xl shadow-blue-900/20 active:scale-95 transition-all">Get Started Now</button>
-                    </div>
-                    <div className="w-full lg:w-[40%] relative">
-                        <div className="absolute inset-0 bg-[#005a9c]/10 blur-[120px] rounded-full scale-150 animate-pulse"></div>
-                        <img src="/environmental/placeholder/hero.avif" alt="E P R Fulfillment In E Waste Management"
-                            className="relative z-10 w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
-                            onError={(e) => { e.target.src = "https://illustrations.popsy.co/amber/plant.svg" }} />
-                    </div>
-                </div>
-            </section>
+        <div className="bg-[#f8f9fa] min-h-screen relative font-sans">
+            <div className="relative z-10 space-y-2 lg:space-y-4">
+                <HeroLayout
+                    heroTitleMain="EPR Fulfillment in E-Waste Management"
+                    heroTitleSuffix="— Turnkey Solution"
+                    heroDescription="Meet your e-waste EPR collection targets without hassle. Turnkey e-waste EPR fulfillment solutions through our network of 15+ PROs and 10,000+ collection points across India."
+                    stats={[
+                        { count: "43298 +", label: "Happy Clients" },
+                        { count: "3500 +", label: "Expert Advisors" },
+                        { count: "50 +", label: "Branch Offices" },
+                        { count: "10k+", label: "Pin codes" }
+                    ]}
+                    formTitle="Get Free Expert Consultation"
+                />
 
-            <section className="bg-[#FEF9C3] py-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[
-                            { icon: <Rocket className="w-8 h-8 text-[#005a9c]" />, title: "Track Record", desc: "Successfully processed thousands of applications for clients across India." },
-                            { icon: <Smile className="w-8 h-8 text-[#005a9c]" />, title: "Domain Expertise", desc: "Deep knowledge of specific regulatory frameworks and compliance timelines." },
-                            { icon: <MapPin className="w-8 h-8 text-[#005a9c]" />, title: "Pan-India Reach", desc: "We provide comprehensive regulatory coverage spanning all states and territories." },
-                            { icon: <PieChart className="w-8 h-8 text-[#005a9c]" />, title: "Data Security", desc: "Your business secrets, process details, and critical data are held in strict confidence." },
-                        ].map((card, i) => (
-                            <div key={i} className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">{card.icon}</div>
-                                <h3 className="text-xl font-bold text-[#072b47] mb-4">{card.title}</h3>
-                                <p className="text-slate-600 text-[15px] leading-relaxed font-medium">{card.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                <DetailsLayout
+                    overview={{
+                        title: "EPR Fulfillment in E-Waste Management —",
+                        highlightTitle: "An Overview",
+                        description: [
+                            "EPR fulfillment in e-waste management refers to the complete execution of a producer's Extended Producer Responsibility obligations under the E-Waste (Management) Rules, 2022. This means physically collecting end-of-life electronic equipment from consumers and channeling it to authorized dismantlers and recyclers.",
+                            "Under the E-Waste (Management) Rules, 2022, producers are required to set up take-back systems for their products after they reach end-of-life. The collection, transportation, dismantling, and recycling of e-waste must be done exclusively through CPCB/SPCB-authorized channels.",
+                            "Producers can fulfill their EPR obligations either through their own collection infrastructure or by partnering with registered Producer Responsibility Organizations (PROs). PROs organize the logistics of e-waste collection on behalf of multiple producers.",
+                            "Non-fulfillment of e-waste EPR targets attracts Environmental Compensation (EC) levied by CPCB. The EC rates are significantly higher than the cost of active EPR fulfillment, making timely compliance the economically sound choice."
+                        ],
+                        whyIdealTitle: "E-Waste EPR Fulfillment Methods",
+                        whyIdealList: [
+                            { title: "Authorized Collection Centers", desc: "Set up CPCB-registered collection points where consumers can deposit end-of-life electronics." },
+                            { title: "PRO Partnership", desc: "Engage a registered PRO to manage all collection logistics across India on your behalf." },
+                            { title: "Reverse Pickup Service", desc: "Offer doorstep e-waste pickup to consumers via authorized collection partners." },
+                            { title: "EPR Credit Purchase", desc: "Purchase e-waste EPR credits from authorized dismantlers/recyclers to offset target shortfalls." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-4">Services Addressed</h2>
-                        <div className="w-24 h-1 bg-[#dead01] shadow-[0_0_8px_rgba(255,233,10,0.6)] mx-auto rounded mb-6"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
-                            <div key={index} className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-[#FFE90A]/40 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full group relative">
-                                <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
-                                <div className="p-8 flex flex-col h-full pt-10">
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{service.title}</h3>
-                                    <p className="text-slate-600 text-[15px] leading-relaxed mb-10 flex-grow font-medium">{service.desc}</p>
-                                    <div className="mt-auto pt-6">
-                                        <div className="flex flex-col mb-6">
-                                            <span className="text-[11px] uppercase tracking-widest font-black text-slate-400 mb-1">Starting at</span>
-                                            <span className="text-[#dead01] text-3xl font-black leading-none">{service.price}</span>
-                                        </div>
-                                        <div className="flex items-center justify-between gap-4">
-                                            <button className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all">Get Started</button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read py-1">
-                                                <span>Read More</span><ArrowRight className="w-4 h-4 group-hover/read:translate-x-1.5 transition-transform duration-300" />
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    advantages={{
+                        title: "Benefits of EPR Fulfillment in E-Waste Management",
+                        subtitle: "Why complete EPR fulfillment is essential for electronics businesses",
+                        list: [
+                            { title: "Avoid Environmental Compensation", desc: "Timely EPR target fulfillment prevents CPCB from levying Environmental Compensation, which can run into crores of rupees for large producers." },
+                            { title: "Prevent Authorization Cancellation", desc: "Chronic non-fulfillment can result in cancellation of EPR authorization, halting your legal right to manufacture or import EEE products in India." },
+                            { title: "Hassle-Free Takeback", desc: "Outsourcing collection logistics to verified PROs and recyclers eliminates the operational complexity of managing a national take-back network." },
+                            { title: "Consumer Loyalty", desc: "Take-back programs and e-waste awareness campaigns enhance brand goodwill and encourage customer loyalty." },
+                            { title: "Real-Time Progress Tracking", desc: "Monitor e-waste collection metrics in real-time through portal dashboards, ensuring you stay on track throughout the year." },
+                            { title: "Environmental Protection", desc: "Proper e-waste management ensures hazardous materials like lead, mercury, and cadmium are safely extracted and disposed of, protecting public health." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-[#FEF9C3]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-6">About E P R Fulfillment In E Waste Management</h2>
-                            <div className="w-16 h-1 bg-[#072b47] rounded mb-8"></div>
-                            <div className="space-y-6 text-[#072b47]/90 text-lg leading-relaxed font-medium">
-                                <p>Ensuring compliance with E P R Fulfillment In E Waste Management is crucial for businesses operating in today's regulated environment under the broader framework of E Waste Management. Failure to comply can result in severe legal consequences, operational halts, and financial penalties.</p>
-                                <p>Our comprehensive assistance covers everything from initial evaluation and strategy formulation to execution and final approval. Whether you are establishing a new entity or operating an existing one, we provide clear roadmaps to maintain unblemished compliance records.</p>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/2">
-                            <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
-                                <h3 className="text-xl font-black text-[#072b47] mb-6">Core Requirements</h3>
-                                <ul className="space-y-4">
-                                    {["Business Incorporation Details", "Authorized Person KYC", "Facility Setup Plans", "List of Machinery/Process Details", "Past Compliance Records (if any)", "Site Clearance Approvals", "Local Body NOCs"].map((doc, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
-                                            <CheckCircle className="w-5 h-5 text-[#005a9c] mt-0.5 shrink-0" />
-                                            <span>{doc}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    eligibility={{
+                        title: "Who Needs EPR Fulfillment for E-Waste?",
+                        subtitle: "Entities required to fulfill EPR targets under E-Waste (Management) Rules, 2022",
+                        list: [
+                            { title: "Electronics Manufacturers", desc: "All manufacturers of EEE products listed in Schedule I of the E-Waste (Management) Rules, 2022." },
+                            { title: "Importers of EEE", desc: "Companies importing electronic and electrical equipment for sale or distribution in India." },
+                            { title: "Brand Owners", desc: "Companies selling electronics under their own registered brand name, including private labels." },
+                            { title: "E-Commerce Platforms with Own Brands", desc: "Online marketplaces that sell electronics under their own brand names must also fulfill EPR obligations." },
+                            { title: "Government & PSU Purchasers (Bulk Consumers)", desc: "Bulk consumers of EEE with large annual purchases may also need to register and participate in e-waste management." }
+                        ]
+                    }}
 
-            <section className="py-24 bg-white border-t border-slate-100">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-5xl font-black text-[#072b47] mb-6">Why Choose <span className="text-[#dead01]">Us</span></h2>
-                        <div className="w-24 h-1.5 bg-[#dead01] mx-auto rounded-full"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            { title: "Specialized Experts", desc: "Dedicated professionals focused specifically on navigating complex environmental guidelines." },
-                            { title: "Assured Approvals", desc: "A robust vetting process of document filings severely limits the chance of application pushback." },
-                            { title: "Lifecycle Management", desc: "Beyond simple acquisition, we maintain a proactive posture toward your ongoing compliance schedule." },
-                        ].map((item, index) => (
-                            <div key={index} className="relative p-10 rounded-[2.5rem] border border-slate-200 bg-white shadow-sm hover:shadow-2xl hover:border-[#dead01]/30 hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-                                <div className="mb-8">
-                                    <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:bg-[#dead01]/10 transition-all duration-500">
-                                        <CheckCircle className="w-8 h-8 text-[#dead01]" />
-                                    </div>
-                                </div>
-                                <h3 className="text-xl font-black text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium text-[15px]">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    documents={{
+                        title: "Documents for EPR Fulfillment Setup",
+                        description: "Documents required to set up your e-waste EPR fulfillment program:",
+                        list: [
+                            "Valid EPR Authorization Certificate from CPCB",
+                            "MoU with Authorized E-Waste Recycler (Form-specific)",
+                            "MoU with authorized PRO (if using PRO route)",
+                            "Details of Toll-Free Collection Helpline",
+                            "List and addresses of approved collection centers",
+                            "E-waste awareness campaign materials and evidences",
+                            "RoHS Self-Declaration for all product models",
+                            "Quarterly e-waste collection reports (Form 2 format)",
+                            "Agreement with authorized transporter for e-waste movement"
+                        ]
+                    }}
+
+                    process={{
+                        title: "E-Waste EPR Fulfillment Process",
+                        subtitle: "Comprehensive approach to meeting e-waste EPR targets",
+                        steps: [
+                            { step: "01", title: "Target Calculation", desc: "Calculate your annual e-waste collection target based on EEE products put in the market in the reference year (Y-X, where X is average product life)." },
+                            { step: "02", title: "Strategy Formulation", desc: "Design a viable take-back strategy — either through your own collection centers, PRO partnership, dealer take-back, or a combination of all methods." },
+                            { step: "03", title: "Recycler & PRO Tie-Ups", desc: "Sign MoUs with CPCB-authorized e-waste dismantlers, recyclers, and/or PROs. Ensure agreements cover the requisite collection capacity for your target." },
+                            { step: "04", title: "Collection Center Setup", desc: "Establish CPCB-compliant collection points at your facilities, dealer networks, and authorized service centers across India." },
+                            { step: "05", title: "Consumer Awareness Campaign", desc: "Launch multi-channel awareness campaigns — toll-free helpline, website listings, product labelling, and educational campaigns — to educate consumers about e-waste disposal." },
+                            { step: "06", title: "Quarterly Tracking & Annual Return", desc: "Monitor progress quarterly, file quarterly reports, and submit final annual returns showing total e-waste collected and channeled to authorized recyclers." }
+                        ]
+                    }}
+
+                    postCompliance={{
+                        title: "E-Waste EPR Target Schedule (2023-24 onwards)",
+                        subtitle: "Annual collection targets for established vs new producers",
+                        list: [
+                            { title: "Established Producers (2023-24)", desc: "60% of EEE units placed in the market in year Y-X, where X is the average life of the product category." },
+                            { title: "Established Producers (2027-28 onwards)", desc: "Target increases to 80% of EEE units placed in market in the reference year." },
+                            { title: "New Producers (2023-24)", desc: "15% of sales figure of FY 2021-22 as per CPCB-notified schedule." },
+                            { title: "New Producers (2024-25)", desc: "20% of sales figure of FY 2022-23." },
+                            { title: "New Producers (2025-26 onwards)", desc: "20% of sales figure of the financial year two years prior." },
+                            { title: "Environmental Compensation (Non-Fulfillment)", desc: "If targets are not met, CPCB levies EC at rates prescribed annually. Producers failing to meet targets must deposit EC amounts before the annual return deadline." }
+                        ]
+                    }}
+
+                    features={{
+                        title: "Why Choose Corpbiz for E-Waste EPR Fulfillment?",
+                        subtitle: "India's most trusted e-waste EPR fulfillment partner for electronics brands",
+                        list: [
+                            { title: "Proven PRO Network", desc: "Partnerships with 15+ CPCB-registered PROs with pan-India collection reach, ensuring target fulfillment across all states." },
+                            { title: "10,000+ Collection Points", desc: "Access to an established network of 10,000+ authorized e-waste collection points across India through our PRO partners." },
+                            { title: "Real-Time Dashboard", desc: "Client-facing real-time dashboard to track e-waste collection progress, quarterly target achievements, and CPCB portal compliance status." },
+                            { title: "Zero Environmental Compensation Record", desc: "None of our 500+ electronics clients have ever paid Environmental Compensation under our management." },
+                            { title: "Consumer Awareness Solutions", desc: "Turnkey consumer awareness programs including SMS campaigns, website integrations, product label designs, and dealer training." },
+                            { title: "Annual Return Filing Support", desc: "Expert team handles all CPCB portal filing — quarterly reports, Form 2, annual returns — with guaranteed on-time submission." }
+                        ]
+                    }}
+                />
+
+                <FAQLayout
+                    title="Frequently Asked Questions"
+                    subtitle="Get answers to the most common questions about this service."
+                    faqs={[
+          {
+                    "question": "What is EPR fulfillment in e-waste management?",
+                    "answer": "EPR fulfillment in e-waste management refers to the physical collection, transportation, dismantling, and recycling of end-of-life electrical and electronic equipment (EEE) by or on behalf of the producer. It includes all activities needed to meet the annual collection targets mandated by CPCB."
+          },
+          {
+                    "question": "What is the e-waste EPR target for established producers in FY 2023–24?",
+                    "answer": "Established producers must collect 60% of EEE units placed in the market in year Y-X (where X is the average product life). From 2027–28 onwards, this target increases to 80%."
+          },
+          {
+                    "question": "What is a Producer Responsibility Organisation (PRO)?",
+                    "answer": "A PRO is a registered entity that collects and channels e-waste on behalf of multiple producers. Producers can meet their EPR obligations by partnering with a CPCB-registered PRO instead of setting up their own collection infrastructure."
+          },
+          {
+                    "question": "Can e-waste EPR credits be purchased instead of physical collection?",
+                    "answer": "Currently, physical collection is the primary mechanism for e-waste EPR fulfillment. However, CPCB is expanding credit trading to e-waste categories. Producers unable to meet physical targets may be subject to Environmental Compensation."
+          },
+          {
+                    "question": "What is the penalty for missing e-waste EPR targets?",
+                    "answer": "Environmental Compensation (EC) is levied for shortfall in e-waste collection targets. EC amounts are notified by CPCB annually and must be deposited before the annual return deadline. Repeated non-compliance can lead to EPR authorization cancellation."
+          },
+          {
+                    "question": "How do consumers return e-waste to producers?",
+                    "answer": "Producers must provide multiple consumer touchpoints — toll-free collection helplines, listed collection centers, dealer take-back programs, reverse pickup services, and online drop-off booking. These are all mandated by the E-Waste (Management) Rules, 2022."
+          },
+          {
+                    "question": "What forms must be filed for e-waste EPR compliance?",
+                    "answer": "Key forms include Form-2 (records of e-waste handled), Form-3 (annual returns), and Form-6 (e-waste manifest for transport). These are filed on the CPCB e-waste portal. Corpbiz handles all form filings for its clients."
+          }
+]}
+                />
+                <ReviewsSection />
+            </div>
         </div>
     );
 };

@@ -1,151 +1,160 @@
 import React from 'react';
-import { CheckCircle, ArrowRight, Rocket, Smile, MapPin, PieChart, Shield } from 'lucide-react';
-
-const services = [
-    { title: "E P R Credits From Plastic Waste Recyclers Consultation", desc: "Expert guidance and consultation for obtaining your E P R Credits From Plastic Waste Recyclers smoothly and efficiently.", price: "₹2,999" },
-    { title: "Application Preparation", desc: "Complete documentation preparation and application filing for E Waste Management compliance.", price: "₹4,999" },
-    { title: "Follow-up & Liaison", desc: "Regular follow-ups with relevant authorities to ensure faster processing of your application.", price: "₹3,499" },
-    { title: "Compliance Audit", desc: "Pre-application audit to ensure your premises/business meets all statutory requirements.", price: "₹5,999" },
-    { title: "Renewal Submissions", desc: "Timely submission of renewal applications to prevent lapses in your compliance status.", price: "₹1,999" },
-    { title: "Annual Returns Filing", desc: "Preparation and filing of statutory annual returns and compliance reports as mandated.", price: "₹2,499" },
-];
+import HeroLayout from '../../../components/common/HeroLayout';
+import DetailsLayout from '../../../components/common/DetailsLayout';
+import FAQLayout from '../../../components/common/FAQLayout';
+import ReviewsSection from '../../../components/common/ReviewsSection';
 
 const EPRCreditsFromPlasticWasteRecyclers = () => {
     return (
-        <div className="bg-white min-h-screen font-sans">
-            <section className="relative min-h-[90vh] bg-white flex items-center pt-24 pb-12 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 mb-20">
-                    <div className="w-full lg:w-[60%]">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#005a9c]/10 border border-[#005a9c]/20 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-8">
-                            <Shield size={16} /><span>E Waste Management Services</span>
-                        </div>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#072b47] leading-[1.1] mb-8">
-                            E <br className="hidden md:block" />
-                            <span className="text-[#dead01]">P R Credits From Plastic Waste Recyclers</span>
-                        </h1>
-                        <p className="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed font-medium">
-                            End-to-end support for E P R Credits From Plastic Waste Recyclers. We manage the entire lifecycle of compliance to ensure your business operations remain uninterrupted and legally sound.
-                        </p>
-                        <div className="flex flex-wrap gap-4 mb-8">
-                            {["Certification", "Compliance", "Advisory", "Renewals"].map((tag, i) => (
-                                <span key={i} className="px-4 py-2 bg-slate-100 text-[#072b47] rounded-full text-sm font-bold">{tag}</span>
-                            ))}
-                        </div>
-                        <button className="bg-[#005a9c] text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 shadow-2xl shadow-blue-900/20 active:scale-95 transition-all">Get Started Now</button>
-                    </div>
-                    <div className="w-full lg:w-[40%] relative">
-                        <div className="absolute inset-0 bg-[#005a9c]/10 blur-[120px] rounded-full scale-150 animate-pulse"></div>
-                        <img src="/environmental/placeholder/hero.avif" alt="E P R Credits From Plastic Waste Recyclers"
-                            className="relative z-10 w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
-                            onError={(e) => { e.target.src = "https://illustrations.popsy.co/amber/plant.svg" }} />
-                    </div>
-                </div>
-            </section>
+        <div className="bg-[#f8f9fa] min-h-screen relative font-sans">
+            <div className="relative z-10 space-y-2 lg:space-y-4">
+                <HeroLayout
+                    heroTitleMain="EPR Credits from Plastic Waste Recyclers"
+                    heroTitleSuffix="— All 4 Categories"
+                    heroDescription="Meet your plastic EPR targets with certified credits from CPCB-registered PWPs. Covering Category I, II, III & IV plastic packaging. Best market rates, fastest transactions."
+                    stats={[
+                        { count: "43298 +", label: "Happy Clients" },
+                        { count: "3500 +", label: "Expert Advisors" },
+                        { count: "50 +", label: "Branch Offices" },
+                        { count: "10k+", label: "Pin codes" }
+                    ]}
+                    formTitle="Get Free Expert Consultation"
+                />
 
-            <section className="bg-[#FEF9C3] py-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[
-                            { icon: <Rocket className="w-8 h-8 text-[#005a9c]" />, title: "Track Record", desc: "Successfully processed thousands of applications for clients across India." },
-                            { icon: <Smile className="w-8 h-8 text-[#005a9c]" />, title: "Domain Expertise", desc: "Deep knowledge of specific regulatory frameworks and compliance timelines." },
-                            { icon: <MapPin className="w-8 h-8 text-[#005a9c]" />, title: "Pan-India Reach", desc: "We provide comprehensive regulatory coverage spanning all states and territories." },
-                            { icon: <PieChart className="w-8 h-8 text-[#005a9c]" />, title: "Data Security", desc: "Your business secrets, process details, and critical data are held in strict confidence." },
-                        ].map((card, i) => (
-                            <div key={i} className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">{card.icon}</div>
-                                <h3 className="text-xl font-bold text-[#072b47] mb-4">{card.title}</h3>
-                                <p className="text-slate-600 text-[15px] leading-relaxed font-medium">{card.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                <DetailsLayout
+                    overview={{
+                        title: "EPR Credits from Plastic Waste Recyclers —",
+                        highlightTitle: "An Overview",
+                        description: [
+                            "Under the Plastic Waste Management (PWM) Rules 2016 (amended 2022), registered Plastic Waste Processors (PWPs) generate EPR credits upon successfully collecting and recycling plastic packaging waste. These credits are officially listed on the centralized CPCB PWM portal.",
+                            "Producers, Importers, and Brand Owners (PIBOs) registered under the PWM EPR framework must recycle a mandated percentage of their plastic packaging waste. PIBOs unable to meet their targets through physical collection can purchase these credits from PWPs to fulfill their recycling, use of recycled plastic content, and end-of-life disposal targets.",
+                            "The credit market covers four main categories of plastic packaging: Rigid Plastic Packaging (Category I), Flexible Plastic Packaging (Category II), Multi-Layered Plastic Packaging (Category III), and Plastic used for carrying and wrapping (Category IV).",
+                            "Each credit represents 1 metric tonne of plastic that has been collected, processed, and recycled by a CPCB-verified recycler. The credit generation process requires documentary proof of waste processed and is subject to third-party audit verification."
+                        ],
+                        whyIdealTitle: "Plastic Packaging Category Classification",
+                        whyIdealList: [
+                            { title: "Category I — Rigid Plastic", desc: "Includes PET bottles, HDPE containers, polypropylene containers, and other rigid plastic packaging." },
+                            { title: "Category II — Flexible Plastic", desc: "Includes multilayer films, pouches, laminates, and other flexible plastic packaging materials." },
+                            { title: "Category III — Multi-Layered Plastic", desc: "Includes multi-layered, multi-material plastic packaging that is not mono-sorted." },
+                            { title: "Category IV — Plastic Carry Bags & Sheets", desc: "Includes plastic bags, sheets, and wrapping material used for carrying or enclosing products." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-4">Services Addressed</h2>
-                        <div className="w-24 h-1 bg-[#dead01] shadow-[0_0_8px_rgba(255,233,10,0.6)] mx-auto rounded mb-6"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
-                            <div key={index} className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-[#FFE90A]/40 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full group relative">
-                                <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
-                                <div className="p-8 flex flex-col h-full pt-10">
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{service.title}</h3>
-                                    <p className="text-slate-600 text-[15px] leading-relaxed mb-10 flex-grow font-medium">{service.desc}</p>
-                                    <div className="mt-auto pt-6">
-                                        <div className="flex flex-col mb-6">
-                                            <span className="text-[11px] uppercase tracking-widest font-black text-slate-400 mb-1">Starting at</span>
-                                            <span className="text-[#dead01] text-3xl font-black leading-none">{service.price}</span>
-                                        </div>
-                                        <div className="flex items-center justify-between gap-4">
-                                            <button className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all">Get Started</button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read py-1">
-                                                <span>Read More</span><ArrowRight className="w-4 h-4 group-hover/read:translate-x-1.5 transition-transform duration-300" />
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    advantages={{
+                        title: "Advantages of EPR Credits from Plastic Waste Recyclers",
+                        subtitle: "Why smart PIBOs choose credits for their PWM EPR compliance",
+                        list: [
+                            { title: "Guaranteed Target Fulfilment", desc: "Credits provide a guaranteed mechanism for meeting the rigid PWM targets regardless of your physical collection infrastructure or capacity." },
+                            { title: "Only CPCB-Verified Recyclers", desc: "All credits are generated exclusively by CPCB-registered Plastic Waste Processors, ensuring authenticity and regulatory acceptance." },
+                            { title: "Fully Audit-Proof", desc: "All credit transfers are electronically traceable on the government portal. Digital certificates provide complete documentation for CPCB audits." },
+                            { title: "Flexible Procurement", desc: "Credits can be purchased in any quantity to cover partial or full target shortfalls. No minimum order requirements." },
+                            { title: "Supports Circular Economy", desc: "By purchasing credits, PIBOs financially support the plastic recycling ecosystem and contribute to India's circular economy goals." },
+                            { title: "Competitive Pricing", desc: "Our bulk procurement relationships with PWPs ensure you get credit prices significantly below the CPCB-defined Environmental Compensation (EC) rates, making compliance affordable." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-[#FEF9C3]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-6">About E P R Credits From Plastic Waste Recyclers</h2>
-                            <div className="w-16 h-1 bg-[#072b47] rounded mb-8"></div>
-                            <div className="space-y-6 text-[#072b47]/90 text-lg leading-relaxed font-medium">
-                                <p>Ensuring compliance with E P R Credits From Plastic Waste Recyclers is crucial for businesses operating in today's regulated environment under the broader framework of E Waste Management. Failure to comply can result in severe legal consequences, operational halts, and financial penalties.</p>
-                                <p>Our comprehensive assistance covers everything from initial evaluation and strategy formulation to execution and final approval. Whether you are establishing a new entity or operating an existing one, we provide clear roadmaps to maintain unblemished compliance records.</p>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/2">
-                            <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
-                                <h3 className="text-xl font-black text-[#072b47] mb-6">Core Requirements</h3>
-                                <ul className="space-y-4">
-                                    {["Business Incorporation Details", "Authorized Person KYC", "Facility Setup Plans", "List of Machinery/Process Details", "Past Compliance Records (if any)", "Site Clearance Approvals", "Local Body NOCs"].map((doc, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
-                                            <CheckCircle className="w-5 h-5 text-[#005a9c] mt-0.5 shrink-0" />
-                                            <span>{doc}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    eligibility={{
+                        title: "Who Should Purchase Plastic EPR Credits?",
+                        subtitle: "PIBOs eligible to purchase EPR credits from plastic waste recyclers",
+                        list: [
+                            { title: "Registered PIBOs with Target Shortfall", desc: "Must be registered on the PWM CPCB portal with an active EPR registration certificate." },
+                            { title: "Category I Plastic Producers", desc: "Brands and manufacturers of rigid plastic packaging failing to meet their Category I recycling target." },
+                            { title: "Category II Flexible Packaging Users", desc: "FMCG companies and food brands using flexible plastic pouches and laminates who need to cover recycling targets." },
+                            { title: "Category III MLP Manufacturers", desc: "Entities using multi-layer plastic packaging, typically for food, pharmaceuticals, and consumer products." },
+                            { title: "Category IV Carry Bag Producers", desc: "Manufacturers of plastic carry bags, wrapping film, and packaging sheets requiring end-of-life disposal credits." }
+                        ]
+                    }}
 
-            <section className="py-24 bg-white border-t border-slate-100">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-5xl font-black text-[#072b47] mb-6">Why Choose <span className="text-[#dead01]">Us</span></h2>
-                        <div className="w-24 h-1.5 bg-[#dead01] mx-auto rounded-full"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            { title: "Specialized Experts", desc: "Dedicated professionals focused specifically on navigating complex environmental guidelines." },
-                            { title: "Assured Approvals", desc: "A robust vetting process of document filings severely limits the chance of application pushback." },
-                            { title: "Lifecycle Management", desc: "Beyond simple acquisition, we maintain a proactive posture toward your ongoing compliance schedule." },
-                        ].map((item, index) => (
-                            <div key={index} className="relative p-10 rounded-[2.5rem] border border-slate-200 bg-white shadow-sm hover:shadow-2xl hover:border-[#dead01]/30 hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-                                <div className="mb-8">
-                                    <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:bg-[#dead01]/10 transition-all duration-500">
-                                        <CheckCircle className="w-8 h-8 text-[#dead01]" />
-                                    </div>
-                                </div>
-                                <h3 className="text-xl font-black text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium text-[15px]">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    documents={{
+                        title: "Documents Required for Credit Procurement",
+                        description: "Documents needed to initiate the plastic EPR credit procurement process:",
+                        list: [
+                            "PIBO EPR Registration Certificate (from CPCB PWM portal)",
+                            "Category-wise plastic packaging sales or import data for the reference year",
+                            "EPR Action Plan showing category-wise target and collection shortfall",
+                            "State-wise distribution of plastic packaging sold or imported",
+                            "Purchase Order for EPR Credits on CPCB portal",
+                            "Bank account details of PIBO entity for transaction",
+                            "Previous year annual return filing acknowledgment"
+                        ]
+                    }}
+
+                    process={{
+                        title: "Process for Purchasing EPR Credits from Plastic Recyclers",
+                        subtitle: "Step-by-step process on the CPCB PWM portal",
+                        steps: [
+                            { step: "01", title: "Category-wise Gap Assessment", desc: "Calculate the exact shortfall in each plastic category (I, II, III, IV) by comparing your annual target with actual physical collection achieved during the year." },
+                            { step: "02", title: "PWP Identification & Verification", desc: "Shortlist verified Plastic Waste Processors with available credits in your required categories. We provide a live database of verified PWPs with credit availability." },
+                            { step: "03", title: "Price Negotiation & Agreement", desc: "Negotiate credit pricing with selected PWPs. Typical credit prices range from ₹8,000 to ₹30,000 per tonne depending on category and market conditions." },
+                            { step: "04", title: "Portal Transaction", desc: "Execute the credit transfer on the CPCB PWM online marketplace. The PIBO initiates a purchase request on the portal, which the PWP accepts and confirms." },
+                            { step: "05", title: "Digital Credit Certificate Generation", desc: "Upon successful transaction, the portal automatically generates a digital EPR credit certificate reflecting the quantity and category of credits transferred." },
+                            { step: "06", title: "Annual Return Filing with Credits", desc: "Attach EPR credit certificates to your annual return filing on the CPCB portal. Credits are automatically reflected in your compliance ledger." }
+                        ]
+                    }}
+
+                    postCompliance={{
+                        title: "Mandatory PWM Compliance Beyond Credit Purchase",
+                        subtitle: "Complete compliance obligations for PIBOs under PWM Rules",
+                        list: [
+                            { title: "Annual Return Filing", desc: "All PIBOs must file annual returns by June 30th (FY 2023-24 onwards) disclosing total plastic used, collection achieved, and credits purchased." },
+                            { title: "Quarterly Data Reporting", desc: "PIBOs must update quarterly collection and recycling data on the CPCB portal, even if credits are being used for compliance." },
+                            { title: "Use of Recycled Content (URV Targets)", desc: "Separate from recycling targets, PIBOs must progressively increase the use of recycled plastic content in their packaging — 30% by 2025-26." },
+                            { title: "End-of-Life Disposal Target", desc: "A portion of MLP and non-recyclable plastics must be co-processed. Credits for co-processing can also be purchased from authorized co-processors." },
+                            { title: "EPR Action Plan Update", desc: "Annual update and resubmission of the EPR action plan reflecting revised targets, state-wise collection strategies, and recycler partnerships." },
+                            { title: "Environmental Compensation (EC)", desc: "If EPR targets are not met even after credit purchase, CPCB levies Environmental Compensation. In 2023-24, EC is set at ₹32.13/kg for recycling shortfall." }
+                        ]
+                    }}
+
+                    features={{
+                        title: "Why Source Plastic EPR Credits through Corpbiz?",
+                        subtitle: "India's largest intermediary for plastic EPR credit transactions",
+                        list: [
+                            { title: "Largest PWP Network", desc: "Access to 200+ CPCB-registered Plastic Waste Processors with live credit inventory across all 4 plastic categories." },
+                            { title: "Best Market Rates", desc: "Our volume relationships guarantee credit prices 15-25% below spot market rates, maximizing cost savings for clients." },
+                            { title: "Category-specific Sourcing", desc: "Expert sourcing for all four plastic categories, including the harder-to-find MLP (Category III) credits for multi-layer packaging users." },
+                            { title: "Rapid Transaction Closure", desc: "Most credit purchases are completed within 2-3 business days, with emergency same-day service available for year-end compliance deadlines." },
+                            { title: "Full Portal Support", desc: "Technical support for completing transactions on the CPCB portal, including login assistance, purchase order initiation, and credit certificate download." },
+                            { title: "Compliance Documentation Package", desc: "Complete compliance document package for audit readiness — credit certificates, recycler authorization copies, and annual return templates." }
+                        ]
+                    }}
+                />
+
+                <FAQLayout
+                    title="Frequently Asked Questions"
+                    subtitle="Get answers to the most common questions about this service."
+                    faqs={[
+          {
+                    "question": "What are the plastic packaging categories for EPR credits?",
+                    "answer": "There are four categories: Category I (Rigid plastic packaging — PET bottles, HDPE containers), Category II (Flexible plastic — films, pouches, laminates), Category III (Multi-layer plastic packaging — MLP), and Category IV (Plastic carry bags and wraps)."
+          },
+          {
+                    "question": "Can PIBOs buy credits from recyclers in any state?",
+                    "answer": "Yes. The CPCB portal allows nationwide credit transactions. A PIBO in Maharashtra can purchase credits from a recycler in Gujarat or Tamil Nadu. There are no geographic restrictions on credit trading on the centralized portal."
+          },
+          {
+                    "question": "What is the Use of Recycled Content (URV) obligation?",
+                    "answer": "Separate from recycling targets, PIBOs must progressively increase the use of recycled plastic content in their packaging: 30% by 2025–26, increasing further by 2028–29. URV credits can also be purchased from certified recyclers for this obligation."
+          },
+          {
+                    "question": "How long does it take to purchase plastic EPR credits?",
+                    "answer": "Most plastic EPR credit transactions on the CPCB portal are completed within 2–5 business days. With Corpbiz's pre-verified recycler relationships, urgent purchases can be completed within 24–48 hours for year-end compliance emergencies."
+          },
+          {
+                    "question": "What documents are needed to buy plastic EPR credits?",
+                    "answer": "You need your PIBO EPR registration certificate, category-wise plastic sales/import data, shortfall calculation report, and a purchase order initiated on the CPCB portal. Corpbiz handles all the documentation and portal transaction support."
+          },
+          {
+                    "question": "What is the Environmental Compensation (EC) rate for plastic waste?",
+                    "answer": "For FY 2023–24, the EC rate for recycling shortfall is ₹32.13 per kg. This is the penalty levied if EPR targets are not met. Purchasing EPR credits at market rates (₹8–30k/MT) is significantly cheaper than paying EC."
+          },
+          {
+                    "question": "Do EPR credits satisfy all three types of plastic obligations (recycling + URV + EOL)?",
+                    "answer": "No. The three obligations — recycling target, use of recycled content (URV), and end-of-life disposal — are separate. Separate credits must be procured for each obligation. Corpbiz helps map your specific credit requirements accurately."
+          }
+]}
+                />
+                <ReviewsSection />
+            </div>
         </div>
     );
 };

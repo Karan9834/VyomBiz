@@ -1,151 +1,163 @@
 import React from 'react';
-import { CheckCircle, ArrowRight, Rocket, Smile, MapPin, PieChart, Shield } from 'lucide-react';
-
-const services = [
-    { title: "Plastic Waste Authorization Consultation", desc: "Expert guidance and consultation for obtaining your Plastic Waste Authorization smoothly and efficiently.", price: "₹2,999" },
-    { title: "Application Preparation", desc: "Complete documentation preparation and application filing for E Waste Management compliance.", price: "₹4,999" },
-    { title: "Follow-up & Liaison", desc: "Regular follow-ups with relevant authorities to ensure faster processing of your application.", price: "₹3,499" },
-    { title: "Compliance Audit", desc: "Pre-application audit to ensure your premises/business meets all statutory requirements.", price: "₹5,999" },
-    { title: "Renewal Submissions", desc: "Timely submission of renewal applications to prevent lapses in your compliance status.", price: "₹1,999" },
-    { title: "Annual Returns Filing", desc: "Preparation and filing of statutory annual returns and compliance reports as mandated.", price: "₹2,499" },
-];
+import HeroLayout from '../../../components/common/HeroLayout';
+import DetailsLayout from '../../../components/common/DetailsLayout';
+import FAQLayout from '../../../components/common/FAQLayout';
+import ReviewsSection from '../../../components/common/ReviewsSection';
 
 const PlasticWasteAuthorization = () => {
     return (
-        <div className="bg-white min-h-screen font-sans">
-            <section className="relative min-h-[90vh] bg-white flex items-center pt-24 pb-12 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 mb-20">
-                    <div className="w-full lg:w-[60%]">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#005a9c]/10 border border-[#005a9c]/20 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-8">
-                            <Shield size={16} /><span>E Waste Management Services</span>
-                        </div>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#072b47] leading-[1.1] mb-8">
-                            Plastic <br className="hidden md:block" />
-                            <span className="text-[#dead01]">Waste Authorization</span>
-                        </h1>
-                        <p className="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed font-medium">
-                            End-to-end support for Plastic Waste Authorization. We manage the entire lifecycle of compliance to ensure your business operations remain uninterrupted and legally sound.
-                        </p>
-                        <div className="flex flex-wrap gap-4 mb-8">
-                            {["Certification", "Compliance", "Advisory", "Renewals"].map((tag, i) => (
-                                <span key={i} className="px-4 py-2 bg-slate-100 text-[#072b47] rounded-full text-sm font-bold">{tag}</span>
-                            ))}
-                        </div>
-                        <button className="bg-[#005a9c] text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 shadow-2xl shadow-blue-900/20 active:scale-95 transition-all">Get Started Now</button>
-                    </div>
-                    <div className="w-full lg:w-[40%] relative">
-                        <div className="absolute inset-0 bg-[#005a9c]/10 blur-[120px] rounded-full scale-150 animate-pulse"></div>
-                        <img src="/environmental/placeholder/hero.avif" alt="Plastic Waste Authorization"
-                            className="relative z-10 w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
-                            onError={(e) => { e.target.src = "https://illustrations.popsy.co/amber/plant.svg" }} />
-                    </div>
-                </div>
-            </section>
+        <div className="bg-[#f8f9fa] min-h-screen relative font-sans">
+            <div className="relative z-10 space-y-2 lg:space-y-4">
+                <HeroLayout
+                    heroTitleMain="Plastic Waste Authorization"
+                    heroTitleSuffix="— SPCB Compliance"
+                    heroDescription="Get your plastic waste authorization from SPCB with expert support. Complete compliance with Plastic Waste Management Rules 2016 for recyclers, co-processors, and plastic waste processors."
+                    stats={[
+                        { count: "43298 +", label: "Happy Clients" },
+                        { count: "3500 +", label: "Expert Advisors" },
+                        { count: "50 +", label: "Branch Offices" },
+                        { count: "10k+", label: "Pin codes" }
+                    ]}
+                    formTitle="Get Free Expert Consultation"
+                />
 
-            <section className="bg-[#FEF9C3] py-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[
-                            { icon: <Rocket className="w-8 h-8 text-[#005a9c]" />, title: "Track Record", desc: "Successfully processed thousands of applications for clients across India." },
-                            { icon: <Smile className="w-8 h-8 text-[#005a9c]" />, title: "Domain Expertise", desc: "Deep knowledge of specific regulatory frameworks and compliance timelines." },
-                            { icon: <MapPin className="w-8 h-8 text-[#005a9c]" />, title: "Pan-India Reach", desc: "We provide comprehensive regulatory coverage spanning all states and territories." },
-                            { icon: <PieChart className="w-8 h-8 text-[#005a9c]" />, title: "Data Security", desc: "Your business secrets, process details, and critical data are held in strict confidence." },
-                        ].map((card, i) => (
-                            <div key={i} className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">{card.icon}</div>
-                                <h3 className="text-xl font-bold text-[#072b47] mb-4">{card.title}</h3>
-                                <p className="text-slate-600 text-[15px] leading-relaxed font-medium">{card.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                <DetailsLayout
+                    overview={{
+                        title: "Plastic Waste Authorization —",
+                        highlightTitle: "An Overview",
+                        description: [
+                            "Plastic waste disposal has become a significant challenge in India, with the rapid increase in disposable plastic production outpacing the country's waste management capacity. Plastic pollution is especially severe in developing nations like India, where waste collection systems are often inefficient.",
+                            "To address this issue, the Indian government introduced plastic waste authorization under the Plastic Waste Management Rules, 2016. As per these rules, any business or entity involved in the collection, storage, transportation, processing, or recycling of plastic waste is required to obtain an authorization certificate from the designated authorities to operate legally.",
+                            "Plastic Waste Authorization is essential for legal compliance under these regulations. The Government of India, through the Plastic Waste Management Rules, 2016, aims to mitigate the environmental harm caused by plastic waste.",
+                            "Plastic pollution affects not only land but also water bodies, leading to the death of many aquatic animals that consume plastic. Therefore, effective waste management plastic recycling is crucial for protecting the environment and promoting sustainability."
+                        ],
+                        whyIdealTitle: "Why Plastic Waste Authorization is Required?",
+                        whyIdealList: [
+                            { title: "Legal Compliance", desc: "Required under the Plastic Waste Management Rules, 2016 for all plastic waste handling entities." },
+                            { title: "Environmental Protection", desc: "Ensures responsible plastic waste disposal to protect both land and water ecosystems." },
+                            { title: "Business Credibility", desc: "Demonstrates corporate responsibility and commitment to sustainability." },
+                            { title: "Avoid Penalties", desc: "Prevents disruptions to supply chain and avoids SPCB/CPCB penalties." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-4">Services Addressed</h2>
-                        <div className="w-24 h-1 bg-[#dead01] shadow-[0_0_8px_rgba(255,233,10,0.6)] mx-auto rounded mb-6"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
-                            <div key={index} className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-[#FFE90A]/40 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full group relative">
-                                <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
-                                <div className="p-8 flex flex-col h-full pt-10">
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{service.title}</h3>
-                                    <p className="text-slate-600 text-[15px] leading-relaxed mb-10 flex-grow font-medium">{service.desc}</p>
-                                    <div className="mt-auto pt-6">
-                                        <div className="flex flex-col mb-6">
-                                            <span className="text-[11px] uppercase tracking-widest font-black text-slate-400 mb-1">Starting at</span>
-                                            <span className="text-[#dead01] text-3xl font-black leading-none">{service.price}</span>
-                                        </div>
-                                        <div className="flex items-center justify-between gap-4">
-                                            <button className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all">Get Started</button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read py-1">
-                                                <span>Read More</span><ArrowRight className="w-4 h-4 group-hover/read:translate-x-1.5 transition-transform duration-300" />
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    advantages={{
+                        title: "Benefits of Plastic Waste Authorization",
+                        subtitle: "Key benefits for businesses engaged in plastic waste management",
+                        list: [
+                            { title: "Environmentally Sustainable", desc: "Plastic waste authorization ensures that the entity is operating its business in an environmentally sustainable manner." },
+                            { title: "Social Responsibility", desc: "An entity with such authorization shows its responsibility towards plastic waste disposal commitments towards a clean society." },
+                            { title: "Business Opportunities", desc: "By obtaining a plastic waste authorization certificate, businesses can take advantage of wide business opportunities related to waste management plastic recycling." },
+                            { title: "Access to Government Funds", desc: "The government of India facilitates various grants and funds to businesses related to plastic waste disposal — with authorization, one becomes eligible." },
+                            { title: "Reduced Emissions", desc: "Sustainable plastic waste management helps reduce greenhouse gases (GHGs) and Carbon Dioxide (CO2) emissions." },
+                            { title: "Keep a Check on Pollution", desc: "Plastic waste authorization assists in the reduction of plastic pollution by facilitating responsible plastic waste disposal." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-[#FEF9C3]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-6">About Plastic Waste Authorization</h2>
-                            <div className="w-16 h-1 bg-[#072b47] rounded mb-8"></div>
-                            <div className="space-y-6 text-[#072b47]/90 text-lg leading-relaxed font-medium">
-                                <p>Ensuring compliance with Plastic Waste Authorization is crucial for businesses operating in today's regulated environment under the broader framework of E Waste Management. Failure to comply can result in severe legal consequences, operational halts, and financial penalties.</p>
-                                <p>Our comprehensive assistance covers everything from initial evaluation and strategy formulation to execution and final approval. Whether you are establishing a new entity or operating an existing one, we provide clear roadmaps to maintain unblemished compliance records.</p>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/2">
-                            <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
-                                <h3 className="text-xl font-black text-[#072b47] mb-6">Core Requirements</h3>
-                                <ul className="space-y-4">
-                                    {["Business Incorporation Details", "Authorized Person KYC", "Facility Setup Plans", "List of Machinery/Process Details", "Past Compliance Records (if any)", "Site Clearance Approvals", "Local Body NOCs"].map((doc, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
-                                            <CheckCircle className="w-5 h-5 text-[#005a9c] mt-0.5 shrink-0" />
-                                            <span>{doc}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    eligibility={{
+                        title: "Eligibility Criteria to Apply for Plastic Waste Authorization",
+                        subtitle: "Requirements for entities or businesses in India",
+                        list: [
+                            { title: "Certificate of Incorporation", desc: "A valid certificate of incorporation and registration is required." },
+                            { title: "Proof of Premises", desc: "A valid proof of ownership or lease of premises where plastic waste disposal activities are conducted." },
+                            { title: "Machinery & Tools", desc: "Equipped with all necessary machinery and tools for plastic waste processing." },
+                            { title: "Environmental Management Plan", desc: "Possess a legitimate environmental management plan for safe operations." },
+                            { title: "SPCB/UTPCC Permission", desc: "Permission from SPCB or UTPCC for operating a plastic waste facility." },
+                            { title: "CPCB & MoEFCC Standards", desc: "Compliance with CPCB and MoEFCC standards for sustainable plastic waste management." },
+                            { title: "Record Maintenance", desc: "Maintaining records and registers of plastic waste generated and processed." },
+                            { title: "Yearly Reports", desc: "Yearly submission of reports to CPCB or UTPCC and SPCB." }
+                        ]
+                    }}
 
-            <section className="py-24 bg-white border-t border-slate-100">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-5xl font-black text-[#072b47] mb-6">Why Choose <span className="text-[#dead01]">Us</span></h2>
-                        <div className="w-24 h-1.5 bg-[#dead01] mx-auto rounded-full"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            { title: "Specialized Experts", desc: "Dedicated professionals focused specifically on navigating complex environmental guidelines." },
-                            { title: "Assured Approvals", desc: "A robust vetting process of document filings severely limits the chance of application pushback." },
-                            { title: "Lifecycle Management", desc: "Beyond simple acquisition, we maintain a proactive posture toward your ongoing compliance schedule." },
-                        ].map((item, index) => (
-                            <div key={index} className="relative p-10 rounded-[2.5rem] border border-slate-200 bg-white shadow-sm hover:shadow-2xl hover:border-[#dead01]/30 hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-                                <div className="mb-8">
-                                    <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:bg-[#dead01]/10 transition-all duration-500">
-                                        <CheckCircle className="w-8 h-8 text-[#dead01]" />
-                                    </div>
-                                </div>
-                                <h3 className="text-xl font-black text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium text-[15px]">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    documents={{
+                        title: "Documents Required for Online Plastic Waste Authorization",
+                        description: "The list of documents required for online plastic waste authorization by businesses engaged in plastic waste disposal:",
+                        list: [
+                            "Copy of valid consent from the concerned office",
+                            "MSME certificate or registration certificate from the concerned authorities",
+                            "List of raw materials, by-products, and products with quantum (by weight) per year",
+                            "Flow diagram of manufacturing waste",
+                            "List of persons/units/producers/brand owners through which plastic waste acquired along with quantum of plastic waste per year",
+                            "List of persons/units/producers/brand owners to whom product is being supplied/sold along with quantum per year",
+                            "EPR action plan (if applicable)",
+                            "Copy of analysis report of characterization of waste generated",
+                            "Analysis report of ETP/emission test report (if applicable)"
+                        ]
+                    }}
+
+                    process={{
+                        title: "Step-by-Step Online Plastic Waste Authorization Process",
+                        subtitle: "How to obtain plastic waste authorization",
+                        steps: [
+                            { step: "01", title: "Submission of Form", desc: "The applicant shall submit an online plastic waste authorization application form along with mandatory documents in the concerned official portal." },
+                            { step: "02", title: "Verification of Application", desc: "Here, the SPCB or UTPCC will examine and verify the said application form submitted by an applicant." },
+                            { step: "03", title: "Examination of Documents", desc: "Followed by reviewing and examining the documents submitted by an applicant." },
+                            { step: "04", title: "Granting of Authorization", desc: "In this stage, the SPCB or UTPCC will grant its decision to either grant the plastic waste authorization or reject the application." }
+                        ]
+                    }}
+
+                    postCompliance={{
+                        title: "Mandatory Compliances for Plastic Waste Authorization",
+                        subtitle: "Ongoing obligations for authorization holders",
+                        list: [
+                            { title: "Record Maintenance", desc: "Maintain records of plastic waste generated, processed, or recycled." },
+                            { title: "Annual Returns", desc: "Submit annual returns to SPCB/UTPCC and CPCB by April 30th." },
+                            { title: "CPCB Standards Compliance", desc: "Comply with CPCB and MoEFCC standards for plastic waste management." },
+                            { title: "Health & Safety", desc: "Ensure health, safety, and environmental protection during plastic waste activities." },
+                            { title: "Best Practices", desc: "Adopt best practices for plastic waste management." },
+                            { title: "Validity — 1 to 3 Years", desc: "Initially valid for one year. If not revoked or cancelled, renewal extends validity to three years. Renewal applications must be submitted 120 days before registration expires." }
+                        ]
+                    }}
+
+                    features={{
+                        title: "Reasons to Trust Corpbiz for Plastic Waste Authorization",
+                        subtitle: "India's most trusted plastic waste compliance partner",
+                        list: [
+                            { title: "10+ Years of Proven Expertise", desc: "Our seasoned consultants, with a backing of 10+ years of experience, provide guidance and support on plastic waste authorization." },
+                            { title: "70% Market Share", desc: "We are dominating the sustainability game, all thanks to our consultants, who helped us lead the industry with a 70% market share." },
+                            { title: "Technology Integration", desc: "We utilize cutting-edge technology to streamline the plastic waste disposal process for the sustainable growth of your business." },
+                            { title: "Regulatory Prowess", desc: "At Corpbiz, our regulatory experts ensure businesses meet the latest plastic waste management regulations effortlessly." },
+                            { title: "Compliance Assistance", desc: "We effectively fulfil all compliance needs, ensuring a fast plastic waste disposal process and streamlined sustainable plastic waste management." },
+                            { title: "24/7 Support", desc: "Our team is available 24/7 to provide support and assistance on plastic waste disposal support and environmental compliance management." }
+                        ]
+                    }}
+                />
+
+                <FAQLayout
+                    title="Frequently Asked Questions"
+                    subtitle="Get answers to the most common questions about this service."
+                    faqs={[
+          {
+                    "question": "What is plastic waste authorization and who needs it?",
+                    "answer": "Plastic waste authorization is required under the Plastic Waste Management Rules, 2016 for any business or entity engaged in the collection, storage, transportation, processing, or recycling of plastic waste. This includes plastic waste recyclers, co-processors, and collection agencies."
+          },
+          {
+                    "question": "Who grants plastic waste authorization in India?",
+                    "answer": "Plastic waste authorization is granted by the concerned State Pollution Control Board (SPCB) or Union Territory Pollution Control Committee (UTPCC) for the state where the facility is located. CPCB issues EPR registration certificates for PIBOs separately."
+          },
+          {
+                    "question": "How long is plastic waste authorization valid?",
+                    "answer": "Initially, plastic waste authorization is valid for one year. If not revoked or cancelled during this period, the validity extends to three years upon renewal. Renewal applications must be submitted 120 days before the registration expires."
+          },
+          {
+                    "question": "What are the annual compliance obligations for plastic waste authorization holders?",
+                    "answer": "Authorization holders must submit annual returns to both SPCB/UTPCC and CPCB by April 30th each year. Returns must disclose quantity of plastic waste processed, disposed, and recycled. Records must be maintained and made available for inspection."
+          },
+          {
+                    "question": "Can plastic waste authorization be revoked?",
+                    "answer": "Yes. SPCB or UTPCC can revoke or cancel plastic waste authorization if the holder violates the terms of authorization, fails to submit annual returns, or causes environmental harm. Operating without valid authorization during this period attracts penalties."
+          },
+          {
+                    "question": "Is plastic waste authorization the same as EPR registration for PIBOs?",
+                    "answer": "No. They are separate. EPR registration (from CPCB) is for producers/importers/brand owners who use plastic packaging. Plastic waste authorization (from SPCB) is for recyclers, processors, and entities handling plastic as waste material."
+          },
+          {
+                    "question": "What is the timeline to obtain plastic waste authorization?",
+                    "answer": "After submitting a complete application to the SPCB, the authorization is typically granted within 60–90 working days, subject to document verification and site inspection if required. Corpbiz ensures all documents are complete to avoid delays."
+          }
+]}
+                />
+                <ReviewsSection />
+            </div>
         </div>
     );
 };

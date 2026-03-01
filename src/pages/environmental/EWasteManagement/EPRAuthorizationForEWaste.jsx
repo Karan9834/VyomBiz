@@ -1,151 +1,164 @@
 import React from 'react';
-import { CheckCircle, ArrowRight, Rocket, Smile, MapPin, PieChart, Shield } from 'lucide-react';
-
-const services = [
-    { title: "E P R Authorization For E Waste Consultation", desc: "Expert guidance and consultation for obtaining your E P R Authorization For E Waste smoothly and efficiently.", price: "₹2,999" },
-    { title: "Application Preparation", desc: "Complete documentation preparation and application filing for E Waste Management compliance.", price: "₹4,999" },
-    { title: "Follow-up & Liaison", desc: "Regular follow-ups with relevant authorities to ensure faster processing of your application.", price: "₹3,499" },
-    { title: "Compliance Audit", desc: "Pre-application audit to ensure your premises/business meets all statutory requirements.", price: "₹5,999" },
-    { title: "Renewal Submissions", desc: "Timely submission of renewal applications to prevent lapses in your compliance status.", price: "₹1,999" },
-    { title: "Annual Returns Filing", desc: "Preparation and filing of statutory annual returns and compliance reports as mandated.", price: "₹2,499" },
-];
+import HeroLayout from '../../../components/common/HeroLayout';
+import DetailsLayout from '../../../components/common/DetailsLayout';
+import FAQLayout from '../../../components/common/FAQLayout';
+import ReviewsSection from '../../../components/common/ReviewsSection';
 
 const EPRAuthorizationForEWaste = () => {
     return (
-        <div className="bg-white min-h-screen font-sans">
-            <section className="relative min-h-[90vh] bg-white flex items-center pt-24 pb-12 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 mb-20">
-                    <div className="w-full lg:w-[60%]">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#005a9c]/10 border border-[#005a9c]/20 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-8">
-                            <Shield size={16} /><span>E Waste Management Services</span>
-                        </div>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#072b47] leading-[1.1] mb-8">
-                            E <br className="hidden md:block" />
-                            <span className="text-[#dead01]">P R Authorization For E Waste</span>
-                        </h1>
-                        <p className="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed font-medium">
-                            End-to-end support for E P R Authorization For E Waste. We manage the entire lifecycle of compliance to ensure your business operations remain uninterrupted and legally sound.
-                        </p>
-                        <div className="flex flex-wrap gap-4 mb-8">
-                            {["Certification", "Compliance", "Advisory", "Renewals"].map((tag, i) => (
-                                <span key={i} className="px-4 py-2 bg-slate-100 text-[#072b47] rounded-full text-sm font-bold">{tag}</span>
-                            ))}
-                        </div>
-                        <button className="bg-[#005a9c] text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 shadow-2xl shadow-blue-900/20 active:scale-95 transition-all">Get Started Now</button>
-                    </div>
-                    <div className="w-full lg:w-[40%] relative">
-                        <div className="absolute inset-0 bg-[#005a9c]/10 blur-[120px] rounded-full scale-150 animate-pulse"></div>
-                        <img src="/environmental/placeholder/hero.avif" alt="E P R Authorization For E Waste"
-                            className="relative z-10 w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
-                            onError={(e) => { e.target.src = "https://illustrations.popsy.co/amber/plant.svg" }} />
-                    </div>
-                </div>
-            </section>
+        <div className="bg-[#f8f9fa] min-h-screen relative font-sans">
+            <div className="relative z-10 space-y-2 lg:space-y-4">
+                <HeroLayout
+                    heroTitleMain="EPR Authorization for E-Waste"
+                    heroTitleSuffix="— CPCB Registration"
+                    heroDescription="Get your CPCB EPR authorization for e-waste before placing electronics on the Indian market. Expert assistance across all EEE product categories under the E-Waste (Management) Rules, 2022."
+                    stats={[
+                        { count: "43298 +", label: "Happy Clients" },
+                        { count: "3500 +", label: "Expert Advisors" },
+                        { count: "50 +", label: "Branch Offices" },
+                        { count: "10k+", label: "Pin codes" }
+                    ]}
+                    formTitle="Get Free Expert Consultation"
+                />
 
-            <section className="bg-[#FEF9C3] py-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[
-                            { icon: <Rocket className="w-8 h-8 text-[#005a9c]" />, title: "Track Record", desc: "Successfully processed thousands of applications for clients across India." },
-                            { icon: <Smile className="w-8 h-8 text-[#005a9c]" />, title: "Domain Expertise", desc: "Deep knowledge of specific regulatory frameworks and compliance timelines." },
-                            { icon: <MapPin className="w-8 h-8 text-[#005a9c]" />, title: "Pan-India Reach", desc: "We provide comprehensive regulatory coverage spanning all states and territories." },
-                            { icon: <PieChart className="w-8 h-8 text-[#005a9c]" />, title: "Data Security", desc: "Your business secrets, process details, and critical data are held in strict confidence." },
-                        ].map((card, i) => (
-                            <div key={i} className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">{card.icon}</div>
-                                <h3 className="text-xl font-bold text-[#072b47] mb-4">{card.title}</h3>
-                                <p className="text-slate-600 text-[15px] leading-relaxed font-medium">{card.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                <DetailsLayout
+                    overview={{
+                        title: "EPR Authorization for E-waste —",
+                        highlightTitle: "An Overview",
+                        description: [
+                            "EPR stands for Extended Producers Responsibility — a policy of the government under which producers are given the vital responsibility for the treatment and disposal of the consumer goods. The EPR authorization is mandated for the producers, importers, manufacturers, and brand owners.",
+                            "EPR is a practice that encompasses a combination of environmental, economic, and social factors. EPR is a policy strategy in which producers are held financially and physically responsible for the handling and disposal of post-consumer items.",
+                            "Assigning such responsibility might, in theory, create incentives to reduce waste at the source, promote environmentally friendly product design, and support public recycling and waste management aims.",
+                            "In India, EPR came into existence to deal with E-waste under the E-waste management rules 2016. The Central Pollution Control Board (CPCB) is mandated to grant, renew or refuse Extended Producers Responsibility (EPR) authorization as per Rule 13(1) of E-Waste Rules 2016.",
+                            "The OECD is moving toward expanding EPR to include additional products, product groups, and waste streams such as electrical appliances and electronics products."
+                        ],
+                        whyIdealTitle: "Who Can Apply for the EPR License?",
+                        whyIdealList: [
+                            { title: "Producers", desc: "Manufacturers of electrical and electronic equipment (EEE) covered under Schedule I of E-Waste Rules." },
+                            { title: "Importers", desc: "Entities importing EEE products for sale or distribution in the Indian market." },
+                            { title: "Brand Owners", desc: "Companies selling products under their own registered brand name in India." },
+                            { title: "Manufacturers", desc: "Industrial manufacturers of EEE products including components, consumables, parts and spares." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-4">Services Addressed</h2>
-                        <div className="w-24 h-1 bg-[#dead01] shadow-[0_0_8px_rgba(255,233,10,0.6)] mx-auto rounded mb-6"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
-                            <div key={index} className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-[#FFE90A]/40 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full group relative">
-                                <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
-                                <div className="p-8 flex flex-col h-full pt-10">
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{service.title}</h3>
-                                    <p className="text-slate-600 text-[15px] leading-relaxed mb-10 flex-grow font-medium">{service.desc}</p>
-                                    <div className="mt-auto pt-6">
-                                        <div className="flex flex-col mb-6">
-                                            <span className="text-[11px] uppercase tracking-widest font-black text-slate-400 mb-1">Starting at</span>
-                                            <span className="text-[#dead01] text-3xl font-black leading-none">{service.price}</span>
-                                        </div>
-                                        <div className="flex items-center justify-between gap-4">
-                                            <button className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all">Get Started</button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read py-1">
-                                                <span>Read More</span><ArrowRight className="w-4 h-4 group-hover/read:translate-x-1.5 transition-transform duration-300" />
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    advantages={{
+                        title: "Benefits of EPR Authorization in E-waste Licensing",
+                        subtitle: "Why EPR is a game-changer for waste management",
+                        list: [
+                            { title: "Combats Planned Obsolescence", desc: "Extended producer responsibility financially encourages manufacturers to design for recycling and make items last longer, countering the trend of planned obsolescence." },
+                            { title: "Reduces Government Burden", desc: "Governments may be relieved of the financial strain of paying for and handling trash by moving some of the cost burdens to the manufacturer." },
+                            { title: "Global Compliance", desc: "EPR grows more effective since compulsion is applied to countries that export E-waste, forcing infrastructure to deal with the garbage or adapt new ways for manufacturers to make goods." },
+                            { title: "Legal Safety", desc: "EPR certification is mandatory for all manufacturers and importers of E-waste in India, ensuring full legal compliance." },
+                            { title: "Market Access", desc: "The E-waste certification is required for both Indian and foreign manufacturers or importers of electrical and electronic equipment." },
+                            { title: "Environmental Impact", desc: "Forces countries to create infrastructure and compelling local and federal governments to impose more controls on businesses, reducing environmental burden." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-[#FEF9C3]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-6">About E P R Authorization For E Waste</h2>
-                            <div className="w-16 h-1 bg-[#072b47] rounded mb-8"></div>
-                            <div className="space-y-6 text-[#072b47]/90 text-lg leading-relaxed font-medium">
-                                <p>Ensuring compliance with E P R Authorization For E Waste is crucial for businesses operating in today's regulated environment under the broader framework of E Waste Management. Failure to comply can result in severe legal consequences, operational halts, and financial penalties.</p>
-                                <p>Our comprehensive assistance covers everything from initial evaluation and strategy formulation to execution and final approval. Whether you are establishing a new entity or operating an existing one, we provide clear roadmaps to maintain unblemished compliance records.</p>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/2">
-                            <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
-                                <h3 className="text-xl font-black text-[#072b47] mb-6">Core Requirements</h3>
-                                <ul className="space-y-4">
-                                    {["Business Incorporation Details", "Authorized Person KYC", "Facility Setup Plans", "List of Machinery/Process Details", "Past Compliance Records (if any)", "Site Clearance Approvals", "Local Body NOCs"].map((doc, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
-                                            <CheckCircle className="w-5 h-5 text-[#005a9c] mt-0.5 shrink-0" />
-                                            <span>{doc}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    eligibility={{
+                        title: "EPR Authorization — Eligibility",
+                        subtitle: "Entities required to obtain EPR authorization for E-waste",
+                        list: [
+                            { title: "Electronics Manufacturers", desc: "Producing items listed in Schedule I of E-Waste Rules — computers, televisions, medical equipment, etc." },
+                            { title: "Importers of EEE", desc: "Importing electrical and electronic equipment for sale in the Indian market." },
+                            { title: "Brand Owners", desc: "Selling electronic products under their own brand name, including e-commerce platforms." },
+                            { title: "Manufacturers of Components", desc: "Entities manufacturing components, consumables, parts, and spares of EEE products." }
+                        ]
+                    }}
 
-            <section className="py-24 bg-white border-t border-slate-100">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-5xl font-black text-[#072b47] mb-6">Why Choose <span className="text-[#dead01]">Us</span></h2>
-                        <div className="w-24 h-1.5 bg-[#dead01] mx-auto rounded-full"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            { title: "Specialized Experts", desc: "Dedicated professionals focused specifically on navigating complex environmental guidelines." },
-                            { title: "Assured Approvals", desc: "A robust vetting process of document filings severely limits the chance of application pushback." },
-                            { title: "Lifecycle Management", desc: "Beyond simple acquisition, we maintain a proactive posture toward your ongoing compliance schedule." },
-                        ].map((item, index) => (
-                            <div key={index} className="relative p-10 rounded-[2.5rem] border border-slate-200 bg-white shadow-sm hover:shadow-2xl hover:border-[#dead01]/30 hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-                                <div className="mb-8">
-                                    <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:bg-[#dead01]/10 transition-all duration-500">
-                                        <CheckCircle className="w-8 h-8 text-[#dead01]" />
-                                    </div>
-                                </div>
-                                <h3 className="text-xl font-black text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium text-[15px]">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    documents={{
+                        title: "Documents Required for EPR Authorization for E-waste",
+                        description: "Key documents needed for submission with your EPR authorization application:",
+                        list: [
+                            "KYC of company signatory",
+                            "KYC of Authorized signatory",
+                            "IEC Code (Import Export Code)",
+                            "Website domain details",
+                            "Toll-free contact number details",
+                            "Certificate of Incorporation",
+                            "PAN Card of the company",
+                            "GST Registration Certificate",
+                            "Legal documents authorizing manufacture/import/sale of EEE",
+                            "Agreement/MoU with authorized e-waste collection center/recycler",
+                            "EPR Action Plan as per CPCB format",
+                            "RoHS Self-Declaration"
+                        ]
+                    }}
+
+                    process={{
+                        title: "Procedure of Grant/Renewal and Refusal of EPR Authorization",
+                        subtitle: "Step-by-step EPR Authorization process for E-waste",
+                        steps: [
+                            { step: "01", title: "Application Submission", desc: "The producers, importers, manufacturers, and brand owners should file the application before the CPCB with all required documents." },
+                            { step: "02", title: "Application Verification", desc: "Within 25 days after receiving an application, the Central Pollution Control Board may verify and investigate the provided information." },
+                            { step: "03", title: "EPR Plan Review", desc: "After checking the submitted documents and being satisfied with the extended producers' responsibility plan, CPCB or SPCB proceeds for EPR authorization for E-waste." },
+                            { step: "04", title: "Grant of Authorization", desc: "EPR Authorization is granted, valid for 5 years from the date of issue." },
+                            { step: "05", title: "Renewal Process", desc: "Producers/Manufacturers shall submit the renewal application 60 days before expiry with all required documents and filed Annual Returns." }
+                        ]
+                    }}
+
+                    postCompliance={{
+                        title: "Roles and Responsibilities of EPR in relation to E-waste",
+                        subtitle: "Key compliance obligations for EPR authorization holders",
+                        list: [
+                            { title: "Collection & Channeling", desc: "Producers shall be responsible for collecting and channeling the waste from items with the same electrical and electronic equipment code." },
+                            { title: "Framework for E-waste Channeling", desc: "Producers create a framework for channelizing e-waste gathered from distributors and authorized service centers and waste collected from end of life items." },
+                            { title: "Pre-Treatment of Hazardous Compounds", desc: "A pre-treatment is required for hazardous compounds such as mercury and lead, and the producer is liable for disposal in treatment, storage, and disposal facility." },
+                            { title: "Collection Systems", desc: "Producers must collect E-waste through dealers, collection centers, PROs, buy-back arrangements, exchange schemes, or deposit-refund systems." },
+                            { title: "Awareness Programs", desc: "Producers must organize an awareness program and create awareness through media, advertisement, publication, poster, or other means of communication." },
+                            { title: "Consumer Helpline", desc: "Producers must provide contact details such as address, email id, toll-free telephone number, or helpline number to consumers through their website." }
+                        ]
+                    }}
+
+                    features={{
+                        title: "Why Choose Corpbiz for EPR Authorization for E-waste?",
+                        subtitle: "Trusted by 500+ Greenpreneurs for EPR Authorization in E-Waste Management",
+                        list: [
+                            { title: "10+ Years of Experience", desc: "More than a decade of expertise in environmental licensing and EPR compliance." },
+                            { title: "400+ In-House Experts", desc: "In-House CAs, CS & Lawyers dedicated to EPR compliance." },
+                            { title: "99% SLA Delivery", desc: "We guarantee the highest standard of service delivery within committed timelines." },
+                            { title: "10,000+ Pin codes Network", desc: "Pan-India coverage across 10,000+ pin codes for environmental services." },
+                            { title: "Documentation Support", desc: "Comprehensive assistance with documentation for EPR authorization." },
+                            { title: "End-to-End Assistance", desc: "Full support from application to approval and ongoing compliance." }
+                        ]
+                    }}
+                />
+
+                <FAQLayout
+                    title="Frequently Asked Questions"
+                    subtitle="Get answers to the most common questions about this service."
+                    faqs={[
+          {
+                    "question": "What is EPR authorization for e-waste?",
+                    "answer": "EPR authorization for e-waste is the official CPCB certificate that authorizes producers, importers, and brand owners of EEE (Electrical and Electronic Equipment) to legally sell their products in India. It mandates them to take responsibility for the end-of-life management of their products."
+          },
+          {
+                    "question": "What EEE products are covered under e-waste EPR?",
+                    "answer": "All EEE products listed in Schedule I of the E-Waste (Management) Rules, 2022 are covered — including computers, laptops, mobile phones, televisions, refrigerators, washing machines, printers, medical equipment, and many more categories."
+          },
+          {
+                    "question": "Is EPR authorization required for e-commerce sellers?",
+                    "answer": "Yes. E-commerce sellers who sell electronics under their own brand name are treated as producers/brand owners and must obtain EPR authorization. E-commerce platforms selling third-party products need to ensure their sellers are EPR-registered."
+          },
+          {
+                    "question": "What is the RoHS compliance requirement under e-waste EPR?",
+                    "answer": "Producers must ensure their EEE products comply with RoHS (Restriction of Hazardous Substances) standards — limiting hazardous substances like lead, mercury, cadmium, and chromium. A self-declaration of RoHS compliance must be submitted with the EPR application."
+          },
+          {
+                    "question": "How is the e-waste collection target calculated?",
+                    "answer": "The target is 60% of the quantity of EEE products placed in the market in year Y-X (where X is the average life of the product). For example, if a TV has a 5-year life and you sold 10,000 units in 2018–19, your 2023–24 target is 60% of 10,000 = 6,000 units to collect."
+          },
+          {
+                    "question": "Can a producer outsource EPR target fulfilment to a PRO?",
+                    "answer": "Yes. Producers can engage a CPCB-registered PRO to manage all e-waste collection activities on their behalf. The PRO organizes collection logistics, take-back programs, and reporting. However, the producer remains legally responsible for compliance on the CPCB portal."
+          },
+          {
+                    "question": "What is the penalty for selling EEE without EPR authorization?",
+                    "answer": "Selling EEE products in India without valid EPR authorization is a violation of the E-Waste (Management) Rules, 2022. This can result in Environmental Compensation, court orders, product recall by regulatory authorities, and reputational damage."
+          }
+]}
+                />
+                <ReviewsSection />
+            </div>
         </div>
     );
 };

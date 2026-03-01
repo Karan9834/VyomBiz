@@ -1,151 +1,166 @@
 import React from 'react';
-import { CheckCircle, ArrowRight, Rocket, Smile, MapPin, PieChart, Shield } from 'lucide-react';
-
-const services = [
-    { title: "E P R Authorization For Battery Waste Consultation", desc: "Expert guidance and consultation for obtaining your E P R Authorization For Battery Waste smoothly and efficiently.", price: "₹2,999" },
-    { title: "Application Preparation", desc: "Complete documentation preparation and application filing for E Waste Management compliance.", price: "₹4,999" },
-    { title: "Follow-up & Liaison", desc: "Regular follow-ups with relevant authorities to ensure faster processing of your application.", price: "₹3,499" },
-    { title: "Compliance Audit", desc: "Pre-application audit to ensure your premises/business meets all statutory requirements.", price: "₹5,999" },
-    { title: "Renewal Submissions", desc: "Timely submission of renewal applications to prevent lapses in your compliance status.", price: "₹1,999" },
-    { title: "Annual Returns Filing", desc: "Preparation and filing of statutory annual returns and compliance reports as mandated.", price: "₹2,499" },
-];
+import HeroLayout from '../../../components/common/HeroLayout';
+import DetailsLayout from '../../../components/common/DetailsLayout';
+import FAQLayout from '../../../components/common/FAQLayout';
+import ReviewsSection from '../../../components/common/ReviewsSection';
 
 const EPRAuthorizationForBatteryWaste = () => {
     return (
-        <div className="bg-white min-h-screen font-sans">
-            <section className="relative min-h-[90vh] bg-white flex items-center pt-24 pb-12 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 mb-20">
-                    <div className="w-full lg:w-[60%]">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#005a9c]/10 border border-[#005a9c]/20 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-8">
-                            <Shield size={16} /><span>E Waste Management Services</span>
-                        </div>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#072b47] leading-[1.1] mb-8">
-                            E <br className="hidden md:block" />
-                            <span className="text-[#dead01]">P R Authorization For Battery Waste</span>
-                        </h1>
-                        <p className="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed font-medium">
-                            End-to-end support for E P R Authorization For Battery Waste. We manage the entire lifecycle of compliance to ensure your business operations remain uninterrupted and legally sound.
-                        </p>
-                        <div className="flex flex-wrap gap-4 mb-8">
-                            {["Certification", "Compliance", "Advisory", "Renewals"].map((tag, i) => (
-                                <span key={i} className="px-4 py-2 bg-slate-100 text-[#072b47] rounded-full text-sm font-bold">{tag}</span>
-                            ))}
-                        </div>
-                        <button className="bg-[#005a9c] text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 shadow-2xl shadow-blue-900/20 active:scale-95 transition-all">Get Started Now</button>
-                    </div>
-                    <div className="w-full lg:w-[40%] relative">
-                        <div className="absolute inset-0 bg-[#005a9c]/10 blur-[120px] rounded-full scale-150 animate-pulse"></div>
-                        <img src="/environmental/placeholder/hero.avif" alt="E P R Authorization For Battery Waste"
-                            className="relative z-10 w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
-                            onError={(e) => { e.target.src = "https://illustrations.popsy.co/amber/plant.svg" }} />
-                    </div>
-                </div>
-            </section>
+        <div className="bg-[#f8f9fa] min-h-screen relative font-sans">
+            <div className="relative z-10 space-y-2 lg:space-y-4">
+                <HeroLayout
+                    heroTitleMain="EPR Authorization for Battery Waste"
+                    heroTitleSuffix="— Apply Now"
+                    heroDescription="Obtain your EPR authorization for battery waste quickly with expert help. Complete CPCB/SPCB compliance support for producers, importers, and EV manufacturers across India."
+                    stats={[
+                        { count: "43298 +", label: "Happy Clients" },
+                        { count: "3500 +", label: "Expert Advisors" },
+                        { count: "50 +", label: "Branch Offices" },
+                        { count: "10k+", label: "Pin codes" }
+                    ]}
+                    formTitle="Get Free Expert Consultation"
+                />
 
-            <section className="bg-[#FEF9C3] py-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[
-                            { icon: <Rocket className="w-8 h-8 text-[#005a9c]" />, title: "Track Record", desc: "Successfully processed thousands of applications for clients across India." },
-                            { icon: <Smile className="w-8 h-8 text-[#005a9c]" />, title: "Domain Expertise", desc: "Deep knowledge of specific regulatory frameworks and compliance timelines." },
-                            { icon: <MapPin className="w-8 h-8 text-[#005a9c]" />, title: "Pan-India Reach", desc: "We provide comprehensive regulatory coverage spanning all states and territories." },
-                            { icon: <PieChart className="w-8 h-8 text-[#005a9c]" />, title: "Data Security", desc: "Your business secrets, process details, and critical data are held in strict confidence." },
-                        ].map((card, i) => (
-                            <div key={i} className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">{card.icon}</div>
-                                <h3 className="text-xl font-bold text-[#072b47] mb-4">{card.title}</h3>
-                                <p className="text-slate-600 text-[15px] leading-relaxed font-medium">{card.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                <DetailsLayout
+                    overview={{
+                        title: "EPR Authorization for Battery Waste —",
+                        highlightTitle: "An Overview",
+                        description: [
+                            "EPR for battery waste refers to a producer's extended producer responsibility for managing battery waste in a way that safeguards both the environment and human health. The Battery Waste Management Rules were introduced by the Ministry of Environment, Forest and Climate Change (MoEF&CC) in 2022.",
+                            "The Battery Waste Management Rules impose duties on producers through EPR, requiring that all used batteries be collected and sent for refurbishment or recycling. These rules apply to all types of batteries including electric vehicle batteries, portable batteries, industrial batteries, and automotive batteries.",
+                            "Any producer, importer, or brand owner who puts batteries on the Indian market must register on the CPCB EPR portal and obtain EPR authorization. Producers may hire recyclers or refurbishers to fulfill the EPR obligation.",
+                            "The CPCB (Central Pollution Control Board) is the central authority for granting EPR authorizations for battery waste. Producers operating in more than two states must obtain authorization from CPCB, while those limited to 1-2 states may register with the respective SPCB/PCC."
+                        ],
+                        whyIdealTitle: "Types of Batteries Covered Under EPR",
+                        whyIdealList: [
+                            { title: "Electric Vehicle (EV) Batteries", desc: "Batteries used in electric vehicles, hybrid vehicles, and similar transport applications." },
+                            { title: "Portable Batteries", desc: "Batteries used in portable devices — phones, laptops, consumer electronics." },
+                            { title: "Automotive Batteries", desc: "Lead-acid and other batteries used in conventional vehicles." },
+                            { title: "Industrial Batteries", desc: "Batteries used in industrial applications, UPS systems, and energy storage." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-4">Services Addressed</h2>
-                        <div className="w-24 h-1 bg-[#dead01] shadow-[0_0_8px_rgba(255,233,10,0.6)] mx-auto rounded mb-6"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
-                            <div key={index} className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-[#FFE90A]/40 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full group relative">
-                                <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
-                                <div className="p-8 flex flex-col h-full pt-10">
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{service.title}</h3>
-                                    <p className="text-slate-600 text-[15px] leading-relaxed mb-10 flex-grow font-medium">{service.desc}</p>
-                                    <div className="mt-auto pt-6">
-                                        <div className="flex flex-col mb-6">
-                                            <span className="text-[11px] uppercase tracking-widest font-black text-slate-400 mb-1">Starting at</span>
-                                            <span className="text-[#dead01] text-3xl font-black leading-none">{service.price}</span>
-                                        </div>
-                                        <div className="flex items-center justify-between gap-4">
-                                            <button className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all">Get Started</button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read py-1">
-                                                <span>Read More</span><ArrowRight className="w-4 h-4 group-hover/read:translate-x-1.5 transition-transform duration-300" />
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    advantages={{
+                        title: "Benefits of EPR Authorization for Battery Waste",
+                        subtitle: "Why EPR Authorization for batteries is essential for your business",
+                        list: [
+                            { title: "Legal Compliance & Security", desc: "EPR authorization for battery waste ensures your business meets mandatory legal requirements under the Battery Waste Management Rules, 2022, safeguarding you from penalties and legal action." },
+                            { title: "Environmental Responsibility", desc: "Demonstrates your commitment to responsible battery disposal and recycling, reducing the environmental harm caused by toxic substances like lead, cadmium, and lithium in batteries." },
+                            { title: "Market Access", desc: "An EPR certificate for battery waste is required by major B2B customers, government procurement agencies, and e-commerce platforms before they engage with battery suppliers." },
+                            { title: "Brand Credibility", desc: "EPR authorization builds trust with environmentally conscious customers and investors, strengthening brand reputation in sustainability." },
+                            { title: "Credit Generation Opportunity", desc: "Recyclers with EPR authorization can generate EPR credits and sell them to producers who are unable to meet their own targets." },
+                            { title: "Competitive Advantage", desc: "Compliant producers often win more contracts and partnerships, particularly in the growing EV sector where battery compliance is strictly monitored." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-[#FEF9C3]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-6">About E P R Authorization For Battery Waste</h2>
-                            <div className="w-16 h-1 bg-[#072b47] rounded mb-8"></div>
-                            <div className="space-y-6 text-[#072b47]/90 text-lg leading-relaxed font-medium">
-                                <p>Ensuring compliance with E P R Authorization For Battery Waste is crucial for businesses operating in today's regulated environment under the broader framework of E Waste Management. Failure to comply can result in severe legal consequences, operational halts, and financial penalties.</p>
-                                <p>Our comprehensive assistance covers everything from initial evaluation and strategy formulation to execution and final approval. Whether you are establishing a new entity or operating an existing one, we provide clear roadmaps to maintain unblemished compliance records.</p>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/2">
-                            <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
-                                <h3 className="text-xl font-black text-[#072b47] mb-6">Core Requirements</h3>
-                                <ul className="space-y-4">
-                                    {["Business Incorporation Details", "Authorized Person KYC", "Facility Setup Plans", "List of Machinery/Process Details", "Past Compliance Records (if any)", "Site Clearance Approvals", "Local Body NOCs"].map((doc, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
-                                            <CheckCircle className="w-5 h-5 text-[#005a9c] mt-0.5 shrink-0" />
-                                            <span>{doc}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    eligibility={{
+                        title: "Who Needs EPR Authorization for Battery Waste?",
+                        subtitle: "Entities required to obtain EPR authorization under Battery Waste Management Rules, 2022",
+                        list: [
+                            { title: "Battery Producers", desc: "Any entity manufacturing batteries domestically and placing them in the Indian market." },
+                            { title: "Battery Importers", desc: "Businesses importing batteries of any type for commercial sale or distribution in India." },
+                            { title: "Brand Owners", desc: "Companies selling batteries under their own registered brand name in India." },
+                            { title: "EV Manufacturers", desc: "Electric vehicle manufacturers who use batteries as a core component of their products." },
+                            { title: "Battery Refurbishers", desc: "Entities involved in refurbishing used batteries to extend their product life." },
+                            { title: "Battery Recyclers", desc: "Businesses recycling battery waste — must register to generate and sell EPR credits." }
+                        ]
+                    }}
 
-            <section className="py-24 bg-white border-t border-slate-100">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-5xl font-black text-[#072b47] mb-6">Why Choose <span className="text-[#dead01]">Us</span></h2>
-                        <div className="w-24 h-1.5 bg-[#dead01] mx-auto rounded-full"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            { title: "Specialized Experts", desc: "Dedicated professionals focused specifically on navigating complex environmental guidelines." },
-                            { title: "Assured Approvals", desc: "A robust vetting process of document filings severely limits the chance of application pushback." },
-                            { title: "Lifecycle Management", desc: "Beyond simple acquisition, we maintain a proactive posture toward your ongoing compliance schedule." },
-                        ].map((item, index) => (
-                            <div key={index} className="relative p-10 rounded-[2.5rem] border border-slate-200 bg-white shadow-sm hover:shadow-2xl hover:border-[#dead01]/30 hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-                                <div className="mb-8">
-                                    <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:bg-[#dead01]/10 transition-all duration-500">
-                                        <CheckCircle className="w-8 h-8 text-[#dead01]" />
-                                    </div>
-                                </div>
-                                <h3 className="text-xl font-black text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium text-[15px]">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    documents={{
+                        title: "Documents Required for EPR Authorization for Battery Waste",
+                        description: "Key documents required for the EPR registration application for battery waste:",
+                        list: [
+                            "Corporate Identification Number (CIN)",
+                            "Consent Issued by SPCBs/PCCs (Air/Water/Hazardous Waste)",
+                            "Import Export Certificate (for importers)",
+                            "District Industries Centre (DIC) Registration",
+                            "EPR Action Plan for Battery Waste",
+                            "PAN Card of the company",
+                            "GST Registration Certificate",
+                            "Memorandum of Association (MOA) and Articles of Association (AOA)",
+                            "MoU with authorized battery recyclers and refurbishers",
+                            "Details of states where batteries are sold or distributed",
+                            "Self-Declaration form",
+                            "KYC of authorized signatory"
+                        ]
+                    }}
+
+                    process={{
+                        title: "EPR Authorization Registration Process for Battery Waste",
+                        subtitle: "Step-by-step process under Battery Waste Management Rules, 2022",
+                        steps: [
+                            { step: "01", title: "Document Collation", desc: "Gather all necessary company documents, product details, battery sale data, and operational information." },
+                            { step: "02", title: "Draft EPR Action Plan", desc: "Prepare a comprehensive EPR plan detailing collection strategies, recycler tie-ups, and battery waste management targets as per CPCB format." },
+                            { step: "03", title: "Portal Registration", desc: "Register on the centralized online EPR portal of CPCB at cpcb.nic.in. Create your producer/importer/brand owner profile." },
+                            { step: "04", title: "Submit Application", desc: "File the application with the required fee and all supporting documents. Applications are reviewed by CPCB within 30 days." },
+                            { step: "05", title: "Query Resolution", desc: "Address any clarifications or additional documents requested by the CPCB officials during the review period." },
+                            { step: "06", title: "Approval & EPR Certificate", desc: "CPCB evaluates the application and grants the EPR Authorization Certificate, valid for 5 years from the date of issue." }
+                        ]
+                    }}
+
+                    postCompliance={{
+                        title: "EPR Targets for Battery Waste",
+                        subtitle: "Annual collection targets for different battery categories",
+                        list: [
+                            { title: "Portable Batteries — 2023-24", desc: "70% of units sold in Y-2 year. Rising to 80% in 2024-25 and 90% in 2025-26 and beyond." },
+                            { title: "Automotive Batteries — 2023-24", desc: "55% of units sold in Y-2 year. Rising to 60% in 2024-25 and 60% in 2025-26 and beyond." },
+                            { title: "Industrial Batteries — 2023-24", desc: "55% of units sold in Y-2 year. Rising to 60% in 2024-25 and 60% in 2025-26 and beyond." },
+                            { title: "Electric Vehicle Batteries", desc: "70% in 2023-24, 80% in 2024-25, and 90% in 2025-26 and beyond." },
+                            { title: "Annual Returns Filing", desc: "All producers must file annual returns on the CPCB portal about battery quantity sold and the amount of battery waste collected and sent for recycling." },
+                            { title: "Validity & Renewal", desc: "EPR Authorization for battery waste is valid for 5 years. Renewal application must be filed 60 days before expiry." }
+                        ]
+                    }}
+
+                    features={{
+                        title: "Why Choose Corpbiz for EPR Authorization for Battery Waste?",
+                        subtitle: "Trusted by leading battery manufacturers and EV companies across India",
+                        list: [
+                            { title: "100+ Battery EPR Clients", desc: "Successfully guided 100+ battery producers, importers, and EV manufacturers in obtaining EPR Authorization for Battery Waste." },
+                            { title: "10+ Years of Environmental Expertise", desc: "Over a decade of hands-on experience in environmental licensing and CPCB/SPCB compliance." },
+                            { title: "99% Success Rate", desc: "99% success rate in securing EPR authorization certificates for battery waste management." },
+                            { title: "End-to-End Documentation Support", desc: "Complete assistance in preparing the EPR action plan, drafting agreements, and submission of all documents." },
+                            { title: "Recycler Network", desc: "Access to a wide network of CPCB-authorized battery recyclers and refurbishers for MoU tie-ups." },
+                            { title: "Ongoing Compliance Monitoring", desc: "Post-authorization support including quarterly reporting, annual returns filing, and target monitoring." }
+                        ]
+                    }}
+                />
+
+                <FAQLayout
+                    title="Frequently Asked Questions"
+                    subtitle="Get answers to the most common questions about this service."
+                    faqs={[
+          {
+                    "question": "What are the Battery Waste Management Rules 2022?",
+                    "answer": "The Battery Waste Management Rules 2022 were notified by MoEF&CC to regulate the collection, refurbishment, and recycling of all types of batteries in India. These rules impose EPR obligations on all producers, importers, and brand owners of batteries."
+          },
+          {
+                    "question": "Which types of batteries are covered under EPR?",
+                    "answer": "All battery types are covered — portable batteries (phones, laptops), automotive batteries (lead-acid, vehicle batteries), industrial batteries (UPS, storage), and electric vehicle (EV) batteries."
+          },
+          {
+                    "question": "Who must obtain EPR authorization for battery waste?",
+                    "answer": "Any entity that manufactures, imports, or sells batteries of any type in India must obtain EPR authorization for battery waste from CPCB or the respective SPCB before placing batteries on the market."
+          },
+          {
+                    "question": "What are the collection targets for EV batteries?",
+                    "answer": "For electric vehicle batteries: 70% collection target in 2023–24, rising to 80% in 2024–25, and 90% in 2025–26 and beyond. Targets are based on battery units placed in the market two years prior."
+          },
+          {
+                    "question": "How long does EPR authorization for battery waste take?",
+                    "answer": "Battery waste EPR authorization typically takes 30–45 working days from complete application submission. Corpbiz's battery EPR specialists can prepare and submit the application within 5–7 business days."
+          },
+          {
+                    "question": "Can a battery importer purchase EPR credits for battery waste?",
+                    "answer": "Yes. Like plastic and e-waste EPR, battery EPR credits are available on the CPCB portal. Importers who cannot meet physical collection targets can purchase credits from authorized battery recyclers to fulfil their obligations."
+          },
+          {
+                    "question": "What happens if battery EPR targets are not fulfilled?",
+                    "answer": "Failure to meet battery EPR collection targets results in Environmental Compensation levied by CPCB. Repeated non-compliance can lead to suspension of the EPR authorization, thereby halting the import or sale of batteries in India."
+          }
+]}
+                />
+                <ReviewsSection />
+            </div>
         </div>
     );
 };
