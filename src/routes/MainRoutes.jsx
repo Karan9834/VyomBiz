@@ -16,7 +16,7 @@ const Publications = lazy(() => import('../pages/resources/Publications'));
 
 const Regulatory = lazy(() => import('../pages/regulatory/Regulatory'));
 const Environmental = lazy(() => import('../pages/environmental/Environmental'));
-const NotFound = lazy(() => import('../pages/error/NotFound'));
+
 const BusinessRegistration = lazy(() => import('../pages/footer/BusinessRegistration'));
 const NGOTrust = lazy(() => import('../pages/footer/NGOTrusT'));
 const GlobalIncorporation = lazy(() => import('../pages/footer/GlobalIncorporation'));
@@ -87,8 +87,6 @@ const MainRoutes = [
     <Route key="env" path="/environmental" element={<Environmental />} />,
 
     ...pendingPaths.map(path => <Route key={`pending-${path}`} path={path} element={<Pending />} />),
-
-    <Route key="not-found" path="*" element={<NotFound />} />,
 ];
 
 export default MainRoutes;
