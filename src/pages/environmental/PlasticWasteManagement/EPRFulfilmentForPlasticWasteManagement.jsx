@@ -1,151 +1,134 @@
 import React from 'react';
-import { CheckCircle, ArrowRight, Rocket, Smile, MapPin, PieChart, Shield } from 'lucide-react';
-
-const services = [
-    { title: "E P R Fulfilment For Plastic Waste Management Consultation", desc: "Expert guidance and consultation for obtaining your E P R Fulfilment For Plastic Waste Management smoothly and efficiently.", price: "₹2,999" },
-    { title: "Application Preparation", desc: "Complete documentation preparation and application filing for Plastic Waste Management compliance.", price: "₹4,999" },
-    { title: "Follow-up & Liaison", desc: "Regular follow-ups with relevant authorities to ensure faster processing of your application.", price: "₹3,499" },
-    { title: "Compliance Audit", desc: "Pre-application audit to ensure your premises/business meets all statutory requirements.", price: "₹5,999" },
-    { title: "Renewal Submissions", desc: "Timely submission of renewal applications to prevent lapses in your compliance status.", price: "₹1,999" },
-    { title: "Annual Returns Filing", desc: "Preparation and filing of statutory annual returns and compliance reports as mandated.", price: "₹2,499" },
-];
+import HeroLayout from '../../../components/common/HeroLayout';
+import DetailsLayout from '../../../components/common/DetailsLayout';
+import FAQLayout from '../../../components/common/FAQLayout';
+import ReviewsSection from '../../../components/common/ReviewsSection';
 
 const EPRFulfilmentForPlasticWasteManagement = () => {
+    const faqs = [
+        { question: "What is EPR fulfilment in plastic waste management?", answer: "EPR fulfilment refers to the process by which producers, importers, and brand owners (PIBOs) meet their annual plastic packaging collection, recycling, and use-of-recycled-content (URV) targets as mandated by the Plastic Waste Management Rules, 2016. Fulfilment can be achieved through physical waste collection + PWP tie-ups, or by purchasing EPR credits from registered plastic waste processors on the CPCB portal." },
+        { question: "Why is EPR fulfilment important for plastic waste?", answer: "Non-fulfilment of EPR targets attracts Environmental Compensation (EC) at ₹32.13/kg for recycling shortfall (FY 2023-24). CPCB publishes a list of non-compliant PIBOs annually, damaging brand reputation. Persistent non-fulfilment can lead to product bans, operations suspension, and public interest litigation by the environment ministry." },
+        { question: "How do PIBOs fulfil their plastic EPR targets?", answer: "PIBOs can fulfil EPR targets through: (1) Setting up their own plastic waste collection networks; (2) Engaging authorized PWPs for processing; (3) Partnering with local bodies, gram panchayats, or third-party waste managers; (4) Purchasing EPR certificates/credits from registered PWPs on the CPCB centralized portal." },
+        { question: "What is the annual return deadline for plastic waste EPR?", answer: "PIBOs must file annual returns by June 30 of the next financial year on the CPCB portal. PWPs must file annual returns by June 30 as well (some categories by April 30), providing category-wise and state-wise plastic waste processing data. Late filing attracts Environmental Compensation." },
+        { question: "What are the 7 categories of plastic under plastic waste management?", answer: "The PWM Rules 2016 define 7 categories: (1) PET - Polyethylene Terephthalate, (2) HDPE - High Density Polyethylene, (3) PVC - Polyvinyl Chloride, (4) LDPE - Low Density Polyethylene, (5) PP - Polypropylene, (6) PS - Polystyrene resins, (7) Multi-materials (ABS, poly-phenylene oxide, polycarbonate, PBT)." },
+        { question: "What penalties apply for non-fulfilment of EPR obligations?", answer: "Penalties include: Environmental Compensation at ₹32.13/kg recycling shortfall; product ban orders; publication of non-compliant PIBOs on CPCB website; suspension of EPR registration; and potential criminal action under the Environment Protection Act 1986 for willful non-compliance." },
+        { question: "Can Corpbiz manage EPR target fulfilment for our company?", answer: "Yes. Corpbiz offers a full-service EPR target fulfilment retainer that covers: EPR target calculation, PWP tie-ups or credit procurement, CPCB portal management, annual return filing, EC deposit (if needed), and year-round compliance monitoring — so you never face penalties or missing deadlines." }
+    ];
+
     return (
-        <div className="bg-white min-h-screen font-sans">
-            <section className="relative min-h-[90vh] bg-white flex items-center pt-24 pb-12 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 mb-20">
-                    <div className="w-full lg:w-[60%]">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#005a9c]/10 border border-[#005a9c]/20 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-8">
-                            <Shield size={16} /><span>Plastic Waste Management Services</span>
-                        </div>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#072b47] leading-[1.1] mb-8">
-                            E <br className="hidden md:block" />
-                            <span className="text-[#dead01]">P R Fulfilment For Plastic Waste Management</span>
-                        </h1>
-                        <p className="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed font-medium">
-                            End-to-end support for E P R Fulfilment For Plastic Waste Management. We manage the entire lifecycle of compliance to ensure your business operations remain uninterrupted and legally sound.
-                        </p>
-                        <div className="flex flex-wrap gap-4 mb-8">
-                            {["Certification", "Compliance", "Advisory", "Renewals"].map((tag, i) => (
-                                <span key={i} className="px-4 py-2 bg-slate-100 text-[#072b47] rounded-full text-sm font-bold">{tag}</span>
-                            ))}
-                        </div>
-                        <button className="bg-[#005a9c] text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 shadow-2xl shadow-blue-900/20 active:scale-95 transition-all">Get Started Now</button>
-                    </div>
-                    <div className="w-full lg:w-[40%] relative">
-                        <div className="absolute inset-0 bg-[#005a9c]/10 blur-[120px] rounded-full scale-150 animate-pulse"></div>
-                        <img src="/environmental/placeholder/hero.avif" alt="E P R Fulfilment For Plastic Waste Management"
-                            className="relative z-10 w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
-                            onError={(e) => { e.target.src = "https://illustrations.popsy.co/amber/plant.svg" }} />
-                    </div>
-                </div>
-            </section>
+        <div className="bg-[#f8f9fa] min-h-screen relative font-sans">
+            <div className="relative z-10 space-y-2 lg:space-y-4">
+                <HeroLayout
+                    heroTitleMain="EPR Fulfilment For Plastic Waste Management"
+                    heroTitleSuffix="— Hit 100% Compliance"
+                    heroDescription="Get your EPR Fulfilment in Plastic Waste Management done with the help of Corpbiz. End-to-end EPR target calculation, PWP tie-ups, credit procurement, and annual return filing — ensuring zero penalties for your business."
+                    stats={[
+                        { count: "43633 +", label: "Happy Clients" },
+                        { count: "3500 +", label: "Expert Advisors" },
+                        { count: "50 +", label: "Branch Offices" },
+                        { count: "10k+", label: "Pin codes" }
+                    ]}
+                    formTitle="Get Free Expert Consultation"
+                />
 
-            <section className="bg-[#FEF9C3] py-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[
-                            { icon: <Rocket className="w-8 h-8 text-[#005a9c]" />, title: "Track Record", desc: "Successfully processed thousands of applications for clients across India." },
-                            { icon: <Smile className="w-8 h-8 text-[#005a9c]" />, title: "Domain Expertise", desc: "Deep knowledge of specific regulatory frameworks and compliance timelines." },
-                            { icon: <MapPin className="w-8 h-8 text-[#005a9c]" />, title: "Pan-India Reach", desc: "We provide comprehensive regulatory coverage spanning all states and territories." },
-                            { icon: <PieChart className="w-8 h-8 text-[#005a9c]" />, title: "Data Security", desc: "Your business secrets, process details, and critical data are held in strict confidence." },
-                        ].map((card, i) => (
-                            <div key={i} className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">{card.icon}</div>
-                                <h3 className="text-xl font-bold text-[#072b47] mb-4">{card.title}</h3>
-                                <p className="text-slate-600 text-[15px] leading-relaxed font-medium">{card.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                <DetailsLayout
+                    overview={{
+                        title: "EPR Fulfilment in Plastic Waste Management —",
+                        highlightTitle: "An Overview",
+                        description: [
+                            "Producers, importers, and brand owners bear Extended Producer Responsibility (EPR) for the collection and recycling of plastic packaging waste under the Plastic Waste Management Rules, 2016. EPR applies to both pre- and post-consumer plastic packaging waste across all four packaging categories.",
+                            "EPR fulfilment requires PIBOs to meet annual recycling, waste-to-energy, or co-processing targets proportional to the quantity of plastic packaging they place in the market. Fulfilment can be achieved through physical waste collection networks or by purchasing EPR certificates from CPCB-registered plastic waste processors (PWPs) on the centralized portal.",
+                            "Corpbiz provides turnkey EPR target fulfilment services — handling EPR target calculation, PWP identification, credit procurement, portal management, and annual return filing for 500+ PIBOs across India.",
+                        ],
+                        whyIdealTitle: "Obligated Entities Under EPR Fulfilment",
+                        whyIdealList: [
+                            { title: "Producers (P)", desc: "Manufacturers placing plastic packaging in the Indian market — responsible for post-consumer plastic waste collection and recycling targets." },
+                            { title: "Importers (I)", desc: "Importers of all imported plastic packaging and/or plastic packaging of imported products — full EPR targets apply on import quantities." },
+                            { title: "Brand Owners (BO)", desc: "Marketplaces, online platforms, and supermarket chains placing branded products in plastic packaging — including non-MSME entities." },
+                            { title: "Plastic Waste Processors (PWPs)", desc: "Except cement kilns and road construction units, all registered PWPs must generate category-wise EPR certificates for plastic waste processed." },
+                        ]
+                    }}
 
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-4">Services Addressed</h2>
-                        <div className="w-24 h-1 bg-[#dead01] shadow-[0_0_8px_rgba(255,233,10,0.6)] mx-auto rounded mb-6"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
-                            <div key={index} className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-[#FFE90A]/40 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full group relative">
-                                <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
-                                <div className="p-8 flex flex-col h-full pt-10">
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{service.title}</h3>
-                                    <p className="text-slate-600 text-[15px] leading-relaxed mb-10 flex-grow font-medium">{service.desc}</p>
-                                    <div className="mt-auto pt-6">
-                                        <div className="flex flex-col mb-6">
-                                            <span className="text-[11px] uppercase tracking-widest font-black text-slate-400 mb-1">Starting at</span>
-                                            <span className="text-[#dead01] text-3xl font-black leading-none">{service.price}</span>
-                                        </div>
-                                        <div className="flex items-center justify-between gap-4">
-                                            <button className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all">Get Started</button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read py-1">
-                                                <span>Read More</span><ArrowRight className="w-4 h-4 group-hover/read:translate-x-1.5 transition-transform duration-300" />
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    advantages={{
+                        title: "Benefits of EPR Fulfilment in Plastic Waste Management",
+                        subtitle: "Why proactive EPR fulfilment pays off for businesses of all sizes",
+                        list: [
+                            { title: "Avoid Environmental Compensation Penalties", desc: "EC is levied at ₹32.13/kg for recycling shortfall. Proactive EPR fulfilment through Corpbiz eliminates this penalty entirely." },
+                            { title: "Promotion of Recycling & Circular Economy", desc: "EPR fulfilment encourages investment in recycling infrastructure and increases plastics being recycled, reducing demand for virgin plastic production." },
+                            { title: "Job Creation in Waste Management", desc: "EPR programs create employment in waste collection, sorting, processing, and related sectors — with every 1,000 MT of EPR credit generating ~15 jobs in the recycling sector." },
+                            { title: "Reduction in Plastic Pollution", desc: "EPR ensures proper collection, recycling, and disposal of plastic products, reducing plastic pollution in natural habitats such as oceans, rivers, and forests." },
+                            { title: "Brand Protection & ESG Compliance", desc: "Annual EPR returns serve as proof of compliance for ESG disclosures, BRSR filings, and B2B supplier qualification — protecting brand reputation." },
+                            { title: "Supply Chain Continuity", desc: "Uninterrupted EPR compliance ensures your products are not banned from marketplaces that require EPR registration verification from their sellers." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-[#FEF9C3]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-6">About E P R Fulfilment For Plastic Waste Management</h2>
-                            <div className="w-16 h-1 bg-[#072b47] rounded mb-8"></div>
-                            <div className="space-y-6 text-[#072b47]/90 text-lg leading-relaxed font-medium">
-                                <p>Ensuring compliance with E P R Fulfilment For Plastic Waste Management is crucial for businesses operating in today's regulated environment under the broader framework of Plastic Waste Management. Failure to comply can result in severe legal consequences, operational halts, and financial penalties.</p>
-                                <p>Our comprehensive assistance covers everything from initial evaluation and strategy formulation to execution and final approval. Whether you are establishing a new entity or operating an existing one, we provide clear roadmaps to maintain unblemished compliance records.</p>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/2">
-                            <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
-                                <h3 className="text-xl font-black text-[#072b47] mb-6">Core Requirements</h3>
-                                <ul className="space-y-4">
-                                    {["Business Incorporation Details", "Authorized Person KYC", "Facility Setup Plans", "List of Machinery/Process Details", "Past Compliance Records (if any)", "Site Clearance Approvals", "Local Body NOCs"].map((doc, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
-                                            <CheckCircle className="w-5 h-5 text-[#005a9c] mt-0.5 shrink-0" />
-                                            <span>{doc}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    eligibility={{
+                        title: "EPR Plastic Packaging Target Structure",
+                        subtitle: "How plastic EPR targets are calculated and what you need to fulfil",
+                        list: [
+                            { title: "Target Based on Sales/Import Volume", desc: "EPR recycling targets are determined as a percentage of the total plastic packaging placed in the market in the previous financial year — category-wise." },
+                            { title: "Category I & II Targets (2024-25)", desc: "Category I (rigid plastic): 70% recycling target. Category II (flexible single-layer): 30% recycling, 30% WtE/WtO/co-processing target." },
+                            { title: "Use of Recycled Content (URV) Target", desc: "Separate from recycling targets — PIBOs must use 30% recycled content in packaging by 2025-26, increasing to higher percentages by 2028-29." },
+                            { title: "Multi-State Operations", desc: "PIBOs operating in more than two states register directly with CPCB (instead of SPCB). Targets are calculated at the national level across all states." },
+                            { title: "Credit Purchase as Fulfilment", desc: "If physical collection is not feasible, PIBOs can purchase EPR processing certificates from CPCB-registered PWPs through the portal to fulfil up to 100% of recycling targets." },
+                            { title: "End-of-Life Disposal Obligation", desc: "Any plastic packaging that cannot be recycled must be directed to designated end-of-life disposal methods — energy recovery or co-processing — with certificates from the receiving facility." }
+                        ]
+                    }}
 
-            <section className="py-24 bg-white border-t border-slate-100">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-5xl font-black text-[#072b47] mb-6">Why Choose <span className="text-[#dead01]">Us</span></h2>
-                        <div className="w-24 h-1.5 bg-[#dead01] mx-auto rounded-full"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            { title: "Specialized Experts", desc: "Dedicated professionals focused specifically on navigating complex environmental guidelines." },
-                            { title: "Assured Approvals", desc: "A robust vetting process of document filings severely limits the chance of application pushback." },
-                            { title: "Lifecycle Management", desc: "Beyond simple acquisition, we maintain a proactive posture toward your ongoing compliance schedule." },
-                        ].map((item, index) => (
-                            <div key={index} className="relative p-10 rounded-[2.5rem] border border-slate-200 bg-white shadow-sm hover:shadow-2xl hover:border-[#dead01]/30 hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-                                <div className="mb-8">
-                                    <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:bg-[#dead01]/10 transition-all duration-500">
-                                        <CheckCircle className="w-8 h-8 text-[#dead01]" />
-                                    </div>
-                                </div>
-                                <h3 className="text-xl font-black text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium text-[15px]">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    documents={{
+                        title: "Documents Required under EPR Fulfilment in Plastic Waste Management",
+                        description: "Key information and documents needed for CPCB EPR portal registration and annual returns:",
+                        list: [
+                            "Legal Name and Trade Name (as per GST registration)",
+                            "Type of Business (Private/Public/Proprietorship/Co-operative etc.)",
+                            "Type of Company (Micro/Small/Medium/Large) and supporting document",
+                            "Registered Address of the entity",
+                            "Company PAN Card Number (validated on CPCB portal)",
+                            "Company CIN Number (for companies registered under Companies Act)",
+                            "Name and Designation of Authorized Person",
+                            "Mobile Number, PAN, and Aadhaar details of Authorized Person",
+                            "Category-wise plastic packaging quantity data for the reporting period",
+                            "EPR processing certificates from registered PWPs or URV credit certificates"
+                        ]
+                    }}
+
+                    process={{
+                        title: "Steps to Complete EPR Fulfilment in Plastic Waste Management",
+                        subtitle: "How Corpbiz manages end-to-end EPR target fulfilment for PIBOs",
+                        steps: [
+                            { step: "01", title: "CPCB Portal Registration", desc: "Register as a PIBO on the CPCB centralized EPR portal with complete business and product information. Corpbiz handles account setup and profile configuration." },
+                            { step: "02", title: "EPR Target Determination", desc: "Calculate category-wise EPR targets for the current financial year based on sales/import data. Identify the recycling, WtE/WtO, and URV targets applicable to your business." },
+                            { step: "03", title: "PWP Tie-Up / Credit Procurement", desc: "Identify and engage CPCB-registered PWPs for physical waste collection, or purchase EPR processing certificates directly from the CPCB portal — whichever is more cost-effective." },
+                            { step: "04", title: "Plastic Packaging Collection & Processing", desc: "Set up collection points, engage local bodies or third-party aggregators, and ensure collected plastic is channeled to registered PWPs for processing within the financial year." },
+                            { step: "05", title: "Annual Return Filing by June 30", desc: "File the annual return on the CPCB EPR portal with complete reconciliation of plastic packaging placed in market vs. recycling/processing certificates and URV credits." },
+                            { step: "06", title: "EC Deposit (If Applicable)", desc: "If targets are not fully met, calculate and deposit the applicable Environmental Compensation (at ₹32.13/kg or applicable rate) before the annual return deadline to close the compliance year." }
+                        ]
+                    }}
+
+                    features={{
+                        title: "How Corpbiz Assists with EPR Fulfilment in Plastic Waste Management",
+                        subtitle: "India's trusted turnkey EPR fulfilment partner for PIBOs across all industries",
+                        list: [
+                            { title: "Expert EPR Portal Management", desc: "Our team manages your CPCB EPR portal login, annual return filing, credit transactions, and all regulatory communications on your behalf." },
+                            { title: "Best-Price EPR Credit Procurement", desc: "Access to 300+ CPCB-registered PWPs ensures the most competitive EPR credit pricing for PIBOs needing last-minute fulfilment before year-end." },
+                            { title: "Complete Documentation Handling", desc: "We collect all required documents, prepare certificates, coordinate with PWPs, and ensure every piece of evidence is ready for seamless annual return filing." },
+                            { title: "One-Stop Compliance Platform", desc: "From EPR eligibility assessment to target calculation, fulfilment, CPCB portal management, and report filing — a single Corpbiz retainer covers it all." },
+                            { title: "Real-Time Compliance Dashboard", desc: "Monthly EPR target vs. achievement tracking dashboard keeping you informed about your current compliance status — with alerts for upcoming deadlines." },
+                            { title: "Zero-Penalty Track Record", desc: "99%+ of Corpbiz-managed PIBOs file annual returns on time with complete target fulfilment and zero Environmental Compensation across all compliance years." }
+                        ]
+                    }}
+                />
+
+                <FAQLayout
+                    title="Frequently Asked Questions"
+                    subtitle="Everything you need to know about EPR Fulfilment for Plastic Waste Management"
+                    faqs={faqs}
+                />
+                <ReviewsSection
+                    title="What Our Clients Say"
+                    subtitle="Trusted by 500+ PIBOs for seamless plastic waste EPR target fulfilment across India."
+                />
+            </div>
         </div>
     );
 };

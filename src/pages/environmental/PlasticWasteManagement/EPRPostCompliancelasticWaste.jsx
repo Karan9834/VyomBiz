@@ -1,153 +1,136 @@
 import React from 'react';
-import { CheckCircle, ArrowRight, Rocket, Smile, MapPin, PieChart, Shield } from 'lucide-react';
+import HeroLayout from '../../../components/common/HeroLayout';
+import DetailsLayout from '../../../components/common/DetailsLayout';
+import FAQLayout from '../../../components/common/FAQLayout';
+import ReviewsSection from '../../../components/common/ReviewsSection';
 
-const services = [
-    { title: "E P R Post Compliancelastic Waste Consultation", desc: "Expert guidance and consultation for obtaining your E P R Post Compliancelastic Waste smoothly and efficiently.", price: "₹2,999" },
-    { title: "Application Preparation", desc: "Complete documentation preparation and application filing for Plastic Waste Management compliance.", price: "₹4,999" },
-    { title: "Follow-up & Liaison", desc: "Regular follow-ups with relevant authorities to ensure faster processing of your application.", price: "₹3,499" },
-    { title: "Compliance Audit", desc: "Pre-application audit to ensure your premises/business meets all statutory requirements.", price: "₹5,999" },
-    { title: "Renewal Submissions", desc: "Timely submission of renewal applications to prevent lapses in your compliance status.", price: "₹1,999" },
-    { title: "Annual Returns Filing", desc: "Preparation and filing of statutory annual returns and compliance reports as mandated.", price: "₹2,499" },
-];
+const EPRPostCompliancePlasticWaste = () => {
+    const faqs = [
+        { question: "What is EPR post compliance for plastic waste?", answer: "EPR post compliance refers to all obligations that must be fulfilled by PIBOs after obtaining EPR authorization for plastic waste. This includes meeting annual collection/recycling targets, submitting half-yearly and annual returns, maintaining records, engaging authorized recyclers, and ensuring proper disposal of plastic packaging waste." },
+        { question: "What is the deadline for filing annual EPR returns for plastic waste?", answer: "Annual returns for plastic waste EPR must be filed on the CPCB centralized portal by June 30 of the next financial year (i.e., June 30, 2025 for FY 2024-25). The returns must include category-wise plastic packaging data and recycling/processing proof." },
+        { question: "What must be included in the half-yearly EPR progress report?", answer: "The half-yearly report must include category-wise progress on plastic waste collection and recycling targets for each state/UT in the EPR Action Plan, documentary proof from processing facilities, state-by-state waste collection evidence, and sales data for that period." },
+        { question: "What is the Environmental Compensation (EC) for plastic waste non-compliance?", answer: "For FY 2023-24, the EC rate for recycling shortfall is ₹32.13 per kg. This is the penalty for PIBOs who fail to meet their annual EPR recycling targets. EC must be deposited before the annual return filing deadline. Corpbiz can help you avoid EC through timely target fulfilment." },
+        { question: "Can EPR post compliance be outsourced to a consultant?", answer: "Yes. PIBOs can engage environmental compliance consultants like Corpbiz to manage all post-registration EPR activities — target tracking, half-yearly reports, annual return filing, recycler transactions, and CPCB portal management. However, the legal compliance responsibility remains with the PIBO." },
+        { question: "What records must be maintained for plastic waste EPR compliance?", answer: "PIBOs must maintain invoices and certificates from registered plastic waste processors (PWPs), sales/import data of plastic packaging, category-wise recycling data, evidence of awareness programs, all CPCB portal transactions, and EPR credit purchase certificates for a minimum of 5 years." },
+        { question: "What is the Use of Recycled Content (URV) obligation?", answer: "Separate from recycling targets, PIBOs must progressively use recycled plastic content in their packaging: 30% recycled content by 2025-26, with higher targets by 2028-29. URV credits can be purchased from CPCB-registered recyclers to demonstrate compliance with this obligation." }
+    ];
 
-const EPRPostCompliancelasticWaste = () => {
     return (
-        <div className="bg-white min-h-screen font-sans">
-            <section className="relative min-h-[90vh] bg-white flex items-center pt-24 pb-12 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 mb-20">
-                    <div className="w-full lg:w-[60%]">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#005a9c]/10 border border-[#005a9c]/20 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-8">
-                            <Shield size={16} /><span>Plastic Waste Management Services</span>
-                        </div>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#072b47] leading-[1.1] mb-8">
-                            E <br className="hidden md:block" />
-                            <span className="text-[#dead01]">P R Post Compliancelastic Waste</span>
-                        </h1>
-                        <p className="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed font-medium">
-                            End-to-end support for E P R Post Compliancelastic Waste. We manage the entire lifecycle of compliance to ensure your business operations remain uninterrupted and legally sound.
-                        </p>
-                        <div className="flex flex-wrap gap-4 mb-8">
-                            {["Certification", "Compliance", "Advisory", "Renewals"].map((tag, i) => (
-                                <span key={i} className="px-4 py-2 bg-slate-100 text-[#072b47] rounded-full text-sm font-bold">{tag}</span>
-                            ))}
-                        </div>
-                        <button className="bg-[#005a9c] text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 shadow-2xl shadow-blue-900/20 active:scale-95 transition-all">Get Started Now</button>
-                    </div>
-                    <div className="w-full lg:w-[40%] relative">
-                        <div className="absolute inset-0 bg-[#005a9c]/10 blur-[120px] rounded-full scale-150 animate-pulse"></div>
-                        <img src="/environmental/placeholder/hero.avif" alt="E P R Post Compliancelastic Waste"
-                            className="relative z-10 w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
-                            onError={(e) => { e.target.src = "https://illustrations.popsy.co/amber/plant.svg" }} />
-                    </div>
-                </div>
-            </section>
+        <div className="bg-[#f8f9fa] min-h-screen relative font-sans">
+            <div className="relative z-10 space-y-2 lg:space-y-4">
+                <HeroLayout
+                    heroTitleMain="EPR Post Compliance — Plastic Waste"
+                    heroTitleSuffix="— Annual Filing Support"
+                    heroDescription="After receiving EPR authorization for plastic waste management, every producer, brand owner, importer, recycler, and plastic manufacturer must meet ongoing EPR post compliance obligations. Corpbiz manages it all for you."
+                    stats={[
+                        { count: "43301 +", label: "Happy Clients" },
+                        { count: "3500 +", label: "Expert Advisors" },
+                        { count: "50 +", label: "Branch Offices" },
+                        { count: "10k+", label: "Pin codes" }
+                    ]}
+                    formTitle="Get Free Expert Consultation"
+                />
 
-            <section className="bg-[#FEF9C3] py-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[
-                            { icon: <Rocket className="w-8 h-8 text-[#005a9c]" />, title: "Track Record", desc: "Successfully processed thousands of applications for clients across India." },
-                            { icon: <Smile className="w-8 h-8 text-[#005a9c]" />, title: "Domain Expertise", desc: "Deep knowledge of specific regulatory frameworks and compliance timelines." },
-                            { icon: <MapPin className="w-8 h-8 text-[#005a9c]" />, title: "Pan-India Reach", desc: "We provide comprehensive regulatory coverage spanning all states and territories." },
-                            { icon: <PieChart className="w-8 h-8 text-[#005a9c]" />, title: "Data Security", desc: "Your business secrets, process details, and critical data are held in strict confidence." },
-                        ].map((card, i) => (
-                            <div key={i} className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">{card.icon}</div>
-                                <h3 className="text-xl font-bold text-[#072b47] mb-4">{card.title}</h3>
-                                <p className="text-slate-600 text-[15px] leading-relaxed font-medium">{card.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                <DetailsLayout
+                    overview={{
+                        title: "EPR Post Compliance – Plastic Waste —",
+                        highlightTitle: "An Overview",
+                        description: [
+                            "After receiving the EPR Authorization for plastic waste management, every producer, brand owner, importer, recycler, plastic trader, and plastic manufacturer must meet certain EPR post compliance obligations under the Plastic Waste Management Rules, 2016.",
+                            "EPR post compliance for plastic waste management is divided into two categories: Half-Yearly Report Submission and Sales Details Submission. Producers, importers, and brand owners must submit half-yearly progress reports to the concerned SPCB/PCC within 15 days after the end of each half-year period.",
+                            "Corpbiz provides a comprehensive EPR post compliance retainer service — from tracking targets and engaging authorized recyclers, to preparing and filing all reports and returns — ensuring you remain 100% compliant throughout the year.",
+                        ],
+                        whyIdealTitle: "Key Post-Compliance Obligations",
+                        whyIdealList: [
+                            { title: "Half-Yearly Progress Reports", desc: "Submit reports to SPCB/PCC within 15 days after each half-year with documentary proof of recycling." },
+                            { title: "Annual Returns by June 30", desc: "File category-wise annual returns on the CPCB portal by June 30 of the next financial year." },
+                            { title: "Sales Details Submission", desc: "Submit plastic packaging sales data to the State Pollution Control Board or Pollution Control Committee." },
+                            { title: "EPR Certificate Transactions", desc: "Transact EPR processing certificates from registered PWPs through the CPCB centralized portal." },
+                        ]
+                    }}
 
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-4">Services Addressed</h2>
-                        <div className="w-24 h-1 bg-[#dead01] shadow-[0_0_8px_rgba(255,233,10,0.6)] mx-auto rounded mb-6"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
-                            <div key={index} className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-[#FFE90A]/40 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full group relative">
-                                <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
-                                <div className="p-8 flex flex-col h-full pt-10">
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{service.title}</h3>
-                                    <p className="text-slate-600 text-[15px] leading-relaxed mb-10 flex-grow font-medium">{service.desc}</p>
-                                    <div className="mt-auto pt-6">
-                                        <div className="flex flex-col mb-6">
-                                            <span className="text-[11px] uppercase tracking-widest font-black text-slate-400 mb-1">Starting at</span>
-                                            <span className="text-[#dead01] text-3xl font-black leading-none">{service.price}</span>
-                                        </div>
-                                        <div className="flex items-center justify-between gap-4">
-                                            <button className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all">Get Started</button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read py-1">
-                                                <span>Read More</span><ArrowRight className="w-4 h-4 group-hover/read:translate-x-1.5 transition-transform duration-300" />
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    advantages={{
+                        title: "Why EPR Post Compliance Matters for Your Business",
+                        subtitle: "Staying compliant post-registration protects your business from penalties and supply chain disruptions",
+                        list: [
+                            { title: "Avoid Environmental Compensation (EC)", desc: "EC is levied at ₹32.13 per kg for recycling shortfall in FY 2023-24. Timely post compliance through EPR credits or physical collection avoids this penalty entirely." },
+                            { title: "Prevent Product Bans & Action", desc: "CPCB can issue product recall orders and operations suspension for repeated non-compliance. Post compliance filings keep your authorization active and valid." },
+                            { title: "Maintain Trusted Supplier Status", desc: "Large retailers, e-commerce platforms, and B2B buyers increasingly require suppliers to demonstrate active EPR compliance. Annual returns serve as proof." },
+                            { title: "Support for Use of Recycled Content (URV)", desc: "Post-registration compliance includes meeting progressive URV targets (30% by 2025-26). Corpbiz helps track and fulfil URV obligations through credit procurement." },
+                            { title: "Transparent CPCB Portal Reporting", desc: "All PIBOs' compliance is publicly tracked on the CPCB portal. Active compliance builds credibility; non-compliance is published by CPCB annually." },
+                            { title: "Brand Reputation & ESG Reporting", desc: "Plastic waste EPR compliance data is reported in ESG disclosures, BRSR filings, and to institutional investors — making post compliance a strategic ESG asset." }
+                        ]
+                    }}
 
-            <section className="py-20 bg-[#FEF9C3]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-6">About E P R Post Compliancelastic Waste</h2>
-                            <div className="w-16 h-1 bg-[#072b47] rounded mb-8"></div>
-                            <div className="space-y-6 text-[#072b47]/90 text-lg leading-relaxed font-medium">
-                                <p>Ensuring compliance with E P R Post Compliancelastic Waste is crucial for businesses operating in today's regulated environment under the broader framework of Plastic Waste Management. Failure to comply can result in severe legal consequences, operational halts, and financial penalties.</p>
-                                <p>Our comprehensive assistance covers everything from initial evaluation and strategy formulation to execution and final approval. Whether you are establishing a new entity or operating an existing one, we provide clear roadmaps to maintain unblemished compliance records.</p>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/2">
-                            <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
-                                <h3 className="text-xl font-black text-[#072b47] mb-6">Core Requirements</h3>
-                                <ul className="space-y-4">
-                                    {["Business Incorporation Details", "Authorized Person KYC", "Facility Setup Plans", "List of Machinery/Process Details", "Past Compliance Records (if any)", "Site Clearance Approvals", "Local Body NOCs"].map((doc, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
-                                            <CheckCircle className="w-5 h-5 text-[#005a9c] mt-0.5 shrink-0" />
-                                            <span>{doc}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    eligibility={{
+                        title: "Who Must Submit EPR Post Compliance for Plastic Waste?",
+                        subtitle: "Obligated entities under the Plastic Waste Management Rules, 2016",
+                        list: [
+                            { title: "Producers (P)", desc: "Manufacturers of plastic packaging or products sold under their own brand must file half-yearly and annual returns post-authorization." },
+                            { title: "Importers (I)", desc: "Importers of plastic packaging or imported products containing plastic packaging must fulfil EPR targets and file returns annually." },
+                            { title: "Brand Owners (BO)", desc: "Brand owners including marketplaces and supermarkets (non-MSME) must file compliance returns and demonstrate EPR target fulfilment each year." },
+                            { title: "Plastic Waste Processors (PWPs)", desc: "Registered PWPs must file annual returns by April 30 disclosing category-wise quantity of plastic waste processed and attributed to PIBOs." },
+                            { title: "Sellers of Raw Materials", desc: "Producers and importers of raw plastic materials must maintain records and submit information returns as part of the EPR framework." },
+                            { title: "Online Platforms & Retail Chains", desc: "Non-MSME online platforms and supermarket chains operating in more than two states must comply with post-registration EPR obligations." }
+                        ]
+                    }}
 
-            <section className="py-24 bg-white border-t border-slate-100">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-5xl font-black text-[#072b47] mb-6">Why Choose <span className="text-[#dead01]">Us</span></h2>
-                        <div className="w-24 h-1.5 bg-[#dead01] mx-auto rounded-full"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            { title: "Specialized Experts", desc: "Dedicated professionals focused specifically on navigating complex environmental guidelines." },
-                            { title: "Assured Approvals", desc: "A robust vetting process of document filings severely limits the chance of application pushback." },
-                            { title: "Lifecycle Management", desc: "Beyond simple acquisition, we maintain a proactive posture toward your ongoing compliance schedule." },
-                        ].map((item, index) => (
-                            <div key={index} className="relative p-10 rounded-[2.5rem] border border-slate-200 bg-white shadow-sm hover:shadow-2xl hover:border-[#dead01]/30 hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-                                <div className="mb-8">
-                                    <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:bg-[#dead01]/10 transition-all duration-500">
-                                        <CheckCircle className="w-8 h-8 text-[#dead01]" />
-                                    </div>
-                                </div>
-                                <h3 className="text-xl font-black text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium text-[15px]">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                    documents={{
+                        title: "Documents Required for EPR Post Compliance Filings",
+                        description: "Key records and documents needed for half-yearly and annual EPR compliance filings:",
+                        list: [
+                            "EPR Registration Certificate (CPCB) and valid authorization number",
+                            "Category-wise sales/import data for plastic packaging during the reporting period",
+                            "Documentary proof from plastic waste processors (recycling certificates, quantity data)",
+                            "EPR credit purchase certificates from CPCB portal transactions",
+                            "State-by-state waste collection evidence, proportionate to EPR targets",
+                            "Invoices and agreements with authorized plastic waste processors (PWPs)",
+                            "Records of awareness programs conducted for consumers regarding plastic waste",
+                            "Use of Recycled Content (URV) evidence or URV credit purchase certificates",
+                            "GST data of processed or recycled materials (sold by PWPs)",
+                            "Compliance manager/consultant authorization letter"
+                        ]
+                    }}
+
+                    process={{
+                        title: "EPR Post Compliance Filing Process",
+                        subtitle: "How Corpbiz manages your ongoing plastic waste EPR compliance",
+                        steps: [
+                            { step: "01", title: "EPR Target Calculation", desc: "Calculate your annual plastic packaging EPR targets (category I-IV) based on sales/import data and CPCB formulas for the current financial year." },
+                            { step: "02", title: "Recycler / PWP Tie-Up", desc: "Identify and engage CPCB-registered plastic waste processors (PWPs) or purchase EPR credits from the centralized portal to meet targets." },
+                            { step: "03", title: "Half-Yearly Progress Report", desc: "Prepare and submit the half-yearly progress report to SPCB/PCC within 15 days after the end of each half-year (September 30 and March 31)." },
+                            { step: "04", title: "Annual Return Preparation", desc: "Compile all category-wise plastic packaging data, recycling certificates, and sales details for the full financial year ending March 31." },
+                            { step: "05", title: "Annual Return Filing on CPCB Portal", desc: "File the annual return on the CPCB EPR portal by June 30, providing recycling certificate details and EPR credit transactions." },
+                            { step: "06", title: "Environmental Compensation (if any)", desc: "If targets are not fully met, calculate and deposit the applicable Environmental Compensation amount before the annual return deadline." }
+                        ]
+                    }}
+
+                    features={{
+                        title: "Why Choose Corpbiz for EPR Post Compliance – Plastic Waste?",
+                        subtitle: "Expert-led, worry-free annual EPR compliance management for PIBOs and PWPs",
+                        list: [
+                            { title: "1000+ PIBOs Managed Annually", desc: "We manage ongoing EPR post compliance for 1000+ producers, importers, and brand owners — from target tracking to annual return filing." },
+                            { title: "Dedicated Compliance Manager", desc: "A single point of contact monitors your EPR portal, tracks targets, reminds you of deadlines, and files all reports on your behalf." },
+                            { title: "Monthly Target Tracking Dashboard", desc: "Clients receive monthly EPR target vs. achievement dashboards, so you always know where you stand well before the annual return deadline." },
+                            { title: "Best-Rate EPR Credit Procurement", desc: "Our 300+ CPCB-registered recycler network ensures the most competitive EPR credit prices for PIBOs needing credit purchases before year-end." },
+                            { title: "Zero-Penalty Track Record", desc: "99%+ of Corpbiz-managed PIBOs have filed their annual returns on time with zero Environmental Compensation penalties over the past 5 years." },
+                            { title: "End-to-End Retainer Service", desc: "Annual retainer plan covers the full compliance cycle — target calculation, PWP tie-ups, reports, filings, audits, and CPCB query responses." }
+                        ]
+                    }}
+                />
+
+                <FAQLayout
+                    title="Frequently Asked Questions"
+                    subtitle="Everything you need to know about EPR Post Compliance for Plastic Waste"
+                    faqs={faqs}
+                />
+                <ReviewsSection
+                    title="What Our Clients Say"
+                    subtitle="Trusted by 1000+ PIBOs and PWPs for timely, accurate plastic waste EPR post compliance."
+                />
+            </div>
         </div>
     );
 };
 
-export default EPRPostCompliancelasticWaste;
+export default EPRPostCompliancePlasticWaste;
