@@ -1,6 +1,18 @@
 import React, { lazy } from 'react';
 import { Route } from 'react-router-dom';
 
+// Lazy imports for Footer Environmental category pages
+const FooterBatteryWasteManagement = lazy(() => import('../pages/footer/Environmental/BatteryWasteManagement'));
+const FooterBusinessRegistration = lazy(() => import('../pages/footer/Environmental/BusinessRegistration'));
+const FooterEIA = lazy(() => import('../pages/footer/Environmental/EIA'));
+const FooterEWasteManagement = lazy(() => import('../pages/footer/Environmental/EWasteManagement'));
+const FooterEnvironmentalAdvisory = lazy(() => import('../pages/footer/Environmental/EnvironmentalAdvisory'));
+const FooterEnvironmentalIndustry = lazy(() => import('../pages/footer/Environmental/EnvironmentalIndustry'));
+const FooterEnvironmentalLicensing = lazy(() => import('../pages/footer/Environmental/EnvironmentalLicensing'));
+const FooterHazardousWasteManagement = lazy(() => import('../pages/footer/Environmental/HazardousWasteManagement'));
+const FooterPlasticWasteManagement = lazy(() => import('../pages/footer/Environmental/PlasticWasteManagement'));
+const FooterPollutionNOC = lazy(() => import('../pages/footer/Environmental/PollutionNOC'));
+
 // Lazy imports for Environmental pages
 const LithiumIonBatteryImportLicense = lazy(() => import('../pages/environmental/BatteryWasteManagement/LithiumIonBatteryImportLicense'));
 const NewLeadAcidBatteryImportLicense = lazy(() => import('../pages/environmental/BatteryWasteManagement/NewLeadAcidBatteryImportLicense'));
@@ -89,6 +101,18 @@ const PhaseIISoilAndGroundwaterInvestigations = lazy(() => import('../pages/envi
 const UttarPradeshPollutionControlBoard = lazy(() => import('../pages/environmental/PollutionNOC/UttarPradeshPollutionControlBoard'));
 
 const EnvironmentalRoutes = [
+    // Footer Environmental category pages
+    <Route key="battery-waste-management" path="/battery-waste-management" element={<FooterBatteryWasteManagement />} />,
+    <Route key="env-business-registration" path="/env-business-registration" element={<FooterBusinessRegistration />} />,
+    <Route key="eia" path="/eia" element={<FooterEIA />} />,
+    <Route key="e-waste-management" path="/e-waste-management" element={<FooterEWasteManagement />} />,
+    <Route key="environmental-advisory" path="/environmental-advisory" element={<FooterEnvironmentalAdvisory />} />,
+    <Route key="environmental-industry" path="/environmental-industry" element={<FooterEnvironmentalIndustry />} />,
+    <Route key="environmental-licensing" path="/environmental-licensing" element={<FooterEnvironmentalLicensing />} />,
+    <Route key="hazardous-waste-management" path="/hazardous-waste-management" element={<FooterHazardousWasteManagement />} />,
+    <Route key="plastic-waste-management" path="/plastic-waste-management" element={<FooterPlasticWasteManagement />} />,
+    <Route key="pollution-noc" path="/pollution-noc" element={<FooterPollutionNOC />} />,
+    // Individual Environmental sub-pages
     <Route key="lithium-ion-battery-import-license" path="/lithium-ion-battery-import-license" element={<LithiumIonBatteryImportLicense />} />,
     <Route key="new-lead-acid-battery-import-license" path="/new-lead-acid-battery-import-license" element={<NewLeadAcidBatteryImportLicense />} />,
     <Route key="registration-for-lead-acid-battery-recycling" path="/registration-for-lead-acid-battery-recycling" element={<RegistrationForLeadAcidBatteryRecycling />} />,
