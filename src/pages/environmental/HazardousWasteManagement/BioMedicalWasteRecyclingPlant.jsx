@@ -1,149 +1,236 @@
 import React from 'react';
-import { CheckCircle, ArrowRight, Rocket, Smile, MapPin, PieChart, Shield } from 'lucide-react';
-
-const services = [
-    { title: "Bio Medical Waste Recycling Plant Consultation", desc: "Expert guidance and consultation for obtaining your Bio Medical Waste Recycling Plant smoothly and efficiently.", price: "₹2,999" },
-    { title: "Application Preparation", desc: "Complete documentation preparation and application filing for Hazardous Waste Management compliance.", price: "₹4,999" },
-    { title: "Follow-up & Liaison", desc: "Regular follow-ups with relevant authorities to ensure faster processing of your application.", price: "₹3,499" },
-    { title: "Compliance Audit", desc: "Pre-application audit to ensure your premises/business meets all statutory requirements.", price: "₹5,999" },
-    { title: "Renewal Submissions", desc: "Timely submission of renewal applications to prevent lapses in your compliance status.", price: "₹1,999" },
-    { title: "Annual Returns Filing", desc: "Preparation and filing of statutory annual returns and compliance reports as mandated.", price: "₹2,499" },
-];
+import { Shield, FileCheck, CheckCircle, ArrowRight, Zap, Target, BookOpen, Clock, Users, Building2, Briefcase } from 'lucide-react';
 
 const BioMedicalWasteRecyclingPlant = () => {
     return (
-        <div className="bg-white min-h-screen font-sans">
-            <section className="relative min-h-[90vh] bg-white flex items-center pt-24 pb-12 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 mb-20">
-                    <div className="w-full lg:w-[60%]">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#005a9c]/10 border border-[#005a9c]/20 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-8">
-                            <Shield size={16} /><span>Hazardous Waste Management Services</span>
-                        </div>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#072b47] leading-[1.1] mb-8">
-                            Bio <br className="hidden md:block" />
-                            <span className="text-[#dead01]">Medical Waste Recycling Plant</span>
-                        </h1>
-                        <p className="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed font-medium">
-                            End-to-end support for Bio Medical Waste Recycling Plant. We manage the entire lifecycle of compliance to ensure your business operations remain uninterrupted and legally sound.
-                        </p>
-                        <div className="flex flex-wrap gap-4 mb-8">
-                            {["Certification", "Compliance", "Advisory", "Renewals"].map((tag, i) => (
-                                <span key={i} className="px-4 py-2 bg-slate-100 text-[#072b47] rounded-full text-sm font-bold">{tag}</span>
-                            ))}
-                        </div>
-                        <button className="bg-[#005a9c] text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 shadow-2xl shadow-blue-900/20 active:scale-95 transition-all">Get Started Now</button>
+        <div className="bg-slate-50 min-h-screen font-sans overflow-x-hidden">
+            {/* HERO SECTION */}
+            <section className="relative bg-gradient-to-br from-[#005a9c] to-[#072b47] text-white pt-32 pb-24 overflow-hidden">
+                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 mix-blend-overlay"></div>
+                <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-50 to-transparent"></div>
+                
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 rounded-full text-blue-100 text-sm font-bold uppercase tracking-wider mb-8 backdrop-blur-sm">
+                        <Shield size={16} className="text-[#dead01]" /><span>Environmental Compliance Services</span>
                     </div>
-                    <div className="w-full lg:w-[40%] relative">
-                        <div className="absolute inset-0 bg-[#005a9c]/10 blur-[120px] rounded-full scale-150 animate-pulse"></div>
-                        <img src="/environmental/placeholder/hero.avif" alt="Bio Medical Waste Recycling Plant"
-                            className="relative z-10 w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
-                            onError={(e) => { e.target.src = "https://illustrations.popsy.co/amber/plant.svg" }} />
+                    
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.2] mb-6 max-w-5xl">
+                        {/* Split title to style it nicely */}
+                        Bio Medical Waste Management <span className="text-[#dead01]">Recycling</span> <span className="text-[#dead01]">Plant</span> <span className="text-[#dead01]">Setup</span> 
+                    </h1>
+                    
+                    <p className="text-xl text-blue-100 mb-10 max-w-3xl leading-relaxed">
+                        Struggling to set up your bio medical waste Management recycling plant? Get VyomBiz expert assistance for affordable, reliable, and timely bio medical plant setup solutions. 99 out of 100 successful bio medical waste management recycling plant setups.
+                    </p>
+                    
+                    <div className="flex flex-wrap justify-center gap-4">
+                        <button className="bg-[#dead01] text-[#072b47] px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-400 shadow-xl active:scale-95 transition-all flex items-center justify-center gap-2">
+                            Get Free Expert Consultation
+                            <ArrowRight size={20} />
+                        </button>
+                        <button className="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg backdrop-blur-sm active:scale-95 transition-all flex items-center justify-center gap-2">
+                            View Pricing
+                        </button>
                     </div>
                 </div>
             </section>
 
-            <section className="bg-[#FEF9C3] py-20">
+            {/* WHAT'S INCLUDED / METRICS */}
+            <section className="-mt-12 relative z-20 mb-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[
-                            { icon: <Rocket className="w-8 h-8 text-[#005a9c]" />, title: "Track Record", desc: "Successfully processed thousands of applications for clients across India." },
-                            { icon: <Smile className="w-8 h-8 text-[#005a9c]" />, title: "Domain Expertise", desc: "Deep knowledge of specific regulatory frameworks and compliance timelines." },
-                            { icon: <MapPin className="w-8 h-8 text-[#005a9c]" />, title: "Pan-India Reach", desc: "We provide comprehensive regulatory coverage spanning all states and territories." },
-                            { icon: <PieChart className="w-8 h-8 text-[#005a9c]" />, title: "Data Security", desc: "Your business secrets, process details, and critical data are held in strict confidence." },
-                        ].map((card, i) => (
-                            <div key={i} className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">{card.icon}</div>
-                                <h3 className="text-xl font-bold text-[#072b47] mb-4">{card.title}</h3>
-                                <p className="text-slate-600 text-[15px] leading-relaxed font-medium">{card.desc}</p>
+                    <div className="bg-white rounded-3xl p-6 md:p-10 shadow-xl border border-slate-100 flex flex-wrap lg:flex-nowrap justify-between gap-8">
+                        <div className="w-full lg:w-1/3">
+                            <h3 className="text-xl font-black text-[#072b47] mb-4 flex items-center gap-2">
+                                <Zap className="text-[#dead01]" size={24} /> What's Included?
+                            </h3>
+                            <ul className="space-y-3">
+                                
+                                <li className="flex items-center gap-3 text-slate-700 font-medium">
+                                    <CheckCircle className="text-green-500 shrink-0" size={18} />
+                                    <span>Feasibility Site Assessment</span>
+                                </li>
+                                <li className="flex items-center gap-3 text-slate-700 font-medium">
+                                    <CheckCircle className="text-green-500 shrink-0" size={18} />
+                                    <span>CPCB & SPCB Authorization</span>
+                                </li>
+                                <li className="flex items-center gap-3 text-slate-700 font-medium">
+                                    <CheckCircle className="text-green-500 shrink-0" size={18} />
+                                    <span>Environmental Clearance</span>
+                                </li>
+                                <li className="flex items-center gap-3 text-slate-700 font-medium">
+                                    <CheckCircle className="text-green-500 shrink-0" size={18} />
+                                    <span>Plant Layout Design</span>
+                                </li>
+                                <li className="flex items-center gap-3 text-slate-700 font-medium">
+                                    <CheckCircle className="text-green-500 shrink-0" size={18} />
+                                    <span>Machinery Procurement</span>
+                                </li>
+                                <li className="flex items-center gap-3 text-slate-700 font-medium">
+                                    <CheckCircle className="text-green-500 shrink-0" size={18} />
+                                    <span>Free 30-Min Expert Advisory</span>
+                                </li>
+                                <li className="flex items-center gap-3 text-slate-700 font-medium">
+                                    <CheckCircle className="text-green-500 shrink-0" size={18} />
+                                    <span>Company Registration</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div className="hidden lg:block w-px bg-slate-200"></div>
+
+                        <div className="w-full lg:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-6 content-center">
+                            <div className="text-center">
+                                <p className="text-4xl font-black text-[#005a9c]">1L+</p>
+                                <p className="text-sm font-bold text-slate-500 uppercase mt-1">Happy Clients</p>
                             </div>
-                        ))}
+                            <div className="text-center">
+                                <p className="text-4xl font-black text-[#005a9c]">3500+</p>
+                                <p className="text-sm font-bold text-slate-500 uppercase mt-1">Expert Advisors</p>
+                            </div>
+                            <div className="text-center">
+                                <p className="text-4xl font-black text-[#005a9c]">50+</p>
+                                <p className="text-sm font-bold text-slate-500 uppercase mt-1">Branch Offices</p>
+                            </div>
+                            <div className="text-center">
+                                <p className="text-4xl font-black text-[#005a9c]">4.9</p>
+                                <p className="text-sm font-bold text-slate-500 uppercase mt-1">Google Rating</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-4">Services Addressed</h2>
-                        <div className="w-24 h-1 bg-[#dead01] shadow-[0_0_8px_rgba(255,233,10,0.6)] mx-auto rounded mb-6"></div>
+            {/* MAIN CONTENT AREA */}
+            <section className="py-8 mb-20">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-8">
+                    
+                    {/* LEFT CONTENT */}
+                    <div className="w-full lg:w-[65%] space-y-8">
+                        {/* OVERVIEW */}
+                        <div className="bg-white rounded-3xl p-8 shadow-sm border border-slate-200">
+                            <h2 className="text-2xl font-black text-[#072b47] mb-6 flex items-center gap-3">
+                                <BookOpen className="text-[#005a9c]" /> Overview
+                            </h2>
+                            <div className="text-slate-600 font-medium leading-relaxed space-y-4 text-lg">
+                                <p>India’s population is estimated to be 1.4 billion. As the population grows alarmingly, the number of visitors to hospitals and healthcare facilities is also rising. Biomedical waste in the country is giving the government and the general public a head-explosion experience. Biomedical waste refers to a special category of waste generated during the diagnosis and treatment of human beings or animals.</p>
+                            </div>
+                        </div>
+
+                        {/* RULES AND REGULATIONS */}
+                        <div className="bg-white rounded-3xl p-8 shadow-sm border border-slate-200">
+                            <h2 className="text-2xl font-black text-[#072b47] mb-6 flex items-center gap-3">
+                                <Shield className="text-[#005a9c]" /> Rules, Regulations & Benefits
+                            </h2>
+                            <div className="text-slate-600 font-medium leading-relaxed space-y-4 text-lg">
+                                <p>Bio medical waste management authorization enables legal compliance, facilitating improved safety and better environmental protection for healthcare establishments. Setting up a bio medical waste recycling plant ensures healthcare facilities fulfil all the mandatory regulatory criteria for handling bio-medical waste to avoid legal penalties.</p>
+                            </div>
+                        </div>
+
+                        {/* PROCEDURE */}
+                        <div className="bg-white rounded-3xl p-8 shadow-sm border border-slate-200">
+                            <h2 className="text-2xl font-black text-[#072b47] mb-6 flex items-center gap-3">
+                                <Target className="text-[#005a9c]" /> Procedure
+                            </h2>
+                            <div className="text-slate-600 font-medium leading-relaxed space-y-4 text-lg">
+                                <p>1. Conduct Market Research
+2. Create a Business Plan
+3. Obtain Necessary Licenses and Permits
+4. Set Up Facility and Equipment
+5. Develop Partnerships and Marketing</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
-                            <div key={index} className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-[#FFE90A]/40 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full group relative">
-                                <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
-                                <div className="p-8 flex flex-col h-full pt-10">
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{service.title}</h3>
-                                    <p className="text-slate-600 text-[15px] leading-relaxed mb-10 flex-grow font-medium">{service.desc}</p>
-                                    <div className="mt-auto pt-6">
-                                        <div className="flex flex-col mb-6">
-                                            <span className="text-[11px] uppercase tracking-widest font-black text-slate-400 mb-1">Starting at</span>
-                                            <span className="text-[#dead01] text-3xl font-black leading-none">{service.price}</span>
-                                        </div>
-                                        <div className="flex items-center justify-between gap-4">
-                                            <button className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all">Get Started</button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read py-1">
-                                                <span>Read More</span><ArrowRight className="w-4 h-4 group-hover/read:translate-x-1.5 transition-transform duration-300" />
-                                            </button>
-                                        </div>
+
+                    {/* RIGHT SIDEBAR */}
+                    <div className="w-full lg:w-[35%] space-y-8">
+                        {/* DOCUMENTS REQUIRED */}
+                        <div className="bg-[#072b47] rounded-3xl p-8 shadow-xl text-white">
+                            <h3 className="text-2xl font-black mb-6 flex items-center gap-3">
+                                <FileCheck className="text-[#dead01]" /> Documents Required
+                            </h3>
+                            <ul className="space-y-4">
+                                
+                                <li className="flex items-start gap-3 text-blue-100 font-medium">
+                                    <div className="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#005a9c] flex items-center justify-center">
+                                        <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                                     </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-20 bg-[#FEF9C3]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#072b47] mb-6">About Bio Medical Waste Recycling Plant</h2>
-                            <div className="w-16 h-1 bg-[#072b47] rounded mb-8"></div>
-                            <div className="space-y-6 text-[#072b47]/90 text-lg leading-relaxed font-medium">
-                                <p>Ensuring compliance with Bio Medical Waste Recycling Plant is crucial for businesses operating in today's regulated environment under the broader framework of Hazardous Waste Management. Failure to comply can result in severe legal consequences, operational halts, and financial penalties.</p>
-                                <p>Our comprehensive assistance covers everything from initial evaluation and strategy formulation to execution and final approval. Whether you are establishing a new entity or operating an existing one, we provide clear roadmaps to maintain unblemished compliance records.</p>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/2">
-                            <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
-                                <h3 className="text-xl font-black text-[#072b47] mb-6">Core Requirements</h3>
-                                <ul className="space-y-4">
-                                    {["Business Incorporation Details", "Authorized Person KYC", "Facility Setup Plans", "List of Machinery/Process Details", "Past Compliance Records (if any)", "Site Clearance Approvals", "Local Body NOCs"].map((doc, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
-                                            <CheckCircle className="w-5 h-5 text-[#005a9c] mt-0.5 shrink-0" />
-                                            <span>{doc}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-24 bg-white border-t border-slate-100">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-5xl font-black text-[#072b47] mb-6">Why Choose <span className="text-[#dead01]">Us</span></h2>
-                        <div className="w-24 h-1.5 bg-[#dead01] mx-auto rounded-full"></div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            { title: "Specialized Experts", desc: "Dedicated professionals focused specifically on navigating complex environmental guidelines." },
-                            { title: "Assured Approvals", desc: "A robust vetting process of document filings severely limits the chance of application pushback." },
-                            { title: "Lifecycle Management", desc: "Beyond simple acquisition, we maintain a proactive posture toward your ongoing compliance schedule." },
-                        ].map((item, index) => (
-                            <div key={index} className="relative p-10 rounded-[2.5rem] border border-slate-200 bg-white shadow-sm hover:shadow-2xl hover:border-[#dead01]/30 hover:-translate-y-2 transition-all duration-500 group flex flex-col">
-                                <div className="mb-8">
-                                    <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:bg-[#dead01]/10 transition-all duration-500">
-                                        <CheckCircle className="w-8 h-8 text-[#dead01]" />
+                                    <span>Project Report Details</span>
+                                </li>
+                                <li className="flex items-start gap-3 text-blue-100 font-medium">
+                                    <div className="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#005a9c] flex items-center justify-center">
+                                        <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                                     </div>
-                                </div>
-                                <h3 className="text-xl font-black text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium text-[15px]">{item.desc}</p>
-                            </div>
-                        ))}
+                                    <span>Proof of Ownership</span>
+                                </li>
+                                <li className="flex items-start gap-3 text-blue-100 font-medium">
+                                    <div className="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#005a9c] flex items-center justify-center">
+                                        <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                                    </div>
+                                    <span>Consent to Establish (CTE)</span>
+                                </li>
+                                <li className="flex items-start gap-3 text-blue-100 font-medium">
+                                    <div className="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#005a9c] flex items-center justify-center">
+                                        <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                                    </div>
+                                    <span>Consent to Operate (CTO)</span>
+                                </li>
+                                <li className="flex items-start gap-3 text-blue-100 font-medium">
+                                    <div className="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#005a9c] flex items-center justify-center">
+                                        <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                                    </div>
+                                    <span>Environmental Clearance (EC)</span>
+                                </li>
+                                <li className="flex items-start gap-3 text-blue-100 font-medium">
+                                    <div className="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#005a9c] flex items-center justify-center">
+                                        <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                                    </div>
+                                    <span>Pollution Control & Safety Compliance</span>
+                                </li>
+                                <li className="flex items-start gap-3 text-blue-100 font-medium">
+                                    <div className="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#005a9c] flex items-center justify-center">
+                                        <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                                    </div>
+                                    <span>Bio Medical Waste Handling Certification</span>
+                                </li>
+                                <li className="flex items-start gap-3 text-blue-100 font-medium">
+                                    <div className="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#005a9c] flex items-center justify-center">
+                                        <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                                    </div>
+                                    <span>Company Registration Document</span>
+                                </li>
+                                <li className="flex items-start gap-3 text-blue-100 font-medium">
+                                    <div className="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#005a9c] flex items-center justify-center">
+                                        <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                                    </div>
+                                    <span>PAN and GST Registration</span>
+                                </li>
+                                <li className="flex items-start gap-3 text-blue-100 font-medium">
+                                    <div className="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#005a9c] flex items-center justify-center">
+                                        <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                                    </div>
+                                    <span>Fire Safety Clearance</span>
+                                </li>
+                                <li className="flex items-start gap-3 text-blue-100 font-medium">
+                                    <div className="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#005a9c] flex items-center justify-center">
+                                        <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                                    </div>
+                                    <span>Local Municipal Approval</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* WHY CHOOSE US CALLOUT */}
+                        <div className="bg-gradient-to-br from-[#FEF9C3] to-yellow-100 rounded-3xl p-8 shadow-sm border border-yellow-200">
+                            <h3 className="text-2xl font-black text-[#072b47] mb-4">Why Choose VyomBiz?</h3>
+                            <p className="text-[#072b47]/80 font-medium mb-6">
+                                We make technical compliance certifications effortless and convenient. Top 3% of Industry Professionals.
+                            </p>
+                            <button className="w-full bg-[#005a9c] text-white px-6 py-4 rounded-xl font-bold hover:bg-[#072b47] active:scale-95 transition-all shadow-xl shadow-blue-900/10">
+                                Talk to an Expert Now
+                            </button>
+                        </div>
                     </div>
+
                 </div>
             </section>
         </div>
