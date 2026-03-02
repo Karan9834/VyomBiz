@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Phone, Star, CheckCircle2, ChevronRight, Users, Scale, ThumbsUp, Briefcase } from 'lucide-react';
 
 /**
@@ -20,6 +20,84 @@ const HeroLayout = ({
     formTitle = "Facing a Legal Issue? Connect with an Expert Lawyer Now!",
     bgImage = "/lawyer-service-hero-section-img/hero-section-bg-img.png"
 }) => {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        city: "",
+        state: ""
+    });
+    const [errors, setErrors] = useState({});
+    const [isSuccess, setIsSuccess] = useState(false);
+
+    const validateForm = () => {
+        const newErrors = {};
+
+        if (!/^[a-zA-Z\s]+$/.test(formData.name)) {
+            newErrors.name = "Only letters allowed";
+        } else if (formData.name.trim().length < 2) {
+            newErrors.name = "Name too short";
+        }
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+            newErrors.email = "Invalid email";
+        } else {
+            const domain = formData.email.split('@')[1].toLowerCase();
+            const blockedDomains = ['yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com', 'icloud.com', 'ymail.com', 'rediffmail.com', 'live.com'];
+            if (blockedDomains.includes(domain)) {
+                newErrors.email = "Use Work Mail or Gmail only";
+            }
+        }
+
+        if (!/^[0-9]{10}$/.test(formData.phone)) {
+            newErrors.phone = "Exactly 10 digits required";
+        }
+
+        if (!/^[a-zA-Z\s]+$/.test(formData.city)) {
+            newErrors.city = "Only letters allowed";
+        }
+
+        if (!formData.state) {
+            newErrors.state = "State is required";
+        }
+
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        if (name === 'phone') {
+            const numericValue = value.replace(/\D/g, '').slice(0, 10);
+            setFormData(prev => ({ ...prev, [name]: numericValue }));
+        } else {
+            setFormData(prev => ({ ...prev, [name]: value }));
+        }
+        if (errors[name]) {
+            setErrors(prev => ({ ...prev, [name]: null }));
+        }
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if (!validateForm()) return;
+
+        const pageName = `${heroTitlePrefix} ${heroTitleMain} ${heroTitleSuffix}`.trim();
+        const text = `Hello, I'm interested in ${pageName}.
+
+My Details:
+- Name: ${formData.name}
+- Email: ${formData.email}
+- Phone: ${formData.phone}
+- City: ${formData.city}
+- State: ${formData.state}`;
+        const whatsappLink = `https://wa.me/918448909389?text=${encodeURIComponent(text)}`;
+        window.open(whatsappLink, "_blank");
+
+        setIsSuccess(true);
+        setFormData({ name: "", email: "", phone: "", city: "", state: "" });
+    };
 
     return (
         <section className="relative pt-6 pb-16 lg:pt-8 lg:pb-20 overflow-hidden border-b border-slate-50 bg-white min-h-screen font-sans text-slate-900">
@@ -100,47 +178,126 @@ const HeroLayout = ({
                                 {formTitle}
                             </h3>
 
-                            <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
-                                <div className="relative">
-                                    <input
-                                        type="email"
-                                        placeholder="Email"
-                                        className="w-full px-5 py-4 rounded-xl border border-slate-300 bg-slate-50 focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium"
-                                    />
-                                </div>
-                                <div className="relative">
-                                    <input
-                                        type="tel"
-                                        placeholder="Mobile Number"
-                                        className="w-full px-5 py-4 rounded-xl border border-slate-300 bg-slate-50 focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium"
-                                    />
-                                </div>
-
-                                <div className="text-[11px] text-center text-slate-400 font-bold uppercase tracking-wider">
-                                    By proceeding, you agree to our <a href="#" className="text-[#005a9c] hover:underline">T&C*</a>
-                                </div>
-
-                                <button
-                                    type="submit"
-                                    className="w-full bg-[#072b47] text-white font-semibold text-[17px] py-4 rounded-xl hover:bg-slate-800 transition-all shadow-xl shadow-slate-200 active:scale-95"
-                                >
-                                    Connect with Expert
-                                </button>
-                            </form>
-
-                            <div className="mt-8 flex items-center justify-center gap-4 pt-8 border-t border-slate-100">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="w-8 h-8" />
-                                <div className="text-left">
-                                    <h4 className="font-black text-[#072b47] text-[15px]">Google Reviews</h4>
-                                    <div className="flex items-center gap-2">
-                                        <div className="flex text-yellow-400 text-sm gap-0.5">
-                                            {'★'.repeat(5)}
-                                        </div>
-                                        <span className="text-[13px] font-black text-slate-600">4.5/5</span>
-                                        <span className="text-[12px] text-slate-400 font-bold ml-1">20k+ Happy Reviews</span>
+                            {isSuccess ? (
+                                <div className="text-center py-10">
+                                    <div className="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-5">
+                                        <CheckCircle2 size={32} className="text-green-500" />
                                     </div>
+                                    <h4 className="text-xl font-black text-[#072b47] mb-2">Thank you for choosing VyomBiz!</h4>
+                                    <p className="text-slate-500 font-bold text-sm mb-7">Our experts will connect with you shortly.</p>
+                                    <button
+                                        onClick={() => setIsSuccess(false)}
+                                        className="text-[#005a9c] font-black text-[11px] uppercase tracking-widest hover:underline"
+                                    >
+                                        New Inquiry
+                                    </button>
                                 </div>
-                            </div>
+                            ) : (
+                                <form className="space-y-5" onSubmit={handleSubmit}>
+                                    <div className="relative">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            placeholder="Name"
+                                            value={formData.name}
+                                            onChange={handleChange}
+                                            required
+                                            className={`w-full px-5 py-4 rounded-xl border ${errors.name ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
+                                        />
+                                        {errors.name && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.name}</p>}
+                                    </div>
+                                    <div className="relative">
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            placeholder="Email"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            required
+                                            className={`w-full px-5 py-4 rounded-xl border ${errors.email ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
+                                        />
+                                        {errors.email && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.email}</p>}
+                                    </div>
+                                    <div className="relative">
+                                        <input
+                                            type="tel"
+                                            name="phone"
+                                            placeholder="Mobile Number"
+                                            value={formData.phone}
+                                            onChange={handleChange}
+                                            required
+                                            maxLength="10"
+                                            className={`w-full px-5 py-4 rounded-xl border ${errors.phone ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
+                                        />
+                                        {errors.phone && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.phone}</p>}
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <div className="relative w-1/2">
+                                            <input
+                                                type="text"
+                                                name="city"
+                                                placeholder="City"
+                                                value={formData.city}
+                                                onChange={handleChange}
+                                                required
+                                                className={`w-full px-5 py-4 rounded-xl border ${errors.city ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
+                                            />
+                                            {errors.city && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.city}</p>}
+                                        </div>
+                                        <div className="relative w-1/2">
+                                            <select
+                                                name="state"
+                                                className={`w-full px-5 py-4 rounded-xl border ${errors.state ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all text-slate-700 font-medium appearance-none`}
+                                                value={formData.state}
+                                                onChange={handleChange}
+                                                required
+                                            >
+                                                <option value="" disabled hidden>Select State</option>
+                                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                <option value="Assam">Assam</option>
+                                                <option value="Bihar">Bihar</option>
+                                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                                <option value="Goa">Goa</option>
+                                                <option value="Gujarat">Gujarat</option>
+                                                <option value="Haryana">Haryana</option>
+                                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                <option value="Jharkhand">Jharkhand</option>
+                                                <option value="Karnataka">Karnataka</option>
+                                                <option value="Kerala">Kerala</option>
+                                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                <option value="Maharashtra">Maharashtra</option>
+                                                <option value="Manipur">Manipur</option>
+                                                <option value="Meghalaya">Meghalaya</option>
+                                                <option value="Mizoram">Mizoram</option>
+                                                <option value="Nagaland">Nagaland</option>
+                                                <option value="Odisha">Odisha</option>
+                                                <option value="Punjab">Punjab</option>
+                                                <option value="Rajasthan">Rajasthan</option>
+                                                <option value="Sikkim">Sikkim</option>
+                                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                                <option value="Telangana">Telangana</option>
+                                                <option value="Tripura">Tripura</option>
+                                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                <option value="Uttarakhand">Uttarakhand</option>
+                                                <option value="West Bengal">West Bengal</option>
+                                            </select>
+                                            {errors.state && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.state}</p>}
+                                        </div>
+                                    </div>
+
+                                    <div className="text-[11px] text-center text-slate-400 font-bold uppercase tracking-wider">
+                                        By proceeding, you agree to our <a href="#" className="text-[#005a9c] hover:underline">T&C*</a>
+                                    </div>
+
+                                    <button
+                                        type="submit"
+                                        className="w-full bg-[#072b47] text-white font-semibold text-[17px] py-4 rounded-xl hover:bg-slate-800 transition-all shadow-xl shadow-slate-200 active:scale-95"
+                                    >
+                                        Connect with Expert
+                                    </button>
+                                </form>
+                            )}
                         </div>
                     </div>
                 </div>

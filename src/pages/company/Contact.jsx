@@ -26,10 +26,11 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      detail: "+91 91212 30280",
+      detail: "+91 84489 09389",
       subDetail: "Mon-Sat, 10am-7pm",
       bgColor: "bg-orange-50",
-      iconColor: "text-orange-600"
+      iconColor: "text-orange-600",
+      link: "tel:+918448909389"
     },
     {
       icon: Mail,
@@ -37,7 +38,8 @@ const Contact = () => {
       detail: "info@vyombiz.com",
       subDetail: "24/7 Priority Support",
       bgColor: "bg-blue-50",
-      iconColor: "text-blue-600"
+      iconColor: "text-blue-600",
+      link: "mailto:info@vyombiz.com"
     },
     {
       icon: MessageCircle,
@@ -45,7 +47,8 @@ const Contact = () => {
       detail: "Chat with an Expert",
       subDetail: "Instant Support",
       bgColor: "bg-green-50",
-      iconColor: "text-green-600"
+      iconColor: "text-green-600",
+      link: "https://wa.me/918448909389"
     },
     {
       icon: MapPin,
@@ -53,7 +56,8 @@ const Contact = () => {
       detail: "New Delhi, India",
       subDetail: "Global Presence",
       bgColor: "bg-purple-50",
-      iconColor: "text-purple-600"
+      iconColor: "text-purple-600",
+      link: "https://maps.google.com/?q=New+Delhi,+India"
     }
   ];
 
@@ -84,7 +88,13 @@ const Contact = () => {
           {/* Contact Information Cards */}
           <div className="lg:col-span-1 space-y-4">
             {contactInfo.map((info, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+              <a
+                key={idx}
+                href={info.link}
+                target={info.link.startsWith('http') ? "_blank" : "_self"}
+                rel="noopener noreferrer"
+                className="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 block cursor-pointer"
+              >
                 <div className="flex items-center gap-5">
                   <div className={`w-14 h-14 ${info.bgColor} ${info.iconColor} rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform`}>
                     <info.icon size={26} strokeWidth={2.5} />
@@ -95,7 +105,7 @@ const Contact = () => {
                     <p className="text-sm font-medium text-slate-500 mt-1">{info.subDetail}</p>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
 
             {/* Social Connect Tile */}

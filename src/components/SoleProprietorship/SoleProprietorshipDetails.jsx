@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import DetailsLayout from "../common/DetailsLayout";
 import { CheckCircle2 } from "lucide-react";
@@ -137,9 +138,9 @@ const SoleProprietorshipEligibility = () => {
                     ))}
                 </div>
                 <div className="mt-12 text-center">
-                    <button className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                    <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/general-info" className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
                         Check Your Eligibility Now
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>

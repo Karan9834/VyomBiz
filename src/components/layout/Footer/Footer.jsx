@@ -77,8 +77,19 @@ const Footer = () => {
                         </div>
 
                         <div className="flex gap-3 pt-6">
-                            {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
-                                <a key={i} href="#" className="w-11 h-11 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center hover:bg-[#FFE90A] hover:border-[#FFE90A] hover:-translate-y-1.5 transition-all duration-300 text-slate-300 hover:text-[#072b47] group">
+                            {[
+                                { Icon: Facebook, url: "https://www.facebook.com/profile.php?id=100081276496333" },
+                                { Icon: Twitter, url: "#" },
+                                { Icon: Linkedin, url: "#" },
+                                { Icon: Instagram, url: "#" }
+                            ].map(({ Icon, url }, i) => (
+                                <a
+                                    key={i}
+                                    href={url}
+                                    target={url !== "#" ? "_blank" : undefined}
+                                    rel={url !== "#" ? "noopener noreferrer" : undefined}
+                                    className="w-11 h-11 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center hover:bg-[#FFE90A] hover:border-[#FFE90A] hover:-translate-y-1.5 transition-all duration-300 text-slate-300 hover:text-[#072b47] group"
+                                >
                                     <Icon size={20} strokeWidth={1.5} />
                                 </a>
                             ))}

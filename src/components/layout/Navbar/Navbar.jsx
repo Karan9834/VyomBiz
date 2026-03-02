@@ -90,7 +90,7 @@ export default function Navbar() {
                                     <MessageCircle size={20} fill="currentColor" strokeWidth={0} />
                                 </div>
                             </a>
-                            <a href="tel:+919121230280">
+                            <a href="tel:+918448909389">
                                 <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white">
                                     <Phone size={20} fill="currentColor" strokeWidth={0} />
                                 </div>

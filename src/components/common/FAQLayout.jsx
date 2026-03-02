@@ -40,7 +40,10 @@ const FAQLayout = ({
                                 <p className="text-[11px] text-slate-500 mb-4 leading-relaxed">
                                     {contactText}
                                 </p>
-                                <button className="w-full bg-[#1e40af] text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-blue-800 transition-all shadow-md text-xs">
+                                <button
+                                    onClick={() => window.open('https://wa.me/918448909389', '_blank')}
+                                    className="w-full bg-[#1e40af] text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-blue-800 transition-all shadow-md text-xs"
+                                >
                                     Chat with an Expert
                                 </button>
                             </div>

@@ -31,7 +31,7 @@ const ContactBannerAbout = () => {
                         <div className="w-10 h-10 bg-pink-500 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:rotate-12 transition-transform shrink-0">
                             <Phone size={20} />
                         </div>
-                        <span className="text-white font-black text-base">+91-9121230280</span>
+                        <span className="text-white font-black text-base">+91-8448909389</span>
                     </div>
                     <div className="flex items-center gap-3 group">
                         <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:rotate-12 transition-transform shrink-0">

@@ -14,7 +14,7 @@ const ContactPopup = ({ isOpen }) => {
                     </div>
                     <div>
                         <p className="text-xs font-bold text-slate-400 uppercase">Call Support</p>
-                        <p className="font-bold text-slate-700">+91-9121230280</p>
+                        <p className="font-bold text-slate-700">+91-8448909389</p>
                     </div>
                 </div>
                 <div className="flex items-center gap-4 group cursor-pointer">
@@ -26,7 +26,10 @@ const ContactPopup = ({ isOpen }) => {
                         <p className="font-bold text-slate-700">info@vyombiz.com</p>
                     </div>
                 </div>
-                <div className="flex items-center gap-4 group cursor-pointer">
+                <div
+                    className="flex items-center gap-4 group cursor-pointer"
+                    onClick={() => window.open('https://wa.me/918448909389', '_blank')}
+                >
                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-all">
                         <MessageCircle size={20} />
                     </div>

@@ -52,7 +52,7 @@ const TalkExpert = ({ expertise = "Expertise in NGO CSR-1 Filing" }) => {
                         </button>
 
                         <a
-                            href="https://wa.me/919121230280"
+                            href="https://wa.me/918448909389"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center gap-2 bg-green-500 text-white font-medium px-6 py-3 rounded-md w-full transition hover:scale-105"

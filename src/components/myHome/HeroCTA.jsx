@@ -13,6 +13,8 @@ const HeroCTA = () => {
         fullName: "",
         email: "",
         phone: "",
+        city: "",
+        state: "",
         service: "",
     });
 
@@ -38,21 +40,35 @@ const HeroCTA = () => {
         const validateForm = () => {
             const newErrors = {};
 
-            if (formData.fullName && formData.fullName.trim().length < 2) {
+            if (formData.fullName && !/^[a-zA-Z\s]+$/.test(formData.fullName)) {
+                newErrors.fullName = "Only letters allowed";
+            } else if (formData.fullName && formData.fullName.trim().length < 2) {
                 newErrors.fullName = "Name too short";
             }
 
-            if (formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-                newErrors.email = "Invalid email";
+            if (formData.email) {
+                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+                    newErrors.email = "Invalid email";
+                } else {
+                    const domain = formData.email.split('@')[1].toLowerCase();
+                    const blockedDomains = ['yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com', 'icloud.com', 'ymail.com', 'rediffmail.com', 'live.com'];
+                    if (blockedDomains.includes(domain)) {
+                        newErrors.email = "Use Work Mail or Gmail only";
+                    }
+                }
             }
 
-            if (formData.phone && !/^\+?[\d\s-]{10,}$/.test(formData.phone)) {
-                newErrors.phone = "Invalid phone";
+            if (formData.phone && !/^[0-9]{10}$/.test(formData.phone)) {
+                newErrors.phone = "Exactly 10 digits required";
+            }
+
+            if (formData.city && !/^[a-zA-Z\s]+$/.test(formData.city)) {
+                newErrors.city = "Only letters allowed";
             }
 
             setErrors(newErrors);
 
-            const allFilled = formData.fullName && formData.email && formData.phone && formData.service;
+            const allFilled = formData.fullName && formData.email && formData.phone && formData.city && formData.state && formData.service;
             setIsValid(allFilled && Object.keys(newErrors).length === 0);
         };
 
@@ -61,7 +77,13 @@ const HeroCTA = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormData((prev) => ({ ...prev, [name]: value }));
+        // Strip non-numeric from phone
+        if (name === 'phone') {
+            const numericValue = value.replace(/\D/g, '').slice(0, 10);
+            setFormData((prev) => ({ ...prev, [name]: numericValue }));
+        } else {
+            setFormData((prev) => ({ ...prev, [name]: value }));
+        }
         if (isSuccess) setIsSuccess(false);
     };
 
@@ -73,7 +95,21 @@ const HeroCTA = () => {
         setTimeout(() => {
             setIsSubmitting(false);
             setIsSuccess(true);
-            setFormData({ fullName: "", email: "", phone: "", service: "" });
+
+            const text = `Hello, I'm interested in a Free Consultation.
+
+My Details:
+- Full Name: ${formData.fullName}
+- Work Email: ${formData.email}
+- Phone Number: ${formData.phone}
+- City: ${formData.city}
+- State: ${formData.state}
+- Service Type: ${formData.service}`;
+
+            const whatsappLink = `https://wa.me/918448909389?text=${encodeURIComponent(text)}`;
+            window.open(whatsappLink, "_blank");
+
+            setFormData({ fullName: "", email: "", phone: "", city: "", state: "", service: "" });
         }, 1200);
     };
 
@@ -140,7 +176,7 @@ const HeroCTA = () => {
                                 </div>
                                 <div className="space-y-0.5">
                                     <span className="text-[9px] font-black uppercase tracking-widest text-[#FFE90A]/70 block">Connect</span>
-                                    <p className="text-[12px] font-bold text-white/80">+91 91212 30280</p>
+                                    <p className="text-[12px] font-bold text-white/80">+91 84489 09389</p>
                                 </div>
                                 <div className="space-y-0.5 md:text-right">
                                     <span className="text-[9px] font-black uppercase tracking-widest text-[#FFE90A]/70 block">Email Support</span>
@@ -181,33 +217,86 @@ const HeroCTA = () => {
                                         <div className="space-y-1">
                                             <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Full Name</label>
                                             <input type="text" name="fullName" placeholder="John Doe" value={formData.fullName} onChange={handleChange}
-                                                className={`w-full px-5 py-3 rounded-xl border ${errors.fullName ? 'border-red-200 bg-red-50/20' : 'border-slate-100 bg-slate-50/30'} text-[13px] text-slate-700 outline-none focus:border-[#FFE90A] focus:bg-white font-bold transition-all shadow-sm focus:ring-4 focus:ring-[#FFE90A]/30`} />
+                                                className={`w-full px-5 py-3 rounded-xl border ${errors.fullName ? 'border-red-400 focus:border-red-500 bg-red-50/20' : 'border-slate-100 bg-slate-50/30 focus:border-[#FFE90A] focus:bg-white'} text-[13px] text-slate-700 outline-none font-bold transition-all shadow-sm focus:ring-4 ${errors.fullName ? 'focus:ring-red-500/30' : 'focus:ring-[#FFE90A]/30'}`} />
+                                            {errors.fullName && <p className="text-red-500 text-[10px] ml-1 font-bold">{errors.fullName}</p>}
                                         </div>
 
                                         <div className="space-y-1">
                                             <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Work Email</label>
                                             <input type="email" name="email" placeholder="john@work.com" value={formData.email} onChange={handleChange}
-                                                className={`w-full px-5 py-3 rounded-xl border ${errors.email ? 'border-red-200 bg-red-50/20' : 'border-slate-100 bg-slate-50/30'} text-[13px] text-slate-700 outline-none focus:border-[#FFE90A] focus:bg-white font-bold transition-all shadow-sm focus:ring-4 focus:ring-[#FFE90A]/30`} />
+                                                className={`w-full px-5 py-3 rounded-xl border ${errors.email ? 'border-red-400 focus:border-red-500 bg-red-50/20' : 'border-slate-100 bg-slate-50/30 focus:border-[#FFE90A] focus:bg-white'} text-[13px] text-slate-700 outline-none font-bold transition-all shadow-sm focus:ring-4 ${errors.email ? 'focus:ring-red-500/30' : 'focus:ring-[#FFE90A]/30'}`} />
+                                            {errors.email && <p className="text-red-500 text-[10px] ml-1 font-bold">{errors.email}</p>}
                                         </div>
 
                                         <div className="space-y-1">
                                             <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Phone Number</label>
-                                            <input type="tel" name="phone" placeholder="+91 0000 0000" value={formData.phone} onChange={handleChange}
-                                                className={`w-full px-5 py-3 rounded-xl border ${errors.phone ? 'border-red-200 bg-red-50/20' : 'border-slate-100 bg-slate-50/30'} text-[13px] text-slate-700 outline-none focus:border-[#FFE90A] focus:bg-white font-bold transition-all shadow-sm focus:ring-4 focus:ring-[#FFE90A]/30`} />
+                                            <div className="relative">
+                                                <span className="absolute left-4 top-1/2 -translate-y-1/2 font-bold text-slate-500 text-[13px]">+91</span>
+                                                <input type="tel" name="phone" placeholder="9876543210" value={formData.phone} onChange={handleChange} maxLength="10"
+                                                    className={`w-full pl-12 pr-5 py-3 rounded-xl border ${errors.phone ? 'border-red-400 focus:border-red-500 bg-red-50/20' : 'border-slate-100 bg-slate-50/30 focus:border-[#FFE90A] focus:bg-white'} text-[13px] text-slate-700 outline-none font-bold transition-all shadow-sm focus:ring-4 ${errors.phone ? 'focus:ring-red-500/30' : 'focus:ring-[#FFE90A]/30'}`} />
+                                            </div>
+                                            {errors.phone && <p className="text-red-500 text-[10px] ml-1 font-bold">{errors.phone}</p>}
                                         </div>
 
-                                        <div className="space-y-1">
+                                        <div className="flex gap-4">
+                                            <div className="space-y-1 w-1/2">
+                                                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">City</label>
+                                                <input type="text" name="city" placeholder="City Name" value={formData.city} onChange={handleChange}
+                                                    className={`w-full px-5 py-3 rounded-xl border ${errors.city ? 'border-red-400 focus:border-red-500 bg-red-50/20' : 'border-slate-100 bg-slate-50/30 focus:border-[#FFE90A] focus:bg-white'} text-[13px] text-slate-700 outline-none font-bold transition-all shadow-sm focus:ring-4 ${errors.city ? 'focus:ring-red-500/30' : 'focus:ring-[#FFE90A]/30'}`} />
+                                                {errors.city && <p className="text-red-500 text-[10px] ml-1 font-bold">{errors.city}</p>}
+                                            </div>
+                                            <div className="space-y-1 w-1/2">
+                                                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">State</label>
+                                                <div className="relative">
+                                                    <select name="state" value={formData.state} onChange={handleChange}
+                                                        className="w-full px-5 py-3 rounded-xl border border-slate-100 bg-slate-50/30 text-[13px] text-slate-700 outline-none appearance-none cursor-pointer focus:border-[#FFE90A] focus:bg-white font-bold transition-all shadow-sm focus:ring-4 focus:ring-[#FFE90A]/30">
+                                                        <option value="" disabled hidden>Select</option>
+                                                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                        <option value="Assam">Assam</option>
+                                                        <option value="Bihar">Bihar</option>
+                                                        <option value="Chhattisgarh">Chhattisgarh</option>
+                                                        <option value="Goa">Goa</option>
+                                                        <option value="Gujarat">Gujarat</option>
+                                                        <option value="Haryana">Haryana</option>
+                                                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                        <option value="Jharkhand">Jharkhand</option>
+                                                        <option value="Karnataka">Karnataka</option>
+                                                        <option value="Kerala">Kerala</option>
+                                                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                        <option value="Maharashtra">Maharashtra</option>
+                                                        <option value="Manipur">Manipur</option>
+                                                        <option value="Meghalaya">Meghalaya</option>
+                                                        <option value="Mizoram">Mizoram</option>
+                                                        <option value="Nagaland">Nagaland</option>
+                                                        <option value="Odisha">Odisha</option>
+                                                        <option value="Punjab">Punjab</option>
+                                                        <option value="Rajasthan">Rajasthan</option>
+                                                        <option value="Sikkim">Sikkim</option>
+                                                        <option value="Tamil Nadu">Tamil Nadu</option>
+                                                        <option value="Telangana">Telangana</option>
+                                                        <option value="Tripura">Tripura</option>
+                                                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                        <option value="Uttarakhand">Uttarakhand</option>
+                                                        <option value="West Bengal">West Bengal</option>
+                                                    </select>
+                                                    <ArrowRight size={14} className="absolute right-4 top-1/2 -translate-y-1/2 rotate-90 text-[#072b47] pointer-events-none" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="space-y-1 mt-1">
                                             <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Service Type</label>
                                             <div className="relative">
                                                 <select name="service" value={formData.service} onChange={handleChange}
                                                     className="w-full px-5 py-3 rounded-xl border border-slate-100 bg-slate-50/30 text-[13px] text-slate-700 outline-none appearance-none cursor-pointer focus:border-[#FFE90A] focus:bg-white font-bold transition-all shadow-sm focus:ring-4 focus:ring-[#FFE90A]/30">
-                                                    <option value="" disabled>Choose service</option>
+                                                    <option value="" disabled hidden>Choose service</option>
                                                     <option value="incorporation">Incorporation</option>
                                                     <option value="trademark">Trademark Filing</option>
                                                     <option value="compliance">Annual Compliance</option>
                                                     <option value="lawyer">Legal Consultation</option>
                                                 </select>
-                                                <ArrowRight size={14} className="absolute right-5 top-1/2 -translate-y-1/2 rotate-90 text-[#072b47]" />
+                                                <ArrowRight size={14} className="absolute right-4 top-1/2 -translate-y-1/2 rotate-90 text-[#072b47] pointer-events-none" />
                                             </div>
                                         </div>
 

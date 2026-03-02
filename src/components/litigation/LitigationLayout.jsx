@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
+    CheckCircle2,
     Check,
     Star,
     ChevronRight,
@@ -67,6 +68,78 @@ const LitigationLayout = ({ content }) => {
     };
 
     const { title, hero, tabs, sections } = content;
+
+    const [formData, setFormData] = useState({
+        email: "",
+        phone: "",
+        city: "",
+        language: "",
+        wantsUpdates: true
+    });
+    const [errors, setErrors] = useState({});
+    const [isSuccess, setIsSuccess] = useState(false);
+
+    const validateForm = () => {
+        const newErrors = {};
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+            newErrors.email = "Invalid email";
+        } else {
+            const domain = formData.email.split('@')[1].toLowerCase();
+            const blockedDomains = ['yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com', 'icloud.com', 'ymail.com', 'rediffmail.com', 'live.com'];
+            if (blockedDomains.includes(domain)) {
+                newErrors.email = "Use Work Mail or Gmail only";
+            }
+        }
+
+        if (!/^[0-9]{10}$/.test(formData.phone)) {
+            newErrors.phone = "Exactly 10 digits required";
+        }
+
+        if (!/^[a-zA-Z\s]+$/.test(formData.city)) {
+            newErrors.city = "Only letters allowed";
+        }
+
+        if (!formData.language) {
+            newErrors.language = "Language is required";
+        }
+
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        if (name === 'phone') {
+            const numericValue = value.replace(/\D/g, '').slice(0, 10);
+            setFormData(prev => ({ ...prev, [name]: numericValue }));
+        } else {
+            setFormData(prev => ({ ...prev, [name]: value }));
+        }
+        if (errors[name]) {
+            setErrors(prev => ({ ...prev, [name]: null }));
+        }
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if (!validateForm()) return;
+
+        const text = `Hello, I'm interested in ${title}.
+
+My Details:
+- Email: ${formData.email}
+- Phone: ${formData.phone}
+- City/Pincode: ${formData.city}
+- Language: ${formData.language}
+- WhatsApp Updates: ${formData.wantsUpdates ? 'Yes' : 'No'}`;
+        const whatsappLink = `https://wa.me/918448909389?text=${encodeURIComponent(text)}`;
+        window.open(whatsappLink, "_blank");
+
+        setIsSuccess(true);
+        setFormData({ email: "", phone: "", city: "", language: "", wantsUpdates: true });
+    };
 
     return (
         <div className="bg-white min-h-screen font-sans text-slate-900">
@@ -167,57 +240,99 @@ const LitigationLayout = ({ content }) => {
                                     Get Started
                                 </h3>
 
-                                <form className="space-y-5">
-                                    <div className="relative">
-                                        <input
-                                            type="email"
-                                            placeholder="Email"
-                                            className="w-full px-5 py-4 rounded-xl border border-slate-300 bg-slate-50 focus:border-blue-500 focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium"
-                                        />
-                                    </div>
-                                    <div className="relative">
-                                        <input
-                                            type="tel"
-                                            placeholder="Mobile Number"
-                                            className="w-full px-5 py-4 rounded-xl border border-slate-300 bg-slate-50 focus:border-blue-500 focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium"
-                                        />
-                                    </div>
-                                    <div className="relative">
-                                        <input
-                                            type="text"
-                                            placeholder="City/Pincode"
-                                            className="w-full px-5 py-4 rounded-xl border border-slate-300 bg-slate-50 focus:border-blue-500 focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium"
-                                        />
-                                    </div>
-                                    <div className="relative group">
-                                        <select
-                                            className="w-full appearance-none bg-slate-50 border border-slate-300 px-5 py-4 rounded-xl text-slate-700 text-[14px] font-medium outline-none transition-all focus:border-blue-500"
-                                        >
-                                            <option value="">Language</option>
-                                            <option value="English">English</option>
-                                            <option value="Hindi">Hindi</option>
-                                            <option value="Tamil">Tamil</option>
-                                        </select>
-                                        <ChevronDown size={18} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
-                                    </div>
-
-                                    <div className="flex items-center justify-between py-2 border-t border-slate-50 mt-4">
-                                        <span className="text-[13px] font-medium text-slate-500 flex items-center gap-2">
-                                            Get easy updates through <MessageCircle size={16} className="text-green-500 fill-green-500" /> WhatsApp
-                                        </span>
-                                        <div className="relative inline-flex items-center cursor-pointer">
-                                            <input type="checkbox" className="sr-only peer" defaultChecked />
-                                            <div className="w-11 h-6 bg-slate-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-500"></div>
+                                {isSuccess ? (
+                                    <div className="text-center py-10 mt-4">
+                                        <div className="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-5">
+                                            <CheckCircle2 size={32} className="text-green-500" />
                                         </div>
+                                        <h4 className="text-xl font-black text-[#072b47] mb-2">Thank you for choosing VyomBiz!</h4>
+                                        <p className="text-slate-500 font-bold text-sm mb-7">Our experts will connect with you shortly.</p>
+                                        <button
+                                            onClick={() => setIsSuccess(false)}
+                                            className="text-[#005a9c] font-black text-[11px] uppercase tracking-widest hover:underline"
+                                        >
+                                            New Inquiry
+                                        </button>
                                     </div>
+                                ) : (
+                                    <form className="space-y-5" onSubmit={handleSubmit}>
+                                        <div className="relative">
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                placeholder="Email"
+                                                value={formData.email}
+                                                onChange={handleChange}
+                                                required
+                                                className={`w-full px-5 py-4 rounded-xl border ${errors.email ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-blue-500 focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
+                                            />
+                                            {errors.email && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.email}</p>}
+                                        </div>
+                                        <div className="relative">
+                                            <input
+                                                type="tel"
+                                                name="phone"
+                                                placeholder="Mobile Number"
+                                                value={formData.phone}
+                                                onChange={handleChange}
+                                                required
+                                                maxLength="10"
+                                                className={`w-full px-5 py-4 rounded-xl border ${errors.phone ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-blue-500 focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
+                                            />
+                                            {errors.phone && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.phone}</p>}
+                                        </div>
+                                        <div className="relative">
+                                            <input
+                                                type="text"
+                                                name="city"
+                                                placeholder="City"
+                                                value={formData.city}
+                                                onChange={handleChange}
+                                                required
+                                                className={`w-full px-5 py-4 rounded-xl border ${errors.city ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-blue-500 focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
+                                            />
+                                            {errors.city && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.city}</p>}
+                                        </div>
+                                        <div className="relative group">
+                                            <select
+                                                name="language"
+                                                required
+                                                value={formData.language}
+                                                onChange={handleChange}
+                                                className={`w-full appearance-none ${errors.language ? 'bg-red-50/20 border-red-400' : 'bg-slate-50 border-slate-300'} border px-5 py-4 rounded-xl text-slate-700 text-[14px] font-medium outline-none transition-all focus:border-blue-500`}
+                                            >
+                                                <option value="" disabled hidden>Language</option>
+                                                <option value="English">English</option>
+                                                <option value="Hindi">Hindi</option>
+                                                <option value="Tamil">Tamil</option>
+                                            </select>
+                                            <ChevronDown size={18} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+                                            {errors.language && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.language}</p>}
+                                        </div>
 
-                                    <button
-                                        type="submit"
-                                        className="w-full bg-[#072b47] text-white font-semibold text-[17px] py-4 rounded-xl hover:bg-slate-800 transition-all shadow-xl shadow-slate-200 active:scale-95 mt-4"
-                                    >
-                                        Book An Appointment Now
-                                    </button>
-                                </form>
+                                        <div className="flex items-center justify-between py-2 border-t border-slate-50 mt-4">
+                                            <span className="text-[13px] font-medium text-slate-500 flex items-center gap-2">
+                                                Get easy updates through <MessageCircle size={16} className="text-green-500 fill-green-500" /> WhatsApp
+                                            </span>
+                                            <div className="relative inline-flex items-center cursor-pointer">
+                                                <input
+                                                    type="checkbox"
+                                                    className="sr-only peer"
+                                                    checked={formData.wantsUpdates}
+                                                    onChange={(e) => setFormData({ ...formData, wantsUpdates: e.target.checked })}
+                                                />
+                                                <div className="w-11 h-6 bg-slate-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-500"></div>
+                                            </div>
+                                        </div>
+
+                                        <button
+                                            type="submit"
+                                            className="w-full bg-[#072b47] text-white font-semibold text-[17px] py-4 rounded-xl hover:bg-slate-800 transition-all shadow-xl shadow-slate-200 active:scale-95 mt-4"
+                                        >
+                                            Book An Appointment Now
+                                        </button>
+                                    </form>
+                                )}
                             </div>
                         </div>
                     </div>

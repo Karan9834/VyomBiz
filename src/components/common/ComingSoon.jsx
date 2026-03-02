@@ -6,17 +6,16 @@ const ComingSoon = ({ title }) => {
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
             {/* ================= SECTION 1: HERO ================= */}
             <div id="registration-hero">
-            <HeroLayout
-                heroTitleMain={title || "Coming "}
-                heroTitleSuffix="Soon"
-                heroSubtitle="We are working on something amazing!"
-                heroDescription="This page is currently under development. Please check back later for updates."
-                showForm={false}
-                whatsIncludedList={[]}
-                stats={[]}
-            />
+                <HeroLayout
+                    heroTitleMain={title || "Coming "}
+                    heroTitleSuffix="Soon"
+                    heroSubtitle="We are working on something amazing!"
+                    heroDescription="This page is currently under development. Please check back later for updates."
+                    showForm={false}
+                    whatsIncludedList={[]}
+                    stats={[]}
+                />
             </div>
- </div>
         </div>
     );
 };

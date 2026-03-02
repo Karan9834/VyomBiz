@@ -9,6 +9,7 @@ const Carrers = lazy(() => import('../pages/Carrers'));
 const Reviews = lazy(() => import('../pages/Reviews'));
 const Contact = lazy(() => import('../pages/company/Contact'));
 const WorkAtVyomBiz = lazy(() => import('../components/Contact/WorkAtVyombiz'));
+const GeneralInfo = lazy(() => import('../components/Contact/GeneralInfo'));
 
 const Learning = lazy(() => import('../pages/resources/Learning'));
 const Newsletter = lazy(() => import('../pages/resources/Newsletter'));
@@ -87,6 +88,12 @@ const MainRoutes = [
     <Route key="env" path="/environmental" element={<Environmental />} />,
 
     ...pendingPaths.map(path => <Route key={`pending-${path}`} path={path} element={<Pending />} />),
+<<<<<<< Updated upstream
+=======
+
+    <Route key="general-info" path="/general-info" element={<GeneralInfo />} />,
+    <Route key="not-found" path="*" element={<NotFound />} />,
+>>>>>>> Stashed changes
 ];
 
 export default MainRoutes;
