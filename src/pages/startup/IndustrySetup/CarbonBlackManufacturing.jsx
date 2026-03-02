@@ -12,6 +12,10 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
+import overview from "../../../assets/Industry Setup/Carbon Black Plant Setup/overview.jpg";
+import benefits from "../../../assets/Industry Setup/Carbon Black Plant Setup/benefits.jpg";
+import process from "../../../assets/Industry Setup/Carbon Black Plant Setup/process.jpg";
+
 
 const CarbonBlackOverview = () => {
     return (
@@ -40,7 +44,7 @@ const CarbonBlackOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1617711246199-7f61c3905007?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="Carbon Black Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -68,7 +72,7 @@ const CarbonBlackManufacturingAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1596778402284-8398c7b09521?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="Carbon Black Manufacturing Advantages"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -187,7 +191,7 @@ const CarbonBlackProcessSection = () => {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
-                        <img src="https://images.unsplash.com/photo-1617711246199-7f61c3905007?auto=format&fit=crop&q=80" alt="Carbon Black Plant Setup Process" className="w-full rounded-lg shadow-sm" />
+                        <img src={benefits} alt="Carbon Black Plant Setup Process" className="w-full rounded-lg shadow-sm" />
                     </div>
                     <div className="lg:col-span-2">
                         {steps.map((step, index) => (

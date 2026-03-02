@@ -12,6 +12,9 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
+import benefits from "../../../assets/Industry Setup/fermentation-industry-setup/benefits.jpg";
+import overview from "../../../assets/Industry Setup/fermentation-industry-setup/overview.jpg";
+import process from "../../../assets/Industry Setup/fermentation-industry-setup/process.jpg";
 
 const FermentationIndustryOverview = () => {
     return (
@@ -40,7 +43,7 @@ const FermentationIndustryOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="Fermentation Industry Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -68,7 +71,7 @@ const FermentationIndustryAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="Fermentation Industry Advantages"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -187,7 +190,7 @@ const FermentationIndustryProcessSection = () => {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
-                        <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80" alt="Fermentation Industry Setup Process" className="w-full rounded-lg shadow-sm" />
+                        <img src={process} alt="Fermentation Industry Setup Process" className="w-full rounded-lg shadow-sm" />
                     </div>
                     <div className="lg:col-span-2">
                         {steps.map((step, index) => (

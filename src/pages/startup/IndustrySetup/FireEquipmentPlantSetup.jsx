@@ -12,6 +12,9 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
+import benefits from "../../../assets/Industry Setup/Fire Equipment Plant/benefits.png";
+import overview from "../../../assets/Industry Setup/Fire Equipment Plant/overview.jpeg";
+import process from "../../../assets/Industry Setup/Fire Equipment Plant/process.jpeg";
 
 const FireEquipmentPlantOverview = () => {
     return (
@@ -40,7 +43,7 @@ const FireEquipmentPlantOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="Fire Equipment Plant Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -68,7 +71,7 @@ const FireEquipmentPlantAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1516591101565-5903b44e69b0?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="Fire Equipment Plant Advantages"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -187,7 +190,7 @@ const FireEquipmentPlantProcessSection = () => {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
-                        <img src="https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?auto=format&fit=crop&q=80" alt="Fire Equipment Plant Setup Process" className="w-full rounded-lg shadow-sm" />
+                        <img src={process} alt="Fire Equipment Plant Setup Process" className="w-full rounded-lg shadow-sm" />
                     </div>
                     <div className="lg:col-span-2">
                         {steps.map((step, index) => (

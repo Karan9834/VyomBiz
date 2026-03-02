@@ -12,6 +12,9 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
+import process from "../../../assets/Industry Setup/renewable-energy-business-setup/process.jpg";
+import benefits from "../../../assets/Industry Setup/renewable-energy-business-setup/benefits.jpg";
+import overview from "../../../assets/Industry Setup/renewable-energy-business-setup/overview.jpg";
 
 const RenewableEnergyOverview = () => {
     return (
@@ -40,7 +43,7 @@ const RenewableEnergyOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="Renewable Energy Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -68,7 +71,7 @@ const RenewableEnergyBusinessAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="Renewable Energy Business Advantages"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -187,7 +190,7 @@ const RenewableEnergyBusinessProcessSection = () => {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
-                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80" alt="Renewable Energy Business Setup Process" className="w-full rounded-lg shadow-sm" />
+                        <img src={process} alt="Renewable Energy Business Setup Process" className="w-full rounded-lg shadow-sm" />
                     </div>
                     <div className="lg:col-span-2">
                         {steps.map((step, index) => (
