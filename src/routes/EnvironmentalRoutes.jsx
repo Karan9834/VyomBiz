@@ -87,7 +87,7 @@ const LandWasteManagement = lazy(() => import('../pages/environmental/HazardousW
 const SolidWasteManagementAuthorization = lazy(() => import('../pages/environmental/HazardousWasteManagement/SolidWasteManagementAuthorization'));
 const EPRAuthorizationForPlasticWasteManagement = lazy(() => import('../pages/environmental/PlasticWasteManagement/EPRAuthorizationForPlasticWasteManagement'));
 const EPRFulfilmentForPlasticWasteManagement = lazy(() => import('../pages/environmental/PlasticWasteManagement/EPRFulfilmentForPlasticWasteManagement'));
-const EPRPostCompliancelasticWaste = lazy(() => import('../pages/environmental/PlasticWasteManagement/EPRPostCompliancelasticWaste'));
+const EPRPostCompliancePlasticWaste = lazy(() => import('../pages/environmental/PlasticWasteManagement/EPRPostCompliancePlasticWaste'));
 const PlasticWasteProcessorsAuthorisation = lazy(() => import('../pages/environmental/PlasticWasteManagement/PlasticWasteProcessorsAuthorisation'));
 const PlasticWasteRecyclingPlantWM = lazy(() => import('../pages/environmental/PlasticWasteManagement/PlasticWasteRecyclingPlantWM'));
 const CGWAWaterBoring = lazy(() => import('../pages/environmental/PollutionNOC/CGWAWaterBoring'));
@@ -186,9 +186,9 @@ const EnvironmentalRoutes = [
     <Route key="solid-waste-management-authorization" path="/solid-waste-management-authorization" element={<SolidWasteManagementAuthorization />} />,
     <Route key="epr-authorization-for-plastic-waste-management" path="/epr-authorization-for-plastic-waste-management" element={<EPRAuthorizationForPlasticWasteManagement />} />,
     <Route key="epr-fulfilment-for-plastic-waste-management" path="/epr-fulfilment-for-plastic-waste-management" element={<EPRFulfilmentForPlasticWasteManagement />} />,
-    <Route key="epr-post-compliancelastic-waste" path="/epr-post-compliancelastic-waste" element={<EPRPostCompliancelasticWaste />} />,
+    <Route key="epr-post-compliance-plastic-waste" path="/epr-post-compliance-plastic-waste" element={<EPRPostCompliancePlasticWaste />} />,
     <Route key="plastic-waste-processors-authorisation" path="/plastic-waste-processors-authorisation" element={<PlasticWasteProcessorsAuthorisation />} />,
-    <Route key="plastic-waste-recycling-plant-wm" path="/plastic-waste-recycling-plant-wm" element={<PlasticWasteRecyclingPlantWM />} />,
+    <Route key="plastic-waste-recycling-plant-pwm" path="/plastic-waste-recycling-plant-pwm" element={<PlasticWasteRecyclingPlantWM />} />,
     <Route key="cgwa-water-boring" path="/cgwa-water-boring" element={<CGWAWaterBoring />} />,
     <Route key="consent-for-establishment-from-spcb" path="/consent-for-establishment-cfe-from-spcb" element={<ConsentForEstablishmentFromSPCB />} />,
     <Route key="delhi-pollution-control-committee" path="/delhi-pollution-control-committee" element={<DelhiPollutionControlCommittee />} />,

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
     CheckCircle, ArrowRight, Star, Search, Quote,
     FileText, CreditCard, UserCheck, Mail, Shield, Building2, Droplets, Zap,
@@ -11,34 +12,39 @@ const PlasticWasteManagement = () => {
 
     const services = [
         {
-            title: "EPR Authorization for Plastic waste Management",
-            desc: "Plastic Waste EPR Registration- Start Filing in 2 Min Is your brand at risk due to plastic waste mismanagement? 70% consumers prefer compliant brands. VyomBiz ensures 100% documentation a..",
+            title: "EPR Authorization for Plastic Waste Management",
+            desc: "Plastic Waste EPR Registration — Start Filing in 2 Min. Is your brand at risk due to plastic waste mismanagement? 70% consumers prefer compliant brands. VyomBiz ensures 100% documentation accuracy and simplifies plastic waste EPR registration for you.",
             price: "499.00",
-            icon: <FileCheck className="w-8 h-8 text-[#005a9c]" />
+            icon: <FileCheck className="w-8 h-8 text-[#005a9c]" />,
+            path: "/epr-authorization-for-plastic-waste-management"
         },
         {
             title: "EPR Post Compliance – Plastic Waste",
-            desc: "EPR Post Compliance – Plastic Waste After receiving the EPR Authorisation for plastic waste management, every producer, brand owner, Importers, recyclers, plastic trader, and plastic m..",
+            desc: "After receiving the EPR Authorisation for plastic waste management, every producer, brand owner, importer, recycler, plastic trader, and plastic manufacturer must meet ongoing EPR post compliance obligations.",
             price: "499.00",
-            icon: <ClipboardCheck className="w-8 h-8 text-[#005a9c]" />
+            icon: <ClipboardCheck className="w-8 h-8 text-[#005a9c]" />,
+            path: "/epr-post-compliance-plastic-waste"
         },
         {
             title: "Plastic Waste Recycling Plant & PWM",
-            desc: "Plastic Waste Recycling Plant Setup Looking for a plastic waste recycling plant setup in India? Contact VyomBiz to transform plastic waste into an eco-friendly business opportunity!..",
+            desc: "Looking for a plastic waste recycling plant setup in India? Contact VyomBiz to transform plastic waste into an eco-friendly business opportunity. Assisted in 100+ plant setups.",
             price: "499.00",
-            icon: <Factory className="w-8 h-8 text-[#005a9c]" />
+            icon: <Factory className="w-8 h-8 text-[#005a9c]" />,
+            path: "/plastic-waste-recycling-plant-pwm"
         },
         {
             title: "Plastic Waste Processors Authorisation",
-            desc: "Plastic Waste Processors Authorisation Aiming to become a plastic waste processor and minimize the environmental impact of plastic waste? Get plastic waste processors authorisation with u..",
+            desc: "Aiming to become a plastic waste processor and minimize the environmental impact of plastic waste? Get Plastic Waste Processors Authorisation with VyomBiz — end-to-end support from CTE/CTO to CPCB EPR portal registration.",
             price: "499.00",
-            icon: <Shield className="w-8 h-8 text-[#005a9c]" />
+            icon: <Shield className="w-8 h-8 text-[#005a9c]" />,
+            path: "/plastic-waste-processors-authorisation"
         },
         {
             title: "EPR Fulfilment For Plastic Waste Management",
-            desc: "EPR Fulfilment For Plastic Waste Management Get your EPR Fulfilment in Plastic Waste Management done with the help of VyomBiz.",
+            desc: "Get your EPR Fulfilment in Plastic Waste Management done with the help of VyomBiz. End-to-end EPR target calculation, PWP tie-ups, credit procurement, and annual return filing — ensuring zero penalties.",
             price: "499.00",
-            icon: <Settings className="w-8 h-8 text-[#005a9c]" />
+            icon: <Settings className="w-8 h-8 text-[#005a9c]" />,
+            path: "/epr-fulfilment-for-plastic-waste-management"
         }
     ];
 
@@ -126,7 +132,9 @@ const PlasticWasteManagement = () => {
                                     <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:scale-110 group-hover:bg-[#dead01]/10 transition-all duration-500 mb-6">
                                         {service.icon}
                                     </div>
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors line-clamp-2">{service.title}</h3>
+                                    <Link to={service.path}>
+                                        <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors line-clamp-2 hover:underline cursor-pointer">{service.title}</h3>
+                                    </Link>
                                     <p className="text-slate-600 text-[15px] leading-relaxed mb-8 flex-grow font-medium line-clamp-3">{service.desc}</p>
 
                                     <div className="mt-auto pt-6 border-t border-slate-100">
@@ -135,13 +143,15 @@ const PlasticWasteManagement = () => {
                                             <span className="text-[#dead01] text-2xl font-black drop-shadow-sm leading-none">₹{service.price}</span>
                                         </div>
                                         <div className="flex flex-wrap lg:flex-nowrap items-center justify-between gap-4">
-                                            <button className="w-full lg:w-auto flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3 rounded-xl text-sm font-bold transition-all shadow-md active:scale-[0.97] whitespace-nowrap">
-                                                Get Started Free
-                                            </button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read transition-all hover:text-[#072b47] whitespace-nowrap">
+                                            <Link to={service.path} className="w-full lg:w-auto flex-1">
+                                                <button className="w-full bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3 rounded-xl text-sm font-bold transition-all shadow-md active:scale-[0.97] whitespace-nowrap">
+                                                    Get Started Free
+                                                </button>
+                                            </Link>
+                                            <Link to={service.path} className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read transition-all hover:text-[#072b47] whitespace-nowrap">
                                                 <span>Read more</span>
                                                 <ArrowRight className="w-4 h-4 group-hover/read:translate-x-1" />
-                                            </button>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -156,14 +166,14 @@ const PlasticWasteManagement = () => {
                 </div>
             </section>
 
-                        {/* WORKING PROCESS */}
+            {/* WORKING PROCESS */}
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-5xl font-black text-[#010101] mb-6">Our Working Process</h2>
                         <div className="w-24 h-1 bg-[#f1a129] mx-auto mb-12"></div>
                     </div>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
                             { icon: <FileText className="w-12 h-12 text-white mb-4" strokeWidth={1.5} />, title: "Fill Up Application Form", bg: "bg-[#0b5387]" },
