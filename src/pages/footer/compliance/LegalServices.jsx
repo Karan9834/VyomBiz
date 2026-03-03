@@ -16,7 +16,7 @@ import {
 import complainceimg from '../../../assets/compliancefooter/compliance.png';
 
 const LegalServices = () => {
-  const navigate = useNavigate();
+  
     // Legal services based on the HTML
     const legalServices = [
         {

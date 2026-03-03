@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { Link } from "react-router-dom";
 import { ShieldCheck, Anchor, Fingerprint } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
@@ -128,9 +130,9 @@ const PSARAEligibility = () => {
                 </div>
 
                 <div className="mt-12 text-center">
-                    <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
-                        Assess Applicant Eligibility
-                    </button>
+                    <Link to="/price" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                                Assess Applicant Eligibility
+                            </Link>
                 </div>
             </div>
         </section>
@@ -248,9 +250,9 @@ const PSARAProcessSection = () => {
                         ))}
                         <div className="border-t border-slate-200"></div>
                         <div className="mt-12 text-center">
-                            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                            <Link to="/price" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
                                 Let Experts Manage Your Filing
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

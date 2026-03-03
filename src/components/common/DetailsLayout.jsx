@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { CheckCircle2, FileText, TrendingUp, ChevronRight, Shield, Award, Users, ArrowRight } from "lucide-react";
 import InsideNavbar from "./InsideNavbar";
+import { Link } from "react-router-dom";
 
 /**
  * Universal SaaS-Style Details Layout for Registration Pages
@@ -214,7 +215,9 @@ const DetailsLayout = ({
                                     <div className="lg:w-1/2">
                                         <h3 className="text-3xl md:text-5xl font-black mb-8 leading-tight tracking-tight">{eligibility.title}</h3>
                                         <p className="text-blue-100/80 font-bold text-lg mb-10 leading-relaxed italic">{eligibility.subtitle}</p>
-                                        <button className="bg-[#f1a134] text-white px-8 py-3.5 rounded-xl font-black text-sm uppercase tracking-widest hover:brightness-105 transition-all shadow-lg">Request Consultation</button>
+                                        <Link to="/price" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f1a134] text-white px-8 py-3.5 rounded-xl font-black text-sm uppercase tracking-widest hover:brightness-105 transition-all shadow-lg inline-block">
+                                Request Consultation
+                            </Link>
                                     </div>
                                     <div className="lg:w-1/2 grid gap-6 w-full">
                                         {eligibility.list.map((item, i) => (

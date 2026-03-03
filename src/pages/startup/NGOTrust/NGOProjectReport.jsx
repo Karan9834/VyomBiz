@@ -1,4 +1,6 @@
 import React from "react";
+
+import { Link } from "react-router-dom";
 import { Users, Briefcase, Building2, FileText, CheckCircle, TrendingUp } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
@@ -143,9 +145,9 @@ const ProjectReportEligibility = () => {
                 </div>
 
                 <div className="mt-12 text-center">
-                    <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
-                        Start Your Project Report Now
-                    </button>
+                    <Link to="/price" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                                Start Your Project Report Now
+                            </Link>
                 </div>
 
             </div>
@@ -300,9 +302,9 @@ const ProjectReportProcessSection = () => {
 
                         {/* CTA */}
                         <div className="mt-12 text-center">
-                            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                            <Link to="/price" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
                                 Start Your Project Report Now
-                            </button>
+                            </Link>
                         </div>
 
                     </div>

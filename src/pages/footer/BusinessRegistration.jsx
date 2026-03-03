@@ -1,7 +1,10 @@
 import React from 'react';
 import { CheckCircle, Search, Star, MapPin, ArrowRight, Rocket, Smile, PieChart, Shield } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const BusinessRegistration = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="bg-white min-h-screen font-sans">
             {/* 1. HERO SECTION */}

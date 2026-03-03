@@ -62,7 +62,6 @@ const LegalNoticeConsumerProtection = lazy(() => import('../pages/lawyers-servic
 
 const RefundPolicy = lazy(() => import('../pages/legal/RefundPolicy'));
 const TermsConditions = lazy(() => import('../pages/legal/TermsConditions'));
-const Sitemap = lazy(() => import('../pages/legal/Disclaimer'));
 
 const LegalRoutes = [
     <Route key="law-srv" path="/lawyers-services" element={<LawyersServices />} />,
@@ -116,12 +115,12 @@ const LegalRoutes = [
 
 
     // Policies
-    <Route key="priv-pol" path="/privacy-policy" element={<PrivacyPolicy/>} />,
-    <Route key="priv-pol" path="/confidentiality-policy" element={<ConfidentialityPolicy/>} />,
+    <Route key="priv-pol" path="/privacy-policy" element={<PrivacyPolicy />} />,
+    <Route key="priv-pol" path="/confidentiality-policy" element={<ConfidentialityPolicy />} />,
     <Route key="ref-pol" path="/refund-policy" element={<RefundPolicy />} />,
     <Route key="term-cond" path="/terms-conditions" element={<TermsConditions />} />,
     <Route key="disclaimer" path="/disclaimer" element={<Disclaimer />} />,
-    
+
 ];
 
 export default LegalRoutes;

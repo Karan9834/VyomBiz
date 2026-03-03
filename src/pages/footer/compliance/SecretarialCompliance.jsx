@@ -9,7 +9,7 @@ import {
 import complainceimg from '../../../assets/compliancefooter/compliance.png';
 
 const SecretarialCompliance = () => {
-  const navigate = useNavigate();
+  
     // Service data based on the HTML
     const secretarialServices = [
         {
@@ -159,17 +159,7 @@ const SecretarialCompliance = () => {
     ];
 
     // Trusted brands from HTML
-    const trustedBrands = [
-        { name: "Stripe", logo: "https://via.placeholder.com/150x50?text=Stripe" },
-        { name: "Spinny", logo: "https://via.placeholder.com/150x50?text=Spinny" },
-        { name: "Milton", logo: "https://via.placeholder.com/150x50?text=Milton" },
-        { name: "Marg", logo: "https://via.placeholder.com/150x50?text=Marg" },
-        { name: "KU", logo: "https://via.placeholder.com/150x50?text=KU" },
-        { name: "Justdial", logo: "https://via.placeholder.com/150x50?text=Justdial" },
-        { name: "Forbes 30", logo: "https://via.placeholder.com/150x50?text=Forbes30" },
-        { name: "FoodPanda", logo: "https://via.placeholder.com/150x50?text=FoodPanda" },
-        { name: "FIA Global", logo: "https://via.placeholder.com/150x50?text=FIA+Global" }
-    ];
+    
 
     // Testimonials from HTML
     const testimonials = [

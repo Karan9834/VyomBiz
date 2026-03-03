@@ -13,7 +13,7 @@ import {
 import complainceimg from '../../../assets/compliancefooter/compliance.png';
 
 const ConvertYourBusiness = () => {
-  const navigate = useNavigate();
+  
     // Convert Your Business services based on the HTML
     const conversionServices = [
         {

@@ -11,7 +11,7 @@ import {
 import complainceimg from '../../../assets/compliancefooter/compliance.png';
 
 const TaxFilingCompliance = () => {
-  const navigate = useNavigate();
+  
     // Tax filing services based on the HTML
     const taxServices = [
         {

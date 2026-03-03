@@ -10,17 +10,16 @@ import { Mail, Bell, ShieldCheck, ArrowRight, TrendingUp, Users, CheckCircle2, Z
  * Simplified version to ensure visibility and restore functionality.
  */
 const Newsletter = () => {
+    const [visibleCount, setVisibleCount] = useState(6);
+    const [isLoadingMore, setIsLoadingMore] = useState(false);
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
+  
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [emailError, setEmailError] = useState("");
   const [isValidating, setIsValidating] = useState(false);
 
   // Pagination / View More State
-  const [visibleCount, setVisibleCount] = useState(6);
-  const [isLoadingMore, setIsLoadingMore] = useState(false);
-
   // Safety check for data
   const data = Array.isArray(pdfCards) ? pdfCards : [];
 
@@ -37,7 +36,6 @@ const Newsletter = () => {
     );
   }
 
-  const latestNewsletter = data[0];
   const otherNewsletters = data.slice(1);
 
   const validateEmail = (val) => {
@@ -69,14 +67,7 @@ const Newsletter = () => {
     }
   };
 
-  const handleLoadMore = () => {
-    if (isLoadingMore) return;
-    setIsLoadingMore(true);
-    setTimeout(() => {
-      setVisibleCount(prev => prev + 6);
-      setIsLoadingMore(false);
-    }, 800);
-  };
+  
 
   return (
     <PageTemplate title="Newsletter | VyomBiz">

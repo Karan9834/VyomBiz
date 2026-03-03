@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< Updated upstream
 import HeroLayout from '../../../components/common/HeroLayout';
 import DetailsLayout from '../../../components/common/DetailsLayout';
 import FAQLayout from '../../../components/common/FAQLayout';
@@ -20,6 +21,41 @@ const HazardousWasteManagementAuthorization = () => {
                     ]}
                     formTitle="Get Free Expert Consultation"
                 />
+=======
+
+import { Link } from "react-router-dom";
+import { Shield, FileCheck, CheckCircle, ArrowRight, Zap, Target, BookOpen, Clock, Users, Building2, Briefcase } from 'lucide-react';
+
+const HazardousWasteManagementAuthorization = () => {
+    return (
+        <div className="bg-slate-50 min-h-screen font-sans overflow-x-hidden">
+            {/* HERO SECTION */}
+            <section className="relative bg-gradient-to-br from-[#005a9c] to-[#072b47] text-white pt-32 pb-24 overflow-hidden">
+                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 mix-blend-overlay"></div>
+                <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-50 to-transparent"></div>
+                
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 rounded-full text-blue-100 text-sm font-bold uppercase tracking-wider mb-8 backdrop-blur-sm">
+                        <Shield size={16} className="text-[#dead01]" /><span>Environmental Compliance Services</span>
+                    </div>
+                    
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.2] mb-6 max-w-5xl">
+                        {/* Split title to style it nicely */}
+                        Hazardous Waste Management <span className="text-[#dead01]">Authorization</span> 
+                    </h1>
+                    
+                    <p className="text-xl text-blue-100 mb-10 max-w-3xl leading-relaxed">
+                        Hazardous Waste Management Authorization is necessary for those involved in handling, generating, collection, storing, packaging, transportation, treatment, processing etc.
+                    </p>
+                    
+                    <div className="flex flex-wrap justify-center gap-4">
+                        <Link to="/price" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#dead01] text-[#072b47] px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-400 shadow-xl active:scale-95 transition-all flex items-center justify-center gap-2">
+                                View Pricing
+                            </Link>
+                    </div>
+                </div>
+            </section>
+>>>>>>> Stashed changes
 
                 <DetailsLayout
                     overview={{

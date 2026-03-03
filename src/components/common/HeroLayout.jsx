@@ -9,7 +9,6 @@ const HeroLayout = ({
     heroTitlePrefix = "",
     heroTitleMain = "Registration",
     heroTitleSuffix = "in India",
-    heroSubtitle = "",
     heroDescription = "Start your business journey with expert legal assistance and 100% money-back guarantee.",
     stats = [
         { count: "5,00,000+", label: "Happy User" },

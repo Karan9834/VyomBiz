@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 
 const AccountingCFO = () => {
-  const navigate = useNavigate();
+  
     // Accounting & CFO services based on the HTML
     const accountingServices = [
         {

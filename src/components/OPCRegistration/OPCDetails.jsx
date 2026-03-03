@@ -70,7 +70,7 @@ const OPCRegistrationAdvantages = () => {
 
                     <div className="mt-10">
                         <img
-src="/OPC Registration/benefits.png"
+                            src="/OPC Registration/benefits.png"
                             alt="OPC Registration Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -152,9 +152,9 @@ const OPCEligibility = () => {
                     ))}
                 </div>
                 <div className="mt-12 text-center">
-                    <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/general-info" className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
-                        Check Your Eligibility Now
-                    </Link>
+                    <Link to="/price" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                                Check Your Eligibility Now
+                            </Link>
                 </div>
             </div>
         </section>
@@ -229,9 +229,9 @@ const OPCProcessSection = () => {
                         ))}
                         <div className="border-t border-slate-200" />
                         <div className="mt-12 text-center">
-                            <button onClick={() => document.getElementById("registration-hero")?.scrollIntoView({ behavior: "smooth" })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                            <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/general-info" className="bg-[#f59e0b] hover:bg-[#d97706] inline-block text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
                                 Start OPC Registration Now
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

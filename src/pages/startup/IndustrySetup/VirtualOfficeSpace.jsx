@@ -131,9 +131,9 @@ const VirtualOfficeSpaceEligibility = () => {
                     ))}
                 </div>
                 <div className="mt-12 text-center">
-                    <Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/general-info" className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
-                        Check Your Eligibility Now
-                    </Link>
+                    <Link to="/price" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                                Check Your Eligibility Now
+                            </Link>
                 </div>
             </div>
         </section>
@@ -201,9 +201,9 @@ const VirtualOfficeSpaceProcessSection = () => {
                         ))}
                         <div className="border-t border-slate-200" />
                         <div className="mt-12 text-center">
-                            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                            <Link to="/price" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
                                 Get Your Address
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

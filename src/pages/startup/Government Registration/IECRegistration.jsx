@@ -1,4 +1,6 @@
 import React from "react";
+
+import { Link } from "react-router-dom";
 import { ShieldCheck, Anchor, TrendingUp, CheckCircle2 } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
@@ -133,9 +135,9 @@ const IECEligibility = () => {
                 </div>
 
                 <div className="mt-12 text-center">
-                    <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
-                        Verify Your Target Market Today
-                    </button>
+                    <Link to="/price" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                                Verify Your Target Market Today
+                            </Link>
                 </div>
             </div>
         </section>
@@ -242,9 +244,9 @@ const IECProcessSection = () => {
                         <div className="border-t border-slate-200"></div>
 
                         <div className="mt-12 text-center">
-                            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                            <Link to="/price" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-[#f59e0b] hover:bg-[#d97706] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
                                 Let Experts Process Your Filing
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

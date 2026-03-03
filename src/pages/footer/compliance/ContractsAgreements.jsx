@@ -13,7 +13,7 @@ import {
 import complainceimg from '../../../assets/compliancefooter/compliance.png';
 
 const ContractsAgreements = () => {
-  const navigate = useNavigate();
+  
     // Contracts & Agreements services based on the HTML
     const contractServices = [
         {

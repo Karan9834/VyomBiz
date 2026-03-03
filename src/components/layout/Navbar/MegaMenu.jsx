@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 import { getLinkPath as getUtilsLinkPath } from "../../../utils/navigationUtils";
 import { DISABLED_LINKS } from "../../../constants/navigation";
