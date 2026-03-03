@@ -1,0 +1,340 @@
+/* =========================================================
+   GLOBAL FIXES (ONLY RESPONSIVE – NO BASE STYLE CHANGE)
+========================================================= */
+
+/* Prevent horizontal scroll on small screens */
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* =========================================================
+   LAYOUT FIX (LEFT – CENTER – RIGHT SECTIONS)
+========================================================= */
+
+/* Tablet & below: stack layout */
+@media (max-width: 1024px) {
+  .w-100,
+  .w-160,
+  .w-90 {
+    width: 100% !important;
+  }
+
+  .mx-\[-110px\] {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .mx-10 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* Mobile: add spacing between stacked sections */
+@media (max-width: 768px) {
+  .space-y-8 > * + *,
+  .space-y-10 > * + * {
+    margin-top: 2rem;
+  }
+}
+
+/* =========================================================
+   BLOG CENTER SECTION
+========================================================= */
+
+@media (max-width: 768px) {
+  .h-\[320px\] {
+    height: 200px !important;
+  }
+
+  h2.text-2xl {
+    font-size: 1.5rem;
+  }
+
+  h3.text-\[24px\] {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  p.text-sm {
+    font-size: 0.875rem;
+  }
+}
+
+/* =========================================================
+   LEFT SIDEBAR (CATEGORIES + TAGS)
+========================================================= */
+
+@media (max-width: 768px) {
+  .h-96 {
+    height: auto !important;
+    max-height: 300px;
+  }
+
+  .flex.flex-wrap.gap-3 > div {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+}
+
+/* =========================================================
+   RIGHT SIDEBAR – TRENDING BLOGS
+========================================================= */
+
+@media (max-width: 768px) {
+  .w-20.h-20 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .text-sm.font-semibold {
+    font-size: 0.85rem;
+  }
+
+  .text-xs {
+    font-size: 0.7rem;
+  }
+}
+
+/* =========================================================
+   TODAY’S UPDATE CARDS
+========================================================= */
+
+@media (max-width: 640px) {
+  .grid.grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid > div {
+    padding: 1.25rem;
+  }
+}
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+@media (max-width: 640px) {
+  .flex.items-center.justify-center.gap-2 {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .px-4.py-2 {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+/* =========================================================
+   APP DOWNLOAD SECTION
+========================================================= */
+
+@media (max-width: 1024px) {
+  .lg\:flex-row {
+    flex-direction: column !important;
+  }
+
+  .lg\:w-1\/2 {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .text-4xl {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+
+  .gap-16 {
+    gap: 2.5rem;
+  }
+
+  .h-14 {
+    height: 44px;
+  }
+
+  .h-24.w-24 {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+
+
+
+
+
+/* ================================
+   GLOBAL FIX
+================================ */
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* ================================
+   BANNER SECTIONS
+================================ */
+@media (max-width: 1024px) {
+  section[style*="backgroundImage"] > div {
+    margin-left: 0 !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  section.h-\[400px\],
+  section.min-h-\[520px\] {
+    height: auto !important;
+    padding: 3rem 0;
+            padding-left: 106px;
+  }
+}
+
+/* ================================
+   BIG HEADINGS
+================================ */
+@media (max-width: 768px) {
+  h1.text-\[48px\],
+  h1.text-\[44px\],
+  h2.text-\[42px\] {
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+  }
+}
+
+/* ================================
+   GRID FIXES
+================================ */
+@media (max-width: 1024px) {
+  .gap-96 {
+    gap: 3rem !important;
+  }
+
+  .gap-26 {
+    gap: 2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-cols-2,
+  .lg\:grid-cols-2,
+  .lg\:grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ================================
+   FORMS (Partner Page)
+================================ */
+@media (max-width: 768px) {
+  .w-120 {
+    width: 100% !important;
+  }
+
+  .lg\:sticky {
+    position: static !important;
+  }
+}
+
+/* ================================
+   FIX MARGINS (CAUSE OVERFLOW)
+================================ */
+@media (max-width: 1024px) {
+  .mx-40,
+  .mx-20,
+  .mx-10,
+  .mx-15 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* ================================
+   GROWING PARTNER BANNER
+================================ */
+@media (max-width: 1024px) {
+  .w-300 {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .h-80 {
+    height: auto !important;
+    padding: 3rem 1rem;
+  }
+}
+
+/* ================================
+   MEDIA CARDS
+================================ */
+@media (max-width: 768px) {
+  .h-\[230px\] {
+    height: 180px !important;
+  }
+
+  .text-\[20px\] {
+    font-size: 16px !important;
+  }
+
+  .text-\[18px\] {
+    font-size: 14px !important;
+  }
+}
+
+/* ================================
+   BRAND LOGO MARQUEE
+================================ */
+@media (max-width: 640px) {
+  .animate-marquee img {
+    height: 40px !important;
+  }
+}
+
+/* ================================
+   PDF CARD GRID
+================================ */
+@media (max-width: 640px) {
+  .grid.grid-cols-1.sm\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+
+/* =========================================================
+   LEFT-ALIGNED DESKTOP, SAFE MOBILE
+========================================================= */
+
+/* Desktop: DO NOTHING (keep your margins) */
+/* >= 1025px untouched */
+
+/* Tablet & below */
+@media (max-width: 1024px) {
+  /* Neutralize negative margins ONLY on small screens */
+  .mx-\[-110px\] {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .mx-40,
+  .mx-20 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .mx-40,
+  .mx-20 {
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+  }
+}
