@@ -12,6 +12,9 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
+import benefits from "../../../assets/FSSAI & Eating License/fssai-state-license/benefits.png";
+import overview from "../../../assets/FSSAI & Eating License/fssai-state-license/overview.jpeg";
+import process from "../../../assets/FSSAI & Eating License/fssai-state-license/process.jpeg";
 
 const FssaiStateOverview = () => {
     return (
@@ -38,7 +41,7 @@ const FssaiStateOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="FSSAI State License Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -66,7 +69,7 @@ const FssaiStateLicenseAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="FSSAI State License Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -202,7 +205,7 @@ const FssaiStateProcess = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="The Approval Journey"
                             className="w-full rounded-lg shadow-sm"
                         />

@@ -12,6 +12,9 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
+import benefits from "../../../assets/FSSAI & Eating License/central-fssai-license/benefits.jpeg";
+import overview from "../../../assets/FSSAI & Eating License/central-fssai-license/overview.jpg";
+import process from "../../../assets/FSSAI & Eating License/central-fssai-license/process.jpg";
 
 const CentralFssaiOverview = () => {
     return (
@@ -38,7 +41,7 @@ const CentralFssaiOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1542601906990-b4d3fb7d5fa5?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="Central FSSAI License Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -66,7 +69,7 @@ const CentralFssaiAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="Central FSSAI Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -177,7 +180,7 @@ const CentralFssaiProcess = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="The Central Process"
                             className="w-full rounded-lg shadow-sm"
                         />

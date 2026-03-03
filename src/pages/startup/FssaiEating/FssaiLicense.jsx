@@ -12,6 +12,9 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
+import benefits from "../../../assets/FSSAI & Eating License/FSSAI License and Registration in India/benefits.png";
+import overview from "../../../assets/FSSAI & Eating License/FSSAI License and Registration in India/overview.jpg";
+import process from "../../../assets/FSSAI & Eating License/FSSAI License and Registration in India/process.jpg";
 
 const FssaiLicenseOverview = () => {
     return (
@@ -43,7 +46,7 @@ const FssaiLicenseOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="FSSAI License Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -71,7 +74,7 @@ const FssaiLicenseAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1579621970588-a35d487ce5b6?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="FSSAI License Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -208,7 +211,7 @@ const FssaiLicenseProcess = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="The Licensing Process"
                             className="w-full rounded-lg shadow-sm"
                         />
