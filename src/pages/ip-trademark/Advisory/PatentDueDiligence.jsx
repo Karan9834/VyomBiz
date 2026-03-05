@@ -3,6 +3,9 @@ import { FileText, CheckCircle, Shield, Search, TrendingUp, AlertTriangle, FileC
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import due from "../../../assets/IP & Trademark/Advisory/patent-due-diligence/due.jpeg";
+import overview from "../../../assets/IP & Trademark/Advisory/patent-due-diligence/overview.jpeg";
+import process from "../../../assets/IP & Trademark/Advisory/patent-due-diligence/process.png";
 
 const PatentDueDiligenceOverview = () => {
     return (
@@ -28,7 +31,7 @@ const PatentDueDiligenceOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="Patent Due Diligence Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -138,7 +141,7 @@ const PatentDueDiligenceProcessSection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1554224154-260327c00c4c?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="Process"
                             className="w-full rounded-lg shadow-sm"
                         />
@@ -256,7 +259,7 @@ const PatentDueDiligence = () => {
 
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1554224154-260327c00c4c?auto=format&fit=crop&q=80"
+                            src={due}
                             alt="Data Analysis"
                             className="w-full rounded-2xl shadow-xl"
                         />

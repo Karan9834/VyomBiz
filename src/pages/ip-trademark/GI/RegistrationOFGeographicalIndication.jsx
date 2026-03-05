@@ -3,6 +3,9 @@ import { MapPin, CheckCircle, Shield, UserCheck } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import benefits from "../../../assets/IP & Trademark/gi/gi-registration/benefits.jpg";
+import overview from "../../../assets/IP & Trademark/gi/gi-registration/overview.jpg";
+import process from "../../../assets/IP & Trademark/gi/gi-registration/process.jpg";
 
 const GIRegistrationOverview = () => {
     return (
@@ -34,7 +37,7 @@ const GIRegistrationOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1596422846543-74c6fb713a07?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="Geographical Indication Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -150,7 +153,7 @@ const GIRegistrationProcessSection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="Process"
                             className="w-full rounded-lg shadow-sm"
                         />
@@ -273,7 +276,7 @@ const RegistrationOFGeographicalIndication = () => {
 
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="GI Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />

@@ -3,6 +3,9 @@ import { Users, Briefcase, Building2 } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import benefits from "../../../assets/Trademarks India/Intellectual Property Dispute/benefits.png";
+import overview from "../../../assets/Trademarks India/Intellectual Property Dispute/overview.jpg";
+import process from "../../../assets/Trademarks India/Intellectual Property Dispute/process.jpg";
 
 /**
  * IntellectualPropertyDispute Page matching Vyombiz layout styles
@@ -148,7 +151,7 @@ const IntellectualPropertyDisputeProcessSection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="Process"
                             className="w-full rounded-lg shadow-sm"
                         />
@@ -401,7 +404,7 @@ const IntellectualPropertyDispute = () => {
                     {/* Right Image */}
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="Intellectual Property Dispute"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -427,7 +430,7 @@ const IntellectualPropertyDispute = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1505664194779-8beaceb930b5?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="IP Disputes"
                             className="w-full rounded-2xl shadow-xl"
                         />

@@ -2,6 +2,9 @@ import { ShieldCheck, Award, Globe, Search, FileText, CheckCircle, Clock, Users 
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import benefits from "../../../assets/IP & Trademark/TM Watch/trademark-watch-services/benefits.jpg";
+import process from "../../../assets/IP & Trademark/TM Watch/trademark-watch-services/process.jpg";
+import trademark from "../../../assets/IP & Trademark/TM Watch/trademark-watch-services/trademark.jpg";
 
 /**
  * TrademarkWatchServices Page matching TrustRegistration layout styles
@@ -25,7 +28,7 @@ const TrademarkWatchServicesAdvantages = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="Trademark Watch Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -78,7 +81,7 @@ const TrademarkWatchServicesOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80"
+                            src={trademark}
                             alt="Trademark Watch Services Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -211,7 +214,7 @@ const TrademarkWatchServicesProcessSection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="Process"
                             className="w-full rounded-lg shadow-sm"
                         />

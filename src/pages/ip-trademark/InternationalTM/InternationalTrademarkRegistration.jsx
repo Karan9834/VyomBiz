@@ -2,6 +2,9 @@ import { Globe, ShieldCheck, Flag, FileText, CheckCircle, Scale, Users, Clock } 
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import advantages from "../../../assets/IP & Trademark/International TM/Trademark Watch & Monitoring/advantages.jpg";
+import overview from "../../../assets/IP & Trademark/International TM/Trademark Watch & Monitoring/overview.jpg";
+import req from "../../../assets/IP & Trademark/International TM/Trademark Watch & Monitoring/req.png";
 
 /**
  * InternationalTrademarkRegistration Page
@@ -34,7 +37,7 @@ const InternationalTrademarkRegistrationOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="International Trademark Registration Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -92,7 +95,7 @@ const InternationalTrademarkRegistration = () => {
 
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80"
+                            src={advantages}
                             alt="International Trademark Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
@@ -174,7 +177,7 @@ const InternationalTrademarkRegistration = () => {
                         "Power of Attorney",
                         "Priority Documents"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1526304640152-d4619684e484?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: req
                 }}
                 process={{
                     title: "Registration Process",

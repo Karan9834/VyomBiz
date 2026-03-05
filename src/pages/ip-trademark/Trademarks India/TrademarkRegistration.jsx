@@ -4,9 +4,12 @@ import { ShieldCheck, Award, Globe, Search, FileText, CheckCircle, Clock, Users 
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import benefits from "../../../assets/Trademarks India/Trademark Registration in India/benefits.png";
+import overview from "../../../assets/Trademarks India/Trademark Registration in India/overview.png";
+import process from "../../../assets/Trademarks India/Trademark Registration in India/process.png";
 
 // Placeholder for the missing image
-const overviewImg = "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80";
+const overviewImg = overview;
 
 const TrademarkOverview = () => {
     return (
@@ -187,7 +190,7 @@ const TrademarkRegistrationProcessSection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="Process"
                             className="w-full rounded-lg shadow-sm"
                         />
@@ -450,7 +453,7 @@ const TrademarkRegistration = () => {
 
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1554224154-260327c00c4c?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="Trademark Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />

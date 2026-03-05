@@ -3,6 +3,9 @@ import { Copyright, FileText, CheckCircle, Shield, Music, PenTool, Video, Code, 
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import imp from "../../../assets/IP & Trademark/Copyright/copyright-registration/imp.png";
+import overview from "../../../assets/IP & Trademark/Copyright/copyright-registration/overview.jpeg";
+import process from "../../../assets/IP & Trademark/Copyright/copyright-registration/process.png";
 
 const CopyrightRegistrationOverview = () => {
     return (
@@ -34,7 +37,7 @@ const CopyrightRegistrationOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="Copyright Registration Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -162,7 +165,7 @@ const CopyrightRegistrationProcessSection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="Process"
                             className="w-full rounded-lg shadow-sm"
                         />
@@ -284,7 +287,7 @@ const CopyrightRegistration = () => {
 
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80"
+                            src={imp}
                             alt="Copyright Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />

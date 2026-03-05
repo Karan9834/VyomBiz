@@ -3,6 +3,9 @@ import { Search, List, Globe, ShieldCheck } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import advantages from "../../../assets/Trademarks India/Trademark Class Finder Tool/advantages.png";
+import overview from "../../../assets/Trademarks India/Trademark Class Finder Tool/overview.jpg";
+import process from "../../../assets/Trademarks India/Trademark Class Finder Tool/process.png";
 
 /**
  * TrademarkClassesFinder Page matching Vyombiz layout styles
@@ -144,7 +147,7 @@ const TrademarkClassesFinderProcessSection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="Process"
                             className="w-full rounded-lg shadow-sm"
                         />
@@ -397,7 +400,7 @@ const TrademarkClassesFinder = () => {
                     {/* Right Image */}
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="Trademark Classes Finder"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -423,7 +426,7 @@ const TrademarkClassesFinder = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80"
+                            src={advantages}
                             alt="Trademark Classification Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />

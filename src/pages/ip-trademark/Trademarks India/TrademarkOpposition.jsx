@@ -3,6 +3,9 @@ import { ShieldAlert, Gavel, Scale, FileText } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import benefits from "../../../assets/Trademarks India/Trademark Opposition Services/benefits.png";
+import overview from "../../../assets/Trademarks India/Trademark Opposition Services/overview.png";
+import process from "../../../assets/Trademarks India/Trademark Opposition Services/process.png";
 
 /**
  * TrademarkOpposition Page matching Vyombiz layout styles
@@ -140,7 +143,7 @@ const TrademarkOppositionProcessSection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1588776814546-ec7e8a75a3a6?auto=format&fit=crop&q=80"
+                            src={process}
                             alt="Process"
                             className="w-full rounded-lg shadow-sm"
                         />
@@ -406,7 +409,7 @@ const TrademarkOpposition = () => {
                     {/* Right Image */}
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1505664194779-8beaceb930b5?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="Trademark Opposition"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -432,7 +435,7 @@ const TrademarkOpposition = () => {
                     </p>
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="Trademark Opposition Grounds"
                             className="w-full rounded-2xl shadow-xl"
                         />

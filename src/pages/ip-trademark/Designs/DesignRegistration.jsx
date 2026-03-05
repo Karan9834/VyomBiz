@@ -3,6 +3,9 @@ import { FileText, CheckCircle, Shield, UserCheck, CheckCircle2 } from "lucide-r
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
+import benefits from "../../../assets/IP & Trademark/Designs/Design Registration/benefits.png";
+import overview from "../../../assets/IP & Trademark/Designs/Design Registration/overview.jpeg";
+import process from "../../../assets/IP & Trademark/Designs/Design Registration/process.png";
 
 const DesignRegistrationOverview = () => {
     return (
@@ -34,7 +37,7 @@ const DesignRegistrationOverview = () => {
                     </div>
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80"
+                            src={overview}
                             alt="Design Registration Overview"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
@@ -150,7 +153,7 @@ const DesignRegistrationProcessSection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                     <div className="lg:col-span-1">
                         <img
-                            src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1350&q=80"
+                            src={process}
                             alt="Process"
                             className="w-full rounded-lg shadow-sm"
                         />
@@ -263,7 +266,7 @@ const DesignRegistration = () => {
 
                     <div className="mt-10">
                         <img
-                            src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&q=80"
+                            src={benefits}
                             alt="Design Benefits"
                             className="w-full rounded-2xl shadow-xl"
                         />
