@@ -14,8 +14,8 @@ const GSTAnnualReturnFiling = () => {
 
     const faqs = [
         {
-            question: "Who is required to file GSTR-9?",
-            answer: "All registered taxpayers under GST with an annual turnover exceeding ₹2 Crores are required to file GSTR-9. It provides a consolidated summary of all outward and inward supplies."
+            question: "Who needs to file GSTR-9?",
+            answer: "Registered GST taxpayers whose turnover exceeds the prescribed limit are generally required to file GSTR-9 as an annual summary of their GST transactions."
         },
         {
             question: "What is the difference between GSTR-9 and GSTR-9C?",
@@ -30,8 +30,8 @@ const GSTAnnualReturnFiling = () => {
             answer: "Late filing of GSTR-9 attracts a late fee. It is important to file on time to avoid penalties and ensure compliance."
         },
         {
-            question: "Can I revise GSTR-9 after filing?",
-            answer: "No, once filed, GSTR-9 cannot be revised. It is crucial to review all details carefully before the final submission."
+            question: "Can GSTR-9 be revised after submission?",
+            answer: "Once GSTR-9 is filed on the GST portal, it cannot be revised. Therefore, it is important to carefully verify all details before final submission to avoid errors or discrepancies."
         }
     ];
 
@@ -41,9 +41,9 @@ const GSTAnnualReturnFiling = () => {
             {/* ================= SECTION 1: HERO ================= */}
             <HeroLayout
                 heroTitleMain="GST Annual Return"
-                heroTitleSuffix="Filing"
+                heroTitleSuffix="Filing Online"
                 heroSubtitle="File GSTR-9 Online with Experts"
-                heroDescription="Are you a registered taxpayer preparing for GST Annual Return Filing? Ensure a smooth and error-free process with professional assistance. We have successfully filed GST annual returns for thousands of taxpayers."
+                heroDescription="Are you a registered taxpayer preparing to file your GST Annual Return? Ensure a smooth and accurate filing process with expert assistance. Our professionals help businesses complete GST annual return filing efficiently while ensuring full compliance with GST regulations."
                 whatsIncludedList={[
                     "GSTR-9 Preparation & Filing",
                     "Dedicated Tax Expert Review",
@@ -51,9 +51,9 @@ const GSTAnnualReturnFiling = () => {
                     "Post-filing Clarification Assistance"
                 ]}
                 stats={[
-                    { count: "10000+", label: "Happy Clients", icon: <Users size={20} /> },
-                    { count: "3500+", label: "Expert Advisors", icon: <Briefcase size={20} /> },
-                    { count: "50+", label: "Branch Offices", icon: <Building2 size={20} /> }
+                    { count: "12,000+", label: "Businesses Served", icon: <Users size={20} /> },
+                    { count: "3,500+", label: "Professional Advisors", icon: <Briefcase size={20} /> },
+                    { count: "60+", label: "Offices Across India", icon: <Building2 size={20} /> }
                 ]}
             />
 
@@ -63,85 +63,85 @@ const GSTAnnualReturnFiling = () => {
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
                 overview={{
-                    badge: "GST Compliance",
-                    title: "GST Annual Return Filing –",
-                    highlightTitle: "An Overview",
+                    badge: "Annual GST Compliance Made Simple",
+                    title: "Overview of",
+                    highlightTitle: "GST Annual Return Filing",
                     description: [
-                        "Every registered taxpayer under the Goods and Services Tax (GST) system is required to file an annual return in the form of GSTR-9. This return provides a consolidated summary of all outward and inward supplies made during the financial year, covering transactions under Central GST (CGST), State GST (SGST), and Integrated GST (IGST) regulations.",
-                        "The GSTR-9 filing acts as a combined record of all monthly or quarterly GST returns submitted by the taxpayer during the relevant year. It offers a clear picture of the tax liability, input tax credit, and supply details.",
-                        <strong>What is GSTR-9 Filing?</strong>,
-                        "GSTR-9 is a GST annual return filing that must be filed by registered taxpayers. It serves as a detailed report of all purchases and sales made throughout the financial year.",
-                        "Filing this return is mandatory for businesses with an annual turnover exceeding Rs. 2 crores. It helps in avoiding penalties and discrepancies in tax records."
+                        "Under the Goods and Services Tax (GST) system, registered taxpayers are required to file an annual return in Form GSTR-9. This return provides a consolidated summary of all outward and inward supplies made during the financial year, including transactions under CGST, SGST, and IGST.",
+                        "GSTR-9 serves as a summary of the monthly or quarterly GST returns filed during the year. It helps provide a clear overview of tax liabilities, input tax credit claimed, and total supplies reported by the taxpayer.",
+                        <strong>What is GSTR-9 Annual Return?</strong>,
+                        "GSTR-9 is the annual return that registered GST taxpayers must file at the end of each financial year. It contains detailed information about all purchases, sales, tax paid, and input tax credit claimed during the year.",
+                        "Businesses with turnover exceeding ₹2 crore are generally required to file this return. Filing GSTR-9 helps maintain accurate tax records and ensures compliance with GST regulations."
                     ],
-                    whyIdealTitle: "Types of GST Annual Returns",
+                    whyIdealTitle: "Types of GST Annual Return Forms",
                     whyIdealList: [
-                        { title: "GSTR-9", desc: "Mandatory for regular taxpayers with turnover exceeding ₹2 crores. Compiles comprehensive financial info." },
-                        { title: "GSTR-9A", desc: "For taxpayers under the GST composition scheme. Specifically designed for composition dealers." },
-                        { title: "GSTR-9C", desc: "Reconciliation statement matching GSTR-9 with audited financial statements. Applicable if turnover exceeds ₹5 crores." }
+                        { title: "GSTR-9", desc: "Annual return for regular taxpayers summarizing all GST transactions during the financial year." },
+                        { title: "GSTR-9A", desc: "Annual return previously applicable for taxpayers registered under the GST composition scheme." },
+                        { title: "GSTR-9C", desc: "Reconciliation statement that compares GSTR-9 figures with audited financial statements for large taxpayers." }
                     ]
                 }}
                 advantages={{
-                    title: "Applicability & Exemptions",
+                    title: "Who Must File and Who is Exempt",
                     subtitle: "Understanding who needs to file and who is exempted.",
                     list: [
-                        { title: "Regular Taxpayers", desc: "All regular registered taxpayers are required to file GSTR-9 under standard GST provisions." },
-                        { title: "SEZ Units", desc: "SEZ units and developers must file GSTR-9 to report their financial transactions." },
-                        { title: "Composition Scheme", desc: "Taxpayers who switched from composition to regular status during the year must file GSTR-9." },
-                        { title: "Exemption: ISD", desc: "Input Service Distributors are exempted from filing GSTR-9." },
-                        { title: "Exemption: NRIs", desc: "Non-resident taxable individuals are not obligated to file GSTR-9." },
-                        { title: "Exemption: TDS/TCS", desc: "Individuals subject to TDS/TCS under Income Tax Act are exempted." }
+                        { title: "Regular GST Taxpayers", desc: "All registered regular taxpayers must file GSTR-9 for the relevant financial year." },
+                        { title: "SEZ Units and Developers", desc: "Special Economic Zone entities must report their GST transactions through GSTR-9." },
+                        { title: "Taxpayers Switching Schemes", desc: "Businesses that shift from composition scheme to regular GST during the year may need to file GSTR-9." },
+                        { title: "Exemption – ISD", desc: "Input Service Distributors are not required to file GSTR-9." },
+                        { title: "Exemption – Non-Resident Taxpayers", desc: "Non-resident taxable persons are generally exempt from filing GSTR-9." },
+                        { title: "Exemption – TDS/TCS Deductors", desc: "Entities deducting or collecting tax under GST provisions are not required to file GSTR-9." }
                     ]
                 }}
                 eligibility={{
-                    title: "Prerequisites & Format",
+                    title: "Prerequisites for Filing GSTR-9",
                     subtitle: "Key requirements for a successful GSTR-9 filing.",
                     list: [
-                        { title: "Registered Taxpayer", desc: "Must be registered as a regular GST taxpayer for at least one day in the FY." },
-                        { title: "Filed GSTR-1 & 3B", desc: "Must have filed GSTR-1 and GSTR-3B for the entire financial year before GSTR-9." },
-                        { title: "Basic Details", desc: "Fiscal year, GSTIN, legal name, and trade name (Auto-filled)." },
-                        { title: "Outward Supplies", desc: "Details of taxable, zero-rated, and exempt supplies declared during the FY." },
-                        { title: "Input Tax Credit", desc: "Details of ITC availed, reversed, and ineligible ITC." },
-                        { title: "Tax Paid details", desc: "Breakup of tax payable and paid in cash or through ITC." }
+                        { title: "GST Registration", desc: "The taxpayer must be registered under GST during the financial year." },
+                        { title: "Filed Monthly Returns", desc: "GSTR-1 and GSTR-3B must be filed for the entire financial year." },
+                        { title: "Basic Taxpayer Details", desc: "GSTIN, legal name, trade name, and financial year details are auto-populated." },
+                        { title: "Outward Supply Details", desc: "Information about taxable, zero-rated, and exempt supplies during the year." },
+                        { title: "Input Tax Credit Details", desc: "Details of ITC claimed, reversed, or ineligible during the year." },
+                        { title: "Tax Liability Details", desc: "Breakdown of taxes paid through cash or input tax credit." }
                     ]
                 }}
                 documents={{
-                    title: "Documents Required",
+                    title: "Documents Required for GSTR-9 Filing",
                     description: "Essential documents to keep handy for filing GSTR-9.",
                     list: [
-                        "Monthly GST Returns (GSTR-1, GSTR-3B)",
-                        "Annual Financial Statements",
-                        "Reconciliation Statement (GSTR-9C)",
-                        "Sales and Purchase Registers",
-                        "Tax Payment Challans",
-                        "Audit Report (if applicable)",
+                        "GSTR-1 and GSTR-3B Returns",
+                        "Annual financial statements",
+                        "Reconciliation statement (if applicable)",
+                        "Sales and purchase registers",
+                        "GST tax payment challans",
+                        "Audit report (if required)",
                         "Digital Signature Certificate (DSC)"
                     ],
                     imageUrl: "https://images.unsplash.com/photo-1554224155-9ffd4cd95525?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                 }}
                 process={{
-                    title: "Filing Procedure",
+                    title: "Steps to File GST Annual Return",
                     subtitle: "Step-by-step guide to filing your GST Annual Return.",
                     steps: [
-                        { step: "01", title: "Login to Portal", desc: "Visit GST official website and login with credentials." },
-                        { step: "02", title: "Select FY", desc: "Choose the relevant Financial Year for the return." },
-                        { step: "03", title: "Fill Details", desc: "Fill in requisite details in various tables (Outward supplies, ITC, etc.)." },
-                        { step: "04", title: "Preview Draft", desc: "Preview the draft GSTR-9 to ensure accuracy." },
-                        { step: "05", title: "Compute Liabilities", desc: "Compute any late fees or differential liability and pay." },
-                        { step: "06", title: "Final Submission", desc: "File the return with DSC or EVC." }
+                        { step: "01", title: "Login to GST Portal", desc: "Visit GST official website and login with credentials." },
+                        { step: "02", title: "Select Financial Year", desc: "Choose the relevant Financial Year for the return." },
+                        { step: "03", title: "Enter Required Information", desc: "Fill in requisite details in various tables (Outward supplies, ITC, etc.)." },
+                        { step: "04", title: "Review Draft Return", desc: "Preview the draft GSTR-9 to ensure accuracy." },
+                        { step: "05", title: "Calculate Additional Tax Liability", desc: "Compute any late fees or differential liability and pay." },
+                        { step: "06", title: "Submit Return with DSC or EVC", desc: "File the return with DSC or EVC." }
                     ]
                 }}
                 whyChooseUs={{
-                    title: "Why Choose Us?",
+                    title: "Why Choose Vyombiz for GST Annual Return Filing?",
                     subtitle: "Expert assistance for a hassle-free filing experience.",
                     list: [
-                        { title: "Turnover Assessment", desc: "We help assess if filing is mandatory or optional for you." },
-                        { title: "Reconciliation", desc: "In-depth reconciliation of monthly returns with annual data." },
-                        { title: "Error-Free Filing", desc: "Expert review to prevent errors and notices." },
-                        { title: "Post-Filing Support", desc: "Guidance on any subsequent queries or compliance needs." },
-                        { title: "Dedicated Support", desc: "Personalized assistance from a dedicated account manager." },
-                        { title: "Time Saving", desc: "We handle the complexities so you can focus on business." },
-                        { title: "Penalty Avoidance", desc: "Timely filing to help you avoid late fees and penalties." },
-                        { title: "Data Security", desc: "Your financial data is handled with utmost confidentiality." }
+                        { title: "Turnover Evaluation", desc: "We help assess if filing is mandatory or optional for you." },
+                        { title: "Comprehensive Data Reconciliation", desc: "In-depth reconciliation of monthly returns with annual data." },
+                        { title: "Accurate and Error-Free Filing", desc: "Expert review to prevent errors and notices." },
+                        { title: "Post Filing Compliance Support", desc: "Guidance on any subsequent queries or compliance needs." },
+                        { title: "Dedicated Expert Assistance", desc: "Personalized assistance from a dedicated account manager." },
+                        { title: "Save Time and Effort", desc: "We handle the complexities so you can focus on business." },
+                        { title: "Avoid Late Fees and Penalties", desc: "Timely filing to help you avoid late fees and penalties." },
+                        { title: "Secure and Confidential Data Handling", desc: "Your financial data is handled with utmost confidentiality." }
                     ]
                 }}
             />

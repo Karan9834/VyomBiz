@@ -12,6 +12,11 @@ import TalkExpert from "../../../components/common/TalkExpert.jsx";
  */
 const AppointmentandResignationofDirectors = () => {
     const faqs = [
+        { question: "How long does the appointment of a director take?", answer: "The process usually takes a few working days once all documents are available and forms are filed with the ROC." },
+        { question: "Is Director Identification Number (DIN) mandatory?", answer: "Yes. A DIN is mandatory for anyone who wishes to become a director in an Indian company." },
+        { question: "Can a director resign without board approval?", answer: "A director can submit a resignation letter, but the company must formally record and file the resignation with the ROC." },
+        { question: "What happens if director changes are not reported to MCA?", answer: "Failure to report director changes may lead to penalties and compliance issues under the Companies Act." },
+        { question: "Can a company appoint multiple directors?", answer: "Yes. A company can appoint multiple directors depending on its structure and board requirements, provided it complies with the statutory limits." },
         { question: "Can the resignation of Director be rejected?", answer: "As per Section 168 of the Companies Act, 2013, the administration does not have any right to reject the resignation presented by a director. The resignation takes effect from the date the company receives the notice or the date specified by the director, whichever is later." },
         { question: "What is the operative date of resignation in case of non-acceptance or non-filing of DIR-11 by the company?", answer: "The resignation shall take effect from the date on which the notice was received by the company, irrespective of whether the company accepts it or files DIR-11. The director must independently file DIR-11 if the company fails to do so." },
         { question: "If all the directors resign or vacate their offices, who runs everything?", answer: "Whenever all the directors of a company resign at the same time, the promoter or the Central Government shall appoint the required number of directors. The old directors must hold office until the new ones are nominated by the company in a general meeting." },
@@ -102,11 +107,11 @@ const AppointmentandResignationofDirectors = () => {
 
     /* ─── Registration Procedure (standard process prop) ─────── */
     const processSteps = [
-        { step: "01", title: "Check Articles of Association (AOA)", desc: "As per Section 161(1) of the Companies Act, 2013, check if the AOA of the Company permits adding directors. If not, amend the AOA first to allow the addition of new directors." },
-        { step: "02", title: "Collect Documents & Apply for DIN", desc: "Apply for DIN by filing Form DIR-3 (if needed). Gather all required director documents. The proposed Director must give consent to act as Director via Form DIR-2 before being advised for appointment." },
-        { step: "03", title: "Call Board Meeting", desc: "Issue a notice to hold a Board Meeting. Pass a resolution for appointment of an additional director. Issue the 'Letter of Appointment' to the incoming director." },
-        { step: "04", title: "Conduct General Meeting", desc: "Hold a General Meeting with at least 21 days' notice to all stakeholders. At this meeting, the appointment of the director is confirmed via ordinary resolution by shareholders — or Direct appointment by the Board under Section 161, followed by regularization at AGM." },
-        { step: "05", title: "File Form DIR-12 with ROC", desc: "File Form DIR-12 with the Registrar of Companies within 30 days from the date of appointment. Attach: CTC of Resolution, Consent (DIR-2), and Letter of Appointment." },
+        { step: "01", title: "Document Collection", desc: "All necessary documents and details of the director are collected and verified." },
+        { step: "02", title: "Board Resolution", desc: "The company passes a board resolution approving the appointment or acknowledging the resignation." },
+        { step: "03", title: "Preparation of Compliance Documents", desc: "Statutory forms and legal documentation are prepared according to MCA guidelines." },
+        { step: "04", title: "Filing with ROC", desc: "Relevant forms are submitted electronically with the Registrar of Companies." },
+        { step: "05", title: "Compliance Confirmation", desc: "Once approved, the company records are updated with the new director details." },
         { step: "06", title: "Update Statutory Records & GSTN", desc: "Make necessary entries in the Register of Directors and Managerial Personnel. Apply for necessary changes in the Director's details with GSTN and all other certificates as and when required." },
     ];
 
@@ -169,8 +174,8 @@ const AppointmentandResignationofDirectors = () => {
             <HeroLayout
                 heroTitleMain="Appointment & Resignation "
                 heroTitleSuffix="of Directors"
-                heroSubtitle="Director Appointment & Resignation under Sections 152, 168 & 169 — Companies Act 2013"
-                heroDescription="Manage director appointments and resignations with full statutory compliance. Vyombiz handles DIN applications, Board Meetings, DIR-11, DIR-12 filings, and MCA updates — ensuring seamless transitions in your board of directors."
+                heroSubtitle="Manage Director Changes with Complete Legal Compliance"
+                heroDescription="Appointing or resigning a director in a company involves strict regulatory procedures under the Companies Act. Ensure your company updates are filed correctly and on time with expert compliance support. ✔ Appointment of new directors ✔ Director resignation filings ✔ MCA documentation & compliance ✔ End-to-end professional assistance Stay compliant. Keep your company governance strong."
                 whatsIncludedList={["DIN Application & Verification", "Board & General Meeting Notices", "DIR-11 & DIR-12 Filing", "MCA Database Update"]}
                 stats={[
                     { count: "30 Days", label: "DIR-12 Filing Deadline", icon: <Clock size={20} /> },
@@ -184,11 +189,13 @@ const AppointmentandResignationofDirectors = () => {
                 navLabels={{ overview: "Overview", advantages: "Benefit", eligibility: "Listicles", documents: "Documents Required", process: "Registration Procedure", postCompliance: "Resignation", faq: "FAQs" }}
                 overview={{
                     badge: "Companies Act 2013 — Sections 152, 168 & 169 | Director Appointment & Resignation",
-                    title: "Appointment & Resignation of Directors —",
-                    highlightTitle: "An Overview",
+                    title: "Appointment and Resignation of Directors –",
+                    highlightTitle: "Overview",
                     description: [
-                        "Directors are the brain of the company. They are the managerial staff who control and administer the company's services. The revolution of directors takes place in one way or another — either by the selection of a new director or withdrawal of an existing one. The endeavor to carry out the change of directors is always to guarantee an optimum blend of experts on board for the interest of the company.",
-                        "The authorization to approve the resignation of the director lies with the Board of Directors, whereas appointments must be made through the consent of shareholders. Whether it is an appointment, removal, or resignation — the change does not take effect continuously. The intimation is made to the Ministry of Corporate Affairs (MCA) via the relevant e-forms.",
+                        "In every company, directors play a crucial role in governance, strategic decision-making, and regulatory compliance. Whether a business is appointing a new director or accepting the resignation of an existing one, the process must follow the provisions laid down under the Companies Act, 2013 and the rules of the Ministry of Corporate Affairs (MCA).",
+                        "Any change in the board of directors must be formally documented and filed with the Registrar of Companies (ROC) within the specified timelines. Failure to comply may lead to penalties and compliance issues for the company.",
+                        "Vyombiz managed by Clink Consultancy Services Private Limited helps businesses handle director appointments and resignations smoothly by managing documentation, board resolutions, and MCA filings, ensuring that every legal requirement is met efficiently.",
+                        "Key reasons why director changes must be filed with ROC include: maintaining updated company records with MCA, ensuring transparency in company leadership, avoiding penalties for non-compliance, ensuring legal validity of board decisions, and maintaining proper corporate governance."
                     ],
                     whyIdealTitle: "About Director Appointment & Resignation — Section 168",
                     whyIdealList: [
@@ -202,16 +209,16 @@ const AppointmentandResignationofDirectors = () => {
                 eligibility={listiclesContent}
                 documents={{
                     title: "Documents Required for Appointment & Resignation of Director",
-                    description: "Documents required for the formal appointment or resignation of a director from a company.",
+                    description: "Documents required for the formal appointment or resignation of a director from a company. Accurate documentation is essential for successful filing with the ROC.",
                     list: [
-                        "Passport-size photograph of the Director to be designated / removed.",
-                        "Self-attested PAN Card of the Director to be designated.",
-                        "Proof of Residency: Aadhar Card / Voter ID / Passport / Driving License.",
-                        "Digital Signature Certificate (DSC) of the existing Director and Director to be removed.",
-                        "Identity proof: Passport / Election Card / Driving License / Aadhar Card.",
-                        "Mobile number and personal/official email ID of the Director.",
+                        "PAN card of the director",
+                        "Identity proof (Aadhar / Passport / Voter ID)",
+                        "Address proof",
+                        "Director Identification Number (DIN)",
+                        "Consent to act as director",
+                        "Board resolution for appointment/resignation",
+                        "Resignation letter (in case of resignation)",
                         "All documents must be apostilled if the Director is a non-resident of India.",
-                        "Notice of resignation filed with the company.",
                         "Proof of dispatch.",
                         "Acknowledgment of form, if received.",
                     ]
@@ -219,18 +226,19 @@ const AppointmentandResignationofDirectors = () => {
                 process={{ title: "Appointment of Director — Procedure", subtitle: "Step-by-step procedure for appointing a new director under the Companies Act, 2013.", steps: processSteps }}
                 postCompliance={resignationContent}
                 whyChooseUs={{
-                    title: "How Vyombiz Handles Director Appointment & Resignation",
+                    title: "Why Choose Vyombiz for Director Appointment & Resignation Services",
                     subtitle: "Complete end-to-end support for smooth and compliant director changes.",
                     list: [
-                        { title: "Select & Initiate", desc: "Start by sharing details of the appointment or resignation. Our team structures the correct resolution types and notices required for each specific case." },
-                        { title: "Application Preparation", desc: "We prepare all required forms and develop the application, ensuring complete accuracy of directors' details, resolutions, and attachments." },
-                        { title: "Fee Processing", desc: "We manage all MCA filing fee payments and ensure the correct fee structure is applied." },
-                        { title: "Electronic Filing with MCA", desc: "We file DIR-11 and DIR-12 electronically with the MCA to designate or remove a director accurately within the required timelines." },
-                        { title: "Confirmation & Delivery", desc: "You will receive MCA acknowledgements and confirmation of the updated director records within 2–3 business days via email." },
+                        { title: "Experienced compliance professionals", desc: "Our team understands regulatory procedures and filing requirements in detail." },
+                        { title: "End-to-end documentation support", desc: "We prepare all required forms and develop the application, ensuring complete accuracy of directors' details, resolutions, and attachments." },
+                        { title: "Quick MCA filing process", desc: "We manage all MCA filing fee payments and ensure the correct fee structure is applied." },
+                        { title: "Transparent service process", desc: "Clear documentation, professional support, and complete transparency throughout the process." },
+                        { title: "Reliable advisory support for businesses", desc: "We help companies maintain regulatory compliance while ensuring smooth corporate governance operations." },
+                        { title: "Expert assistance", desc: "We file DIR-11 and DIR-12 electronically with the MCA to designate or remove a director accurately within the required timelines." },
                     ]
                 }}
             />
-            <FAQLayout title="FAQs on Appointment & Resignation of Directors" subtitle="Common questions answered by our company law experts" faqs={faqs} />
+            <FAQLayout title="Frequently Asked Questions (FAQs)" subtitle="Common questions answered by our company law experts" faqs={faqs} />
         </div>
     );
 };

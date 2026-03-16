@@ -20,6 +20,26 @@ const SPICEForm = () => {
     /* ─── FAQs ───────────────────────────────────────────────── */
     const faqs = [
         {
+            question: "What is the SPICe+ Form used for?",
+            answer: "SPICe+ is used for online company incorporation and integrated statutory registrations through the MCA portal."
+        },
+        {
+            question: "Is SPICe+ mandatory for company registration?",
+            answer: "Yes. SPICe+ is the primary form used for company incorporation in India under MCA regulations."
+        },
+        {
+            question: "Can GST registration be obtained through SPICe+?",
+            answer: "Yes. Businesses can apply for GST registration during the SPICe+ filing process."
+        },
+        {
+            question: "How long does SPICe+ incorporation take?",
+            answer: "Typically, the company incorporation process through SPICe+ takes 7–10 working days, depending on document accuracy and MCA approval timelines."
+        },
+        {
+            question: "Can foreign nationals become directors using SPICe+?",
+            answer: "Yes. Foreign nationals can be directors, provided they submit valid identity and address proof."
+        },
+        {
             question: "What is the meaning of SPICe+ Form?",
             answer: "SPICe+ Form, which stands for Simplified Proforma for Incorporating Company Electronically Plus, is an e-application dealing with the incorporation legalities and simplifying the company incorporation process by reducing paperwork and easing compliance requirements. SPICe+ Form is filed for the incorporation of company."
         },
@@ -121,48 +141,43 @@ const SPICEForm = () => {
             <div>
                 <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
                     <Shield size={18} className="text-[#005a9c]" />
-                    Eligibility Criteria for Filing SPICe+ Company Incorporation Form
-                </h3>
-                <div className="grid gap-3">
-                    {[
-                        { title: "Compliance with the Companies Act", desc: "The applicant must comply with sections 4, 7, 8(1), 12, 152, and 153 of the Companies Act, 2013 concerning the incorporation of the company." },
-                        { title: "File Form INC 32", desc: "The applicant seeking incorporation of Section 8 company through SPICe+ Form must check whether the company has entered valid details in Form INC 32." },
-                        { title: "Verify Documents", desc: "The applicant must verify all documents attached — confirming they are as per requirements, complete, and legible." },
-                        { title: "Premises of Proposed Registered Office", desc: "The applicant must personally hold the premises of the proposed registered office as specified in the form." },
-                        { title: "Generation of Consolidated Challan", desc: "The applicant must generate a consolidated challan containing applicable fees towards form fees, MoA, AoA, PAN, or TAN." },
-                        { title: "Authorized Capital", desc: "The applicant must possess an authorized capital of up to Rs. 15,00,000, with 'zero filing fee' concessions and heavy stamp duty." },
-                        { title: "Prepare eMoA and eAoA", desc: "The applicant must prepare an eMoA and eAoA in compliance with the provisions of sections 4 and 5 of the Companies Act." },
-                    ].map((item, i) => (
-                        <div key={i} className="flex items-start gap-3 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
-                            <CheckCircle2 size={16} className="text-[#005a9c] mt-0.5 shrink-0" />
-                            <div>
-                                <p className="text-[14px] font-semibold text-[#072b47] mb-0.5">{item.title}</p>
-                                <p className="text-[13px] text-slate-600 leading-relaxed">{item.desc}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-
-            {/* Who can use */}
-            <div>
-                <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
-                    <Users size={18} className="text-[#005a9c]" />
                     Who Can Use SPICe+ Form?
                 </h3>
+                <p className="text-[14px] text-slate-600 mb-4 leading-relaxed">
+                    The following entities are eligible to use SPICe+ for company registration:
+                </p>
                 <div className="grid sm:grid-cols-2 gap-3">
                     {[
-                        "Individuals seeking company registration under Section 8 of the Companies Act",
-                        "Registered business entities or owners",
-                        "Foreign nationals or entities registering a company in India",
                         "Private Limited Company",
                         "Public Limited Company",
                         "One Person Company (OPC)",
+                        "Section 8 Company (Non-Profit)",
                         "Producer Company",
+                        "Nidhi Company",
+                        "Foreign nationals or entities registering a company in India",
                     ].map((item, i) => (
                         <div key={i} className="flex items-center gap-3 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3">
                             <CheckCircle2 size={15} className="text-[#005a9c] shrink-0" />
                             <span className="text-[14px] text-slate-700">{item}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div className="mt-6">
+                <h4 className="text-[15px] font-bold text-[#072b47] mb-3 flex items-center gap-2">
+                    <BarChart2 size={16} className="text-[#005a9c]" />
+                    Key Requirements for Filing
+                </h4>
+                <div className="grid gap-3">
+                    {[
+                        "The applicant must comply with sections 4, 7, 8(1), 12, 152, and 153 of the Companies Act, 2013.",
+                        "The applicant must verify all documents — confirming they are complete and legible.",
+                        "The applicant must generate a consolidated challan containing applicable fees.",
+                        "The applicant must prepare an eMoA and eAoA in compliance with sections 4 and 5 of the Companies Act.",
+                    ].map((item, i) => (
+                        <div key={i} className="flex items-start gap-3 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
+                            <CheckCircle2 size={16} className="text-[#005a9c] mt-0.5 shrink-0" />
+                            <p className="text-[14px] text-slate-700 leading-relaxed">{item}</p>
                         </div>
                     ))}
                 </div>
@@ -178,20 +193,16 @@ const SPICEForm = () => {
             <div>
                 <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
                     <FileText size={18} className="text-[#005a9c]" />
-                    Key Features of SPICe+ Form MCA
+                    Key Features of SPICe+ Form
                 </h3>
-                <div className="grid gap-3">
+                <div className="grid sm:grid-cols-2 gap-4">
                     {[
-                        "SPICe+ Form is an integrated web form that modernizes the business setup process.",
-                        "SPICe+ Form is filed for the incorporation of a company.",
-                        "SPICe+ Form MCA offers various services under its dual-structured model, providing for registration under Part A and Part B.",
-                        "SPICe+ Form MCA offers a flexible submission option, catering to different user preferences.",
-                        "SPICe+ platform is a user-friendly dashboard securing a seamless company incorporation process.",
-                        "SPICe+ platform simplifies the resubmission of any modified application.",
-                        "SPICe+ supports on-screen filing with real-time data validation for reducing errors during company incorporation.",
-                        "SPICe+ Form is organized into various sections that systematically navigate user data and eliminate confusion.",
-                        "SPICe+ platform conducts all necessary checks and pre-scrutiny validations directly on the web form.",
-                        "SPICe+ Form features an option for auto-generated declarations to be submitted by subscribers and first directors.",
+                        "Single Integrated Application — combines multiple registrations into one form",
+                        "Faster Company Registration — digital processing with MCA integration",
+                        "Automatic PAN & TAN Generation — no separate applications needed",
+                        "Integrated Compliance Registrations — GST, EPFO, ESIC, and more",
+                        "Digital and Paperless Process — all documents uploaded digitally",
+                        "Real-Time Data Validation — on-screen validation reduces errors",
                     ].map((item, i) => (
                         <div key={i} className="flex items-start gap-3 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
                             <CheckCircle2 size={16} className="text-[#005a9c] mt-0.5 shrink-0" />
@@ -263,15 +274,14 @@ const SPICEForm = () => {
                     <div className="bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-5">
                         <h4 className="text-[15px] font-bold text-[#072b47] mb-3 flex items-center gap-2">
                             <span className="w-6 h-6 rounded-md bg-[#005a9c] text-white text-[11px] font-black flex items-center justify-center">A</span>
-                            SPICe+ Part A (RUN Web Service)
+                            SPICe+ Part A – Name Reservation
                         </h4>
                         <div className="grid gap-2">
                             {[
-                                "Part A exclusively represents the section where all details concerning name reservation are provided.",
-                                "RUN stands for Reserve Unique Name — allows applicants to choose and reserve unique names for 20 days.",
+                                "Part A allows applicants to apply for and reserve a company name through the MCA portal.",
+                                "The proposed name must comply with MCA naming guidelines and should be unique and distinguishable from existing companies.",
                                 "Details like type, class, category, industrial activity, and proposed name of the company are required.",
                                 "Part A can be submitted individually for name reservation only or together with Part B for full incorporation.",
-                                "Key features: search, availability check, and reservation of company name.",
                                 "Company name reserved through Part A is valid for 20 days from the date of approval.",
                             ].map((item, i) => (
                                 <div key={i} className="flex items-start gap-2">
@@ -285,13 +295,12 @@ const SPICEForm = () => {
                     <div className="bg-slate-50 border border-slate-200 rounded-xl p-5">
                         <h4 className="text-[15px] font-bold text-[#072b47] mb-3 flex items-center gap-2">
                             <span className="w-6 h-6 rounded-md bg-[#072b47] text-white text-[11px] font-black flex items-center justify-center">B</span>
-                            SPICe+ Part B (Incorporation Form)
+                            SPICe+ Part B – Company Incorporation
                         </h4>
                         <div className="grid gap-2">
                             {[
-                                "Part B represents the section where all mandatory post-incorporation registrations are required.",
-                                "The linked form separately captures other details enabling the filing of relevant information in Part B.",
-                                "Details like articles of association, capital structure, number of members, registered address, and first subscriber(s) are required.",
+                                "Once the name is approved, Part B is used to submit all details required for company incorporation.",
+                                "Details include: company structure, director details, registered office address, capital structure, subscriber information, and statutory registrations.",
                                 "Key features of Part B: incorporation details, DIN, PAN, TAN, GST, EPFO, ESIC, etc.",
                             ].map((item, i) => (
                                 <div key={i} className="flex items-start gap-2">
@@ -397,8 +406,8 @@ const SPICEForm = () => {
             <HeroLayout
                 heroTitleMain="SPICe+ "
                 heroTitleSuffix="Form Filing"
-                heroSubtitle="Simplified Proforma for Incorporating Company Electronically Plus (INC-32)"
-                heroDescription="File SPICe+ Form (INC-32) with Vyombiz and complete 10+ company registrations in a single application. Name Reservation, Company Incorporation, PAN, TAN, DIN, GST, EPFO, ESIC — all in one integrated window."
+                heroSubtitle="Register Your Company Faster with SPICe+ Form"
+                heroDescription="Start your business journey with a single integrated company registration form approved by the Ministry of Corporate Affairs. Get company incorporation, PAN, TAN, GST, EPFO, ESIC, and bank account integration — all through one streamlined application. ✔ Faster approvals ✔ Paperless process ✔ Government integrated registration. Launch your company the smart way."
                 whatsIncludedList={[
                     "Name Reservation via RUN",
                     "DIN, PAN & TAN",
@@ -420,7 +429,7 @@ const SPICEForm = () => {
                 navLabels={{
                     overview: "Overview",
                     advantages: "Advantages",
-                    eligibility: "Eligibility Criteria",
+                    eligibility: "Eligibility",
                     documents: "Documents Required",
                     process: "Process",
                     features: "Features",
@@ -429,12 +438,13 @@ const SPICEForm = () => {
                 }}
                 overview={{
                     badge: "MCA 2020 – SPICe+ Web Form (INC-32)",
-                    title: "SPICe+ Form –",
-                    highlightTitle: "An Overview",
+                    title: "What is SPICe+",
+                    highlightTitle: "Form?",
                     description: [
-                        "SPICe+ Form, which stands for Simplified Proforma for Incorporating Company Electronically Plus, is an e-application dealing with the incorporation legalities. In 2020, the Ministry of Corporate Affairs notified and deployed the SPICe+ web form to simplify the company incorporation process by reducing paperwork and easing compliance requirements.",
-                        "Apart from name reservation and registration, the SPICe+ Form also serves as a single window to apply for different registrations, including GST, EPFO, ESIC, etc. The SPICe+ Form (INC 32) further aims at consolidating various services and forms, making it a one-stop solution for entrepreneurs and businesses looking to establish their companies.",
-                        "Are you tired of overcoming challenges in the path of company registration? Get Vyombiz expert assistance and file the SPICe+ Form with no hurdle.",
+                        "The SPICe+ (Simplified Proforma for Incorporating Company Electronically Plus) form is an integrated web-based application introduced by the Ministry of Corporate Affairs (MCA) for company incorporation in India.",
+                        "It simplifies the company registration process by combining multiple registrations and statutory services into a single digital form, making it easier for entrepreneurs to establish their business legally.",
+                        "Instead of submitting different applications for various registrations, SPICe+ allows promoters to complete the entire process through one consolidated workflow.",
+                        "Vyombiz managed by Clink Consultancy Services Private Limited helps entrepreneurs navigate the SPICe+ filing process smoothly, ensuring every document and compliance requirement is completed correctly."
                     ],
                     whyIdealTitle: "What is SPICe+ Form MCA?",
                     whyIdealList: [
@@ -445,65 +455,58 @@ const SPICEForm = () => {
                     ]
                 }}
                 advantages={{
-                    title: "Benefits of Filing SPICe+ Form MCA",
+                    title: "Benefits of SPICe+ Company Registration",
                     subtitle: "Why SPICe+ is the most efficient path to company incorporation in India.",
                     list: [
-                        { title: "Simplified Compliance", desc: "Filing SPICe+ Form MCA consolidates multiple registrations into one process, simplifying compliance with incorporation formalities." },
-                        { title: "Digitally Signed Documents", desc: "SPICe+ Form MCA generates digitally signed documents, enhancing security, legal validity, and streamlining workflows." },
-                        { title: "Easy Integration", desc: "SPICe+ Form MCA ensures easy integration with various government departments, making it easier to complete the incorporation process." },
+                        { title: "Simplified Compliance", desc: "SPICe+ removes the complexity of applying for different registrations separately by integrating them into a single application." },
+                        { title: "Faster Business Launch", desc: "Entrepreneurs can start business operations quickly as most statutory registrations are completed during incorporation." },
+                        { title: "Cost Efficient", desc: "Combining multiple registrations into one process reduces administrative and compliance costs." },
+                        { title: "Government-Approved System", desc: "The process operates directly through the MCA platform, ensuring transparency and legal compliance." },
+                        { title: "Better Startup Readiness", desc: "With GST, EPFO, ESIC, and bank account integration available during incorporation, businesses are operational from day one." },
                         { title: "Real-Time Data Validation", desc: "Filing SPICe+ Form MCA enables real-time data validation, ensuring accuracy and reducing errors during the company incorporation process." },
-                        { title: "On-Screen Submission", desc: "SPICe+ Form MCA allows users to make on-screen submission, enabling a seamless and user-friendly process for entering and validating data directly within the web portal." },
-                        { title: "Fast Processing", desc: "Filing SPICe+ Form MCA enables fast processing of the company incorporation process by consolidating multiple applications into a single submission." },
                     ]
                 }}
                 eligibility={eligibilityContent}
                 documents={{
-                    title: "Documents Required for SPICe+ Form MCA",
-                    description: "The following is the list of documents required to serve as mandatory annexures to the SPICe+ Form.",
+                    title: "Documents Required for SPICe+ Filing",
+                    description: "To complete SPICe+ registration successfully, the following documents are typically required:",
                     list: [
-                        "Electronic Memorandum of Association (eMoA)",
-                        "Electronic Articles of Association (eAoA)",
-                        "Declaration by the first director(s) as well as subscriber(s)",
-                        "Proof concerning the office address",
-                        "Copy concerning the utility bills",
-                        "NOC from the owner of the property on which company premises reside",
-                        "Copy of COI of foreign body corporate (if any)",
-                        "Resolution of the promoter company (if the body corporate's name is a promoter)",
-                        "The interest of first director(s) in other companies",
-                        "Consent of Nominee (INC-3) — Applicable for OPC",
-                        "Identifier and residential proof of subscribers, nominee, and applicant",
-                        "Resolution of entities yet to be registered — Chapter XXI (Part 1) Companies",
-                        "Declaration in Form No. INC-14 (for Section 8 Company)",
-                        "Declaration in Form No. INC-15 (for Section 8 Company)",
-                        "Estimate concerning projected annual income and expenditure (Section 8 Company)",
+                        "PAN Card",
+                        "Aadhaar Card / Passport",
+                        "Address proof (bank statement, utility bill)",
+                        "Passport size photograph",
+                        "Rental agreement or ownership proof",
+                        "Utility bill (electricity, gas, or water bill)",
+                        "NOC from property owner",
+                        "Memorandum of Association (MOA)",
+                        "Articles of Association (AOA)",
+                        "Digital Signature Certificates (DSC)",
                     ],
                     imageUrl: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                 }}
                 process={{
-                    title: "Procedure for Filing SPICe+ Company Incorporation Form",
-                    subtitle: "Step-by-step guide to filing the SPICe+ Form on the MCA portal.",
+                    title: "Step-by-Step SPICe+ Registration Process",
+                    subtitle: "A step-by-step guide to filing the SPICe+ Form on the MCA portal.",
                     steps: [
-                        { step: "01", title: "Create SPICe+ Login Credentials", desc: "Log on to the MCA portal and create SPICe+ login credentials for the submission of fresh applications." },
-                        { step: "02", title: "File SPICe+ Part A", desc: "File a new application, SPICe+ Part A, containing fields concerning class, sub-category, and proposed name of the company." },
-                        { step: "03", title: "File SPICe+ Part B", desc: "Once Part A is filed and the name approval letter is received, file each section of SPICe+ Form Part B concerning basic details related to company incorporation." },
-                        { step: "04", title: "Other Linked Mandatory Forms", desc: "After submitting Part B, file other linked forms such as eMoA, eAoA, eForm URC-1, and the AGILE PRO S application form (INC-35), if applicable." },
-                        { step: "05", title: "Receipt of Certificate of Incorporation", desc: "Once all relevant forms are successfully filed and verified, the MCA issues the Certificate of Incorporation (COI) in Form INC 11, containing CIN, PAN, TAN, and date of incorporation." },
+                        { step: "01", title: "Obtain Digital Signature Certificate (DSC)", desc: "Directors and subscribers must obtain a DSC to sign documents electronically." },
+                        { step: "02", title: "Reserve Company Name (Part A)", desc: "Submit the proposed company name through SPICe+ Part A for MCA approval." },
+                        { step: "03", title: "Prepare Incorporation Documents", desc: "Draft MOA, AOA, and other supporting documents required for incorporation." },
+                        { step: "04", title: "Complete SPICe+ Part B", desc: "Submit company details, director information, registered office details, and capital structure." },
+                        { step: "05", title: "Apply for Statutory Registrations", desc: "Select optional registrations like GST, EPFO, ESIC, and Professional Tax if applicable." },
+                        { step: "06", title: "Receive Certificate of Incorporation", desc: "Once approved by MCA, the company receives its Certificate of Incorporation along with PAN and TAN." },
                     ]
                 }}
                 features={featuresContent}
                 postCompliance={postComplianceContent}
                 whyChooseUs={{
-                    title: "Why Trust Vyombiz for Filing SPICe+ Form MCA?",
-                    subtitle: "75% market share in compliance — your trusted partner for seamless company incorporation.",
+                    title: "Why Choose Vyombiz for SPICe+ Filing?",
+                    subtitle: "Starting a company involves multiple legal and compliance requirements. Working with experienced professionals ensures your application is accurate, compliant, and approved quickly.",
                     list: [
-                        { title: "75% Market Share", desc: "We are the industry leader in the compliance segment, with a positive market share of 75%." },
-                        { title: "Simplified Documentation", desc: "Vyombiz simplifies the process of filing relevant forms required to incorporate a company in India." },
-                        { title: "Cost-Effective Solutions", desc: "We provide transparent and cost-effective solutions that are ideal for starting a company through the filing of SPICe+ Forms in India." },
-                        { title: "Comprehensive Technical Support", desc: "We offer comprehensive technical support for filing SPICe+ forms, guaranteeing successful company incorporation." },
-                        { title: "Ease the Incorporation of Section 8 Companies", desc: "Our experts at Vyombiz streamline the incorporation of Section 8 companies through SPICe+ Form in India." },
-                        { title: "Efficient and Hassle-Free Incorporation", desc: "Vyombiz offers comprehensive services streamlining SPICe+ registration, ensuring efficient and hassle-free business setup in India." },
-                        { title: "End-to-End Support Services", desc: "Vyombiz provides end-to-end support services for SPICe+ registration and all other relevant linked forms." },
-                        { title: "24/7 Availability", desc: "Our experts at Vyombiz are readily available to make the process of filing the SPICe+ Form enjoyable." },
+                        { title: "Professional guidance for SPICe+ filing", desc: "Our experts ensure every step follows MCA regulations." },
+                        { title: "Name approval assistance", desc: "We help you select and reserve a unique company name." },
+                        { title: "Documentation preparation", desc: "We prepare and verify all required documents and forms." },
+                        { title: "MCA compliance support", desc: "We ensure full compliance with all regulatory requirements." },
+                        { title: "End-to-end company registration management", desc: "From DSC to COI, we handle the complete process." },
                         { title: "Expertise in Regulatory Compliance", desc: "With our expertise and experience, we ensure the smooth filing of the SPICe+ form, guaranteeing compliance with all necessary MCA regulations." },
                     ]
                 }}
@@ -511,8 +514,8 @@ const SPICEForm = () => {
 
             {/* ================= FAQ SECTION ================= */}
             <FAQLayout
-                title="Frequently Asked Questions on SPICe+ Form"
-                subtitle="Have a look at the answers to the most asked questions on SPICe+ Form"
+                title="Frequently Asked Questions (FAQs)"
+                subtitle="Common questions about SPICe+ Form answered by our experts"
                 faqs={faqs}
             />
 

@@ -12,6 +12,10 @@ import TalkExpert from "../../../components/common/TalkExpert.jsx";
  */
 const ChangeinDirectors = () => {
     const faqs = [
+        { question: "How long does it take to change a director in a company?", answer: "The process usually takes 5–10 working days, depending on document availability and MCA processing time." },
+        { question: "Is a DIN mandatory for becoming a director?", answer: "Yes. A Director Identification Number (DIN) is mandatory for anyone appointed as a director in an Indian company." },
+        { question: "Can a director resign at any time?", answer: "Yes, a director can resign at any time by submitting a resignation letter to the company and filing the necessary forms with the MCA." },
+        { question: "What happens if director changes are not reported?", answer: "Failure to report changes to the Registrar of Companies (ROC) may result in penalties and compliance issues for the company." },
         { question: "Can a company remove their directors without their consent?", answer: "A director can be removed without consent only when the director does not comply with the laws of the company or acts against the benefit of the company. However, such removal must be done according to the specified procedure under Section 169 of the Companies Act, 2013." },
         { question: "Is resigning from the post of director the same as removal?", answer: "No. Resignation is a voluntary act initiated by the director themselves by submitting a written notice to the company under Section 168. Removal is initiated by the shareholders via an ordinary resolution in a General Meeting under Section 169. Both require filing DIR-12 with the ROC within 30 days." },
         { question: "Is it necessary for the outgoing director to transfer or sell their shares?", answer: "No. The directorship and shareholding are entirely separate. An outgoing director — whether by resignation or removal — keeps their shares unless they independently choose to transfer them. There is no mandatory share transfer requirement upon change of directorship." },
@@ -114,8 +118,8 @@ const ChangeinDirectors = () => {
             <HeroLayout
                 heroTitleMain="Change in "
                 heroTitleSuffix="Directors"
-                heroSubtitle="Director Appointment, Resignation & Removal under Sections 160, 168 & 169 — Companies Act 2013"
-                heroDescription="Report all changes in your company's Board of Directors accurately and on time with Vyombiz. From DIR-11 and DIR-12 filings to MGT-14 resolutions and MCA database updates — we handle every step with precision and speed."
+                heroSubtitle="Change in Directors of Your Company – Fast, Compliant & Hassle-Free"
+                heroDescription="Update your company's board structure smoothly with expert assistance. Whether appointing a new director or removing an existing one, ensure complete MCA compliance and legal accuracy. Stay compliant while focusing on growing your business."
                 whatsIncludedList={["DIN Application (DIR-3)", "Appointment (DIR-12)", "Resignation (DIR-11 + DIR-12)", "Removal (MGT-14 + DIR-12)"]}
                 stats={[
                     { count: "30 Days", label: "DIR-12 Filing Deadline", icon: <Clock size={20} /> },
@@ -129,34 +133,61 @@ const ChangeinDirectors = () => {
                 navLabels={{ overview: "Overview", advantages: "Director", faq: "FAQs" }}
                 overview={{
                     badge: "Companies Act 2013 — Sections 160, 168 & 169 | DIR-12 | DIR-11",
-                    title: "Change in Directors —",
-                    highlightTitle: "An Overview",
+                    title: "What is Change in",
+                    highlightTitle: "Directors?",
                     description: [
-                        "A company is an artificial person. Unlike a living person, a corporate entity lacks the mind, hands, and intention to act independently. As a result, it must act through living human beings — its directors. The directors are in charge of the company's operations.",
-                        "A director is a person who regulates the overall operation of any organisation by utilising various abilities and plays a significant role in the path of the organisation's success. A director is appointed under the terms of the Companies Act, 2013 to manage the day-to-day operations. Any change in directors must be reported to the concerned ROC by filing e-Form DIR-12 within 30 days from the date of the resolution for change.",
+                        "A Change in Directors refers to any modification in the board composition of a company. This may include the appointment of a new director, resignation of an existing director, removal of a director, or replacement of a director.",
+                        "Every company registered under the Companies Act, 2013 must inform the Ministry of Corporate Affairs (MCA) whenever such changes occur. The update must be filed through prescribed forms and supported by necessary documentation.",
+                        "Handling this process properly is essential to maintain legal compliance and ensure the company's governance structure remains valid.",
+                        "Businesses rely on Vyombiz managed by Clink Consultancy Services Private Limited to simplify these compliance procedures and avoid regulatory risks."
                     ],
-                    whyIdealTitle: "Director — Meaning and Key Sections",
+                    whyIdealTitle: "Types of Director Changes",
                     whyIdealList: [
-                        { title: "Director Meaning — Section 2(13)", desc: "Section 2(13) of the Companies Act, 1956 states that a director is any person exercising the function of Director, by whatever name called. The Articles of Association cover their appointment, duties, retirement rights, and remuneration." },
-                        { title: "Section 160 — Appointment", desc: "Outlines the process of appointing a member as a director (other than a retiring director) under Rule 13 of the Companies (Appointment and Qualification of Directors) Rules, 2014." },
-                        { title: "Section 168 — Resignation", desc: "Provides a comprehensive framework for the resignation of directors — including notice requirements, effective date of resignation, and mandatory DIR-11 filing by the director." },
-                        { title: "Section 169 — Removal", desc: "Gives shareholders the right to remove a director by passing an ordinary resolution in a General Meeting, after issuing special notice and giving the concerned director an opportunity to be heard." },
+                        { title: "Appointment of a New Director", desc: "A company may appoint a new director to expand its management team, bring in expertise, or meet statutory requirements." },
+                        { title: "Resignation of a Director", desc: "A director may voluntarily resign from their position. The company must record the resignation and notify the MCA within the required timeline." },
+                        { title: "Removal of a Director", desc: "Shareholders may remove a director before the completion of their tenure through a formal resolution." },
+                        { title: "Replacement of a Director", desc: "Companies may replace a director due to resignation, removal, retirement, or strategic restructuring." },
                     ]
                 }}
                 advantages={directorContent}
-                whyChooseUs={{
-                    title: "How Vyombiz Handles Change in Directors",
-                    subtitle: "Smooth, compliant, and timely filing for all director changes — appointment, resignation, and removal.",
+                documents={{
+                    title: "Documents Required for Change in Directors",
+                    description: "To process the change in directors, the following documents are generally required. Submitting accurate documentation ensures smooth approval from the MCA.",
                     list: [
+                        "Director Identification Number (DIN)",
+                        "PAN Card of the proposed director",
+                        "Identity proof (Aadhaar / Passport / Voter ID)",
+                        "Address proof",
+                        "Digital Signature Certificate (DSC)",
+                        "Consent to act as director (Form DIR-2)",
+                        "Board resolution for appointment or removal",
+                        "Resignation letter (if applicable)",
+                    ]
+                }}
+                process={{
+                    title: "Process for Change in Directors",
+                    subtitle: "A step-by-step guide to updating your company's board structure.",
+                    steps: [
+                        { step: "01", title: "Board Resolution", desc: "The company passes a board resolution approving the appointment, resignation, or removal of the director." },
+                        { step: "02", title: "Obtain Consent and Documents", desc: "The proposed director provides consent along with required identification documents." },
+                        { step: "03", title: "Filing with MCA", desc: "Relevant forms such as DIR-12 are filed with the Ministry of Corporate Affairs." },
+                        { step: "04", title: "ROC Approval", desc: "The Registrar of Companies reviews the application and updates the company's official records." },
+                    ]
+                }}
+                whyChooseUs={{
+                    title: "Why Choose Vyombiz for Director Changes?",
+                    subtitle: "Handling secretarial compliance requires precision and legal expertise.",
+                    list: [
+                        { title: "Expert compliance professionals", desc: "Our team ensures every step follows Companies Act regulations." },
+                        { title: "Accurate MCA filing", desc: "We prepare and file all necessary forms with complete accuracy." },
+                        { title: "End-to-end documentation support", desc: "We help gather and verify all required documents and resolutions." },
+                        { title: "Faster processing timelines", desc: "Our streamlined process ensures quick and efficient filing." },
+                        { title: "Transparent service approach", desc: "Clear communication and complete transparency throughout the process." },
                         { title: "One-Stop Solution", desc: "For a smooth and prompt processing of change of directors, Vyombiz handles all the necessary forms and paperwork for your business — from minor restructuring of one or two directors to complex multi-director changes for larger enterprises." },
-                        { title: "Expert Legal Team", desc: "Years of experience in director change compliance allow our team to anticipate requirements, prepare accurate resolutions, and guide you through the entire process." },
-                        { title: "Timely MCA Filings", desc: "We ensure DIR-11, DIR-12, and MGT-14 are filed within the mandated 30-day deadline to avoid penalties and MCA non-compliance notices." },
-                        { title: "DIN & DSC Management", desc: "We assist with DIN applications (DIR-3), KYC updates (DIR-3 KYC), and DSC arrangements for incoming directors." },
-                        { title: "Post-Change Support", desc: "We ensure the MCA master data is updated accurately and assist with any further updates to GSTN, bank accounts, licenses, and other registrations reflecting the new director details." },
                     ]
                 }}
             />
-            <FAQLayout title="FAQs on Change in Directors" subtitle="Common questions about director change procedures answered by our experts" faqs={faqs} />
+            <FAQLayout title="Frequently Asked Questions (FAQs)" subtitle="Common questions about director change procedures answered by our experts" faqs={faqs} />
         </div>
     );
 };

@@ -19,6 +19,22 @@ const Section8CompanyCompliance = () => {
     /* ─── FAQs ───────────────────────────────────────────────── */
     const faqs = [
         {
+            question: "Is compliance mandatory for Section 8 companies?",
+            answer: "Yes. Section 8 companies must comply with annual ROC filings, board meetings, financial reporting, and other regulatory requirements under the Companies Act, 2013."
+        },
+        {
+            question: "How many board meetings are required for a Section 8 company?",
+            answer: "A minimum of two board meetings every year must be conducted."
+        },
+        {
+            question: "What happens if Section 8 compliance is not completed?",
+            answer: "Failure to comply can result in penalties, legal notices, and in severe cases cancellation of the company's Section 8 status."
+        },
+        {
+            question: "Do Section 8 companies need to file income tax returns?",
+            answer: "Yes. Even if the company has tax exemptions, it must file income tax returns and maintain proper records."
+        },
+        {
             question: "Can Section 8 Company be incorporated both as Private and Public Limited Company?",
             answer: "Yes, it is the candidate's decision to incorporate a Section 8 Company as a private or public limited company, upon meeting the compliance requirements — 2 Directors and 2 members for a private company, and 3 Directors and 7 members for a Public Limited Company. However, One Person Company (OPC) cannot be incorporated as a Section 8 Company as per Rule 3 of the Companies (Incorporation) Rules, 2014."
         },
@@ -68,45 +84,44 @@ const Section8CompanyCompliance = () => {
             <div>
                 <h3 className="text-lg font-bold text-[#072b47] mb-6 flex items-center gap-2">
                     <BookOpen size={18} className="text-[#005a9c]" />
-                    List of Mandatory Section 8 Company Compliances
+                    Annual Compliance Checklist for Section 8 Companies
                 </h3>
+                <p className="text-[14px] text-slate-600 mb-4 leading-relaxed">
+                    To stay compliant with corporate regulations, organizations must complete the following activities every financial year:
+                </p>
                 <div className="grid gap-4">
                     {[
                         {
-                            title: "Appointment of Auditor",
-                            desc: "It is compulsory for a Section 8 Company to appoint an auditor to take care of their financial recordings every year."
+                            title: "Board Meetings",
+                            desc: "A minimum of two board meetings every year must be conducted to review operations, finances, and governance matters."
                         },
                         {
-                            title: "Maintaining Registers",
+                            title: "Annual General Meeting (AGM)",
+                            desc: "An AGM must be held every year to present financial statements and discuss key decisions with members. The AGM should be held on or before 30th September with 21 days' notice."
+                        },
+                        {
+                            title: "Filing of Financial Statements (Form AOC-4)",
+                            desc: "The company must submit its financial statements to the Registrar of Companies within 30 days from the date of the AGM."
+                        },
+                        {
+                            title: "Annual Return Filing (Form MGT-7)",
+                            desc: "Every Section 8 company must file an annual return within 60 days from the conclusion of the AGM, containing details about shareholders, directors, and company activities."
+                        },
+                        {
+                            title: "Income Tax Compliance",
+                            desc: "If the organization has tax exemptions under Section 12A or 80G, periodic tax filings and compliance must be maintained. ITR must be filed by 30th September."
+                        },
+                        {
+                            title: "Maintaining Statutory Registers",
                             desc: "Maintaining statutory records in registers is expected from Section 8 Companies. These registers are maintained on a yearly basis and contain information related to members, loans, charges, and investments."
                         },
                         {
-                            title: "Maintenance of Financial Statements",
-                            desc: "Financial records of a Section 8 Company are maintained on an annual basis and presented before the Registrar. Financial records consist of Trading Account, Profit and Loss Account, and Balance Sheet."
-                        },
-                        {
                             title: "Preparing Director's Report",
-                            desc: "Section 134 of the Companies Act, 2013 requires filing Form AOC-4 along with the Director's Report, giving shareholders a preview of the financial position and business scope. The signed minutes of meetings must be maintained at the Registered Office."
+                            desc: "Section 134 of the Companies Act, 2013 requires filing Form AOC-4 along with the Director's Report, giving shareholders a preview of the financial position and business scope."
                         },
                         {
-                            title: "Income Tax Return Filing",
-                            desc: "Section 8 Companies are required to file Income Tax Returns on or before 30th September of the next fiscal year. Companies registered under Section 12A and 80G may avail tax exemption benefits."
-                        },
-                        {
-                            title: "Conduct Board Meeting",
-                            desc: "Board meetings should be held at least twice a year for small companies. The gap between the two meetings should not be more than 90 days."
-                        },
-                        {
-                            title: "Conduct Annual General Meeting (AGM)",
-                            desc: "The AGM of the Section 8 Company should be held yearly on or before 30th September. All directors, members, and auditors must attend. Minimum 21 days' notice is required. Form MGT-15 is used to submit the AGM report within 30 days of the meeting."
-                        },
-                        {
-                            title: "Filing of Financial Return with RoC",
-                            desc: "E-form AOC-4 is used to file the copy of financial statements. It is filed within 30 days from the date on which the Annual General Meeting is held."
-                        },
-                        {
-                            title: "Filing of Annual Return with RoC",
-                            desc: "Form MGT-7 is used to file the annual return of the company within 60 days from the conclusion of the AGM. If no AGM is held, the annual return must be filed within 60 days from the day the AGM ought to have been held (30th September)."
+                            title: "Appointment of Auditor",
+                            desc: "It is compulsory for a Section 8 Company to appoint an auditor to take care of their financial recordings every year."
                         },
                     ].map((item, i) => (
                         <div key={i} className="flex items-start gap-4 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-5">
@@ -219,28 +234,32 @@ const Section8CompanyCompliance = () => {
         <div className="space-y-6">
             <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
                 <AlertTriangle size={18} className="text-amber-500" />
-                Penalties to be Charged in Case of Non-Compliance
+                Penalties for Non-Compliance
             </h3>
             <p className="text-[14px] text-slate-600 leading-relaxed mb-4">
-                The Ministry of Corporate Affairs has the authority to impose certain penalties in case it encounters any non-compliance with the prescribed procedures.
+                Failure to meet statutory obligations can result in significant penalties and regulatory consequences. Common risks include:
             </p>
             <div className="grid gap-4">
                 {[
+                    {
+                        severity: "Monetary Penalties",
+                        desc: "Monetary penalties imposed by the Registrar of Companies. For delayed AGM: fine up to Rs. 1,00,000, and Rs. 5,000 per day for continuing default."
+                    },
+                    {
+                        severity: "Disqualification of Directors",
+                        desc: "Directors may be disqualified from holding board positions if compliance requirements are ignored."
+                    },
+                    {
+                        severity: "Loss of Tax Benefits",
+                        desc: "Loss of tax benefits under Section 12A and 80G of the Income Tax Act."
+                    },
                     {
                         severity: "License Revocation",
                         desc: "The Central Government may revoke the licence granted to the organization if it finds that the organization is functioning fraudulently or in a manner violative of the object of the organization."
                     },
                     {
-                        severity: "Financial Fine",
-                        desc: "The organization will be punishable with a fine of not less than Rs. 10 lakh, which may extend up to Rs. 1 crore."
-                    },
-                    {
-                        severity: "Imprisonment of Directors",
-                        desc: "The directors and every officer of the organization who are in default will be punishable with imprisonment for a term up to three years or with a fine of up to Rs. 25 lakh, or with both."
-                    },
-                    {
-                        severity: "Fraudulent Conduct",
-                        desc: "If it is found that the affairs of the organization were conducted fraudulently, every officer in default will be liable for action under Section 447 of the Companies Act, 2013."
+                        severity: "Legal Action",
+                        desc: "Legal action or cancellation of Section 8 status by regulatory authorities."
                     },
                 ].map((item, i) => (
                     <div key={i} className="flex gap-4 bg-red-50 border border-red-100 rounded-xl p-5">
@@ -262,8 +281,8 @@ const Section8CompanyCompliance = () => {
             <HeroLayout
                 heroTitleMain="Section 8 Company "
                 heroTitleSuffix="Compliance"
-                heroSubtitle="MCA-Mandated Annual & Event-Based Compliance for Non-Profit Companies"
-                heroDescription="Ensure complete Section 8 Company compliance with Vyombiz experts. From auditor appointments to ROC filings, AGM compliance, income tax returns, and event-based obligations — we handle it all."
+                heroSubtitle="Stay Compliant. Sustain Your Mission."
+                heroDescription="Section 8 companies are created to serve social, charitable, and non-profit objectives—but maintaining compliance with the Companies Act, 2013 is equally important to keep that mission alive. With expert compliance support, your organization can focus on impact while the legal responsibilities are handled professionally. Ensure seamless Section 8 compliance with expert guidance."
                 whatsIncludedList={[
                     "Annual Return (MGT-7) Filing",
                     "Financial Statements (AOC-4)",
@@ -284,7 +303,7 @@ const Section8CompanyCompliance = () => {
             <DetailsLayout
                 navLabels={{
                     overview: "Overview",
-                    advantages: "Benefit",
+                    advantages: "Benefits",
                     eligibility: "Listicles",
                     documents: "Documents Required",
                     features: "Other Information",
@@ -293,42 +312,46 @@ const Section8CompanyCompliance = () => {
                 }}
                 overview={{
                     badge: "Companies Act, 2013 – Section 8 Compliance",
-                    title: "Section 8 Company Compliance –",
-                    highlightTitle: "An Overview",
+                    title: "What is Section 8 Company",
+                    highlightTitle: "Compliance?",
                     description: [
-                        "The Companies Act, 2013 has made it mandatory for all Section 8 Companies to adhere to Section 8 Compliance with the MCA (Ministry of Corporate Affairs).",
-                        "The purpose of forming a Section 8 Company is to promote, encourage, and nourish activities related to art, science, sports, commerce, charitable activities, etc. Section 8 Companies can be categorized as Non-Governmental Organizations (NGOs). These companies enjoy the liberty of being treated as a 'Limited Company' even though the word 'Limited' is not added at the end of their names.",
-                        "Concisely, Section 8 Companies work in the direction of promoting needy communities and sectors in India. These companies are not liable to give income or dividend to their members.",
+                        "A Section 8 Company is a special type of non-profit entity registered under the Companies Act, 2013 with the objective of promoting social welfare, education, research, art, charity, environmental protection, and similar causes.",
+                        "Unlike other companies, Section 8 companies operate without the motive of profit distribution. However, they must strictly follow regulatory requirements set by the Ministry of Corporate Affairs (MCA).",
+                        "Regular compliance ensures that the organization maintains its legal status, avoids penalties, and continues to operate transparently.",
+                        "Vyombiz managed by Clink Consultancy Services Private Limited helps non-profit organizations handle their statutory responsibilities efficiently, ensuring full compliance with corporate laws and regulatory frameworks."
                     ],
-                    whyIdealTitle: "What Makes Section 8 Compliance Critical?",
+                    whyIdealTitle: "Why Section 8 Compliance is Important",
                     whyIdealList: [
-                        { title: "Mandatory MCA Compliance", desc: "The Companies Act, 2013 mandates all Section 8 Companies to meet annual and event-based compliance requirements with the MCA." },
-                        { title: "Non-Profit Entity Protection", desc: "Section 8 Companies are non-profit entities — compliance ensures their charitable objectives and license are protected from revocation." },
-                        { title: "Tax Exemption Eligibility", desc: "Compliance with Sections 12A and 80G of the Income Tax Act enables Section 8 Companies to avail significant tax exemption benefits." },
-                        { title: "Credibility & Trust", desc: "Meeting all compliance requirements builds trust with donors, beneficiaries, and stakeholders, ensuring long-term organizational credibility." },
+                        { title: "Maintain legal recognition", desc: "Maintain legal recognition under the Companies Act." },
+                        { title: "Avoid heavy penalties", desc: "Avoid heavy penalties and legal complications." },
+                        { title: "Build trust among donors", desc: "Build trust among donors, partners, and stakeholders." },
+                        { title: "Ensure transparency", desc: "Ensure transparency in financial reporting and continue eligibility for grants and funding." },
                     ]
                 }}
                 advantages={{
-                    title: "Benefits of Section 8 Company Compliance",
-                    subtitle: "Why staying compliant is the best strategy for your Section 8 Company.",
+                    title: "Why Section 8 Company Compliance is Important",
+                    subtitle: "Maintaining compliance is essential not only for legal purposes but also for maintaining credibility among donors, stakeholders, and government authorities.",
                     list: [
-                        { title: "Better Credibility", desc: "Timely compliance gives the company better credibility in the eyes of stakeholders, donors, government authorities, and the general public." },
-                        { title: "Legal Protection", desc: "Compliance protects the company from any legal trouble, notices, or actions initiated by the MCA or Income Tax Department." },
-                        { title: "Avoid Penalties", desc: "Adhering to all compliances helps the company circumvent penalties — including fines of up to Rs. 1 crore and licence revocation." },
-                        { title: "Builds Customer Trust", desc: "Transparent and regular compliance works in the direction of forming trust amongst customers, donors, and beneficiaries." },
-                        { title: "Tax Exemption Benefits", desc: "Compliance with Section 12A and 80G enables the company to avail income tax exemptions, significantly reducing the tax burden." },
-                        { title: "Continuous Operations", desc: "Meeting all compliance obligations ensures the organization's licence remains valid and operations continue without interruption." },
+                        { title: "Maintain legal recognition", desc: "Maintain legal recognition under the Companies Act." },
+                        { title: "Avoid heavy penalties", desc: "Avoid heavy penalties and legal complications." },
+                        { title: "Build trust among donors", desc: "Build trust among donors and partners." },
+                        { title: "Ensure transparency", desc: "Ensure transparency in financial reporting." },
+                        { title: "Continue eligibility for grants", desc: "Continue eligibility for grants and funding." },
+                        { title: "Structured compliance systems", desc: "Vyombiz supports organizations in maintaining structured compliance systems so they can focus on their social mission." },
                     ]
                 }}
                 eligibility={listiclesContent}
                 documents={{
-                    title: "Documents Required for Annual Compliances",
-                    description: "Essential documents required for Section 8 Company annual compliance filings.",
+                    title: "Documents Required for Section 8 Compliance",
+                    description: "To complete annual compliance filings, certain documents and records are required:",
                     list: [
-                        "Memorandum of Association (MOA)",
-                        "Articles of Association (AOA)",
-                        "Digital Signature Certificate (DSC)",
                         "Certificate of Incorporation",
+                        "Memorandum and Articles of Association (MOA & AOA)",
+                        "Financial Statements and Balance Sheet",
+                        "Board Meeting Minutes",
+                        "Director Identification Numbers (DIN) of directors",
+                        "Auditor's Report",
+                        "Annual Return details",
                     ],
                     imageUrl: "https://images.unsplash.com/photo-1554224155-1696413575b8?auto=format&fit=crop&w=800"
                 }}
@@ -336,20 +359,21 @@ const Section8CompanyCompliance = () => {
                 postCompliance={penaltyContent}
                 whyChooseUs={{
                     title: "How Vyombiz Helps with Section 8 Company Compliance",
-                    subtitle: "End-to-end compliance support — so you can focus on your mission while we handle the paperwork.",
+                    subtitle: "Managing compliance can be complex for non-profit organizations that are focused on social impact. Professional support helps simplify the process and ensures all legal requirements are fulfilled.",
                     list: [
-                        { title: "Fill the Form", desc: "Simply fill out our quick intake form — our team will get in touch within 1 hour to begin your Section 8 compliance journey." },
-                        { title: "Get a Call Back", desc: "We provide a prompt call back from our compliance experts to understand your specific requirements and customise a solution for you." },
-                        { title: "Submit Documents", desc: "Our team guides you through document collection — MOA, AOA, DSC, and all other required annexures — ensuring everything is complete and correct." },
-                        { title: "Track Progress", desc: "We keep you updated on every step of the compliance filing process, right from preparation to submission and approval." },
-                        { title: "Get Deliverable", desc: "Receive all compliance certificates, acknowledgements, and filings in a timely manner — completely hassle-free with Vyombiz." },
+                        { title: "Annual ROC filing for Section 8 companies", desc: "We handle all your ROC filing needs accurately and on time." },
+                        { title: "Board meeting documentation support", desc: "Our experts prepare and maintain all board meeting records and minutes." },
+                        { title: "Annual return and financial statement filing", desc: "We ensure timely and error-free filing of AOC-4 and MGT-7." },
+                        { title: "Compliance reminders and calendar management", desc: "Never miss a deadline with our proactive compliance tracking system." },
+                        { title: "Corporate governance advisory", desc: "Get expert advice on maintaining best practices in corporate governance." },
+                        { title: "Legal documentation and reporting", desc: "We manage all statutory documentation and reporting requirements seamlessly." },
                     ]
                 }}
             />
 
             {/* ================= FAQ SECTION ================= */}
             <FAQLayout
-                title="Frequently Asked Questions"
+                title="Frequently Asked Questions (FAQs)"
                 subtitle="Common questions about Section 8 Company Compliance answered by our experts"
                 faqs={faqs}
             />

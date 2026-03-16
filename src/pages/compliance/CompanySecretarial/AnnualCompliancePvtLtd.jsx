@@ -9,12 +9,24 @@ import TalkExpert from "../../../components/common/TalkExpert.jsx";
 const AnnualCompliancePvtLtd = () => {
     const faqs = [
         {
-            question: "Can I submit the annual filing of Pvt Ltd company online?",
-            answer: "Yes, all annual filings for a Private Limited Company can be submitted online through the Ministry of Corporate Affairs (MCA) portal. Vyombiz simplifies this process by handling the entire digital submission for you."
+            question: "Is annual compliance mandatory for all Private Limited Companies?",
+            answer: "Yes. Every Private Limited Company must complete annual compliance filings regardless of business activity or revenue."
         },
         {
-            question: "What are the advantages of maintaining timely private limited company compliance?",
-            answer: "Timely compliance prevents heavy penalties, protects directors from disqualification, maintains the company's 'Active' status, and builds trust with investors and lenders."
+            question: "What is the due date for annual compliance?",
+            answer: "Annual return and financial statement filings must generally be completed within prescribed timelines after the AGM."
+        },
+        {
+            question: "Can a company operate without annual compliance?",
+            answer: "Operating without completing annual compliance can lead to penalties, director disqualification, and possible company strike-off."
+        },
+        {
+            question: "What happens if compliance filings are delayed?",
+            answer: "Late filings attract penalties that accumulate daily until the filing is completed."
+        },
+        {
+            question: "Can compliance filings be corrected later?",
+            answer: "Yes, corrections can be made through revised filings or additional forms depending on the nature of the error."
         },
         {
             question: "What are the major filings for a private limited company?",
@@ -76,11 +88,11 @@ const AnnualCompliancePvtLtd = () => {
 
     const navLabels = {
         overview: "Overview",
-        advantages: "Advantages",
+        advantages: "Benefits",
         eligibility: "Checklist",
         documents: "Documents Required",
         process: "Process",
-        features: "Features",
+        features: "Services",
         dueDates: "Deadline",
         faq: "FAQs"
     };
@@ -88,10 +100,16 @@ const AnnualCompliancePvtLtd = () => {
     return (
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
             <HeroLayout
-                heroTitleMain="Annual Filing for"
-                heroTitleSuffix="Private Limited Company"
-                heroSubtitle="Ensure Worry-Free Annual ROC & Tax Filings"
-                heroDescription="Stay 100% compliant with MCA and Income Tax regulations. Vyombiz handles your AOC-4, MGT-7, Audit, and Tax returns with a 98% on-time filing rate, protecting your company from hefty penalties."
+                heroTitleMain="Annual Compliance for"
+                heroTitleSuffix="Private Limited Companies"
+                heroSubtitle="Stay Compliant. Stay Confident. Grow Without Legal Worries."
+                heroDescription="Running a Private Limited Company in India comes with several mandatory compliance requirements under the Companies Act. Missing deadlines can lead to heavy penalties, director disqualification, and legal complications. Simplify your Annual Compliance with experts. With Vyombiz managed by Clink Consultancy Services Private Limited, your company filings, statutory registers, and ROC submissions are handled accurately and on time — so you can focus on growing your business."
+                whatsIncludedList={[
+                    "ROC Filings",
+                    "Annual Returns & Financial Statements",
+                    "Director KYC Compliance",
+                    "Expert Compliance Support"
+                ]}
                 stats={[
                     { count: "98%", label: "On-Time Filing", icon: <Clock size={20} /> },
                     { count: "5000+", label: "Companies Trusted", icon: <Users size={20} /> },
@@ -105,12 +123,20 @@ const AnnualCompliancePvtLtd = () => {
             <DetailsLayout
                 navLabels={navLabels}
                 overview={{
-                    title: "Annual Filing of",
-                    highlightTitle: "Pvt Ltd Company",
+                    title: "What is Annual Compliance for",
+                    highlightTitle: "Private Limited Companies?",
                     badge: "MCA & ROC COMPLIANCE",
                     description: [
-                        "The annual filing of Pvt Ltd company in India is a mandatory compliance obligation that ensures a company is running as per the Companies Act of 2013 and Income Tax Act of 1961.",
-                        "The procedure involved filing of financial statements, MCA-ROC mandatory requirements, and tax filing returns for annual compliance for a private limited company."
+                        "Annual compliance refers to the mandatory legal filings and regulatory obligations that every Private Limited Company must complete each financial year. These filings are submitted to the Ministry of Corporate Affairs (MCA) to ensure transparency and proper corporate governance.",
+                        "Regardless of whether a company is active, inactive, profitable, or loss-making, it must fulfill annual compliance requirements under the Companies Act 2013.",
+                        "These compliances mainly include:",
+                        "• Filing financial statements",
+                        "• Filing annual returns",
+                        "• Conducting board meetings",
+                        "• Maintaining statutory registers",
+                        "• Auditor appointment filings",
+                        "Businesses that fail to complete these obligations can face substantial penalties and legal consequences.",
+                        "Through Vyombiz managed by Clink Consultancy Services Private Limited, companies receive structured compliance support to ensure every filing is completed accurately and within the required timelines."
                     ],
                     whyIdealTitle: "Mandatory Compliance",
                     whyIdealList: [
@@ -120,44 +146,43 @@ const AnnualCompliancePvtLtd = () => {
                     ]
                 }}
                 advantages={{
-                    title: "What are the Benefits of Private Limited Annual Compliance?",
-                    subtitle: "Ensure transparent, trustworthy and stable business growth.",
+                    title: "Why Annual Compliance is Important",
+                    subtitle: "Maintaining annual compliance is not just a legal requirement — it plays a vital role in building credibility and operational transparency.",
                     list: [
-                        { title: "Saves Lakhs in Fines", desc: "On-time annual compliance saves money by preventing hefty fines and legal disputes." },
-                        { title: "Increases Trust", desc: "Demonstrates transparency and integrity, building trust with creditors and investors." },
-                        { title: "Helpful in Raising Funds", desc: "100% compliant companies find it easier to raise capital from VCs." },
-                        { title: "Business Continuity", desc: "Prevents business closure and permit revocations through continued compliance." },
+                        { title: "Ensures Legal Continuity", desc: "Regular compliance ensures that your company remains legally active and avoids government penalties." },
+                        { title: "Builds Business Credibility", desc: "Properly maintained compliance records improve your company's trustworthiness with investors, banks, and partners." },
+                        { title: "Prevents Heavy Penalties", desc: "Late filings attract daily penalties which can accumulate significantly over time." },
+                        { title: "Supports Business Growth", desc: "A compliant company structure makes it easier to raise funds, obtain loans, and attract strategic partnerships." },
                         { title: "Better Decision Making", desc: "Up-to-date statements help you make informed decisions for growth." },
                         { title: "Good Standing", desc: "Helps maintain active status with the ROC and prevents striking off." }
                     ]
                 }}
                 eligibility={{
-                    title: "Checklist for Annual Compliance",
-                    subtitle: "Mandatory filings and requirements for every Private Limited Company.",
+                    title: "Mandatory Annual Compliance for Private Limited Companies",
+                    subtitle: "Every Private Limited Company in India must fulfill several statutory compliances each year.",
                     list: [
-                        { title: "DPT-3", desc: "Deposits and outstanding loans by June 30." },
-                        { title: "Annual General Meeting", desc: "Hold within 6 months of financial year end." },
-                        { title: "AOC-4", desc: "Financial statement reporting after AGM." },
-                        { title: "MGT-7", desc: "General annual return filing within 60 days of AGM." },
-                        { title: "Board Meetings", desc: "Hold at least four times a year." },
-                        { title: "ITR-6", desc: "Income tax filing by September 30th." },
+                        { title: "Board Meetings", desc: "A company must conduct at least four board meetings in a year, with a maximum gap of 120 days between two meetings." },
+                        { title: "Annual General Meeting (AGM)", desc: "Every company must hold an AGM once every year where shareholders review financial statements and company performance." },
+                        { title: "Financial Statement Filing (Form AOC-4)", desc: "Companies must submit financial statements including balance sheet, profit & loss account, and auditor report to MCA." },
+                        { title: "Annual Return Filing (Form MGT-7)", desc: "This filing contains information about the company's shareholding pattern, directors, and registered office." },
+                        { title: "Director KYC (DIR-3 KYC)", desc: "Every director with a Director Identification Number must complete annual KYC verification." },
+                        { title: "Auditor Appointment (ADT-1)", desc: "The appointment of the statutory auditor must be filed with the ROC." },
                         { title: "Tax Audit", desc: "Submission of audit report within deadlines." },
-                        { title: "Advance Tax", desc: "Quarterly assessment and payment." },
                         { title: "GST & TDS", desc: "Monthly and quarterly filings as per pre-determined deadlines." }
                     ]
                 }}
                 documents={{
-                    title: "Documents Required",
-                    description: "Essential documents needed to complete annual compliance filings:",
+                    title: "Documents Required for Annual Compliance",
+                    description: "To complete annual compliance filings, companies must maintain the following documents. Maintaining these records ensures smooth and error-free compliance submissions.",
                     list: [
+                        "Certificate of Incorporation",
+                        "Memorandum of Association (MOA)",
+                        "Articles of Association (AOA)",
+                        "PAN Card of the Company",
                         "Duly Audited Financial Statements (Balance Sheet, P&L, Notes)",
-                        "Directors' Report signed by the Board",
-                        "Auditors' Report issued by Statutory Auditor",
-                        "Notice of AGM and Minutes of Meeting",
-                        "Board Resolution Checklist",
-                        "List of Shareholders & Debenture holders",
-                        "DSC of Director and Professional (CS/CA)",
-                        "PAN Card and Certificate of Incorporation"
+                        "Director Identification Number (DIN) details",
+                        "Shareholder information",
+                        "Auditor appointment details"
                     ],
                     imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80"
                 }}
@@ -173,14 +198,14 @@ const AnnualCompliancePvtLtd = () => {
                     ]
                 }}
                 features={{
-                    title: "Vyombiz Support Services",
-                    subtitle: "Comprehensive management of your corporate obligations.",
+                    title: "Our Annual Compliance Services",
+                    subtitle: "We provide end-to-end compliance management designed for startups, SMEs, and growing companies.",
                     list: [
-                        { title: "MCA Portal Management", desc: "Assistance with login, submissions, and reminders on the MCA portal." },
-                        { title: "Automated Dashboards", desc: "Cloud-based documentation and error-free return generation." },
-                        { title: "Dedicated Advisor", desc: "Single point of contact expert for all your compliance needs." },
-                        { title: "Compliance Monitoring", desc: "Real-time tracking of regulatory and legislative developments." },
-                        { title: "Secretarial Services", desc: "Preparation of meeting minutes and statutory registers." },
+                        { title: "Compliance Assessment", desc: "We analyze your company's compliance status and identify pending filings." },
+                        { title: "Annual ROC Filings", desc: "Preparation and filing of AOC-4, MGT-7, and other statutory forms." },
+                        { title: "Statutory Register Maintenance", desc: "Maintaining company registers and documentation as required by law." },
+                        { title: "Director Compliance", desc: "DIR-3 KYC filing and director documentation management." },
+                        { title: "Compliance Alerts", desc: "Timely reminders to ensure your company never misses a filing deadline." },
                         { title: "Tax Dashboard", desc: "Complete assessment of Income Tax, GST, and TDS filings." }
                     ]
                 }}
@@ -204,11 +229,22 @@ const AnnualCompliancePvtLtd = () => {
                         ["Individual Director's Report", "-", "Within 21 days before the AGM."]
                     ]
                 }}
+                whyChooseUs={{
+                    title: "Why Choose Us for Annual Compliance?",
+                    subtitle: "Businesses trust Vyombiz managed by Clink Consultancy Services Private Limited to maintain their corporate compliance with efficiency and accuracy.",
+                    list: [
+                        { title: "Experienced Compliance Professionals", desc: "Our team understands regulatory procedures and filing requirements in detail." },
+                        { title: "Timely Filing Assurance", desc: "We track deadlines to ensure filings are completed before penalties arise." },
+                        { title: "Transparent Process", desc: "Clear documentation, professional support, and complete transparency." },
+                        { title: "End-to-End Support", desc: "From compliance assessment to final ROC filing, everything is handled seamlessly." },
+                        { title: "Penalty Avoidance", desc: "By partnering with us, businesses can avoid serious consequences like director disqualification or company strike-off." }
+                    ]
+                }}
             />
 
             <FAQLayout
-                title="Annual Filing FAQs"
-                subtitle="Frequently asked questions about Private Limited Company compliance."
+                title="Frequently Asked Questions (FAQs)"
+                subtitle="Common queries about Private Limited Company Annual Compliance"
                 faqs={faqs}
             />
         </div>

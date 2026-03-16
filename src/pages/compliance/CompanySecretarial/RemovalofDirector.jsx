@@ -12,6 +12,10 @@ import TalkExpert from "../../../components/common/TalkExpert.jsx";
 const RemovalofDirector = () => {
 
     const faqs = [
+        { question: "Can a director be removed without their consent?", answer: "Yes. Shareholders can remove a director through an ordinary resolution under the Companies Act, even without the director's consent." },
+        { question: "Is the director allowed to defend their position?", answer: "Yes. The director must be given an opportunity to present their explanation before the resolution is passed." },
+        { question: "What form is filed with ROC for director removal?", answer: "The company must file Form DIR-12 with the Registrar of Companies after passing the resolution." },
+        { question: "How long does the removal process take?", answer: "The timeline depends on meeting schedules and document preparation, but typically it can be completed within a few weeks." },
         { question: "What is the time permitted for Intimation by Company to all shareholders?", answer: "The company must send notice to its members at least 7 clear days before the meeting, along with a copy of the director's representation (if any)." },
         { question: "How much time does it take for the Removal of Director?", answer: "The process typically takes 15–30 business days. The DIR-12 form must be filed within 30 days from the date of the General Meeting." },
         { question: "Can a company remove its director without his consent?", answer: "Yes, a company can remove a director without consent by passing an ordinary resolution in a General Meeting under Section 169 of the Companies Act, 2013, after giving the director an opportunity to be heard." },
@@ -108,9 +112,11 @@ const RemovalofDirector = () => {
     );
 
     const processSteps = [
-        { step: "01", title: "Incident 1: Suo-Moto via Board (Section 169)", desc: "Shareholders pass an ordinary resolution in a General Meeting. Steps: (1) Issue Board meeting notice (7 days). (2) Pass resolution for General Meeting. (3) Hold General Meeting after 21 days' notice to directors. (4) Give director opportunity to be heard. (5) File DIR-11 and DIR-12 with Board Resolution. (6) Director's name removed from MCA database." },
-        { step: "02", title: "Incident 2: Self-Submission by a Director", desc: "A Director may resign by issuing a resignation letter to the Company. The company must: (1) Pass Board resolution to accept resignation and authorize DIR-11 filing. (2) File DIR-11 with reasons for resignation within 30 days per Rule 16 of Companies Rule, 2014. (3) Attach notice of resignation, proof of dispatch, and acknowledgment of form if received." },
-        { step: "03", title: "Incident 3: Absence from 3 Consecutive Board Meetings", desc: "If a director is absent from all Board meetings for 12 months (even after receiving due notice for all sessions), they are deemed to have vacated office under Section 167 of Companies Act, 2013. Form DIR-12 must be filed on the absent director's name, and their name removed from the MCA." },
+        { step: "01", title: "Issue Special Notice", desc: "Shareholders proposing the removal must send a special notice to the company." },
+        { step: "02", title: "Inform the Director", desc: "The company must notify the concerned director and provide an opportunity to present their explanation." },
+        { step: "03", title: "Conduct General Meeting", desc: "A shareholders' meeting is conducted where an ordinary resolution is passed for removal." },
+        { step: "04", title: "Pass the Resolution", desc: "If the resolution receives majority approval, the director is officially removed." },
+        { step: "05", title: "ROC Filing (DIR-12)", desc: "The company must file Form DIR-12 with the Registrar of Companies to update the director details." },
     ];
 
     const otherInfoContent = (
@@ -160,8 +166,8 @@ const RemovalofDirector = () => {
             <HeroLayout
                 heroTitleMain="Removal of "
                 heroTitleSuffix="Director"
-                heroSubtitle="Statutory Process for Director Removal & Resignation under Companies Act 2013"
-                heroDescription="Navigate the legal process of director removal with confidence. Vyombiz handles all forms — DIR-11, DIR-12, Board Resolutions, and MCA filings — ensuring compliant and timely removal of directors from your company."
+                heroSubtitle="Removal of Director from Company"
+                heroDescription="Legally remove a director from your company with the right compliance process. Avoid penalties, disputes, and regulatory issues by handling the removal through the proper legal procedure. Get expert assistance for smooth documentation, shareholder approvals, and ROC filings. ✔ End-to-End Compliance ✔ Expert Legal Assistance ✔ Quick ROC Filing Support"
                 whatsIncludedList={["Board & General Meeting Notices", "Form DIR-11 & DIR-12 Filing", "MCA Database Update", "Section 169 Compliance"]}
                 stats={[
                     { count: "30 Days", label: "DIR-12 Filing Deadline", icon: <Clock size={20} /> },
@@ -175,11 +181,13 @@ const RemovalofDirector = () => {
                 navLabels={{ overview: "Overview", advantages: "Benefit", eligibility: "Listicles", documents: "Documents Required", process: "Registration Procedure", features: "Other Information", faq: "FAQs" }}
                 overview={{
                     badge: "Companies Act 2013 — Section 169 | Director Removal & Resignation",
-                    title: "Removal of Director —",
-                    highlightTitle: "An Overview",
+                    title: "What is Removal of",
+                    highlightTitle: "Directors?",
                     description: [
-                        "Each private company must have at least 2 directors, whereas a public company must have at least 3 directors. A private company can remove a director if they catch any incompetence specified under the Act, absent themselves from board attendance for 12 months, enter into agreements against the provisions of Section 184, are excluded by a court or Tribunal, or are convicted and sentenced to imprisonment for not less than six months.",
-                        "The removal of a director is a formal process governed by Section 169 of the Companies Act, 2013. Shareholders hold the ultimate power to remove directors through an ordinary resolution passed at a General Meeting.",
+                        "Removal of a director refers to the legal process through which a company removes a director from their position before the completion of their tenure. This action is usually taken when a director fails to perform duties, violates company policies, or when shareholders lose confidence in their management.",
+                        "Under the Companies Act, 2013, shareholders have the authority to remove a director by passing an ordinary resolution during a general meeting, subject to compliance with prescribed procedures.",
+                        "Handling this process correctly is crucial because improper removal may lead to legal disputes or compliance penalties.",
+                        "Vyombiz managed by Clink Consultancy Services Private Limited assists businesses in completing the removal process with proper documentation, regulatory filings, and legal guidance."
                     ],
                     whyIdealTitle: "Key Grounds for Removal of a Director",
                     whyIdealList: [
@@ -193,35 +201,35 @@ const RemovalofDirector = () => {
                 eligibility={listiclesContent}
                 documents={{
                     title: "Documents Required for Removal of Director",
-                    description: "Documents required for the formal removal or resignation of a director from a company.",
+                    description: "The removal process requires certain documents for verification and filing. Proper documentation helps ensure smooth approval from regulatory authorities.",
                     list: [
-                        "Passport-size photograph of the Director to be removed / appointed.",
-                        "Self-attested PAN Card of the Director.",
-                        "Proof of Residency: Aadhar Card / Voter ID / Passport / Driving License.",
-                        "Digital Signature Certificate (DSC) of the existing Director and Director to be removed.",
-                        "Identity proof: Passport / Election Card / Driving License / Aadhar Card.",
-                        "Mobile number and personal/official email ID of the Director.",
-                        "All documents must be apostilled if the Director is a non-resident of India.",
-                        "Notice of resignation filed with the company.",
-                        "Proof of dispatch.",
-                        "Acknowledgment of form, if received.",
+                        "Director Identification Number (DIN)",
+                        "PAN and identity proof of director",
+                        "Board resolution copy",
+                        "Shareholder special notice",
+                        "Ordinary resolution passed during meeting",
+                        "ROC filing documents (DIR-12)",
+                        "Notice of resignation filed with the company (if applicable)",
+                        "Proof of dispatch",
+                        "Acknowledgment of form, if received",
                     ]
                 }}
-                process={{ title: "Manner of Removal of Directors Effecting Companies", subtitle: "Three ways a director can be removed from a company under Companies Act, 2013.", steps: processSteps }}
+                process={{ title: "Process for Removal of Director", subtitle: "The removal process requires several procedural steps to comply with corporate laws.", steps: processSteps }}
                 features={otherInfoContent}
                 whyChooseUs={{
-                    title: "How Vyombiz Handles Director Removal",
+                    title: "Why Choose Vyombiz for Director Removal?",
                     subtitle: "Complete end-to-end support for smooth and compliant director removal proceedings.",
                     list: [
-                        { title: "Select & Initiate", desc: "Start by sharing details of the director removal. Our team helps structure the correct resolution type and required notices." },
-                        { title: "Application Preparation", desc: "We prepare all required forms, ensuring complete accuracy of directors' details, resolutions, and attachments." },
+                        { title: "Expert Legal Guidance", desc: "Our compliance specialists ensure every step follows Companies Act regulations." },
+                        { title: "Complete Documentation Support", desc: "We prepare and verify all required resolutions and forms." },
+                        { title: "Hassle-Free ROC Filing", desc: "Accurate filing reduces the risk of rejection or penalties." },
+                        { title: "End-to-End Assistance", desc: "From notice drafting to final filing, we manage the complete process." },
                         { title: "Fee Processing", desc: "We manage all MCA filing fee payments, ensuring the correct structure is applied based on share capital." },
-                        { title: "Electronic Filing with MCA", desc: "We file all expected forms electronically with the MCA — including DIR-11 and DIR-12 — to designate or remove a director." },
                         { title: "Confirmation & Delivery", desc: "You will receive removal approval notification, digital documents, and MCA acknowledgements within 2–3 business working days." },
                     ]
                 }}
             />
-            <FAQLayout title="Frequently Asked Questions on Removal of Director" subtitle="Common questions answered by our experts" faqs={faqs} />
+            <FAQLayout title="Frequently Asked Questions (FAQs)" subtitle="Common questions answered by our experts" faqs={faqs} />
         </div>
     );
 };
