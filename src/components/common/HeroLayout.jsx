@@ -19,7 +19,8 @@ const HeroLayout = ({
         { count: "50+", label: "Services" }
     ],
     formTitle = "Facing a Legal Issue? Connect with an Expert Lawyer Now!",
-    bgImage = "/lawyer-service-hero-section-img/hero-section-bg-img.png"
+    bgImage = "/lawyer-service-hero-section-img/hero-section-bg-img.png",
+    customForm = null
 }) => {
     const [formData, setFormData] = useState({
         name: "",
@@ -207,130 +208,134 @@ const HeroLayout = ({
 
                     {/* Right Form Card */}
                     <div className="w-full lg:w-[35%] shrink-0">
-                        <div className="bg-white rounded-3xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.12)] border border-slate-100 p-8">
-                            <h3 className="text-[22px] font-semibold text-[#072b47] mb-8 leading-tight text-center">
-                                {formTitle}
-                            </h3>
+                        {customForm ? (
+                            customForm
+                        ) : (
+                            <div className="bg-white rounded-3xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.12)] border border-slate-100 p-8">
+                                <h3 className="text-[22px] font-semibold text-[#072b47] mb-8 leading-tight text-center">
+                                    {formTitle}
+                                </h3>
 
-                            {isSuccess ? (
-                                <div className="text-center py-10">
-                                    <div className="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-5">
-                                        <CheckCircle2 size={32} className="text-green-500" />
+                                {isSuccess ? (
+                                    <div className="text-center py-10">
+                                        <div className="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-5">
+                                            <CheckCircle2 size={32} className="text-green-500" />
+                                        </div>
+                                        <h4 className="text-xl font-black text-[#072b47] mb-2">Thank you for choosing VyomBiz!</h4>
+                                        <p className="text-slate-500 font-bold text-sm mb-7">Our experts will connect with you shortly.</p>
+                                        <button
+                                            onClick={() => setIsSuccess(false)}
+                                            className="text-[#005a9c] font-black text-[11px] uppercase tracking-widest hover:underline"
+                                        >
+                                            New Inquiry
+                                        </button>
                                     </div>
-                                    <h4 className="text-xl font-black text-[#072b47] mb-2">Thank you for choosing VyomBiz!</h4>
-                                    <p className="text-slate-500 font-bold text-sm mb-7">Our experts will connect with you shortly.</p>
-                                    <button
-                                        onClick={() => setIsSuccess(false)}
-                                        className="text-[#005a9c] font-black text-[11px] uppercase tracking-widest hover:underline"
-                                    >
-                                        New Inquiry
-                                    </button>
-                                </div>
-                            ) : (
-                                <form className="space-y-5" onSubmit={handleSubmit}>
-                                    <div className="relative">
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            placeholder="Name"
-                                            value={formData.name}
-                                            onChange={handleChange}
-                                            required
-                                            className={`w-full px-5 py-4 rounded-xl border ${errors.name ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
-                                        />
-                                        {errors.name && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.name}</p>}
-                                    </div>
-                                    <div className="relative">
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            placeholder="Email"
-                                            value={formData.email}
-                                            onChange={handleChange}
-                                            required
-                                            className={`w-full px-5 py-4 rounded-xl border ${errors.email ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
-                                        />
-                                        {errors.email && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.email}</p>}
-                                    </div>
-                                    <div className="relative">
-                                        <input
-                                            type="tel"
-                                            name="phone"
-                                            placeholder="Mobile Number"
-                                            value={formData.phone}
-                                            onChange={handleChange}
-                                            required
-                                            maxLength="10"
-                                            className={`w-full px-5 py-4 rounded-xl border ${errors.phone ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
-                                        />
-                                        {errors.phone && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.phone}</p>}
-                                    </div>
-                                    <div className="flex flex-col gap-4">
-                                        <div className="flex gap-4">
-                                            <div className="relative w-1/2">
-                                                <select
-                                                    name="state"
-                                                    className={`w-full px-5 py-4 rounded-xl border ${errors.state ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all text-slate-700 font-medium appearance-none`}
-                                                    value={formData.state}
-                                                    onChange={handleChange}
-                                                    required
-                                                >
-                                                    <option value="" disabled hidden>Select State</option>
-                                                    {Object.keys(stateCityData).sort().map(state => (
-                                                        <option key={state} value={state}>{state}</option>
-                                                    ))}
-                                                </select>
-                                                {errors.state && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.state}</p>}
+                                ) : (
+                                    <form className="space-y-5" onSubmit={handleSubmit}>
+                                        <div className="relative">
+                                            <input
+                                                type="text"
+                                                name="name"
+                                                placeholder="Name"
+                                                value={formData.name}
+                                                onChange={handleChange}
+                                                required
+                                                className={`w-full px-5 py-4 rounded-xl border ${errors.name ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
+                                            />
+                                            {errors.name && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.name}</p>}
+                                        </div>
+                                        <div className="relative">
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                placeholder="Email"
+                                                value={formData.email}
+                                                onChange={handleChange}
+                                                required
+                                                className={`w-full px-5 py-4 rounded-xl border ${errors.email ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
+                                            />
+                                            {errors.email && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.email}</p>}
+                                        </div>
+                                        <div className="relative">
+                                            <input
+                                                type="tel"
+                                                name="phone"
+                                                placeholder="Mobile Number"
+                                                value={formData.phone}
+                                                onChange={handleChange}
+                                                required
+                                                maxLength="10"
+                                                className={`w-full px-5 py-4 rounded-xl border ${errors.phone ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
+                                            />
+                                            {errors.phone && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.phone}</p>}
+                                        </div>
+                                        <div className="flex flex-col gap-4">
+                                            <div className="flex gap-4">
+                                                <div className="relative w-1/2">
+                                                    <select
+                                                        name="state"
+                                                        className={`w-full px-5 py-4 rounded-xl border ${errors.state ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all text-slate-700 font-medium appearance-none`}
+                                                        value={formData.state}
+                                                        onChange={handleChange}
+                                                        required
+                                                    >
+                                                        <option value="" disabled hidden>Select State</option>
+                                                        {Object.keys(stateCityData).sort().map(state => (
+                                                            <option key={state} value={state}>{state}</option>
+                                                        ))}
+                                                    </select>
+                                                    {errors.state && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.state}</p>}
+                                                </div>
+
+                                                <div className="relative w-1/2">
+                                                    <select
+                                                        name="city"
+                                                        className={`w-full px-5 py-4 rounded-xl border ${errors.city ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all text-slate-700 font-medium appearance-none ${!formData.state ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                                        value={formData.city}
+                                                        onChange={handleChange}
+                                                        required
+                                                        disabled={!formData.state}
+                                                    >
+                                                        <option value="" disabled hidden>Select City</option>
+                                                        {formData.state && stateCityData[formData.state]?.sort().map(city => (
+                                                            <option key={city} value={city}>{city}</option>
+                                                        ))}
+                                                        {formData.state && <option value="Other">Other (Please Specify)</option>}
+                                                    </select>
+                                                    {errors.city && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.city}</p>}
+                                                </div>
                                             </div>
 
-                                            <div className="relative w-1/2">
-                                                <select
-                                                    name="city"
-                                                    className={`w-full px-5 py-4 rounded-xl border ${errors.city ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all text-slate-700 font-medium appearance-none ${!formData.state ? 'opacity-50 cursor-not-allowed' : ''}`}
-                                                    value={formData.city}
-                                                    onChange={handleChange}
-                                                    required
-                                                    disabled={!formData.state}
-                                                >
-                                                    <option value="" disabled hidden>Select City</option>
-                                                    {formData.state && stateCityData[formData.state]?.sort().map(city => (
-                                                        <option key={city} value={city}>{city}</option>
-                                                    ))}
-                                                    {formData.state && <option value="Other">Other (Please Specify)</option>}
-                                                </select>
-                                                {errors.city && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.city}</p>}
-                                            </div>
+                                            {formData.city === "Other" && (
+                                                <div className="relative w-full animate-fadeIn">
+                                                    <input
+                                                        type="text"
+                                                        name="cityOther"
+                                                        placeholder="Enter your city name"
+                                                        value={formData.cityOther}
+                                                        onChange={handleChange}
+                                                        required
+                                                        className={`w-full px-5 py-4 rounded-xl border ${errors.cityOther ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
+                                                    />
+                                                    {errors.cityOther && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.cityOther}</p>}
+                                                </div>
+                                            )}
                                         </div>
 
-                                        {formData.city === "Other" && (
-                                            <div className="relative w-full animate-fadeIn">
-                                                <input
-                                                    type="text"
-                                                    name="cityOther"
-                                                    placeholder="Enter your city name"
-                                                    value={formData.cityOther}
-                                                    onChange={handleChange}
-                                                    required
-                                                    className={`w-full px-5 py-4 rounded-xl border ${errors.cityOther ? 'border-red-400 bg-red-50/20' : 'border-slate-300 bg-slate-50'} focus:border-[#005a9c] focus:bg-white outline-none transition-all placeholder:text-slate-400 text-slate-700 font-medium`}
-                                                />
-                                                {errors.cityOther && <p className="text-red-500 text-[11px] font-bold mt-1 ml-1">{errors.cityOther}</p>}
-                                            </div>
-                                        )}
-                                    </div>
+                                        <div className="text-[11px] text-center text-slate-400 font-bold uppercase tracking-wider">
+                                            By proceeding, you agree to our <a href="#" className="text-[#005a9c] hover:underline">T&C*</a>
+                                        </div>
 
-                                    <div className="text-[11px] text-center text-slate-400 font-bold uppercase tracking-wider">
-                                        By proceeding, you agree to our <a href="#" className="text-[#005a9c] hover:underline">T&C*</a>
-                                    </div>
-
-                                    <button
-                                        type="submit"
-                                        className="w-full bg-[#072b47] text-white font-semibold text-[17px] py-4 rounded-xl hover:bg-slate-800 transition-all shadow-xl shadow-slate-200 active:scale-95"
-                                    >
-                                        Connect with Expert
-                                    </button>
-                                </form>
-                            )}
-                        </div>
+                                        <button
+                                            type="submit"
+                                            className="w-full bg-[#072b47] text-white font-semibold text-[17px] py-4 rounded-xl hover:bg-slate-800 transition-all shadow-xl shadow-slate-200 active:scale-95"
+                                        >
+                                            Connect with Expert
+                                        </button>
+                                    </form>
+                                )}
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
