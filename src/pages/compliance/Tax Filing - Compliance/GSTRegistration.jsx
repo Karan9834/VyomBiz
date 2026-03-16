@@ -14,8 +14,8 @@ const GSTRegistration = () => {
 
     const faqs = [
         {
-            question: "What is GST?",
-            answer: "The Goods and Services Tax, better known as GST, is one single indirect tax structure in India that came into effect after replacing multiple taxes, which were earlier levied on various goods and services."
+            question: "What is GST in India?",
+            answer: "GST (Goods and Services Tax) is a unified indirect tax system implemented in India that replaced several central and state-level taxes on goods and services."
         },
         {
             question: "In which cases GST registration is crucial?",
@@ -205,10 +205,10 @@ const GSTRegistration = () => {
 
             {/* ================= SECTION 1: HERO ================= */}
             <HeroLayout
-                heroTitleMain="GST Registration"
-                heroTitleSuffix="Online"
+                heroTitleMain="Online GST"
+                heroTitleSuffix="Registration"
                 heroSubtitle="Step-by-Step (REG-01) & Expert Help"
-                heroDescription="Are you facing challenges during GST registration? Get your GSTIN quickly with Vyombiz CA/CS guidance. We complete REG-01, verify documents, track your ARN, and ensure error-free application processing."
+                heroDescription="Get your GSTIN quickly with expert CA/CS assistance from Vyombiz. We handle the complete GST REG-01 filing, verify documents, track your ARN status, and ensure a smooth and error-free registration process."
                 whatsIncludedList={[
                     "Document Preparation",
                     "Get ARN in 2-3 Days",
@@ -216,9 +216,9 @@ const GSTRegistration = () => {
                     "Free Consultation with GST Expert"
                 ]}
                 stats={[
-                    { count: "42868+", label: "Happy Clients", icon: <Users size={20} /> },
-                    { count: "3500+", label: "Expert Advisors", icon: <Briefcase size={20} /> },
-                    { count: "50+", label: "Branch Offices", icon: <Building2 size={20} /> }
+                    { count: "42,000+", label: "Satisfied Clients", icon: <Users size={20} /> },
+                    { count: "3,500+", label: "Professional Advisors", icon: <Briefcase size={20} /> },
+                    { count: "50+", label: "Service Locations", icon: <Building2 size={20} /> }
                 ]}
             />
 
@@ -228,47 +228,47 @@ const GSTRegistration = () => {
             {/* ================= DETAILS SECTION ================= */}
             <DetailsLayout
                 overview={{
-                    badge: "GST Apply in 1 Hour",
-                    title: "GST Registration –",
-                    highlightTitle: "An Overview",
+                    badge: "Apply for GST Registration Easily",
+                    title: "Overview of",
+                    highlightTitle: "GST Registration",
                     description: [
-                        "If you are looking for GST registration to empower your business legally, you are at the right place.",
-                        "The Goods and Services Tax, popularly known as GST, was introduced on July 1, 2017, as a replacement for various central and state-level taxes, including Service Tax, Excise Duty, CST, Entertainment Tax, Luxury Tax, and VAT. GST introduction has since ensured the streamlining of the tax process in India. GST registration is mandatory for traders, service providers, manufacturers, and freelancers.",
-                        "GST has united various indirect taxes, including VAT, service tax, and excise duty, into a unified single tax system. The consolidation of multiple taxes restructured as GST has streamlined compliance, lowered tax evasions, eliminated the domino effect of taxes, promoted the ease of doing business, and boosted the efficacy of the country’s economy.",
-                        "Talk to consultants at Vyombiz and enjoy easy and timely GST registration in India.",
+                        "If you are planning to register your business under GST, you are in the right place to get professional assistance.",
+                        "The Goods and Services Tax (GST) was introduced in India on July 1, 2017, replacing multiple indirect taxes such as Service Tax, Excise Duty, VAT, CST, and Luxury Tax. The introduction of GST created a unified tax structure that simplified the indirect taxation system in India. GST registration is mandatory for businesses such as traders, manufacturers, service providers, and freelancers that meet the prescribed criteria.",
+                        "GST integrates several indirect taxes into a single tax system, making compliance simpler and more transparent. The new tax regime reduces cascading taxes, minimizes tax evasion, and improves the overall ease of doing business in India.",
+                        "Consult Vyombiz experts to complete your GST registration smoothly and without delays.",
                         <strong>What is a GST Registration Certificate?</strong>,
-                        "GST registration certificate is an official document issued by the Government of India to business entities registered under the GST framework. It stands as a testimony to the entity’s legal standing. The certificate displays critical information, including the GST identification number, business name, and official address.",
-                        "The GST Certificate is important for accomplishing tax obligations and crucial in cementing an entity’s credibility and operational legality. Furthermore, GST registration verification is essential for LLPs, OPCs, private limited companies and public limited companies as well."
+                        "A GST Registration Certificate is an official document issued by the Government of India to businesses registered under the GST system. It confirms that the entity is legally registered and authorized to collect GST. The certificate includes key details such as the GST Identification Number (GSTIN), business name, and registered business address.",
+                        "The GST certificate helps businesses comply with tax obligations and strengthens their legal credibility. It is also an important requirement for entities such as LLPs, OPCs, private limited companies, and public limited companies."
                     ],
                     whyIdealTitle: "Timeline and Fees",
                     whyIdealList: [
-                        { title: "7-10 Days", desc: "Estimated timeline for getting GST registration approval from authorities." },
-                        { title: "No Direct Govt Fees", desc: "The government charges no direct fees for obtaining a GST certificate online." },
-                        { title: "Rs. 1999/- onwards", desc: "Vyombiz GST registration fees start from Rs. 1999/- and vary from state to state." },
-                        { title: "Around 30 Days", desc: "Depending on specific business needs and nature, overall documentation can take up to 30 days." }
+                        { title: "7–10 Working Days", desc: "Estimated time for GST registration approval by authorities." },
+                        { title: "No Government Registration Fees", desc: "The government does not charge any direct fee for GST registration." },
+                        { title: "₹1,999 Onwards", desc: "Vyombiz GST registration service fees start from ₹1,999 and may vary depending on the business type and location." },
+                        { title: "Up to 30 Days", desc: "Depending on the business structure and documentation requirements, the process may take up to 30 days." }
                     ]
                 }}
                 advantages={{
-                    title: "What are the Benefits of GST Registration?",
+                    title: "Benefits of GST Registration",
                     subtitle: "Empower your business with legal recognition and growth opportunities.",
                     list: [
-                        { title: "Regulatory Compliance", desc: "GST registration safeguards the interests of entities operating in India. It ensures their legal compliance, saving them from paying penalties." },
-                        { title: "Easy Compliance", desc: "GST registration is not a complicated process. It helps entities streamline their processes for filing tax returns and making online payments." },
-                        { title: "Maintains Transparency", desc: "Allows business entities to maintain updated records. This helps build reliability and facilitates operational transparency." },
-                        { title: "Legal Protection", desc: "Safeguards the legal and regulatory standards of the business, thereby protecting their legal rights and operational stability." },
-                        { title: "Improve Credit Score", desc: "Businesses that manage their GST and other regulatory compliances easily boost their credit profile with financial bodies." },
-                        { title: "Market Advantage", desc: "Businesses with GST registration earn the trust of their customers, which attracts more business opportunities for them in the future." }
+                        { title: "Legal Compliance", desc: "GST registration ensures businesses operate legally and helps avoid penalties for non-compliance." },
+                        { title: "Simplified Tax Filing", desc: "GST provides a structured system for filing returns and making tax payments online." },
+                        { title: "Improved Transparency", desc: "Maintaining proper GST records helps businesses operate with transparency and credibility." },
+                        { title: "Legal Recognition", desc: "GST registration provides legal recognition to the business under the national tax framework." },
+                        { title: "Better Financial Credibility", desc: "Proper tax compliance improves business credibility with banks and financial institutions." },
+                        { title: "Business Growth Opportunities", desc: "Registered businesses gain customer trust and can expand operations more easily." }
                     ]
                 }}
                 eligibility={{
-                    title: "Eligibility Criteria for GST Registration",
+                    title: "Who Must Register for GST?",
                     subtitle: "Check if your business is required to register for GST.",
                     list: [
-                        { title: "Turnover > ₹40 Lakhs", desc: "Businesses having an aggregate annual turnover of more than INR 40 Lakhs. (INR 20 Lakhs for special category states)." },
-                        { title: "Service Providers > ₹20 Lakhs", desc: "All service providers with aggregate annual turnover over INR 20 Lakhs. (INR 10 Lakhs for special category states)." },
-                        { title: "Inter-State Boundaries", desc: "Any individual or business dealing with goods supplied across state boundaries." },
-                        { title: "Reverse Charge", desc: "Businesses that are bound by the framework to pay tax under the reverse charge mechanism." },
-                        { title: "E-Commerce Operators", desc: "All operators and aggregators delivering goods and services through e-commerce platforms." },
+                        { title: "Businesses with Turnover Above ₹40 Lakhs", desc: "Businesses with annual turnover exceeding ₹40 lakhs (₹20 lakhs for special category states)." },
+                        { title: "Service Providers with Turnover Above ₹20 Lakhs", desc: "Service providers with annual turnover exceeding ₹20 lakhs (₹10 lakhs in special category states)." },
+                        { title: "Inter-State Supply of Goods", desc: "Businesses supplying goods across different states must register under GST." },
+                        { title: "Reverse Charge Liability", desc: "Businesses liable to pay tax under the reverse charge mechanism must register." },
+                        { title: "E-Commerce Operators", desc: "Online marketplaces and aggregators supplying goods or services must obtain GST registration." },
                         { title: "Agents & Representatives", desc: "Input service distributors and anyone who supplies goods and services on behalf of the main principal." },
                         { title: "Non-Resident Taxpayers", desc: "Non-residents who do not reside in India but are involved in taxable dealings within India." },
                         { title: "OIDAR Services", desc: "Entities offering database access or retrieval services from outside India to individuals within India." },
@@ -294,14 +294,14 @@ const GSTRegistration = () => {
                     imageUrl: "https://images.unsplash.com/photo-1554224155-9dcd0b1760a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                 }}
                 process={{
-                    title: "How to Apply for GST Registration Online?",
+                    title: "GST Registration Process",
                     subtitle: "The process of GST registration is now easy and simple in 5 steps.",
                     steps: [
-                        { step: "01", title: "Apply on the GST Portal", desc: "Visit the GST portal and enter all required details, including legal business name, PAN, email ID, mobile number, state, and district." },
-                        { step: "02", title: "Authenticate OTP", desc: "After submitting the details, you will receive an OTP on your registered mobile number and email ID for verification." },
-                        { step: "03", title: "TRN Generated", desc: "Once the OTP is verified, a Temporary Reference Number (TRN) is generated and sent to your registered email." },
-                        { step: "04", title: "Submission for Verification", desc: "Provide detailed information about the business, including promoter details, place of business, business type, and submit with DSC." },
-                        { step: "05", title: "Receive ARN Confirmation", desc: "After saving and submitting the application, an Application Reference Number (ARN) is generated and sent via SMS for tracking." }
+                        { step: "01", title: "Fill GST Application", desc: "Submit the required business details on the GST portal including legal name, PAN, email, and mobile number." },
+                        { step: "02", title: "OTP Verification", desc: "An OTP is sent to the registered mobile number and email for verification." },
+                        { step: "03", title: "Temporary Reference Number (TRN)", desc: "After verification, a TRN is generated for completing the application process." },
+                        { step: "04", title: "Submit Application", desc: "Provide business details, promoter information, and upload documents before submitting the application." },
+                        { step: "05", title: "Receive ARN Number", desc: "After submission, an Application Reference Number (ARN) is generated for tracking your GST application." }
                     ]
                 }}
                 typesOfCompliance={{
@@ -326,13 +326,13 @@ const GSTRegistration = () => {
                     ]
                 }}
                 whyChooseUs={{
-                    title: "Why Trust Vyombiz for GST Registration?",
+                    title: "Why Choose Vyombiz for GST Registration?",
                     subtitle: "Simplified registration with high success rates.",
                     list: [
-                        { title: "Simplified Registration", desc: "We at Vyombiz have successfully processed and simplified around 5000+ GST registration applications in India." },
-                        { title: "High Success Rate", desc: "We at Vyombiz guarantee a 99% business success rate while obtaining a GST registration certificate in India." },
-                        { title: "Simplify Documentation", desc: "We seamlessly assist in simplifying the heavy paperwork and documentation required to obtain a GST certificate." },
-                        { title: "Legal Advice", desc: "Vyombiz provides deep legal advice and regular regulatory updates to simplify the legal necessities." },
+                        { title: "Simple Registration Process", desc: "We simplify the GST registration process for businesses across India." },
+                        { title: "High Approval Rate", desc: "Our experts ensure accurate documentation and a high success rate in GST applications." },
+                        { title: "Documentation Assistance", desc: "We help prepare and verify all documents required for GST registration." },
+                        { title: "Professional Legal Guidance", desc: "Vyombiz experts provide continuous legal guidance and compliance updates." },
                         { title: "End-to-End Solutions", desc: "We at Vyombiz provide end-to-end solutions to effectively address queries related to GST in India." },
                         { title: "Affordable Pricing", desc: "Vyombiz offers 100% affordable, structured, and transparent pricing for GST registration services." },
                         { title: "Reduces Compliance Burden", desc: "We at Vyombiz ensure that the ongoing tax compliance burden is smoothly reduced by up to 30%." },
