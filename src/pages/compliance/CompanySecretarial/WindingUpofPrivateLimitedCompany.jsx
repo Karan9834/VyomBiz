@@ -14,28 +14,28 @@ const WindingUpofPrivateLimitedCompany = () => {
 
     const faqs = [
         {
+            question: "How long does it take to wind up a private limited company?",
+            answer: "The timeline can vary depending on the type of winding up and the company's financial status. Generally, the process may take several months due to regulatory approvals and compliance steps."
+        },
+        {
+            question: "Can a company with liabilities be wound up?",
+            answer: "Yes, but liabilities must be settled during the winding-up process before the company can be dissolved."
+        },
+        {
+            question: "Is winding up different from striking off a company?",
+            answer: "Yes. Striking off is usually used for inactive companies with no liabilities, while winding up involves a structured liquidation and settlement process."
+        },
+        {
+            question: "Do directors remain liable after winding up?",
+            answer: "Once the winding-up process is completed and approved, directors are generally relieved from future liabilities related to the company."
+        },
+        {
             question: "What are the main reasons companies wind up?",
             answer: "A company decides to wind up mostly when it is not active, or it is failing to fulfil the business compliances, or due to insolvency or unwillingness of the directors to continue operations."
         },
         {
             question: "What happens when a company fails to maintain compliance and does not wind up?",
             answer: "If the company fails to fulfil its compliances, it can be held liable for heavy fines and penalties. Additionally, its directors can be disqualified from incorporating another entity."
-        },
-        {
-            question: "What are the companies that can apply for fast track winding up?",
-            answer: "Companies that meet the criteria under Section 361 for Summary Procedure, such as those with assets below a certain threshold or specific classes of companies as notified by the Central Government, can apply."
-        },
-        {
-            question: "What are the companies which are not eligible for Voluntary Winding-up?",
-            answer: "Companies that have pending litigations, unpaid secured creditors without consent, or those involved in ongoing regulatory investigations may not be eligible for voluntary winding up until those issues are resolved."
-        },
-        {
-            question: "What is the benefit of the Companies (Winding-Up) Rules 2020?",
-            answer: "These rules systematize the procedure for winding up under Section 271 and provide a Summary Procedure under Section 361, making the process more efficient with standardized forms."
-        },
-        {
-            question: "What are the main obligations of a company before going for its Winding up?",
-            answer: "A company must clear its debts, obtain consent from creditors, prepare a certified statement of assets and liabilities, and pass a special resolution in a board/general meeting."
         }
     ];
 
@@ -46,8 +46,8 @@ const WindingUpofPrivateLimitedCompany = () => {
             <HeroLayout
                 heroTitleMain="Winding Up of Private Limited "
                 heroTitleSuffix="Company"
-                heroSubtitle="Legal & Professional Dissolution Services"
-                heroDescription="Ensure a smooth exit for your business. We handle the complete liquidation process, from solvency declarations to final dissolution, minimizing legal risks for directors."
+                heroSubtitle="Close Your Company the Right Way — Without Legal Hassles"
+                heroDescription="Winding up a private limited company requires strict compliance with regulatory procedures, documentation, and filings with the Ministry of Corporate Affairs. Whether your business has become inactive, completed its purpose, or you plan to exit, a structured closure process is essential to avoid penalties and legal complications. With expert compliance support, you can close your company smoothly while ensuring all statutory obligations are fulfilled."
                 whatsIncludedList={[
                     "Solvency Declaration",
                     "Special Resolution Filing",
@@ -77,12 +77,18 @@ const WindingUpofPrivateLimitedCompany = () => {
                 }}
                 overview={{
                     badge: "Business Liquidation",
-                    title: "Winding Up –",
-                    highlightTitle: "Overview",
+                    title: "What is Winding Up of a",
+                    highlightTitle: "Private Limited Company?",
                     description: [
-                        "The Private Limited Company initiates the process of liquidation to close its business. There are many reasons, such as insolvency, unwillingness to perform business activities, etc., because of which a company decides to wind up. Liquidation means liquidating the assets of the Company to satisfy responsibilities and repay liabilities.",
-                        "Section 270 of the Companies Act 2013 states that a private company can go for winding up either by the National Company Tribunal (NCT) or voluntarily. Winding up includes a complete shutdown of all activities and selling off all assets to clear debts, with remaining assets shared among shareholders.",
-                        "If a company fails to fulfil its compliances, it can be held liable for fines and penalties, or directors can be disqualified. Therefore, it is advisable for a company to wind up the moment it becomes inactive or insolvent."
+                        "Winding up of a private limited company is the legal process of closing down a company and settling its financial and statutory obligations. During this process, the company ceases operations, its assets are liquidated, liabilities are paid off, and the remaining assets (if any) are distributed among shareholders.",
+                        "Once the winding-up process is completed and approved by the relevant authorities, the company's name is removed from the official records of the Ministry of Corporate Affairs (MCA).",
+                        "Businesses usually opt for winding up when they:",
+                        "• Are no longer operational",
+                        "• Have fulfilled their intended objectives",
+                        "• Face financial difficulties",
+                        "• Decide to exit the market strategically",
+                        "Professional compliance guidance ensures the closure is done legally and without future liabilities.",
+                        "Vyombiz managed by Clink Consultancy Services Private Limited helps businesses navigate the winding-up process efficiently while maintaining full regulatory compliance."
                     ],
                     whyIdealTitle: "Key Objectives",
                     whyIdealList: [
@@ -93,66 +99,82 @@ const WindingUpofPrivateLimitedCompany = () => {
                     ]
                 }}
                 advantages={{
-                    title: "Benefits of Winding Up",
-                    subtitle: "Advantages of a structured legal closure",
+                    title: "Benefits of Proper Company Winding Up",
+                    subtitle: "Closing a company through the correct legal procedure offers multiple advantages for promoters and stakeholders.",
                     list: [
-                        { title: "Release from Duties", desc: "Once liquidation is over, officers and directors are free from all future liabilities and administrative pressure." },
-                        { title: "Avoiding Legal Actions", desc: "Passing a voluntary winding-up resolution helps directors avoid potential legal proceedings against the company." },
-                        { title: "Cost-Effective Process", desc: "The expense is comparatively low as charges are often applicable to the sale of assets during the liquidation." },
-                        { title: "Lease Termination", desc: "Lease agreements for business premises can be legally cancelled, and dues cleared from asset sales." },
-                        { title: "Creditor Benefits", desc: "Creditors benefit from a structured, default payment system concerning all credits given to the company." },
+                        { title: "Legal Closure of Business", desc: "The company is officially dissolved under the Companies Act and removed from MCA records." },
+                        { title: "Protection from Future Liabilities", desc: "Proper winding up ensures directors and shareholders are not liable for future penalties or legal obligations." },
+                        { title: "Compliance Clearance", desc: "All regulatory filings and compliance requirements are fulfilled before closure." },
+                        { title: "Financial Settlement", desc: "Assets are distributed and debts are cleared systematically during the liquidation process." },
+                        { title: "Clean Exit for Promoters", desc: "Entrepreneurs can move forward with new ventures without compliance burdens from inactive entities." },
                         { title: "Compliance Cleanliness", desc: "Prevents future penalties for non-filing of annual returns for a defunct or inactive business." }
                     ]
                 }}
                 eligibility={{
-                    title: "Listicles & Checklists",
-                    subtitle: "Critical reasons and document requirements",
+                    title: "When Should You Consider Winding Up Your Company?",
+                    subtitle: "There are several situations where winding up becomes the most practical business decision.",
                     list: [
-                        { title: "Reasons for Winding Up", desc: "Unpaid debts, special resolutions, illegal acts, fraud, default in filing for 5 years, or Tribunal orders." },
-                        { title: "Documents Required", desc: "Consent of creditors, Indemnity bond, Certified statement of assets/liabilities, Affidavit from directors." },
-                        { title: "Mandatory Filings", desc: "CTC of special resolution, Digital signatures (DSC), PAN & Aadhaar of directors, and Consent letters." },
-                        { title: "Legal Clearances", desc: "Statement of pending litigation and No Objection Certificate (NOC) from the Income Tax Department." }
+                        { title: "Inactive Business", desc: "The company has been inactive for a long period." },
+                        { title: "Objectives Achieved", desc: "Business objectives have already been achieved." },
+                        { title: "Financial Losses", desc: "Financial losses make operations unsustainable." },
+                        { title: "New Venture", desc: "The promoters want to start a new venture." },
+                        { title: "High Compliance Costs", desc: "Regulatory compliance costs outweigh business benefits." },
+                        { title: "Legal Clearances", desc: "Instead of leaving a dormant entity with pending compliance, formally winding up the company helps avoid penalties and legal complications." }
                     ]
+                }}
+                documents={{
+                    title: "Documents Required for Winding Up a Private Limited Company",
+                    description: "To initiate the winding-up process, several statutory documents must be prepared and filed with regulatory authorities. Having these documents prepared accurately helps avoid delays in the closure process.",
+                    list: [
+                        "Certificate of Incorporation of the company",
+                        "Memorandum and Articles of Association (MOA & AOA)",
+                        "Board Resolution approving winding up",
+                        "Special Resolution passed by shareholders",
+                        "Statement of accounts and financial statements",
+                        "List of creditors and liabilities",
+                        "Director identification details",
+                        "PAN and tax clearance documents"
+                    ],
+                    imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                 }}
                 process={{
-                    title: "Registration Procedure",
-                    subtitle: "Modes and Step-by-Step Winding Up Process",
+                    title: "Step-by-Step Process of Winding Up a Company",
+                    subtitle: "The winding-up process involves multiple legal steps to ensure a compliant and smooth closure.",
                     steps: [
-                        { step: "01", title: "Passing Resolution", desc: "Ordinary or Special resolution passed in the general meeting of the company." },
-                        { step: "02", title: "Declaration of Solvency", desc: "Directors declare solvency via affidavit, filed with the Registrar within 5 weeks." },
-                        { step: "03", title: "Creditors' Consent", desc: "Meeting of creditors to obtain agreement from at least 2/3rd in value for voluntary closure." },
-                        { step: "04", title: "Liquidator Appointment", desc: "Registrar or Tribunal appoints a liquidator to execute assets and examine accounts." },
-                        { step: "05", title: "Final Report filing", desc: "Liquidator submits the final report to the winding-up Committee or Tribunal for approval." },
-                        { step: "06", title: "Official Order", desc: "Tribunal/Registrar passes the order of dissolution and publishes it in the Official Gazette." }
+                        { step: "01", title: "Board Resolution", desc: "The directors pass a resolution proposing the winding up of the company." },
+                        { step: "02", title: "Shareholder Approval", desc: "A special resolution is passed by shareholders to approve the closure of the company." },
+                        { step: "03", title: "Appointment of Liquidator", desc: "A professional liquidator may be appointed to manage the liquidation process." },
+                        { step: "04", title: "Settlement of Liabilities", desc: "All debts, statutory dues, and liabilities are cleared before dissolution." },
+                        { step: "05", title: "Asset Distribution", desc: "Remaining assets, if any, are distributed among shareholders according to their shareholding." },
+                        { step: "06", title: "Filing with MCA & Dissolution", desc: "Relevant forms and documents are filed with the Ministry of Corporate Affairs. Once all compliance requirements are completed, the company is officially dissolved." }
                     ]
                 }}
-                postCompliance={{
-                    title: "Other Information",
-                    subtitle: "Legal rules and administrative guidelines",
+                typesOfCompliance={{
+                    title: "Types of Company Winding Up",
+                    subtitle: "Understanding the type of winding-up process applicable to your company is important for selecting the right compliance approach.",
                     list: [
-                        { title: "Winding-Up Rules 2020", desc: "Systematizes procedures under Section 271 and sets Summary Procedures under Section 361." },
-                        { title: "Tribunal Scrutiny", desc: "The NCT or courts accept/reject petitions after scrutinizing the credibility of the winding-up grounds." },
-                        { title: "Official Gazette Notice", desc: "The Registrar of Company sends the notice for final publication once the name is strike off." },
-                        { title: "Summary Procedure", desc: "Fast-track liquidation for specific classes of companies as defined in the 2020 Rules." }
+                        { title: "1. Voluntary Winding Up", desc: "Voluntary winding up occurs when the shareholders of a company decide to close the business on their own. This usually happens when the company has no outstanding liabilities or has settled all debts. The process typically involves shareholder approval, appointment of a liquidator, settlement of liabilities, and final dissolution of the company." },
+                        { title: "2. Compulsory Winding Up", desc: "Compulsory winding up occurs when a court or regulatory authority orders the company to be closed due to legal or financial issues. Common reasons include: Inability to pay debts; Fraudulent activities; Non-compliance with statutory requirements; Legal disputes among shareholders." }
                     ]
                 }}
                 whyChooseUs={{
-                    title: "Vyombiz Support",
-                    subtitle: "How we assist in your company closure journey",
+                    title: "Why Choose Vyombiz for Company Winding Up?",
+                    subtitle: "Handling company closure without professional guidance can lead to compliance errors and regulatory complications. Expert support ensures the process is completed efficiently and legally.",
                     list: [
-                        { title: "Purchase a Plan", desc: "Select a professional assistance plan tailored for your specific winding-up mode." },
-                        { title: "Expert Consultation", desc: "Add queries and discuss your company's status with our experienced Vyombiz legal team." },
-                        { title: "Document Handling", desc: "Simply provide the required documents to our experts; we handle the verification and filing." },
-                        { title: "Declaration Drafting", desc: "We prepare all necessary declarations, affidavits, and petitions required for the winding up." },
-                        { title: "End-to-End Tracking", desc: "From resolution filing to the final order, we complete all actions and get your Winding Up done." }
+                        { title: "Expert legal and secretarial guidance", desc: "Our team ensures all legal requirements are met accurately." },
+                        { title: "Accurate documentation and filings", desc: "We prepare and file all necessary documents with the MCA." },
+                        { title: "Compliance with MCA regulations", desc: "We ensure every step adheres to the Companies Act." },
+                        { title: "Transparent and streamlined process", desc: "We keep you informed at every stage of the closure." },
+                        { title: "Dedicated professional support", desc: "You get a dedicated point of contact throughout the procedure." },
+                        { title: "Vyombiz managed by Clink Consultancy Services Private Limited", desc: "We offer structured compliance solutions to simplify the winding-up process, ensuring business owners can close their companies confidently without worrying about future legal or compliance issues." }
                     ]
                 }}
             />
 
             {/* ================= FAQ SECTION ================= */}
             <FAQLayout
-                title="Frequently Asked Questions"
-                subtitle="Common queries about Winding Up"
+                title="Frequently Asked Questions (FAQs)"
+                subtitle="Common queries about Winding Up of a Private Limited Company"
                 faqs={faqs}
             />
 

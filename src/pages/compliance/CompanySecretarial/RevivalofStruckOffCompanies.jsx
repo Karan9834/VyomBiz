@@ -12,6 +12,11 @@ import TalkExpert from "../../../components/common/TalkExpert.jsx";
  */
 const RevivalofStruckOffCompanies = () => {
     const faqs = [
+        { question: "Can a struck off company be revived?", answer: "Yes. A struck off company can be restored through an application filed with the National Company Law Tribunal under Section 252 of the Companies Act, 2013." },
+        { question: "How long does company revival take?", answer: "The process may take 3 to 6 months, depending on the complexity of the case and tribunal timelines." },
+        { question: "What happens after revival?", answer: "Once revived, the company must file all pending compliance documents and maintain regular statutory filings." },
+        { question: "Is there a deadline for applying for revival?", answer: "Typically, the application should be filed within three years of the strike-off order, though certain exceptions may apply." },
+        { question: "Can business operations restart immediately after revival?", answer: "Yes. Once the restoration order is issued and compliance filings are completed, the company can resume normal operations." },
         { question: "Which provision enabled ROC for revival of Struck Off Companies?", answer: "The provisions of Section 248(1) of the Companies Act, 2013 enable the Registrar of Companies to strike off companies for non-filing of returns/statements for a period of three consecutive fiscal years — and Section 252 governs the revival/restoration of such companies before the NCLT." },
         { question: "What do you mean by Strike off?", answer: "Strike off means the temporary closure of the Company or removal of the name of the Company from the Register of Companies by the Registrar, following the provisions of the Companies Act, 2013. It is a substitute for winding up of the Company, and the company can get revived for a period of twenty years from the date of strike-off." },
         { question: "Can a director of any company appeal for the Revival of Struck off Companies?", answer: "Any person aggrieved by an order of the Registrar — including a company, its members, creditors, or workmen — can file a petition for revival. Directors can appeal as aggrieved persons. A petition under Section 252(1) can be filed by members, creditors, or workmen within 20 years. Others can petition under Section 252(3) within 3 years of the notification." },
@@ -31,10 +36,13 @@ const RevivalofStruckOffCompanies = () => {
         <div className="space-y-6">
             <h3 className="text-lg font-bold text-[#072b47] mb-2 flex items-center gap-2">
                 <Shield size={18} className="text-[#005a9c]" />
-                Who Can Apply for Revival?
+                Who Can Apply for Company Revival?
             </h3>
+            <p className="text-[14px] text-slate-600 mb-2 leading-relaxed">
+                The following parties are legally eligible to apply for revival of a struck off company:
+            </p>
             <div className="flex flex-wrap gap-2 mb-8">
-                {["Company", "Any creditor / member", "Workmen"].map((who, i) => (
+                {["Company directors", "Shareholders / members", "Creditors / lenders", "Employees", "Any aggrieved person"].map((who, i) => (
                     <div key={i} className="flex items-center gap-2 bg-[#e8f1fb] border border-[#c0d8f0] rounded-full px-4 py-2">
                         <CheckCircle2 size={13} className="text-[#005a9c]" />
                         <span className="text-[13px] font-medium text-[#005a9c]">{who}</span>
@@ -84,18 +92,22 @@ const RevivalofStruckOffCompanies = () => {
         <div className="space-y-6">
             <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
                 <BarChart2 size={18} className="text-[#005a9c]" />
-                Benefits of Revival of Struck Off Companies
+                Benefits of Reviving a Struck Off Company
             </h3>
+            <p className="text-[14px] text-slate-600 mb-2 leading-relaxed">
+                Reviving a company offers several strategic advantages for businesses and stakeholders.
+            </p>
             <div className="grid gap-3 mb-6">
                 {[
+                    { title: "Restore Legal Identity", desc: "The company regains its corporate status and recognition under the Companies Act." },
+                    { title: "Resume Business Operations", desc: "Entrepreneurs can restart activities without forming a new company." },
+                    { title: "Recover Assets and Investments", desc: "Company assets, bank accounts, and financial rights can be reclaimed." },
+                    { title: "Protect Stakeholder Interests", desc: "Creditors, investors, and employees benefit from restored corporate accountability." },
+                    { title: "Maintain Business Reputation", desc: "Revival helps maintain continuity and protects brand value in the market." },
                     { title: "Recovery of Overdue Sums", desc: "To recover their overdue sum with interest, creditors of such companies may initiate an action — making revival essential for debt recovery." },
-                    { title: "Enforcement of Liabilities", desc: "The company can be enforced for discharging its liabilities and obligations, and the liability of every director and officer shall continue post-revival." },
                     { title: "Prevents Director Disqualification", desc: "If annual returns or financial statements are not filed for three consecutive fiscal years, it may disqualify the directors of such companies under Section 164 — revival prevents this." },
-                    { title: "Avoids Prosecution Risk", desc: "The Registrar may recommend prosecution of persons responsible for non-filing of documents and returns. Revival and subsequent compliance avoids such prosecution." },
                     { title: "CFSS-2020 Nominal Fee Benefit", desc: "Overdue returns can be filed at a nominal fee of Rs. 300/–600/- under the Companies Fresh Start Scheme — waiving hefty additional fees." },
-                    { title: "No Fresh Proceedings for Filed Documents", desc: "No proceedings against the company and its officers shall be initiated for delay in filing documents if overdue documents are filed within the scheme's window." },
                     { title: "Withdrawal of Initiated Prosecution", desc: "Any proceedings or prosecution already initiated shall be withdrawn if the scheme's requirements are obeyed within time." },
-                    { title: "Director's Liability on Disqualification", desc: "The office of the director becomes vacant automatically in all companies upon disqualification. Revival and compliance allows directors to be re-appointed after removing disqualification." },
                 ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
                         <CheckCircle2 size={15} className="text-[#005a9c] mt-0.5 shrink-0" />
@@ -150,13 +162,12 @@ const RevivalofStruckOffCompanies = () => {
     );
 
     const processSteps = [
-        { step: "01", title: "Filing of Application / Petition / Appeal (Form NCLT-9)", desc: "An appeal or application must be made in the format of Form NCLT-9 along with a demand draft of Rs. 1,000/- in favour of Pay and Accounts Officer, Ministry of Corporate Affairs (MCA). The petition must state that the company was actually in operation." },
-        { step: "02", title: "Serving Copy of Petition", desc: "Not less than fourteen days before the date fixed for the hearing of the application, a copy of the petition should be served to the Registrar of Companies and such other persons as the Tribunal may direct." },
-        { step: "03", title: "Trials and Hearing by Tribunal", desc: "During the trials and hearings, the Tribunal shall hear the Petitioner and Respondent (ROC). It will take note of objections received during the proposed dates of hearing. If satisfied after hearing both sides, the Tribunal can order the revival of the name of the Company in the record of the ROC." },
-        { step: "04", title: "Order of Tribunal", desc: "The Tribunal makes an order for restoring the name of the Company in the Register of Companies. The order directs: (1) Within 30 days, the applicant must deliver a certified copy of the order to the ROC. (2) The Registrar shall publish the order in the Official Gazette. (3) Unless otherwise directed, the applicant must pay the costs of the appeal to the Registrar." },
-        { step: "05", title: "Abiding ROC Orders — Filing INC-28", desc: "Within thirty days from the date of the NCLT order, the Company must file a copy of the order in Form 'INC-28' with the Registrar of Companies." },
-        { step: "06", title: "Publication of Order", desc: "After receiving the certified copy of the NCLT order, the Registrar publishes the order in the Official Gazette with the name and seal of the Company — formally restoring the company in the public record." },
-        { step: "07", title: "Filing Pending Documents with ROC", desc: "The Company must comply with the requirements of the Companies Act, 2013 and file all pending annual returns and financial statements with the Registrar within the time directed by the Tribunal." },
+        { step: "01", title: "Case Assessment", desc: "Review the strike-off status, compliance history, and eligibility for restoration." },
+        { step: "02", title: "Document Preparation", desc: "Prepare affidavits, financial statements, compliance records, and supporting evidence." },
+        { step: "03", title: "Filing Petition with NCLT", desc: "Submit a restoration petition under Section 252 of the Companies Act in Form NCLT-9 along with a demand draft of Rs. 1,000/-." },
+        { step: "04", title: "Tribunal Review", desc: "NCLT reviews the case and may request clarifications or additional documents. During hearings, the Tribunal shall hear the Petitioner and Respondent (ROC)." },
+        { step: "05", title: "ROC Restoration Order", desc: "Upon approval, ROC restores the company's name in the register. The Tribunal's order directs the applicant to deliver a certified copy to the ROC within 30 days, and the Registrar publishes the order in the Official Gazette." },
+        { step: "06", title: "Post Revival Compliance", desc: "File pending returns and financial statements to maintain compliance. The Company must file Form INC-28 with the ROC within 30 days and all pending annual returns and financial statements within the time directed by the Tribunal." },
     ];
 
     return (
@@ -164,8 +175,8 @@ const RevivalofStruckOffCompanies = () => {
             <HeroLayout
                 heroTitleMain="Revival of "
                 heroTitleSuffix="Struck Off Companies"
-                heroSubtitle="Restoration of Company under Section 252 — NCLT Petition | CFSS-2020"
-                heroDescription="Revive your struck-off company swiftly and legally with Vyombiz. From NCLT petition preparation and ROC service to order publication and pending return filing — complete end-to-end restoration support by our compliance experts."
+                heroSubtitle="Bring Your Company Back to Life — Legally & Seamlessly"
+                heroDescription="If your company has been removed from the register by the Registrar of Companies (ROC), it doesn't mean the journey is over. With the right legal process, your business can be revived, restored, and made fully operational again. Get expert assistance to restore your company quickly and stay compliant with corporate regulations. ✔ Legal revival support ✔ Documentation & ROC filing handled ✔ Expert compliance guidance"
                 whatsIncludedList={["NCLT Petition (Form NCLT-9)", "Copy Service to ROC & Stakeholders", "Form INC-28 Filing", "Pending Returns & Statements Filing"]}
                 stats={[
                     { count: "20 Years", label: "Voluntary Strike-Off Revival Period", icon: <Clock size={20} /> },
@@ -179,57 +190,56 @@ const RevivalofStruckOffCompanies = () => {
                 navLabels={{ overview: "Overview", advantages: "Grounds", features: "Benefits", documents: "Listicles", process: "Registration Procedure", postCompliance: "Other Info", faq: "FAQs" }}
                 overview={{
                     badge: "Companies Act 2013 — Section 252 | NCLT | CFSS-2020 | Revival of Struck Off Companies",
-                    title: "Revival of Struck Off Companies —",
-                    highlightTitle: "An Overview",
+                    title: "What is Revival of a",
+                    highlightTitle: "Struck Off Company?",
                     description: [
-                        "Strike off means temporary closure of the Company or removal of the name of the Company from the Register of Companies by the Registrar following the provisions of the Companies Act, 2013. It is a substitute for winding up of the Company. A struck-off company can get revived for a period of twenty years from the date of strike-off.",
-                        "The appeal or application can be filed by the Registrar, any person aggrieved by the order of the Registrar, or by the Company, or by a member or creditor or workman. The member, creditor, or workman of a company can file a petition for revival before the expiry of 20 years from the notification in the Official Gazette under Section 252(1). Others can file a petition under Section 252(3) within three years from the publication of notification in the Official Gazette.",
+                        "Revival of a struck off company refers to the legal restoration of a company's name in the Register of Companies after it has been removed by the Registrar of Companies (ROC) due to non-compliance, inactivity, or failure to file statutory returns.",
+                        "When a company is struck off under the Companies Act, 2013, it legally ceases to exist. However, if the business has pending assets, liabilities, or intends to resume operations, the company can apply for revival through the National Company Law Tribunal (NCLT).",
+                        "Through this process, the company regains its legal identity, operational status, and compliance standing.",
+                        "Vyombiz managed by Clink Consultancy Services Private Limited provides end-to-end support to businesses seeking fast, structured, and legally compliant company restoration services."
                     ],
                     whyIdealTitle: "Why Companies Get Struck Off",
                     whyIdealList: [
-                        { title: "Non-Filing of Annual Returns", desc: "If a company has not filed its annual returns (MGT-7) or financial statements (AOC-4) for three consecutive fiscal years, the ROC is empowered to strike off the company's name." },
-                        { title: "Non-Commencement of Business", desc: "A company that has not commenced business within one year of incorporation — and has failed to file Form INC-20A — may face strike-off action by the ROC." },
-                        { title: "Registrar Initiation under Section 248(1)", desc: "The ROC struck off many companies in 2017, 2018, and 2019 using Section 248(1)(c) to curb the operations of shell companies and increase corporate transparency." },
-                        { title: "Voluntary Strike-Off", desc: "Companies may also voluntarily apply for strike-off under Section 248(2) by filing Form STK-2, which imposes a 20-year limitation period for revival — rather than the 3-year period for compulsory strike-off." },
+                        { title: "Non-Filing of Annual Returns", desc: "Companies that fail to file annual returns or financial statements for consecutive years risk removal from the ROC register." },
+                        { title: "Inactive Business Operations", desc: "If a company has not commenced business or remains inactive for a prolonged period, it may be categorized as a dormant entity and struck off." },
+                        { title: "Failure to Respond to ROC Notices", desc: "Ignoring compliance notices issued by the ROC can trigger strike-off proceedings." },
+                        { title: "Voluntary Strike Off by Directors", desc: "In some cases, directors may voluntarily apply for company closure using Form STK-2." },
                     ]
                 }}
                 advantages={groundsContent}
                 features={benefitsContent}
                 documents={{
-                    title: "Documents Required for Revival of Struck Off Companies",
-                    description: "The following documents must be filed with the NCLT petition for revival, stating that the company was actually in operation.",
+                    title: "Documents Required for Company Revival",
+                    description: "The exact documentation depends on the company's history and strike-off reason, but generally includes:",
                     list: [
+                        "Memorandum and Articles of Association (MOA & AOA)",
+                        "Financial statements and income tax returns",
+                        "Affidavit from directors",
+                        "NCLT petition and supporting documents",
+                        "Proof of business activity or assets",
+                        "Board resolutions and authorization letters",
                         "Certificate of Incorporation",
-                        "Memorandum of Association (MOA)",
                         "Copy of audited financial statements from the date of strike-off",
                         "Bank statements of the company",
                         "Striking off order of the Registrar of Companies",
-                        "Affidavit verifying the petition",
-                        "Copy of Board Resolution authorising the filing of the petition",
-                        "PAN Card of the Company",
-                        "Income Tax Returns of the Company",
-                        "All property documents if any property is owned by the Company",
-                        "Memorandum of Appearance or Vakalatnama",
-                        "Any other documents as required by the Tribunal",
                     ]
                 }}
-                process={{ title: "Process of Revival of Struck Off Companies", subtitle: "Step-by-step NCLT process for restoring a struck-off company under Section 252 of the Companies Act, 2013.", steps: processSteps }}
+                process={{ title: "Process of Revival of Struck Off Company", subtitle: "Revival involves legal proceedings before the National Company Law Tribunal (NCLT) and compliance filings with the ROC.", steps: processSteps }}
                 postCompliance={otherInfoContent}
                 whyChooseUs={{
-                    title: "Why Choose Vyombiz for Revival of Struck Off Companies?",
-                    subtitle: "Expert legal assistance, proven track record, and full NCLT representation.",
+                    title: "Why Choose Vyombiz for Company Revival?",
+                    subtitle: "Restoring a struck off company involves legal expertise, procedural accuracy, and compliance knowledge.",
                     list: [
+                        { title: "Strike-off status analysis", desc: "We provide a thorough analysis of your case — identifying the best grounds for revival and the applicable limitation period." },
+                        { title: "NCLT petition preparation and filing", desc: "We handle the complete NCLT petition drafting and filing in Form NCLT-9, demand draft, and all supporting documentation." },
+                        { title: "ROC compliance management", desc: "After the NCLT order, we handle Form INC-28 filing, submission of certified copies to the ROC, and all pending annual return filings to restore full compliance." },
+                        { title: "Legal documentation support", desc: "Our team prepares all affidavits, financial statements, and supporting evidence required for the petition." },
+                        { title: "Post-revival regulatory compliance", desc: "We ensure your company maintains ongoing compliance after restoration to avoid future strike-off risks." },
                         { title: "10+ Years of Proven Experience", desc: "Vyombiz brings over a decade of experience in business consulting, corporate law, and MCA compliance — ensuring reliable and expert-led revival assistance." },
-                        { title: "500+ Matters Handled", desc: "Vyombiz has successfully handled over 500 matters pertaining to revival of struck-off companies across India." },
-                        { title: "Expert Case Analysis", desc: "Our team provides a thorough analysis of your case — identifying the best grounds for revival, the applicable limitation period, and the optimal petition strategy." },
-                        { title: "NCLT Petition Filing & Guidance", desc: "We handle the complete NCLT petition drafting and filing in Form NCLT-9, demand draft, and all supporting documentation." },
-                        { title: "NCLT Hearing Representation", desc: "Vyombiz provides end-to-end representation through NCLT proceedings — from hearing scheduling to presenting arguments before the Tribunal." },
-                        { title: "ROC Filing Support", desc: "After the NCLT order, we handle Form INC-28 filing, submission of certified copies to the ROC, and all pending annual return filings to restore full compliance." },
-                        { title: "CFSS-2020 Advisory", desc: "We advise on leveraging the Companies Fresh Start Scheme, 2020 — enabling filing of overdue returns at nominal fees with access to applicable prosecution waivers." },
                     ]
                 }}
             />
-            <FAQLayout title="FAQs on Revival of Struck Off Companies" subtitle="Common questions about company revival under Section 252 answered by our experts" faqs={faqs} />
+            <FAQLayout title="Frequently Asked Questions (FAQs)" subtitle="Common questions about company revival under Section 252 answered by our experts" faqs={faqs} />
         </div>
     );
 };

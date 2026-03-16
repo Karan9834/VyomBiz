@@ -18,6 +18,22 @@ const FormAOC4 = () => {
 
     const faqs = [
         {
+            question: "What is the due date for filing Form AOC-4?",
+            answer: "Form AOC-4 must be filed within 30 days of the Annual General Meeting."
+        },
+        {
+            question: "Can Form AOC-4 be revised after filing?",
+            answer: "Yes. In case of errors, companies may need to submit a revised form depending on the circumstances and ROC guidelines."
+        },
+        {
+            question: "Is AOC-4 mandatory for all companies?",
+            answer: "Yes. Every company registered under the Companies Act 2013 must submit its financial statements through AOC-4."
+        },
+        {
+            question: "What happens if AOC-4 is not filed?",
+            answer: "Failure to file the form can result in penalties, compliance issues, and regulatory action."
+        },
+        {
             question: "What is Form AOC-4?",
             answer: "Form AOC-4 is used to file the financial statements for each financial year with the Registrar of Companies (ROC) under the Companies Act, 2013. It must be filed within 30 days of the Annual General Meeting."
         },
@@ -57,12 +73,18 @@ const FormAOC4 = () => {
             <div>
                 <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
                     <Shield size={18} className="text-[#005a9c]" />
-                    Eligibility for Filing Form AOC-4
+                    Who Needs to File Form AOC-4?
                 </h3>
+                <p className="text-[14px] text-slate-600 mb-4 leading-relaxed">
+                    The following companies are required to file Form AOC-4:
+                </p>
                 <div className="grid gap-3 mb-6">
                     {[
-                        "Every company incorporated in India must submit financial statements using Form AOC-4. Consolidated financial statements must be submitted using Form AOC-4 CFS.",
-                        "Every company subject to Section 135(1) of the Companies Act, 2013 is obliged to submit a CSR report in Form CSR-2 as an attachment to Form AOC-4 or Form XBRL (Ind AS), as appropriate.",
+                        "Private Limited Companies",
+                        "One Person Companies (OPC)",
+                        "Public Limited Companies",
+                        "Section 8 Companies",
+                        "Companies with financial statements requiring ROC submission",
                     ].map((item, i) => (
                         <div key={i} className="flex items-start gap-3 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
                             <CheckCircle2 size={16} className="text-[#005a9c] mt-0.5 shrink-0" />
@@ -70,38 +92,29 @@ const FormAOC4 = () => {
                         </div>
                     ))}
                 </div>
-
-                <h4 className="text-[15px] font-bold text-[#072b47] mb-3 flex items-center gap-2">
-                    <BarChart2 size={16} className="text-[#005a9c]" />
-                    Companies Required to File in XBRL Format
-                </h4>
-                <div className="grid gap-3 mb-6">
-                    {[
-                        "All Indian corporations with stock market listings and their Indian subsidiaries.",
-                        "All businesses with a minimum paid-up capital of Rs. 2 crores to Rs. 5 crores.",
-                        "All businesses with a revenue of Rs. 100 crores or more.",
-                        "All businesses that must prepare financial accounts as per the Companies (Indian Accounting Standards) Regulations, 2015.",
-                    ].map((item, i) => (
-                        <div key={i} className="flex items-start gap-3 bg-[#e8f1fb] border border-[#c0d8f0] rounded-xl p-4">
-                            <CheckCircle2 size={16} className="text-[#005a9c] mt-0.5 shrink-0" />
-                            <p className="text-[14px] text-slate-700 leading-relaxed">{item}</p>
-                        </div>
-                    ))}
-                </div>
-
-                <h4 className="text-[15px] font-bold text-[#072b47] mb-3">ROC Filing Standards under Companies Act 2013</h4>
-                <div className="grid gap-3">
-                    {[
-                        { label: "Standard Filing", desc: "Financial statements adopted at the AGM must be filed within 30 days of the AGM, along with any applicable charges. For OPC, the period is '2 + 3' months following the end of the financial year." },
-                        { label: "Postponed AGM", desc: "Financial statements must be filed within 30 days after a postponed AGM, in addition to any applicable fees." },
-                        { label: "Unapproved Statements", desc: "If financial accounts are not approved within 30 days of the AGM, they are treated as preliminary until the final statements have been presented." },
-                        { label: "AGM Not Held", desc: "Fees and any additional fees must be paid within 30 days from the date the AGM was supposed to take place. Financial statements and a justification for missing the AGM must be provided." },
-                    ].map((item, i) => (
-                        <div key={i} className="bg-slate-50 border border-slate-200 rounded-xl p-4">
-                            <p className="text-[13px] font-bold text-[#005a9c] mb-1">{item.label}</p>
-                            <p className="text-[13px] text-slate-700 leading-relaxed">{item.desc}</p>
-                        </div>
-                    ))}
+                <p className="text-[14px] text-slate-600 leading-relaxed">
+                    Any company registered under the Companies Act must file its financial statements through this form after conducting its AGM.
+                </p>
+                <div className="mt-6">
+                    <h4 className="text-[15px] font-bold text-[#072b47] mb-3 flex items-center gap-2">
+                        <BarChart2 size={16} className="text-[#005a9c]" />
+                        Types of AOC-4 Forms
+                    </h4>
+                    <div className="grid gap-3 mb-6">
+                        {[
+                            { title: "AOC-4", desc: "Used by most companies to file their financial statements with ROC." },
+                            { title: "AOC-4 XBRL", desc: "Applicable to companies required to file financial statements in XBRL (Extensible Business Reporting Language) format." },
+                            { title: "AOC-4 CFS", desc: "Used when companies submit consolidated financial statements for group companies or subsidiaries." },
+                        ].map((item, i) => (
+                            <div key={i} className="bg-[#e8f1fb] border border-[#c0d8f0] rounded-xl p-4">
+                                <p className="text-[13px] font-bold text-[#005a9c] mb-1">{item.title}</p>
+                                <p className="text-[13px] text-slate-700 leading-relaxed">{item.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <p className="text-[13px] text-slate-600 italic">
+                        Our experts at Vyombiz managed by Clink Consultancy Services Private Limited help determine the correct form applicable to your company.
+                    </p>
                 </div>
             </div>
         </div>
@@ -200,36 +213,39 @@ const FormAOC4 = () => {
             <div>
                 <h3 className="text-lg font-bold text-[#072b47] mb-2 flex items-center gap-2">
                     <Clock size={18} className="text-[#005a9c]" />
-                    Due Dates for Form AOC-4 Filing
+                    When Should Form AOC-4 Be Filed?
                 </h3>
                 <p className="text-[14px] text-slate-600 mb-5 leading-relaxed">
-                    The AOC-4 form must be submitted within 30 days of the Annual General Meeting. For OPC, within 180 days from the end of the financial year. Late filing attracts a penalty of Rs. 100 per day.
+                    Companies must file Form AOC-4 within 30 days from the date of the Annual General Meeting (AGM).
                 </p>
                 <div className="overflow-x-auto rounded-xl border border-slate-200 mb-6">
                     <table className="w-full text-[13px]">
                         <thead>
                             <tr className="bg-[#072b47] text-white">
-                                <th className="text-left px-4 py-3 font-semibold">E-Form</th>
-                                <th className="text-left px-4 py-3 font-semibold">Purpose</th>
-                                <th className="text-left px-4 py-3 font-semibold">Periodicity</th>
-                                <th className="text-left px-4 py-3 font-semibold">Last Date to File</th>
-                                <th className="text-left px-4 py-3 font-semibold">Remark</th>
+                                <th className="text-left px-4 py-3 font-semibold">Event</th>
+                                <th className="text-left px-4 py-3 font-semibold">Deadline</th>
                             </tr>
                         </thead>
                         <tbody>
                             {[
-                                ["AOC-4", "Filing of Financial Statement of Company", "Yearly", "August 2023", "If AGM held between 1st April 2023 to 30th June 2023"],
-                                ["AOC-4", "Filing of Financial Statement of Company", "Yearly", "August 2023", "If AGM held between 1st July 2023 to 31st July 2023"],
+                                ["Annual General Meeting", "Conducted annually"],
+                                ["Form AOC-4 Filing", "Within 30 days of AGM"],
+                                ["Late Filing", "Additional government fees apply"],
                             ].map((row, i) => (
                                 <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
-                                    {row.map((cell, j) => (
-                                        <td key={j} className={`px-4 py-3 ${j === 0 ? "font-bold text-[#005a9c]" : "text-slate-700"}`}>{cell}</td>
-                                    ))}
+                                    <td className="px-4 py-3 text-slate-700">{row[0]}</td>
+                                    <td className="px-4 py-3 font-semibold text-[#005a9c]">{row[1]}</td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
                 </div>
+                <p className="text-[13px] text-slate-600 mb-4 leading-relaxed">
+                    If a company fails to conduct its AGM, the form must still be filed within 30 days from the last date on which the AGM should have been held.
+                </p>
+                <p className="text-[13px] text-slate-600 mb-6 leading-relaxed">
+                    Experts at Vyombiz managed by Clink Consultancy Services Private Limited ensure that your filings are completed well within the regulatory deadline.
+                </p>
 
                 <h4 className="text-[15px] font-bold text-[#072b47] mb-3">Who Must File AOC-4 in XBRL Format?</h4>
                 <div className="grid sm:grid-cols-3 gap-3 mb-6">
@@ -274,22 +290,22 @@ const FormAOC4 = () => {
         </div>
     );
 
-    /* ─── Penalties (custom JSX → eligibility slot — we already used it, use process slot) ── */
+    /* ─── Penalties (custom JSX → documents slot) ── */
     const penaltiesContent = (
         <div className="space-y-6">
             <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
                 <AlertTriangle size={18} className="text-amber-500" />
-                Penalties for Late Form AOC-4 Submission
+                Penalties for Late Filing of AOC-4
             </h3>
+            <p className="text-[14px] text-slate-600 mb-4 leading-relaxed">
+                Failure to file Form AOC-4 within the prescribed deadline leads to additional government penalties. Key consequences include:
+            </p>
             <div className="grid gap-4">
                 {[
-                    { label: "Daily Penalty (Post July 1)", desc: "A fine of Rs. 100 per day is charged for each day Form AOC-4 is not filed by the due date, starting from July 1." },
+                    { label: "Late filing fees", desc: "Late filing fees calculated per day. A fine of Rs. 100 per day is charged for each day Form AOC-4 is not filed by the due date, starting from July 1." },
+                    { label: "Compliance status impact", desc: "The company's compliance status with ROC may be adversely affected." },
+                    { label: "Legal implications for directors", desc: "Directors, Managing Director, or CFO may face criminal prosecution and imprisonment, or be required to pay a fine, as per the Companies Act, 2013." },
                     { label: "Company Fresh Start Program", desc: "Forms AOC-4 for prior years may be submitted without incurring late fees until September 30, 2020, under the Company Fresh Start Program." },
-                    { label: "Up to 30 Days Late", desc: "Pay 2× the standard filing fee." },
-                    { label: "30 to 60 Days Late", desc: "Pay 4× the standard filing fee." },
-                    { label: "90 Days to 180 Days Late", desc: "Pay 10× the standard filing fee." },
-                    { label: "180 Days to 270 Days Late", desc: "Pay 12× the standard filing fee." },
-                    { label: "Criminal Prosecution", desc: "Directors, Managing Director, or CFO of the company may face criminal prosecution and imprisonment, or be required to pay a fine, as per the Companies Act, 2013." },
                 ].map((item, i) => (
                     <div key={i} className="flex gap-4 bg-red-50 border border-red-100 rounded-xl p-4">
                         <AlertTriangle size={16} className="text-red-500 shrink-0 mt-0.5" />
@@ -300,6 +316,9 @@ const FormAOC4 = () => {
                     </div>
                 ))}
             </div>
+            <p className="text-[13px] text-slate-600 mt-2 leading-relaxed">
+                Timely filing is essential to avoid unnecessary financial and legal burdens.
+            </p>
 
             <div className="bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-5 mt-4">
                 <p className="text-[14px] font-bold text-[#072b47] mb-3">Validation & Accreditation — Digital Signatories</p>
@@ -322,8 +341,8 @@ const FormAOC4 = () => {
             <HeroLayout
                 heroTitleMain="Form AOC-4 "
                 heroTitleSuffix="Filing"
-                heroSubtitle="Annual Financial Statement Filing with Registrar of Companies — Companies Act 2013"
-                heroDescription="File Form AOC-4 accurately and on time with Vyombiz. From XBRL compliance to consolidated financial statements, CSR disclosures, and related party transaction reporting — handled end-to-end by our experts."
+                heroSubtitle="File Your Form AOC-4 with Accuracy & On-Time Compliance"
+                heroDescription="Avoid penalties and ensure smooth corporate compliance with expert-assisted Form AOC-4 filing. Our professionals simplify the process so your company's financial statements are filed correctly with the Registrar of Companies. Stay compliant. Stay stress-free. ✔ Expert-assisted filing ✔ Accurate financial statement submission ✔ Quick and hassle-free process"
                 whatsIncludedList={[
                     "Financial Statement Filing (AOC-4)",
                     "XBRL Format Compliance",
@@ -351,12 +370,13 @@ const FormAOC4 = () => {
                 }}
                 overview={{
                     badge: "Companies Act 2013 — Section 137 | Form AOC-4",
-                    title: "Form AOC-4 Filing —",
-                    highlightTitle: "An Overview",
+                    title: "What is Form",
+                    highlightTitle: "AOC-4?",
                     description: [
-                        "The Board of Directors of a company and its shareholders may conduct an evaluation of the firm's performance using the company's financial statements as a reference. The financial statements must be submitted to the Registrar of Companies using MCA Form AOC-4 for each fiscal year. The company must submit the form within 30 days of its Annual General Meeting.",
-                        "All Indian registered companies are required to file Form AOC-4 for each fiscal year under the Companies Act, 2013. Any lack or delay in completing the papers may subject the company to fines or penalties.",
-                        "To account for the company's actions to its stakeholders, Financial Statements, disclosures, the Board's Report, and the Auditor's Report must all be used. The Company must present Form AOC-4 CFS when submitting consolidated financial statements.",
+                        "Form AOC-4 is a mandatory compliance form filed by companies in India for submitting their financial statements to the Registrar of Companies (ROC) after the Annual General Meeting (AGM).",
+                        "The form includes key financial documents such as the balance sheet, profit & loss account, auditor's report, and director's report. Filing Form AOC-4 ensures transparency and regulatory compliance under the provisions of the Companies Act 2013.",
+                        "Businesses that fail to submit this form within the prescribed timeline may face significant penalties and compliance issues.",
+                        "To avoid such risks, Vyombiz managed by Clink Consultancy Services Private Limited offers professional support for accurate and timely filing of Form AOC-4, ensuring your company stays compliant with ROC regulations."
                     ],
                     whyIdealTitle: "What is Form AOC-4 MCA?",
                     whyIdealList: [
@@ -383,21 +403,21 @@ const FormAOC4 = () => {
                 features={tipsContent}
                 postCompliance={dueDatesContent}
                 whyChooseUs={{
-                    title: "Why Choose Vyombiz for Form AOC-4 Filing?",
-                    subtitle: "End-to-end assistance for accurate, timely, and compliant AOC-4 filing.",
+                    title: "Why Choose Vyombiz for AOC-4 Filing?",
+                    subtitle: "Managing compliance requirements can be complex, especially when dealing with financial documentation and regulatory deadlines.",
                     list: [
-                        { title: "Expert Financial Statement Review", desc: "Our team reviews your financial statements for completeness and accuracy before submission to avoid any ROC rejection." },
+                        { title: "Expert compliance professionals", desc: "Our team ensures every step follows Companies Act regulations." },
+                        { title: "Accurate financial statement filing", desc: "We review your financial statements for completeness and accuracy before submission." },
+                        { title: "Timely ROC submission", desc: "We proactively track AGM dates and filing deadlines to ensure your AOC-4 is filed well within the stipulated timeframe." },
+                        { title: "End-to-end documentation support", desc: "We help gather and verify all required documents and attachments." },
+                        { title: "Transparent pricing with no hidden charges", desc: "Clear pricing and complete transparency throughout the process." },
                         { title: "XBRL Filing Support", desc: "We provide full support for companies required to file in XBRL format — handling tagging, validation, and submission accurately." },
-                        { title: "CSR-2 Compliance", desc: "We ensure all CSR reporting requirements under Section 135 of the Companies Act, 2013 are correctly captured and attached." },
-                        { title: "Digital Signature Coordination", desc: "We coordinate the digital signatures of Directors, CFO, and CEO and ensure timely certification by the practicing CA/CS/CMA." },
-                        { title: "Zero Late Penalty Guarantee", desc: "We proactively track AGM dates and filing deadlines to ensure your AOC-4 is filed well within the stipulated timeframe." },
-                        { title: "24/7 Expert Availability", desc: "Our compliance experts are available round the clock to address any AOC-4 related queries or urgent filing requirements." },
                     ]
                 }}
             />
 
             <FAQLayout
-                title="Frequently Asked Questions on Form AOC-4"
+                title="Frequently Asked Questions (FAQs)"
                 subtitle="Common questions about Form AOC-4 filing answered by our experts"
                 faqs={faqs}
             />

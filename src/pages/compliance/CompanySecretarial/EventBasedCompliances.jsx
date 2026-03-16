@@ -52,12 +52,20 @@ const EventBasedCompliances = () => {
 
     const overviewData = {
         badge: "Companies Act, 2013 — Event-Based ROC Filings",
-        title: "Event Based Compliances —",
-        highlightTitle: "An Overview",
+        title: "What Are",
+        highlightTitle: "Event-Based Compliances?",
         description: [
-            "Unlike annual compliances that follow a fixed calendar, Event Based Compliances under the Companies Act, 2013 are triggered by specific corporate events or structural changes within the company. These are non-discretionary legal requirements — the moment a triggering event occurs, the clock starts ticking for the mandatory ROC filing.",
-            "Events such as a director appointment or resignation, change in registered office, increase in authorized share capital, allotment of shares, alteration of the Memorandum or Articles of Association, or a change in the company name — all require prompt and accurate reporting to the Registrar of Companies within the prescribed timeline (generally 30 days).",
-            "Delays or omissions in event-based filings result in daily additional fees (₹100 per day per form), potential non-compliance status, and in severe cases, prosecution of the company and its officers in default. Vyombiz ensures every corporate event is captured and filed on time."
+            "Event-based compliances refer to legal obligations that arise when specific corporate actions or events occur within a company. Unlike annual or periodic compliances, these filings are required immediately after a particular business decision or structural change.",
+            "Examples of such events include:",
+            "• Appointment or resignation of directors",
+            "• Change in company name",
+            "• Issue or transfer of shares",
+            "• Alteration of Memorandum or Articles",
+            "• Change in registered office",
+            "• Increase in authorised capital",
+            "Whenever these corporate events occur, companies must notify regulatory authorities like the Ministry of Corporate Affairs (MCA) through proper filings and documentation.",
+            "Businesses that fail to complete these filings within prescribed timelines may face late fees, penalties, or legal restrictions.",
+            "Vyombiz managed by Clink Consultancy Services Private Limited helps businesses identify, prepare, and file event-based compliances seamlessly, ensuring your company remains fully compliant with regulatory requirements."
         ],
         whyIdealTitle: "Key Characteristics of Event-Based Filings",
         whyIdealList: [
@@ -81,28 +89,28 @@ const EventBasedCompliances = () => {
     };
 
     const advantagesData = {
-        title: "Why Timely Event-Based",
-        subtitle: "Filing Matters for Every Company",
+        title: "Why Event-Based Compliances",
+        subtitle: "Are Important for Every Company",
         list: [
             {
-                title: "Legal Recognition of Changes",
-                desc: "Changes like a new director or name change are only legally recognized in government records after the relevant form is filed and approved by the ROC. An unfiled change has no legal standing in official records."
+                title: "Maintain Legal Validity",
+                desc: "Corporate decisions must be officially recorded with regulatory authorities to remain legally enforceable."
             },
             {
-                title: "Protection of Directors",
-                desc: "Filing event-based forms on time protects directors from personal liability. A resigned director who files DIR-11 (resignation form) within the deadline is protected from liabilities arising post-resignation."
+                title: "Avoid Penalties",
+                desc: "Delayed or missed filings often lead to significant financial penalties under the Companies Act."
             },
             {
-                title: "Avoidance of Compounding Penalties",
-                desc: "At ₹100/day per form, a 6-month delayed filing of a single form can cost ₹18,000. Multiple delayed filings compound quickly. Prompt action keeps costs manageable."
+                title: "Build Corporate Transparency",
+                desc: "Timely filings ensure that shareholders, regulators, and stakeholders have access to accurate company records."
+            },
+            {
+                title: "Protect Directors and Shareholders",
+                desc: "Compliance protects the management and owners from potential legal liabilities."
             },
             {
                 title: "Avoiding Strike-Off Risk",
                 desc: "The ROC can mark a company as 'Non-Compliant' or initiate strike-off proceedings if critical event-based changes remain unreported — especially for address changes or continued director vacancies."
-            },
-            {
-                title: "Transparency with Stakeholders",
-                desc: "Shareholders, banks, and counterparties rely on MCA records for accurate company information. Timely event-based filings maintain the integrity and currency of public company records."
             },
             {
                 title: "Clean Due Diligence Record",
@@ -112,100 +120,104 @@ const EventBasedCompliances = () => {
     };
 
     const eligibilityData = {
-        title: "Common Corporate Events",
-        subtitle: "& Their Required ROC Forms",
+        title: "Common Event-Based Compliances",
+        subtitle: "for Companies",
         list: [
             {
-                title: "Director Appointment / Resignation / Removal — DIR-12",
-                desc: "Filed within 30 days of any change in directorship. Attach CTC of Board Resolution, consent letter (DIR-2 for appointment), or resignation letter as applicable."
+                title: "Appointment or Resignation of Directors — DIR-12",
+                desc: "Whenever a director joins or leaves the company, the change must be reported to the MCA through appropriate filings within the prescribed timeline."
             },
             {
-                title: "Change of Registered Office — INC-22",
-                desc: "Filed within 30 days of change in registered office address within the same city, or within 30 days of passing a Special Resolution for inter-city/inter-state shifts."
+                title: "Change in Registered Office — INC-22",
+                desc: "If a company shifts its registered office location, the change must be approved by the board and updated in the MCA records."
             },
             {
-                title: "Increase in Authorized Share Capital — SH-7",
-                desc: "Filed within 30 days of passing the Ordinary Resolution in a General Meeting. Stamp duty on the incremental capital must be paid alongside the form."
+                title: "Increase in Authorised Share Capital — SH-7",
+                desc: "When a company decides to expand its capital structure, the authorised capital must be modified through proper filings."
             },
             {
-                title: "Allotment of Shares — PAS-3",
-                desc: "Return of Allotment — filed within 15 days of the date of allotment of shares. Attach list of allottees, Board Resolution for allotment, and valuation report (if a private placement)."
+                title: "Issue or Allotment of Shares — PAS-3",
+                desc: "Issuing new shares to investors or shareholders requires statutory reporting and documentation."
             },
             {
-                title: "Change of Company Name — INC-24",
-                desc: "Application for Central Government approval for name change based on the Special Resolution passed. Filed after obtaining new name availability via RUN application."
+                title: "Change in Company Name — INC-24",
+                desc: "A company planning to rebrand must follow the legal procedure for name change approval and filings."
             },
             {
-                title: "Filing of Resolutions — MGT-14",
-                desc: "Filed within 30 days of passing Special Resolutions or Board Resolutions listed under Section 179(3) — such as MOA/AOA amendment, capital borrowing, or buy-back resolutions."
+                title: "Amendment of MOA or AOA — MGT-14",
+                desc: "Any change in the Memorandum of Association (MOA) or Articles of Association (AOA) must be properly approved and filed with the authorities."
+            },
+            {
+                title: "Change in Directors' Details — DIR-6",
+                desc: "Any modification in directors' personal details, designation, or DIN-related updates must also be filed."
             }
         ]
     };
 
     const processData = {
-        title: "General Filing Workflow",
-        subtitle: "For event-based ROC submissions",
+        title: "How Vyombiz Supports Your",
+        subtitle: "Event-Based Compliances",
         steps: [
             {
                 step: "01",
-                title: "Identify the Triggering Event",
-                desc: "Determine the exact nature of the corporate event — whether it is a Board decision, General Meeting resolution, contractual change, or statutory occurrence — and identify the corresponding ROC form required."
+                title: "Compliance Identification",
+                desc: "We analyse corporate events and identify all applicable compliance requirements."
             },
             {
                 step: "02",
-                title: "Prepare Supporting Documentation",
-                desc: "Collate all necessary documents: Board Resolutions, General Meeting notices and minutes, consent letters, resignation letters, valuation reports, or any other documents required for the specific form."
+                title: "Documentation Preparation",
+                desc: "Our experts prepare resolutions, forms, and necessary supporting documents."
             },
             {
                 step: "03",
-                title: "Prepare the E-Form on MCA Portal",
-                desc: "Fill the relevant e-form on the MCA V3 portal with correct and complete details. Cross-verify CIN, DIN numbers, dates, and other statutory particulars before submission."
+                title: "MCA Filing & Submission",
+                desc: "We handle the complete filing process with regulatory authorities."
             },
             {
                 step: "04",
-                title: "Professional Certification",
-                desc: "Obtain certification from a practicing CA/CS/CMA if the form requires it. Ensure the certifying professional has a valid practice and that the certificate format complies with the prescribed rules."
+                title: "Timeline Monitoring",
+                desc: "Our team ensures every compliance is completed within statutory deadlines."
             },
             {
                 step: "05",
-                title: "Digital Signing & Submission",
-                desc: "Affix the valid DSC of the authorized Director (and CS, if applicable). Upload the form on the MCA V3 portal along with all required attachments."
+                title: "Compliance Record Management",
+                desc: "We maintain organised records of all filings and approvals for future reference."
             },
             {
                 step: "06",
-                title: "Pay Filing Fee & Monitor Approval",
-                desc: "Pay the applicable government filing fee (plus additional fee, if filing after due date). Track the form status on the MCA portal and respond to any ROC queries within the stipulated time."
+                title: "End-to-End Tracking",
+                desc: "We track the status of every filed form on the MCA portal and respond to any ROC observations — giving you complete visibility and peace of mind."
             }
         ]
     };
 
     const whyChooseUsData = {
-        title: "Vyombiz Assistance in",
-        subtitle: "Event-Based Corporate Compliance",
+        title: "Why Choose Vyombiz?",
+        subtitle: "Your partner for seamless event-based compliance",
         list: [
+            {
+                title: "Expert secretarial compliance support",
+                desc: "Our team understands regulatory procedures and filing requirements in detail."
+            },
+            {
+                title: "Accurate and timely filings",
+                desc: "We track deadlines to ensure filings are completed before penalties arise."
+            },
+            {
+                title: "End-to-end documentation assistance",
+                desc: "We draft all requisite documents in precise statutory language before submission."
+            },
+            {
+                title: "Proactive compliance tracking",
+                desc: "We help companies stay proactive instead of reactive with compliance obligations."
+            },
+            {
+                title: "Transparent and reliable service",
+                desc: "Clear documentation, professional support, and complete transparency throughout the process."
+            },
             {
                 title: "30-Day Filing Guarantee",
                 desc: "From the moment you inform us of a corporate event, Vyombiz initiates the filing process immediately — ensuring the mandatory 30-day window is never missed."
-            },
-            {
-                title: "Document Drafting & Preparation",
-                desc: "We draft all requisite documents — Board Resolutions, Meeting Notices, Consent Letters, and MGT-14 resolutions — in precise statutory language before submission."
-            },
-            {
-                title: "Expert CS & CA Certification",
-                desc: "Our practicing Company Secretaries and Chartered Accountants provide all professional certifications required for event-based forms — ensuring regulatory acceptance."
-            },
-            {
-                title: "Multi-Event Handling",
-                desc: "For companies undergoing simultaneous changes (e.g., new investors, director changes, and office shift in the same period), we manage all related filings concurrently and in the correct sequence."
-            },
-            {
-                title: "Penalty Calculation & Mitigation",
-                desc: "If a filing window has been missed, we compute the additional fees, advise on compounding options, and file the overdue forms to restore compliance status quickly."
-            },
-            {
-                title: "End-to-End Tracking",
-                desc: "We track the status of every filed form on the MCA portal and respond to any ROC observations — giving you complete visibility and peace of mind."
             }
         ]
     };
@@ -214,10 +226,10 @@ const EventBasedCompliances = () => {
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
 
             <HeroLayout
-                heroTitleMain="Event Based"
-                heroTitleSuffix="Compliances"
-                heroSubtitle="Corporate Event Filing Services — Companies Act, 2013"
-                heroDescription="Every structural change in your company — a new director, office shift, capital increase, or allotment of shares — must be reported to the ROC within 30 days. Vyombiz ensures every event is captured, documented, and filed accurately — protecting your company from penalties and non-compliance status."
+                heroTitleMain="Event-Based Compliances"
+                heroTitleSuffix="in a Company"
+                heroSubtitle="Stay Compliant When Business Events Occur"
+                heroDescription="Every major decision in a company—like appointing a director, issuing shares, or changing the registered office—triggers legal compliance requirements. Missing these obligations can lead to penalties and legal complications. With expert compliance support, businesses can ensure every statutory requirement is completed accurately and on time. Ensure every corporate event is legally compliant — without stress."
                 whatsIncludedList={[
                     "Director Appointment / Resignation (DIR-12)",
                     "Increase in Authorized Capital (SH-7)",

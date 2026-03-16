@@ -27,13 +27,13 @@ const LiquidationofCompany = () => {
         <div className="space-y-8">
             <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
                 <BarChart2 size={18} className="text-[#005a9c]" />
-                Types of Liquidation of Company in India
+                Types of Company Liquidation
             </h3>
             <div className="grid gap-6">
                 {[
                     {
                         num: "01", title: "Voluntary Liquidation",
-                        desc: "In a voluntary liquidation, the company is not compelled to undergo the insolvency process. The decision to cease operations is made voluntarily by the owners or shareholders. This typically occurs when the company is solvent and capable of repaying its creditors in full.",
+                        desc: "Voluntary liquidation occurs when the company's shareholders decide to close the business on their own. This usually happens when the company has achieved its purpose, is no longer profitable, or the owners wish to discontinue operations.",
                         sub: [
                             { name: "Member's Voluntary Liquidation (MVL)", desc: "Initiated by the company's shareholders when they decide the company should no longer operate. Starts with the directors signing a declaration of solvency — confirming the company can repay all debts within a specified period." },
                             { name: "Creditors' Voluntary Liquidation (CVL)", desc: "Initiated when a company is insolvent or no longer capable of fulfilling its financial obligations. Used when a company is facing significant financial constraints and is incapable of recovery." },
@@ -73,17 +73,19 @@ const LiquidationofCompany = () => {
     const processContent = (
         <div className="space-y-8">
             <div>
-                <h3 className="text-lg font-bold text-[#072b47] mb-4">Compulsory Liquidation Process</h3>
+                <h3 className="text-lg font-bold text-[#072b47] mb-4">Company Liquidation Process</h3>
+                <p className="text-[14px] text-slate-600 mb-4 leading-relaxed">
+                    The company liquidation process generally involves several legal and administrative steps. While the exact procedure may vary depending on the type of liquidation, the common stages include:
+                </p>
                 <div className="grid gap-3 mb-6">
                     {[
-                        { step: "1", title: "Application to the Tribunal", desc: "Financial or operational creditors file an application with the NCLT for default exceeding ₹1 lakh. This initiates the Corporate Insolvency Resolution Process (CIRP)." },
-                        { step: "2", title: "Appointment of IRP", desc: "Upon admitting the application, the tribunal appoints an Interim Resolution Professional (IRP) who takes over the management of the company." },
-                        { step: "3", title: "Moratorium Period", desc: "A moratorium is imposed, halting all operations and preventing the transfer of assets, goods, or services until the completion of CIRP." },
-                        { step: "4", title: "Verification of Claims", desc: "The IRP verifies creditor claims within 30 days and prepares a list for the Committee of Creditors (CoC)." },
-                        { step: "5", title: "Appointment of Resolution Professional", desc: "The CoC may either confirm the IRP as the Resolution Professional (RP) or appoint a new one." },
-                        { step: "6", title: "Resolution Plan", desc: "The RP drafts a resolution plan detailing how creditors will be paid. The CoC has 180 days to approve the plan." },
-                        { step: "7", title: "Sanction by NCLT", desc: "Once the CoC approves the plan, it must be sanctioned by the NCLT. All actions must be completed within one year of NCLT approval." },
-                        { step: "8", title: "Liquidation Order", desc: "If the resolution process fails, the NCLT permits the company's liquidation, allowing debt repayment to creditors." },
+                        { step: "1", title: "Board Resolution", desc: "The directors pass a resolution recommending the liquidation of the company." },
+                        { step: "2", title: "Shareholder Approval", desc: "Shareholders approve the decision to liquidate through a special resolution." },
+                        { step: "3", title: "Appointment of Liquidator", desc: "A licensed liquidator is appointed to manage the liquidation process." },
+                        { step: "4", title: "Asset Evaluation and Sale", desc: "Company assets are evaluated and sold to settle outstanding liabilities." },
+                        { step: "5", title: "Settlement of Debts", desc: "Funds generated from asset sales are used to repay creditors and other liabilities." },
+                        { step: "6", title: "Distribution to Shareholders", desc: "Any remaining funds are distributed among shareholders based on their shareholding." },
+                        { step: "7", title: "Final Dissolution", desc: "Once all obligations are settled, the company is officially dissolved and removed from the Registrar's records." },
                     ].map((item, i) => (
                         <div key={i} className="flex items-start gap-4 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
                             <div className="w-8 h-8 rounded-full bg-[#072b47] text-white flex items-center justify-center shrink-0 text-[12px] font-bold">{item.step}</div>
@@ -94,7 +96,9 @@ const LiquidationofCompany = () => {
                         </div>
                     ))}
                 </div>
-                <h3 className="text-lg font-bold text-[#072b47] mb-4">Voluntary Liquidation Process</h3>
+            </div>
+            <div>
+                <h3 className="text-lg font-bold text-[#072b47] mb-4">Voluntary Liquidation Process (Detailed)</h3>
                 <div className="grid gap-3">
                     {[
                         { step: "1", title: "Declaration of Solvency", desc: "Company directors must declare solvency via an affidavit, confirming no default has occurred and debts can be repaid. Must confirm the process is not intended to defraud anyone." },
@@ -120,41 +124,57 @@ const LiquidationofCompany = () => {
     /* ─── Advantages tab (custom JSX → features slot) ─────────── */
     const advantagesContent = (
         <div className="space-y-8">
-            <div className="grid sm:grid-cols-2 gap-4 mb-6">
-                <div>
-                    <h4 className="text-[15px] font-bold text-green-700 mb-3 flex items-center gap-2"><CheckCircle2 size={16} className="text-green-500" />Advantages</h4>
-                    {["Removes the pressure from all the creditors.", "Prevents potential legal action against the liquidated company.", "Allows time for realizing the company's assets, ensuring creditors receive the best possible return."].map((item, i) => (
-                        <div key={i} className="flex items-start gap-2 bg-green-50 border border-green-100 rounded-lg px-4 py-2.5 mb-2">
-                            <CheckCircle2 size={14} className="text-green-500 mt-0.5 shrink-0" />
-                            <p className="text-[13px] text-slate-700 leading-relaxed">{item}</p>
-                        </div>
-                    ))}
-                </div>
-                <div>
-                    <h4 className="text-[15px] font-bold text-red-700 mb-3 flex items-center gap-2"><AlertTriangle size={16} className="text-red-500" />Disadvantages</h4>
-                    {["The liquidated company can no longer trade on a similar company name.", "The company's reputation, assets, and licenses will be instantly removed from company ownership.", "The company cannot recover any tax loss that may have been incurred during trading years."].map((item, i) => (
-                        <div key={i} className="flex items-start gap-2 bg-red-50 border border-red-100 rounded-lg px-4 py-2.5 mb-2">
-                            <AlertTriangle size={14} className="text-red-400 mt-0.5 shrink-0" />
-                            <p className="text-[13px] text-slate-700 leading-relaxed">{item}</p>
+            <div>
+                <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
+                    <CheckCircle2 size={18} className="text-[#005a9c]" />
+                    Benefits of Proper Company Liquidation
+                </h3>
+                <p className="text-[14px] text-slate-600 mb-4 leading-relaxed">
+                    Closing a company through a structured liquidation process offers several advantages:
+                </p>
+                <div className="grid sm:grid-cols-2 gap-4 mb-6">
+                    {[
+                        { title: "Legal Closure", desc: "Ensures the company is officially removed from government records." },
+                        { title: "Protection from Future Liabilities", desc: "Directors and shareholders are protected from ongoing compliance obligations." },
+                        { title: "Debt Settlement", desc: "Assets are sold and used to repay creditors in a transparent manner." },
+                        { title: "Regulatory Compliance", desc: "Ensures the company follows all procedures prescribed under corporate laws." },
+                        { title: "Clean Financial Exit", desc: "Helps entrepreneurs close one business chapter and move forward with new opportunities." },
+                    ].map((item, i) => (
+                        <div key={i} className="flex items-start gap-2 bg-green-50 border border-green-100 rounded-xl px-4 py-3">
+                            <CheckCircle2 size={15} className="text-green-500 mt-0.5 shrink-0" />
+                            <div>
+                                <p className="text-[13px] font-bold text-green-700 mb-0.5">{item.title}</p>
+                                <p className="text-[12px] text-slate-600">{item.desc}</p>
+                            </div>
                         </div>
                     ))}
                 </div>
             </div>
 
             <div>
-                <h4 className="text-[15px] font-bold text-[#072b47] mb-3">Consequences of Liquidation of Company in India</h4>
+                <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
+                    <AlertTriangle size={18} className="text-amber-500" />
+                    Compliance and Legal Considerations
+                </h3>
+                <p className="text-[14px] text-slate-600 mb-4 leading-relaxed">
+                    Liquidation involves several statutory requirements and regulatory filings. Companies must ensure that:
+                </p>
                 <div className="grid gap-3">
                     {[
-                        "The company's legal existence comes to an end after the completion of the liquidation process. The company shall be removed from the official company registry and will no longer be allowed to operate, trade, or enter into new contracts.",
-                        "The liquidator, after collecting and selling the company's assets, shall distribute the funds to creditors as per the legal hierarchy. Any remaining funds after all debts are paid may be distributed to shareholders.",
-                        "Employees are among the most affected stakeholders — liquidation results in job losses. Shareholders are the last to receive any proceeds — only after all creditor debts are paid are remaining funds distributed.",
+                        "All pending compliance filings are completed",
+                        "Tax liabilities are cleared",
+                        "Employee dues are settled",
+                        "Creditors are informed and paid according to legal priority",
                     ].map((item, i) => (
-                        <div key={i} className="flex items-start gap-3 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
-                            <Shield size={15} className="text-[#005a9c] mt-0.5 shrink-0" />
+                        <div key={i} className="flex items-start gap-3 bg-amber-50 border border-amber-100 rounded-xl p-4">
+                            <AlertTriangle size={15} className="text-amber-500 mt-0.5 shrink-0" />
                             <p className="text-[13px] text-slate-700 leading-relaxed">{item}</p>
                         </div>
                     ))}
                 </div>
+                <p className="text-[13px] text-slate-600 mt-4 leading-relaxed">
+                    This is where expert support from Vyombiz managed by Clink Consultancy Services Private Limited becomes valuable, ensuring that every compliance requirement is handled professionally.
+                </p>
             </div>
 
             <div>
@@ -181,8 +201,8 @@ const LiquidationofCompany = () => {
             <HeroLayout
                 heroTitleMain="Liquidation of "
                 heroTitleSuffix="Company"
-                heroSubtitle="Company Liquidation under the Insolvency & Bankruptcy Code, 2016 — NCLT Process"
-                heroDescription="Navigate the complex liquidation process with expert guidance from Vyombiz. From assessing solvency and appointing a liquidator to filing with NCLT, distributing assets, and obtaining the dissolution order — complete end-to-end support."
+                heroSubtitle="Close Your Company the Right Way — Fast, Compliant, and Stress-Free"
+                heroDescription="When a business reaches the end of its journey, closing it properly is just as important as starting it. Company liquidation ensures that all legal obligations are fulfilled, liabilities are settled, and the company is officially dissolved in compliance with government regulations. With expert guidance, the liquidation process can be smooth, transparent, and hassle-free. Vyombiz managed by Clink Consultancy Services Private Limited helps businesses complete company liquidation efficiently while ensuring full regulatory compliance. End your company responsibly — with expert support."
                 whatsIncludedList={["Solvency Assessment & Evaluation", "Liquidator Appointment Support", "NCLT Filing & Dissolution Order", "Creditor Claims & Asset Distribution"]}
                 stats={[
                     { count: "12 Months", label: "Voluntary Liquidation Timeline", icon: <Clock size={20} /> },
@@ -193,14 +213,16 @@ const LiquidationofCompany = () => {
             <TrustedBrands />
             <TalkExpert />
             <DetailsLayout
-                navLabels={{ overview: "Overview", advantages: "Types", eligibility: "Process", features: "Advantage", faq: "FAQs" }}
+                navLabels={{ overview: "Overview", advantages: "Types", eligibility: "Process", features: "Advantage", documents: "Documents Required", faq: "FAQs" }}
                 overview={{
                     badge: "Insolvency & Bankruptcy Code 2016 | NCLT | Company Liquidation",
-                    title: "Liquidation of Company —",
-                    highlightTitle: "An Overview",
+                    title: "What is Company",
+                    highlightTitle: "Liquidation?",
                     description: [
-                        "In finance and economics, liquidation of a company refers to the process of ending a company's operations and distributing its assets to settle claims. This typically occurs when a company is unable to meet its financial obligations or repay its debts. During liquidation, the company's assets are sold and the proceeds are used to pay off creditors and shareholders.",
-                        "Liquidation is a formal process through which a company winds up its operations. The company's assets are sold to repay its liabilities, and if any surplus remains, it is distributed among the shareholders. In simple terms, liquidation marks the end of a company's business by converting its assets into cash to settle debts and distribute any remaining balance.",
+                        "Company liquidation is the legal process of closing a company by settling its liabilities, selling its assets, and distributing the remaining funds (if any) among shareholders. Once the process is completed, the company is removed from official records and ceases to exist legally.",
+                        "Liquidation is typically initiated when a company is unable to continue its operations due to financial distress, business restructuring, or voluntary closure by shareholders.",
+                        "Businesses that are inactive or no longer operational should opt for proper liquidation instead of leaving the company dormant, as this helps avoid future compliance penalties and legal complications.",
+                        "Vyombiz managed by Clink Consultancy Services Private Limited assists companies in completing the liquidation process efficiently while ensuring adherence to all statutory requirements."
                     ],
                     whyIdealTitle: "How Company Liquidation Works in India",
                     whyIdealList: [
@@ -213,19 +235,32 @@ const LiquidationofCompany = () => {
                 advantages={typesContent}
                 eligibility={processContent}
                 features={advantagesContent}
+                documents={{
+                    title: "Documents Required for Company Liquidation",
+                    description: "To initiate the liquidation process, certain documents and records are required, including:",
+                    list: [
+                        "Certificate of Incorporation",
+                        "Memorandum and Articles of Association",
+                        "Financial statements of the company",
+                        "List of creditors and liabilities",
+                        "List of assets owned by the company",
+                        "Board and shareholder resolutions",
+                        "PAN and company registration details",
+                    ]
+                }}
                 whyChooseUs={{
                     title: "Why Choose Vyombiz for Company Liquidation?",
-                    subtitle: "Expert guidance through every phase of the company liquidation process.",
+                    subtitle: "Closing a company requires legal expertise, compliance management, and careful financial handling. Businesses benefit from professional assistance to ensure the process is completed correctly.",
                     list: [
-                        { title: "Expert Guidance", desc: "Access to experienced professionals for legal and financial support throughout the liquidation process." },
-                        { title: "Tailored Solutions", desc: "Customized approaches for voluntary or compulsory liquidation, based on your company's specific financial situation." },
+                        { title: "Expert Legal Guidance", desc: "Experienced professionals manage the entire liquidation process." },
+                        { title: "End-to-End Compliance Support", desc: "From documentation to final dissolution, every step is handled systematically." },
+                        { title: "Transparent Process", desc: "Clear communication and structured workflows ensure transparency." },
+                        { title: "Time-Efficient Handling", desc: "The process is managed efficiently to avoid delays and compliance issues." },
                         { title: "Comprehensive Services", desc: "Full management of the liquidation process, including documentation, regulatory compliance, and ROC/IBBI filings." },
-                        { title: "Transparent Communication", desc: "Regular updates and clear communication throughout the process to all stakeholders." },
-                        { title: "Post-Liquidation Support", desc: "Assistance with any residual matters after liquidation, including tax implications and final regulatory submissions." },
                     ]
                 }}
             />
-            <FAQLayout title="FAQs on Liquidation of Company" subtitle="Common questions about company liquidation answered by our experts" faqs={faqs} />
+            <FAQLayout title="Frequently Asked Questions (FAQs)" subtitle="Common questions about company liquidation answered by our experts" faqs={faqs} />
         </div>
     );
 };
