@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import React from 'react';
-import { 
-    CheckCircle, Search, Star, MapPin, ArrowRight, Rocket, 
-    Smile, PieChart, Shield, FileText, Users, Scale, 
+import {
+    CheckCircle, Search, Star, MapPin, ArrowRight, Rocket,
+    Smile, PieChart, Shield, FileText, Users, Scale,
     Building2, Briefcase, FileCheck, Clock, Globe, Award,
     ChevronRight, Mail, Phone, Download, Calendar, CreditCard,
     Receipt, FileSpreadsheet, Gavel, Scale as ScaleIcon,
@@ -16,7 +16,7 @@ import {
 import complainceimg from '../../../assets/compliancefooter/compliance.png';
 
 const LegalServices = () => {
-  
+
     // Legal services based on the HTML
     const legalServices = [
         {
@@ -174,14 +174,14 @@ const LegalServices = () => {
             hasVideo: false
         },
         {
-            title: "Legal Notice for Defamation",
-            desc: "Need a powerful response to defamation and wish to revive your image? Seek immediate legal support to prepare a well-crafted legal notice for defamation.",
+            title: " Defamation",
+            desc: "Need a powerful response to defamation and wish to revive your image? Seek immediate legal support to prepare a well-crafted  defamation.",
             price: "₹3,999",
             link: "legal-notice-for-defamation",
             hasVideo: false
         },
         {
-            title: "Legal Notice for Non-Payment of Salary",
+            title: " Non-Payment of Salary",
             desc: "An employee who has been aggrieved has several options for recovering unpaid salary. Get expert help for Legal Notice for Non-Payment of Salary.",
             price: "₹2,999",
             link: "legal-notice-for-non-payment-of-salary",
@@ -303,8 +303,8 @@ const LegalServices = () => {
                         {/* Search Bar */}
                         <div className="mb-8 md:mb-12 max-w-xl mx-auto lg:mx-0 px-4 sm:px-0">
                             <div className="relative flex flex-col sm:block">
-                                <input 
-                                    type="search" 
+                                <input
+                                    type="search"
                                     className="w-full px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl border border-slate-200 shadow-lg focus:outline-none focus:ring-2 focus:ring-[#dead01] focus:border-transparent text-base md:text-lg pr-0 sm:pr-36"
                                     placeholder="Search Your Services"
                                 />
@@ -418,9 +418,9 @@ const LegalServices = () => {
                                                         <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#FFE90A] group-hover/read:w-full transition-all duration-300 rounded-full"></div>
                                                     </a>
                                                     {service.hasVideo && (
-                                                        <a 
-                                                            href={`https://www.youtube.com/watch?v=${service.link}`} 
-                                                            target="_blank" 
+                                                        <a
+                                                            href={`https://www.youtube.com/watch?v=${service.link}`}
+                                                            target="_blank"
                                                             rel="noopener noreferrer"
                                                             className="text-[#005a9c] font-bold text-xs md:text-sm flex items-center gap-1 group/video relative py-1 whitespace-nowrap"
                                                         >
@@ -588,8 +588,8 @@ const LegalServices = () => {
                     </div>
 
                     <div className="text-center mt-8 md:mt-12">
-                        <a 
-                            href="reviews" 
+                        <a
+                            href="reviews"
                             className="inline-flex items-center gap-2 bg-transparent border-2 border-[#005a9c] text-[#005a9c] hover:bg-[#005a9c] hover:text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-bold transition-all text-sm md:text-base"
                         >
                             View More Reviews

@@ -56,6 +56,17 @@ const LegalNoticeMoneyRecovery = lazy(() => import('../pages/compliance/Legal Se
 const LegalNoticeRecoveryDues = lazy(() => import('../pages/lawyers-services/LegalNoticeRecoveryDues'));
 const LegalNoticeConsumerProtection = lazy(() => import('../pages/lawyers-services/LegalNoticeConsumerProtection'));
 
+// New Lawyer Services
+const FinanceLawyer = lazy(() => import('../pages/lawyers-services/FinanceLawyer'));
+const ChildCustodyLawyer = lazy(() => import('../pages/lawyers-services/ChildCustodyLawyer'));
+const CustomerProtectionLawyer = lazy(() => import('../pages/lawyers-services/CustomerProtectionLawyer'));
+const CorporateLawyer = lazy(() => import('../pages/lawyers-services/CorporateLawyer'));
+const CyberCrimeLawyer = lazy(() => import('../pages/lawyers-services/CyberCrimeLawyer'));
+const DivorceLawyer = lazy(() => import('../pages/lawyers-services/DivorceLawyer'));
+const GSTLawyer = lazy(() => import('../pages/lawyers-services/GSTLawyer'));
+const LabourLawyer = lazy(() => import('../pages/lawyers-services/LabourLawyer'));
+const ChequeBounceLawyer = lazy(() => import('../pages/lawyers-services/ChequeBounceLawyer'));
+const CivilLawyer = lazy(() => import('../pages/lawyers-services/CivilLawyer'));
 
 
 // Policies
@@ -112,7 +123,17 @@ const LegalRoutes = [
     <Route key="leg-not-dues" path="/legal-notice-recovery-of-dues" element={<LegalNoticeRecoveryDues />} />,
     <Route key="leg-not-cons" path="/legal-notice-under-consumer-protection-act" element={<LegalNoticeConsumerProtection />} />,
 
-
+    // New Lawyer Services Routes
+    <Route key="fin-lawyer" path="/lawyers-services/finance-lawyers" element={<FinanceLawyer />} />,
+    <Route key="child-cust" path="/lawyers-services/child-custody-lawyers" element={<ChildCustodyLawyer />} />,
+    <Route key="cust-prot" path="/lawyers-services/consumer-protection-lawyers" element={<CustomerProtectionLawyer />} />,
+    <Route key="corp-lawyer" path="/lawyers-services/corporate-lawyers" element={<CorporateLawyer />} />,
+    <Route key="cyb-lawyer" path="/lawyers-services/cyber-crime-lawyers" element={<CyberCrimeLawyer />} />,
+    <Route key="div-lawyer" path="/lawyers-services/divorce-lawyers" element={<DivorceLawyer />} />,
+    <Route key="gst-lawyer" path="/lawyers-services/gst-lawyers" element={<GSTLawyer />} />,
+    <Route key="lab-lawyer" path="/lawyers-services/labour-lawyers" element={<LabourLawyer />} />,
+    <Route key="chq-bnc-lawyer" path="/lawyers-services/cheque-bounce-lawyers" element={<ChequeBounceLawyer />} />,
+    <Route key="civ-lawyer" path="/lawyers-services/civil-lawyers" element={<CivilLawyer />} />,
 
     // Policies
     <Route key="priv-pol" path="/privacy-policy" element={<PrivacyPolicy />} />,
