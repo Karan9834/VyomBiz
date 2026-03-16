@@ -202,10 +202,6 @@ const LegalNoticeRecoveryDues = () => {
         {
             question: "What will happen when you send a legal notice?",
             answer: "Once received, the opposite party may hand over the dues to avoid litigation, or send a reply. If they ignore or refuse, you can proceed with filing a formal lawsuit in court using the notice as evidence of your prior attempt to resolve the matter."
-        },
-        {
-            question: "Can I ignore a legal notice?",
-            answer: "Ignoring a legal notice is risky. It may be taken as an admission of the facts stated if you don't contest them. It is always better to consult a lawyer and send a formal reply to protect your legal standing."
         }
     ];
 
