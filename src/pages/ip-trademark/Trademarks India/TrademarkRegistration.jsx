@@ -6,7 +6,7 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import benefits from "../../../assets/Trademarks India/Trademark Registration in India/benefits.png";
 import overview from "../../../assets/Trademarks India/Trademark Registration in India/overview.png";
-import process from "../../../assets/Trademarks India/Trademark Registration in India/process.png";
+import process from "../../../assets/Trademarks India/Trademark Registration in India/process.jpg";
 
 // Placeholder for the missing image
 const overviewImg = overview;
@@ -192,7 +192,7 @@ const TrademarkRegistrationProcessSection = () => {
                             <div>
                                 <h3 className="text-[18px] font-semibold text-[#072b47]">
                                     Trademark Availability Search
-                               </h3>
+                                </h3>
                                 <p className="text-[16px] text-slate-600 mt-1 leading-relaxed">
                                     Checking whether the trademark is unique and available.
                                 </p>

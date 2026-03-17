@@ -5,7 +5,7 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import benefits from "../../../assets/Trademarks India/Trademark Assignment/benefits.png";
 import overview from "../../../assets/Trademarks India/Trademark Assignment/overview.png";
-import process from "../../../assets/Trademarks India/Trademark Assignment/process.png";
+import process from "../../../assets/Trademarks India/Trademark Assignment/process.jpg";
 /**
  * TrademarkAssignment Page matching Vyombiz layout styles
  * Sections:
@@ -31,7 +31,7 @@ const TrademarkAssignmentEligibility = () => {
                 <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
                     Key considerations before initiating a trademark assignment.
                 </p>
-                
+
                 <div className="mb-10">
                     <h3 className="text-xl font-semibold text-[#072b47] mb-4">
                         Avoiding Multiple Exclusive Rights
@@ -96,38 +96,38 @@ const TrademarkAssignmentDocumentsSection = () => {
                     Documents needed to process the Trademark Assignment.
                 </p>
                 <div className="space-y-4">
-                    
+
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Assignment Deed:</span> Properly stamped agreement transferring trademark ownership.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Assignment Deed:</span> Properly stamped agreement transferring trademark ownership.</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Affidavit Declaration:</span> Declaration confirming no pending legal disputes.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Affidavit Declaration:</span> Declaration confirming no pending legal disputes.</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">No Objection Certificate:</span> Consent from the assignor approving the transfer.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">No Objection Certificate:</span> Consent from the assignor approving the transfer.</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Identity and Address Proof:</span> PAN, Aadhaar, or other valid identity proof of both parties.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Identity and Address Proof:</span> PAN, Aadhaar, or other valid identity proof of both parties.</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Trademark Certificate:</span> Proof of trademark registration if already registered.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Trademark Certificate:</span> Proof of trademark registration if already registered.</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Application Form TM-P:</span> Official form required to register the assignment with the registry.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Application Form TM-P:</span> Official form required to register the assignment with the registry.</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Authorization Letter:</span> Permission allowing representatives to handle the filing.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Authorization Letter:</span> Permission allowing representatives to handle the filing.</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Goodwill Documentation:</span> Supporting documents if the assignment includes business goodwill.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Goodwill Documentation:</span> Supporting documents if the assignment includes business goodwill.</p>
                     </div>
                 </div>
             </div>
@@ -156,7 +156,7 @@ const TrademarkAssignmentProcessSection = () => {
                         />
                     </div>
                     <div className="lg:col-span-2">
-                        
+
                         <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
                             <div className="text-[16px] font-semibold text-[#072b47]">
                                 1.
@@ -243,111 +243,111 @@ const TrademarkAssignmentFeaturesSection = () => {
                     </p>
                 </div>
                 <div>
-                    
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                1.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Trusted Service Rating
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Highly rated services by satisfied clients.
-                                </p>
-                            </div>
+
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            1.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                2.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Experienced Legal Experts
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Professionals with extensive experience in intellectual property laws.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Trusted Service Rating
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Highly rated services by satisfied clients.
+                            </p>
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                3.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    End-to-End Support
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Handling drafting, filing, and follow-ups for the assignment process.
-                                </p>
-                            </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            2.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                4.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Timely Service Delivery
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Focused on completing services within agreed timelines.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Experienced Legal Experts
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Professionals with extensive experience in intellectual property laws.
+                            </p>
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                5.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Transparent Pricing
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Clear pricing structure without hidden costs.
-                                </p>
-                            </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            3.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                6.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    International Assistance
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Support for both domestic and international trademark assignments.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                End-to-End Support
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Handling drafting, filing, and follow-ups for the assignment process.
+                            </p>
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                7.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Dedicated Assistance
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Personal support for handling client queries and updates.
-                                </p>
-                            </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            4.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                8.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Digital Tracking
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Online tracking for application progress and updates.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Timely Service Delivery
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Focused on completing services within agreed timelines.
+                            </p>
                         </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            5.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Transparent Pricing
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Clear pricing structure without hidden costs.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            6.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                International Assistance
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Support for both domestic and international trademark assignments.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            7.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Dedicated Assistance
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Personal support for handling client queries and updates.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            8.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Digital Tracking
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Online tracking for application progress and updates.
+                            </p>
+                        </div>
+                    </div>
                     <div className="border-t border-slate-300"></div>
                 </div>
             </div>
@@ -403,7 +403,7 @@ const TrademarkAssignment = () => {
                     {/* Right Image */}
                     <div className="flex justify-center lg:justify-end">
                         <img
-                            src= {overview}
+                            src={overview}
                             alt="Trademark Assignment"
                             className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-sm"
                         />
