@@ -5,8 +5,8 @@ import ConfidentialityPolicy from '../pages/legal/ConfidentialityPolicy';
 import PrivacyPolicy from '../pages/legal/PrivacyPolicy';
 import Disclaimer from '../pages/legal/Disclaimer';
 
-const LawyersServices = lazy(() => import('../pages/lawyers-services/LawyersServices'));
-const LawyerSpecializationDynamic = lazy(() => import('../pages/lawyers-services/LawyerSpecializationDynamic'));
+const LawyersServices = lazy(() => import('../pages/lawyers-services/specialization/LawyersServices'));
+const LawyerSpecializationDynamic = lazy(() => import('../pages/lawyers-services/specialization/LawyerSpecializationDynamic'));
 
 // Litigation
 const DefamationComplaint = lazy(() => import('../pages/lawyers-services/litigation/DefamationComplaint'));
@@ -49,24 +49,33 @@ const HomeAppliances = lazy(() => import('../pages/lawyers-services/Consumer Com
 const Hotels = lazy(() => import('../pages/lawyers-services/Consumer Complaint/Hotels'));
 const Investment = lazy(() => import('../pages/lawyers-services/Consumer Complaint/Investment'));
 
-const ChequeBounceNotice = lazy(() => import('../pages/lawyers-services/ChequeBounceNotice'));
+const ChequeBounceNotice = lazy(() => import('../pages/lawyers-services/specialization/ChequeBounceNotice'));
 
 const CaveatPetition = lazy(() => import('../pages/compliance/Legal Services/CaveatPetition'));
 const LegalNoticeMoneyRecovery = lazy(() => import('../pages/compliance/Legal Services/LegalNoticeMoneyRecovery'));
-const LegalNoticeRecoveryDues = lazy(() => import('../pages/lawyers-services/LegalNoticeRecoveryDues'));
-const LegalNoticeConsumerProtection = lazy(() => import('../pages/lawyers-services/LegalNoticeConsumerProtection'));
+const LegalNoticeRecoveryDues = lazy(() => import('../pages/lawyers-services/specialization/LegalNoticeRecoveryDues'));
+const LegalNoticeConsumerProtection = lazy(() => import('../pages/lawyers-services/specialization/LegalNoticeConsumerProtection'));
 
 // New Lawyer Services
-const FinanceLawyer = lazy(() => import('../pages/lawyers-services/FinanceLawyer'));
-const ChildCustodyLawyer = lazy(() => import('../pages/lawyers-services/ChildCustodyLawyer'));
-const CustomerProtectionLawyer = lazy(() => import('../pages/lawyers-services/CustomerProtectionLawyer'));
-const CorporateLawyer = lazy(() => import('../pages/lawyers-services/CorporateLawyer'));
-const CyberCrimeLawyer = lazy(() => import('../pages/lawyers-services/CyberCrimeLawyer'));
-const DivorceLawyer = lazy(() => import('../pages/lawyers-services/DivorceLawyer'));
-const GSTLawyer = lazy(() => import('../pages/lawyers-services/GSTLawyer'));
-const LabourLawyer = lazy(() => import('../pages/lawyers-services/LabourLawyer'));
-const ChequeBounceLawyer = lazy(() => import('../pages/lawyers-services/ChequeBounceLawyer'));
-const CivilLawyer = lazy(() => import('../pages/lawyers-services/CivilLawyer'));
+const FinanceLawyer = lazy(() => import('../pages/lawyers-services/specialization/FinanceLawyer'));
+const ChildCustodyLawyer = lazy(() => import('../pages/lawyers-services/specialization/ChildCustodyLawyer'));
+const CustomerProtectionLawyer = lazy(() => import('../pages/lawyers-services/specialization/CustomerProtectionLawyer'));
+const CorporateLawyer = lazy(() => import('../pages/lawyers-services/specialization/CorporateLawyer'));
+const CyberCrimeLawyer = lazy(() => import('../pages/lawyers-services/specialization/CyberCrimeLawyer'));
+const DivorceLawyer = lazy(() => import('../pages/lawyers-services/specialization/DivorceLawyer'));
+const GSTLawyer = lazy(() => import('../pages/lawyers-services/specialization/GSTLawyer'));
+const LabourLawyer = lazy(() => import('../pages/lawyers-services/specialization/LabourLawyer'));
+const ChequeBounceLawyer = lazy(() => import('../pages/lawyers-services/specialization/ChequeBounceLawyer'));
+const CivilLawyer = lazy(() => import('../pages/lawyers-services/specialization/CivilLawyer'));
+const MotorAccidentLawyer = lazy(() => import('../pages/lawyers-services/specialization/MotorAccidentLawyer'));
+const ContractLawyer = lazy(() => import('../pages/lawyers-services/specialization/ContractLawyer'));
+const CriminalLawyer = lazy(() => import('../pages/lawyers-services/specialization/CriminalLawyer'));
+const PropertyLawyer = lazy(() => import('../pages/lawyers-services/specialization/PropertyLawyer'));
+const FamilyLawyer = lazy(() => import('../pages/lawyers-services/specialization/FamilyLawyer'));
+const IntellectualPropertyLawyer = lazy(() => import('../pages/lawyers-services/specialization/IntellectualPropertyLawyer'));
+const MoneyRecoveryLawyer = lazy(() => import('../pages/lawyers-services/specialization/MoneyRecoveryLawyer'));
+const MuslimLawLawyer = lazy(() => import('../pages/lawyers-services/specialization/MuslimLawLawyer'));
+
 
 
 // Policies
@@ -76,7 +85,6 @@ const TermsConditions = lazy(() => import('../pages/legal/TermsConditions'));
 
 const LegalRoutes = [
     <Route key="law-srv" path="/lawyers-services" element={<LawyersServices />} />,
-    <Route key="law-spec" path="/lawyers-services/:type" element={<LawyerSpecializationDynamic />} />,
 
     // Litigation
     <Route key="def-comp" path="/defamation-complaint" element={<DefamationComplaint />} />,
@@ -134,6 +142,17 @@ const LegalRoutes = [
     <Route key="lab-lawyer" path="/lawyers-services/labour-lawyers" element={<LabourLawyer />} />,
     <Route key="chq-bnc-lawyer" path="/lawyers-services/cheque-bounce-lawyers" element={<ChequeBounceLawyer />} />,
     <Route key="civ-lawyer" path="/lawyers-services/civil-lawyers" element={<CivilLawyer />} />,
+    <Route key="mot-acc-lawyer" path="/lawyers-services/motor-accident-lawyers" element={<MotorAccidentLawyer />} />,
+    <Route key="contract-lawyer" path="/lawyers-services/contract-lawyers" element={<ContractLawyer />} />,
+    <Route key="criminal-lawyer" path="/lawyers-services/criminal-lawyers" element={<CriminalLawyer />} />,
+    <Route key="property-lawyer" path="/lawyers-services/property-lawyers" element={<PropertyLawyer />} />,
+    <Route key="family-lawyer" path="/lawyers-services/family-lawyers" element={<FamilyLawyer />} />,
+    <Route key="ip-lawyer" path="/lawyers-services/intellectual-property-lawyers" element={<IntellectualPropertyLawyer />} />,
+    <Route key="money-rec-lawyer" path="/lawyers-services/money-recovery-lawyers" element={<MoneyRecoveryLawyer />} />,
+    <Route key="muslim-law-lawyer" path="/lawyers-services/muslim-law-lawyers" element={<MuslimLawLawyer />} />,
+
+    // Dynamic catch-all — MUST be LAST so specific routes above take priority
+    <Route key="law-spec" path="/lawyers-services/:type" element={<LawyerSpecializationDynamic />} />,
 
     // Policies
     <Route key="priv-pol" path="/privacy-policy" element={<PrivacyPolicy />} />,

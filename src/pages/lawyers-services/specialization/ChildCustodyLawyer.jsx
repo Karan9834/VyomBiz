@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Users, Briefcase, Building2, ChevronDown, Phone, CheckCircle2, Shield, FileText, Scale, AlertCircle, BookOpen, Gavel, Landmark, ShoppingBag, Search, MessageSquare } from "lucide-react";
-import InsideNavbar from "../../components/common/InsideNavbar.jsx";
-import HeroLayout from "../../components/common/HeroLayout.jsx";
+import InsideNavbar from "../../../components/common/InsideNavbar.jsx";
+import HeroLayout from "../../../components/common/HeroLayout.jsx";
 
 /* ─────────────────────────────────────────────────────────
    SECTION TABS CONFIG
@@ -181,14 +181,14 @@ const ChildCustodyLawyer = () => {
             {/* HERO SECTION */}
             <HeroLayout
                 heroTitleMain="Child Custody"
-                heroTitleSuffix="Lawyer Services"
-                heroSubtitle="Protect What Matters Most — Your Child’s Future"
-                heroDescription="Child custody disputes can be emotionally overwhelming and legally complex. Get expert legal guidance to secure the best outcome for your child and your parental rights."
+                heroTitleSuffix="Lawyers"
+                heroDescription="Protect What Matters Most — Your Child’s Future. Child custody disputes can be emotionally overwhelming and legally complex. Get expert legal guidance to secure the best outcome for your child and your parental rights."
                 stats={[
-                    { count: "Expert", label: "Custody Lawyers", icon: <Users size={20} /> },
-                    { count: "Focused", label: "on Child Welfare", icon: <Shield size={20} /> },
-                    { count: "Confidential", label: "Legal Support", icon: <Briefcase size={20} /> }
+                    { count: "Expert", label: "Custody Lawyers" },
+                    { count: "Focused", label: "on Child Welfare" },
+                    { count: "Confidential", label: "Legal Support" }
                 ]}
+                bgImage="/lawyer-service-hero-section-img/hero-section-bg-img.png"
             />
 
             {/* STICKY INSIDE NAVBAR */}
@@ -202,7 +202,7 @@ const ChildCustodyLawyer = () => {
 
             {/* CONTENT BODY */}
             <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-6 pb-24">
-                
+
                 {/* SECTION 1 · OVERVIEW */}
                 <section id="overview" ref={setRef("overview")} className="pt-14 pb-10 scroll-mt-[115px]">
                     <SectionLabel>Overview</SectionLabel>

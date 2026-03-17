@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { useParams } from 'react-router-dom';
-import LawyerSpecializationLayout from '../../components/lawyers-services/LawyerSpecializationLayout';
-import { lawyerSpecializationData } from '../../constants/lawyer-specialization-data';
-import PageTemplate from '../../components/common/PageTemplate';
+import LawyerSpecializationLayout from '../../../components/lawyers-services/LawyerSpecializationLayout';
+import { lawyerSpecializationData } from '../../../constants/lawyer-specialization-data';
+import PageTemplate from '../../../components/common/PageTemplate';
 
 const LawyerSpecializationDynamic = () => {
     const { type } = useParams();

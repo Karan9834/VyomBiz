@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Users, Briefcase, Building2, ChevronDown, Phone, CheckCircle2, Shield, FileText, Scale, AlertCircle, BookOpen, Gavel, Landmark, ShoppingBag, Search, MessageSquare } from "lucide-react";
-import InsideNavbar from "../../components/common/InsideNavbar.jsx";
-import HeroLayout from "../../components/common/HeroLayout.jsx";
+import InsideNavbar from "../../../components/common/InsideNavbar.jsx";
+import HeroLayout from "../../../components/common/HeroLayout.jsx";
 
 /* ─────────────────────────────────────────────────────────
    SECTION TABS CONFIG
@@ -180,15 +180,15 @@ const CorporateLawyer = () => {
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
             {/* HERO SECTION */}
             <HeroLayout
-                heroTitleMain="Corporate Lawyer"
-                heroTitleSuffix="Services for Businesses"
-                heroSubtitle="Strategic Legal Support for Companies at Every Stage"
-                heroDescription="Running a business means making decisions that carry legal impact. A corporate lawyer ensures your business operates within the law while protecting it from risks, disputes, and compliance issues. Whether you're a startup, SME, or growing enterprise, professional legal support helps you scale with confidence."
+                heroTitleMain="Corporate"
+                heroTitleSuffix="Lawyers"
+                heroDescription="Strategic Legal Support for Companies at Every Stage. Running a business means making decisions that carry legal impact. A corporate lawyer ensures your business operates within the law while protecting it from risks, disputes, and compliance issues."
                 stats={[
-                    { count: "Business", label: "Structuring", icon: <Building2 size={20} /> },
-                    { count: "Contract", label: "Management", icon: <FileText size={20} /> },
-                    { count: "Legal", label: "Compliance", icon: <Shield size={20} /> }
+                    { count: "Business", label: "Structuring" },
+                    { count: "Contract", label: "Management" },
+                    { count: "Legal", label: "Compliance" }
                 ]}
+                bgImage="/lawyer-service-hero-section-img/hero-section-bg-img.png"
             />
 
             {/* STICKY INSIDE NAVBAR */}
@@ -202,7 +202,7 @@ const CorporateLawyer = () => {
 
             {/* CONTENT BODY */}
             <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-6 pb-24">
-                
+
                 {/* SECTION 1 · OVERVIEW */}
                 <section id="overview" ref={setRef("overview")} className="pt-14 pb-10 scroll-mt-[115px]">
                     <SectionLabel>Overview</SectionLabel>
@@ -304,7 +304,7 @@ const CorporateLawyer = () => {
                     ]} />
 
                     <Divider />
-                    
+
                     <SubHeading>Who Should Hire a Corporate Lawyer</SubHeading>
                     <BodyText>
                         Corporate lawyers are valuable for businesses at multiple stages:
@@ -336,7 +336,7 @@ const CorporateLawyer = () => {
                     <BodyText>
                         Businesses trust Vyombiz for professional and structured legal assistance. We are committed to helping businesses navigate corporate law with clarity and confidence. Key advantages include:
                     </BodyText>
-                    
+
                     <BulletList items={[
                         "Experienced corporate legal professionals",
                         "Business-focused legal solutions",

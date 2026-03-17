@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Users, Briefcase, Building2, ChevronDown, Phone, CheckCircle2, Shield, FileText, Scale, AlertCircle, BookOpen, Gavel, Landmark, ShoppingBag, Search, MessageSquare } from "lucide-react";
-import InsideNavbar from "../../components/common/InsideNavbar.jsx";
-import HeroLayout from "../../components/common/HeroLayout.jsx";
+import InsideNavbar from "../../../components/common/InsideNavbar.jsx";
+import HeroLayout from "../../../components/common/HeroLayout.jsx";
 
 /* ─────────────────────────────────────────────────────────
    SECTION TABS CONFIG
@@ -204,13 +204,13 @@ const LegalNoticeConsumerProtection = () => {
             <HeroLayout
                 heroTitleMain="Legal Notice Under"
                 heroTitleSuffix="Consumer Protection Act"
-                heroSubtitle="Protect Your Consumer Rights with Expert Legal Guidance"
-                heroDescription="Fight against unfair trade practices and product defects. Send a professionally drafted Legal Notice to service providers and recover your losses efficiently with Vyombiz."
+                heroDescription="Protect Your Consumer Rights with Expert Legal Guidance. Fight against unfair trade practices and product defects. Send a professionally drafted Legal Notice to service providers and recover your losses efficiently with Vyombiz."
                 stats={[
-                    { count: "12,000+", label: "Notices Sent", icon: <Users size={20} /> },
-                    { count: "90%+", label: "Resolution Rate", icon: <Briefcase size={20} /> },
-                    { count: "24-48 hrs", label: "Drafting Time", icon: <Building2 size={20} /> }
+                    { count: "12,000+", label: "Notices Sent" },
+                    { count: "90%+", label: "Resolution Rate" },
+                    { count: "24-48 hrs", label: "Drafting Time" }
                 ]}
+                bgImage="/lawyer-service-hero-section-img/hero-section-bg-img.png"
             />
 
             {/* ═══════════════════════════════════════════

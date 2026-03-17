@@ -161,9 +161,9 @@ const HeroLayout = ({
                             {heroTitleSuffix}
                         </h1>
 
-                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">
+                        <div className="text-[17px] text-slate-600 leading-relaxed font-medium">
                             {heroDescription}
-                        </p>
+                        </div>
 
                         {/* Status Pills */}
                         <div className="flex flex-wrap items-center gap-4">

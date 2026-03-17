@@ -1,143 +1,45 @@
-On branch main
-Your branch is up to date with 'origin/main'.
-
-You have unmerged paths.
-  (fix conflicts and run "git commit")
-  (use "git merge --abort" to abort the merge)
-
-Changes to be committed:
-	new file:   build_error.txt
-	new file:   fix_env_paths.cjs
-	modified:   src/components/common/DetailsLayout.jsx
-	new file:   src/components/environmental/CGWA/CGWADetails.jsx
-	new file:   src/components/environmental/CGWA/CGWAFAQ.jsx
-	new file:   src/components/environmental/CGWA/CGWAHero.jsx
-	new file:   src/components/environmental/CGWA/CGWAPricing.jsx
-	new file:   src/components/environmental/ConsentToEstablish/ConsentToEstablishDetails.jsx
-	new file:   src/components/environmental/ConsentToEstablish/ConsentToEstablishFAQ.jsx
-	new file:   src/components/environmental/ConsentToEstablish/ConsentToEstablishHero.jsx
-	new file:   src/components/environmental/ConsentToEstablish/ConsentToEstablishPricing.jsx
-	new file:   src/components/environmental/DPCC/DPCCDetails.jsx
-	new file:   src/components/environmental/DPCC/DPCCFAQ.jsx
-	new file:   src/components/environmental/DPCC/DPCCHero.jsx
-	new file:   src/components/environmental/DPCC/DPCCPricing.jsx
-	new file:   src/components/environmental/EVChargingUP/EVChargingUPDetails.jsx
-	new file:   src/components/environmental/EVChargingUP/EVChargingUPFAQ.jsx
-	new file:   src/components/environmental/EVChargingUP/EVChargingUPHero.jsx
-	new file:   src/components/environmental/EVChargingUP/EVChargingUPPricing.jsx
-	new file:   src/components/environmental/EWasteDismantling/EWasteDismantlingDetails.jsx
-	new file:   src/components/environmental/EWasteDismantling/EWasteDismantlingFAQ.jsx
-	new file:   src/components/environmental/EWasteDismantling/EWasteDismantlingHero.jsx
-	new file:   src/components/environmental/EWasteDismantling/EWasteDismantlingPricing.jsx
-	new file:   src/components/environmental/FireDepartmentNOC/FireDepartmentDetails.jsx
-	new file:   src/components/environmental/FireDepartmentNOC/FireDepartmentFAQ.jsx
-	new file:   src/components/environmental/FireDepartmentNOC/FireDepartmentHero.jsx
-	new file:   src/components/environmental/FireDepartmentNOC/FireDepartmentPricing.jsx
-	new file:   src/components/environmental/NOCPCB/NOCPCBDetails.jsx
-	new file:   src/components/environmental/NOCPCB/NOCPCBFAQ.jsx
-	new file:   src/components/environmental/NOCPCB/NOCPCBHero.jsx
-	new file:   src/components/environmental/NOCPCB/NOCPCBPricing.jsx
-	new file:   src/components/environmental/PhaseIISoil/PhaseIISoilDetails.jsx
-	new file:   src/components/environmental/PhaseIISoil/PhaseIISoilFAQ.jsx
-	new file:   src/components/environmental/PhaseIISoil/PhaseIISoilHero.jsx
-	new file:   src/components/environmental/PhaseIISoil/PhaseIISoilPricing.jsx
-	new file:   src/components/environmental/UPPCB/UPPCBDetails.jsx
-	new file:   src/components/environmental/UPPCB/UPPCBFAQ.jsx
-	new file:   src/components/environmental/UPPCB/UPPCBHero.jsx
-	new file:   src/components/environmental/UPPCB/UPPCBPricing.jsx
-	new file:   src/pages/environmental/BatteryWasteManagement/LithiumIonBatteryImportLicense.jsx
-	new file:   src/pages/environmental/BatteryWasteManagement/NewLeadAcidBatteryImportLicense.jsx
-	new file:   src/pages/environmental/BatteryWasteManagement/RegistrationForLeadAcidBatteryRecycling.jsx
-	new file:   src/pages/environmental/BatteryWasteManagement/RegistrationForScrapBatteryImport.jsx
-	new file:   src/pages/environmental/EIA/CDPReporting.jsx
-	new file:   src/pages/environmental/EIA/ConsentForOperationFO.jsx
-	new file:   src/pages/environmental/EIA/EnvironmentalAuditing.jsx
-	new file:   src/pages/environmental/EIA/EnvironmentalClearance.jsx
-	new file:   src/pages/environmental/EIA/EnvironmentalImpactAssessmentIA.jsx
-	new file:   src/pages/environmental/EIA/EnvironmentalManagementPlanReport.jsx
-	new file:   src/pages/environmental/EIA/ExtendedProducerResponsibility.jsx
-	new file:   src/pages/environmental/EIA/HalfYearlyEnvironmentalCompliance.jsx
-	new file:   src/pages/environmental/EIA/HydrogeologicalSurveyReport.jsx
-	new file:   src/pages/environmental/EIA/SocialImpactAssessment.jsx
-	new file:   src/pages/environmental/EIA/SoilTesting.jsx
-	new file:   src/pages/environmental/EIA/StatePollutionControlBoardPCBOC.jsx
-	new file:   src/pages/environmental/EIA/WildlifeConservationPlan.jsx
-	new file:   src/pages/environmental/EWasteManagement/AuthorizationForExportOfEWaste.jsx
-	new file:   src/pages/environmental/EWasteManagement/EPRAuthorizationForBatteryWaste.jsx
-	new file:   src/pages/environmental/EWasteManagement/EPRAuthorizationForEWaste.jsx
-	new file:   src/pages/environmental/EWasteManagement/EPRCompliance.jsx
-	new file:   src/pages/environmental/EWasteManagement/EPRCredits.jsx
-	new file:   src/pages/environmental/EWasteManagement/EPRCreditsFromPlasticWasteRecyclers.jsx
-	new file:   src/pages/environmental/EWasteManagement/EPRForImporters.jsx
-	new file:   src/pages/environmental/EWasteManagement/EPRFulfillmentInEWasteManagement.jsx
-	new file:   src/pages/environmental/EWasteManagement/EPRPostComplianceWaste.jsx
-	new file:   src/pages/environmental/EWasteManagement/EPRRegistration.jsx
-	new file:   src/pages/environmental/EWasteManagement/EPRRegistrationForProducersAndBrandOwners.jsx
-	new file:   src/pages/environmental/EWasteManagement/EPRTargetFulfilment.jsx
-	new file:   src/pages/environmental/EWasteManagement/EWasteRecyclingAuthorization.jsx
-	new file:   src/pages/environmental/EWasteManagement/EWasteRecyclingLicense.jsx
-	new file:   src/pages/environmental/EWasteManagement/PROAuthorization.jsx
-	new file:   src/pages/environmental/EWasteManagement/PlasticWasteAuthorization.jsx
-	new file:   src/pages/environmental/EWasteManagement/RefurbisherAuthorizationAndLicense.jsx
-	new file:   src/pages/environmental/EnvironmentalAdvisory/CarbonCreditTradingScheme.jsx
-	new file:   src/pages/environmental/EnvironmentalAdvisory/ConstructionAndDemolitionDasteRecycling.jsx
-	new file:   src/pages/environmental/EnvironmentalAdvisory/EnvironmentalDueDiligenceServices.jsx
-	new file:   src/pages/environmental/EnvironmentalAdvisory/EnvironmentocialAndGovernanceSGtrategies.jsx
-	new file:   src/pages/environmental/EnvironmentalAdvisory/RiskAssessment.jsx
-	new file:   src/pages/environmental/EnvironmentalAdvisory/SupplyChainAndHumanRightsAndEnvironmentalDueDiligence.jsx
-	new file:   src/pages/environmental/EnvironmentalIndustry/ESDDInAerospaceIndustry.jsx
-	new file:   src/pages/environmental/EnvironmentalIndustry/ESDDInAgriculturalEquipmentManufacturingIndustry.jsx
-	new file:   src/pages/environmental/EnvironmentalIndustry/ESDDInDairyIndustry.jsx
-	new file:   src/pages/environmental/EnvironmentalIndustry/ESDDInFinancialankingSector.jsx
-	new file:   src/pages/environmental/EnvironmentalIndustry/ESDDInFoodProcessingIndustry.jsx
-	new file:   src/pages/environmental/EnvironmentalIndustry/ESDDInFurnitureAndFixturesIndustry.jsx
-	new file:   src/pages/environmental/EnvironmentalIndustry/ESDDInIronAndSteelIndustry.jsx
-	new file:   src/pages/environmental/EnvironmentalIndustry/ESDDInRenewableEnergyIndustry.jsx
-	new file:   src/pages/environmental/EnvironmentalIndustry/ESDDInSolarEnergyIndustry.jsx
-	new file:   src/pages/environmental/EnvironmentalIndustry/ESDDInTheSugarIndustry.jsx
-	new file:   src/pages/environmental/EnvironmentalIndustry/ESDDInTobaccoIndustry.jsx
-	new file:   src/pages/environmental/EnvironmentalLicensing/AuthorizedVehicleScrappingFacilityVSF.jsx
-	new file:   src/pages/environmental/EnvironmentalLicensing/CarbonCreditAccounting.jsx
-	new file:   src/pages/environmental/EnvironmentalLicensing/CarbonFootprintCalculationConsulting.jsx
-	new file:   src/pages/environmental/EnvironmentalLicensing/FSCCertification.jsx
-	new file:   src/pages/environmental/EnvironmentalLicensing/GreenBuildingCertification.jsx
-	new file:   src/pages/environmental/EnvironmentalLicensing/ICATCertification.jsx
-	new file:   src/pages/environmental/EnvironmentalLicensing/LEEDZeroCarbonCertification.jsx
-	new file:   src/pages/environmental/EnvironmentalLicensing/LEEDZeroWaterCertification.jsx
-	new file:   src/pages/environmental/EnvironmentalLicensing/PEFCCertification.jsx
-	new file:   src/pages/environmental/EnvironmentalLicensing/TSDFFacilityServices.jsx
-	new file:   src/pages/environmental/EnvironmentalLicensing/VrikshCertification.jsx
-	new file:   src/pages/environmental/HazardousWasteManagement/AuthorizationForExportOfHazardousWaste.jsx
-	new file:   src/pages/environmental/HazardousWasteManagement/AuthorizationForImportOfHazardousWaste.jsx
-	new file:   src/pages/environmental/HazardousWasteManagement/BioMedicalWasteRecyclingPlant.jsx
-	new file:   src/pages/environmental/HazardousWasteManagement/HazardousWasteExportAuthorisation.jsx
-	new file:   src/pages/environmental/HazardousWasteManagement/HazardousWasteManagementAndComplianceAssurance.jsx
-	new file:   src/pages/environmental/HazardousWasteManagement/HazardousWasteManagementAuthorization.jsx
-	new file:   src/pages/environmental/HazardousWasteManagement/IndustrialWasteManagement.jsx
-	new file:   src/pages/environmental/HazardousWasteManagement/LandWasteManagement.jsx
-	new file:   src/pages/environmental/HazardousWasteManagement/SolidWasteManagementAuthorization.jsx
-	new file:   src/pages/environmental/PlasticWasteManagement/EPRAuthorizationForPlasticWasteManagement.jsx
-	new file:   src/pages/environmental/PlasticWasteManagement/EPRFulfilmentForPlasticWasteManagement.jsx
-	new file:   src/pages/environmental/PlasticWasteManagement/EPRPostCompliancelasticWaste.jsx
-	new file:   src/pages/environmental/PlasticWasteManagement/PlasticWasteProcessorsAuthorisation.jsx
-	new file:   src/pages/environmental/PlasticWasteManagement/PlasticWasteRecyclingPlantWM.jsx
-	new file:   src/pages/environmental/PollutionNOC/CGWAWaterBoring.jsx
-	new file:   src/pages/environmental/PollutionNOC/ConsentForEstablishmentFromSPCB.jsx
-	new file:   src/pages/environmental/PollutionNOC/DelhiPollutionControlCommittee.jsx
-	new file:   src/pages/environmental/PollutionNOC/EWasteLicenseForDismantling.jsx
-	new file:   src/pages/environmental/PollutionNOC/FireDepartmentNOC.jsx
-	new file:   src/pages/environmental/PollutionNOC/LicenseForChargingStationInUP.jsx
-	new file:   src/pages/environmental/PollutionNOC/NOCPollutionControlBoard.jsx
-	new file:   src/pages/environmental/PollutionNOC/PhaseIISoilAndGroundwaterInvestigations.jsx
-	new file:   src/pages/environmental/PollutionNOC/UttarPradeshPollutionControlBoard.jsx
-	modified:   src/routes/AppRoutes.jsx
-	new file:   src/routes/EnvironmentalRoutes.jsx
-
-Unmerged paths:
-  (use "git add <file>..." to mark resolution)
-	both modified:   src/routes/MainRoutes.jsx
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	status.txt
-
+ M src/components/common/HeroLayout.jsx
+ M src/constants/lawyer-specialization-data.js
+ D src/pages/lawyers-services/ChequeBounceLawyer.jsx
+ D src/pages/lawyers-services/ChequeBounceNotice.jsx
+ D src/pages/lawyers-services/ChildCustodyLawyer.jsx
+ D src/pages/lawyers-services/CivilLawyer.jsx
+ D src/pages/lawyers-services/CorporateLawyer.jsx
+ D src/pages/lawyers-services/CustomerProtectionLawyer.jsx
+ D src/pages/lawyers-services/CyberCrimeLawyer.jsx
+ D src/pages/lawyers-services/DivorceLawyer.jsx
+ D src/pages/lawyers-services/FinanceLawyer.jsx
+ D src/pages/lawyers-services/GSTLawyer.jsx
+ D src/pages/lawyers-services/LabourLawyer.jsx
+ D src/pages/lawyers-services/LawyerSpecializationDynamic.jsx
+ D src/pages/lawyers-services/LawyersServices.jsx
+ D src/pages/lawyers-services/LegalNoticeConsumerProtection.jsx
+ D src/pages/lawyers-services/LegalNoticeRecoveryDues.jsx
+ D src/pages/lawyers-services/specialization/ChequeBounceLawyers.jsx
+ D src/pages/lawyers-services/specialization/FinanceLawyers.jsx
+ M src/routes/LegalRoutes.jsx
+?? git_status_out.txt
+?? old_pages.txt
+?? src/pages/lawyers-services/specialization/ChequeBounceLawyer.jsx
+?? src/pages/lawyers-services/specialization/ChequeBounceNotice.jsx
+?? src/pages/lawyers-services/specialization/ChildCustodyLawyer.jsx
+?? src/pages/lawyers-services/specialization/CivilLawyer.jsx
+?? src/pages/lawyers-services/specialization/ContractLawyer.jsx
+?? src/pages/lawyers-services/specialization/CorporateLawyer.jsx
+?? src/pages/lawyers-services/specialization/CriminalLawyer.jsx
+?? src/pages/lawyers-services/specialization/CustomerProtectionLawyer.jsx
+?? src/pages/lawyers-services/specialization/CyberCrimeLawyer.jsx
+?? src/pages/lawyers-services/specialization/DivorceLawyer.jsx
+?? src/pages/lawyers-services/specialization/FamilyLawyer.jsx
+?? src/pages/lawyers-services/specialization/FinanceLawyer.jsx
+?? src/pages/lawyers-services/specialization/GSTLawyer.jsx
+?? src/pages/lawyers-services/specialization/IntellectualPropertyLawyer.jsx
+?? src/pages/lawyers-services/specialization/LabourLawyer.jsx
+?? src/pages/lawyers-services/specialization/LawyerSpecializationDynamic.jsx
+?? src/pages/lawyers-services/specialization/LawyersServices.jsx
+?? src/pages/lawyers-services/specialization/LegalNoticeConsumerProtection.jsx
+?? src/pages/lawyers-services/specialization/LegalNoticeRecoveryDues.jsx
+?? src/pages/lawyers-services/specialization/MoneyRecoveryLawyer.jsx
+?? src/pages/lawyers-services/specialization/MotorAccidentLawyer.jsx
+?? src/pages/lawyers-services/specialization/MuslimLawLawyer.jsx
+?? src/pages/lawyers-services/specialization/PropertyLawyer.jsx

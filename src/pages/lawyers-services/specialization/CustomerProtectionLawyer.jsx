@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Users, Briefcase, Building2, ChevronDown, Phone, CheckCircle2, Shield, FileText, Scale, AlertCircle, BookOpen, Gavel, Landmark, ShoppingBag, Search, MessageSquare } from "lucide-react";
-import InsideNavbar from "../../components/common/InsideNavbar.jsx";
-import HeroLayout from "../../components/common/HeroLayout.jsx";
+import InsideNavbar from "../../../components/common/InsideNavbar.jsx";
+import HeroLayout from "../../../components/common/HeroLayout.jsx";
 
 /* ─────────────────────────────────────────────────────────
    SECTION TABS CONFIG
@@ -176,15 +176,15 @@ const CustomerProtectionLawyer = () => {
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
             {/* HERO SECTION */}
             <HeroLayout
-                heroTitleMain="Customer Protection"
-                heroTitleSuffix="Lawyer"
-                heroSubtitle="Protect Your Consumer Rights with Expert Legal Support"
-                heroDescription="Facing unfair business practices, defective products, or misleading services? A Customer Protection Lawyer helps you fight back legally and claim the compensation you deserve. Get professional legal assistance to file complaints, resolve disputes, and enforce your consumer rights with confidence."
+                heroTitleMain="Customer"
+                heroTitleSuffix="Protection Lawyers"
+                heroDescription="Protect Your Consumer Rights with Expert Legal Support. Facing unfair business practices, defective products, or misleading services? A Customer Protection Lawyer helps you fight back legally and claim the compensation you deserve."
                 stats={[
-                    { count: "File", label: "Complaints", icon: <FileText size={20} /> },
-                    { count: "Claim", label: "Compensation", icon: <Scale size={20} /> },
-                    { count: "Resolve", label: "Disputes Quickly", icon: <Shield size={20} /> }
+                    { count: "File", label: "Complaints" },
+                    { count: "Claim", label: "Compensation" },
+                    { count: "Resolve", label: "Disputes Quickly" }
                 ]}
+                bgImage="/lawyer-service-hero-section-img/hero-section-bg-img.png"
             />
 
             {/* STICKY INSIDE NAVBAR */}

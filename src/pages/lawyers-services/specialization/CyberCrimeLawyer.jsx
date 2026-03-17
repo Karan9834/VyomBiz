@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Users, Briefcase, Building2, ChevronDown, Phone, CheckCircle2, Shield, FileText, Scale, AlertCircle, BookOpen, Gavel, Landmark, ShoppingBag, Search, MessageSquare } from "lucide-react";
-import InsideNavbar from "../../components/common/InsideNavbar.jsx";
-import HeroLayout from "../../components/common/HeroLayout.jsx";
+import InsideNavbar from "../../../components/common/InsideNavbar.jsx";
+import HeroLayout from "../../../components/common/HeroLayout.jsx";
 
 /* ─────────────────────────────────────────────────────────
    SECTION TABS CONFIG
@@ -181,14 +181,14 @@ const CyberCrimeLawyer = () => {
             {/* HERO SECTION */}
             <HeroLayout
                 heroTitleMain="Cyber Crime"
-                heroTitleSuffix="Lawyer"
-                heroSubtitle="Cyber Crime Lawyer for Digital Fraud, Online Harassment & Data Theft"
-                heroDescription="The internet has created endless opportunities for businesses and individuals—but it has also opened doors for cyber criminals. From financial fraud and hacking to identity theft and online harassment, cyber offences are increasing rapidly. Get expert legal support from experienced cyber crime lawyers who understand digital laws, cyber investigations, and online dispute resolution."
+                heroTitleSuffix="Lawyers"
+                heroDescription="Cyber Crime Lawyer for Digital Fraud, Online Harassment & Data Theft. Get expert legal support from experienced cyber crime lawyers who understand digital laws, cyber investigations, and online dispute resolution."
                 stats={[
-                    { count: "Legal", label: "Consultation", icon: <Users size={20} /> },
-                    { count: "FIR", label: "Filing Assistance", icon: <FileText size={20} /> },
-                    { count: "Digital", label: "Rights Protection", icon: <Shield size={20} /> }
+                    { count: "Legal", label: "Consultation" },
+                    { count: "FIR", label: "Filing Assistance" },
+                    { count: "Digital", label: "Rights Protection" }
                 ]}
+                bgImage="/lawyer-service-hero-section-img/hero-section-bg-img.png"
             />
 
             {/* STICKY INSIDE NAVBAR */}

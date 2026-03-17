@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Users, Briefcase, Building2, ChevronDown, Phone, CheckCircle2, Shield, FileText, Scale, AlertCircle, BookOpen, Gavel, Landmark, ShoppingBag, Search, MessageSquare } from "lucide-react";
-import InsideNavbar from "../../components/common/InsideNavbar.jsx";
-import HeroLayout from "../../components/common/HeroLayout.jsx";
+import InsideNavbar from "../../../components/common/InsideNavbar.jsx";
+import HeroLayout from "../../../components/common/HeroLayout.jsx";
 
 /* ─────────────────────────────────────────────────────────
    SECTION TABS CONFIG
@@ -180,15 +180,15 @@ const FinanceLawyer = () => {
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
             {/* HERO SECTION */}
             <HeroLayout
-                heroTitleMain="Finance Lawyer"
-                heroTitleSuffix="Services"
-                heroSubtitle="Finance Lawyers for Businesses, Startups & Investors"
+                heroTitleMain="Finance"
+                heroTitleSuffix="Lawyers"
                 heroDescription="From fundraising to financial compliance, expert legal guidance is critical in every financial decision your business makes. Work with experienced finance lawyers who help you structure deals, manage risk, and stay compliant with financial regulations."
                 stats={[
-                    { count: "Expert", label: "Legal Assistance", icon: <Users size={20} /> },
-                    { count: "Risk", label: "Management", icon: <Shield size={20} /> },
-                    { count: "Secure", label: "Transactions", icon: <Briefcase size={20} /> }
+                    { count: "Expert", label: "Legal Assistance" },
+                    { count: "Risk", label: "Management" },
+                    { count: "Secure", label: "Transactions" }
                 ]}
+                bgImage="/lawyer-service-hero-section-img/hero-section-bg-img.png"
             />
 
             {/* STICKY INSIDE NAVBAR */}

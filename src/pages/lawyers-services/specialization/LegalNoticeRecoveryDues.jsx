@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Users, Briefcase, Building2, ChevronDown, Phone, CheckCircle2, Shield, FileText, Scale, AlertCircle, BookOpen, Gavel } from "lucide-react";
-import InsideNavbar from "../../components/common/InsideNavbar.jsx";
-import HeroLayout from "../../components/common/HeroLayout.jsx";
+import InsideNavbar from "../../../components/common/InsideNavbar.jsx";
+import HeroLayout from "../../../components/common/HeroLayout.jsx";
 
 /* ─────────────────────────────────────────────────────────
    SECTION TABS CONFIG
@@ -214,13 +214,13 @@ const LegalNoticeRecoveryDues = () => {
             <HeroLayout
                 heroTitleMain="Legal Notice for"
                 heroTitleSuffix="Recovery of Dues"
-                heroSubtitle="Recover Your Money Legally and Efficiently"
-                heroDescription="Reclaim your stuck payments with a professionally drafted Legal Notice. Our expert lawyers ensure your notice is watertight, persuasive, and legally sound."
+                heroDescription="Recover Your Money Legally and Efficiently. Reclaim your stuck payments with a professionally drafted Legal Notice. Our expert lawyers ensure your notice is watertight, persuasive, and legally sound."
                 stats={[
-                    { count: "15,000+", label: "Notices Drafted", icon: <Users size={20} /> },
-                    { count: "95%", label: "Success Rate", icon: <Briefcase size={20} /> },
-                    { count: "24 Hrs", label: "Fast Turnaround", icon: <Building2 size={20} /> }
+                    { count: "15,000+", label: "Notices Drafted" },
+                    { count: "95%", label: "Success Rate" },
+                    { count: "24 Hrs", label: "Fast Turnaround" }
                 ]}
+                bgImage="/lawyer-service-hero-section-img/hero-section-bg-img.png"
             />
 
             {/* ═══════════════════════════════════════════

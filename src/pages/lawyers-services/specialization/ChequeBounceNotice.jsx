@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Users, Briefcase, Building2, ChevronDown, Phone, FileText, Scale, Gavel, Landmark, Search, Shield, AlertCircle, BookOpen, Clock, Banknote, MessageSquare } from "lucide-react";
-import InsideNavbar from "../../components/common/InsideNavbar.jsx";
-import HeroLayout from "../../components/common/HeroLayout.jsx";
+import InsideNavbar from "../../../components/common/InsideNavbar.jsx";
+import HeroLayout from "../../../components/common/HeroLayout.jsx";
 
 /* ─────────────────────────────────────────────────────────
    SECTION TABS CONFIG
@@ -199,14 +199,14 @@ const ChequeBounceNotice = () => {
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
             <HeroLayout
                 heroTitleMain="Cheque Bounce"
-                heroTitleSuffix="Notice Service"
-                heroSubtitle="Recover Your Funds Legally and Swiftly"
-                heroDescription="Issue a formal legal notice for dishonoured cheques under Section 138 of the NI Act. Vyombiz ensures your notice is watertight, professional, and delivered within statutory timelines."
+                heroTitleSuffix="Notice"
+                heroDescription="Recover Your Funds Legally and Swiftly. Issue a formal legal notice for dishonoured cheques under Section 138 of the NI Act. Vyombiz ensures your notice is watertight, professional, and delivered within statutory timelines."
                 stats={[
-                    { count: "25,000+", label: "Notices Issued", icon: <Users size={20} /> },
-                    { count: "98%", label: "Accuracy", icon: <Shield size={20} /> },
-                    { count: "24 Hrs", label: "Fast Draft", icon: <Clock size={20} /> }
+                    { count: "25,000+", label: "Notices Issued" },
+                    { count: "98%", label: "Accuracy" },
+                    { count: "24 Hrs", label: "Fast Draft" }
                 ]}
+                bgImage="/lawyer-service-hero-section-img/hero-section-bg-img.png"
             />
 
             <InsideNavbar
