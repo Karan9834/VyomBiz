@@ -139,202 +139,202 @@ export const litigationContent = {
             }
         }
     },
-   "grievances-consumer-complaint": {
-  title: "Resolve Consumer Disputes with Expert Legal Support",
+    "grievances-consumer-complaint": {
+        title: "Resolve Consumer Disputes with Expert Legal Support",
 
-  hero: {
-    mainTitle: "Resolve Consumer Disputes with Expert Legal Support",
-    bulletPoints: [
-      "Action against misleading advertisements and hidden charges",
-      "Compensation for defective products and poor services",
-      "Legal assistance for billing disputes and warranty issues"
-    ],
-    testimonial: {
-      text: "I was charged for a service I never subscribed to. VyomBiz helped me raise a complaint and I received a full refund along with compensation.",
-      author: "Verified Client Review",
-      verified: true,
-      avatar: "https://i.pravatar.cc/150?u=amit"
-    }
-  },
+        hero: {
+            mainTitle: "Resolve Consumer Disputes with Expert Legal Support",
+            bulletPoints: [
+                "Action against misleading advertisements and hidden charges",
+                "Compensation for defective products and poor services",
+                "Legal assistance for billing disputes and warranty issues"
+            ],
+            testimonial: {
+                text: "I was charged for a service I never subscribed to. VyomBiz helped me raise a complaint and I received a full refund along with compensation.",
+                author: "Verified Client Review",
+                verified: true,
+                avatar: "https://i.pravatar.cc/150?u=amit"
+            }
+        },
 
-  formSection: {
-    offerTitle: "Limited Time Offer",
-    ctaButton: "Start Your Complaint Process",
-    whatsappText:
-      "Receive important updates about your complaint directly on WhatsApp."
-  },
+        formSection: {
+            offerTitle: "Limited Time Offer",
+            ctaButton: "Start Your Complaint Process",
+            whatsappText:
+                "Receive important updates about your complaint directly on WhatsApp."
+        },
 
-  tabs: [
-    { id: "overview", label: "Overview" },
-    { id: "types", label: "Types" },
-    { id: "when-to-file", label: "When To File" },
-    { id: "process", label: "Process" },
-    { id: "why-choose", label: "Why Choose VyomBiz" },
-    { id: "faqs", label: "FAQs" }
-  ],
+        tabs: [
+            { id: "overview", label: "Overview" },
+            { id: "types", label: "Types" },
+            { id: "when-to-file", label: "When To File" },
+            { id: "process", label: "Process" },
+            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "faqs", label: "FAQs" }
+        ],
 
-  sections: {
-    overview: {
-      title: "Consumer Grievances – Overview",
-      image: "/lawyer-services-images/grievances-overview.png",
-      content: [
-        "Consumer grievances can arise in many situations, including defective products, delayed deliveries, incorrect billing, or unsatisfactory services. These issues are often caused by misleading advertisements, hidden charges, or failure to meet promised standards.",
-        "Raising a formal complaint helps ensure accountability and encourages businesses to follow fair trade practices. It also helps consumers seek refunds, replacements, or compensation for losses.",
-        "VyomBiz offers legal assistance to help consumers resolve disputes effectively, whether through formal complaints, legal notices, or proceedings before consumer forums."
-      ]
-    },
+        sections: {
+            overview: {
+                title: "Consumer Grievances – Overview",
+                image: "/lawyer-services-images/grievances-overview.png",
+                content: [
+                    "Consumer grievances can arise in many situations, including defective products, delayed deliveries, incorrect billing, or unsatisfactory services. These issues are often caused by misleading advertisements, hidden charges, or failure to meet promised standards.",
+                    "Raising a formal complaint helps ensure accountability and encourages businesses to follow fair trade practices. It also helps consumers seek refunds, replacements, or compensation for losses.",
+                    "VyomBiz offers legal assistance to help consumers resolve disputes effectively, whether through formal complaints, legal notices, or proceedings before consumer forums."
+                ]
+            },
 
-    types: {
-      title: "Common Types of Consumer Grievances",
-      introduction:
-        "Consumers may face different types of issues when purchasing products or services.",
-      items: [
-        {
-          title: "Billing Disputes",
-          description:
-            "Errors in invoices, incorrect charges, or duplicate billing for the same transaction.",
-          example: "Being charged twice for the same service."
-        },
-        {
-          title: "Defective or Poor-Quality Products",
-          description:
-            "Products that are damaged, malfunctioning, or not as described.",
-          example: "Receiving a damaged smartphone from an online order."
-        },
-        {
-          title: "Delayed Delivery of Products or Services",
-          description:
-            "Failure to deliver goods or services within the committed time.",
-          example: "Furniture delivery delayed by several weeks."
-        },
-        {
-          title: "Warranty and Guarantee Disputes",
-          description:
-            "Companies refusing to provide repairs or replacements covered under warranty.",
-          example: "Service center denying repair despite warranty coverage."
-        },
-        {
-          title: "Undisclosed Charges",
-          description:
-            "Additional fees applied without proper disclosure during purchase.",
-          example: "Unexpected service charges added to final invoice."
-        },
-        {
-          title: "Misleading Advertisements",
-          description:
-            "Advertisements making false claims about product quality or performance.",
-          example: "Product performance not matching advertised claims."
+            types: {
+                title: "Common Types of Consumer Grievances",
+                introduction:
+                    "Consumers may face different types of issues when purchasing products or services.",
+                items: [
+                    {
+                        title: "Billing Disputes",
+                        description:
+                            "Errors in invoices, incorrect charges, or duplicate billing for the same transaction.",
+                        example: "Being charged twice for the same service."
+                    },
+                    {
+                        title: "Defective or Poor-Quality Products",
+                        description:
+                            "Products that are damaged, malfunctioning, or not as described.",
+                        example: "Receiving a damaged smartphone from an online order."
+                    },
+                    {
+                        title: "Delayed Delivery of Products or Services",
+                        description:
+                            "Failure to deliver goods or services within the committed time.",
+                        example: "Furniture delivery delayed by several weeks."
+                    },
+                    {
+                        title: "Warranty and Guarantee Disputes",
+                        description:
+                            "Companies refusing to provide repairs or replacements covered under warranty.",
+                        example: "Service center denying repair despite warranty coverage."
+                    },
+                    {
+                        title: "Undisclosed Charges",
+                        description:
+                            "Additional fees applied without proper disclosure during purchase.",
+                        example: "Unexpected service charges added to final invoice."
+                    },
+                    {
+                        title: "Misleading Advertisements",
+                        description:
+                            "Advertisements making false claims about product quality or performance.",
+                        example: "Product performance not matching advertised claims."
+                    }
+                ]
+            },
+
+            whenToFile: {
+                title: "Why You Should File a Consumer Complaint",
+                content:
+                    "Filing a complaint helps protect your rights and ensures businesses follow fair practices.",
+                parameters: [
+                    {
+                        title: "Seek Fair Resolution",
+                        desc: "Resolve disputes and ensure fair treatment for consumers."
+                    },
+                    {
+                        title: "Challenge Misleading Information",
+                        desc: "Raise concerns against false claims made by businesses."
+                    },
+                    {
+                        title: "Promote Transparent Pricing",
+                        desc: "Prevent companies from charging undisclosed fees."
+                    },
+                    {
+                        title: "Enforce Warranty Rights",
+                        desc: "Ensure that businesses fulfill their warranty commitments."
+                    }
+                ]
+            },
+
+            process: {
+                title: "Our Consumer Complaint Resolution Process",
+                introduction:
+                    "Our team follows a structured approach to handle consumer disputes effectively.",
+                steps: [
+                    {
+                        title: "Document Review",
+                        description:
+                            "Collecting supporting documents such as receipts, invoices, and communication records."
+                    },
+                    {
+                        title: "Brand Notification",
+                        description:
+                            "Submitting a formal complaint to the company or service provider."
+                    },
+                    {
+                        title: "Legal Notice",
+                        description:
+                            "Issuing a legal notice requesting resolution of the dispute."
+                    },
+                    {
+                        title: "Consumer Commission Filing",
+                        description:
+                            "Escalating the matter to the consumer commission if needed."
+                    },
+                    {
+                        title: "Dispute Resolution",
+                        description:
+                            "Securing a refund, replacement, or compensation through settlement or legal order."
+                    }
+                ]
+            },
+
+            cta: {
+                title: "Facing a Consumer Dispute?",
+                description:
+                    "Get expert legal assistance to resolve your complaint and claim the compensation you deserve.",
+                button: "Book Free Consultation"
+            },
+
+            whyChoose: {
+                title: "Why Choose VyomBiz for Consumer Complaints?",
+                reasons: [
+                    "Consumer Law Experts – Our professionals understand consumer protection laws and dispute procedures.",
+                    "Customized Complaint Strategy – Each case is handled based on the specific nature of the consumer issue.",
+                    "Proven Case Experience – Experience in resolving various types of consumer disputes.",
+                    "Complete Legal Support – From complaint drafting to legal representation when required.",
+                    "Protection of Consumer Rights – We ensure your rights are protected throughout the complaint process."
+                ]
+            },
+
+            faqs: {
+                title: "Consumer Grievance FAQs",
+                items: [
+                    {
+                        question: "How can I file a consumer complaint?",
+                        answer:
+                            "You can file a complaint with the business directly and escalate the issue to the consumer commission if the matter is not resolved."
+                    },
+                    {
+                        question: "What types of issues can be reported as consumer grievances?",
+                        answer:
+                            "Issues such as defective products, delayed delivery, hidden charges, poor services, and misleading advertisements can be reported."
+                    },
+                    {
+                        question: "Can I claim compensation for defective products?",
+                        answer:
+                            "Yes. Consumers can claim refunds, replacements, or compensation if they receive defective or substandard products."
+                    },
+                    {
+                        question: "Is there a time limit to file a consumer complaint?",
+                        answer:
+                            "Generally, consumer complaints should be filed within two years from the date the issue occurred."
+                    },
+                    {
+                        question: "Do I need legal assistance for consumer disputes?",
+                        answer:
+                            "Legal assistance can help prepare proper complaints, send legal notices, and represent you in consumer forums if required."
+                    }
+                ]
+            }
         }
-      ]
     },
-
-    whenToFile: {
-      title: "Why You Should File a Consumer Complaint",
-      content:
-        "Filing a complaint helps protect your rights and ensures businesses follow fair practices.",
-      parameters: [
-        {
-          title: "Seek Fair Resolution",
-          desc: "Resolve disputes and ensure fair treatment for consumers."
-        },
-        {
-          title: "Challenge Misleading Information",
-          desc: "Raise concerns against false claims made by businesses."
-        },
-        {
-          title: "Promote Transparent Pricing",
-          desc: "Prevent companies from charging undisclosed fees."
-        },
-        {
-          title: "Enforce Warranty Rights",
-          desc: "Ensure that businesses fulfill their warranty commitments."
-        }
-      ]
-    },
-
-    process: {
-      title: "Our Consumer Complaint Resolution Process",
-      introduction:
-        "Our team follows a structured approach to handle consumer disputes effectively.",
-      steps: [
-        {
-          title: "Document Review",
-          description:
-            "Collecting supporting documents such as receipts, invoices, and communication records."
-        },
-        {
-          title: "Brand Notification",
-          description:
-            "Submitting a formal complaint to the company or service provider."
-        },
-        {
-          title: "Legal Notice",
-          description:
-            "Issuing a legal notice requesting resolution of the dispute."
-        },
-        {
-          title: "Consumer Commission Filing",
-          description:
-            "Escalating the matter to the consumer commission if needed."
-        },
-        {
-          title: "Dispute Resolution",
-          description:
-            "Securing a refund, replacement, or compensation through settlement or legal order."
-        }
-      ]
-    },
-
-    cta: {
-      title: "Facing a Consumer Dispute?",
-      description:
-        "Get expert legal assistance to resolve your complaint and claim the compensation you deserve.",
-      button: "Book Free Consultation"
-    },
-
-    whyChoose: {
-      title: "Why Choose VyomBiz for Consumer Complaints?",
-      reasons: [
-        "Consumer Law Experts – Our professionals understand consumer protection laws and dispute procedures.",
-        "Customized Complaint Strategy – Each case is handled based on the specific nature of the consumer issue.",
-        "Proven Case Experience – Experience in resolving various types of consumer disputes.",
-        "Complete Legal Support – From complaint drafting to legal representation when required.",
-        "Protection of Consumer Rights – We ensure your rights are protected throughout the complaint process."
-      ]
-    },
-
-    faqs: {
-      title: "Consumer Grievance FAQs",
-      items: [
-        {
-          question: "How can I file a consumer complaint?",
-          answer:
-            "You can file a complaint with the business directly and escalate the issue to the consumer commission if the matter is not resolved."
-        },
-        {
-          question: "What types of issues can be reported as consumer grievances?",
-          answer:
-            "Issues such as defective products, delayed delivery, hidden charges, poor services, and misleading advertisements can be reported."
-        },
-        {
-          question: "Can I claim compensation for defective products?",
-          answer:
-            "Yes. Consumers can claim refunds, replacements, or compensation if they receive defective or substandard products."
-        },
-        {
-          question: "Is there a time limit to file a consumer complaint?",
-          answer:
-            "Generally, consumer complaints should be filed within two years from the date the issue occurred."
-        },
-        {
-          question: "Do I need legal assistance for consumer disputes?",
-          answer:
-            "Legal assistance can help prepare proper complaints, send legal notices, and represent you in consumer forums if required."
-        }
-      ]
-    }
-  }
-},
     "home-appliances-consumer-complaint": {
         title: "Home Appliances Consumer Complaint",
         hero: {
@@ -475,333 +475,333 @@ export const litigationContent = {
             }
         }
     },
-   "hotels-consumer-complaint": {
-  title: "Hotels Consumer Complaint",
-  hero: {
-    mainTitle: "Facing Issues with a Hotel Stay?",
-    bulletPoints: [
-      "Claim refunds for poor service and unfair charges",
-      "Resolve problems like unhygienic rooms and hidden fees",
-      "Legal assistance for booking cancellations and hotel disputes"
-    ],
-    testimonial: {
-      text: "The hotel cancelled my booking but refused to process the refund. VyomBiz helped me raise a complaint and I received my money back quickly.",
-      author: "Rajesh Kumar",
-      verified: true,
-      avatar: "https://i.pravatar.cc/150?u=rajesh"
-    }
-  },
+    "hotels-consumer-complaint": {
+        title: "Hotels Consumer Complaint",
+        hero: {
+            mainTitle: "Facing Issues with a Hotel Stay?",
+            bulletPoints: [
+                "Claim refunds for poor service and unfair charges",
+                "Resolve problems like unhygienic rooms and hidden fees",
+                "Legal assistance for booking cancellations and hotel disputes"
+            ],
+            testimonial: {
+                text: "The hotel cancelled my booking but refused to process the refund. VyomBiz helped me raise a complaint and I received my money back quickly.",
+                author: "Rajesh Kumar",
+                verified: true,
+                avatar: "https://i.pravatar.cc/150?u=rajesh"
+            }
+        },
 
-  tabs: [
-    { id: "overview", label: "Overview" },
-    { id: "types", label: "Types" },
-    { id: "when-to-file", label: "When To File" },
-    { id: "process", label: "Process" },
-    { id: "why-choose", label: "Why Choose VyomBiz" },
-    { id: "faqs", label: "FAQs" }
-  ],
+        tabs: [
+            { id: "overview", label: "Overview" },
+            { id: "types", label: "Types" },
+            { id: "when-to-file", label: "When To File" },
+            { id: "process", label: "Process" },
+            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "faqs", label: "FAQs" }
+        ],
 
-  sections: {
+        sections: {
 
-    overview: {
-      title: "Hotel Consumer Complaints – Overview",
-      image: "/lawyer-services-images/hotels-complaint-overview.png",
-      content: [
-        "A hotel stay is expected to provide comfort and quality service. However, guests may sometimes face issues such as unclean rooms, poor customer service, unexpected charges, or misleading information about hotel facilities.",
-        "When such situations occur, filing a consumer complaint helps address the issue and seek proper resolution. It also ensures that hotels remain accountable for service deficiencies and unfair practices.",
-        "VyomBiz provides legal guidance to help guests raise formal complaints against hotels and pursue refunds, compensation, or other appropriate remedies."
-      ]
-    },
+            overview: {
+                title: "Hotel Consumer Complaints – Overview",
+                image: "/lawyer-services-images/hotels-complaint-overview.png",
+                content: [
+                    "A hotel stay is expected to provide comfort and quality service. However, guests may sometimes face issues such as unclean rooms, poor customer service, unexpected charges, or misleading information about hotel facilities.",
+                    "When such situations occur, filing a consumer complaint helps address the issue and seek proper resolution. It also ensures that hotels remain accountable for service deficiencies and unfair practices.",
+                    "VyomBiz provides legal guidance to help guests raise formal complaints against hotels and pursue refunds, compensation, or other appropriate remedies."
+                ]
+            },
 
-    types: {
-      title: "Common Hotel Disputes",
-      introduction: "Guests may encounter different types of service issues during their stay.",
-      items: [
-        {
-          title: "Unfair Treatment by Staff",
-          description: "Rude behaviour, discrimination, or denial of services by hotel staff.",
-          example: "Being denied a room despite having a confirmed booking."
-        },
-        {
-          title: "Misleading Advertisements",
-          description: "Hotel facilities or room quality not matching the description provided during booking.",
-          example: "Promised a sea-view room but provided a standard room."
-        },
-        {
-          title: "Undisclosed Charges",
-          description: "Additional fees added to the final bill that were not mentioned during booking.",
-          example: "Unexpected resort or service charges added to the bill."
-        },
-        {
-          title: "Poor Customer Service",
-          description: "Delayed assistance, unresolved complaints, or lack of hospitality from hotel staff.",
-          example: "Housekeeping ignoring repeated requests for room cleaning."
-        },
-        {
-          title: "Poor Room Conditions",
-          description: "Unclean rooms, damaged furniture, or non-functional facilities.",
-          example: "Broken air conditioning, dirty bedding, or pest problems."
-        },
-        {
-          title: "Booking and Refund Issues",
-          description: "Problems such as cancelled bookings, denied refunds, or fraudulent reservations.",
-          example: "Hotel claiming no record of your prepaid booking."
+            types: {
+                title: "Common Hotel Disputes",
+                introduction: "Guests may encounter different types of service issues during their stay.",
+                items: [
+                    {
+                        title: "Unfair Treatment by Staff",
+                        description: "Rude behaviour, discrimination, or denial of services by hotel staff.",
+                        example: "Being denied a room despite having a confirmed booking."
+                    },
+                    {
+                        title: "Misleading Advertisements",
+                        description: "Hotel facilities or room quality not matching the description provided during booking.",
+                        example: "Promised a sea-view room but provided a standard room."
+                    },
+                    {
+                        title: "Undisclosed Charges",
+                        description: "Additional fees added to the final bill that were not mentioned during booking.",
+                        example: "Unexpected resort or service charges added to the bill."
+                    },
+                    {
+                        title: "Poor Customer Service",
+                        description: "Delayed assistance, unresolved complaints, or lack of hospitality from hotel staff.",
+                        example: "Housekeeping ignoring repeated requests for room cleaning."
+                    },
+                    {
+                        title: "Poor Room Conditions",
+                        description: "Unclean rooms, damaged furniture, or non-functional facilities.",
+                        example: "Broken air conditioning, dirty bedding, or pest problems."
+                    },
+                    {
+                        title: "Booking and Refund Issues",
+                        description: "Problems such as cancelled bookings, denied refunds, or fraudulent reservations.",
+                        example: "Hotel claiming no record of your prepaid booking."
+                    }
+                ]
+            },
+
+            whenToFile: {
+                title: "When Should You File a Hotel Complaint?",
+                content: "You may consider filing a complaint in the following situations.",
+                parameters: [
+                    {
+                        title: "Service Not as Promised",
+                        desc: "The hotel fails to provide the facilities or services mentioned during booking."
+                    },
+                    {
+                        title: "Health and Hygiene Concerns",
+                        desc: "Poor sanitation or unsafe room conditions that affect your health or safety."
+                    },
+                    {
+                        title: "Financial Loss",
+                        desc: "Unexpected charges or refusal to refund valid cancellations."
+                    },
+                    {
+                        title: "Hotel Negligence",
+                        desc: "Loss of belongings or injury caused due to the hotel's negligence."
+                    }
+                ]
+            },
+
+            process: {
+                title: "Our Hotel Complaint Resolution Process",
+                introduction: "Our team follows a systematic approach to help resolve hotel disputes.",
+                steps: [
+                    {
+                        title: "Document Review",
+                        description: "Collecting booking confirmations, photos, invoices, and communication records."
+                    },
+                    {
+                        title: "Hotel Notification",
+                        description: "Escalating the complaint to hotel management or corporate grievance teams."
+                    },
+                    {
+                        title: "Legal Notice",
+                        description: "Issuing a formal legal notice requesting refund, replacement, or compensation."
+                    },
+                    {
+                        title: "Consumer Commission Filing",
+                        description: "Escalating the dispute to the consumer commission if required."
+                    },
+                    {
+                        title: "Dispute Resolution",
+                        description: "Seeking refund, compensation, or settlement through mediation or court order."
+                    }
+                ]
+            },
+
+            whyChoose: {
+                title: "Why Choose VyomBiz for Hotel Complaints?",
+                reasons: [
+                    "Dedicated Case Support: Every complaint is handled with a tailored strategy based on the issue.",
+                    "Experience in Hospitality Disputes: Handled multiple cases involving hotel service complaints.",
+                    "Professional Case Review: Our legal team evaluates your complaint and supporting documents.",
+                    "Stronger Complaint Impact: Formal complaints and legal notices often lead to quicker responses.",
+                    "Complete Legal Assistance: From complaint drafting to representation before consumer forums."
+                ]
+            },
+
+            faqs: {
+                title: "Hotel Complaint FAQs",
+                items: [
+                    {
+                        question: "Can I request a refund if the hotel room was unhygienic?",
+                        answer: "Yes. If the room conditions were significantly below acceptable standards, you may file a complaint and seek refund or compensation."
+                    },
+                    {
+                        question: "What happens if the hotel cancels my booking without notice?",
+                        answer: "You may request a refund or compensation if the cancellation caused financial loss or inconvenience."
+                    },
+                    {
+                        question: "Can I complain about hidden hotel charges?",
+                        answer: "Yes. If charges were added without proper disclosure during booking, you can raise a consumer complaint."
+                    },
+                    {
+                        question: "How long does it take to resolve a consumer complaint?",
+                        answer: "Resolution timelines vary depending on the complexity of the case and the consumer forum process."
+                    },
+                    {
+                        question: "Do I need legal assistance for a hotel complaint?",
+                        answer: "Legal assistance can help prepare proper complaints, send legal notices, and represent you before consumer forums if required."
+                    }
+                ]
+            }
         }
-      ]
     },
+    "insurance-consumer-complaint": {
+        title: "Insurance Consumer Complaint",
+        hero: {
+            mainTitle: "Insurance Claim Rejected? Get Legal Support",
+            bulletPoints: [
+                "Assistance against unfair claim rejections",
+                "Help resolving delayed insurance claim settlements",
+                "Support for disputes involving hidden policy clauses"
+            ],
+            testimonial: {
+                text: "My health insurance claim was rejected citing a pre-existing condition that wasn’t true. VyomBiz helped escalate the complaint and my claim was approved.",
+                author: "Anjali Desai",
+                verified: true,
+                avatar: "https://i.pravatar.cc/150?u=anjali"
+            }
+        },
 
-    whenToFile: {
-      title: "When Should You File a Hotel Complaint?",
-      content: "You may consider filing a complaint in the following situations.",
-      parameters: [
-        {
-          title: "Service Not as Promised",
-          desc: "The hotel fails to provide the facilities or services mentioned during booking."
-        },
-        {
-          title: "Health and Hygiene Concerns",
-          desc: "Poor sanitation or unsafe room conditions that affect your health or safety."
-        },
-        {
-          title: "Financial Loss",
-          desc: "Unexpected charges or refusal to refund valid cancellations."
-        },
-        {
-          title: "Hotel Negligence",
-          desc: "Loss of belongings or injury caused due to the hotel's negligence."
+        tabs: [
+            { id: "overview", label: "Overview" },
+            { id: "types", label: "Types" },
+            { id: "when-to-file", label: "When To File" },
+            { id: "process", label: "Process" },
+            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "faqs", label: "FAQs" }
+        ],
+
+        sections: {
+
+            overview: {
+                title: "Insurance Complaints – Overview",
+                image: "/lawyer-services-images/insurance-complaint-overview.png",
+                content: [
+                    "Insurance policies are designed to provide financial protection during difficult times. However, claim rejections or delays can create serious financial challenges for policyholders.",
+                    "Common issues include claim denial based on technical reasons, delayed settlements, incorrect policy interpretation, and poor customer support. Filing a formal complaint ensures insurers remain accountable for service deficiencies.",
+                    "VyomBiz helps policyholders navigate the grievance redressal process, including complaints with insurers, regulatory authorities, and consumer forums."
+                ]
+            },
+
+            types: {
+                title: "Common Insurance Disputes",
+                introduction: "Policyholders may face several issues while dealing with insurance companies.",
+                items: [
+                    {
+                        title: "Claim Rejection",
+                        description: "Insurance companies denying valid claims due to technical reasons or disputed policy interpretation.",
+                        example: "A hospitalization claim rejected citing incorrect policy interpretation."
+                    },
+                    {
+                        title: "Delayed Claim Settlement",
+                        description: "Long delays in processing or approving insurance claims.",
+                        example: "Motor insurance claim pending for months without approval."
+                    },
+                    {
+                        title: "Unexpected Premium Increase",
+                        description: "Premium amounts increased during renewal without adequate explanation.",
+                        example: "Health insurance renewal premium doubled without prior notice."
+                    },
+                    {
+                        title: "Partial Claim Payment",
+                        description: "Insurance companies approving only a portion of the claim amount after deductions.",
+                        example: "Hospital bill partially paid after multiple unexplained deductions."
+                    },
+                    {
+                        title: "Policy Mis-selling",
+                        description: "Policies sold with misleading promises or undisclosed exclusions.",
+                        example: "An agent selling an investment-linked plan as a guaranteed return policy."
+                    },
+                    {
+                        title: "Premium Payment Issues",
+                        description: "Problems with payment records leading to policy lapses or disputes.",
+                        example: "Policy marked lapsed despite successful auto-debit payment."
+                    }
+                ]
+            },
+
+            whenToFile: {
+                title: "When Should You File an Insurance Complaint?",
+                content: "You may consider filing a complaint in the following situations.",
+                parameters: [
+                    {
+                        title: "Unfair Claim Rejection",
+                        desc: "Your legitimate claim has been denied without proper justification."
+                    },
+                    {
+                        title: "Settlement Delay",
+                        desc: "Your claim processing is taking an unusually long time."
+                    },
+                    {
+                        title: "Policy Misrepresentation",
+                        desc: "The policy was sold with incorrect or misleading information."
+                    },
+                    {
+                        title: "Poor Customer Support",
+                        desc: "The insurer fails to respond to complaints or queries in a reasonable time."
+                    }
+                ]
+            },
+
+            process: {
+                title: "Our Insurance Complaint Resolution Process",
+                introduction: "We follow a structured process to resolve insurance disputes effectively.",
+                steps: [
+                    {
+                        title: "Complaint to Insurer",
+                        description: "Submitting a formal grievance to the insurance company."
+                    },
+                    {
+                        title: "Regulatory Escalation",
+                        description: "Escalating the complaint to the regulatory authority if unresolved."
+                    },
+                    {
+                        title: "Insurance Ombudsman",
+                        description: "Filing a complaint before the Insurance Ombudsman for dispute resolution."
+                    },
+                    {
+                        title: "Legal Notice",
+                        description: "Issuing a legal notice requesting settlement or compensation."
+                    },
+                    {
+                        title: "Consumer Commission",
+                        description: "Filing a case before the consumer commission if required."
+                    }
+                ]
+            },
+
+            whyChoose: {
+                title: "Why Choose VyomBiz for Insurance Complaints?",
+                reasons: [
+                    "Insurance Law Expertise: Our professionals understand policy conditions and dispute procedures.",
+                    "Complete Legal Assistance: Support from complaint preparation to legal representation.",
+                    "Strong Case Strategy: Experience in handling common claim rejection scenarios.",
+                    "Transparent Guidance: Clear advice on the strength and options for your complaint.",
+                    "Hassle-Free Process: Our team manages the documentation and complaint process."
+                ]
+            },
+
+            faqs: {
+                title: "Insurance Complaint FAQs",
+                items: [
+                    {
+                        question: "What should I do if my insurance claim is rejected?",
+                        answer: "You can request clarification from the insurer and file a complaint if the rejection appears unfair."
+                    },
+                    {
+                        question: "Can I file a complaint with the Insurance Ombudsman?",
+                        answer: "Yes, if the insurer does not resolve your grievance within the specified time, you may approach the Insurance Ombudsman."
+                    },
+                    {
+                        question: "Is there a fee for filing an insurance complaint?",
+                        answer: "Generally, filing a complaint with the Insurance Ombudsman does not involve any fee."
+                    },
+                    {
+                        question: "Is there a time limit for filing an insurance complaint?",
+                        answer: "Yes, complaints should typically be filed within the prescribed time after the insurer’s final response."
+                    },
+                    {
+                        question: "Can I seek compensation for delayed insurance claims?",
+                        answer: "In certain cases, policyholders may seek compensation or interest for unreasonable delays in settlement."
+                    }
+                ]
+            }
+
         }
-      ]
     },
-
-    process: {
-      title: "Our Hotel Complaint Resolution Process",
-      introduction: "Our team follows a systematic approach to help resolve hotel disputes.",
-      steps: [
-        {
-          title: "Document Review",
-          description: "Collecting booking confirmations, photos, invoices, and communication records."
-        },
-        {
-          title: "Hotel Notification",
-          description: "Escalating the complaint to hotel management or corporate grievance teams."
-        },
-        {
-          title: "Legal Notice",
-          description: "Issuing a formal legal notice requesting refund, replacement, or compensation."
-        },
-        {
-          title: "Consumer Commission Filing",
-          description: "Escalating the dispute to the consumer commission if required."
-        },
-        {
-          title: "Dispute Resolution",
-          description: "Seeking refund, compensation, or settlement through mediation or court order."
-        }
-      ]
-    },
-
-    whyChoose: {
-      title: "Why Choose VyomBiz for Hotel Complaints?",
-      reasons: [
-        "Dedicated Case Support: Every complaint is handled with a tailored strategy based on the issue.",
-        "Experience in Hospitality Disputes: Handled multiple cases involving hotel service complaints.",
-        "Professional Case Review: Our legal team evaluates your complaint and supporting documents.",
-        "Stronger Complaint Impact: Formal complaints and legal notices often lead to quicker responses.",
-        "Complete Legal Assistance: From complaint drafting to representation before consumer forums."
-      ]
-    },
-
-    faqs: {
-      title: "Hotel Complaint FAQs",
-      items: [
-        {
-          question: "Can I request a refund if the hotel room was unhygienic?",
-          answer: "Yes. If the room conditions were significantly below acceptable standards, you may file a complaint and seek refund or compensation."
-        },
-        {
-          question: "What happens if the hotel cancels my booking without notice?",
-          answer: "You may request a refund or compensation if the cancellation caused financial loss or inconvenience."
-        },
-        {
-          question: "Can I complain about hidden hotel charges?",
-          answer: "Yes. If charges were added without proper disclosure during booking, you can raise a consumer complaint."
-        },
-        {
-          question: "How long does it take to resolve a consumer complaint?",
-          answer: "Resolution timelines vary depending on the complexity of the case and the consumer forum process."
-        },
-        {
-          question: "Do I need legal assistance for a hotel complaint?",
-          answer: "Legal assistance can help prepare proper complaints, send legal notices, and represent you before consumer forums if required."
-        }
-      ]
-    }
-  }
-},
-   "insurance-consumer-complaint": {
-  title: "Insurance Consumer Complaint",
-  hero: {
-    mainTitle: "Insurance Claim Rejected? Get Legal Support",
-    bulletPoints: [
-      "Assistance against unfair claim rejections",
-      "Help resolving delayed insurance claim settlements",
-      "Support for disputes involving hidden policy clauses"
-    ],
-    testimonial: {
-      text: "My health insurance claim was rejected citing a pre-existing condition that wasn’t true. VyomBiz helped escalate the complaint and my claim was approved.",
-      author: "Anjali Desai",
-      verified: true,
-      avatar: "https://i.pravatar.cc/150?u=anjali"
-    }
-  },
-
-  tabs: [
-    { id: "overview", label: "Overview" },
-    { id: "types", label: "Types" },
-    { id: "when-to-file", label: "When To File" },
-    { id: "process", label: "Process" },
-    { id: "why-choose", label: "Why Choose VyomBiz" },
-    { id: "faqs", label: "FAQs" }
-  ],
-
-  sections: {
-
-    overview: {
-      title: "Insurance Complaints – Overview",
-      image: "/lawyer-services-images/insurance-complaint-overview.png",
-      content: [
-        "Insurance policies are designed to provide financial protection during difficult times. However, claim rejections or delays can create serious financial challenges for policyholders.",
-        "Common issues include claim denial based on technical reasons, delayed settlements, incorrect policy interpretation, and poor customer support. Filing a formal complaint ensures insurers remain accountable for service deficiencies.",
-        "VyomBiz helps policyholders navigate the grievance redressal process, including complaints with insurers, regulatory authorities, and consumer forums."
-      ]
-    },
-
-    types: {
-      title: "Common Insurance Disputes",
-      introduction: "Policyholders may face several issues while dealing with insurance companies.",
-      items: [
-        {
-          title: "Claim Rejection",
-          description: "Insurance companies denying valid claims due to technical reasons or disputed policy interpretation.",
-          example: "A hospitalization claim rejected citing incorrect policy interpretation."
-        },
-        {
-          title: "Delayed Claim Settlement",
-          description: "Long delays in processing or approving insurance claims.",
-          example: "Motor insurance claim pending for months without approval."
-        },
-        {
-          title: "Unexpected Premium Increase",
-          description: "Premium amounts increased during renewal without adequate explanation.",
-          example: "Health insurance renewal premium doubled without prior notice."
-        },
-        {
-          title: "Partial Claim Payment",
-          description: "Insurance companies approving only a portion of the claim amount after deductions.",
-          example: "Hospital bill partially paid after multiple unexplained deductions."
-        },
-        {
-          title: "Policy Mis-selling",
-          description: "Policies sold with misleading promises or undisclosed exclusions.",
-          example: "An agent selling an investment-linked plan as a guaranteed return policy."
-        },
-        {
-          title: "Premium Payment Issues",
-          description: "Problems with payment records leading to policy lapses or disputes.",
-          example: "Policy marked lapsed despite successful auto-debit payment."
-        }
-      ]
-    },
-
-    whenToFile: {
-      title: "When Should You File an Insurance Complaint?",
-      content: "You may consider filing a complaint in the following situations.",
-      parameters: [
-        {
-          title: "Unfair Claim Rejection",
-          desc: "Your legitimate claim has been denied without proper justification."
-        },
-        {
-          title: "Settlement Delay",
-          desc: "Your claim processing is taking an unusually long time."
-        },
-        {
-          title: "Policy Misrepresentation",
-          desc: "The policy was sold with incorrect or misleading information."
-        },
-        {
-          title: "Poor Customer Support",
-          desc: "The insurer fails to respond to complaints or queries in a reasonable time."
-        }
-      ]
-    },
-
-    process: {
-      title: "Our Insurance Complaint Resolution Process",
-      introduction: "We follow a structured process to resolve insurance disputes effectively.",
-      steps: [
-        {
-          title: "Complaint to Insurer",
-          description: "Submitting a formal grievance to the insurance company."
-        },
-        {
-          title: "Regulatory Escalation",
-          description: "Escalating the complaint to the regulatory authority if unresolved."
-        },
-        {
-          title: "Insurance Ombudsman",
-          description: "Filing a complaint before the Insurance Ombudsman for dispute resolution."
-        },
-        {
-          title: "Legal Notice",
-          description: "Issuing a legal notice requesting settlement or compensation."
-        },
-        {
-          title: "Consumer Commission",
-          description: "Filing a case before the consumer commission if required."
-        }
-      ]
-    },
-
-    whyChoose: {
-      title: "Why Choose VyomBiz for Insurance Complaints?",
-      reasons: [
-        "Insurance Law Expertise: Our professionals understand policy conditions and dispute procedures.",
-        "Complete Legal Assistance: Support from complaint preparation to legal representation.",
-        "Strong Case Strategy: Experience in handling common claim rejection scenarios.",
-        "Transparent Guidance: Clear advice on the strength and options for your complaint.",
-        "Hassle-Free Process: Our team manages the documentation and complaint process."
-      ]
-    },
-
-    faqs: {
-      title: "Insurance Complaint FAQs",
-      items: [
-        {
-          question: "What should I do if my insurance claim is rejected?",
-          answer: "You can request clarification from the insurer and file a complaint if the rejection appears unfair."
-        },
-        {
-          question: "Can I file a complaint with the Insurance Ombudsman?",
-          answer: "Yes, if the insurer does not resolve your grievance within the specified time, you may approach the Insurance Ombudsman."
-        },
-        {
-          question: "Is there a fee for filing an insurance complaint?",
-          answer: "Generally, filing a complaint with the Insurance Ombudsman does not involve any fee."
-        },
-        {
-          question: "Is there a time limit for filing an insurance complaint?",
-          answer: "Yes, complaints should typically be filed within the prescribed time after the insurer’s final response."
-        },
-        {
-          question: "Can I seek compensation for delayed insurance claims?",
-          answer: "In certain cases, policyholders may seek compensation or interest for unreasonable delays in settlement."
-        }
-      ]
-    }
-
-  }
-},
     "it-companies-consumer-complaint": {
         title: "IT Companies Consumer Complaint",
         hero: {
@@ -943,179 +943,179 @@ export const litigationContent = {
         }
     },
     "medical-consumer-complaint": {
-  "title": "Medical Consumer Complaint",
-  "hero": {
-    "mainTitle": "Medical Negligence & Malpractice – Legal Support for Patients",
-    "bulletPoints": [
-      "Legal assistance for medical negligence and malpractice cases",
-      "Help resolving hospital billing disputes and unfair charges",
-      "Action against incorrect diagnosis and surgical mistakes"
-    ],
-    "testimonial": {
-      "text": "My father suffered complications due to a wrong diagnosis. VyomBiz helped us file a complaint and pursue compensation from the hospital.",
-      "author": "Rajesh Kumar",
-      "verified": true,
-      "avatar": "https://i.pravatar.cc/150?u=rajesh"
-    }
-  },
+        "title": "Medical Consumer Complaint",
+        "hero": {
+            "mainTitle": "Medical Negligence & Malpractice – Legal Support for Patients",
+            "bulletPoints": [
+                "Legal assistance for medical negligence and malpractice cases",
+                "Help resolving hospital billing disputes and unfair charges",
+                "Action against incorrect diagnosis and surgical mistakes"
+            ],
+            "testimonial": {
+                "text": "My father suffered complications due to a wrong diagnosis. VyomBiz helped us file a complaint and pursue compensation from the hospital.",
+                "author": "Rajesh Kumar",
+                "verified": true,
+                "avatar": "https://i.pravatar.cc/150?u=rajesh"
+            }
+        },
 
-  "tabs": [
-    { "id": "overview", "label": "Overview" },
-    { "id": "types", "label": "Types" },
-    { "id": "when-to-file", "label": "When To File" },
-    { "id": "process", "label": "Process" },
-    { "id": "why-choose", "label": "Why Choose VyomBiz" },
-    { "id": "faqs", "label": "FAQs" }
-  ],
+        "tabs": [
+            { "id": "overview", "label": "Overview" },
+            { "id": "types", "label": "Types" },
+            { "id": "when-to-file", "label": "When To File" },
+            { "id": "process", "label": "Process" },
+            { "id": "why-choose", "label": "Why Choose VyomBiz" },
+            { "id": "faqs", "label": "FAQs" }
+        ],
 
-  "sections": {
-    "overview": {
-      "title": "Medical Consumer Complaints – Overview",
-      "image": "/lawyer-services-images/medical-complaint-overview.png",
-      "content": [
-        "Medical consumer complaints arise when patients face issues such as incorrect diagnosis, surgical errors, excessive hospital charges, or unsatisfactory medical care.",
-        "Raising a formal complaint allows patients to address these concerns and seek appropriate resolution. It also helps ensure accountability among healthcare providers and promotes better standards of patient care.",
-        "VyomBiz provides legal support to help patients pursue complaints related to medical negligence, malpractice, and service deficiencies."
-      ]
-    },
+        "sections": {
+            "overview": {
+                "title": "Medical Consumer Complaints – Overview",
+                "image": "/lawyer-services-images/medical-complaint-overview.png",
+                "content": [
+                    "Medical consumer complaints arise when patients face issues such as incorrect diagnosis, surgical errors, excessive hospital charges, or unsatisfactory medical care.",
+                    "Raising a formal complaint allows patients to address these concerns and seek appropriate resolution. It also helps ensure accountability among healthcare providers and promotes better standards of patient care.",
+                    "VyomBiz provides legal support to help patients pursue complaints related to medical negligence, malpractice, and service deficiencies."
+                ]
+            },
 
-    "types": {
-      "title": "Common Medical Disputes",
-      "introduction": "Patients may encounter several issues while receiving medical treatment.",
-      "items": [
-        {
-          "title": "Medical Negligence",
-          "description": "Failure of healthcare professionals to provide the accepted standard of care, leading to patient harm.",
-          "example": "Doctor prescribing wrong medication leading to severe allergic reaction."
+            "types": {
+                "title": "Common Medical Disputes",
+                "introduction": "Patients may encounter several issues while receiving medical treatment.",
+                "items": [
+                    {
+                        "title": "Medical Negligence",
+                        "description": "Failure of healthcare professionals to provide the accepted standard of care, leading to patient harm.",
+                        "example": "Doctor prescribing wrong medication leading to severe allergic reaction."
+                    },
+                    {
+                        "title": "Incorrect Diagnosis",
+                        "description": "Misidentification of a medical condition that results in improper treatment.",
+                        "example": "Treating a patient for TB when they actually had lung cancer."
+                    },
+                    {
+                        "title": "Surgical Mistakes",
+                        "description": "Errors during medical procedures that may cause additional injury or complications.",
+                        "example": "Surgeon leaving a sponge inside the patient's abdomen."
+                    },
+                    {
+                        "title": "Hospital Billing Disputes",
+                        "description": "Excessive charges, billing errors, or fees for services not provided.",
+                        "example": "Hospital adding 'consumables' charges that were never used."
+                    },
+                    {
+                        "title": "Lack of Informed Consent",
+                        "description": "Medical procedures performed without properly informing the patient of risks or alternatives.",
+                        "example": "Performing a hysterectomy without informing the patient of other options."
+                    },
+                    {
+                        "title": "Poor Hygiene and Safety Standards",
+                        "description": "Exposure to infections due to unsanitary hospital conditions or equipment.",
+                        "example": "Patient contracting an infection due to unsterilized equipment."
+                    }
+                ]
+            },
+
+            "whenToFile": {
+                "title": "When Should You File a Medical Complaint?",
+                "content": "You may consider filing a complaint in the following situations.",
+                "parameters": [
+                    {
+                        "title": "Medical Injury",
+                        "desc": "You have suffered physical or emotional harm due to treatment."
+                    },
+                    {
+                        "title": "Financial Exploitation",
+                        "desc": "You were charged excessively or billed unfairly for medical services."
+                    },
+                    {
+                        "title": "Medical Negligence",
+                        "desc": "The treatment provided significantly deviated from accepted medical standards."
+                    },
+                    {
+                        "title": "Violation of Patient Rights",
+                        "desc": "Your rights regarding consent, information, or privacy were ignored."
+                    }
+                ]
+            },
+
+            "process": {
+                "title": "Our Medical Complaint Resolution Process",
+                "introduction": "We follow a structured process to evaluate and pursue medical negligence complaints.",
+                "steps": [
+                    {
+                        "title": "Case Review",
+                        "description": "Medical records and evidence are reviewed by legal professionals."
+                    },
+                    {
+                        "title": "Legal Notice",
+                        "description": "Issuing a formal notice to the hospital or doctor requesting clarification and compensation."
+                    },
+                    {
+                        "title": "Complaint Filing",
+                        "description": "Submitting a complaint before the appropriate consumer commission."
+                    },
+                    {
+                        "title": "Expert Review",
+                        "description": "Medical experts may provide opinions on the standard of care provided."
+                    },
+                    {
+                        "title": "Resolution",
+                        "description": "Seeking compensation for medical expenses, damages, and suffering."
+                    }
+                ]
+            },
+
+            "whyChoose": {
+                "title": "Why Choose VyomBiz for Medical Complaints?",
+                "reasons": [
+                    "Medical Law Expertise – Our team understands medical negligence laws and patient rights.",
+                    "Sensitive Case Handling – Medical complaints are handled with care and professionalism.",
+                    "Detailed Case Evaluation – Medical records and documentation are carefully reviewed.",
+                    "Flexible Support Options – Different assistance options depending on case complexity.",
+                    "Experience in Medical Disputes – Handled multiple cases involving medical service complaints."
+                ]
+            },
+
+            "faqs": {
+                "title": "Medical Complaint FAQs",
+                "items": [
+                    {
+                        "question": "Can I file a complaint for poor hospital service?",
+                        "answer": "Yes, patients can raise complaints if hospitals provide poor service or fail to address concerns properly."
+                    },
+                    {
+                        "question": "Is there a time limit to file a medical complaint?",
+                        "answer": "Generally, consumer complaints related to medical services should be filed within the prescribed legal timeframe."
+                    },
+                    {
+                        "question": "Do I need medical records to file a complaint?",
+                        "answer": "Yes, medical records and related documents are important evidence when filing a complaint."
+                    },
+                    {
+                        "question": "Can complaints be filed against government hospitals?",
+                        "answer": "Yes, complaints can be filed against both private and government healthcare providers."
+                    },
+                    {
+                        "question": "Can I claim compensation for medical negligence?",
+                        "answer": "Compensation may include medical expenses, damages, and other losses depending on the case."
+                    }
+                ]
+            }
         },
-        {
-          "title": "Incorrect Diagnosis",
-          "description": "Misidentification of a medical condition that results in improper treatment.",
-          "example": "Treating a patient for TB when they actually had lung cancer."
+
+        "formSection": {
+            "offer": "Limited Time Offer",
+            "ctaButton": "Start Your Complaint Process",
+            "whatsappText": "Receive important updates about your complaint directly on WhatsApp."
         },
-        {
-          "title": "Surgical Mistakes",
-          "description": "Errors during medical procedures that may cause additional injury or complications.",
-          "example": "Surgeon leaving a sponge inside the patient's abdomen."
-        },
-        {
-          "title": "Hospital Billing Disputes",
-          "description": "Excessive charges, billing errors, or fees for services not provided.",
-          "example": "Hospital adding 'consumables' charges that were never used."
-        },
-        {
-          "title": "Lack of Informed Consent",
-          "description": "Medical procedures performed without properly informing the patient of risks or alternatives.",
-          "example": "Performing a hysterectomy without informing the patient of other options."
-        },
-        {
-          "title": "Poor Hygiene and Safety Standards",
-          "description": "Exposure to infections due to unsanitary hospital conditions or equipment.",
-          "example": "Patient contracting an infection due to unsterilized equipment."
+
+        "ctaSection": {
+            "title": "Facing a Medical Negligence Issue?",
+            "description": "Get professional legal support to evaluate your case and seek appropriate compensation.",
+            "button": "Book Free Consultation"
         }
-      ]
     },
-
-    "whenToFile": {
-      "title": "When Should You File a Medical Complaint?",
-      "content": "You may consider filing a complaint in the following situations.",
-      "parameters": [
-        {
-          "title": "Medical Injury",
-          "desc": "You have suffered physical or emotional harm due to treatment."
-        },
-        {
-          "title": "Financial Exploitation",
-          "desc": "You were charged excessively or billed unfairly for medical services."
-        },
-        {
-          "title": "Medical Negligence",
-          "desc": "The treatment provided significantly deviated from accepted medical standards."
-        },
-        {
-          "title": "Violation of Patient Rights",
-          "desc": "Your rights regarding consent, information, or privacy were ignored."
-        }
-      ]
-    },
-
-    "process": {
-      "title": "Our Medical Complaint Resolution Process",
-      "introduction": "We follow a structured process to evaluate and pursue medical negligence complaints.",
-      "steps": [
-        {
-          "title": "Case Review",
-          "description": "Medical records and evidence are reviewed by legal professionals."
-        },
-        {
-          "title": "Legal Notice",
-          "description": "Issuing a formal notice to the hospital or doctor requesting clarification and compensation."
-        },
-        {
-          "title": "Complaint Filing",
-          "description": "Submitting a complaint before the appropriate consumer commission."
-        },
-        {
-          "title": "Expert Review",
-          "description": "Medical experts may provide opinions on the standard of care provided."
-        },
-        {
-          "title": "Resolution",
-          "description": "Seeking compensation for medical expenses, damages, and suffering."
-        }
-      ]
-    },
-
-    "whyChoose": {
-      "title": "Why Choose VyomBiz for Medical Complaints?",
-      "reasons": [
-        "Medical Law Expertise – Our team understands medical negligence laws and patient rights.",
-        "Sensitive Case Handling – Medical complaints are handled with care and professionalism.",
-        "Detailed Case Evaluation – Medical records and documentation are carefully reviewed.",
-        "Flexible Support Options – Different assistance options depending on case complexity.",
-        "Experience in Medical Disputes – Handled multiple cases involving medical service complaints."
-      ]
-    },
-
-    "faqs": {
-      "title": "Medical Complaint FAQs",
-      "items": [
-        {
-          "question": "Can I file a complaint for poor hospital service?",
-          "answer": "Yes, patients can raise complaints if hospitals provide poor service or fail to address concerns properly."
-        },
-        {
-          "question": "Is there a time limit to file a medical complaint?",
-          "answer": "Generally, consumer complaints related to medical services should be filed within the prescribed legal timeframe."
-        },
-        {
-          "question": "Do I need medical records to file a complaint?",
-          "answer": "Yes, medical records and related documents are important evidence when filing a complaint."
-        },
-        {
-          "question": "Can complaints be filed against government hospitals?",
-          "answer": "Yes, complaints can be filed against both private and government healthcare providers."
-        },
-        {
-          "question": "Can I claim compensation for medical negligence?",
-          "answer": "Compensation may include medical expenses, damages, and other losses depending on the case."
-        }
-      ]
-    }
-  },
-
-  "formSection": {
-    "offer": "Limited Time Offer",
-    "ctaButton": "Start Your Complaint Process",
-    "whatsappText": "Receive important updates about your complaint directly on WhatsApp."
-  },
-
-  "ctaSection": {
-    "title": "Facing a Medical Negligence Issue?",
-    "description": "Get professional legal support to evaluate your case and seek appropriate compensation.",
-    "button": "Book Free Consultation"
-  }
-},
     "real-estate-consumer-complaint": {
         title: "Real Estate Consumer Complaint",
         hero: {
@@ -1256,180 +1256,180 @@ export const litigationContent = {
             }
         }
     },
-   "retail-business-consumer-complaint": {
-  "title": "Retail Business Consumer Complaint",
-  "hero": {
-    "mainTitle": "Resolve Retail Disputes with Legal Support",
-    "bulletPoints": [
-      "Assistance for defective products and service issues",
-      "Action against unfair pricing and hidden charges",
-      "Support for warranty claims and refund disputes"
-    ],
-    "testimonial": {
-      "text": "The store refused to replace a defective laptop I purchased. VyomBiz helped me raise a complaint and I received a replacement soon after.",
-      "author": "Anjali Mehta",
-      "verified": true,
-      "avatar": "https://i.pravatar.cc/150?u=anjali"
-    }
-  },
+    "retail-business-consumer-complaint": {
+        "title": "Retail Business Consumer Complaint",
+        "hero": {
+            "mainTitle": "Resolve Retail Disputes with Legal Support",
+            "bulletPoints": [
+                "Assistance for defective products and service issues",
+                "Action against unfair pricing and hidden charges",
+                "Support for warranty claims and refund disputes"
+            ],
+            "testimonial": {
+                "text": "The store refused to replace a defective laptop I purchased. VyomBiz helped me raise a complaint and I received a replacement soon after.",
+                "author": "Anjali Mehta",
+                "verified": true,
+                "avatar": "https://i.pravatar.cc/150?u=anjali"
+            }
+        },
 
-  "tabs": [
-    { "id": "overview", "label": "Overview" },
-    { "id": "types", "label": "Types" },
-    { "id": "when-to-file", "label": "When To File" },
-    { "id": "process", "label": "Process" },
-    { "id": "why-choose", "label": "Why Choose VyomBiz" },
-    { "id": "faqs", "label": "FAQs" }
-  ],
+        "tabs": [
+            { "id": "overview", "label": "Overview" },
+            { "id": "types", "label": "Types" },
+            { "id": "when-to-file", "label": "When To File" },
+            { "id": "process", "label": "Process" },
+            { "id": "why-choose", "label": "Why Choose VyomBiz" },
+            { "id": "faqs", "label": "FAQs" }
+        ],
 
-  "sections": {
-    "overview": {
-      "title": "Retail Consumer Complaints – Overview",
-      "image": "/lawyer-services-images/retail-complaint-overview.png",
-      "content": [
-        "Retail consumer complaints arise when shoppers face issues related to product quality, pricing, or customer service. These complaints often involve defective goods, misleading promotions, or problems with returns and exchanges.",
-        "Consumers may also experience billing discrepancies, delayed deliveries, or lack of support from retailers when raising concerns.",
-        "Filing a formal complaint helps ensure accountability and protects consumer rights by encouraging fair and transparent business practices."
-      ]
-    },
+        "sections": {
+            "overview": {
+                "title": "Retail Consumer Complaints – Overview",
+                "image": "/lawyer-services-images/retail-complaint-overview.png",
+                "content": [
+                    "Retail consumer complaints arise when shoppers face issues related to product quality, pricing, or customer service. These complaints often involve defective goods, misleading promotions, or problems with returns and exchanges.",
+                    "Consumers may also experience billing discrepancies, delayed deliveries, or lack of support from retailers when raising concerns.",
+                    "Filing a formal complaint helps ensure accountability and protects consumer rights by encouraging fair and transparent business practices."
+                ]
+            },
 
-    "types": {
-      "title": "Common Retail Disputes",
-      "introduction": "Consumers may encounter several issues when purchasing products from retail stores.",
-      "items": [
-        {
-          "title": "Defective or Faulty Products",
-          "description": "Selling damaged, expired, or non-working products and refusing replacement or refund.",
-          "example": "Buying a new refrigerator that stops cooling within a week."
+            "types": {
+                "title": "Common Retail Disputes",
+                "introduction": "Consumers may encounter several issues when purchasing products from retail stores.",
+                "items": [
+                    {
+                        "title": "Defective or Faulty Products",
+                        "description": "Selling damaged, expired, or non-working products and refusing replacement or refund.",
+                        "example": "Buying a new refrigerator that stops cooling within a week."
+                    },
+                    {
+                        "title": "Misleading Advertising",
+                        "description": "Products or services that do not match the description or promises made in advertisements.",
+                        "example": "A cream claiming 100% organic ingredients found to contain chemicals."
+                    },
+                    {
+                        "title": "Incorrect Pricing or Hidden Charges",
+                        "description": "Charging more than the listed price or adding undisclosed fees during purchase.",
+                        "example": "Restaurant forcing a service charge despite it being optional."
+                    },
+                    {
+                        "title": "Warranty and Guarantee Disputes",
+                        "description": "Failure to honor warranty terms or provide promised repair or replacement services.",
+                        "example": "Company refusing free repair for a mobile phone under warranty."
+                    },
+                    {
+                        "title": "Refund or Exchange Refusal",
+                        "description": "Retailers denying valid refund or replacement requests despite product defects.",
+                        "example": "Store refusing return of a dress with a manufacturing defect."
+                    },
+                    {
+                        "title": "Poor Customer Support",
+                        "description": "Retailers failing to respond properly to complaints or customer concerns.",
+                        "example": "Customer support repeatedly ignoring complaints about a defective product."
+                    }
+                ]
+            },
+
+            "whenToFile": {
+                "title": "When Should You File a Retail Complaint?",
+                "content": "You may consider filing a complaint in the following situations.",
+                "parameters": [
+                    {
+                        "title": "Defective Product",
+                        "desc": "The product purchased is faulty, unsafe, or not suitable for its intended use."
+                    },
+                    {
+                        "title": "Unresolved Complaint",
+                        "desc": "The retailer fails to resolve your issue despite repeated requests."
+                    },
+                    {
+                        "title": "Unfair Trade Practices",
+                        "desc": "The retailer engages in deceptive pricing or misleading promotions."
+                    },
+                    {
+                        "title": "Violation of Consumer Rights",
+                        "desc": "Your rights as a consumer have been ignored or violated."
+                    }
+                ]
+            },
+
+            "process": {
+                "title": "Our Retail Complaint Resolution Process",
+                "introduction": "We follow a structured approach to help resolve retail consumer disputes.",
+                "steps": [
+                    {
+                        "title": "Document Collection",
+                        "description": "Gathering invoices, warranty details, photos, and communication records."
+                    },
+                    {
+                        "title": "Legal Notice",
+                        "description": "Issuing a formal notice requesting refund, replacement, or compensation."
+                    },
+                    {
+                        "title": "Consumer Commission Filing",
+                        "description": "Escalating the matter to the consumer commission if necessary."
+                    },
+                    {
+                        "title": "Legal Representation",
+                        "description": "Our legal professionals assist you during complaint hearings."
+                    },
+                    {
+                        "title": "Dispute Resolution",
+                        "description": "Seeking refund, replacement, or compensation for the consumer."
+                    }
+                ]
+            },
+
+            "whyChoose": {
+                "title": "Why Choose VyomBiz for Retail Complaints?",
+                "reasons": [
+                    "Consumer Law Expertise – Our team understands consumer protection laws and dispute procedures.",
+                    "Experience in Retail Disputes – Handled multiple cases involving retail service complaints.",
+                    "Complete Legal Assistance – Support from complaint drafting to representation before consumer forums.",
+                    "Client-Focused Approach – Our team manages the legal process while keeping you informed.",
+                    "Transparent Fee Structure – Clear and straightforward pricing for legal services."
+                ]
+            },
+
+            "faqs": {
+                "title": "Retail Complaint FAQs",
+                "items": [
+                    {
+                        "question": "Can I return a product after purchase?",
+                        "answer": "Returns depend on the store policy, but defective products can usually be returned or replaced."
+                    },
+                    {
+                        "question": "What if a retailer charges more than the listed price?",
+                        "answer": "Charging more than the displayed or printed price may be considered an unfair trade practice."
+                    },
+                    {
+                        "question": "Is there a time limit to file a retail complaint?",
+                        "answer": "Consumer complaints should generally be filed within the legally prescribed time period."
+                    },
+                    {
+                        "question": "Who is responsible for defective products?",
+                        "answer": "Both the seller and manufacturer may be responsible depending on the nature of the defect."
+                    },
+                    {
+                        "question": "Can I claim compensation for inconvenience or loss?",
+                        "answer": "Consumers may seek compensation for financial loss or inconvenience depending on the circumstances."
+                    }
+                ]
+            }
         },
-        {
-          "title": "Misleading Advertising",
-          "description": "Products or services that do not match the description or promises made in advertisements.",
-          "example": "A cream claiming 100% organic ingredients found to contain chemicals."
+
+        "formSection": {
+            "offer": "Limited Time Offer",
+            "ctaButton": "Start Your Complaint Process",
+            "whatsappText": "Receive updates and important notifications about your complaint directly on WhatsApp."
         },
-        {
-          "title": "Incorrect Pricing or Hidden Charges",
-          "description": "Charging more than the listed price or adding undisclosed fees during purchase.",
-          "example": "Restaurant forcing a service charge despite it being optional."
-        },
-        {
-          "title": "Warranty and Guarantee Disputes",
-          "description": "Failure to honor warranty terms or provide promised repair or replacement services.",
-          "example": "Company refusing free repair for a mobile phone under warranty."
-        },
-        {
-          "title": "Refund or Exchange Refusal",
-          "description": "Retailers denying valid refund or replacement requests despite product defects.",
-          "example": "Store refusing return of a dress with a manufacturing defect."
-        },
-        {
-          "title": "Poor Customer Support",
-          "description": "Retailers failing to respond properly to complaints or customer concerns.",
-          "example": "Customer support repeatedly ignoring complaints about a defective product."
+
+        "ctaSection": {
+            "title": "Facing a Retail Purchase Issue?",
+            "description": "Get professional assistance to resolve your complaint and claim your rightful refund or replacement.",
+            "button": "Book Free Consultation"
         }
-      ]
     },
-
-    "whenToFile": {
-      "title": "When Should You File a Retail Complaint?",
-      "content": "You may consider filing a complaint in the following situations.",
-      "parameters": [
-        {
-          "title": "Defective Product",
-          "desc": "The product purchased is faulty, unsafe, or not suitable for its intended use."
-        },
-        {
-          "title": "Unresolved Complaint",
-          "desc": "The retailer fails to resolve your issue despite repeated requests."
-        },
-        {
-          "title": "Unfair Trade Practices",
-          "desc": "The retailer engages in deceptive pricing or misleading promotions."
-        },
-        {
-          "title": "Violation of Consumer Rights",
-          "desc": "Your rights as a consumer have been ignored or violated."
-        }
-      ]
-    },
-
-    "process": {
-      "title": "Our Retail Complaint Resolution Process",
-      "introduction": "We follow a structured approach to help resolve retail consumer disputes.",
-      "steps": [
-        {
-          "title": "Document Collection",
-          "description": "Gathering invoices, warranty details, photos, and communication records."
-        },
-        {
-          "title": "Legal Notice",
-          "description": "Issuing a formal notice requesting refund, replacement, or compensation."
-        },
-        {
-          "title": "Consumer Commission Filing",
-          "description": "Escalating the matter to the consumer commission if necessary."
-        },
-        {
-          "title": "Legal Representation",
-          "description": "Our legal professionals assist you during complaint hearings."
-        },
-        {
-          "title": "Dispute Resolution",
-          "description": "Seeking refund, replacement, or compensation for the consumer."
-        }
-      ]
-    },
-
-    "whyChoose": {
-      "title": "Why Choose VyomBiz for Retail Complaints?",
-      "reasons": [
-        "Consumer Law Expertise – Our team understands consumer protection laws and dispute procedures.",
-        "Experience in Retail Disputes – Handled multiple cases involving retail service complaints.",
-        "Complete Legal Assistance – Support from complaint drafting to representation before consumer forums.",
-        "Client-Focused Approach – Our team manages the legal process while keeping you informed.",
-        "Transparent Fee Structure – Clear and straightforward pricing for legal services."
-      ]
-    },
-
-    "faqs": {
-      "title": "Retail Complaint FAQs",
-      "items": [
-        {
-          "question": "Can I return a product after purchase?",
-          "answer": "Returns depend on the store policy, but defective products can usually be returned or replaced."
-        },
-        {
-          "question": "What if a retailer charges more than the listed price?",
-          "answer": "Charging more than the displayed or printed price may be considered an unfair trade practice."
-        },
-        {
-          "question": "Is there a time limit to file a retail complaint?",
-          "answer": "Consumer complaints should generally be filed within the legally prescribed time period."
-        },
-        {
-          "question": "Who is responsible for defective products?",
-          "answer": "Both the seller and manufacturer may be responsible depending on the nature of the defect."
-        },
-        {
-          "question": "Can I claim compensation for inconvenience or loss?",
-          "answer": "Consumers may seek compensation for financial loss or inconvenience depending on the circumstances."
-        }
-      ]
-    }
-  },
-
-  "formSection": {
-    "offer": "Limited Time Offer",
-    "ctaButton": "Start Your Complaint Process",
-    "whatsappText": "Receive updates and important notifications about your complaint directly on WhatsApp."
-  },
-
-  "ctaSection": {
-    "title": "Facing a Retail Purchase Issue?",
-    "description": "Get professional assistance to resolve your complaint and claim your rightful refund or replacement.",
-    "button": "Book Free Consultation"
-  }
-},
     "streaming-platforms-consumer-complaint": {
         title: "Streaming Platforms Consumer Complaint",
         hero: {
@@ -1570,194 +1570,194 @@ export const litigationContent = {
             }
         }
     },
-   "travel-consumer-complaint": {
-  "title": "Travel Consumer Complaint",
-  "hero": {
-    "mainTitle": "Resolve Travel Disputes with Legal Assistance",
-    "bulletPoints": [
-      "Support for flight cancellations, delays, and lost luggage claims",
-      "Help addressing misleading travel packages and booking issues",
-      "Professional assistance for complaints against airlines and travel agencies"
-    ],
-    "testimonial": {
-      "text": "The airline refused to refund my ticket after cancelling the flight. VyomBiz helped me file a complaint and I received my refund along with compensation.",
-      "author": "Vikram Malhotra",
-      "verified": true,
-      "avatar": "https://i.pravatar.cc/150?u=vikram"
-    }
-  },
+    "travel-consumer-complaint": {
+        "title": "Travel Consumer Complaint",
+        "hero": {
+            "mainTitle": "Resolve Travel Disputes with Legal Assistance",
+            "bulletPoints": [
+                "Support for flight cancellations, delays, and lost luggage claims",
+                "Help addressing misleading travel packages and booking issues",
+                "Professional assistance for complaints against airlines and travel agencies"
+            ],
+            "testimonial": {
+                "text": "The airline refused to refund my ticket after cancelling the flight. VyomBiz helped me file a complaint and I received my refund along with compensation.",
+                "author": "Vikram Malhotra",
+                "verified": true,
+                "avatar": "https://i.pravatar.cc/150?u=vikram"
+            }
+        },
 
-  "tabs": [
-    { "id": "overview", "label": "Overview" },
-    { "id": "types", "label": "Types" },
-    { "id": "when-to-file", "label": "When To File" },
-    { "id": "process", "label": "Process" },
-    { "id": "why-choose", "label": "Why Choose VyomBiz" },
-    { "id": "faqs", "label": "FAQs" }
-  ],
+        "tabs": [
+            { "id": "overview", "label": "Overview" },
+            { "id": "types", "label": "Types" },
+            { "id": "when-to-file", "label": "When To File" },
+            { "id": "process", "label": "Process" },
+            { "id": "why-choose", "label": "Why Choose VyomBiz" },
+            { "id": "faqs", "label": "FAQs" }
+        ],
 
-  "sections": {
-    "overview": {
-      "title": "Travel Consumer Complaints – Overview",
-      "image": "/lawyer-services-images/travel-complaint-overview.png",
-      "content": [
-        "Travel consumer complaints arise when passengers face issues such as flight cancellations, baggage loss, misleading travel packages, or unsatisfactory services from travel providers.",
-        "These complaints may involve airlines, travel agencies, hotels, or online booking platforms that fail to deliver the services promised to customers.",
-        "Filing a formal complaint allows consumers to seek refunds, compensation, or resolution while encouraging better service standards within the travel industry."
-      ]
-    },
+        "sections": {
+            "overview": {
+                "title": "Travel Consumer Complaints – Overview",
+                "image": "/lawyer-services-images/travel-complaint-overview.png",
+                "content": [
+                    "Travel consumer complaints arise when passengers face issues such as flight cancellations, baggage loss, misleading travel packages, or unsatisfactory services from travel providers.",
+                    "These complaints may involve airlines, travel agencies, hotels, or online booking platforms that fail to deliver the services promised to customers.",
+                    "Filing a formal complaint allows consumers to seek refunds, compensation, or resolution while encouraging better service standards within the travel industry."
+                ]
+            },
 
-    "types": {
-      "title": "Common Travel Disputes",
-      "introduction": "Travelers may encounter several service issues while planning or completing a trip.",
-      "items": [
-        {
-          "title": "Flight Cancellations and Delays",
-          "description": "Airlines cancelling flights or causing long delays without providing proper refunds or alternatives.",
-          "example": "Flight cancelled last minute and the airline refuses to refund the ticket amount."
+            "types": {
+                "title": "Common Travel Disputes",
+                "introduction": "Travelers may encounter several service issues while planning or completing a trip.",
+                "items": [
+                    {
+                        "title": "Flight Cancellations and Delays",
+                        "description": "Airlines cancelling flights or causing long delays without providing proper refunds or alternatives.",
+                        "example": "Flight cancelled last minute and the airline refuses to refund the ticket amount."
+                    },
+                    {
+                        "title": "Lost or Damaged Baggage",
+                        "description": "Airlines or transport providers losing or damaging checked baggage.",
+                        "example": "Airline losing checked-in luggage containing valuables and refusing to compensate."
+                    },
+                    {
+                        "title": "Booking Fraud or Fake Tickets",
+                        "description": "Travel agents or platforms taking payment but failing to provide confirmed bookings.",
+                        "example": "Travel agent disappearing after taking payment for a holiday package."
+                    },
+                    {
+                        "title": "Misleading Travel Packages",
+                        "description": "Travel packages that fail to deliver the facilities or services promised during booking.",
+                        "example": "Hotel provided was of a much lower category than the 5-star hotel promised in the package."
+                    },
+                    {
+                        "title": "Refund Disputes",
+                        "description": "Travel companies refusing or delaying refunds for cancelled services.",
+                        "example": "Travel portal refusing refund for a flexible ticket cancelled within the permissible window."
+                    },
+                    {
+                        "title": "Poor Service Experience",
+                        "description": "Hotels, airlines, or travel providers offering services far below expected standards.",
+                        "example": "Hotel room was unhygienic and lacked basic amenities promised at the time of booking."
+                    }
+                ]
+            },
+
+            "whenToFile": {
+                "title": "When Should You File a Travel Complaint?",
+                "content": "You may consider filing a complaint in the following situations.",
+                "parameters": [
+                    {
+                        "title": "Service Deficiency",
+                        "desc": "The service delivered is significantly below what was promised or paid for."
+                    },
+                    {
+                        "title": "No Response from Provider",
+                        "desc": "The travel company or airline fails to respond to your complaints."
+                    },
+                    {
+                        "title": "Unfair Terms or Conditions",
+                        "desc": "The company refuses refund or compensation using unreasonable policies."
+                    },
+                    {
+                        "title": "Financial Loss",
+                        "desc": "You experienced monetary loss due to cancellation or negligence."
+                    }
+                ]
+            },
+
+            "process": {
+                "title": "Our Travel Complaint Resolution Process",
+                "introduction": "We follow a structured process to address travel consumer complaints.",
+                "steps": [
+                    {
+                        "title": "Evidence Collection",
+                        "description": "Gathering tickets, booking confirmations, invoices, and communication records."
+                    },
+                    {
+                        "title": "Legal Notice",
+                        "description": "Issuing a formal notice requesting refund or compensation."
+                    },
+                    {
+                        "title": "Consumer Commission Filing",
+                        "description": "Escalating the matter to the consumer commission if required."
+                    },
+                    {
+                        "title": "Legal Representation",
+                        "description": "Providing assistance during hearings and legal proceedings."
+                    },
+                    {
+                        "title": "Dispute Resolution",
+                        "description": "Seeking refund, compensation, or settlement for the complaint."
+                    }
+                ]
+            },
+
+            "whyChoose": {
+                "title": "Why Choose VyomBiz for Travel Complaints?",
+                "reasons": [
+                    "Consumer Law Knowledge – Our team understands travel disputes under consumer protection laws.",
+                    "Experience with Travel Disputes – Handled complaints against airlines, travel agencies, and booking platforms.",
+                    "Complete Legal Support – Assistance from complaint drafting to representation before consumer forums.",
+                    "Clear Legal Guidance – Providing straightforward advice on possible outcomes.",
+                    "Affordable Legal Services – Designed to support consumers seeking justice."
+                ]
+            },
+
+            "faqs": {
+                "title": "Travel Complaint FAQs",
+                "items": [
+                    {
+                        "question": "How can I file a complaint against a travel agency?",
+                        "answer": "Consumers can raise complaints through consumer forums or other dispute resolution channels."
+                    },
+                    {
+                        "question": "Can I claim a refund for cancelled travel bookings?",
+                        "answer": "Refund eligibility depends on the circumstances and applicable policies."
+                    },
+                    {
+                        "question": "Can I claim compensation for flight delays?",
+                        "answer": "Passengers may be entitled to compensation depending on the situation and applicable rules."
+                    },
+                    {
+                        "question": "How long does it take to resolve a travel complaint?",
+                        "answer": "The timeline depends on the complexity of the case and legal process."
+                    },
+                    {
+                        "question": "Do I need legal assistance to file a complaint?",
+                        "answer": "Legal guidance can help prepare a stronger complaint and handle the process effectively."
+                    }
+                ]
+            }
         },
-        {
-          "title": "Lost or Damaged Baggage",
-          "description": "Airlines or transport providers losing or damaging checked baggage.",
-          "example": "Airline losing checked-in luggage containing valuables and refusing to compensate."
+
+        "formSection": {
+            "offer": "Limited Time Offer",
+            "ctaButton": "Start Your Complaint Process",
+            "whatsappText": "Receive updates and important notifications about your complaint directly on WhatsApp."
         },
-        {
-          "title": "Booking Fraud or Fake Tickets",
-          "description": "Travel agents or platforms taking payment but failing to provide confirmed bookings.",
-          "example": "Travel agent disappearing after taking payment for a holiday package."
-        },
-        {
-          "title": "Misleading Travel Packages",
-          "description": "Travel packages that fail to deliver the facilities or services promised during booking.",
-          "example": "Hotel provided was of a much lower category than the 5-star hotel promised in the package."
-        },
-        {
-          "title": "Refund Disputes",
-          "description": "Travel companies refusing or delaying refunds for cancelled services.",
-          "example": "Travel portal refusing refund for a flexible ticket cancelled within the permissible window."
-        },
-        {
-          "title": "Poor Service Experience",
-          "description": "Hotels, airlines, or travel providers offering services far below expected standards.",
-          "example": "Hotel room was unhygienic and lacked basic amenities promised at the time of booking."
+
+        "ctaSection": {
+            "title": "Facing a Travel Booking Problem?",
+            "description": "Get professional assistance to resolve your complaint and recover your refund or compensation.",
+            "button": "Book Free Consultation"
         }
-      ]
     },
-
-    "whenToFile": {
-      "title": "When Should You File a Travel Complaint?",
-      "content": "You may consider filing a complaint in the following situations.",
-      "parameters": [
-        {
-          "title": "Service Deficiency",
-          "desc": "The service delivered is significantly below what was promised or paid for."
-        },
-        {
-          "title": "No Response from Provider",
-          "desc": "The travel company or airline fails to respond to your complaints."
-        },
-        {
-          "title": "Unfair Terms or Conditions",
-          "desc": "The company refuses refund or compensation using unreasonable policies."
-        },
-        {
-          "title": "Financial Loss",
-          "desc": "You experienced monetary loss due to cancellation or negligence."
-        }
-      ]
-    },
-
-    "process": {
-      "title": "Our Travel Complaint Resolution Process",
-      "introduction": "We follow a structured process to address travel consumer complaints.",
-      "steps": [
-        {
-          "title": "Evidence Collection",
-          "description": "Gathering tickets, booking confirmations, invoices, and communication records."
-        },
-        {
-          "title": "Legal Notice",
-          "description": "Issuing a formal notice requesting refund or compensation."
-        },
-        {
-          "title": "Consumer Commission Filing",
-          "description": "Escalating the matter to the consumer commission if required."
-        },
-        {
-          "title": "Legal Representation",
-          "description": "Providing assistance during hearings and legal proceedings."
-        },
-        {
-          "title": "Dispute Resolution",
-          "description": "Seeking refund, compensation, or settlement for the complaint."
-        }
-      ]
-    },
-
-    "whyChoose": {
-      "title": "Why Choose VyomBiz for Travel Complaints?",
-      "reasons": [
-        "Consumer Law Knowledge – Our team understands travel disputes under consumer protection laws.",
-        "Experience with Travel Disputes – Handled complaints against airlines, travel agencies, and booking platforms.",
-        "Complete Legal Support – Assistance from complaint drafting to representation before consumer forums.",
-        "Clear Legal Guidance – Providing straightforward advice on possible outcomes.",
-        "Affordable Legal Services – Designed to support consumers seeking justice."
-      ]
-    },
-
-    "faqs": {
-      "title": "Travel Complaint FAQs",
-      "items": [
-        {
-          "question": "How can I file a complaint against a travel agency?",
-          "answer": "Consumers can raise complaints through consumer forums or other dispute resolution channels."
-        },
-        {
-          "question": "Can I claim a refund for cancelled travel bookings?",
-          "answer": "Refund eligibility depends on the circumstances and applicable policies."
-        },
-        {
-          "question": "Can I claim compensation for flight delays?",
-          "answer": "Passengers may be entitled to compensation depending on the situation and applicable rules."
-        },
-        {
-          "question": "How long does it take to resolve a travel complaint?",
-          "answer": "The timeline depends on the complexity of the case and legal process."
-        },
-        {
-          "question": "Do I need legal assistance to file a complaint?",
-          "answer": "Legal guidance can help prepare a stronger complaint and handle the process effectively."
-        }
-      ]
-    }
-  },
-
-  "formSection": {
-    "offer": "Limited Time Offer",
-    "ctaButton": "Start Your Complaint Process",
-    "whatsappText": "Receive updates and important notifications about your complaint directly on WhatsApp."
-  },
-
-  "ctaSection": {
-    "title": "Facing a Travel Booking Problem?",
-    "description": "Get professional assistance to resolve your complaint and recover your refund or compensation.",
-    "button": "Book Free Consultation"
-  }
-},
     "defamation-complaint": {
         title: "Defamation Complaint",
         hero: {
-            mainTitle: "Protect Your Reputation - Expert Defamation Litigation Services",
+            mainTitle: "Protect Your Reputation with the Right Legal Action",
             bulletPoints: [
-                "Resolve defamation issues effectively with top legal support and strategic legal action",
-                "Work with senior defamation lawyers from legal notices to court settlements",
-                "100% confidential and strategy-driven support with over 100,000 cases handled"
+                "Take legal action against false statements harming your reputation",
+                "Get expert guidance to stop defamation and seek compensation",
+                "Professional legal support for documentation, filing, and representation"
             ],
             testimonial: {
-                text: "When faced with criminal charges, I was anxious and uncertain. VyomBiz Lawyer's crafted a solid defense that helped",
-                author: "Neha Verma",
+                text: "With Vyombiz’s legal support, I was able to take action against false allegations and restore my professional reputation.",
+                author: "Verified Client",
                 verified: true,
-                avatar: "https://i.pravatar.cc/150?u=neha"
+                avatar: "https://i.pravatar.cc/150?u=client"
             }
         },
         tabs: [
@@ -1765,150 +1765,125 @@ export const litigationContent = {
             { id: "types", label: "Types" },
             { id: "when-to-file", label: "When To File" },
             { id: "process", label: "Process" },
-            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "why-choose", label: "Why Choose Vyombiz" },
             { id: "faqs", label: "FAQs" }
         ],
         sections: {
             overview: {
-                title: "Understanding Defamation in India",
+                title: "What is Defamation?",
                 image: "/lawyer-services-images/defamation-overview.png",
                 content: [
-                    "Defamation is the act of communicating a false statement to a third party that results in damaging a person's reputation. It is the act of giving false information about a person that can harm their reputation, lower respect for them, or lead to bad opinions or sentiments against them. Defamation can either be criminal or civil. Types of defamation include libel, slander, false statement, publication, criminal defamation, and civil defamation.",
-                    "Defamation litigation involves addressing harm caused by defamatory statements and false claims that damage a person’s reputation. Whether spoken (slander refers) or written (libel generally refers to written or printed words), such statements can have serious consequences. In defamation law, a false statement that is considered defamatory must be made to a third person and result in serious harm or serious financial loss. Both libel and slander fall under defamation and may give rise to a defamation claim, defamation suit, or defamation action in appropriate judicial proceedings.",
-                    "Defamation is addressed in both the Indian Penal Code (IPC) and the Bharatiya Nyaya Sanhita (BNS), which came into force on 1 July 2024. In IPC, Sections 499 and 500 defined and criminalised defamation, BNS follows suit under Section 356, defining its meaning, exceptions, and punishment."
+                    "Defamation refers to false statements or allegations made against a person or business that harm their reputation in the eyes of others. Such statements can affect personal dignity, professional credibility, or business goodwill.",
+                    "A Defamation Complaint allows you to take legal action against individuals or entities spreading false information. With proper legal guidance, you can stop the damage, seek compensation, and restore your credibility.",
+                    "Under Indian law, defamation may lead to civil liability (compensation) or criminal prosecution depending on the severity of the case."
                 ]
             },
             types: {
-                title: "Types of Defamation Cases We Handle",
+                title: "Types of Defamation",
                 image: "/lawyer-services-images/defamation-types.png",
-                introduction: "Spoken defamation or slander, and written statements or libel, both fall under civil liability if they constitute defamation. Defamatory content can include statements implying sexual misconduct, false information, or accusations leading to emotional distress.",
+                introduction: "Understanding the type of defamation helps determine the correct legal remedy.",
                 items: [
                     {
-                        title: "Libel (Written Defamation)",
-                        description: "Libel is defamatory content in written or published form. Defamatory material in newspapers, magazines, books, or other printed publications fall under this category.",
-                        example: "A false article in a magazine accusing someone of financial impropriety."
+                        title: "Libel",
+                        description: "Libel refers to written or published defamatory statements such as blogs, newspapers, websites, social media posts, emails, and digital content.",
+                        example: "Publishing false allegations about a person online."
                     },
                     {
-                        title: "Slander (Oral Defamation)",
-                        description: "Slander entails verbal communications or physical gestures that inflict damage on the reputation of a person when made known to other persons.",
-                        example: "A public accusation of fraud by an employer against an employee at a staff meeting."
-                    },
-                    {
-                        title: "Defamation Per Quod",
-                        description: "This refers to statements that are not directly defamatory but become defamatory when placed in context or with further information.",
-                        example: "A seemingly innocuous remark that is known to be defamatory to those who know the background facts."
-                    },
-                    {
-                        title: "Defamation in Media",
-                        description: "This type consists of defamation cases involving conventional or electronic media sources that spread false or harmful statements.",
-                        example: "A news story falsely associating a person with criminal behavior without proof or explanation."
-                    },
-                    {
-                        title: "Character Defamation",
-                        description: "These cases revolve around comments that directly defame or harm an individual's integrity, reputation, or moral character.",
-                        example: "A co-worker spreading false rumors implying professional dishonesty or personal impropriety."
-                    },
-                    {
-                        title: "Defamation in Online Contexts",
-                        description: "Defamation resulting from electronic sources is rapidly becoming more widespread, including Social Media Platforms and Online Forums.",
-                        example: "A highly circulated post making false allegations about a company engaging in unethical business practices."
-                    },
-                    {
-                        title: "Defamation Per Se",
-                        description: "Defamation per se is terminology used to express statements that inherently cause harm and do not necessitate further proof of harm.",
-                        example: "Allegations of criminal behavior or claims implying professional incompetence."
-                    },
-                    {
-                        title: "Criminal Defamation",
-                        description: "In some jurisdictions, defamation is considered a criminal offense and can carry a penalty of imprisonment or fines.",
-                        example: "A criminal charge for repeatedly making malicious and false public allegations about someone."
+                        title: "Slander",
+                        description: "Slander refers to spoken defamatory statements or verbal accusations that harm someone’s reputation.",
+                        example: "Making false accusations publicly that damage someone's credibility."
                     }
                 ]
             },
             whenToFile: {
-                title: "When Can You File a Defamation Complaint?",
+                title: "When Should You File a Defamation Complaint?",
                 image: "/lawyer-services-images/when-defamation.png",
-                content: "One can start a Defamation litigation when an individual or an ordinary person or entity believes that their reputation has been harmed by false statements made publicly.",
+                content: "You should consider filing a defamation complaint when false statements harm your personal, professional, or business reputation.",
                 parameters: [
-                    { title: "Defamatory Statement", desc: "The statement ought to be untrue and have the ability to adversely affect the individual's reputation." },
-                    { title: "Publication Requirement", desc: "The defamatory statement must be published to a third party (someone else aside from the person involved)." },
-                    { title: "Damage to Reputation", desc: "The defamatory statement should result in actual harm, such as financial loss or personal distress." }
+                    { title: "Personal Reputation Damage", desc: "False statements affecting your dignity or social standing." },
+                    { title: "Business Harm", desc: "Damage to brand image, goodwill, or company credibility." },
+                    { title: "Professional Impact", desc: "Misleading allegations affecting your career or opportunities." },
+                    { title: "Online Defamation", desc: "False content posted on social media or digital platforms." },
+                    { title: "Intentional Misinformation", desc: "Deliberate spreading of false information to harm you." }
                 ]
             },
             process: {
-                title: "Process of Filing a Defamation Complaint",
-                introduction: "We recognise that defamation has the potential to inflict significant personal and professional damage. Our seasoned attorneys are ready to assist you through every step.",
+                title: "Step-by-Step Process to File a Defamation Complaint",
+                introduction: "Filing a defamation complaint requires proper legal assessment, documentation, and court procedures.",
                 steps: [
-                    { title: "Evidence Assessment and Case Review", description: "Examining purportedly defamatory material and gathering pertinent evidence like screenshots, emails, or recordings." },
-                    { title: "Legal Assessment and Jurisdiction Choice", description: "Determining whether the case is civil or criminal and selecting the right court (District or Magistrate's)." },
-                    { title: "Preparing and Serving a Legal Notice", description: "Drafting and serving a legal notice on the accused, requesting retraction, apology, or compensation." },
-                    { title: "Filing the Complaint and Commencing Proceedings", description: "Drafting an in-depth defamation complaint setting forth the facts, evidence, and legal grounds." },
-                    { title: "Court Representation and Appeals", description: "Representing you through the court process, presenting arguments, and cross-examining evidence." }
+                    {
+                        title: "Case Evaluation",
+                        description: "Legal experts analyze the defamatory content, evidence, and available remedies."
+                    },
+                    {
+                        title: "Evidence Collection",
+                        description: "Gathering proof such as screenshots, messages, recordings, or documents."
+                    },
+                    {
+                        title: "Legal Drafting",
+                        description: "Preparing a well-structured defamation complaint with legal arguments."
+                    },
+                    {
+                        title: "Filing the Complaint",
+                        description: "Submitting the complaint in the appropriate court under applicable laws."
+                    },
+                    {
+                        title: "Legal Proceedings",
+                        description: "Handling hearings, responses, and judicial review until resolution."
+                    }
                 ]
             },
             whyChoose: {
-                title: "Why Choose VyomBiz for Defamation Litigation?",
+                title: "Why Choose Vyombiz for Defamation Complaints?",
                 reasons: [
-                    "Expert Lawyers: Our attorneys deal in media, corporate, and individual defamation matters.",
-                    "Established Record of Success: With a record of 90% successful cases, we give outcomes.",
-                    "Privacy Ensured: We safeguard your information and sensitive details during the process.",
-                    "Niche Expertise: Solutions for defamation in media, social media, and corporate sectors.",
-                    "Reputation Defense: Being a top law firm, we provide best-in-class legal assistance."
+                    "Experienced litigation professionals",
+                    "End-to-end legal assistance",
+                    "Accurate documentation and complaint drafting",
+                    "Transparent consultation process",
+                    "Reliable legal representation"
                 ]
             },
             faqs: {
                 title: "Frequently Asked Questions",
                 items: [
                     {
-                        question: "What is the actual malice standard?",
-                        answer: "For public figures, the plaintiff must prove 'actual malice', meaning the defendant acted with reckless disregard for the truth or knew the statement was false."
+                        question: "Is defamation a criminal offense in India?",
+                        answer: "Yes. Defamation is a criminal offense under Sections 499 and 500 of the IPC and may result in fines or imprisonment."
                     },
                     {
-                        question: "Can I sue for a spoken statement?",
-                        answer: "Yes, spoken defamation is called slander. If it's made known to third persons and causes damage, it is actionable."
+                        question: "Can I file a case for online defamation?",
+                        answer: "Yes. False allegations on social media, websites, or digital platforms can be legally challenged."
                     },
                     {
-                        question: "Is truth a defense in defamation?",
-                        answer: "Yes, truth is absolute defense in civil defamation. If the statement is factually true, it generally cannot be considered defamatory."
+                        question: "What proof is required for defamation cases?",
+                        answer: "Evidence may include screenshots, recordings, documents, emails, or published content showing defamatory statements."
                     },
                     {
-                        question: "What is the time limit for filing?",
-                        answer: "In India, the limitation period for civil defamation is usually 1 year from the date of publication."
+                        question: "How long does a defamation case take?",
+                        answer: "The duration depends on case complexity, court schedule, and evidence availability."
                     },
                     {
-                        question: "Can a company file a defamation case?",
-                        answer: "Yes, a corporation or company can file a defamation suit if false statements harm its business reputation, financial standing, or goodwill."
-                    },
-                    {
-                        question: "What are the remedies available?",
-                        answer: "Remedies include monetary compensation (damages), a public apology, retraction of the defamatory statement, and permanent injunctions against further publication."
-                    },
-                    {
-                        question: "Is social media defamation actionable?",
-                        answer: "Absolutely. Defamation on platforms like Twitter, Facebook, or Instagram is treated as libel. Courts can order the removal of content and award damages for digital harm."
-                    },
-                    {
-                        question: "What is the difference between Libel and Slander?",
-                        answer: "Libel refers to defamatory statements in a permanent form (writing, pictures, videos), while Slander is temporary or oral (spoken words, gestures)."
+                        question: "Can businesses file defamation complaints?",
+                        answer: "Yes. Companies can file cases if false statements harm their reputation or credibility."
                     }
                 ]
             }
         }
     },
     "employment-dispute-litigation": {
-        title: "Employment Dispute Litigation",
+        title: "Employment Disputes Litigation",
         hero: {
-            mainTitle: "Resolve Workplace Conflicts - Expert Employment Litigation Services",
+            mainTitle: "Protect Your Workplace Rights with Strategic Legal Support",
             bulletPoints: [
-                "Strategic legal representation for wrongful termination and salary disputes",
-                "Dedicated support for sexual harassment (POSH) and discrimination cases",
-                "Expert handling of Industrial Disputes Act (IDA) and Labour Code matters"
+                "Resolve workplace conflicts with expert legal guidance",
+                "Support for wrongful termination, harassment, and wage disputes",
+                "Strategic resolution through negotiation, mediation, or litigation"
             ],
             testimonial: {
-                text: "I was wrongfully terminated from my job. I hired an employment lawyer from VyomBiz who was thorough and aggressive, helping me get my full settlement.",
-                author: "Anil Sharma",
+                text: "Vyombiz helped me resolve a complex workplace dispute professionally and efficiently.",
+                author: "Verified Client",
                 verified: true,
-                avatar: "https://i.pravatar.cc/150?u=anil"
+                avatar: "https://i.pravatar.cc/150?u=client"
             }
         },
         tabs: [
@@ -1916,166 +1891,127 @@ export const litigationContent = {
             { id: "types", label: "Types" },
             { id: "when-to-file", label: "When To File" },
             { id: "process", label: "Process" },
-            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "why-choose", label: "Why Choose Vyombiz" },
             { id: "faqs", label: "FAQs" }
         ],
         sections: {
             overview: {
-                title: "Expert Employment & Labor Law Litigation",
+                title: "What is Employment Disputes Litigation?",
                 image: "/lawyer-services-images/employment-dispute-overview.png",
                 content: [
-                    "Employment disputes arise when there is a disagreement between an employer and an employee regarding the terms of employment, workplace conditions, or termination. In India, these are primarily governed by the Industrial Disputes Act (1947), the Shops and Establishments Act, and the newly introduced Labour Codes.",
-                    "Our legal team specializes in navigating the complex web of labor regulations to protect the rights of both 'workmen' and managerial employees. We provide strategic counsel to resolve conflicts through mediation, conciliation, or rigorous litigation in Labour Courts and Industrial Tribunals.",
-                    "Whether you are dealing with unpaid wages, breach of confidentiality agreements, or unfair dismissal, VyomBiz offers a dedicated team of advocates to ensure justice is served efficiently."
+                    "Employment disputes litigation refers to resolving conflicts between employers and employees when issues cannot be settled internally.",
+                    "These disputes arise due to disagreements related to contracts, workplace conduct, compensation, or termination.",
+                    "Legal representation ensures fair treatment and effective resolution under labour laws."
                 ]
             },
             types: {
                 title: "Common Types of Employment Disputes",
-                introduction: "Workplace conflicts vary significantly based on the industry and the nature of the employment contract. We handle all major categories of disputes:",
+                introduction: "Employment disputes can arise in various workplace situations.",
                 items: [
                     {
                         title: "Wrongful Termination",
-                        description: "Dismissal without following due process, such as lack of notice or failure to conduct a fair disciplinary inquiry.",
-                        example: "Being fired instantly without the mandatory 30-day notice period or pay in lieu of notice."
+                        description: "Unfair dismissal violating employment laws or agreements.",
+                        example: "Employee terminated without proper notice or justification."
                     },
                     {
-                        title: "Wage & Benefit Claims",
-                        description: "Disagreements over salary arrears, unpaid bonuses, gratuity, provident fund (PF) contributions, or overtime pay.",
-                        example: "Employer withholding the final settlement (Full & Final) after an employee resigns."
+                        title: "Workplace Harassment & Discrimination",
+                        description: "Cases involving harassment or unfair treatment based on protected characteristics.",
+                        example: "Discrimination based on gender or religion."
                     },
                     {
-                        title: "Workplace Harassment (POSH)",
-                        description: "Cases involving sexual harassment or hostile work environments under the POSH Act, 2013.",
-                        example: "Failure of the Internal Committee (IC) to properly investigate a harassment complaint."
+                        title: "Wage & Salary Disputes",
+                        description: "Issues related to unpaid salary, bonuses, or benefits.",
+                        example: "Employer delaying salary payments."
                     },
                     {
-                        title: "Breach of Contract",
-                        description: "Violations of non-compete clauses, non-solicitation agreements, or confidentiality (NDA) terms.",
-                        example: "A former employee joining a direct competitor in violation of a valid restrictive covenant."
+                        title: "Breach of Employment Contract",
+                        description: "Failure to fulfill contractual obligations by either party.",
+                        example: "Employer not honoring agreed benefits."
                     },
                     {
-                        title: "Discrimination",
-                        description: "Unfair treatment based on gender, religion, caste, or disability in hiring, promotion, or pay.",
-                        example: "A female employee being denied a promotion solely due to maternity leave."
+                        title: "Non-Compete & Confidentiality Issues",
+                        description: "Disputes involving misuse of confidential data or contract violations.",
+                        example: "Employee sharing company secrets."
                     },
                     {
-                        title: "Unfair Labor Practices",
-                        description: "Victimization of employees for trade union activities or illegal lockouts by management.",
-                        example: "Management preventing employees from forming a registered trade union."
+                        title: "Unlawful Workplace Practices",
+                        description: "Violations of labour laws or employee rights.",
+                        example: "Unsafe working conditions."
                     }
                 ]
             },
             whenToFile: {
-                title: "When to Initiate Legal Action?",
-                content: "Timing is critical in labor law. Delaying action can sometimes lead to your claim becoming 'time-barred' under Indian law. You should file a complaint if:",
+                title: "When Should You Take Legal Action?",
+                content: "Legal action is necessary when workplace issues escalate or rights are violated.",
                 parameters: [
-                    {
-                        title: "Immediate Termination",
-                        desc: "If you have been terminated without cause and without receiving your contractually obligated severance pay."
-                    },
-                    {
-                        title: "Salary Delay (> 1 Month)",
-                        desc: "If your employer has withheld your salary or legal dues for more than 30 days without a valid legal reason."
-                    },
-                    {
-                        title: "Contractual Breach",
-                        desc: "If the employer fails to provide agreed-upon benefits like stock options (ESOPs), insurance, or relocation costs."
-                    },
-                    {
-                        title: "Harassment/Safety",
-                        desc: "Immediately upon facing any form of physical, mental, or sexual harassment that makes the workplace unsafe."
-                    }
+                    { title: "Unfair Termination", desc: "Dismissal without proper cause or notice." },
+                    { title: "Unpaid Dues", desc: "Salary, bonus, or benefits not paid." },
+                    { title: "Harassment Issues", desc: "Unsafe or hostile work environment." },
+                    { title: "Contract Violations", desc: "Breach of employment agreement." }
                 ]
             },
             process: {
-                title: "The Employment Litigation Journey",
-                introduction: "Resolving an employment dispute in India follows a structured legal path to ensure fairness for both parties.",
+                title: "Our Process for Handling Employment Disputes",
+                introduction: "We follow a structured approach to resolve disputes effectively.",
                 steps: [
-                    {
-                        title: "Legal Notice",
-                        description: "We draft and send a formal legal notice to the employer, detailing the grievances and demanding a resolution within 15 days. This often leads to a settlement without court intervention."
-                    },
-                    {
-                        title: "Conciliation Proceedings",
-                        description: "If the notice is ignored, the matter is taken to a Conciliation Officer. They act as a neutral third party to facilitate a mutual agreement between the employer and employee."
-                    },
-                    {
-                        title: "Filing the Suit",
-                        description: "If conciliation fails, we file a formal claim in the Labour Court (for 'workmen') or a Civil Court (for managerial staff/non-workmen)."
-                    },
-                    {
-                        title: "Evidence & Trial",
-                        description: "Both parties present oral and documentary evidence. We represent you during cross-examinations to establish the facts of the dispute."
-                    },
-                    {
-                        title: "Final Judgment & Execution",
-                        description: "The court passes a decree (like reinstatement or compensation). We assist in the execution phase to ensure you actually receive the ordered amount or relief."
-                    }
+                    { title: "Consultation & Review", description: "Understanding the issue and reviewing documents." },
+                    { title: "Strategy Development", description: "Planning the best legal approach." },
+                    { title: "Legal Documentation", description: "Drafting notices and documents." },
+                    { title: "Negotiation or Litigation", description: "Resolving through mediation or court." },
+                    { title: "Resolution & Compliance", description: "Ensuring closure and future compliance." }
                 ]
             },
             whyChoose: {
-                title: "Why Choose VyomBiz for Employment Law?",
+                title: "Why Choose Vyombiz?",
                 reasons: [
-                    "Deep Expertise: Specialized team focusing exclusively on Industrial and Labor Laws of India.",
-                    "Quick Settlements: 65% of our cases are settled at the Legal Notice or Conciliation stage.",
-                    "Fixed Fee Model: Transparent pricing with no hidden 'per hearing' charges for standard disputes.",
-                    "Nationwide Network: Representation available in Labours Courts across all major Indian cities.",
-                    "Corporate Experience: We understand employer tactics, giving our individual clients a strategic edge."
+                    "Experienced employment law professionals",
+                    "Strategic dispute resolution approach",
+                    "Confidential and professional handling",
+                    "Business-focused legal solutions"
                 ]
             },
             faqs: {
-                title: "Employment Litigation FAQs",
+                title: "Frequently Asked Questions",
                 items: [
                     {
-                        question: "Can I be fired without a reason in India?",
-                        answer: "Most Indian labor laws require 'reasonable cause' for termination. Even for employees not covered by the Industrial Disputes Act, the contract must usually specify a reason or provide a notice period."
+                        question: "What are employment disputes?",
+                        answer: "Conflicts between employers and employees regarding workplace issues or contracts."
                     },
                     {
-                        question: "What is the limitation period for filing a labor dispute?",
-                        answer: "Generally, for disputes under the Industrial Disputes Act, the limitation is 3 years. However, some regional laws (like in Delhi) may require filing within 12 months for certain types of termination."
+                        question: "Can disputes be resolved without court?",
+                        answer: "Yes, through mediation or negotiation."
                     },
                     {
-                        question: "What is a 'workman' under the law?",
-                        answer: "A workman is someone doing manual, skilled, or clerical work. Managerial and administrative employees are generally excluded from this definition and must approach Civil Courts instead of Labour Courts."
+                        question: "How long does litigation take?",
+                        answer: "Depends on complexity and resolution method."
                     },
                     {
-                        question: "Can I sue for workplace mental harassment?",
-                        answer: "Yes, workplace harassment is actionable. While the POSH Act deals with sexual harassment, general mental harassment can be addressed through civil suits for damages or under specific state-level Shops and Establishment laws."
+                        question: "When should I consult a lawyer?",
+                        answer: "As soon as a dispute arises."
                     },
                     {
-                        question: "Are non-compete clauses valid in India?",
-                        answer: "Post-employment non-compete clauses are generally void under Section 27 of the Contract Act. However, reasonable restrictions during the term of employment are legally enforceable."
-                    },
-                    {
-                        question: "What is a 'Performance Improvement Plan' (PIP)?",
-                        answer: "A PIP is a formal process for underperforming employees. If used maliciously or without basis to force a resignation, it can be challenged as 'constructive discharge'."
-                    },
-                    {
-                        question: "Can I be fired while on maternity leave?",
-                        answer: "No. The Maternity Benefit Act strictly prohibits an employer from dismissing a woman during or on account of her maternity leave. Doing so can lead to severe legal penalties."
-                    },
-                    {
-                        question: "How do I recover unpaid bonuses or commissions?",
-                        answer: "Unpaid dues are governed by the Payment of Bonus Act and your employment contract. We can file a suit for recovery of money or approach the Labour Commissioner for intervention."
+                        question: "Can disputes be prevented?",
+                        answer: "Yes, with proper contracts and compliance."
                     }
                 ]
             }
         }
     },
+
     "cheque-bounce-complaint": {
         title: "Cheque Bounce Complaint",
         hero: {
-            mainTitle: "Recover Your Money Faster - Expert Cheque Bounce Legal Services",
+            mainTitle: "Cheque Bounce? Take Legal Action with Confidence",
             bulletPoints: [
-                "Swift legal action under Section 138 of the Negotiable Instruments Act",
-                "Professional drafting of mandatory legal notices within strict timelines",
-                "Complete court representation for recovery of amount with up to 18% interest"
+                "File complaint under Section 138 of NI Act",
+                "Professional legal notice drafting and filing",
+                "Court representation for recovery of dues"
             ],
             testimonial: {
-                text: "My payment was stuck for months after a client's cheque bounced. VyomBiz team helped me send a strong legal notice and file a case. I got my money within 45 days with interest.",
-                author: "Rajesh Kumar",
+                text: "Vyombiz helped me recover my payment quickly through proper legal action.",
+                author: "Verified Client",
                 verified: true,
-                avatar: "https://i.pravatar.cc/150?u=rajesh"
+                avatar: "https://i.pravatar.cc/150?u=client"
             }
         },
         tabs: [
@@ -2083,161 +2019,102 @@ export const litigationContent = {
             { id: "types", label: "Types" },
             { id: "when-to-file", label: "When To File" },
             { id: "process", label: "Process" },
-            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "why-choose", label: "Why Choose Vyombiz" },
             { id: "faqs", label: "FAQs" }
         ],
         sections: {
             overview: {
-                title: "Legal Remedy for Dishonoured Cheques",
+                title: "What is a Cheque Bounce?",
                 image: "/lawyer-services-images/check-bounce-overview.png",
                 content: [
-                    "A cheque bounce (dishonour of cheque) is a serious criminal offense in India under Section 138 of the Negotiable Instruments Act, 1881. It occurs when a cheque is returned by the bank unpaid due to reasons like insufficient funds or account closure.",
-                    "The law provides a powerful mechanism for the payee to recover their money. If the drawer fails to pay after receiving a formal demand notice, they can face up to 2 years of imprisonment and a fine of up to twice the cheque amount.",
-                    "At VyomBiz, we handle the entire litigation process—from tracking bank memos to issuing statutory notices and representing you in the Magistrate's Court—ensuring zero procedural errors that could weaken your case."
+                    "Cheque bounce occurs when a bank refuses to process a cheque due to insufficient funds or other reasons.",
+                    "It is a criminal offence under Section 138 of the Negotiable Instruments Act, 1881.",
+                    "Legal action helps recover dues and hold the issuer accountable."
                 ]
             },
             types: {
-                title: "Common Reasons for Cheque Dishonour",
-                introduction: "Not all bounced cheques qualify for criminal action under Section 138. The law primarily targets 'dishonest' dishonours related to discharge of debt:",
+                title: "Common Reasons for Cheque Bounce",
+                introduction: "Cheque dishonour may happen due to multiple reasons.",
                 items: [
-                    {
-                        title: "Insufficient Funds",
-                        description: "The most common reason where the drawer's account does not have enough balance to cover the cheque amount.",
-                        example: "Issuing a Rs. 50,000 cheque when the account balance is only Rs. 2,000."
-                    },
-                    {
-                        title: "Account Closed",
-                        description: "The drawer closes the bank account before the cheque is presented to avoid payment.",
-                        example: "Handing over a cheque for a loan repayment and immediately closing the bank account."
-                    },
-                    {
-                        title: "Stop Payment",
-                        description: "The drawer instructs the bank to stop payment on a specific cheque without a valid legal dispute.",
-                        example: "Telling the bank to 'Stop Payment' just to delay a legitimate business invoice payment."
-                    },
-                    {
-                        title: "Signature Mismatch",
-                        description: "When the signature on the cheque differs from the specimen signature filed with the bank.",
-                        example: "Intentionally signing a cheque differently to cause a technical dishonour."
-                    },
-                    {
-                        title: "Refer to Drawer",
-                        description: "A technical term used by banks indicating the bank is unable to pay, often due to technical blocks on the account.",
-                        example: "Government or court-ordered freezing of the drawer's bank account."
-                    }
+                    { title: "Insufficient Funds", description: "Not enough balance in account.", example: "Cheque exceeds account balance." },
+                    { title: "Signature Mismatch", description: "Signature differs from bank records.", example: "Incorrect sign." },
+                    { title: "Account Closed", description: "Bank account already closed.", example: "Closed account cheque." },
+                    { title: "Stop Payment", description: "Drawer stops payment intentionally.", example: "Payment blocked by issuer." },
+                    { title: "Cheque Damage", description: "Physical errors or overwriting.", example: "Damaged cheque." }
                 ]
             },
             whenToFile: {
-                title: "Critical Timelines You Must Follow",
-                content: "Cheque bounce cases are governed by very strict limitation periods. Missing even one deadline can make your complaint non-maintainable in court:",
+                title: "When Can You File a Complaint?",
+                content: "A complaint can be filed if legal conditions are satisfied.",
                 parameters: [
-                    {
-                        title: "3 Months Presentation",
-                        desc: "The cheque must be presented to the bank within 3 months of the date mentioned on it."
-                    },
-                    {
-                        title: "30 Days for Notice",
-                        desc: "You must send a formal Legal Demand Notice within 30 days of receiving the 'Cheque Return Memo' from the bank."
-                    },
-                    {
-                        title: "15 Days Waiting Period",
-                        desc: "After the drawer receives the notice, you must give them 15 days to make the payment."
-                    },
-                    {
-                        title: "30 Days to File Complaint",
-                        desc: "If payment isn't made within the 15-day window, you must file the criminal complaint in court within the next 30 days."
-                    }
+                    { title: "Valid Debt", desc: "Cheque issued for legal liability." },
+                    { title: "Within Validity", desc: "Presented within 3 months." },
+                    { title: "Notice Sent", desc: "Legal notice within 30 days." },
+                    { title: "No Payment", desc: "No payment within 15 days." }
                 ]
             },
             process: {
-                title: "Step-by-Step Recovery Process",
-                introduction: "We manage every phase of the Section 138 litigation to maximize your chances of recovery.",
+                title: "Legal Process",
+                introduction: "Follow structured steps for filing a case.",
                 steps: [
-                    {
-                        title: "Bank Memo Analysis",
-                        description: "We review the bank's return memo to confirm the reason for dishonour fits the criteria for criminal prosecution."
-                    },
-                    {
-                        title: "Statutory Demand Notice",
-                        description: "Our lawyers draft a high-impact Demand Notice, giving the drawer 15 days to pay. This notice is a mandatory legal requirement before filing a case."
-                    },
-                    {
-                        title: "Filing Criminal Complaint",
-                        description: "If payment is not settled, we file a complaint under Section 138 NI Act in the competent Magistrate’s Court."
-                    },
-                    {
-                        title: "Summons & Evidence",
-                        description: "The court issues a summons to the accused. We present your 'Evidence-in-Affidavit' and cross-examine the accused to establish the debt."
-                    },
-                    {
-                        title: "Judgment & Recovery",
-                        description: "The court delivers a verdict. We also help in filing 'Interim Compensation' applications to get you up to 20% of the amount even while the trial is ongoing."
-                    }
+                    { title: "Cheque Presentation", description: "Submit cheque to bank." },
+                    { title: "Dishonour Memo", description: "Receive bank memo." },
+                    { title: "Legal Notice", description: "Send notice within 30 days." },
+                    { title: "Waiting Period", description: "15 days for payment." },
+                    { title: "File Complaint", description: "Approach Magistrate Court." }
                 ]
             },
             whyChoose: {
-                title: "Why Trust VyomBiz for Debt Recovery?",
+                title: "Why Choose Vyombiz?",
                 reasons: [
-                    "Precision in Timelines: We automate tracking of your return memos to ensure notices are never late.",
-                    "Strategic Drafting: Our notices are designed to induce fear of criminal consequences, leading to 70% pre-trial settlements.",
-                    "Interim Compensation: We aggressively push for current laws that allow you to get partial payment midway through the trial.",
-                    "High Success Rate: Specialist advocates with over 10 years of experience in Negotiable Instrument litigation.",
-                    "End-to-End Support: From the first bank bounce till the final recovery of money through court warrants."
+                    "Experienced legal professionals",
+                    "Timely documentation handling",
+                    "Structured legal support",
+                    "Client-focused approach"
                 ]
             },
             faqs: {
-                title: "Cheque Bounce FAQs",
+                title: "FAQs",
                 items: [
                     {
-                        question: "What is the punishment for a cheque bounce in India?",
-                        answer: "The drawer can be punished with imprisonment for up to 2 years, a fine up to double the cheque amount, or both."
+                        question: "Is cheque bounce a criminal offence?",
+                        answer: "Yes, under Section 138 NI Act."
                     },
                     {
-                        question: "Can I file a case for a gift cheque?",
-                        answer: "No. Section 138 only applies to cheques issued for the discharge of a legally enforceable debt or liability. Cheques for gifts or donations generally do not qualify."
+                        question: "How long does it take?",
+                        answer: "Depends on court and case complexity."
                     },
                     {
-                        question: "Is cheque bounce a bailable offense?",
-                        answer: "Yes, it is a bailable offense. However, the accused must appear in court and secure bail, or a non-bailable warrant (NBW) can be issued against them."
+                        question: "Can it be settled?",
+                        answer: "Yes, through mutual agreement."
                     },
                     {
-                        question: "Can I file a civil suit along with a criminal case?",
-                        answer: "Yes. You can file a Civil Recovery Suit (Order 37) to recover the money alongside the criminal complaint under Section 138. Both can run simultaneously."
+                        question: "Cheque validity?",
+                        answer: "Usually 3 months."
                     },
                     {
-                        question: "What if the drawer of the cheque is a company?",
-                        answer: "In such cases, you must sue the company as well as the directors or officers who were in charge of the company's business at the time of the offense."
-                    },
-                    {
-                        question: "Does Section 138 apply to 'Security Cheques'?",
-                        answer: "Yes, as long as there was an existing legally enforceable debt or liability at the time the cheque was presented for payment."
-                    },
-                    {
-                        question: "What is 'Interim Compensation' under Section 143A?",
-                        answer: "The court can order the drawer to pay up to 20% of the cheque amount as interim compensation to the complainant while the trial is still ongoing."
-                    },
-                    {
-                        question: "Can I file a case for a post-dated cheque?",
-                        answer: "Yes. Once the date mentioned on the post-dated cheque arrives and it is presented and subsequently bounced, it qualifies for action under Section 138."
+                        question: "Can businesses file cases?",
+                        answer: "Yes."
                     }
                 ]
             }
         }
     },
+
     "cyber-crime-litigation": {
         title: "Cyber Crime Litigation",
         hero: {
-            mainTitle: "Fight Digital Fraud - Specialist Cyber Crime Legal Support",
+            mainTitle: "Defend Your Digital Rights with Expert Cyber Crime Litigation",
             bulletPoints: [
-                "Expert help in cases of financial fraud, identity theft, and hacking",
-                "Legal action against online defamation, stalking, and data breaches",
-                "Liaising with Cyber Cells for FIR registration and digital evidence gathering"
+                "Legal action against cyber fraud and hacking",
+                "Support for digital defamation and identity theft",
+                "Professional cyber litigation and evidence handling"
             ],
             testimonial: {
-                text: "After falling victim to identity theft and a major banking scam, I was overwhelmed. The cyber lawyers at VyomBiz helped me block the transactions and file an effective complaint that led to recovery.",
-                author: "Priya Reddy",
+                text: "Vyombiz helped me take action against online fraud and recover losses effectively.",
+                author: "Verified Client",
                 verified: true,
-                avatar: "https://i.pravatar.cc/150?u=priya"
+                avatar: "https://i.pravatar.cc/150?u=client"
             }
         },
         tabs: [
@@ -2245,142 +2122,84 @@ export const litigationContent = {
             { id: "types", label: "Types" },
             { id: "when-to-file", label: "When To File" },
             { id: "process", label: "Process" },
-            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "why-choose", label: "Why Choose Vyombiz" },
             { id: "faqs", label: "FAQs" }
         ],
         sections: {
             overview: {
-                title: "Your Defense in the Digital World",
+                title: "What is Cyber Crime Litigation?",
                 image: "/lawyer-services-images/cyber-crime-litigation-overview.png",
                 content: [
-                    "As the world moves online, digital crimes are skyrocketing. Cyber crime litigation in India is primarily governed by the Information Technology Act (2000) and the Indian Penal Code. These laws address unauthorized access, digital fraud, and online harassment.",
-                    "Navigating a cybercrime case requires more than just legal knowledge; it requires technical expertise to preserve digital evidence, trace IP addresses, and deal with complex jurisdictional issues. Our team combines legal prowess with cyber-forensic understanding to protect victims of the digital era.",
-                    "Whether you are an individual facing online stalking or a corporation dealing with a massive data breach, VyomBiz provides the strategic support needed to bring perpetrators to justice and mitigate your losses."
+                    "Cyber crime litigation deals with crimes committed through digital platforms or networks.",
+                    "It includes fraud, hacking, identity theft, and online harassment.",
+                    "Governed by IT Act, 2000 and IPC provisions."
                 ]
             },
             types: {
-                title: "Specialized Cyber Legal Services",
-                introduction: "We provide comprehensive legal representation for a wide array of cyber offenses under the IT Act, 2000:",
+                title: "Common Cyber Crime Cases",
+                introduction: "Cyber crimes affect individuals and businesses.",
                 items: [
-                    {
-                        title: "Financial & UPI Fraud",
-                        description: "Legal action against phishing, banking scams, and unauthorized UPI transactions to recover lost funds.",
-                        example: "Being tricked into sharing an OTP which results in unauthorized withdrawal from your savings account."
-                    },
-                    {
-                        title: "Identity Theft & Impersonation",
-                        description: "Prosecuting those who use your unique identifiers (photos, passwords, digital signatures) for fraudulent acts.",
-                        example: "Someone creating a fake social media profile using your photos to extort money from your friends."
-                    },
-                    {
-                        title: "Cyber Defamation & Stalking",
-                        description: "Protecting your reputation and safety against online trolls, stalkers, and non-consensual image sharing.",
-                        example: "A former associate posting malicious and false information about your business on review portals."
-                    },
-                    {
-                        title: "Hacking & Data Breach",
-                        description: "Representing companies in cases of unauthorized server access, ransomware, and theft of trade secrets.",
-                        example: "An ex-employee accessing company servers to steal sensitive client databases before joining a competitor."
-                    },
-                    {
-                        title: "Violation of Privacy",
-                        description: "Legal recourse against the capturing or transmitting of private images without consent (Section 66E).",
-                        example: "A voyeuristic recording made without permission that is threatened to be leaked online."
-                    }
+                    { title: "Online Fraud", description: "Phishing, scams, financial fraud.", example: "UPI fraud." },
+                    { title: "Data Breach", description: "Unauthorized data access.", example: "Hacking company data." },
+                    { title: "Digital Defamation", description: "Online reputation damage.", example: "Fake reviews." },
+                    { title: "Identity Theft", description: "Misuse of personal identity.", example: "Fake profiles." },
+                    { title: "E-commerce Fraud", description: "Marketplace fraud.", example: "Fake sellers." },
+                    { title: "IP Violations", description: "Copyright misuse.", example: "Digital piracy." }
                 ]
             },
             whenToFile: {
-                title: "The 'Golden Hour' of Cyber Reporting",
-                content: "In cybercrime, digital evidence disappears quickly. While there is no strict statutory limit, the 'Golden Hour' rule is vital for success:",
+                title: "When to Take Legal Action?",
+                content: "Immediate action is crucial in cyber crimes.",
                 parameters: [
-                    {
-                        title: "Banking Fraud (< 72 Hours)",
-                        desc: "Reporting financial fraud to your bank and the 1930 helpline within 3 days maximizes your chance of a full refund."
-                    },
-                    {
-                        title: "Identity Theft (Immediate)",
-                        desc: "File a complaint as soon as you lose control of an account to prevent the thief from committing crimes in your name."
-                    },
-                    {
-                        title: "Data Breach (24 Hours)",
-                        desc: "For businesses, reporting a data breach to Cert-In and legal authorities is now a mandatory requirement under new guidelines."
-                    },
-                    {
-                        title: "Harassment (Ongoing)",
-                        desc: "Don't wait for 'one more time'. Document every message or post immediately as evidence can be deleted by the perpetrator."
-                    }
+                    { title: "Financial Fraud", desc: "Report within 24–72 hours." },
+                    { title: "Identity Theft", desc: "Act immediately." },
+                    { title: "Data Breach", desc: "Report quickly." },
+                    { title: "Harassment", desc: "Document evidence early." }
                 ]
             },
             process: {
-                title: "The Path to Cyber Justice",
-                introduction: "We guide you through the technical and legal hurdles of filing and prosecuting a cybercrime case.",
+                title: "Cyber Litigation Process",
+                introduction: "Structured legal and technical approach.",
                 steps: [
-                    {
-                        title: "Evidence Preservation",
-                        description: "We help you capture legally admissible screenshots, headers, and logs. We ensure the 'Chain of Custody' is maintained for digital forensics."
-                    },
-                    {
-                        title: "Reporting to National Portal",
-                        description: "We assist in filing the detailed complaint on the National Cyber Crime Reporting Portal (cybercrime.gov.in) to ensure it gets prioritized."
-                    },
-                    {
-                        title: "FIR & Cyber Cell Liaison",
-                        description: "Our lawyers work directly with local Cyber Crime Cells to convert your complaint into an FIR and push for active investigation into IP addresses."
-                    },
-                    {
-                        title: "Interim Relief",
-                        description: "We file applications to block fraudulent websites, remove defamatory content, or freeze bank accounts where stolen money has been moved."
-                    },
-                    {
-                        title: "Adjudication & Trial",
-                        description: "We represent you before the Adjudicating Officer (for compensation) or in the Criminal Court (for prosecution of the offender)."
-                    }
+                    { title: "Case Evaluation", description: "Analyze incident." },
+                    { title: "Evidence Collection", description: "Document digital proof." },
+                    { title: "Complaint Filing", description: "File with cyber cell." },
+                    { title: "Legal Representation", description: "Court proceedings." },
+                    { title: "Resolution", description: "Settlement or judgment." }
                 ]
             },
             whyChoose: {
-                title: "Why Choose VyomBiz for Cyber Defense?",
+                title: "Why Choose Vyombiz?",
                 reasons: [
-                    "Tech-Savvy Lawyers: Our team understands logs, VPNs, and headers—technical concepts most traditional lawyers miss.",
-                    "1930 Helpline Liaison: Expertise in working with the financial fraud reporting system to freeze stolen funds quickly.",
-                    "Reputation Management: Special focus on getting harmful digital content removed from platforms like Google, FB, and Twitter.",
-                    "Privacy First: We handle sensitive cases (like privacy violations) with the utmost confidentiality and empathy.",
-                    "Comprehensive Network: Ability to coordinate with cyber cells across different states for cross-border digital crimes."
+                    "Experienced cyber law professionals",
+                    "Digital evidence expertise",
+                    "Fast legal consultation",
+                    "Transparent process",
+                    "Strong representation"
                 ]
             },
             faqs: {
-                title: "Cyber Litigation FAQs",
+                title: "FAQs",
                 items: [
                     {
-                        question: "Can I report a cybercrime if I don't know the offender?",
-                        answer: "Yes. Most cyber-complaints are filed against 'unknown persons'. The police use IP tracking and digital footprints to identify the perpetrator during the investigation."
+                        question: "What is cyber crime?",
+                        answer: "Crimes using digital systems like hacking or fraud."
                     },
                     {
-                        question: "What is the national cybercrime helpline number?",
-                        answer: "The national helpline number is 1930. It is especially effective for immediate reporting of financial frauds to block transactions in real-time."
+                        question: "How to file complaint?",
+                        answer: "Through cyber cell or online portal."
                     },
                     {
-                        question: "How do I prove online defamation?",
-                        answer: "You need copies of the URLs, screenshots showing the timestamp, and proof of the reach of the defamatory content. We help convert these into legally valid evidence under Section 65B of the Evidence Act."
+                        question: "Which laws apply?",
+                        answer: "IT Act 2000 and IPC."
                     },
                     {
-                        question: "Can I get my money back from a UPI scam?",
-                        answer: "If reported within the first 24-72 hours, there is a high probability of the bank freezing the amount in the perpetrator's account. Timely legal intervention is key."
+                        question: "Can businesses file cases?",
+                        answer: "Yes."
                     },
                     {
-                        question: "Can I sue a social media platform for not removing content?",
-                        answer: "Under the IT Rules 2021, if a platform fails to remove prohibited content within 24-36 hours of a valid court order or complaint, they can lose their 'safe harbor' immunity."
-                    },
-                    {
-                        question: "What is 'Phishing' and is it a crime?",
-                        answer: "Phishing involves using deceptive emails or websites to steal sensitive data. It is a serious crime prosecuted under Sections 66C and 66D of the IT Act."
-                    },
-                    {
-                        question: "How is digital evidence proven in court?",
-                        answer: "Digital evidence must be accompanied by a 'Section 65B Certificate' under the Evidence Act, which validates that the data was source-captured without tampering."
-                    },
-                    {
-                        question: "Is online stalking actionable in India?",
-                        answer: "Yes. Online stalking is a criminal offense under Section 354D of the IPC and can also be prosecuted under the IT Act if it involves digital harassment or privacy violation."
+                        question: "How long does it take?",
+                        answer: "Depends on case complexity."
                     }
                 ]
             }
@@ -2389,17 +2208,17 @@ export const litigationContent = {
     "contested-divorce": {
         title: "Contested Divorce",
         hero: {
-            mainTitle: "Navigate Complex Separations - Expert Divorce Lawyers",
+            mainTitle: "Resolve Your Contested Divorce with Trusted Legal Guidance",
             bulletPoints: [
-                "Strategic representation for alimony, child custody, and property division",
-                "Compassionate but firm legal action for grounds like cruelty and desertion",
-                "Expert handling of contested matrimonial cases in Family Courts"
+                "Expert support for custody, alimony, and property disputes",
+                "Transparent legal process with professional representation",
+                "End-to-end assistance for complex divorce litigation"
             ],
             testimonial: {
-                text: "My divorce case was getting very messy with complex property disputes. The lawyers at VyomBiz handled it with great professionalism and secured my interests during the trial.",
-                author: "Sunita Verma",
+                text: "Vyombiz provided strong legal support during my contested divorce and helped me handle the case with confidence.",
+                author: "Verified Client",
                 verified: true,
-                avatar: "https://i.pravatar.cc/150?u=sunita"
+                avatar: "https://i.pravatar.cc/150?u=client"
             }
         },
         tabs: [
@@ -2407,166 +2226,126 @@ export const litigationContent = {
             { id: "types", label: "Types" },
             { id: "when-to-file", label: "When To File" },
             { id: "process", label: "Process" },
-            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "why-choose", label: "Why Choose Vyombiz" },
             { id: "faqs", label: "FAQs" }
         ],
         sections: {
             overview: {
-                title: "Comprehensive Matrimonial Litigation",
+                title: "What is a Contested Divorce?",
                 image: "/lawyer-services-images/contested-divorce-overview.png",
                 content: [
-                    "A contested divorce occurs when one spouse does not agree to the divorce or when terms like alimony, custody, or assets cannot be mutually settled. In India, these are primarily governed by personal laws such as the Hindu Marriage Act (1955) or the Special Marriage Act (1954).",
-                    "Matrimonial litigation is often emotionally draining and legally complex, requiring a delicate balance of aggressive advocacy and strategic negotiation. Our team provides end-to-end support, from filing the petition and securing interim maintenance to representing you in high-stakes trials in Family Courts.",
-                    "At VyomBiz, we prioritize the protection of your rights and the future of your children, ensuring that you traverse this difficult period with clarity and legal security."
+                    "A contested divorce occurs when spouses disagree on divorce terms or the divorce itself.",
+                    "It involves court hearings, evidence submission, and legal arguments.",
+                    "Disputes may include custody, property division, alimony, and financial responsibilities."
                 ]
             },
             types: {
-                title: "Legal Grounds for Contested Divorce",
-                introduction: "Under most personal laws in India, you must establish specific grounds to qualify for a contested divorce. Key grounds include:",
+                title: "When Does a Divorce Become Contested?",
+                introduction: "A divorce becomes contested when spouses disagree on major issues.",
                 items: [
                     {
-                        title: "Cruelty",
-                        description: "Both mental and physical cruelty are valid grounds. This includes persistent harassment or behavior that makes living together impossible.",
-                        example: "Being subjected to constant verbal abuse, dowry demands, or physical violence by the spouse or their family."
+                        title: "Disagreement on Divorce",
+                        description: "One spouse refuses to accept the divorce petition.",
+                        example: "Refusal to sign divorce agreement."
                     },
                     {
-                        title: "Desertion",
-                        description: "When one spouse abandons the marriage for a continuous period of at least two years without a reasonable cause.",
-                        example: "A spouse leaving the matrimonial home and breaking all communication for 2+ years without consent."
+                        title: "Child Custody Disputes",
+                        description: "Conflict over custody or visitation rights.",
+                        example: "Both parents claim custody."
                     },
                     {
-                        title: "Adultery",
-                        description: "Voluntary sexual intercourse by a married person with someone other than their spouse.",
-                        example: "Providing evidence of a spouse's extra-marital relationship as a primary cause for separation."
+                        title: "Property Disputes",
+                        description: "Disagreements over assets and finances.",
+                        example: "Conflict over house ownership."
                     },
                     {
-                        title: "Mental Disorder",
-                        description: "If the spouse has been suffering from a continuous or intermittent mental disorder of such a kind that cohabitation is not possible.",
-                        example: "Diagnosis of severe and incurable schizophrenia or other violent mental illnesses after marriage."
+                        title: "Alimony Issues",
+                        description: "Disputes over maintenance or financial support.",
+                        example: "Disagreement on monthly maintenance."
                     },
                     {
-                        title: "Renunciation",
-                        description: "When a spouse enters a religious order and renounces the world (sanyas).",
-                        example: "A spouse officially joining a monastery and cutting off all worldly and marital ties."
-                    },
-                    {
-                        title: "Presumption of Death",
-                        description: "If the spouse has not been heard from for seven years or more by those who would normally have heard from them.",
-                        example: "A spouse missing since a natural disaster or conflict for over 7 years without any trace."
+                        title: "Legal Allegations",
+                        description: "Cases involving cruelty, desertion, or fraud.",
+                        example: "Domestic allegations requiring court review."
                     }
                 ]
             },
             whenToFile: {
-                title: "Critical Considerations Before Filing",
-                content: "Filing for divorce is a major life decision. You should consider initiating the process when:",
+                title: "Legal Grounds for Contested Divorce",
+                content: "A contested divorce can be filed on specific legal grounds.",
                 parameters: [
-                    {
-                        title: "Irretrievable Breakdown",
-                        desc: "When all attempts at reconciliation, including mediation and counseling, have failed over a long period."
-                    },
-                    {
-                        title: "Safety Concerns",
-                        desc: "Immediately if there is a threat of physical violence (Domestic Violence) to you or your children."
-                    },
-                    {
-                        title: "Financial Protection",
-                        desc: "When you need legal orders to secure maintenance (Section 24) or prevent the disposal of matrimonial assets."
-                    },
-                    {
-                        title: "Custody Disputes",
-                        desc: "If the other spouse is preventing you from seeing your children or planning to move them without consent."
-                    }
+                    { title: "Cruelty", desc: "Physical or mental harm." },
+                    { title: "Adultery", desc: "Extramarital relationship." },
+                    { title: "Desertion", desc: "Abandonment for continuous period." },
+                    { title: "Mental Disorder", desc: "Severe mental condition." },
+                    { title: "Renunciation", desc: "Leaving worldly life." },
+                    { title: "Presumption of Death", desc: "Missing for long period." }
                 ]
             },
             process: {
-                title: "The Divorce Trial Process",
-                introduction: "matrimonial litigation in India follows a rigorous procedural framework to ensure justice.",
+                title: "Step-by-Step Contested Divorce Process",
+                introduction: "Understanding the process helps in better preparation.",
                 steps: [
-                    {
-                        title: "Petition Filing",
-                        description: "We draft a comprehensive petition detailing the grounds for divorce and file it in the Family Court of competent jurisdiction."
-                    },
-                    {
-                        title: "Service of Summons",
-                        description: "The court issues a notice to the other spouse. We ensure proper service and track the response (Written Statement)."
-                    },
-                    {
-                        title: "Counseling & Mediation",
-                        description: "Most Family Courts mandate an attempt at reconciliation. We represent you during these sessions to ensure your stance remains clear."
-                    },
-                    {
-                        title: "Interim Orders",
-                        description: "While the trial is on, we file for 'Pendente Lite' maintenance, child custody, and injunctions against property sale."
-                    },
-                    {
-                        title: "Evidence & Judgment",
-                        description: "The case enters the evidence stage (Chief & Cross-examination). After final arguments, the judge delivers the decree of divorce."
-                    }
+                    { title: "Petition Filing", description: "File divorce petition in court." },
+                    { title: "Notice to Respondent", description: "Court sends notice to spouse." },
+                    { title: "Reply & Counterclaims", description: "Spouse responds or contests." },
+                    { title: "Evidence Submission", description: "Present documents and proofs." },
+                    { title: "Court Hearings", description: "Arguments and clarifications." },
+                    { title: "Final Judgment", description: "Court issues final decree." }
                 ]
             },
             whyChoose: {
-                title: "Why Trust VyomBiz with Your Case?",
+                title: "Why Choose Vyombiz?",
                 reasons: [
-                    "Empathetic Advocacy: We understand the emotional toll and provide supportive, confidential legal guidance.",
-                    "Strategic Expertise: Skilled in handling complex alimony computations and sensitive child custody battles.",
-                    "Comprehensive Services: Integration with our criminal team for related cases like 498A or Domestic Violence.",
-                    "Nationwide Presence: Expert matrimonial lawyers available in all major tier-1 and tier-2 cities across India.",
-                    "Transparency: Clear communication about timelines, costs, and the realistic outcome of your litigation."
+                    "Experienced family law professionals",
+                    "End-to-end legal support",
+                    "Transparent and confidential process",
+                    "Strong courtroom representation",
+                    "Reliable guidance during sensitive cases"
                 ]
             },
             faqs: {
-                title: "Contested Divorce FAQs",
+                title: "FAQs",
                 items: [
                     {
-                        question: "How long does a contested divorce take in India?",
-                        answer: "On average, a contested divorce can take 2 to 5 years, depending on the complexity of the disputes and the court's backlog."
+                        question: "How long does it take?",
+                        answer: "Several months to years depending on complexity."
                     },
                     {
-                        question: "Can I get maintenance while the case is ongoing?",
-                        answer: "Yes. Under Section 24 of the Hindu Marriage Act, either spouse can apply for 'interim maintenance' to cover legal costs and monthly expenses during the trial."
+                        question: "Can it become mutual divorce later?",
+                        answer: "Yes, if both parties agree."
                     },
                     {
-                        question: "Who gets custody of the child in a contested divorce?",
-                        answer: "The court's primary consideration is the 'Welfare of the Child'. Generally, for children under 5, custody goes to the mother, but this can change based on the parents' capability."
+                        question: "Is court appearance required?",
+                        answer: "Yes, at certain stages."
                     },
                     {
-                        question: "What is 'Mental Cruelty'?",
-                        answer: "Mental cruelty is behavior that causes severe mental pain and suffering, such as humiliation, denial of food/basics, or false accusations of character."
+                        question: "Who gets child custody?",
+                        answer: "Based on child’s welfare."
                     },
                     {
-                        question: "Can I claim my 'Stridhan' back during a divorce?",
-                        answer: "Yes. Stridhan belongs exclusively to the woman. If the husband or his family refuses to return it, she can file a criminal complaint for criminal breach of trust."
-                    },
-                    {
-                        question: "Is 'Irretrievable Breakdown' a valid ground for divorce?",
-                        answer: "While not explicitly in the Hindu Marriage Act, the Supreme Court often uses its special powers to grant divorce if a marriage is completely dead and reconciliation is impossible."
-                    },
-                    {
-                        question: "Can I stop my spouse from taking children abroad?",
-                        answer: "Yes. You can move the court for an injunction or a 'Look Out Circular' (LOC) to prevent the children from being moved out of the country without your consent."
-                    },
-                    {
-                        question: "What happens if my spouse doesn't appear in court?",
-                        answer: "If the spouse avoids summons repeatedly, the court can proceed 'Ex-Parte', meaning it will hear only your side and can grant a divorce decree in their absence."
+                        question: "What if spouse doesn’t respond?",
+                        answer: "Court may proceed ex-parte."
                     }
                 ]
             }
         }
     },
+
     "posh-compliance": {
         title: "POSH Compliance",
         hero: {
-            mainTitle: "Ensure a Safe Workplace - End-to-End POSH Solutions",
+            mainTitle: "POSH Compliance for a Safer Workplace",
             bulletPoints: [
-                "Complete POSH policy drafting and Internal Committee (IC) formation",
-                "Mandatory annual training for employees and IC orientation programs",
-                "External member support and statutory annual report filing with authorities"
+                "Ensure compliance with POSH Act, 2013",
+                "Create a safe and respectful workplace",
+                "End-to-end POSH implementation support"
             ],
             testimonial: {
-                text: "VyomBiz made our POSH implementation seamless. Their trainers were excellent and helped our staff understand their rights while ensuring our management fulfilled all legal mandates.",
-                author: "Megha S.",
+                text: "Vyombiz helped us implement POSH compliance smoothly and professionally.",
+                author: "Verified Client",
                 verified: true,
-                avatar: "https://i.pravatar.cc/150?u=megha"
+                avatar: "https://i.pravatar.cc/150?u=client"
             }
         },
         tabs: [
@@ -2574,72 +2353,103 @@ export const litigationContent = {
             { id: "types", label: "Types" },
             { id: "when-to-file", label: "When To File" },
             { id: "process", label: "Process" },
-            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "why-choose", label: "Why Choose Vyombiz" },
             { id: "faqs", label: "FAQs" }
         ],
         sections: {
             overview: {
-                title: "POSH Compliance: Legal Framework",
+                title: "What is POSH Compliance?",
                 image: "/lawyer-services-images/POSH-compliance-overview.png",
                 content: [
-                    "The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 (POSH Act) is a mandatory legislation in India. It requires every organization with 10 or more employees to constitute an Internal Committee (IC) to address complaints of sexual harassment.",
-                    "Compliance with POSH is not just a legal requirement but a commitment to creating a safe and inclusive workspace. Failure to comply can lead to heavy fines, cancellation of business licenses, and severe reputational damage.",
-                    "VyomBiz provides end-to-end POSH solutions, from legal policy drafting and IC constitution to employee sensitization training and external member support. We ensure your organization is 100% compliant and your employees feel protected."
+                    "POSH Compliance refers to implementing legal requirements under the POSH Act, 2013.",
+                    "It ensures a safe, inclusive, and harassment-free workplace.",
+                    "Organizations must establish policies, committees, and complaint mechanisms."
+                ]
+            },
+            types: {
+                title: "Who Needs POSH Compliance?",
+                introduction: "Organizations with 10 or more employees must comply.",
+                items: [
+                    { title: "Private Companies", description: "Corporate organizations.", example: "IT companies." },
+                    { title: "Startups & MSMEs", description: "Growing businesses.", example: "Startups with employees." },
+                    { title: "Educational Institutions", description: "Schools & colleges.", example: "Universities." },
+                    { title: "Healthcare", description: "Hospitals & clinics.", example: "Medical centers." },
+                    { title: "Government Bodies", description: "Public sector offices.", example: "Govt departments." }
+                ]
+            },
+            whenToFile: {
+                title: "Why POSH Compliance is Important",
+                content: "Compliance protects organizations from legal and reputational risks.",
+                parameters: [
+                    { title: "Workplace Safety", desc: "Ensures safe environment." },
+                    { title: "Legal Protection", desc: "Avoid penalties." },
+                    { title: "Employee Trust", desc: "Build transparency." },
+                    { title: "Corporate Governance", desc: "Improve policies." }
+                ]
+            },
+            process: {
+                title: "POSH Compliance Process",
+                introduction: "Structured approach for compliance.",
+                steps: [
+                    { title: "Assessment", description: "Evaluate current policies." },
+                    { title: "Policy Drafting", description: "Create POSH policy." },
+                    { title: "IC Formation", description: "Set up Internal Committee." },
+                    { title: "Training", description: "Conduct awareness sessions." },
+                    { title: "Ongoing Support", description: "Ensure continuous compliance." }
+                ]
+            },
+            whyChoose: {
+                title: "Why Choose Vyombiz?",
+                reasons: [
+                    "Experienced legal professionals",
+                    "Customized POSH solutions",
+                    "Employee training programs",
+                    "Confidential complaint handling",
+                    "End-to-end compliance support"
                 ]
             },
             faqs: {
-                title: "POSH Compliance FAQs",
+                title: "FAQs",
                 items: [
                     {
-                        question: "Does POSH apply to male employees?",
-                        answer: "The POSH Act is gender-specific and provides protection to women. However, we help companies draft 'Gender-Neutral' policies that allow anyone to report harassment under the same internal framework."
+                        question: "What is POSH Act?",
+                        answer: "Law to prevent workplace harassment."
                     },
                     {
-                        question: "Is it mandatory to have an External Member in the IC?",
-                        answer: "Yes. Section 4 of the Act mandates that at least one member of the IC must be from an NGO or a person familiar with issues relating to sexual harassment."
+                        question: "Is it mandatory?",
+                        answer: "Yes, for organizations with 10+ employees."
                     },
                     {
-                        question: "Can an employee file a police case alongside an IC complaint?",
-                        answer: "Yes. Harassment at the workplace is also a crime under the Indian Penal Code. The IC is mandated to assist the woman if she chooses to file a criminal complaint (FIR)."
+                        question: "What is IC?",
+                        answer: "Internal Committee for complaints."
                     },
                     {
-                        question: "What happens if a false complaint is filed?",
-                        answer: "If the IC concludes that the allegation was malicious or the evidence was forged, action can be taken against the complainant according to the company's service rules."
+                        question: "How often training needed?",
+                        answer: "Once or twice a year."
                     },
                     {
-                        question: "Is POSH applicable to firms with fewer than 10 employees?",
-                        answer: "An Internal Committee (IC) is not mandatory for firms with <10 employees. However, any harassment complaint in such cases is handled by the District 'Local Committee'."
-                    },
-                    {
-                        question: "What is 'Quid Pro Quo' harassment?",
-                        answer: "It refers to situations where an employment benefit (like a promotion) is offered in exchange for sexual favors, or where refusal leads to a threat to the employee's career."
-                    },
-                    {
-                        question: "Can the IC order monetary compensation to the victim?",
-                        answer: "Yes. The IC can recommend that the employer deduct a sum from the respondent's wages or order the respondent to pay a lump sum to the victim for mental trauma and lost opportunities."
-                    },
-                    {
-                        question: "Is 'Hostile Work Environment' part of POSH?",
-                        answer: "Yes. Conduct that creates an intimidating, offensive, or terrifying workplace environment qualifies as sexual harassment, even if it doesn't involve a direct request for favors."
+                        question: "Does it apply to startups?",
+                        answer: "Yes, if 10+ employees."
                     }
                 ]
             }
         }
     },
+
     "us-litigation-service": {
         title: "US Litigation Service",
         hero: {
-            mainTitle: "Expert US Legal Support - Litigation and Advisory Services",
+            mainTitle: "Strategic Legal Representation for US Litigation Matters",
             bulletPoints: [
-                "Cross-border legal representation for Indian businesses in US courts",
-                "Contractual dispute resolution and commercial litigation expertise",
-                "Support for US intellectual property, tort, and employment law cases"
+                "Expert support for cross-border disputes",
+                "Strong litigation strategy and compliance",
+                "Professional handling of US legal proceedings"
             ],
             testimonial: {
-                text: "Our US subsidiary was facing a complex breach of contract suit in Delaware. VyomBiz lawyers coordinated perfectly with local counsel and secured a favorable settlement.",
-                author: "Vikram Malhotra",
+                text: "Vyombiz helped us handle US litigation efficiently with strong legal strategy.",
+                author: "Verified Client",
                 verified: true,
-                avatar: "https://i.pravatar.cc/150?u=vikram"
+                avatar: "https://i.pravatar.cc/150?u=client"
             }
         },
         tabs: [
@@ -2647,137 +2457,82 @@ export const litigationContent = {
             { id: "types", label: "Types" },
             { id: "when-to-file", label: "When To File" },
             { id: "process", label: "Process" },
-            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "why-choose", label: "Why Choose Vyombiz" },
             { id: "faqs", label: "FAQs" }
         ],
         sections: {
             overview: {
-                title: "Global Legal Strategy for Indian Businesses",
+                title: "What are US Litigation Services?",
                 image: "/lawyer-services-images/US-litigation-overview.png",
                 content: [
-                    "Expanding into the US market brings immense opportunities but also complex legal challenges. US litigation service provides the essential bridge for Indian companies to effectively navigate the American judicial system.",
-                    "Whether you are dealing with a contract dispute in New York or a patent infringement in California, our US litigation support team ensures that your interests are protected across jurisdictions. We specialize in cross-border coordination, ensuring that your Indian legal strategy aligns with US procedural requirements.",
-                    "We work with an elite network of licensed US attorneys across all 50 states to provide cost-effective, results-oriented support for litigation, arbitration, and mediation in US Federal and State courts."
+                    "US litigation involves resolving disputes in US courts.",
+                    "Includes commercial, IP, and contractual disputes.",
+                    "Requires strict legal procedures and compliance."
                 ]
             },
             types: {
-                title: "Core US Litigation Portfolios",
-                introduction: "We handle a broad spectrum of US-based legal disputes for our international clients:",
+                title: "When Do You Need US Litigation Support?",
+                introduction: "Legal support is needed in various cases.",
                 items: [
-                    {
-                        title: "Commercial & Contractual Disputes",
-                        description: "Representation in cases of breach of master service agreements (MSAs), vendor disputes, and partnership dissolutions.",
-                        example: "An Indian IT firm suing a US client for unpaid invoices and breach of confidentiality."
-                    },
-                    {
-                        title: "IP & Tech Litigation",
-                        description: "Defending or prosecuting cases involving US Patent, Trademark, and Copyright law in Federal Courts.",
-                        example: "An Indian pharmaceutical giant defending a patent challenge in a US District Court."
-                    },
-                    {
-                        title: "Employment & Wage Disputes",
-                        description: "Legal support for US-based employees or subsidiaries facing H1B/L1 related disputes or discrimination claims.",
-                        example: "A US subsidiary of an Indian company managing a wrongful termination suit filed by a local employee."
-                    },
-                    {
-                        title: "Product Liability & Torts",
-                        description: "Defense against claims related to product defects, personal injury, or business torts in American markets.",
-                        example: "An Indian manufacturer defending a product liability claim in a US state court."
-                    }
+                    { title: "Contract Disputes", description: "Issues with agreements.", example: "Breach of contract." },
+                    { title: "IP Disputes", description: "Trademark or patent issues.", example: "Copyright infringement." },
+                    { title: "Business Conflicts", description: "Corporate disputes.", example: "Partnership disputes." },
+                    { title: "Cross-Border Issues", description: "International disputes.", example: "Global transactions." }
                 ]
             },
             whenToFile: {
-                title: "When to Seek US Legal Intervention?",
-                content: "US litigation is time-sensitive and expensive. Strategic timing is key to minimizing risk:",
+                title: "Benefits of Professional Support",
+                content: "Professional legal support ensures better outcomes.",
                 parameters: [
-                    {
-                        title: "Receipt of Demand Letter",
-                        desc: "Immediately upon receiving a 'Cease and Desist' or demand letter from a US attorney to prevent escalation."
-                    },
-                    {
-                        title: "Breach of US Jurisdiction",
-                        desc: "When a US partner violates a contract specifically governed by the laws of a US state."
-                    },
-                    {
-                        title: "Service of Process",
-                        desc: "If your Indian company or its US subsidiary is served with a Summons and Complaint (Trial Notice)."
-                    },
-                    {
-                        title: "Market Access Defense",
-                        desc: "When local competitors use legal 'lawfare' (like frivolous IP suits) to block your US market entry."
-                    }
+                    { title: "Better Strategy", desc: "Strong legal planning." },
+                    { title: "Accurate Documentation", desc: "Error-free filings." },
+                    { title: "Risk Reduction", desc: "Avoid legal issues." },
+                    { title: "Strong Representation", desc: "Court advocacy." }
                 ]
             },
             process: {
-                title: "The Cross-Border Litigation Model",
-                introduction: "We manage the complexity of two legal systems working in tandem.",
+                title: "US Litigation Process",
+                introduction: "Structured legal handling.",
                 steps: [
-                    {
-                        title: "Initial Strategy Audit",
-                        description: "Our team reviews the case to determine the best US jurisdiction and evaluate the strengths/weaknesses under US law."
-                    },
-                    {
-                        title: "Local Counsel Integration",
-                        description: "We identify and brief the most suitable US-licensed attorneys from our network, negotiating competitive fee structures."
-                    },
-                    {
-                        title: "Discovery Management",
-                        description: "We coordinate the collection of evidence in India (documents, emails, testimony) to ensure it's admissible in US courts."
-                    },
-                    {
-                        title: "Active Case Management",
-                        description: "We act as your primary point of contact, managing the US counsel, reviewing filings, and advising on settlement offers."
-                    },
-                    {
-                        title: "Alternative Dispute Resolution (ADR)",
-                        description: "We push for Mediation or Arbitration where possible to avoid the high costs and uncertainties of a jury trial in the US."
-                    }
+                    { title: "Case Evaluation", description: "Analyze dispute." },
+                    { title: "Strategy", description: "Plan legal approach." },
+                    { title: "Documentation", description: "Prepare filings." },
+                    { title: "Representation", description: "Court hearings." },
+                    { title: "Resolution", description: "Settlement or judgment." }
                 ]
             },
             whyChoose: {
-                title: "Why Choose VyomBiz for US Support?",
+                title: "Why Choose Vyombiz?",
                 reasons: [
-                    "Bilingual Legal Expertise: We translate complex US legal concepts into the context of Indian business practices.",
-                    "Cost Management: We provide oversight to ensure US legal bills remain transparent and within agreed budgets.",
-                    "Time Zone Synergy: Our teams work across IST and US time zones to provide 24/7 responsiveness for urgent filings.",
-                    "Proven Track Record: Experience in successfully managing high-value litigations in Delaware, California, and New York.",
-                    "One-Stop Solution: From initial advisory to final judgment execution, we handle the entire international legal lifecycle."
+                    "Experienced litigation professionals",
+                    "Cross-border legal expertise",
+                    "Transparent communication",
+                    "Efficient case handling",
+                    "Strategic legal support"
                 ]
             },
             faqs: {
-                title: "US Litigation FAQs",
+                title: "FAQs",
                 items: [
                     {
-                        question: "Can an Indian company be sued in a US court?",
-                        answer: "Yes. If your company has 'minimum contacts' with a US state (like selling products or having an office), US courts can exercise jurisdiction over you."
+                        question: "What cases are included?",
+                        answer: "Business, IP, and contract disputes."
                     },
                     {
-                        question: "Is US litigation more expensive than Indian litigation?",
-                        answer: "Generally, yes. US legal fees are higher, and the 'Discovery' process is much more extensive. This is why we focus heavily on early settlement and ADR."
+                        question: "Can foreigners file cases?",
+                        answer: "Yes."
                     },
                     {
-                        question: "What is 'Discovery' in US law?",
-                        answer: "Discovery is a pre-trial phase where both parties MUST exchange all relevant documents, emails, and take oral testimony (Depositions). It is the most critical part of a US case."
+                        question: "How long does it take?",
+                        answer: "Depends on complexity."
                     },
                     {
-                        question: "Do I need to travel to the US for the case?",
-                        answer: "Not necessarily. Modern US courts allow many hearings and even depositions to be conducted via video conferencing, saving significant travel costs."
+                        question: "Can cases settle early?",
+                        answer: "Yes, through mediation."
                     },
                     {
-                        question: "Can a US court judgment be enforced in India?",
-                        answer: "Yes, if the US state is a 'reciprocating territory' and the judgment is conclusive as per Section 13 of the Code of Civil Procedure (CPC) in India."
-                    },
-                    {
-                        question: "What are 'Punitive Damages' in US litigation?",
-                        answer: "Unlike India, US courts can award 'Punitive Damages' intended to punish the defendant for egregious conduct, which can be much higher than the actual financial loss."
-                    },
-                    {
-                        question: "What is a 'Class Action' lawsuit?",
-                        answer: "It is a case where one or more plaintiffs sue on behalf of a larger group of people. Indian companies often face these in the US for securities or mass-tort issues."
-                    },
-                    {
-                        question: "How long does the 'Discovery' phase last?",
-                        answer: "Discovery typically lasts between 6 to 18 months. It is a grueling process of exchanging every relevant internal document and email with the opposing side."
+                        question: "How to start?",
+                        answer: "Consult legal experts."
                     }
                 ]
             }
@@ -2786,17 +2541,17 @@ export const litigationContent = {
     "intellectual-property-infringement": {
         title: "Intellectual Property Infringement",
         hero: {
-            mainTitle: "Defend Your Innovation - IP Infringement Litigation",
+            mainTitle: "Protect What You’ve Created",
             bulletPoints: [
-                "Legal action against unauthorized use of Trademarks, Patents, and Copyrights",
-                "Securing interim injunctions (Stay orders) and John Doe orders",
-                "Representing brands in high-stakes IP disputes in Commercial High Courts"
+                "Take action against unauthorized use of your IP",
+                "Protect your brand, innovation, and creative assets",
+                "Expert legal support for IP enforcement and litigation"
             ],
             testimonial: {
-                text: "Someone was selling counterfeit products under our brand name online. VyomBiz secured an immediate John Doe injunction from the High Court, allowing us to block over 50 infringing websites in one go.",
-                author: "Sonia Gupta",
+                text: "Vyombiz helped us take immediate action against IP infringement and protect our brand effectively.",
+                author: "Verified Client",
                 verified: true,
-                avatar: "https://i.pravatar.cc/150?u=sonia"
+                avatar: "https://i.pravatar.cc/150?u=client"
             }
         },
         tabs: [
@@ -2804,161 +2559,104 @@ export const litigationContent = {
             { id: "types", label: "Types" },
             { id: "when-to-file", label: "When To File" },
             { id: "process", label: "Process" },
-            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "why-choose", label: "Why Choose Vyombiz" },
             { id: "faqs", label: "FAQs" }
         ],
         sections: {
             overview: {
-                title: "Strategic IP Rights Enforcement",
+                title: "What is Intellectual Property Infringement?",
                 image: "/lawyer-services-images/inellectual-property-overview.png",
                 content: [
-                    "In the modern economy, Intellectual Property (IP) is often a company's most valuable asset. Infringement occurs when your registered trademarks, patents, or copyrighted works are used without permission, leading to direct financial loss and irreparable brand dilution.",
-                    "India’s legal system has evolved rapidly with the establishment of Specialized Commercial Courts to handle high-value IP disputes. From 'Passing Off' actions for unregistered marks to complex patent litigation, we provide a robust legal shield to protect your competitive edge.",
-                    "VyomBiz specializes in aggressive IP litigation, utilizing advanced legal tools like 'Anton Piller' orders (search and seizure) and 'John Doe' orders (against unidentified infringers) to ensure immediate and effective relief."
+                    "IP infringement occurs when someone uses intellectual property without permission.",
+                    "This includes trademarks, copyrights, patents, designs, or trade secrets.",
+                    "Such violations can lead to financial loss and damage to brand reputation."
                 ]
             },
             types: {
-                title: "Specialized IP Litigation Portfolios",
-                introduction: "We provide end-to-end litigation support across all categories of Intellectual Property:",
+                title: "Types of Intellectual Property Infringement",
+                introduction: "Different types of infringement require different legal strategies.",
                 items: [
-                    {
-                        title: "Trademark Infringement & Passing Off",
-                        description: "Action against deceptively similar brand names, logos, or slogans that cause consumer confusion.",
-                        example: "A competitor using a logo similar to yours to sell lower-quality products in the same market."
-                    },
-                    {
-                        title: "Patent Infringement Suits",
-                        description: "Prosecuting unauthorized manufacturing, use, or sale of your patented technological or chemical inventions.",
-                        example: "A rival manufacturer producing a machine that utilizes your patented internal mechanism without a license."
-                    },
-                    {
-                        title: "Copyright Piracy",
-                        description: "Legal recourse for unauthorized reproduction of software, artistic works, cinematic content, or literary material.",
-                        example: "A website hosting your proprietary training videos or software for free download without consent."
-                    },
-                    {
-                        title: "Design Piracy",
-                        description: "Enforcing rights against the imitation of registered industrial designs that give your product its unique aesthetic.",
-                        example: "A furniture brand copying the specific, registered visual contours of your luxury sofa design."
-                    },
-                    {
-                        title: "Trade Secret Theft",
-                        description: "Suing for the illegal acquisition or use of confidential business patterns, lists, or processes.",
-                        example: "An ex-employee sharing your secret beverage formula or client list with a new employer."
-                    }
+                    { title: "Trademark Infringement", description: "Unauthorized use of similar brand identity.", example: "Similar logo usage." },
+                    { title: "Copyright Infringement", description: "Unauthorized use of creative content.", example: "Copying website content." },
+                    { title: "Patent Infringement", description: "Using patented invention without permission.", example: "Manufacturing patented product." },
+                    { title: "Design Infringement", description: "Copying product design or appearance.", example: "Imitating product design." },
+                    { title: "Trade Secret Theft", description: "Misuse of confidential data.", example: "Sharing business formula." }
                 ]
             },
             whenToFile: {
-                title: "When to Strike? Timing in IP Law",
-                content: "Delay in IP litigation can be seen as 'acquiescence' (acceptance), which might weaken your case. You should file immediately if:",
+                title: "Signs of IP Infringement",
+                content: "Watch for these warning signs.",
                 parameters: [
-                    {
-                        title: "Market Dilution",
-                        desc: "As soon as you notice a competitor using a similar mark that is confusing your customers or lowering your brand value."
-                    },
-                    {
-                        title: "Loss of Revenue",
-                        desc: "When infringing products are directly eating into your market share or causing a drop in licensed royalties."
-                    },
-                    {
-                        title: "Digital Piracy",
-                        desc: "The moment copyrighted content appears on social media or pirate sites, to secure an immediate takedown or blocking order."
-                    },
-                    {
-                        title: "Notice Period Expiry",
-                        desc: "If 7-15 days have passed since you sent a 'Cease and Desist' notice and the infringer continues their unauthorized activity."
-                    }
+                    { title: "Brand Copying", desc: "Similar logos or names in market." },
+                    { title: "Duplicate Products", desc: "Identical products appearing." },
+                    { title: "Content Theft", desc: "Unauthorized use of digital content." },
+                    { title: "Packaging Similarity", desc: "Confusing product design." },
+                    { title: "Unauthorized Technology Use", desc: "Use of patented tech." }
                 ]
             },
             process: {
-                title: "The IP Litigation Roadmap",
-                introduction: "We navigate the specialized procedures of India's Commercial Courts to get you results faster.",
+                title: "Legal Process",
+                introduction: "Structured approach to resolve IP disputes.",
                 steps: [
-                    {
-                        title: "Evidence Gathering & Investigation",
-                        description: "Our investigators conduct market surveys and 'test purchases' to document the scale and source of the infringement."
-                    },
-                    {
-                        title: "Cease and Desist Notice",
-                        description: "We issue a stern legal warning. In about 40% of cases, this leads to an out-of-court settlement and an undertaking from the infringer."
-                    },
-                    {
-                        title: "Application for Interim Relief",
-                        description: "We move the court for an 'Ex-Parte' injunction (stay order) early in the case to stop the infringement while the trial continues."
-                    },
-                    {
-                        title: "Local Commissioner Appointment",
-                        description: "We get court-appointed officials to conduct surprise raids on the infringer's premises to seize counterfeit stocks and accounting books."
-                    },
-                    {
-                        title: "Final Judgment & Damages",
-                        description: "If the trial proceeds, we fight for 'Accounts of Profits' and punitive damages to compensate you for the lost business."
-                    }
+                    { title: "Case Evaluation", description: "Review infringement evidence." },
+                    { title: "Legal Notice", description: "Send cease-and-desist notice." },
+                    { title: "Negotiation", description: "Attempt settlement or licensing." },
+                    { title: "Litigation", description: "File case in court." },
+                    { title: "Enforcement", description: "Execute court orders." }
                 ]
             },
             whyChoose: {
-                title: "Why Trust VyomBiz with Your Brand?",
+                title: "Why Choose Vyombiz?",
                 reasons: [
-                    "High Court Expertise: Our senior IP advocates regularly appear before India’s most influential IP benches.",
-                    "Tech-Legal Fusion: We have patent attorneys with engineering and pharma backgrounds to handle complex technical disputes.",
-                    "Digital takedown Specialists: Fast-track processes for removing infringing listings from Amazon, Flipkart, and social media.",
-                    "International Reach: We manage global IP portfolios, handling infringements across US, EU, and Asian jurisdictions.",
-                    "Transparent Pricing: Predictable fee structures for everything from simple notices to complex patent trials."
+                    "Expert IP legal professionals",
+                    "Strategic enforcement approach",
+                    "Strong documentation and case support",
+                    "Court representation and settlement assistance",
+                    "Protection of brand and innovation"
                 ]
             },
             faqs: {
-                title: "IP Infringement FAQs",
+                title: "FAQs",
                 items: [
                     {
-                        question: "What is a 'John Doe' order?",
-                        answer: "It is a special injunction against unknown defendants. It allows us to block thousands of websites or raid vendors even if we don't know their names at the time of filing."
+                        question: "What is IP infringement?",
+                        answer: "Unauthorized use of intellectual property."
                     },
                     {
-                        question: "Can I sue for a trademark I haven't registered yet?",
-                        answer: "Yes, this is called a 'Passing Off' action. While more difficult than an infringement suit, we can protect your mark by proving its established reputation and goodwill."
+                        question: "Can I take legal action?",
+                        answer: "Yes, through notices or court proceedings."
                     },
                     {
-                        question: "Is IP infringement a criminal offense in India?",
-                        answer: "Yes, for Trademarks and Copyrights. The police have the power to arrest and seize goods if a criminal complaint is filed alongside the civil suit."
+                        question: "What damages can I claim?",
+                        answer: "Financial loss and profits earned by infringer."
                     },
                     {
-                        question: "How much can I claim in damages?",
-                        answer: "You can claim the profits the infringer made, the losses you suffered, and in cases of 'flagrant' infringement, the court may award additional punitive damages."
+                        question: "Is it a criminal offence?",
+                        answer: "In some cases, yes."
                     },
                     {
-                        question: "What is a 'Cease and Desist' notice in IP?",
-                        answer: "It is a formal legal warning sent to an infringer to stop the unauthorized use immediately. In many cases, this resolves the dispute without needing a full trial."
-                    },
-                    {
-                        question: "Can I protect a 'Business Method' in India?",
-                        answer: "Generally, no. Pure business methods are excluded from patenting under Section 3(k) of the Patents Act, though the underlying technology or software might be protected."
-                    },
-                    {
-                        question: "What is 'Genericide' in trademarks?",
-                        answer: "It occurs when a brand name becomes so common (like 'Cellophane') that it loses its distinctiveness and legal protection as a trademark. We help brands prevent this."
-                    },
-                    {
-                        question: "How long is a trademark registration valid?",
-                        answer: "In India, a trademark is valid for 10 years from the date of application and can be renewed indefinitely every 10 years."
+                        question: "When should I act?",
+                        answer: "Immediately after detecting infringement."
                     }
                 ]
             }
         }
     },
+
     "contract-dispute-litigation": {
         title: "Contract Dispute Litigation",
         hero: {
-            mainTitle: "Enforce Your Agreements - Contractual Litigation Experts",
+            mainTitle: "Resolve Contract Disputes with Strategic Legal Support",
             bulletPoints: [
-                "Legal remedies for Breach of Contract and specific performance claims",
-                "Fast-track 'Order 37' summary suits for liquid debt recovery",
-                "Arbitration and Mediation for swift commercial dispute resolution"
+                "Protect your contractual rights and agreements",
+                "Resolve disputes through negotiation or litigation",
+                "Minimize business risks with legal guidance"
             ],
             testimonial: {
-                text: "A vendor refused to deliver a critical machine despite full payment. VyomBiz handled the litigation and we got a court order for 'Specific Performance' within months, forcing the delivery and securing damages for the delay.",
-                author: "Arjun Mehta",
+                text: "Vyombiz helped us resolve a major contract dispute efficiently and professionally.",
+                author: "Verified Client",
                 verified: true,
-                avatar: "https://i.pravatar.cc/150?u=arjun"
+                avatar: "https://i.pravatar.cc/150?u=client"
             }
         },
         tabs: [
@@ -2966,161 +2664,103 @@ export const litigationContent = {
             { id: "types", label: "Types" },
             { id: "when-to-file", label: "When To File" },
             { id: "process", label: "Process" },
-            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "why-choose", label: "Why Choose Vyombiz" },
             { id: "faqs", label: "FAQs" }
         ],
         sections: {
             overview: {
-                title: "Resolving Commercial Contractual Conflicts",
+                title: "What is Contract Dispute Litigation?",
                 image: "/lawyer-services-images/contract-dispute-overview.png",
                 content: [
-                    "Contracts form the backbone of every business relationship. When one party fails to fulfill their obligations—whether it's non-payment, delay in delivery, or breach of confidentiality—it can paralyze operations and lead to massive financial losses.",
-                    "Under the Indian Contract Act, 1872, you have powerful remedies ranging from 'Specific Performance' (forcing the other party to deliver) to the recovery of 'Liquidated Damages'. Our commercial litigation team focuses on the path of least resistance: securing your rights while minimizing the time spent in court.",
-                    "At VyomBiz, we combine deep analysis of the 'fine print' with aggressive courtroom strategy. Whether it's a simple vendor dispute or a complex shareholder agreement conflict, we ensure your agreements are enforced to the letter."
+                    "Contract dispute litigation resolves conflicts arising from breach or disagreement in contracts.",
+                    "It includes issues like non-payment, delays, or misinterpretation of clauses.",
+                    "Legal action ensures enforcement of contractual rights and recovery of losses."
                 ]
             },
             types: {
-                title: "Common Contractual Disputes We Handle",
-                introduction: "We represent clients in a variety of breach-of-contract scenarios across industries:",
+                title: "Common Types of Contract Disputes",
+                introduction: "Disputes arise across various business scenarios.",
                 items: [
-                    {
-                        title: "Master Service Agreement (MSA) Breach",
-                        description: "Disputes typical in the IT/SaaS sector involving service level agreement (SLA) failures or payment defaults.",
-                        example: "A client refusing to pay for completed software development milestones claiming 'dissatisfaction' without merit."
-                    },
-                    {
-                        title: "Specific Performance of Real Estate",
-                        description: "Compelling a builder or seller to transfer property as per the signed 'Agreement to Sell'.",
-                        example: "A seller backing out of a property deal after receiving an advance because market prices have gone up."
-                    },
-                    {
-                        title: "Partnership & Shareholder Disputes",
-                        description: "Conflicts between owners regarding profit sharing, management rights, or exit clauses (Buy-sell agreements).",
-                        example: "One partner siphoning funds or violating a non-compete clause in the partnership deed."
-                    },
-                    {
-                        title: "Employment & NDA Violations",
-                        description: "Prosecuting ex-employees or contractors who violate non-disclosure or non-compete agreements.",
-                        example: "A former senior manager taking sensitive client data to start a competing firm."
-                    },
-                    {
-                        title: "Vendor & Supply Chain Default",
-                        description: "Action against suppliers for providing defective goods or failing to meet delivery timelines.",
-                        example: "A critical raw material supplier stopping delivery during peak season in breach of a long-term supply contract."
-                    }
+                    { title: "Breach of Contract", description: "Failure to fulfill obligations.", example: "Non-performance." },
+                    { title: "Payment Disputes", description: "Delayed or unpaid dues.", example: "Invoice disputes." },
+                    { title: "Clause Misinterpretation", description: "Different understanding of terms.", example: "Ambiguous clauses." },
+                    { title: "Partnership Disputes", description: "Conflicts among partners.", example: "Profit sharing issues." },
+                    { title: "Vendor Disputes", description: "Supply or service issues.", example: "Delayed delivery." }
                 ]
             },
             whenToFile: {
-                title: "When to Initiate a Contract Suit?",
-                content: "Limitation for most contract suits in India is 3 years, but immediate action is often necessary for tactical reasons:",
+                title: "When Do You Need Legal Support?",
+                content: "Legal help is needed in these cases.",
                 parameters: [
-                    {
-                        title: "Material Breach",
-                        desc: "As soon as the other party clearly states they will not fulfill their obligation (Anticipatory Breach)."
-                    },
-                    {
-                        title: "Debt Default (> 30 Days)",
-                        desc: "For unpaid invoices, once the credit period and a reasonable grace period (following a notice) have expired."
-                    },
-                    {
-                        title: "Expiry of 'Cure Period'",
-                        desc: "If the contract provides a time to 'fix' the breach and the other party fails to do so within that window."
-                    },
-                    {
-                        title: "Asset Risk",
-                        desc: "If you suspect the other party is liquidating assets to avoid paying the eventual court-awarded damages."
-                    }
+                    { title: "Non-Compliance", desc: "Party not following contract." },
+                    { title: "Financial Loss", desc: "Loss due to breach." },
+                    { title: "Delays", desc: "Continuous non-performance." },
+                    { title: "Failed Negotiation", desc: "Settlement unsuccessful." }
                 ]
             },
             process: {
-                title: "The Commercial Litigation Lifecycle",
-                introduction: "We use every tool in the Code of Civil Procedure (CPC) to fast-track your recovery.",
+                title: "Litigation Process",
+                introduction: "Step-by-step legal handling.",
                 steps: [
-                    {
-                        title: "Contract Audit & Notice",
-                        description: "We analyze the 'Dispute Resolution' and 'Termination' clauses and issue a formal Notice of Default."
-                    },
-                    {
-                        title: "Summary Suit (Order 37)",
-                        description: "For liquid debts (like unpaid invoices), we file 'Summary Suits' where the defendant cannot even defend the case without proving they have a valid reason."
-                    },
-                    {
-                        title: "Interim Injunctions",
-                        description: "We file for status-quo orders or attachment of bank accounts to ensure the money/asset is protected during the trial."
-                    },
-                    {
-                        title: "Arbitration Invocation",
-                        description: "If your contract has an AI/ADR clause, we handle the appointment of the Arbitrator and the entire private trial process."
-                    },
-                    {
-                        title: "Decree & Execution",
-                        description: "Once the court passes a judgment, we assist in the 'Execution' phase to physically recover the money or transfer the property."
-                    }
+                    { title: "Case Evaluation", description: "Analyze contract and dispute." },
+                    { title: "Strategy", description: "Plan legal action." },
+                    { title: "Documentation", description: "Prepare notices and filings." },
+                    { title: "Representation", description: "Court or arbitration." },
+                    { title: "Resolution", description: "Settlement or judgment." }
                 ]
             },
             whyChoose: {
-                title: "Why VyomBiz for Commercial Law?",
+                title: "Why Choose Vyombiz?",
                 reasons: [
-                    "Fast-Track Focus: Specialists in Order 37 Suits and Section 9 (Arbitration) interim reliefs to get you results in months, not years.",
-                    "Strategic ADR: We are expert mediators, settling over 50% of disputes before they reach the full trial stage.",
-                    "Deep Domain Knowledge: Expertise across IT, Manufacturing, Real Estate, and Financial service industries.",
-                    "Transparent Reporting: Regular case status updates and clear assessment of 'Win Probability' at every stage.",
-                    "Pan-India Capability: Representation in all High Courts and NCLT benches across the country."
+                    "Experienced legal professionals",
+                    "Strategic dispute resolution",
+                    "Transparent process",
+                    "Strong courtroom representation",
+                    "Business-focused solutions"
                 ]
             },
             faqs: {
-                title: "Contract Litigation FAQs",
+                title: "FAQs",
                 items: [
                     {
-                        question: "What is 'Specific Performance'?",
-                        answer: "It is a court order that forces the breaching party to actually do what they promised (like deliver a house) instead of just paying a fine."
+                        question: "What is breach of contract?",
+                        answer: "Failure to fulfill contractual obligations."
                     },
                     {
-                        question: "What are 'Liquidated Damages'?",
-                        answer: "These are pre-estimated damages mentioned in the contract itself. If a breach occurs, the court generally awards this amount without requiring detailed proof of loss."
+                        question: "Can disputes be resolved without court?",
+                        answer: "Yes, through mediation or arbitration."
                     },
                     {
-                        question: "How long does a commercial suit take?",
-                        answer: "With the New Commercial Courts Act, many cases (especially fast-track summary suits) are being resolved within 12-18 months."
+                        question: "How long does it take?",
+                        answer: "Depends on case complexity."
                     },
                     {
-                        question: "Can I sue for a verbal contract in India?",
-                        answer: "Yes, verbal contracts are valid under Indian law, but they are harder to prove. We use email trails, WhatsApp chats, and bank statements as evidence."
+                        question: "What compensation is possible?",
+                        answer: "Damages or recovery of dues."
                     },
                     {
-                        question: "What is 'Force Majeure' and when does it apply?",
-                        answer: "It is a clause that excuses a party from performance due to unforeseeable 'Acts of God' (like COVID-19). Its applicability depends strictly on the contract's specific wording."
-                    },
-                    {
-                        question: "Can I get an injunction against a Bank Guarantee?",
-                        answer: "Courts are very reluctant to stop bank guarantee payments. It is only possible in cases of 'egregious fraud' that the bank is aware of, or 'irretrievable injustice'."
-                    },
-                    {
-                        question: "What is 'Quantum Meruit'?",
-                        answer: "It is a legal principle meaning 'as much as earned'. If a contract is terminated unexpectedly, you can claim payment for the value of the work you have already completed."
-                    },
-                    {
-                        question: "What is the difference between Arbitration and Litigation?",
-                        answer: "Arbitration is a private, confidential trial by an expert arbitrator chosen by the parties. Litigation is the public court process which is usually slower but less expensive in terms of forum fees."
+                        question: "When to seek legal help?",
+                        answer: "As soon as dispute arises."
                     }
                 ]
             }
         }
     },
+
     "property-litigation": {
         title: "Property Litigation",
         hero: {
-            mainTitle: "Secure Your Real Estate - Specialist Property Lawyers",
+            mainTitle: "Protect Your Property Rights with Strategic Legal Action",
             bulletPoints: [
-                "Expert handling of Title disputes, Landlord-Tenant issues, and Partition suits",
-                "Legal support for recovery of possession and eviction proceedings",
-                "Challenging illegal constructions and unauthorized encroachments"
+                "Resolve ownership and property disputes effectively",
+                "Legal support for encroachment, title, and tenancy issues",
+                "Expert representation in courts and tribunals"
             ],
             testimonial: {
-                text: "My family property was illegally occupied by a tenant for decades. VyomBiz helped me through the eviction trial with strong evidence and we finally recovered our ancestral home.",
-                author: "Suresh Patel",
+                text: "Vyombiz helped me resolve a property dispute efficiently and secure my legal rights.",
+                author: "Verified Client",
                 verified: true,
-                avatar: "https://i.pravatar.cc/150?u=suresh"
+                avatar: "https://i.pravatar.cc/150?u=client"
             }
         },
         tabs: [
@@ -3128,142 +2768,83 @@ export const litigationContent = {
             { id: "types", label: "Types" },
             { id: "when-to-file", label: "When To File" },
             { id: "process", label: "Process" },
-            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "why-choose", label: "Why Choose Vyombiz" },
             { id: "faqs", label: "FAQs" }
         ],
         sections: {
             overview: {
-                title: "Comprehensive Real Estate Litigation Support",
-                image: "/lawyer-services-images/property -litigation-overview.png",
+                title: "Property Litigation Support",
+                image: "/lawyer-services-images/property-litigation-overview.png",
                 content: [
-                    "Real estate is often the most significant investment for any individual or corporation. Property disputes in India are notoriously complex, ranging from inheritance conflicts (partition suits) to landlord-tenant battles and title challenges.",
-                    "Navigating 'Immovable Property' law requires a deep understanding of the Transfer of Property Act, the Limitation Act, and state-specific Rent Control Acts. Our property litigation team focuses on 'unblocking' your assets through strategic filings, injunctive reliefs, and rigorous evidence presentation.",
-                    "Whether you are an NRI protecting your land from encroachment or a commercial landlord facing a defaulting tenant, VyomBiz provides the legal muscle needed to secure your property rights efficiently."
+                    "Property disputes involve ownership, possession, or usage conflicts.",
+                    "These disputes can arise due to inheritance, contracts, or encroachment.",
+                    "Legal support ensures protection of property rights and dispute resolution."
                 ]
             },
             types: {
-                title: "Common Property Disputes We Resolve",
-                introduction: "We handle a wide range of civil litigations related to residential and commercial properties:",
+                title: "Types of Property Disputes",
+                introduction: "Property disputes occur in various forms.",
                 items: [
-                    {
-                        title: "Title & Ownership Suits",
-                        description: "Seeking a 'Declaratory Decree' from the court to establish you as the sole legal owner of a disputed property.",
-                        example: "A third party claiming ownership based on a forged sale deed or old revenue records."
-                    },
-                    {
-                        title: "Partition & Inheritance Suits",
-                        description: "Dividing ancestral property among legal heirs when mutual agreement is not possible.",
-                        example: "Siblings disputing the division of their deceased parent's bungalow or farmland."
-                    },
-                    {
-                        title: "Eviction & Landlord-Tenant Disputes",
-                        description: "Legal proceedings to remove defaulting or unauthorized tenants and recover unpaid rent.",
-                        example: "A tenant refuses to vacate even after the lease has expired or they have stopped paying rent for 6 months."
-                    },
-                    {
-                        title: "Specific Performance of Real Estate",
-                        description: "Forcing a seller to complete the property transfer if they back out after receiving an advance.",
-                        example: "A seller refusing to execute the final Sale Deed after the property value has risen significantly."
-                    },
-                    {
-                        title: "Encroachment & Possession Recovery",
-                        description: "Legal action to remove illegal occupants or 'squatters' from your vacant land or building.",
-                        example: "A neighbor extending their boundary wall into your plot area without permission."
-                    }
+                    { title: "Title Disputes", description: "Ownership conflicts.", example: "Unclear property title." },
+                    { title: "Inheritance Disputes", description: "Family property conflicts.", example: "Partition issues." },
+                    { title: "Encroachment", description: "Illegal occupation.", example: "Land grabbing." },
+                    { title: "Builder Disputes", description: "Project delays or fraud.", example: "Delayed possession." },
+                    { title: "Tenant Issues", description: "Rental conflicts.", example: "Eviction disputes." }
                 ]
             },
             whenToFile: {
-                title: "Critical Timelines for Property Action",
-                content: "Property law is strictly governed by the Limitation Act. Delay can lead to loss of rights (Adverse Possession):",
+                title: "When to Seek Legal Help?",
+                content: "Legal action is needed in these situations.",
                 parameters: [
-                    {
-                        title: "Breach of Lease (Immediate)",
-                        desc: "As soon as a tenant violates the 'Use of Premises' or defaults on consecutive rent payments beyond the grace period."
-                    },
-                    {
-                        title: "Encroachment (< 12 Years)",
-                        desc: "You must act before an illegal occupant completes 12 years of continuous 'hostile' possession to prevent them from claiming title."
-                    },
-                    {
-                        title: "Partition Denial (Immediate)",
-                        desc: "The moment a co-sharer or family member denies your right to a share in the joint property."
-                    },
-                    {
-                        title: "Agreement Default (3 Years)",
-                        desc: "Suits for 'Specific Performance' must generally be filed within 3 years from the date fixed for the sale."
-                    }
+                    { title: "Ownership Conflict", desc: "Disputed property title." },
+                    { title: "Illegal Possession", desc: "Encroachment issues." },
+                    { title: "Contract Issues", desc: "Builder or sale disputes." },
+                    { title: "Family Disputes", desc: "Inheritance conflicts." }
                 ]
             },
             process: {
-                title: "The Property Litigation Lifecycle",
-                introduction: "We follow a systematic approach to ensure your title is clear and your possession is secure.",
+                title: "Property Litigation Process",
+                introduction: "Structured legal approach.",
                 steps: [
-                    {
-                        title: "Title & Documentation Audit",
-                        description: "We conduct 30-year title searches and verify all revenue records (Khata, Jamabandi) to build a foolproof case."
-                    },
-                    {
-                        title: "Notice & Pre-Litigation Mediation",
-                        description: "We issue formal legal notices. In many family disputes, we use mediation to reach a partition settlement without a 10-year trial."
-                    },
-                    {
-                        title: "Filing & Interim Injunctions",
-                        description: "We move the court for 'Status Quo' or 'Temporary Injunction' (Order 39) to prevent the property from being sold while the case is on."
-                    },
-                    {
-                        title: "Local Commissioner Visit",
-                        description: "Wait for a court-appointed official to visit the site, measure the area, and document the current possession status as evidence."
-                    },
-                    {
-                        title: "Trial & Execution",
-                        description: "After the final decree, we assist in the 'Execution' process, which involves police-assisted possession or registration of deeds."
-                    }
+                    { title: "Case Evaluation", description: "Review documents." },
+                    { title: "Strategy", description: "Plan legal approach." },
+                    { title: "Documentation", description: "Prepare evidence." },
+                    { title: "Representation", description: "Court proceedings." },
+                    { title: "Resolution", description: "Judgment or settlement." }
                 ]
             },
             whyChoose: {
-                title: "Why Trust VyomBiz with Your Assets?",
+                title: "Why Choose Vyombiz?",
                 reasons: [
-                    "Asset Recovery Specialists: Proven track record in recovering illegally occupied properties for individual and corporate clients.",
-                    "NRI Property Guard: Dedicated services for NRIs to manage, protect, and litigate their Indian holdings from abroad.",
-                    "Local Revenue Expertise: Lawyers who understand the complex 'Tehsil' and revenue records system across different states.",
-                    "Comprehensive Title Clearances: We don't just litigate; we help you clean up the 'Title' so the property remains sellable.",
-                    "Aggressive Enforcement: We ensure that court-ordered evictions are actually carried out with proper administrative support."
+                    "Experienced property lawyers",
+                    "Strong documentation support",
+                    "Strategic litigation approach",
+                    "Court representation expertise",
+                    "Efficient dispute resolution"
                 ]
             },
             faqs: {
-                title: "Property Litigation FAQs",
+                title: "FAQs",
                 items: [
                     {
-                        question: "What is 'Adverse Possession'?",
-                        answer: "If someone occupies your property for 12 continuous years without objection, they can legally claim ownership. Timely litigation is the only way to prevent this."
+                        question: "What is property litigation?",
+                        answer: "Legal disputes related to property."
                     },
                     {
-                        question: "How long does a partition suit take?",
-                        answer: "Partition suits can be lengthy (3-7 years) if contested. We focus on 'Preliminary Decrees' to establish shares quickly, which often forces a settlement."
+                        question: "How long does it take?",
+                        answer: "Depends on complexity."
                     },
                     {
-                        question: "Can I evict a tenant in 30 days?",
-                        answer: "Legal eviction in India involves a court process that usually takes 12-24 months. We use fast-track Rent Controller courts where available to speed this up."
+                        question: "Can disputes settle outside court?",
+                        answer: "Yes, through mediation."
                     },
                     {
-                        question: "Does a 'Will' guarantee property ownership?",
-                        answer: "A Will is a strong document, but it can be challenged on grounds of authenticity or mental state. In some cities, a 'Probate' from the court is mandatory to make the Will effective."
+                        question: "Required documents?",
+                        answer: "Title deeds, agreements, ID proof."
                     },
                     {
-                        question: "What is a 'Mutation Entry' in land records?",
-                        answer: "Mutation is the process of updating the owner's name in revenue records (like 7/12 extract or Khata) after a sale or inheritance. It is vital for paying property taxes."
-                    },
-                    {
-                        question: "Can I sell a property that is currently under litigation?",
-                        answer: "Under the rule of 'Lis Pendens', any sale is subject to the final court decree. While not strictly illegal, it is difficult to find buyers for disputed properties."
-                    },
-                    {
-                        question: "What is an 'Occupancy Certificate' (OC) and why is it important?",
-                        answer: "An OC is issued by the local body stating the building is safe and built as per plans. Living in a building without an OC is technically illegal and risky."
-                    },
-                    {
-                        question: "Can a daughter claim a share in ancestral property?",
-                        answer: "Yes. After the 2005 amendment to the Hindu Succession Act, daughters have the exact same rights as sons in 'coparcenary' (ancestral) property by birth."
+                        question: "When to consult lawyer?",
+                        answer: "As soon as dispute arises."
                     }
                 ]
             }
@@ -3429,17 +3010,17 @@ export const litigationContent = {
     "restitution-of-conjugal-rights": {
         title: "Restitution of Conjugal Rights",
         hero: {
-            mainTitle: "Reuniting Families - Legal Help for Conjugal Rights",
+            mainTitle: "Rebuild Your Marital Rights Through Legal Support",
             bulletPoints: [
-                "Legal support to bring back a spouse who has left without reasonable excuse",
-                "Filing of Section 9 petitions under the Hindu Marriage Act",
-                "Counseling and mediation to resolve marital differences peacefully"
+                "Restore marital cohabitation through legal remedies",
+                "Expert assistance in filing restitution petitions",
+                "Confidential and professional legal support"
             ],
             testimonial: {
-                text: "My spouse left our home after a misunderstanding. VyomBiz lawyers helped me file a Section 9 petition. The court-ordered mediation helped us communicate our issues and we are now happily back together.",
-                author: "Deepak S.",
+                text: "Vyombiz guided me through filing a restitution petition and helped me understand my legal rights clearly.",
+                author: "Verified Client",
                 verified: true,
-                avatar: "https://i.pravatar.cc/150?u=deepak"
+                avatar: "https://i.pravatar.cc/150?u=client"
             }
         },
         tabs: [
@@ -3447,143 +3028,114 @@ export const litigationContent = {
             { id: "types", label: "Types" },
             { id: "when-to-file", label: "When To File" },
             { id: "process", label: "Process" },
-            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "why-choose", label: "Why Choose Vyombiz" },
             { id: "faqs", label: "FAQs" }
         ],
         sections: {
             overview: {
-                title: "The Legal Bridge to Reconciliation",
+                title: "What is Restitution of Conjugal Rights?",
                 image: "/lawyer-services-images/restitution-overview.png",
                 content: [
-                    "Restitution of Conjugal Rights (RCR) is a unique legal remedy under Section 9 of the Hindu Marriage Act. It is designed for situations where one spouse has withdrawn from the society of the other without any 'reasonable excuse'.",
-                    "Unlike a divorce which seeks to end a marriage, an RCR petition seeks the intervention of the court to preserve the marital bond. It provides a formal platform where the causes of the separation can be analyzed, and the court can order the spouse to return to the matrimonial home.",
-                    "At VyomBiz, we view RCR as a tool for reconciliation. Our approach combines legal expertise with sensitive mediation to help couples resolve their differences and rebuild their lives together."
+                    "It is a legal remedy allowing a spouse to request the court to restore marital cohabitation.",
+                    "Applicable when one spouse withdraws from the marriage without valid reason.",
+                    "The court may direct the spouse to resume marital obligations."
                 ]
             },
             types: {
-                title: "Common Scenarios for RCR",
-                introduction: "Restitution is typically sought in scenarios where there is hope for reconciliation but communication has broken down:",
+                title: "Legal Provisions",
+                introduction: "Restitution is governed under different laws.",
                 items: [
                     {
-                        title: "Sudden Desertion",
-                        description: "When a spouse leaves the matrimonial home without notice or explanation following a minor argument.",
-                        example: "A spouse moving to their parents' home and refusing to return or communicate for several months."
+                        title: "Hindu Marriage Act, 1955",
+                        description: "Section 9 allows filing for restitution.",
+                        example: "Spouse leaves without reason."
                     },
                     {
-                        title: "Third-Party Influence",
-                        description: "Situations where a spouse is being prevented from returning by their own family or other external influences.",
-                        example: "In-laws preventing a spouse from returning to their marital home despite the spouse wanting to do so."
+                        title: "Special Marriage Act, 1954",
+                        description: "Section 22 provides similar relief.",
+                        example: "Applicable for civil marriages."
                     },
                     {
-                        title: "Misunderstandings & Ego Clashes",
-                        description: "Resolving separations caused by lack of communication or temporary emotional distress.",
-                        example: "A couple living separately because of a disagreement over career choices or city of residence."
+                        title: "Other Personal Laws",
+                        description: "Similar remedies exist across laws.",
+                        example: "Religion-based marriage laws."
                     }
                 ]
             },
             whenToFile: {
-                title: "When to File for RCR?",
-                content: "Timing is critical to ensure the petition is seen as a genuine effort for reconciliation:",
+                title: "When Can You File?",
+                content: "A petition can be filed under these conditions.",
                 parameters: [
-                    {
-                        title: "Early separation (1-3 Months)",
-                        desc: "Filing shortly after the spouse leaves shows a sincere desire to bring them back before the gap becomes too wide."
-                    },
-                    {
-                        title: "Failure of Personal Mediation",
-                        desc: "Once family elders and mutual friends have failed to convince the spouse to return through informal talks."
-                    },
-                    {
-                        title: "Lack of Reasonable Excuse",
-                        desc: "When you are confident that you haven't committed any cruelty or act that justifies the spouse living away."
-                    }
+                    { title: "Unjustified Withdrawal", desc: "Spouse leaves without valid reason." },
+                    { title: "Intentional Separation", desc: "Deliberate abandonment." },
+                    { title: "No Divorce Proceedings", desc: "No legal separation exists." },
+                    { title: "Desire to Reconcile", desc: "Willingness to restore marriage." }
                 ]
             },
             process: {
-                title: "The RCR Litigation Process",
-                introduction: "The court's primary objective in RCR is to save the marriage through dialogue.",
+                title: "Filing Process",
+                introduction: "Structured legal steps.",
                 steps: [
-                    {
-                        title: "Drafting the Petition",
-                        description: "We prepare a detailed petition highlighting the history of the marriage and proving that the spouse left without 'reasonable excuse'."
-                    },
-                    {
-                        title: "Court-Directed Mediation",
-                        description: "In almost every RCR case, the judge first sends the couple to a professional mediator to identify and fix the root cause of the conflict."
-                    },
-                    {
-                        title: "The Trial Stage",
-                        description: "If mediation fails, the court hears evidence. We help you prove your willingness to maintain the marriage and the other party's lack of valid reason to stay away."
-                    },
-                    {
-                        title: "The Decree of Restitution",
-                        description: "The court passes an order directing the spouse to return to the matrimonial home and resume conjugal rights."
-                    }
+                    { title: "Consultation", description: "Evaluate legal position." },
+                    { title: "Petition Drafting", description: "Prepare legal petition." },
+                    { title: "Court Filing", description: "File in family court." },
+                    { title: "Notice", description: "Court informs respondent." },
+                    { title: "Hearing & Mediation", description: "Attempt reconciliation." },
+                    { title: "Court Order", description: "Final decree issued." }
                 ]
             },
             whyChoose: {
-                title: "Why VyomBiz for Marital Conciliation?",
+                title: "Why Choose Vyombiz?",
                 reasons: [
-                    "Reconciliation-Centric Approach: We prioritize saving the marriage over aggressive litigation.",
-                    "Skillful Mediators: Our lawyers are trained in marital counseling and psychological aspects of domestic disputes.",
-                    "Strategic Guidance: We advise you on the pros and cons, as a decree of RCR can sometimes be the first step towards a divorce if not complied with.",
-                    "Confidentiality: We ensure that sensitive family matters are handled with the highest level of privacy.",
-                    "Gender-Neutral Service: We represent both husbands and wives in their genuine efforts to reunite their families."
+                    "Experienced matrimonial lawyers",
+                    "Accurate legal documentation",
+                    "Confidential case handling",
+                    "End-to-end legal support",
+                    "Professional court representation"
                 ]
             },
             faqs: {
-                title: "RCR FAQs",
+                title: "FAQs",
                 items: [
                     {
-                        question: "Can the court force my spouse to live with me?",
-                        answer: "No. The court can pass a decree, but it cannot physically force a person to live with their spouse. However, a decree has other legal implications."
+                        question: "What is restitution of conjugal rights?",
+                        answer: "A legal remedy to restore marital cohabitation."
                     },
                     {
-                        question: "What is a 'Reasonable Excuse' to live separately?",
-                        answer: "Reasonable excuses include being subjected to cruelty (mental or physical), the spouse having an extra-marital affair, or any other behavior that makes living together impossible."
+                        question: "Who can file?",
+                        answer: "Either spouse."
                     },
                     {
-                        question: "What happens if a spouse ignores the RCR decree?",
-                        answer: "If the decree is not complied with for a period of one year, it becomes a valid ground for either spouse to file for a divorce under Section 13(1A) of the HMA."
+                        question: "Is court appearance required?",
+                        answer: "Yes, in most cases."
                     },
                     {
-                        question: "Does RCR apply to all religions?",
-                        answer: "While Section 9 specifically applies to Hindus, similar provisions for 'Restitution of Conjugal Rights' exist under the Special Marriage Act and other personal laws."
+                        question: "What if spouse refuses?",
+                        answer: "Court may issue decree."
                     },
                     {
-                        question: "Can a husband file for RCR?",
-                        answer: "Yes. Section 9 is gender-neutral and can be invoked by either the husband or the wife if the other spouse has left without a reasonable excuse."
-                    },
-                    {
-                        question: "Is RCR a mandatory step before filing for divorce?",
-                        answer: "No. You can file for divorce directly if you have grounds. RCR is usually for those who sincerely want to save the marriage or establish the fact of desertion."
-                    },
-                    {
-                        question: "Can I claim maintenance during an RCR proceeding?",
-                        answer: "Yes. Even in an RCR case, a wife can claim interim maintenance for herself and the children under Section 24 of the Hindu Marriage Act."
-                    },
-                    {
-                        question: "What is the success rate of RCR cases?",
-                        answer: "Success varies, but roughly 30-40% of cases lead to reconciliation through court-mandated mediation, while others may eventually progress toward divorce."
+                        question: "What documents are needed?",
+                        answer: "Marriage proof, ID, evidence of separation."
                     }
                 ]
             }
         }
     },
+
     "rera-complaint": {
         title: "RERA Complaint",
         hero: {
-            mainTitle: "Justice for Homebuyers - Expert RERA Litigation",
+            mainTitle: "Resolve Real Estate Disputes with Expert RERA Legal Support",
             bulletPoints: [
-                "Filing complaints for delay in possession and interest recovery",
-                "Legal action against structural defects and change in project plans",
-                "Recovery of full refund with interest from defaulting builders"
+                "File complaints for delayed possession or project issues",
+                "Legal support for builder disputes and misrepresentation",
+                "End-to-end assistance before RERA authority"
             ],
             testimonial: {
-                text: "The builder delayed my possession by 3 years. VyomBiz helped me file a RERA complaint. Within 12 months, I got a court order for a full refund along with 12% interest for the entire period of delay.",
-                author: "Karan Johar",
+                text: "Vyombiz helped me file a RERA complaint and resolve my builder dispute efficiently.",
+                author: "Verified Client",
                 verified: true,
-                avatar: "https://i.pravatar.cc/150?u=karan"
+                avatar: "https://i.pravatar.cc/150?u=client"
             }
         },
         tabs: [
@@ -3591,142 +3143,83 @@ export const litigationContent = {
             { id: "types", label: "Types" },
             { id: "when-to-file", label: "When To File" },
             { id: "process", label: "Process" },
-            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "why-choose", label: "Why Choose Vyombiz" },
             { id: "faqs", label: "FAQs" }
         ],
         sections: {
             overview: {
-                title: "The Homebuyer's Shield (RERA Act, 2016)",
+                title: "What is a RERA Complaint?",
                 image: "/lawyer-services-images/rera-overveiw.png",
                 content: [
-                    "The Real Estate (Regulation and Development) Act, 2016 (RERA) was introduced to bring transparency and accountability to the real estate sector. It provides an efficient and specialized forum for homebuyers to resolve grievances against builders and developers.",
-                    "Before RERA, homebuyers were often at the mercy of developers, facing years of delay and hidden charges. Today, RERA mandates that every project over 500 sqm must be registered, and 70% of buyer funds must be kept in a dedicated escrow account for construction.",
-                    "VyomBiz specializes in representing homebuyers against major developers. We help you navigate the RERA Authority and Appellate Tribunal to recover your hard-earned money, seek interest for delays, and ensure that the builder delivers what was promised in the original brochure."
+                    "A RERA complaint is filed against builders or developers for project violations.",
+                    "It ensures transparency and accountability in real estate.",
+                    "Provides legal remedies for homebuyers and investors."
                 ]
             },
             types: {
-                title: "Common RERA Grievances We Handle",
-                introduction: "Homebuyers can seek legal recourse for a variety of violations by the promoter:",
+                title: "Common Reasons for Filing",
+                introduction: "Buyers can file complaints for various issues.",
                 items: [
-                    {
-                        title: "Delay in Possession",
-                        description: "Seeking compensation or a full refund if the builder fails to hand over the flat by the date mentioned in the Agreement.",
-                        example: "Your possession was promised in Dec 2022, but the building is still only 60% complete as of 2024."
-                    },
-                    {
-                        title: "Structural Defects",
-                        description: "Compelling the builder to fix cracks, leakages, or poor construction quality within 5 years of possession.",
-                        example: "Noticing major seepage in the walls or faulty electrical wiring within months of moving into a new apartment."
-                    },
-                    {
-                        title: "Change in Project Plans",
-                        description: "Action against developers who change the layout, common areas, or amenities without the consent of 2/3rd of the allottees.",
-                        example: "A builder reducing the promised green area to construct an additional tower not shown in the original plan."
-                    },
-                    {
-                        title: "Registration Defaults",
-                        description: "Reporting builders who market and sell units in a project that has not been registered with the local RERA authority.",
-                        example: "Finding out that the 'Pre-launch' offer you invested in is for an unauthorized and unregistered project."
-                    },
-                    {
-                        title: "Refund for Misleading Ads",
-                        description: "Recovery of investment if the actual property significantly differs from what was shown in the marketing brochures or sample flat.",
-                        example: "The 'clubhouse' promised in the brochure turns out to be a small room without any equipment."
-                    }
+                    { title: "Delay in Possession", description: "Late delivery of property.", example: "Project delay." },
+                    { title: "False Advertising", description: "Misleading claims.", example: "Amenities not delivered." },
+                    { title: "Construction Issues", description: "Poor quality.", example: "Structural defects." },
+                    { title: "Hidden Charges", description: "Unfair costs.", example: "Extra charges." },
+                    { title: "Unregistered Projects", description: "No RERA registration.", example: "Illegal project." }
                 ]
             },
             whenToFile: {
-                title: "When to approach RERA?",
-                content: "Don't wait for 'just another 6 months' extension from the builder. File a complaint when:",
+                title: "Who Can File?",
+                content: "Various stakeholders can file complaints.",
                 parameters: [
-                    {
-                        title: "Possession Date Expiry (+1 Day)",
-                        desc: "The very day the 'Grace Period' mentioned in your Agreement to Sale expires, you are entitled to claim monthly interest."
-                    },
-                    {
-                        title: "Project Stagnation (3 Months)",
-                        desc: "If construction work at the site has stopped for over 90 days without a valid reason (like a stay order)."
-                    },
-                    {
-                        title: "Unauthorized Plan changes",
-                        desc: "Immediately upon noticing changes in the sanctioned plan or promised common amenities."
-                    },
-                    {
-                        title: "Misuse of Funds",
-                        desc: "If you have evidence that the builder is diverting funds from your project to their other new launches."
-                    }
+                    { title: "Homebuyers", desc: "Property buyers." },
+                    { title: "Investors", desc: "Real estate investors." },
+                    { title: "Agents", desc: "Registered agents." },
+                    { title: "Developers", desc: "Against other parties." }
                 ]
             },
             process: {
-                title: "The RERA Litigation Roadmap",
-                introduction: "RERA proceedings are designed to be faster than traditional civil courts.",
+                title: "RERA Complaint Process",
+                introduction: "Step-by-step process.",
                 steps: [
-                    {
-                        title: "Preliminary Audit",
-                        description: "We review your 'Agreement to Sale' and track the actual project progress on the RERA website."
-                    },
-                    {
-                        title: "Filing Online Complaint",
-                        description: "We assist in filing Form 'M' (for possession/interest) or Form 'N' (for compensation) on the official RERA portal."
-                    },
-                    {
-                        title: "Representation before Authority",
-                        description: "Our lawyers represent you in the RERA hearings, presenting technical evidence of delay and financial loss."
-                    },
-                    {
-                        title: "Order & Execution",
-                        description: "Once the order is passed (e.g., to pay interest), we follow up with the District Collector for the recovery of the amount as 'Arrears of Land Revenue'."
-                    },
-                    {
-                        title: "Appellate Tribunal (If Needed)",
-                        description: "If the Authority's order is challenged by the builder, we represent you in the RERA Appellate Tribunal."
-                    }
+                    { title: "Case Evaluation", description: "Analyze dispute." },
+                    { title: "Document Collection", description: "Gather evidence." },
+                    { title: "Draft Complaint", description: "Prepare legal filing." },
+                    { title: "File with RERA", description: "Submit complaint." },
+                    { title: "Representation", description: "Attend hearings." }
                 ]
             },
             whyChoose: {
-                title: "Why Choose VyomBiz for RERA?",
+                title: "Why Choose Vyombiz?",
                 reasons: [
-                    "Technical Audit: We don't just use legal arguments; we use project progress data and CA certificates to prove builder defaults.",
-                    "Recovery Focus: We have a dedicated team for 'Execution of Orders'—actually getting the money from the builder's bank accounts.",
-                    "Pan-India Presence: Expertise in UP-RERA, MahaRERA, HRERA, and Delhi RERA regulations.",
-                    "Group Complaint Management: We represent groups of 50+ homebuyers together to increase pressure on the developer and reduce individual costs.",
-                    "Fixed Timeline Strategy: We push for the 60-day resolution period mandated under the RERA Act."
+                    "Experienced RERA legal professionals",
+                    "End-to-end complaint assistance",
+                    "Accurate documentation",
+                    "Strategic case handling",
+                    "Client-focused approach"
                 ]
             },
             faqs: {
-                title: "RERA FAQs",
+                title: "FAQs",
                 items: [
                     {
-                        question: "Can I get my money back with interest?",
-                        answer: "Yes. Section 18 of the RERA Act gives you the absolute right to withdraw from a delayed project and claim a full refund along with interest (usually 10% to 12% p.a.)."
+                        question: "How long does RERA take?",
+                        answer: "Usually around 60 days."
                     },
                     {
-                        question: "Does RERA apply to my old project?",
-                        answer: "RERA applies to all 'Ongoing Projects' which had not received a Completion Certificate (CC) as of May 1, 2017."
+                        question: "Can I file against unregistered project?",
+                        answer: "Yes."
                     },
                     {
-                        question: "What if the builder challenges the RERA order?",
-                        answer: "Builders can appeal to the RERA Tribunal, but they must pre-deposit 100% of the amount ordered (Refund + Interest) before their appeal can even be heard."
+                        question: "What relief can I get?",
+                        answer: "Refund, compensation, possession."
                     },
                     {
-                        question: "Can I claim interest if I don't want to leave the project?",
-                        answer: "Yes. You can stay in the project and claim monthly interest for every month of delay from the builder until they hand over the possession."
+                        question: "Do I need a lawyer?",
+                        answer: "Recommended for strong case."
                     },
                     {
-                        question: "What is 'Project Completion' vs 'Actual Possession'?",
-                        answer: "Completion means the structure is ready (CC). Possession is when you get the keys after the OC is issued. RERA protection extends until the actual transfer of possession."
-                    },
-                    {
-                        question: "Does RERA help with 'Hidden Charges' in the bill?",
-                        answer: "Yes. Builders are legally prohibited from charging anything not explicitly mentioned in the Agreement to Sale or the RERA-approved project filing."
-                    },
-                    {
-                        question: "What is the 5-year 'Defect Liability' period?",
-                        answer: "Within 5 years of possession, the builder is legally bound to fix any structural or quality defects free of charge within 30 days of you reporting them."
-                    },
-                    {
-                        question: "Can a group of buyers file a single joint complaint?",
-                        answer: "Yes. RERA allows an 'Association of Allottees' to file a single joint complaint, which carries more weight and significantly reduces the per-person legal cost."
+                        question: "Can buyers file jointly?",
+                        answer: "Yes."
                     }
                 ]
             }
@@ -3889,212 +3382,212 @@ export const litigationContent = {
         }
     },
     "bank-consumer-complaint": {
-  title: "Banking Complaint Assistance",
+        title: "Banking Complaint Assistance",
 
-  hero: {
-    mainTitle: "Banking Complaint Assistance",
-    bulletPoints: [
-      "Unauthorized Transaction Recovery",
-      "Dispute Hidden Bank Charges",
-      "Stop Loan Recovery Harassment",
-      "Resolve Credit Card Billing Issues"
-    ],
-    testimonial: {
-      text: "VyomBiz guided me through the complaint process when my bank ignored my fraud complaint. Their legal team helped me escalate the issue and get my money refunded.",
-      author: "Verified Client Review",
-      verified: true,
-      avatar: "https://i.pravatar.cc/150?u=anjali"
-    }
-  },
+        hero: {
+            mainTitle: "Banking Complaint Assistance",
+            bulletPoints: [
+                "Unauthorized Transaction Recovery",
+                "Dispute Hidden Bank Charges",
+                "Stop Loan Recovery Harassment",
+                "Resolve Credit Card Billing Issues"
+            ],
+            testimonial: {
+                text: "VyomBiz guided me through the complaint process when my bank ignored my fraud complaint. Their legal team helped me escalate the issue and get my money refunded.",
+                author: "Verified Client Review",
+                verified: true,
+                avatar: "https://i.pravatar.cc/150?u=anjali"
+            }
+        },
 
-  formSection: {
-    offerTitle: "Limited Time Offer",
-    ctaButton: "Start Your Complaint Process",
-    whatsappText:
-      "Receive case updates and important notifications directly on WhatsApp."
-  },
+        formSection: {
+            offerTitle: "Limited Time Offer",
+            ctaButton: "Start Your Complaint Process",
+            whatsappText:
+                "Receive case updates and important notifications directly on WhatsApp."
+        },
 
-  tabs: [
-    { id: "overview", label: "Overview" },
-    { id: "types", label: "Types" },
-    { id: "when-to-file", label: "When To File" },
-    { id: "process", label: "Process" },
-    { id: "why-choose", label: "Why Choose VyomBiz" },
-    { id: "faqs", label: "FAQs" }
-  ],
+        tabs: [
+            { id: "overview", label: "Overview" },
+            { id: "types", label: "Types" },
+            { id: "when-to-file", label: "When To File" },
+            { id: "process", label: "Process" },
+            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "faqs", label: "FAQs" }
+        ],
 
-  sections: {
-    overview: {
-      title: "Banking Complaints – Overview",
-      image:
-        "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      content: [
-        "Banking issues such as unauthorized transactions, hidden charges, and aggressive recovery practices are becoming more common for consumers.",
-        "While the Reserve Bank of India provides a complaint redressal system through the Banking Ombudsman, many customers find the process confusing and time-consuming.",
-        "Filing a structured consumer complaint ensures your grievance is formally recorded and increases the chances of a fair resolution against banks for service failures or unfair practices."
-      ]
-    },
+        sections: {
+            overview: {
+                title: "Banking Complaints – Overview",
+                image:
+                    "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                content: [
+                    "Banking issues such as unauthorized transactions, hidden charges, and aggressive recovery practices are becoming more common for consumers.",
+                    "While the Reserve Bank of India provides a complaint redressal system through the Banking Ombudsman, many customers find the process confusing and time-consuming.",
+                    "Filing a structured consumer complaint ensures your grievance is formally recorded and increases the chances of a fair resolution against banks for service failures or unfair practices."
+                ]
+            },
 
-    types: {
-      title: "Common Reasons to File a Banking Complaint",
-      introduction:
-        "Consumers can raise complaints against banks for several types of service deficiencies and unfair charges.",
-      items: [
-        {
-          title: "Unauthorized Transactions",
-          description:
-            "Money debited from your account without approval or due authorization.",
-          example: "Unknown transaction appearing in bank statement."
-        },
-        {
-          title: "Undisclosed Bank Charges",
-          description:
-            "Fees or penalties applied by the bank without prior disclosure.",
-          example: "Unexpected annual fee on a credit card."
-        },
-        {
-          title: "Recovery Agent Harassment",
-          description:
-            "Harassment or threatening behaviour from loan recovery agents.",
-          example: "Recovery agents calling repeatedly and using abusive language."
-        },
-        {
-          title: "Credit Card Billing Disputes",
-          description:
-            "Incorrect billing, hidden interest charges, or delays in closing credit card accounts.",
-          example: "Bank continuing to charge interest after closure request."
-        },
-        {
-          title: "Wrongful Cheque Dishonour",
-          description:
-            "Cheque rejection even when sufficient funds are available in the account.",
-          example: "Cheque bounce penalty due to bank error."
-        },
-        {
-          title: "Bank Locker Safety Issues",
-          description:
-            "Loss or damage to valuables due to poor locker security or negligence.",
-          example: "Missing valuables from a bank locker."
-        },
-        {
-          title: "Failed Digital Transactions",
-          description:
-            "Online or ATM transactions where money is deducted but the transaction fails.",
-          example: "ATM withdrawal failed but amount debited."
+            types: {
+                title: "Common Reasons to File a Banking Complaint",
+                introduction:
+                    "Consumers can raise complaints against banks for several types of service deficiencies and unfair charges.",
+                items: [
+                    {
+                        title: "Unauthorized Transactions",
+                        description:
+                            "Money debited from your account without approval or due authorization.",
+                        example: "Unknown transaction appearing in bank statement."
+                    },
+                    {
+                        title: "Undisclosed Bank Charges",
+                        description:
+                            "Fees or penalties applied by the bank without prior disclosure.",
+                        example: "Unexpected annual fee on a credit card."
+                    },
+                    {
+                        title: "Recovery Agent Harassment",
+                        description:
+                            "Harassment or threatening behaviour from loan recovery agents.",
+                        example: "Recovery agents calling repeatedly and using abusive language."
+                    },
+                    {
+                        title: "Credit Card Billing Disputes",
+                        description:
+                            "Incorrect billing, hidden interest charges, or delays in closing credit card accounts.",
+                        example: "Bank continuing to charge interest after closure request."
+                    },
+                    {
+                        title: "Wrongful Cheque Dishonour",
+                        description:
+                            "Cheque rejection even when sufficient funds are available in the account.",
+                        example: "Cheque bounce penalty due to bank error."
+                    },
+                    {
+                        title: "Bank Locker Safety Issues",
+                        description:
+                            "Loss or damage to valuables due to poor locker security or negligence.",
+                        example: "Missing valuables from a bank locker."
+                    },
+                    {
+                        title: "Failed Digital Transactions",
+                        description:
+                            "Online or ATM transactions where money is deducted but the transaction fails.",
+                        example: "ATM withdrawal failed but amount debited."
+                    }
+                ]
+            },
+
+            whenToFile: {
+                title: "Documents Required for Banking Complaints",
+                content:
+                    "To support your complaint effectively, the following documents are typically required.",
+                parameters: [
+                    {
+                        title: "Bank Account Statement",
+                        desc: "Recent bank statement or passbook showing the disputed transaction."
+                    },
+                    {
+                        title: "Transaction Proof",
+                        desc: "Receipts, SMS alerts, or payment confirmation records."
+                    },
+                    {
+                        title: "Communication Records",
+                        desc: "Emails, complaint numbers, or written communication with the bank."
+                    },
+                    {
+                        title: "Bank Agreements",
+                        desc:
+                            "Loan documents, credit card statements, or account terms and conditions."
+                    }
+                ],
+                image:
+                    "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            },
+
+            process: {
+                title: "Our Complaint Resolution Process",
+                introduction:
+                    "We follow a structured legal approach to resolve banking disputes efficiently.",
+                steps: [
+                    {
+                        title: "Case Review",
+                        description:
+                            "Our team reviews your complaint details and supporting documents."
+                    },
+                    {
+                        title: "Legal Notice",
+                        description:
+                            "A formal notice is drafted and sent to the bank requesting resolution."
+                    },
+                    {
+                        title: "RBI Ombudsman Filing",
+                        description:
+                            "If the bank fails to respond, we escalate the complaint to the RBI Ombudsman."
+                    },
+                    {
+                        title: "Consumer Commission",
+                        description:
+                            "If compensation is required, a case can be filed before the Consumer Commission."
+                    },
+                    {
+                        title: "Legal Representation",
+                        description:
+                            "Our legal professionals assist you during complaint hearings and proceedings."
+                    }
+                ]
+            },
+
+            cta: {
+                title: "Facing a Banking Issue?",
+                description:
+                    "Get professional assistance to resolve your complaint and recover your money.",
+                button: "Book Free Consultation"
+            },
+
+            whyChoose: {
+                title: "Why Choose VyomBiz for Banking Complaints?",
+                reasons: [
+                    "Banking Law Experts – Our team understands RBI guidelines and banking regulations.",
+                    "Ombudsman Filing Experience – Expert support in preparing and filing complaints with the RBI Ombudsman.",
+                    "Complete Legal Support – From drafting complaints to representing your case.",
+                    "Proven Resolution Track Record – Successfully assisted clients in recovering funds from banking disputes.",
+                    "Fund Recovery Assistance – Support in recovering money lost due to fraud, bank errors, or transaction failures."
+                ]
+            },
+
+            faqs: {
+                title: "Frequently Asked Questions",
+                items: [
+                    {
+                        question: "How can I file a complaint against my bank?",
+                        answer:
+                            "You can first submit a written complaint to the bank. If the issue is not resolved within the specified time, you can escalate it to the RBI Banking Ombudsman or Consumer Commission."
+                    },
+                    {
+                        question: "What is the RBI Banking Ombudsman?",
+                        answer:
+                            "The RBI Banking Ombudsman is a grievance redressal mechanism created by the Reserve Bank of India to resolve customer complaints against banks."
+                    },
+                    {
+                        question: "Can I raise a complaint for unauthorized bank transactions?",
+                        answer:
+                            "Yes, if money is debited from your account without authorization, you can raise a formal complaint with the bank and escalate it if the issue remains unresolved."
+                    },
+                    {
+                        question: "Is there a deadline for filing a banking complaint?",
+                        answer:
+                            "Yes, complaints should typically be filed within one year from the date of the issue or after receiving the bank’s final response."
+                    },
+                    {
+                        question: "Can I seek compensation for recovery agent harassment?",
+                        answer:
+                            "Yes, customers can file complaints and claim compensation if recovery agents use abusive language, threats, or illegal collection practices."
+                    }
+                ]
+            }
         }
-      ]
     },
-
-    whenToFile: {
-      title: "Documents Required for Banking Complaints",
-      content:
-        "To support your complaint effectively, the following documents are typically required.",
-      parameters: [
-        {
-          title: "Bank Account Statement",
-          desc: "Recent bank statement or passbook showing the disputed transaction."
-        },
-        {
-          title: "Transaction Proof",
-          desc: "Receipts, SMS alerts, or payment confirmation records."
-        },
-        {
-          title: "Communication Records",
-          desc: "Emails, complaint numbers, or written communication with the bank."
-        },
-        {
-          title: "Bank Agreements",
-          desc:
-            "Loan documents, credit card statements, or account terms and conditions."
-        }
-      ],
-      image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-
-    process: {
-      title: "Our Complaint Resolution Process",
-      introduction:
-        "We follow a structured legal approach to resolve banking disputes efficiently.",
-      steps: [
-        {
-          title: "Case Review",
-          description:
-            "Our team reviews your complaint details and supporting documents."
-        },
-        {
-          title: "Legal Notice",
-          description:
-            "A formal notice is drafted and sent to the bank requesting resolution."
-        },
-        {
-          title: "RBI Ombudsman Filing",
-          description:
-            "If the bank fails to respond, we escalate the complaint to the RBI Ombudsman."
-        },
-        {
-          title: "Consumer Commission",
-          description:
-            "If compensation is required, a case can be filed before the Consumer Commission."
-        },
-        {
-          title: "Legal Representation",
-          description:
-            "Our legal professionals assist you during complaint hearings and proceedings."
-        }
-      ]
-    },
-
-    cta: {
-      title: "Facing a Banking Issue?",
-      description:
-        "Get professional assistance to resolve your complaint and recover your money.",
-      button: "Book Free Consultation"
-    },
-
-    whyChoose: {
-      title: "Why Choose VyomBiz for Banking Complaints?",
-      reasons: [
-        "Banking Law Experts – Our team understands RBI guidelines and banking regulations.",
-        "Ombudsman Filing Experience – Expert support in preparing and filing complaints with the RBI Ombudsman.",
-        "Complete Legal Support – From drafting complaints to representing your case.",
-        "Proven Resolution Track Record – Successfully assisted clients in recovering funds from banking disputes.",
-        "Fund Recovery Assistance – Support in recovering money lost due to fraud, bank errors, or transaction failures."
-      ]
-    },
-
-    faqs: {
-      title: "Frequently Asked Questions",
-      items: [
-        {
-          question: "How can I file a complaint against my bank?",
-          answer:
-            "You can first submit a written complaint to the bank. If the issue is not resolved within the specified time, you can escalate it to the RBI Banking Ombudsman or Consumer Commission."
-        },
-        {
-          question: "What is the RBI Banking Ombudsman?",
-          answer:
-            "The RBI Banking Ombudsman is a grievance redressal mechanism created by the Reserve Bank of India to resolve customer complaints against banks."
-        },
-        {
-          question: "Can I raise a complaint for unauthorized bank transactions?",
-          answer:
-            "Yes, if money is debited from your account without authorization, you can raise a formal complaint with the bank and escalate it if the issue remains unresolved."
-        },
-        {
-          question: "Is there a deadline for filing a banking complaint?",
-          answer:
-            "Yes, complaints should typically be filed within one year from the date of the issue or after receiving the bank’s final response."
-        },
-        {
-          question: "Can I seek compensation for recovery agent harassment?",
-          answer:
-            "Yes, customers can file complaints and claim compensation if recovery agents use abusive language, threats, or illegal collection practices."
-        }
-      ]
-    }
-  }
-},
     "education-consumer-complaint": {
         title: "Education Consumer Complaint",
         hero: {
@@ -4420,210 +3913,210 @@ export const litigationContent = {
         }
     },
     "ecommerce-consumer-complaint": {
-  title: "E-commerce Consumer Complaint Assistance",
-  hero: {
-    mainTitle: "E-commerce Consumer Complaint Assistance",
-    bulletPoints: [
-      "Refund & Return Dispute Support",
-      "Defective Product Claims",
-      "Delivery Delay Compensation",
-      "Legal Action Against Sellers"
-    ],
-    testimonial: {
-      text: "After receiving a fake product, the seller refused to process my refund. VyomBiz helped me file a complaint and the issue was resolved quickly.",
-      author: "Verified Client Review",
-      verified: true,
-      avatar: "https://i.pravatar.cc/150?u=rohan"
+        title: "E-commerce Consumer Complaint Assistance",
+        hero: {
+            mainTitle: "E-commerce Consumer Complaint Assistance",
+            bulletPoints: [
+                "Refund & Return Dispute Support",
+                "Defective Product Claims",
+                "Delivery Delay Compensation",
+                "Legal Action Against Sellers"
+            ],
+            testimonial: {
+                text: "After receiving a fake product, the seller refused to process my refund. VyomBiz helped me file a complaint and the issue was resolved quickly.",
+                author: "Verified Client Review",
+                verified: true,
+                avatar: "https://i.pravatar.cc/150?u=rohan"
+            }
+        },
+
+        formSection: {
+            offerTitle: "Limited Time Offer",
+            ctaButton: "Start Your Complaint Process",
+            whatsappText:
+                "Receive updates and important notifications about your complaint directly on WhatsApp."
+        },
+
+        tabs: [
+            { id: "overview", label: "Overview" },
+            { id: "types", label: "Types" },
+            { id: "when-to-file", label: "When To File" },
+            { id: "process", label: "Process" },
+            { id: "why-choose", label: "Why Choose VyomBiz" },
+            { id: "faqs", label: "FAQs" }
+        ],
+
+        sections: {
+            overview: {
+                title: "E-commerce Complaints – Overview",
+                image:
+                    "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                content: [
+                    "Online shopping disputes are increasingly common and may involve defective products, delayed deliveries, or refusal of refunds by sellers.",
+                    "Consumers have the right to raise complaints against sellers or platforms for unfair trade practices and poor service.",
+                    "Filing a formal consumer complaint helps ensure accountability and increases the chances of getting a refund, replacement, or compensation."
+                ]
+            },
+
+            types: {
+                title: "Common Reasons to File an E-commerce Complaint",
+                introduction:
+                    "Consumers may file complaints against sellers or online platforms for various service deficiencies and unfair practices.",
+                items: [
+                    {
+                        title: "Defective or Damaged Products",
+                        description:
+                            "Receiving products that are damaged, defective, or significantly different from the description.",
+                        example: "Smartphone screen cracked upon delivery."
+                    },
+                    {
+                        title: "Non-Delivery of Orders",
+                        description:
+                            "Orders that are marked delivered but never received, or shipments that never arrive.",
+                        example: "Package marked as delivered but not received."
+                    },
+                    {
+                        title: "Payment or Billing Issues",
+                        description:
+                            "Overcharging, duplicate payments, or incorrect transaction amounts.",
+                        example: "Double deduction for a single order."
+                    },
+                    {
+                        title: "Poor Customer Support",
+                        description:
+                            "Customer support failing to resolve complaints or closing requests without proper resolution.",
+                        example: "Support closing complaint tickets without solving the issue."
+                    },
+                    {
+                        title: "Online Shopping Fraud",
+                        description:
+                            "Fake listings, counterfeit goods, or scams involving online purchases.",
+                        example: "Receiving a soap bar instead of a mobile phone."
+                    },
+                    {
+                        title: "Data Privacy Violations",
+                        description:
+                            "Misuse or leakage of personal customer information by sellers or platforms.",
+                        example: "Customer data shared with unauthorized third parties."
+                    },
+                    {
+                        title: "Refund or Return Refusal",
+                        description:
+                            "Sellers refusing valid refund or replacement requests despite return policy eligibility.",
+                        example: "Seller rejecting return despite valid complaint."
+                    }
+                ]
+            },
+
+            whenToFile: {
+                title: "Documents Required for E-commerce Complaints",
+                content:
+                    "The following documents help support your complaint and strengthen your case.",
+                parameters: [
+                    {
+                        title: "Order Confirmation",
+                        desc: "Order invoice, confirmation email, or purchase receipt."
+                    },
+                    {
+                        title: "Payment Proof",
+                        desc: "Bank statement, UPI record, or credit/debit card transaction proof."
+                    },
+                    {
+                        title: "Product Evidence",
+                        desc:
+                            "Photos or videos of damaged or incorrect products and screenshots of the listing."
+                    },
+                    {
+                        title: "Communication Records",
+                        desc:
+                            "Emails, chat transcripts, or complaint tickets raised with the seller or platform."
+                    }
+                ],
+                image:
+                    "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            },
+
+            process: {
+                title: "Our Complaint Resolution Process",
+                introduction:
+                    "Our team follows a structured approach to resolve e-commerce disputes efficiently.",
+                steps: [
+                    {
+                        title: "Document Collection",
+                        description:
+                            "We review invoices, order details, and evidence related to your complaint."
+                    },
+                    {
+                        title: "Seller or Platform Notification",
+                        description:
+                            "A formal complaint is sent to the seller or e-commerce platform requesting resolution."
+                    },
+                    {
+                        title: "Legal Notice",
+                        description:
+                            "If required, a legal notice is issued demanding refund, replacement, or compensation."
+                    },
+                    {
+                        title: "Escalation to Consumer Forum",
+                        description:
+                            "If the issue remains unresolved, the complaint can be escalated to the consumer commission."
+                    },
+                    {
+                        title: "Dispute Resolution",
+                        description:
+                            "The goal is to secure a refund, replacement, or financial compensation for the consumer."
+                    }
+                ]
+            },
+
+            cta: {
+                title: "Facing an E-commerce Dispute?",
+                description:
+                    "Get professional assistance to resolve your complaint and claim your rightful refund or compensation.",
+                button: "Book Free Consultation"
+            },
+
+            whyChoose: {
+                title: "Why Choose VyomBiz for E-commerce Complaints?",
+                reasons: [
+                    "Consumer Law Expertise – Our team understands online consumer protection laws and dispute procedures.",
+                    "Complete Legal Support – From drafting complaints to handling legal notices and filings.",
+                    "Proven Resolution Record – Experience in handling disputes involving major online marketplaces.",
+                    "Hassle-Free Process – Our team manages the legal process while you focus on your daily routine.",
+                    "Faster Complaint Resolution – Formal complaints and legal notices often result in quicker responses from sellers or platforms."
+                ]
+            },
+
+            faqs: {
+                title: "Frequently Asked Questions",
+                items: [
+                    {
+                        question: "How can I file a complaint against an online seller?",
+                        answer:
+                            "Consumers can first contact the seller or platform support. If the issue is unresolved, a formal complaint can be filed with the consumer forum."
+                    },
+                    {
+                        question: "Can I file a complaint for a defective product?",
+                        answer:
+                            "Yes. If you receive a defective or damaged product and the seller refuses to replace or refund it, you can file a consumer complaint."
+                    },
+                    {
+                        question: "What if the seller refuses to refund my order?",
+                        answer:
+                            "If the seller rejects a valid refund request, you can escalate the issue through legal notice or consumer commission proceedings."
+                    },
+                    {
+                        question: "Is there a time limit to file an e-commerce complaint?",
+                        answer:
+                            "Yes. Generally, consumer complaints should be filed within two years from the date of the issue."
+                    },
+                    {
+                        question: "Can I claim compensation for online shopping fraud?",
+                        answer:
+                            "Yes. If you suffer financial loss due to fraud or counterfeit products, you may claim compensation through consumer forums."
+                    }
+                ]
+            }
+        }
     }
-  },
-
-  formSection: {
-    offerTitle: "Limited Time Offer",
-    ctaButton: "Start Your Complaint Process",
-    whatsappText:
-      "Receive updates and important notifications about your complaint directly on WhatsApp."
-  },
-
-  tabs: [
-    { id: "overview", label: "Overview" },
-    { id: "types", label: "Types" },
-    { id: "when-to-file", label: "When To File" },
-    { id: "process", label: "Process" },
-    { id: "why-choose", label: "Why Choose VyomBiz" },
-    { id: "faqs", label: "FAQs" }
-  ],
-
-  sections: {
-    overview: {
-      title: "E-commerce Complaints – Overview",
-      image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      content: [
-        "Online shopping disputes are increasingly common and may involve defective products, delayed deliveries, or refusal of refunds by sellers.",
-        "Consumers have the right to raise complaints against sellers or platforms for unfair trade practices and poor service.",
-        "Filing a formal consumer complaint helps ensure accountability and increases the chances of getting a refund, replacement, or compensation."
-      ]
-    },
-
-    types: {
-      title: "Common Reasons to File an E-commerce Complaint",
-      introduction:
-        "Consumers may file complaints against sellers or online platforms for various service deficiencies and unfair practices.",
-      items: [
-        {
-          title: "Defective or Damaged Products",
-          description:
-            "Receiving products that are damaged, defective, or significantly different from the description.",
-          example: "Smartphone screen cracked upon delivery."
-        },
-        {
-          title: "Non-Delivery of Orders",
-          description:
-            "Orders that are marked delivered but never received, or shipments that never arrive.",
-          example: "Package marked as delivered but not received."
-        },
-        {
-          title: "Payment or Billing Issues",
-          description:
-            "Overcharging, duplicate payments, or incorrect transaction amounts.",
-          example: "Double deduction for a single order."
-        },
-        {
-          title: "Poor Customer Support",
-          description:
-            "Customer support failing to resolve complaints or closing requests without proper resolution.",
-          example: "Support closing complaint tickets without solving the issue."
-        },
-        {
-          title: "Online Shopping Fraud",
-          description:
-            "Fake listings, counterfeit goods, or scams involving online purchases.",
-          example: "Receiving a soap bar instead of a mobile phone."
-        },
-        {
-          title: "Data Privacy Violations",
-          description:
-            "Misuse or leakage of personal customer information by sellers or platforms.",
-          example: "Customer data shared with unauthorized third parties."
-        },
-        {
-          title: "Refund or Return Refusal",
-          description:
-            "Sellers refusing valid refund or replacement requests despite return policy eligibility.",
-          example: "Seller rejecting return despite valid complaint."
-        }
-      ]
-    },
-
-    whenToFile: {
-      title: "Documents Required for E-commerce Complaints",
-      content:
-        "The following documents help support your complaint and strengthen your case.",
-      parameters: [
-        {
-          title: "Order Confirmation",
-          desc: "Order invoice, confirmation email, or purchase receipt."
-        },
-        {
-          title: "Payment Proof",
-          desc: "Bank statement, UPI record, or credit/debit card transaction proof."
-        },
-        {
-          title: "Product Evidence",
-          desc:
-            "Photos or videos of damaged or incorrect products and screenshots of the listing."
-        },
-        {
-          title: "Communication Records",
-          desc:
-            "Emails, chat transcripts, or complaint tickets raised with the seller or platform."
-        }
-      ],
-      image:
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-
-    process: {
-      title: "Our Complaint Resolution Process",
-      introduction:
-        "Our team follows a structured approach to resolve e-commerce disputes efficiently.",
-      steps: [
-        {
-          title: "Document Collection",
-          description:
-            "We review invoices, order details, and evidence related to your complaint."
-        },
-        {
-          title: "Seller or Platform Notification",
-          description:
-            "A formal complaint is sent to the seller or e-commerce platform requesting resolution."
-        },
-        {
-          title: "Legal Notice",
-          description:
-            "If required, a legal notice is issued demanding refund, replacement, or compensation."
-        },
-        {
-          title: "Escalation to Consumer Forum",
-          description:
-            "If the issue remains unresolved, the complaint can be escalated to the consumer commission."
-        },
-        {
-          title: "Dispute Resolution",
-          description:
-            "The goal is to secure a refund, replacement, or financial compensation for the consumer."
-        }
-      ]
-    },
-
-    cta: {
-      title: "Facing an E-commerce Dispute?",
-      description:
-        "Get professional assistance to resolve your complaint and claim your rightful refund or compensation.",
-      button: "Book Free Consultation"
-    },
-
-    whyChoose: {
-      title: "Why Choose VyomBiz for E-commerce Complaints?",
-      reasons: [
-        "Consumer Law Expertise – Our team understands online consumer protection laws and dispute procedures.",
-        "Complete Legal Support – From drafting complaints to handling legal notices and filings.",
-        "Proven Resolution Record – Experience in handling disputes involving major online marketplaces.",
-        "Hassle-Free Process – Our team manages the legal process while you focus on your daily routine.",
-        "Faster Complaint Resolution – Formal complaints and legal notices often result in quicker responses from sellers or platforms."
-      ]
-    },
-
-    faqs: {
-      title: "Frequently Asked Questions",
-      items: [
-        {
-          question: "How can I file a complaint against an online seller?",
-          answer:
-            "Consumers can first contact the seller or platform support. If the issue is unresolved, a formal complaint can be filed with the consumer forum."
-        },
-        {
-          question: "Can I file a complaint for a defective product?",
-          answer:
-            "Yes. If you receive a defective or damaged product and the seller refuses to replace or refund it, you can file a consumer complaint."
-        },
-        {
-          question: "What if the seller refuses to refund my order?",
-          answer:
-            "If the seller rejects a valid refund request, you can escalate the issue through legal notice or consumer commission proceedings."
-        },
-        {
-          question: "Is there a time limit to file an e-commerce complaint?",
-          answer:
-            "Yes. Generally, consumer complaints should be filed within two years from the date of the issue."
-        },
-        {
-          question: "Can I claim compensation for online shopping fraud?",
-          answer:
-            "Yes. If you suffer financial loss due to fraud or counterfeit products, you may claim compensation through consumer forums."
-        }
-      ]
-    }
-  }
-}
 };
