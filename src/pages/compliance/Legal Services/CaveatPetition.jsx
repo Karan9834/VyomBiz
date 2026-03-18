@@ -125,7 +125,7 @@ const CaveatPetition = () => {
                         "Details of the expected suit/order",
                         "Identity Proof of the Caveator"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{
                     title: "Filing Procedure",

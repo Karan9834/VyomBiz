@@ -101,7 +101,8 @@ const AnnualFilingLLP = () => {
                         "Financial Statements",
                         "P&L and Balance Sheet",
                         "DSC of Partners"
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
 
                 advantages={{

@@ -104,7 +104,8 @@ const ChangeInNameClause = () => {
                         "DSC of Directors",
                         "DIN",
                         "Name Approval"
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
 
                 advantages={{

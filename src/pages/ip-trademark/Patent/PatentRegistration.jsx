@@ -5,7 +5,7 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import benefits from "../../../assets/IP & Trademark/Patent/patent-registration/benefits.png";
 import overview from "../../../assets/IP & Trademark/Patent/patent-registration/overview.jpg";
-import process from "../../../assets/IP & Trademark/Patent/patent-registration/process.png";
+import process from "../../../assets/IP & Trademark/Patent/patent-registration/process.jpg";
 
 const PatentRegistrationOverview = () => {
     return (

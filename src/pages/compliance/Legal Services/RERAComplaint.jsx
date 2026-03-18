@@ -130,7 +130,7 @@ const RERAComplaint = () => {
                         "Personal Details (ID Proof, Address Proof)",
                         "Copy of Legal Notice sent (if any)"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{
                     title: "Procedure to File Complaint",

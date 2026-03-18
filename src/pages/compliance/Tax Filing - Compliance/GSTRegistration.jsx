@@ -291,7 +291,7 @@ const GSTRegistration = () => {
                         "Lease / Rent Agreement",
                         "Letter of Authorization / Board Resolution"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1554224155-9dcd0b1760a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{
                     title: "GST Registration Process",

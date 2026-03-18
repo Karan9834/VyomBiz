@@ -117,7 +117,7 @@ const TDSReturnFiling = () => {
                         "Bank account information",
                         "Digital Signature Certificate (DSC)"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{
                     title: "Step-by-Step Process for Filing TDS Returns",

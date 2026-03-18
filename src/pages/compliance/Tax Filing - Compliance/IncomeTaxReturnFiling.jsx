@@ -121,7 +121,7 @@ const IncomeTaxReturnFiling = () => {
                         "Rental income information",
                         "Details of foreign assets (if applicable)"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{
                     title: "Steps to File Income Tax Return Online",

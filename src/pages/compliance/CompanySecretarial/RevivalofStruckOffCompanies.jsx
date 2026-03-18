@@ -222,7 +222,8 @@ const RevivalofStruckOffCompanies = () => {
                         "Copy of audited financial statements from the date of strike-off",
                         "Bank statements of the company",
                         "Striking off order of the Registrar of Companies",
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{ title: "Process of Revival of Struck Off Company", subtitle: "Revival involves legal proceedings before the National Company Law Tribunal (NCLT) and compliance filings with the ROC.", steps: processSteps }}
                 postCompliance={otherInfoContent}

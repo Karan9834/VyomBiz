@@ -129,7 +129,7 @@ const PublicInterestLitigation = () => {
                         "Resettlement policy (if applicable)",
                         "Draft of the Writ Petition"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1589578527966-fdac0f44566c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{
                     title: "Procedure to File PIL",

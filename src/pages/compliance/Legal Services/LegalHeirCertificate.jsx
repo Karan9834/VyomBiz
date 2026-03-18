@@ -122,7 +122,7 @@ const LegalHeirCertificate = () => {
                         "Application Form duly signed",
                         "Service Records (if deceased was a govt employee)"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1555374018-13a8994ab246?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{
                     title: "Application Procedure",

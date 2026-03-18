@@ -104,7 +104,8 @@ const ChangeInObjectClause = () => {
                         "General Meeting Notice",
                         "Updated Object Clause",
                         "ROC Filing Forms"
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
 
                 process={{

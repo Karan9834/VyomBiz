@@ -568,7 +568,7 @@ My Details:
                                         </h2>
                                         <div className="relative rounded-3xl overflow-hidden">
                                             <img
-                                                src={sections.overview.image || "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"}
+                                                src="/lawyer-services-images/faq.png"
                                                 alt="Legal Support"
                                                 className="w-full h-full object-cover"
                                             />

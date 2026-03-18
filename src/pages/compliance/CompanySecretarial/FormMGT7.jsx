@@ -90,7 +90,8 @@ const FormMGT7 = () => {
                         "Director Details",
                         "Meeting Records",
                         "Compliance Records"
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
 
                 process={{

@@ -246,7 +246,8 @@ const LiquidationofCompany = () => {
                         "List of assets owned by the company",
                         "Board and shareholder resolutions",
                         "PAN and company registration details",
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
                 whyChooseUs={{
                     title: "Why Choose Vyombiz for Company Liquidation?",

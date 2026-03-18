@@ -219,7 +219,8 @@ const ChangeinRegisteredOffice = () => {
                         "Affidavit verifying the application (for Regional Director / NCLT application).",
                         "List of creditors and debenture holders with their consent (for Type 3 and Type 4).",
                         "Declaration from KMP and two directors confirming no default in payments to workmen.",
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
                 whyChooseUs={{
                     title: "Why Choose Vyombiz for Change in Registered Office?",

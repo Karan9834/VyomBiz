@@ -5,7 +5,7 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import advantages from "../../../assets/Trademarks India/Trademark Class Finder Tool/advantages.png";
 import overview from "../../../assets/Trademarks India/Trademark Class Finder Tool/overview.jpg";
-import process from "../../../assets/Trademarks India/Trademark Class Finder Tool/process.png";
+import process from "../../../assets/Trademarks India/Trademark Class Finder Tool/process.jpg";
 
 /**
  * TrademarkClassesFinder Page matching Vyombiz layout styles
@@ -32,7 +32,7 @@ const TrademarkClassesFinderEligibility = () => {
                 <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
                     Detailed lists and factors to consider for classification.
                 </p>
-                
+
                 <div className="mb-10">
                     <h3 className="text-xl font-semibold text-[#072b47] mb-4">
                         Goods Classes (1-34)
@@ -97,34 +97,34 @@ const TrademarkClassesFinderDocumentsSection = () => {
                     Documents needed to determine the right class for your trademark.
                 </p>
                 <div className="space-y-4">
-                    
+
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Business Registration Proof:</span> Documents such as incorporation certificate or partnership registration.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Business Registration Proof:</span> Documents such as incorporation certificate or partnership registration.</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Product Details:</span> Brochures or descriptions explaining the products offered.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Product Details:</span> Brochures or descriptions explaining the products offered.</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Service Information:</span> Clear explanation of the services provided by the business.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Service Information:</span> Clear explanation of the services provided by the business.</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Promotional Materials:</span> Advertisements, brochures, or branding materials related to the trademark.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Promotional Materials:</span> Advertisements, brochures, or branding materials related to the trademark.</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Identity and Address Proof:</span> ID proof of the business owner or authorized signatory.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Identity and Address Proof:</span> ID proof of the business owner or authorized signatory.</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Trademark Logo or Wordmark:</span> Digital copy of the proposed trademark.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Trademark Logo or Wordmark:</span> Digital copy of the proposed trademark.</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Authorization Document:</span> Power of Attorney if the filing is handled by a legal professional.</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium"><span className="font-semibold text-[#072b47]">Authorization Document:</span> Power of Attorney if the filing is handled by a legal professional.</p>
                     </div>
                 </div>
             </div>
@@ -153,7 +153,7 @@ const TrademarkClassesFinderProcessSection = () => {
                         />
                     </div>
                     <div className="lg:col-span-2">
-                        
+
                         <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
                             <div className="text-[16px] font-semibold text-[#072b47]">
                                 1.
@@ -240,111 +240,111 @@ const TrademarkClassesFinderFeaturesSection = () => {
                     </p>
                 </div>
                 <div>
-                    
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                1.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Reliable Brand Protection
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Ensures your trademark receives the right level of legal protection.
-                                </p>
-                            </div>
+
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            1.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                2.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Complete Trademark Support
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    From classification to registration, we assist at every stage.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Reliable Brand Protection
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Ensures your trademark receives the right level of legal protection.
+                            </p>
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                3.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Comprehensive Trademark Services
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    All trademark-related services available in one place.
-                                </p>
-                            </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            2.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                4.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Professional IP Guidance
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Support from experienced intellectual property professionals.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Complete Trademark Support
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                From classification to registration, we assist at every stage.
+                            </p>
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                5.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Affordable Services
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Transparent pricing without hidden costs.
-                                </p>
-                            </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            3.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                6.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Dedicated Customer Support
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Prompt assistance for queries related to trademark classification.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Comprehensive Trademark Services
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                All trademark-related services available in one place.
+                            </p>
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                7.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Easy-to-Use Tools
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Simplified tools to help businesses identify the right trademark class.
-                                </p>
-                            </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            4.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                8.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Regular Updates
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Receive updates and reports to safeguard your intellectual property.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Professional IP Guidance
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Support from experienced intellectual property professionals.
+                            </p>
                         </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            5.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Affordable Services
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Transparent pricing without hidden costs.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            6.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Dedicated Customer Support
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Prompt assistance for queries related to trademark classification.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            7.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Easy-to-Use Tools
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Simplified tools to help businesses identify the right trademark class.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            8.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Regular Updates
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Receive updates and reports to safeguard your intellectual property.
+                            </p>
+                        </div>
+                    </div>
                     <div className="border-t border-slate-300"></div>
                 </div>
             </div>

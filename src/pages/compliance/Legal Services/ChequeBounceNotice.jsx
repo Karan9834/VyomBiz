@@ -129,7 +129,7 @@ const ChequeBounceNotice = () => {
                         "Invoice/Bill against which cheque was issued",
                         "Correspondence with the defaulter"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{
                     title: "Recovery Process",

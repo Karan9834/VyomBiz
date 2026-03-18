@@ -129,7 +129,8 @@ const ChangeinShareCapital = () => {
                         "Vakalatnama or Memorandum of Appearance with Board Resolution copy.",
                         "Two additional copies of the application (for NCLT filing).",
                         "Any other applicable documents.",
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{ title: "Procedure for Change in Share Capital", subtitle: "Step-by-step process to change share capital under Section 61 of the Companies Act, 2013.", steps: processSteps }}
                 whyChooseUs={{

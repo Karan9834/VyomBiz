@@ -32,7 +32,7 @@ const IntellectualPropertyDisputeEligibility = () => {
                 <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
                     Key Acts governing Intellectual Property disputes in India.
                 </p>
-                
+
                 <div className="mb-10">
                     <h3 className="text-xl font-semibold text-[#072b47] mb-4">
                         The Patents Act, 1970
@@ -97,38 +97,38 @@ const IntellectualPropertyDisputeDocumentsSection = () => {
                     Essential information and documents needed for IP dispute resolution.
                 </p>
                 <div className="space-y-4">
-                    
+
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Registration Certificates (Trademark/Copyright/Patent)</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Registration Certificates (Trademark/Copyright/Patent)</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Proof of First Use / Priority Dates</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Proof of First Use / Priority Dates</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Evidence of Infringement (Photos, Screenshots, Samples)</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Evidence of Infringement (Photos, Screenshots, Samples)</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Copy of Opposing Party's Mark/Product</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Copy of Opposing Party's Mark/Product</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Legal Notices Sent/Received</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Legal Notices Sent/Received</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Reply to Notices (if any)</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Reply to Notices (if any)</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Authorization Letters / Power of Attorney</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Authorization Letters / Power of Attorney</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Details of Damages/Losses Incurred</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Details of Damages/Losses Incurred</p>
                     </div>
                 </div>
             </div>
@@ -157,7 +157,7 @@ const IntellectualPropertyDisputeProcessSection = () => {
                         />
                     </div>
                     <div className="lg:col-span-2">
-                        
+
                         <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
                             <div className="text-[16px] font-semibold text-[#072b47]">
                                 1.
@@ -244,111 +244,111 @@ const IntellectualPropertyDisputeFeaturesSection = () => {
                     </p>
                 </div>
                 <div>
-                    
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                1.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    10+ Years Experience
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Proven track record in resolving complex IP disputes.
-                                </p>
-                            </div>
+
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            1.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                2.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Strategic Advisory
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Tailored legal strategies for your specific industry and case.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                10+ Years Experience
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Proven track record in resolving complex IP disputes.
+                            </p>
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                3.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Litigation Audit
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    In-depth case evaluation to ensure compliance and success.
-                                </p>
-                            </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            2.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                4.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Documentation Support
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Expert handling of legal notices, plaints, and counter-statements.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Strategic Advisory
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Tailored legal strategies for your specific industry and case.
+                            </p>
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                5.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Court Representation
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Professional representation in IP Tribunals, High Courts, and Supreme Court.
-                                </p>
-                            </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            3.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                6.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Tech-Driven Solutions
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Leveraging legal tech for data analysis and stronger case building.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Litigation Audit
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                In-depth case evaluation to ensure compliance and success.
+                            </p>
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                7.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Government Liaison
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Strong rapport with regulatory bodies for smoother progression.
-                                </p>
-                            </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            4.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                8.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Post-Dispute Support
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Assistance with enforcement of orders and future protection.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Documentation Support
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Expert handling of legal notices, plaints, and counter-statements.
+                            </p>
                         </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            5.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Court Representation
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Professional representation in IP Tribunals, High Courts, and Supreme Court.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            6.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Tech-Driven Solutions
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Leveraging legal tech for data analysis and stronger case building.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            7.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Government Liaison
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Strong rapport with regulatory bodies for smoother progression.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            8.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Post-Dispute Support
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Assistance with enforcement of orders and future protection.
+                            </p>
+                        </div>
+                    </div>
                     <div className="border-t border-slate-300"></div>
                 </div>
             </div>

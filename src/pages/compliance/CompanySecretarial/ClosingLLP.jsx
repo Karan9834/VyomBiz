@@ -108,7 +108,8 @@ const ClosingLLP = () => {
                         "ITR (if applicable)",
                         "Bank Closure Certificate",
                         "Affidavit & Indemnity Bond"
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
 
                 advantages={{

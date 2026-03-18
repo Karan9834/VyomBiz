@@ -184,7 +184,7 @@ const AnnualCompliancePvtLtd = () => {
                         "Shareholder information",
                         "Auditor appointment details"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80"
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{
                     title: "How to Fulfil Annual Compliance?",

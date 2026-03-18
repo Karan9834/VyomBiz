@@ -212,7 +212,8 @@ const RemovalofDirector = () => {
                         "Notice of resignation filed with the company (if applicable)",
                         "Proof of dispatch",
                         "Acknowledgment of form, if received",
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{ title: "Process for Removal of Director", subtitle: "The removal process requires several procedural steps to comply with corporate laws.", steps: processSteps }}
                 features={otherInfoContent}

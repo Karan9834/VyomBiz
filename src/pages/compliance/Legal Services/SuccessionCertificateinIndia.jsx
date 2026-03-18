@@ -148,7 +148,7 @@ const SuccessionCertificateinIndia = () => {
                         "Copy of death certificate of a deceased legal heir (if any)",
                         "Residence Proof of the deceased"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1554224155-1696413575b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{
                     title: "Procedure to Get Certificate",

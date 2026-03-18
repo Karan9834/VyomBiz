@@ -116,7 +116,7 @@ const GSTAnnualReturnFiling = () => {
                         "Audit report (if required)",
                         "Digital Signature Certificate (DSC)"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1554224155-9ffd4cd95525?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{
                     title: "Steps to File GST Annual Return",

@@ -113,7 +113,8 @@ const ChangeInLLPAgreement = () => {
                         "Partner Consent",
                         "ID & Address Proof",
                         "Capital Contribution Details"
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
 
                 features={{

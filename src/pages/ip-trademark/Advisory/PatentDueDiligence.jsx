@@ -5,7 +5,7 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import due from "../../../assets/IP & Trademark/Advisory/patent-due-diligence/due.jpeg";
 import overview from "../../../assets/IP & Trademark/Advisory/patent-due-diligence/overview.jpeg";
-import process from "../../../assets/IP & Trademark/Advisory/patent-due-diligence/process.png";
+import process from "../../../assets/IP & Trademark/Advisory/patent-due-diligence/process.jpg";
 
 const PatentDueDiligenceOverview = () => {
     return (

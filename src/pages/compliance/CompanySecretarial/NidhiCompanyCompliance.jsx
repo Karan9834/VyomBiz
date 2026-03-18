@@ -101,7 +101,8 @@ const NidhiCompanyCompliance = () => {
                         "AOC-4 Filing",
                         "MGT-7 Filing",
                         "Income Tax Return"
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
 
                 process={{

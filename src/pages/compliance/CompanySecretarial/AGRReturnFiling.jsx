@@ -101,7 +101,8 @@ const AGRReturnFiling = () => {
                         "Financial Reports",
                         "License Fee Calculations",
                         "Previous AGR Records"
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
 
                 process={{

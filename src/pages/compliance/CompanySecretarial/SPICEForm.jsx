@@ -482,7 +482,7 @@ const SPICEForm = () => {
                         "Articles of Association (AOA)",
                         "Digital Signature Certificates (DSC)",
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{
                     title: "Step-by-Step SPICe+ Registration Process",

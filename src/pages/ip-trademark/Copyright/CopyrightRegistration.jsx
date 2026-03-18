@@ -5,7 +5,7 @@ import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
 import imp from "../../../assets/IP & Trademark/Copyright/copyright-registration/imp.png";
 import overview from "../../../assets/IP & Trademark/Copyright/copyright-registration/overview.jpeg";
-import process from "../../../assets/IP & Trademark/Copyright/copyright-registration/process.png";
+import process from "../../../assets/IP & Trademark/Copyright/copyright-registration/process.jpg";
 
 const CopyrightRegistrationOverview = () => {
     return (

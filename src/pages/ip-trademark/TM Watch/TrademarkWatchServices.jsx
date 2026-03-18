@@ -103,7 +103,7 @@ const TrademarkWatchServicesEligibility = () => {
                 <p className="text-[17px] text-slate-600 leading-relaxed mb-10">
                     Essential for businesses with established brand value.
                 </p>
-                
+
                 <div className="mb-10">
                     <h3 className="text-xl font-semibold text-[#072b47] mb-4">
                         Registered Trademark Owners
@@ -168,30 +168,30 @@ const TrademarkWatchServicesDocumentsSection = () => {
                     What we need to set up your trademark watch.
                 </p>
                 <div className="space-y-4">
-                    
+
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Trademark Registration Details (Copy of the trademark registration certificate or application)</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Trademark Registration Details (Copy of the trademark registration certificate or application)</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Marks to be Tracked (Word marks or logos that need monitoring)</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Marks to be Tracked (Word marks or logos that need monitoring)</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Monitoring Jurisdictions (Countries or regions where trademark monitoring is required)</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Monitoring Jurisdictions (Countries or regions where trademark monitoring is required)</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Applicable Trademark Classes (Relevant classes under the NICE classification system)</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Applicable Trademark Classes (Relevant classes under the NICE classification system)</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Contact Person for Alerts (Designated representative to receive monitoring notifications)</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Contact Person for Alerts (Designated representative to receive monitoring notifications)</p>
                     </div>
                     <div className="flex items-start gap-3">
-                         <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
-                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Authorization Document (Power of attorney if legal action or opposition filing is required)</p>
+                        <div className="w-2 h-2 rounded-full bg-[#f1a134] mt-2 shrink-0"></div>
+                        <p className="text-[17px] text-slate-600 leading-relaxed font-medium">Authorization Document (Power of attorney if legal action or opposition filing is required)</p>
                     </div>
                 </div>
             </div>
@@ -220,7 +220,7 @@ const TrademarkWatchServicesProcessSection = () => {
                         />
                     </div>
                     <div className="lg:col-span-2">
-                        
+
                         <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-200">
                             <div className="text-[16px] font-semibold text-[#072b47]">
                                 1.
@@ -320,111 +320,111 @@ const TrademarkWatchServicesFeaturesSection = () => {
                     </p>
                 </div>
                 <div>
-                    
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                1.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Experienced IP Lawyers
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Manual verification of detected conflicts by intellectual property experts.
-                                </p>
-                            </div>
+
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            1.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                2.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Global Monitoring
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Tracking trademarks across multiple countries and international databases including World Intellectual Property Organization records.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Experienced IP Lawyers
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Manual verification of detected conflicts by intellectual property experts.
+                            </p>
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                3.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Instant Notifications
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Immediate alerts whenever a potentially conflicting trademark appears.
-                                </p>
-                            </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            2.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                4.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Legal Strategy Guidance
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Practical recommendations for addressing each identified risk.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Global Monitoring
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Tracking trademarks across multiple countries and international databases including World Intellectual Property Organization records.
+                            </p>
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                5.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Advanced Monitoring Technology
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Technology-driven tools to detect similar or identical trademarks efficiently.
-                                </p>
-                            </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            3.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                6.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Complete Legal Support
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    From conflict detection to opposition filing and legal representation.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Instant Notifications
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Immediate alerts whenever a potentially conflicting trademark appears.
+                            </p>
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                7.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Transparent Pricing Plans
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Simple and affordable monitoring packages without hidden charges.
-                                </p>
-                            </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            4.
                         </div>
-                        <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]">
-                                8.
-                            </div>
-                            <div>
-                                <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                    Trusted Protection
-                                </h3>
-                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                    Extensive experience protecting brands from infringement worldwide.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Legal Strategy Guidance
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Practical recommendations for addressing each identified risk.
+                            </p>
                         </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            5.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Advanced Monitoring Technology
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Technology-driven tools to detect similar or identical trademarks efficiently.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            6.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Complete Legal Support
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                From conflict detection to opposition filing and legal representation.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            7.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Transparent Pricing Plans
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Simple and affordable monitoring packages without hidden charges.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
+                        <div className="text-[15px] font-semibold text-[#072b47]">
+                            8.
+                        </div>
+                        <div>
+                            <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                Trusted Protection
+                            </h3>
+                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                Extensive experience protecting brands from infringement worldwide.
+                            </p>
+                        </div>
+                    </div>
                     <div className="border-t border-slate-300"></div>
                 </div>
             </div>

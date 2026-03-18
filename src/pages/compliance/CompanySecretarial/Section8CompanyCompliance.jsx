@@ -353,7 +353,7 @@ const Section8CompanyCompliance = () => {
                         "Auditor's Report",
                         "Annual Return details",
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1554224155-1696413575b8?auto=format&fit=crop&w=800"
+                    imageUrl: "Documents.jpg"
                 }}
                 features={otherInfoContent}
                 postCompliance={penaltyContent}

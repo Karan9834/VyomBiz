@@ -221,7 +221,8 @@ const AppointmentandResignationofDirectors = () => {
                         "All documents must be apostilled if the Director is a non-resident of India.",
                         "Proof of dispatch.",
                         "Acknowledgment of form, if received.",
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{ title: "Appointment of Director — Procedure", subtitle: "Step-by-step procedure for appointing a new director under the Companies Act, 2013.", steps: processSteps }}
                 postCompliance={resignationContent}

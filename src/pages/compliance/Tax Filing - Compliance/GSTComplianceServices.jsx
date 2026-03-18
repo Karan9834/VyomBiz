@@ -120,7 +120,7 @@ const GSTComplianceServices = () => {
                         "E-way bills and tax payment receipts",
                         "Financial statements (Balance Sheet and P&L)"
                     ],
-                    imageUrl: "https://images.unsplash.com/photo-1554224155-1696413575b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{
                     title: "GST Compliance Process",

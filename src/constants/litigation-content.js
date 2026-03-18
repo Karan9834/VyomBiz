@@ -26,7 +26,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Investment Disputes: An Overview",
-                image: "/lawyer-services-images/investment-complaint-overview.png",
+                image: "/consumercomplaint/Investment.png",
                 content: [
                     "Feeling cheated by your investment? Investment consumer complaints are crucial for protecting investor rights against misleading information, poor advice, hidden fees, and unethical practices.",
                     "Filing a complaint ensures that investment firms and advisors are held accountable. Whether it's a mutual fund, stock broker, or a wealth management service, you have the right to fair and transparent dealings.",
@@ -176,7 +176,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Consumer Grievances – Overview",
-                image: "/lawyer-services-images/grievances-overview.png",
+                image: "/consumercomplaint/Grievances.png",
                 content: [
                     "Consumer grievances can arise in many situations, including defective products, delayed deliveries, incorrect billing, or unsatisfactory services. These issues are often caused by misleading advertisements, hidden charges, or failure to meet promised standards.",
                     "Raising a formal complaint helps ensure accountability and encourages businesses to follow fair trade practices. It also helps consumers seek refunds, replacements, or compensation for losses.",
@@ -362,7 +362,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Home Appliances Consumer Complaint - An Overview",
-                image: "/lawyer-services-images/home-appliances-complaint-overview.png",
+                image: "/consumercomplaint/Home.jpg",
                 content: [
                     "Home appliances make our lives easier, but faulty products and poor service can be frustrating. Common issues include manufacturing defects, refusal to honor warranty, and lack of spare parts.",
                     "Filing a consumer complaint holds companies accountable for the quality of their products and services. It ensures that you receive what you paid for and that your rights as a consumer are respected.",
@@ -505,7 +505,7 @@ export const litigationContent = {
 
             overview: {
                 title: "Hotel Consumer Complaints – Overview",
-                image: "/lawyer-services-images/hotels-complaint-overview.png",
+                image: "/consumercomplaint/Hotel.jpg",
                 content: [
                     "A hotel stay is expected to provide comfort and quality service. However, guests may sometimes face issues such as unclean rooms, poor customer service, unexpected charges, or misleading information about hotel facilities.",
                     "When such situations occur, filing a consumer complaint helps address the issue and seek proper resolution. It also ensures that hotels remain accountable for service deficiencies and unfair practices.",
@@ -668,7 +668,7 @@ export const litigationContent = {
 
             overview: {
                 title: "Insurance Complaints – Overview",
-                image: "/lawyer-services-images/insurance-complaint-overview.png",
+                image: "/consumercomplaint/Insurance.jpg",
                 content: [
                     "Insurance policies are designed to provide financial protection during difficult times. However, claim rejections or delays can create serious financial challenges for policyholders.",
                     "Common issues include claim denial based on technical reasons, delayed settlements, incorrect policy interpretation, and poor customer support. Filing a formal complaint ensures insurers remain accountable for service deficiencies.",
@@ -829,7 +829,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "IT Sector Complaints: An Overview",
-                image: "/lawyer-services-images/it-complaint-overview.png",
+                image: "/consumercomplaint/ITSector.jpg",
                 content: [
                     "Encountering issues with IT companies, such as defective software, hardware malfunctions, or poor service, can be frustrating and costly. A consumer complaint is a crucial step towards resolution.",
                     "Common grievances include breach of contract, misleading advertising, security vulnerabilities, hidden fees, and unresponsive customer support. Documentation like service agreements and email correspondence is key to substantiating your case.",
@@ -971,7 +971,7 @@ export const litigationContent = {
         "sections": {
             "overview": {
                 "title": "Medical Consumer Complaints – Overview",
-                "image": "/lawyer-services-images/medical-complaint-overview.png",
+                "image": "/consumercomplaint/Medical.jpg",
                 "content": [
                     "Medical consumer complaints arise when patients face issues such as incorrect diagnosis, surgical errors, excessive hospital charges, or unsatisfactory medical care.",
                     "Raising a formal complaint allows patients to address these concerns and seek appropriate resolution. It also helps ensure accountability among healthcare providers and promotes better standards of patient care.",
@@ -1143,7 +1143,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Real Estate Complaints: An Overview",
-                image: "/lawyer-services-images/real-estate-complaint-overview.png",
+                image: "/consumercomplaint/RealEstate.jpg",
                 content: [
                     "A real estate consumer complaint is essential when you face dissatisfaction in buying, selling, or renting properties. Whether it's a delay in possession, poor construction quality, or hidden charges, these grievances need formal legal attention.",
                     "Complaints often involve misrepresentation, fraud, breach of contract, failure to disclose material information, or discriminatory practices. Filing a complaint ensures that developers and agents are held accountable for their actions.",
@@ -1285,7 +1285,7 @@ export const litigationContent = {
         "sections": {
             "overview": {
                 "title": "Retail Consumer Complaints – Overview",
-                "image": "/lawyer-services-images/retail-complaint-overview.png",
+                "image": "/consumercomplaint/Retail.jpg",
                 "content": [
                     "Retail consumer complaints arise when shoppers face issues related to product quality, pricing, or customer service. These complaints often involve defective goods, misleading promotions, or problems with returns and exchanges.",
                     "Consumers may also experience billing discrepancies, delayed deliveries, or lack of support from retailers when raising concerns.",
@@ -1457,7 +1457,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Streaming Platform Complaints: An Overview",
-                image: "/lawyer-services-images/streaming-complaint-overview.png",
+                image: "/consumercomplaint/Streaming.jpg",
                 content: [
                     "Streaming platforms have revolutionized entertainment, but issues like subscription frauds, unexpected charges, and technical glitches can disrupt the experience. Whether you are battling buffering nightmares or facing billing bewilderment, filing a formal complaint can help.",
                     "Common complaints involve navigation difficulties, technical troubles like audio/video lag, complex account management, and misleading subscription tiers. A consumer complaint helps you seek redressal for these service deficiencies.",
@@ -1599,7 +1599,7 @@ export const litigationContent = {
         "sections": {
             "overview": {
                 "title": "Travel Consumer Complaints – Overview",
-                "image": "/lawyer-services-images/travel-complaint-overview.png",
+                "image": "/consumercomplaint/Travel.jpg",
                 "content": [
                     "Travel consumer complaints arise when passengers face issues such as flight cancellations, baggage loss, misleading travel packages, or unsatisfactory services from travel providers.",
                     "These complaints may involve airlines, travel agencies, hotels, or online booking platforms that fail to deliver the services promised to customers.",
@@ -3253,7 +3253,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Automobile Complaints – An Overview",
-                image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                image: "/consumercomplaint/AutomobileComplaints.jpg",
                 content: [
                     "Automobile consumer complaints address issues faced by car buyers, such as manufacturing defects, poor workmanship, faulty components, or misleading advertising.",
                     "A formal complaint can be filed against manufacturers, dealerships, or service providers for unfair trade practices or inadequate service.",
@@ -3312,7 +3312,7 @@ export const litigationContent = {
                         desc: "Photographs/Videos of Defects."
                     }
                 ],
-                image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                image: "/consumercomplaint/AutomobileComplaintsDocument.jpg"
             },
             process: {
                 title: "Our Resolution Process",
@@ -3419,8 +3419,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Banking Complaints – Overview",
-                image:
-                    "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                image: "/consumercomplaint/bank1.png",
                 content: [
                     "Banking issues such as unauthorized transactions, hidden charges, and aggressive recovery practices are becoming more common for consumers.",
                     "While the Reserve Bank of India provides a complaint redressal system through the Banking Ombudsman, many customers find the process confusing and time-consuming.",
@@ -3501,8 +3500,7 @@ export const litigationContent = {
                             "Loan documents, credit card statements, or account terms and conditions."
                     }
                 ],
-                image:
-                    "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                image: "/consumercomplaint/bank.jpg"
             },
 
             process: {
@@ -3616,7 +3614,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Education Complaints – An Overview",
-                image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                image: "/consumercomplaint/EducationComplaints.jpg",
                 content: [
                     "Filing a consumer complaint is a vital step when encountering issues like fee refunds, fake degrees, or lack of facilities.",
                     "Educational institutions are liable for service deficiencies under the Consumer Protection Act.",
@@ -3685,7 +3683,7 @@ export const litigationContent = {
                         desc: "Correspondence with Institution and Withdrawal Application."
                     }
                 ],
-                image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                image: "/consumercomplaint/EducationComplaints1.jpg"
             },
             process: {
                 title: "Our Resolution Process",
@@ -3778,7 +3776,7 @@ export const litigationContent = {
         sections: {
             overview: {
                 title: "Courier Complaints – An Overview",
-                image: "https://images.unsplash.com/photo-1566576912906-2531d013e9ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                image: "/consumercomplaint/courier-logistics.jpg",
                 content: [
                     "Courier and Logistics services are essential for timely delivery, but issues like delays, lost items, and damages are common.",
                     "Filing a formal consumer complaint allows you to officially report service failures and seek redressal.",
@@ -3847,7 +3845,7 @@ export const litigationContent = {
                         desc: "Govt ID and Complaint Reference Number."
                     }
                 ],
-                image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                image: "/consumercomplaint/courier-logistics1.jpg"
             },
             process: {
                 title: "Our Resolution Process",
@@ -3950,7 +3948,7 @@ export const litigationContent = {
             overview: {
                 title: "E-commerce Complaints – Overview",
                 image:
-                    "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "/consumercomplaint/E-commerce.png",
                 content: [
                     "Online shopping disputes are increasingly common and may involve defective products, delayed deliveries, or refusal of refunds by sellers.",
                     "Consumers have the right to raise complaints against sellers or platforms for unfair trade practices and poor service.",
@@ -4033,7 +4031,7 @@ export const litigationContent = {
                     }
                 ],
                 image:
-                    "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    "/consumercomplaint/E-commerce1.jpg",
             },
 
             process: {

@@ -162,7 +162,8 @@ const ChangeinDirectors = () => {
                         "Consent to act as director (Form DIR-2)",
                         "Board resolution for appointment or removal",
                         "Resignation letter (if applicable)",
-                    ]
+                    ],
+                    imageUrl: "Documents.jpg"
                 }}
                 process={{
                     title: "Process for Change in Directors",
