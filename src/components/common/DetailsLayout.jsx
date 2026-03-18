@@ -140,28 +140,37 @@ const DetailsLayout = ({
                                     </div>
                                 </div>
                                 <div className="lg:w-2/5 w-full">
-                                    <div className="relative group">
-                                        <div className="absolute inset-0 bg-gradient-to-tr from-[#f1a134] to-orange-300 rounded-[3rem] blur-2xl opacity-10" />
-                                        <div className="relative bg-white p-10 rounded-[3rem] border border-slate-100 shadow-2xl">
-                                            <h3 className="text-2xl font-black text-[#072b47] mb-8 flex items-center gap-3">
-                                                <Shield className="text-[#f1a134]" size={28} />
-                                                {overview.whyIdealTitle || "Why Mandatory?"}
-                                            </h3>
-                                            <div className="space-y-6">
-                                                {overview.whyIdealList?.map((item, i) => (
-                                                    <div key={i} className="flex gap-4 group/item">
-                                                        <div className="w-10 h-10 bg-slate-50 border border-slate-100 rounded-xl flex items-center justify-center shrink-0 group-hover/item:bg-[#1e40af] transition-all">
-                                                            <CheckCircle2 className="text-[#f1a134] group-hover/item:text-white" size={20} />
-                                                        </div>
-                                                        <div>
-                                                            <p className="font-black text-[#072b47] text-sm mb-1">{item.title}</p>
-                                                            <p className="text-xs text-slate-500 font-bold leading-relaxed">{item.desc}</p>
-                                                        </div>
-                                                    </div>
-                                                ))}
+                                    {overview.imageUrl ? (
+                                        <div className="relative group h-full h-min-[400px]">
+                                            <div className="absolute inset-0 bg-gradient-to-tr from-[#f1a134] to-orange-300 rounded-[3rem] blur-2xl opacity-10" />
+                                            <div className="relative overflow-hidden rounded-[3rem] border-8 border-white shadow-2xl h-full">
+                                                <img src={overview.imageUrl} alt="Overview" className="w-full h-full object-cover min-h-[400px]" />
                                             </div>
                                         </div>
-                                    </div>
+                                    ) : (
+                                        <div className="relative group">
+                                            <div className="absolute inset-0 bg-gradient-to-tr from-[#f1a134] to-orange-300 rounded-[3rem] blur-2xl opacity-10" />
+                                            <div className="relative bg-white p-10 rounded-[3rem] border border-slate-100 shadow-2xl">
+                                                <h3 className="text-2xl font-black text-[#072b47] mb-8 flex items-center gap-3">
+                                                    <Shield className="text-[#f1a134]" size={28} />
+                                                    {overview.whyIdealTitle || "Why Mandatory?"}
+                                                </h3>
+                                                <div className="space-y-6">
+                                                    {overview.whyIdealList?.map((item, i) => (
+                                                        <div key={i} className="flex gap-4 group/item">
+                                                            <div className="w-10 h-10 bg-slate-50 border border-slate-100 rounded-xl flex items-center justify-center shrink-0 group-hover/item:bg-[#1e40af] transition-all">
+                                                                <CheckCircle2 className="text-[#f1a134] group-hover/item:text-white" size={20} />
+                                                            </div>
+                                                            <div>
+                                                                <p className="font-black text-[#072b47] text-sm mb-1">{item.title}</p>
+                                                                <p className="text-xs text-slate-500 font-bold leading-relaxed">{item.desc}</p>
+                                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         )}
