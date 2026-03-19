@@ -12,94 +12,103 @@ const UttarPradeshPollutionControlBoard = () => {
                 <HeroLayout
                     heroTitleMain="Uttar Pradesh"
                     heroTitleSuffix="Pollution Control Board (UPPCB)"
-                    heroDescription="Looking for seamless Uttar Pradesh Pollution Control Board (UPPCB) approval? Get expert support to ensure 100% compliance with Uttar Pradesh environmental regulations for your manufacturing or service unit."
+                    heroDescription="Get UPPCB Consent Without Delays. Ensure your business complies with environmental regulations in Uttar Pradesh with expert assistance. From documentation to approval, Vyombiz managed by Clink Consultancy Services Private Limited simplifies the entire UPPCB NOC process so you can focus on building your business."
                     stats={[
                         { count: "100K+", label: "Happy Customers" },
                         { count: "3500+", label: "Expert Advisors" },
                         { count: "50+", label: "Branch Offices" },
-                        { count: "99%", label: "SLA Delivery" }
+                        { count: "500+", label: "Compliance Experts" }
                     ]}
                     formTitle="Get Free Expert Consultation"
                 />
 
                 <DetailsLayout
                     overview={{
-                        title: "UPPCB Authorization —",
-                        highlightTitle: "Regional Compliance",
+                        title: "What is the",
+                        highlightTitle: "UP Pollution Control Board?",
                         description: [
-                            "The Uttar Pradesh Pollution Control Board (UPPCB) is a legal organization established under the Water Act that ensures the implementation of environmental laws within Uttar Pradesh. With 25 regional offices, it manages and controls pollution acts across the state.",
-                            "Consent to Establish (CTE) is a mandatory No Objection Certificate (NOC) required from UPPCB before constructing any industrial facility. It affirms that environmental norms have been followed and acts as an enlightening tool for factories to reduce toxicity in critical zones like the Ganga basin.",
-                            "Fear of delays in securing your UPPCB approval? Talk to VyomBiz expert consultants today for a seamless and integrated compliance journey."
+                            "The Uttar Pradesh Pollution Control Board (UPPCB) is the state regulatory authority responsible for controlling and preventing pollution in Uttar Pradesh. It functions under the framework of the Central Pollution Control Board (CPCB) and implements environmental regulations related to air, water, and waste management.",
+                            "Businesses operating in manufacturing, processing, or industrial activities must obtain environmental consent from UPPCB before starting operations. This approval confirms that the company follows environmental standards and pollution control norms established by the government.",
+                            "Through professional compliance support, Vyombiz managed by Clink Consultancy Services Private Limited helps businesses obtain UPPCB approvals quickly and accurately while ensuring adherence to environmental laws."
                         ],
-                        whyIdealTitle: "Who Needs It?",
+                        whyIdealTitle: "Who Needs Consent?",
                         whyIdealList: [
-                            { title: "Manufacturing Units", desc: "All factories and industrial entities operating within Uttar Pradesh boundaries." },
-                            { title: "Waste Management", desc: "E-Waste, Solid Waste, and Hazardous waste management facilities." },
-                            { title: "Healthcare Centers", desc: "Hospitals, Clinics, and Laboratories generating bio-medical waste." },
-                            { title: "Food Industry", desc: "Dairy plants, slaughterhouses, and larger food processing establishments." }
+                            { title: "Manufacturing units", desc: "Factories involved in production and industrial activities." },
+                            { title: "Chemical & Pharma", desc: "Plants handling chemical processing and pharmaceutical products." },
+                            { title: "Food Processing", desc: "Slaughterhouses, dairy plants, and food packaging units." },
+                            { title: "Textile & Metal", desc: "Textile industries and specialized metal processing units." }
                         ]
                     }}
 
                     advantages={{
-                        title: "Benefits of UPPCB NOC",
-                        subtitle: "Environmental & Business Value",
+                        title: "Benefits of UPPCB Registration",
+                        subtitle: "Essential for legal compliance and long-term business sustainability.",
                         list: [
-                            { title: "Sustainable Development", desc: "Promotes financial growth alongside ecological protection and social equity in the state." },
-                            { title: "Resource Conservation", desc: "Prevents depletion of natural resources while maintaining regional water and air quality." },
-                            { title: "Efficient Waste Management", desc: "Permits the implementation of modern waste management practices to reduce and reuse waste." },
-                            { title: "Legal Safety", desc: "Ensures full compliance with the Water & Air Acts, protecting you from litigation and shutdowns." },
-                            { title: "Consumer Trust", desc: "Boosts brand value by demonstrating adherence to state environmental and health guidelines." },
-                            { title: "Eco-Friendly Operations", desc: "Encourages adoption of solar power, CNG, and energy-efficient lighting in workspaces." }
+                            { title: "Legal Authorization", desc: "Provides the legal authority to establish and operate industries without regulatory risks." },
+                            { title: "Regulatory Compliance", desc: "Ensures full compliance with the latest environmental laws in Uttar Pradesh." },
+                            { title: "Penalty Mitigation", desc: "Significantly reduces the risk of government penalties, fines, or operational shutdowns." },
+                            { title: "Operational Credibility", desc: "Improves your business credibility with investors, partners, and financial institutions." },
+                            { title: "Sustainable Operations", desc: "Promotes environmentally responsible and sustainable business practices." }
                         ]
                     }}
 
                     eligibility={{
                         title: "Industry Categories",
-                        subtitle: "Pollution Index Scores in UP",
+                        subtitle: "The UPPCB classifies industries based on their pollution potential.",
                         list: [
-                            { title: "White Category", desc: "Least polluting (Index 0-20). No formal consent certificate needed, only guidelines apply." },
-                            { title: "Green Category", desc: "Moderately polluting (Index 21-40). Mandatory CTE and CTO certificates required." },
-                            { title: "Orange Category", desc: "High polluting (Index 41-59). Strictly prohibited to commence without consent certificates." },
-                            { title: "Red Category", desc: "Excessively polluting (Index > 60). Prohibited or heavily restricted due to hazardous emissions." }
+                            { title: "Red Category", desc: "Highest pollution potential requiring strict monitoring (e.g., Heavy manufacturing, Mining)." },
+                            { title: "Orange Category", desc: "Moderate pollution levels with comparatively fewer compliance requirements." },
+                            { title: "Green Category", desc: "Low pollution generating units with simplified approvals and faster processing." },
+                            { title: "White Category", desc: "Non-polluting industries that may not require extensive clearances." }
                         ]
                     }}
 
                     documents={{
                         imageUrl: docImage,
-                        title: "Required Documents",
-                        subtitle: "Paperwork for CTE/CTO filing",
+                        title: "Documents Required",
+                        subtitle: "Organization and verification of paperwork ensures faster processing.",
                         list: [
-                            { title: "Identity Docs", desc: "Aadhar and PAN Card of the authorized signatory or business owner." },
-                            { title: "Property Proof", desc: "Registered Sale Deed, Lease Deed, or valid Rent Agreement for the site." },
-                            { title: "Layout Plan", desc: "Detailed site and business design plan highlighting discharge points." },
-                            { title: "Legal Status", desc: "Partnership Deed, MOA/AOA, or Proprietorship declaration for the entity." },
-                            { title: "CA Certificate", desc: "Verified Certificate from an auditor regarding project capital investment." },
-                            { title: "Water Balance", desc: "Schematic chart of wastewater and underground water balance/usage." }
+                            { title: "Business Registration", desc: "Official certificate of registration for your business entity." },
+                            { title: "PAN Card", desc: "PAN card details of the company or authorized applicant." },
+                            { title: "Project Report", desc: "Detailed business activity description and project report." },
+                            { title: "Property Proof", desc: "Land ownership documents or a valid lease agreement." },
+                            { title: "Unit Layout", desc: "Layout plan of the industrial unit or manufacturing facility." },
+                            { title: "Process Details", desc: "Comprehensive details of the manufacturing process." },
+                            { title: "Machinery List", desc: "List of all machinery and their installed capacity." },
+                            { title: "Pollution Controls", desc: "Details of water/air pollution control measures in place." }
+                        ]
+                    }}
+
+                    typesOfCompliance={{
+                        title: "Types of UPPCB Consents",
+                        subtitle: "Approvals required depending on the stage of your business operation.",
+                        list: [
+                            { title: "Consent to Establish (CTE)", desc: "Required BEFORE setting up any industrial unit. Verifies that the proposed activity follows environmental norms." },
+                            { title: "Consent to Operate (CTO)", desc: "Required AFTER establishment but BEFORE commercial operations. Confirms installed pollution control systems." }
                         ]
                     }}
 
                     process={{
-                        title: "Registration Procedure",
-                        subtitle: "Your path to UPPCB clearance",
+                        title: "Step-by-Step Selection Process",
+                        subtitle: "A structured procedural approach ensures smooth UPPCB clearance.",
                         steps: [
-                            { step: "01", title: "Common Application", desc: "Fill out the comprehensive application form online with all industrial specifications." },
-                            { step: "02", title: "Digital Submission", desc: "Upload requisite documents including site layout and flowcharts on the UPPCB portal." },
-                            { step: "03", title: "Fee Payment", desc: "Make the consolidated application fee payment as prescribed for your category." },
-                            { step: "04", title: "Field Inspection", desc: "An authorized board team reviews and inspects the site for field verification." },
-                            { step: "05", title: "Grant of NOC", desc: "Obtain the final CTE or CTO certificate within 90 days of successful inspection scrutiny." }
+                            { step: "01", title: "Categorization", desc: "Analyzing business activity to categorize it into Red, Orange, Green, or White." },
+                            { step: "02", title: "Documentation", desc: "All required documents and technical environmental data are verified." },
+                            { step: "03", title: "Application Filing", desc: "The application for CTE or CTO is submitted through the official UPPCB portal." },
+                            { step: "04", title: "Site Inspection", desc: "Authorities may conduct field inspections to verify pollution control systems." },
+                            { step: "05", title: "Certification", desc: "Upon successful review, the UPPCB issues the official environmental consent." }
                         ]
                     }}
 
                     features={{
-                        title: "Why Choose VyomBiz?",
-                        subtitle: "Your Environmental Consulting Partner",
+                        title: "Why Choose Vyombiz?",
+                        subtitle: "End-to-end guidance for environmental registrations in Uttar Pradesh.",
                         list: [
-                            { title: "10+ Years Exp", desc: "Over a decade of core experience in environmental consulting and SPCB liaison." },
-                            { title: "300+ Scaled Units", desc: "Successfully assisted major industrial houses in obtaining legacy UPPCB clearances." },
-                            { title: "Pre-Screening", desc: "We ensure all documents are audit-ready before final submission to avoid rejections." },
-                            { title: "70% Market Share", desc: "Dominant player in the environmental licensing space with a high reputation." },
-                            { title: "Auto-Renewal", desc: "Dedicated systems to track and manage your 5-10 year validity and renewal cycles." },
-                            { title: "Expert Representation", desc: "In-house team to represent your case during complex technical inspections." }
+                            { title: "Compliance Mastery", desc: "Expert guidance on environmental regulations and SPCB liaison." },
+                            { title: "Verification Ready", desc: "We pre-screen all documents to ensure they are audit-ready for inspections." },
+                            { title: "Faster Approvals", desc: "Efficient application handling to minimize delays and avoid rejections." },
+                            { title: "Dedicated Support", desc: "Compliance specialists who handle the complex technical paperwork for you." },
+                            { title: "Transparent Service", desc: "Transparent processing with reliable updates at every stage of the journey." }
                         ]
                     }}
                 />
@@ -108,55 +117,39 @@ const UttarPradeshPollutionControlBoard = () => {
                     title="Frequently Asked Questions"
                     faqs={[
                         {
-                            question: "What is the purpose of UPPCB?",
-                            answer: "It ensures implementation of environmental laws to reduce air and water pollution, acting as a regulator for industries in UP."
+                            question: "Is UPPCB consent mandatory for all industries?",
+                            answer: "Yes, any business involved in activities that may generate air pollution, water discharge, or industrial waste must obtain approval."
                         },
                         {
-                            question: "Who needs a UPPCB consent certificate?",
-                            answer: "Manufacturing units, healthcare labs, traders, and waste management entities operating in UP need CTE/CTO."
+                            question: "What is the difference between CTE and CTO?",
+                            answer: "CTE (Consent to Establish) is obtained before setting up the unit, while CTO (Consent to Operate) is required before starting production."
                         },
                         {
-                            question: "How are industries categorized in UP?",
-                            answer: "Based on pollution index scores: White (0-20), Green (21-40), Orange (41-59), and Red (Above 60)."
+                            question: "How does categorization affect the process?",
+                            answer: "Industries are categorized (Red/Orange/Green/White) based on pollution levels, which determines the complexity and monitoring requirements."
                         },
                         {
-                            question: "What is the validity of a UPPCB Certificate?",
-                            answer: "Authorization is typically valid for 5 to 10 years depending on the industry category and compliance level."
+                            question: "Does Vyombiz assist in on-site inspections?",
+                            answer: "Yes, our experts provide end-to-end support, including preparation for inspections and coordination with fire/pollution authorities."
                         },
                         {
-                            question: "How long is the process to get a certificate?",
-                            answer: "It involves online filing, fee payment, and field verification, taking approximately 90 days for final grant."
+                            question: "What happens if a business operates without CTO?",
+                            answer: "Operating without a valid CTO is illegal and can lead to heavy penalties, closure notices, or disconnection of utilities."
                         }
                     ]}
                 />
 
                 <ReviewsSection
-                    title="UP Business Success"
-                    subtitle="Trusted by factories across Uttar Pradesh."
+                    title="Start Your UPPCB Registration Today"
+                    subtitle="Setting up a compliant business is essential for success. Secure your UPPCB approval smoothly with Vyombiz."
                     reviews={[
                         {
-                            name: "Manish Tiwari",
-                            role: "Plant Manager",
-                            company: "UP Steels",
+                            name: "Clink Consultancy",
+                            role: "Managed Service",
+                            company: "VyomBiz",
                             rating: 5,
-                            initials: "MT",
-                            text: "VyomBiz handled our Red category inspection flawlessly. Their knowledge of the local regional office was a huge plus."
-                        },
-                        {
-                            name: "Deepak Yadav",
-                            role: "Director",
-                            company: "Yadav Dairy",
-                            rating: 5,
-                            initials: "DY",
-                            text: "Securing our CTE was easy with their digital support. They managed all the wastewater balance calculations for us."
-                        },
-                        {
-                            name: "Rishi Verma",
-                            role: "Owner",
-                            company: "Verma Plastics",
-                            rating: 4.9,
-                            initials: "RV",
-                            text: "Very professional in managing Orange category certificates. They helped us set up our STP as per the board's norms."
+                            initials: "CC",
+                            text: "Securing your UPPCB environmental consent is made simple with our expert guidance and structured compliance approach."
                         }
                     ]}
                 />

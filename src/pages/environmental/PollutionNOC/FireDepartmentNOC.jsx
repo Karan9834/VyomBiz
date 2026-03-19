@@ -11,8 +11,8 @@ const FireDepartmentNOC = () => {
             <div className="relative z-10 space-y-2 lg:space-y-4">
                 <HeroLayout
                     heroTitleMain="Fire Department"
-                    heroTitleSuffix="NOC Certification"
-                    heroDescription="Do you wish to get a fire department NOC for your residential, educational, or high-risk building? Our experts ensure 100% compliance with fire safety standards. Join 1275+ businesses who secured their NOC with our expert-led advisory services."
+                    heroTitleSuffix="NOC"
+                    heroDescription="Get Your Fire Department NOC Without the Hassle. Ensure your business premises meet fire safety regulations and operate legally with a Fire Department NOC. From documentation to approval, our experts simplify the entire process so you can focus on running your business."
                     stats={[
                         { count: "100K+", label: "Happy Customers" },
                         { count: "3500+", label: "Expert Advisors" },
@@ -24,92 +24,113 @@ const FireDepartmentNOC = () => {
 
                 <DetailsLayout
                     overview={{
-                        title: "Fire Department NOC —",
-                        highlightTitle: "Safety Overview",
+                        title: "What is a",
+                        highlightTitle: "Fire Department NOC?",
                         description: [
-                            "The Fire Department NOC is a critical certificate issued to protect premises against fire damage. It validates that a building meets the fire safety standards prescribed by the Bureau of Indian Standards and state-specific fire service departments.",
-                            "Inspection ensures that fire prevention and safety measures are functionally integrated into the building's architecture. For multi-plex or high-rise buildings (above 15 meters), obtaining this NOC is a compulsory legal mandate.",
-                            "Worried about the complexities of fire safety certification? Talk to VyomBiz experts today for a seamless and integrated experience."
+                            "A Fire Department No Objection Certificate (NOC) is an official authorization issued by the local fire authority confirming that a building or business premises complies with prescribed fire safety norms.",
+                            "This certificate is mandatory for many commercial, industrial, and institutional establishments before starting operations. It verifies that the property has adequate fire prevention and protection systems such as fire extinguishers, alarms, emergency exits, and evacuation measures.",
+                            "Obtaining this approval ensures both legal compliance and workplace safety, protecting employees, customers, and assets from potential fire hazards.",
+                            "Businesses across sectors rely on professional assistance for this process. Vyombiz managed by Clink Consultancy Services Private Limited assists companies in preparing the required documentation, coordinating with fire authorities, and securing approvals efficiently."
                         ],
-                        whyIdealTitle: "Who Needs It?",
+                        whyIdealTitle: "Why Mandatory?",
                         whyIdealList: [
-                            { title: "Educational Units", desc: "Schools, Colleges, and Universities with student residential facilities." },
-                            { title: "Business Buildings", desc: "Corporate offices and commercial complexes with high occupant density." },
-                            { title: "High-Rise Residential", desc: "Apartment blocks and residential towers above 15 meters in height." },
-                            { title: "Industrial Units", desc: "Manufacturing facilities and warehouses handling hazardous materials." }
+                            { title: "Legal Compliance", desc: "Mandatory for high-rise buildings and specified commercial premises." },
+                            { title: "Safety Assurance", desc: "Verified fire safety systems protect lives and infrastructure." },
+                            { title: "Business Licensing", desc: "Often a prerequisite for other business licenses and permits." },
+                            { title: "Operational Credibility", desc: "Builds trust with stakeholders and ensures legal safety standards." }
                         ]
                     }}
 
                     advantages={{
-                        title: "Benefits of Fire NOC",
-                        subtitle: "Secure Your Business & Life Safety",
+                        title: "Why Fire Department NOC is Important",
+                        subtitle: "More than just a regulatory requirement-it plays a vital role in safeguarding people and infrastructure.",
                         list: [
-                            { title: "Trade License Ease", desc: "Compulsory attachment for applying for or renewing trade licenses with local civil bodies." },
-                            { title: "Business Continuity", desc: "Ensures legal orchestration of business activities without the risk of sealing or shutdowns." },
-                            { title: "Life Safety", desc: "Guarantees that essential fire-fighting equipment is in place to protect occupants from emergencies." },
-                            { title: "Insurance Compliance", desc: "Most building insurance claims require a valid Fire NOC for processing in case of accidents." },
-                            { title: "Property Value", desc: "Verified safety standards increase the market value and trust for commercial leasing." },
-                            { title: "Legal Protection", desc: "Protects directors and owners from criminal liability in case of fire incidents on premises." }
+                            { title: "Legal Compliance", desc: "Many state laws mandate a Fire NOC before starting operations in commercial or industrial spaces." },
+                            { title: "Safety Assurance", desc: "It ensures your premises follow proper fire safety standards and emergency preparedness." },
+                            { title: "Business Licensing", desc: "Many other licenses and registrations require a Fire NOC as a prerequisite." },
+                            { title: "Insurance Approvals", desc: "Insurance companies often require proof of fire safety compliance for claims and coverage." },
+                            { title: "Operational Credibility", desc: "Demonstrates responsibility and builds trust among employees, customers, and stakeholders." }
                         ]
                     }}
 
                     eligibility={{
-                        title: "Checklist for Success",
-                        subtitle: "Pre and post-application requirements",
+                        title: "Who Needs a Fire Department NOC?",
+                        subtitle: "Generally required for buildings where large numbers of people work or gather.",
                         list: [
-                            { title: "Building Plans", desc: "Detailed layout depicting fire exits, hydrants, and extinguisher placements." },
-                            { title: "Safety Recommendations", desc: "Strict adherence to suggestions issued by the fire department during initial review." },
-                            { title: "Site Inspection", desc: "Successful physical verification of firefighting equipment by regional fire officers." },
-                            { title: "Stability Certificate", desc: "Structural stability proof ensuring the building can handle firefighting water loads." }
+                            { title: "Commercial & Office", desc: "Commercial buildings and large office complexes." },
+                            { title: "Hospitality Units", desc: "Hotels, restaurants, and other hospitality establishments." },
+                            { title: "Healthcare Facilities", desc: "Hospitals and healthcare centers requiring strict safety norms." },
+                            { title: "Educational Institutions", desc: "Schools, colleges, and other academic facilities." },
+                            { title: "Industrial & Warehouses", desc: "Warehouses, factories, and industrial manufacturing units." },
+                            { title: "Shopping & Multiplex", desc: "Shopping malls and cinema multiplexes with high footfall." },
+                            { title: "Residential Towers", desc: "High-rise residential buildings as per local fire department guidelines." }
                         ]
                     }}
 
                     documents={{
                         imageUrl: docImage,
                         title: "Documents Required",
-                        subtitle: "Essential paperwork for Fire NOC",
+                        subtitle: "The documentation process ensures the building meets the necessary safety standards.",
                         list: [
-                            { title: "Identity Proof", desc: "ID and address proof of the applicant/authorized signatory." },
-                            { title: "Premise Photos", desc: "High-quality photographs of the premises and installed safety gear." },
-                            { title: "Wiring Certificate", desc: "Electrical wiring certificate from a licensed electrical contractor." },
-                            { title: "Architectural Certs", desc: "Stability certificate and architect's certification of the layout." },
-                            { title: "Proprietor Details", desc: "Proof of ownership or valid lease agreement for the property." },
-                            { title: "Technical Plans", desc: "Multiple sets of building plans including floor-wise layout and site map." }
+                            { title: "Building layout plan", desc: "Detailed layout and fire safety plan of the premises." },
+                            { title: "Site plan", desc: "Plan showing the site location and building elevation drawings." },
+                            { title: "Safety Equipment", desc: "Details of installed fire safety equipment like extinguishers and alarms." },
+                            { title: "Stability Certificate", desc: "Structural stability certificate from a certified engineer." },
+                            { title: "Occupancy Certificate", desc: "Building completion or occupancy certificate." },
+                            { title: "Electrical Safety", desc: "Electrical safety certificate from a licensed contractor." },
+                            { title: "ID & Address Proof", desc: "Identity and address proof of the applicant/authorized person." },
+                            { title: "Ownership Proof", desc: "Property ownership or valid lease/rental documents." }
                         ]
                     }}
 
                     process={{
-                        title: "Step-by-Step Procedure",
-                        subtitle: "Your journey to fire safety clearance",
+                        title: "Step-by-Step Selection Process",
+                        subtitle: "The process typically involves inspection and verification by the fire authority.",
                         steps: [
-                            { step: "01", title: "Application Filing", desc: "Apply online or offline to the State Fire Service Department with detailed building specs." },
-                            { step: "02", title: "Technical Review", desc: "Chief Fire Officer (CFO) reviews plans against the National Building Code (NBC) standards." },
-                            { step: "03", title: "Field Inspector", desc: "Region-specific inspector is assigned to conduct a thorough on-site verification." },
-                            { step: "04", title: "Mock Drills", desc: "Functional testing of hydrants, alarms, and sprinklers during the inspection phase." },
-                            { step: "05", title: "NOC Issuance", desc: "Official Fire Clearance Certificate is issued after successful final verification of all systems." }
+                            { step: "01", title: "Application Submission", desc: "Submit the application along with the required documents and fire safety plans." },
+                            { step: "02", title: "Technical Review", desc: "Fire officials review building design and safety infrastructure against norms." },
+                            { step: "03", title: "On-Site Inspection", desc: "Authorities inspect the premises to verify fire protection systems and measures." },
+                            { step: "04", title: "Compliance Correction", desc: "Any deficiencies identified during inspection must be rectified by the applicant." },
+                            { step: "05", title: "Issuance of Fire NOC", desc: "Once all requirements are met, the Fire Department issues the official NOC." }
                         ]
                     }}
 
                     postCompliance={{
-                        title: "Validity & Renewal",
-                        subtitle: "Critical safety windows",
+                        title: "Validity and Renewal",
+                        subtitle: "Timely renewal helps businesses avoid penalties and operational disruptions.",
                         list: [
-                            { title: "Commercial Validity", desc: "NOC is valid for 3 years for business/commercial buildings; requires timely renewal." },
-                            { title: "Residential Validity", desc: "Valid for 5 years for multi-story residential apartments with regular maintenance audits." },
-                            { title: "Renewal Penalties", desc: "Fines apply after 7 days of delay, increasing from ₹5 to ₹15 per day beyond 15 days." },
-                            { title: "Maintenance Audit", desc: "Certified declaration needed during renewal regarding functional electrical installations." }
+                            { title: "Validity Period", desc: "NOC is valid for a specific period, after which renewal is required for continued compliance." },
+                            { title: "Safety Records", desc: "Renewal process involves updating safety equipment records and maintenance logs." },
+                            { title: "Re-inspection", desc: "Authorities conduct a re-inspection of the premises to verify safety maintenance." },
+                            { title: "Renewal Application", desc: "Submission of renewal application with up-to-date documentation and safety proofs." }
+                        ]
+                    }}
+
+                    typesOfCompliance={{
+                        title: "Common Reasons for Rejection",
+                        subtitle: "Applications may be delayed or rejected due to compliance gaps such as:",
+                        list: [
+                            { title: "Inadequate Systems", desc: "Lack of proper fire extinguishing systems as per building standards." },
+                            { title: "Exit Strategy Gaps", desc: "Lack of emergency exits or clearly defined evacuation routes." },
+                            { title: "Alarm Failures", desc: "Improper or non-functional fire alarm systems." },
+                            { title: "Incomplete Paperwork", desc: "Incorrect or incomplete documentation and building plans." },
+                            { title: "Safety Non-compliance", desc: "General non-compliance with building safety regulations." }
                         ]
                     }}
 
                     features={{
-                        title: "Why Choose VyomBiz?",
-                        subtitle: "10+ Years of Excellence in Fire Licensing",
+                        title: "How Vyombiz Helps You",
+                        subtitle: "Navigating fire safety regulations can be complex; we simplify it for you.",
                         list: [
-                            { title: "Liaison Mastery", desc: "Decade-long experience in complex fire safety licensing and coordination with CFO office." },
-                            { title: "Inspection Ready", desc: "We pre-audit your premises to ensure 100% success during the official fire department visit." },
-                            { title: "Risk Assessment", desc: "Detailed fire load calculations and equipment placement advice for high-risk industries." },
-                            { title: "Auto-Renewal Tracking", desc: "Digital systems to track and notify you 90 days before NOC expiration." }
+                            { title: "Compliance Assessment", desc: "Evaluation of your premises to ensure readiness for official inspection." },
+                            { title: "Documentation Support", desc: "Preparation and verification of all required forms and safety plans." },
+                            { title: "Application Filing", desc: "Accurate submission of the application to the relevant fire authorities." },
+                            { title: "Authority Liaison", desc: "Handling communication and inspection scheduling with fire officials." },
+                            { title: "Post-Approval Support", desc: "Expert guidance for renewals and maintaining long-term safety compliance." }
                         ]
+                    }}
+                    navLabels={{
+                        typesOfCompliance: "Rejection Gaps"
                     }}
                 />
 
@@ -118,54 +139,38 @@ const FireDepartmentNOC = () => {
                     faqs={[
                         {
                             question: "Is Fire Department NOC mandatory?",
-                            answer: "Yes, for high-rise buildings (above 15m), commercial units, and educational institutions, it is mandatory under state laws."
+                            answer: "Yes, for high-rise buildings, commercial units, industrial factories, and educational institutions, it is mandatory under most state laws."
                         },
                         {
-                            question: "What is the validity of Fire NOC?",
-                            answer: "Generally, it is valid for 3 years for commercial buildings and 5 years for residential buildings."
+                            question: "What is the validity of a Fire NOC?",
+                            answer: "Generally, it is valid for a specific period (usually 3 to 5 years depending on building type and state), after which it must be renewed."
                         },
                         {
-                            question: "Difference between Provisional and Final NOC?",
-                            answer: "Provisional is issued during plan approval; Final is issued after building completion and safety gear verification."
+                            question: "How does Vyombiz help in getting the NOC?",
+                            answer: "Vyombiz provides end-to-end support, from assessing your premises and preparing documents to coordinating with authorities and securing approval."
                         },
                         {
-                            question: "What happens if I don't get the NOC?",
-                            answer: "Non-compliance can lead to sealing of premises, heavy legal fines, and cancellation of trade licenses."
+                            question: "What happens if my application is rejected?",
+                            answer: "Rejection usually happens due to compliance gaps. You must rectify the deficiencies identified by the fire department and re-apply."
                         },
                         {
-                            question: "Does VyomBiz help with on-site inspections?",
-                            answer: "Yes, our experts coordinate the visit and ensuring all equipment is functionally compliant before the inspector arrives."
+                            question: "Is an inspection mandatory for renewal?",
+                            answer: "Yes, authorities typically conduct a re-inspection to verify that fire protection systems are still functional and meet current safety standards."
                         }
                     ]}
                 />
 
                 <ReviewsSection
-                    title="Safety Success Stories"
-                    subtitle="Trusted by businesses for life-saving compliance."
+                    title="Start Your Process Today"
+                    subtitle="Fire safety compliance is essential for every responsible business. Connect with Vyombiz to secure your NOC quickly."
                     reviews={[
                         {
-                            name: "Sanjay Sharma",
-                            role: "Admin Head",
-                            company: "Heritage School",
+                            name: "Clink Consultancy",
+                            role: "Managed Service",
+                            company: "VyomBiz",
                             rating: 5,
-                            initials: "SS",
-                            text: "VyomBiz managed our school's complex Fire NOC renewal flawlessly. Their pre-audit revealed gaps that we fixed before the inspection."
-                        },
-                        {
-                            name: "Rishi Kapoor",
-                            role: "Owner",
-                            company: "RK Cinemas",
-                            rating: 5,
-                            initials: "RK",
-                            text: "Crucial for our cinema's trade license. The team was very knowledgeable about the National Building Code requirements."
-                        },
-                        {
-                            name: "Meenakshi V.",
-                            role: "Secretary",
-                            company: "Palm Meadows",
-                            rating: 4.8,
-                            initials: "MV",
-                            text: "They simplified the process for our residential society. Professional handling of the electrical and structural certificates."
+                            initials: "CC",
+                            text: "Securing your Fire Department NOC is made simple with our expert guidance and end-to-end support services."
                         }
                     ]}
                 />

@@ -10,85 +10,80 @@ const PhaseIISoilAndGroundwaterInvestigations = () => {
         <div className="bg-[#f8f9fa] min-h-screen relative font-sans">
             <div className="relative z-10 space-y-2 lg:space-y-4">
                 <HeroLayout
-                    heroTitleMain="Phase II Soil & Groundwater"
-                    heroTitleSuffix="Investigations (ESA)"
-                    heroDescription="Are you concerned about contamination risks on your property? VyomBiz delivers 99% report acceptance with 7–14 day subsurface assessments. Our geologists provide expert sampling, lab analysis, and end-to-end compliance support for your due diligence."
+                    heroTitleMain="Phase II Soil &"
+                    heroTitleSuffix="Groundwater Investigations"
+                    heroDescription="Comprehensive Environmental Assessment for Site Safety & Compliance. Identify potential subsurface contamination before you buy, sell, or develop industrial land. Vyombiz provides expert-led Phase II investigations to protect your investments and public health."
                     stats={[
                         { count: "100K+", label: "Happy Customers" },
                         { count: "3500+", label: "Expert Advisors" },
                         { count: "50+", label: "Branch Offices" },
-                        { count: "99.5%", label: "Report Acceptance" }
+                        { count: "100s", label: "Sites Assessed" }
                     ]}
                     formTitle="Get Free Expert Consultation"
                 />
 
                 <DetailsLayout
                     overview={{
-                        title: "Phase II Investigations —",
-                        highlightTitle: "Environmental Assessment",
+                        title: "What is",
+                        highlightTitle: "Phase II Environmental Investigation?",
                         description: [
-                            "Phase II Soil and Groundwater Investigations (Phase II ESAs) are critical for evaluating environmental risks associated with industrial and commercial properties. They are typically initiated when a Phase I ESA identifies project-stopping Recognized Environmental Conditions (RECs).",
-                            "The process involves geophysical surveys, core drilling, and depth-specific laboratory analysis under stringent ASTM standards. Our goal is to quantify contamination and assess immediate risks to human health or future property developments.",
-                            "Worried about the technical hurdles of subsurface investigations? Let VyomBiz geologists eliminate them swiftly and optimize your property compliance strategy."
+                            "Phase II Soil and Groundwater Investigation is a technical assessment conducted to confirm the presence and extent of hazardous substances in the subsurface. This follows a Phase I Environmental Site Assessment (ESA) if potential contamination risks (RECs) are identified.",
+                            "The process involves intrusive sampling, where soil, groundwater, and sometimes soil vapor are collected and analyzed in certified laboratories. This provides data-driven evidence of whether pollution exceeds regulatory limits set by environmental authorities like the CPCB.",
+                            "Through Vyombiz managed by Clink Consultancy Services Private Limited, businesses get scientifically accurate reports that are essential for risk management, real estate transactions, and regulatory clearances."
                         ],
-                        whyIdealTitle: "When do I need it?",
+                        whyIdealTitle: "When is Phase II Required?",
                         whyIdealList: [
-                            { title: "Property Acquisition", desc: "Detailed due diligence before finalizing a high-value real estate or industrial purchase." },
-                            { title: "Risk Evaluation", desc: "Evaluating potential environmental liabilities before a property sale or liquidation." },
-                            { title: "Lender Requests", desc: "Mandatory requirement for property refinancing or securing loans from major banks." },
-                            { title: "Insurance Audits", desc: "Verification of site conditions for re-insurance or specialized environmental coverage." }
+                            { title: "Identified Risks", desc: "When Phase I ESA suggests potential historical leaks or spills." },
+                            { title: "Industrial Transactions", desc: "During the sale or purchase of high-risk properties like gas stations or chemical plants." },
+                            { title: "Regulatory Orders", desc: "When pollution control boards require proof of site cleanup or safety." },
+                            { title: "Redevelopment Projects", desc: "Before converting industrial land into residential or commercial zones." }
                         ]
                     }}
 
                     advantages={{
-                        title: "Benefits of Phase II",
-                        subtitle: "Cost Savings & Community Health",
+                        title: "Why Conduct a Phase II Investigation?",
+                        subtitle: "Data-backed insights for safer property investments.",
                         list: [
-                            { title: "Avoid Treatment Costs", desc: "A clear picture of contamination early on allows for targeted and cost-effective clean-up efforts." },
-                            { title: "Risk Mitigation", desc: "Prevents negative legal consequences and ensures full regulatory compliance with state pollution norms." },
-                            { title: "Human Health", desc: "Reduces hazards from toxic subsurface contamination that could affect site workers or local residents." },
-                            { title: "Clean Environment", desc: "Protects local water tables and prevents chemical migration into neighboring agricultural or urban areas." },
-                            { title: "Project Speed", desc: "Identifies show-stoppers early, allowing developers to redesign or remediate without missing deadlines." },
-                            { title: "Verified Data", desc: "Provides defensible technical data for negotiations during property transactions or legal disputes." }
+                            { title: "Risk Mitigation", desc: "Identifies hidden liabilities before they become expensive legal or cleanup issues." },
+                            { title: "Financial Protection", desc: "Helps in accurate property valuation and price negotiations." },
+                            { title: "Regulatory Compliance", desc: "Ensures the site meets National and State environmental standards." },
+                            { title: "Health & Safety", desc: "Prevents exposure of workers and local communities to toxic subsurface chemicals." },
+                            { title: "Lender Confidence", desc: "Often a mandatory requirement for securing bank loans for industrial real estate." }
                         ]
                     }}
 
-                    documents={{
-                        imageUrl: docImage,
-                        title: "Required Documentation",
-                        subtitle: "Paperwork for a rigorous investigation",
+                    eligibility={{
+                        title: "Key Assessment Targets",
+                        subtitle: "What our technical teams investigate.",
                         list: [
-                            { title: "Phase I ESA Report", desc: "The primary document identifying the RECs that trigger the Phase II assessment." },
-                            { title: "Sampling Strategy", desc: "A detailed Sampling & Analysis Plan (SAP) developed by our lead geologists." },
-                            { title: "Safety Plan", desc: "Site-specific Health & Safety Plan (HASP) ensuring safety during drilling operations." },
-                            { title: "Sample Custody Forms", desc: "Legal chain-of-custody forms to maintain the integrity of laboratory samples." },
-                            { title: "Topographic Maps", desc: "Detailed maps of the site highlighting past usage zones and current structures." },
-                            { title: "Historical Records", desc: "Previous chemical usage logs or underground storage tank (UST) registration data." }
+                            { title: "Soil Layers", desc: "Testing for heavy metals, petroleum hydrocarbons (TPH), and pesticides." },
+                            { title: "Groundwater Table", desc: "Checking for dissolved chemicals, VOCs, and heavy metal plumes." },
+                            { title: "Underground Tanks", desc: "Investigating leaks from USTs (Underground Storage Tanks) and pipelines." },
+                            { title: "Soil Vapor", desc: "Assessing the risk of volatile chemicals migrating into building structures." }
                         ]
                     }}
 
                     process={{
-                        title: "Investigation Procedure",
-                        subtitle: "Step-by-step technical analysis",
+                        title: "The Phase II Investigation Process",
+                        subtitle: "A systematic approach to subsurface analysis.",
                         steps: [
-                            { step: "01", title: "Scope Design", desc: "Geologists develop a site-specific scope detailing the exact drilling points and lab parameters." },
-                            { step: "02", title: "Utility Clearance", desc: "Geophysical surveys (GPR) to identify underground pipes and cables before drilling." },
-                            { step: "03", title: "Fieldwork & Sample", desc: "Core drilling and water-table sampling conducted by licensed geologists and drilling crews." },
-                            { step: "04", title: "Laboratory Analysis", desc: "Evaluating soil and water samples against authorized screening thresholds for VOCs and heavy metals." },
-                            { step: "05", title: "Final Certified Report", desc: "Our geologist documents the data and provides remediation recommendations complying with ASTM norms." }
+                            { step: "01", title: "Site Samplings", desc: "Drilling boreholes and installing monitoring wells at strategic locations." },
+                            { step: "02", title: "Sample Collection", desc: "Extracting soil cores and groundwater samples using standardized protocols." },
+                            { step: "03", title: "Lab Analysis", desc: "Testing samples in NABL-accredited labs for specific contaminants." },
+                            { step: "04", title: "Data Interpretation", desc: "Comparing lab results against CPCB/EPA cleanup standards and screening levels." },
+                            { step: "05", title: "Reporting", desc: "Issuing a detailed technical report with findings and remediation advice." }
                         ]
                     }}
 
                     features={{
-                        title: "Why Choose VyomBiz?",
-                        subtitle: "Top choice for Subsurface Investigations",
+                        title: "Why Vyombiz for Phase II?",
+                        subtitle: "Precision engineering and environmental expertise.",
                         list: [
-                            { title: "1000+ Completed", desc: "Extensive track record in successful Phase I and Phase II Environmental Site Assessments." },
-                            { title: "200+ Experts", desc: "Access to a vast network of in-house environmental geologists and lab technicians." },
-                            { title: "99.5% Acceptance", desc: "Maintains an industry-best success rate in delivering accurate and regulator-accepted reports." },
-                            { title: "10+ Years Exp", desc: "Decade-long proven experience in property risk management and subsurface modeling." },
-                            { title: "Accurate Labs", desc: "Direct partnerships with certified laboratories for precise chemical and vapor analysis." },
-                            { title: "Due Diligence Focus", desc: "Our reports are designed to protect investors and lenders from hidden environmental liabilities." }
+                            { title: "Advanced Equipment", desc: "Use of specialized drilling rigs and high-precision sampling tools." },
+                            { title: "Accredited Analytics", desc: "Partnership with top-tier labs for reliable chemical data." },
+                            { title: "Technical Expertise", desc: "Reports drafted by experienced geologists and environmental scientists." },
+                            { title: "Strategic Advice", desc: "We don't just find problems; we provide cost-effective cleanup solutions." },
+                            { title: "Confidentiality", desc: "We ensure all findings remain strictly confidential between the client and our team." }
                         ]
                     }}
                 />
@@ -97,55 +92,35 @@ const PhaseIISoilAndGroundwaterInvestigations = () => {
                     title="Frequently Asked Questions"
                     faqs={[
                         {
-                            question: "What is Phase II Soil & Groundwater Investigation?",
-                            answer: "It includes geophysical surveys, drilling, sampling, and lab analysis to quantify contamination identified in a Phase I assessment."
+                            question: "How long does a Phase II investigation take?",
+                            answer: "The timeline typically ranges from 2 to 4 weeks, including site work, laboratory testing, and final report writing."
                         },
                         {
-                            question: "Is Phase I mandatory before Phase II?",
-                            answer: "Yes, a Phase I ESA is typically required first as it identifies the Recognized Environmental Conditions (RECs) that Phase II must address."
+                            question: "What happens if contamination is found?",
+                            answer: "If pollutants exceed limits, we provide a remediation plan (Phase III) to clean up the site or manage the risk safely."
                         },
                         {
-                            question: "What triggers a Phase II ESA?",
-                            answer: "Potential contamination like underground storage tanks, chemical spills, or past industrial use found during history checks triggers it."
+                            question: "Does every property need Phase II?",
+                            answer: "No. It is only required if Phase I indicates a specific concern or if the property has a history of industrial activity."
                         },
                         {
-                            question: "Is soil gas sampling using vapor pins effective?",
-                            answer: "Yes, it is highly effective for identifying VOCs that may migrate into building foundations, a critical part of the risk assessment."
-                        },
-                        {
-                            question: "What is the typical timeline for an investigation?",
-                            answer: "Sample collection takes ~14 days, lab analysis ~7 days, and the final certified report is usually ready within 4 weeks."
+                            question: "Is Phase II a legal requirement in India?",
+                            answer: "While not mandatory for all, it is increasingly required by lenders, buyers, and pollution boards for industrial sites."
                         }
                     ]}
                 />
 
                 <ReviewsSection
-                    title="Property Risk Success"
-                    subtitle="Trusted by leading real estate and industrial groups."
+                    title="Scientific Site Assessments"
+                    subtitle="Ensure your land is safe for its intended use. Get expert Phase II investigations with Vyombiz."
                     reviews={[
                         {
-                            name: "Akhil Srivastava",
-                            role: "Real Estate Director",
-                            company: "Urban Heights",
+                            name: "Clink Consultancy",
+                            role: "Managed Service",
+                            company: "VyomBiz",
                             rating: 5,
-                            initials: "AS",
-                            text: "VyomBiz identified heavy metal contamination in our proposed site before purchase. Their report saved us from a multi-crore liability."
-                        },
-                        {
-                            name: "Pooja Hegde",
-                            role: "Operations Manager",
-                            company: "Indus Logistics",
-                            rating: 5,
-                            initials: "PH",
-                            text: "Professional handling of core drilling and groundwater sampling. The geologist's report was extremely detailed and accepted by our bank."
-                        },
-                        {
-                            name: "Vikram Seth",
-                            role: "Owner",
-                            company: "Seth Manufacturing",
-                            rating: 4.8,
-                            initials: "VS",
-                            text: "They handled our Phase II with great speed. The utility clearance was done overnight to ensure no disruption to our ongoing factory work."
+                            initials: "CC",
+                            text: "We bridge the gap between technical data and business decisions, providing clear insights into site contamination risks."
                         }
                     ]}
                 />

@@ -10,9 +10,9 @@ const NOCPollutionControlBoard = () => {
         <div className="bg-[#f8f9fa] min-h-screen relative font-sans">
             <div className="relative z-10 space-y-2 lg:space-y-4">
                 <HeroLayout
-                    heroTitleMain="NOC Pollution"
-                    heroTitleSuffix="Control Board"
-                    heroDescription="Have you implemented pollution prevention and control measures for your business? Secure your NOC Pollution Control Board with VyomBiz and stay legally compliant. Join 43,000+ businesses who secured their NOC with our expert-led advisory."
+                    heroTitleMain="Pollution Control"
+                    heroTitleSuffix="Board NOC Registration"
+                    heroDescription="Get Your Pollution Control Board NOC Without Hassle. Ensure your industrial or commercial activity remains legally compliant with environmental standards. From small setups to large manufacturing units, Vyombiz simplifies the entire application process."
                     stats={[
                         { count: "100K+", label: "Happy Customers" },
                         { count: "3500+", label: "Expert Advisors" },
@@ -24,93 +24,78 @@ const NOCPollutionControlBoard = () => {
 
                 <DetailsLayout
                     overview={{
-                        title: "SPCB NOC —",
-                        highlightTitle: "Industry Consent",
+                        title: "What is a",
+                        highlightTitle: "Pollution Control Board NOC?",
                         description: [
-                            "Obtaining an NOC (No Objection Certificate) from the State Pollution Control Board (SPCB) is a mandatory legal requirement before starting any industrial or commercial activity. The board overseen the maintenance of environmental standards for air and water quality.",
-                            "Under the provisions of the Water Pollution Act (1974) and Air Pollution Act (1981), businesses must obtain 'Consent to Establish' (CTE) before construction and 'Consent to Operate' (CTO) before starting production. This ensures that industrial growth does not come at the cost of ecological balance.",
-                            "Are you facing technical roadblocks in securing your pollution board NOC? Speak to VyomBiz consultants today and get your certificate with zero stress and maximum compliance."
+                            "A Pollution Control Board NOC, also known as Environmental Consent, is an official authorization required to establish and operate an industry or business that may have an impact on the environment. The certificate is issued by the respective State Pollution Control Board (SPCB) or Pollution Control Committee (PCC).",
+                            "The primary objective is to monitor and regulate industrial discharges, air emissions, and waste management. It ensures that businesses operate within the permissible environmental safety limits set by the government to prevent air and water pollution.",
+                            "Through Vyombiz managed by Clink Consultancy Services Private Limited, entrepreneurs get seamless assistance in classification, documentation, and filing, ensuring a smooth path to obtaining their Pollution NOC."
                         ],
-                        whyIdealTitle: "Who Needs It?",
+                        whyIdealTitle: "Businesses Requiring NOC",
                         whyIdealList: [
-                            { title: "Manufacturing & Traders", desc: "Factories across all sectors including chemicals, textiles, and engineering." },
-                            { title: "Waste Entities", desc: "E-Waste, Solid Waste, and Hazardous waste management and recycling units." },
-                            { title: "Healthcare Centers", desc: "Hospitals, Clinics, and Pathological labs generating bio-medical waste." },
-                            { title: "Mining & Infrastructure", desc: "Large scale mining operations and infrastructure projects affecting natural resources." }
+                            { title: "Manufacturing Industry", desc: "Chemical, textile, metal, and heavy engineering factories." },
+                            { title: "Hospitality & Healthcare", desc: "Hotels, restaurants, hospitals, and diagnostic laboratories." },
+                            { title: "Storage & Recycling", desc: "Warehouses, e-waste dismantlers, and waste recycling units." },
+                            { title: "Processing Units", desc: "Food processing, mining activities, and specialized industrial projects." }
                         ]
                     }}
 
                     advantages={{
-                        title: "Advantages of SPCB NOC",
-                        subtitle: "Compliance Fuels Responsible Growth",
+                        title: "Why Pollution NOC is Important",
+                        subtitle: "Compliance ensures business longevity and environmental protection.",
                         list: [
-                            { title: "Sustainable Development", desc: "Ensures industrial progress happens without disturbing the delicate ecological balance." },
-                            { title: "Resource Protection", desc: "Helps in the conservation of natural resources and prevents critical water/air degradation." },
-                            { title: "Legal Eligibility", desc: "Mandatory for applying for other statutory permits like trade licenses or factory registrations." },
-                            { title: "Market Reputation", desc: "Positions your brand as an environmentally responsible player in the global market." },
-                            { title: "Avoid Stiff Penalties", desc: "Protects your unit from heavy legal fines, imprisonment, or forced industrial closure." },
-                            { title: "Operational Continuity", desc: "Guarantees smooth business orchestration without fear of environmental audits/shuts." }
+                            { title: "Legal Safety", desc: "Adhering to environmental laws avoids legal notices and closure risks." },
+                            { title: "Regulatory Gateway", desc: "Mandatory for obtaining trade licenses and factory registrations." },
+                            { title: "Brand Credibility", desc: "Demonstrates environmental commitment to customers and investors." },
+                            { title: "Public Health", desc: "Ensures the business does not cause health hazards to the local community." },
+                            { title: "Sustainable Growth", desc: "Promotes resources efficiency and cleaner production processes." }
                         ]
                     }}
 
-                    eligibility={{
-                        title: "Industry Categorization",
-                        subtitle: "CPCB/SPCB Pollution Index",
+                    typesOfCompliance={{
+                        title: "Types of Pollution Board NOC",
+                        subtitle: "Understanding the two main stages of environmental consent.",
                         list: [
-                            { title: "Red Category", desc: "High pollution load. Requires the most stringent emission control and frequent monitoring audits." },
-                            { title: "Orange Category", desc: "Moderate pollution load. Mandatory emission control gear and regular compliance reporting." },
-                            { title: "Green Category", desc: "Least impactful industries with minimal emissions; require standard consent for operations." },
-                            { title: "White Category", desc: "Environmentally benign industries. Generally exempt from formal consent, only require an undertaking." }
+                            { title: "Consent to Establish (CTE)", desc: "Obtained BEFORE setting up the business or starting construction." },
+                            { title: "Consent to Operate (CTO)", desc: "Obtained AFTER establishment and BEFORE commencing commercial production." }
                         ]
                     }}
 
                     documents={{
                         imageUrl: docImage,
-                        title: "Required Checklist",
-                        subtitle: "Essential paperwork for your NOC",
+                        title: "Documents Required",
+                        subtitle: "Standard checklist for pollution consent applications.",
                         list: [
-                            { title: "Entity Proof", desc: "PAN Card of the unit and Aadhar/ID of the authorized signatory or partners." },
-                            { title: "Operating Proof", desc: "Valid Factory License, Trade License, or Udyog Aadhaar registration." },
-                            { title: "Site Layout", desc: "Detailed engineering drawings of the site and the proposed business design." },
-                            { title: "Financial Cert", desc: "CA-verified letter stating the total project cost and capital investment." },
-                            { title: "Utility Records", desc: "Latest electricity and utility bills proof to verify the operational scale." },
-                            { title: "Technical Plans", desc: "ETP/STP design layouts and air pollution control (APC) arrangement specifications." }
+                            { title: "Business Proof", desc: "Certificate of Incorporation or Partnership Deed." },
+                            { title: "ID & Address Proof", desc: "PAN and Aadhaar of the authorized signatory." },
+                            { title: "Property Proof", desc: "Land documents or registered site lease agreement." },
+                            { title: "Infrastructure Layout", desc: "Site plan and building layout highlighting emissions points." },
+                            { title: "Process Details", desc: "Flowchart of manufacturing activities and raw material list." },
+                            { title: "Pollution Control", desc: "Technical data of installed or proposed ETP/STP and air filters." }
                         ]
                     }}
 
                     process={{
-                        title: "Step-by-Step Procedure",
-                        subtitle: "Clear path to environmental compliance",
+                        title: "NOC Application Process",
+                        subtitle: "A structured journey toward regulatory approval.",
                         steps: [
-                            { step: "01", title: "Application Filing", desc: "Submit the primary application on the respective SPCB portal with accurate unit data." },
-                            { step: "02", title: "Technical Uploads", desc: "Attach proposed pollution control plans and specific technical drawings of emission points." },
-                            { step: "03", title: "Regional Review", desc: "Officers from the regional SPCB office conduct a physical site inspection of the premises." },
-                            { step: "04", title: "Compliance Scrutiny", desc: "The board processes the inspection report and verifies technical adequacy within 90-120 days." },
-                            { step: "05", title: "NOC Issuance", desc: "Final CTE or CTO certificate is issued upon successful verification of environmental gear." }
-                        ]
-                    }}
-
-                    postCompliance={{
-                        title: "Penalties & Timelines",
-                        subtitle: "Rules of the environmental acts",
-                        list: [
-                            { title: "Environmental Act", desc: "Non-compliance can lead to imprisonment up to 5 years and fines up to ₹1 Lakh per default." },
-                            { title: "Daily Penalties", desc: "Continual default after initial warning can lead to extra fines of ₹5,000 per day." },
-                            { title: "Hazardous Rules", desc: "Occupiers are strictly liable for heavy financial damages as levied by the State PCB." },
-                            { title: "Renewal Windows", desc: "Apply for CTO renewal at least 60-90 days before the expiry of the existing certificate." }
+                            { step: "01", title: "Activity Classification", desc: "Identification of the industry category (Red, Orange, Green, White)." },
+                            { step: "02", title: "Application Prep", desc: "Filling technical forms and gathering environmental compliance documents." },
+                            { step: "03", title: "Online Filing", desc: "Submitting application and fees on the official SPCB regulatory portal." },
+                            { step: "04", title: "Authority Review", desc: "Review of technical data and potential site inspection by officials." },
+                            { step: "05", title: "Certificate Grant", desc: "Issuance of the official CTE or CTO certificate upon approval." }
                         ]
                     }}
 
                     features={{
-                        title: "Why Choose VyomBiz?",
-                        subtitle: "Dominating Environmental Consulting in India",
+                        title: "Why Choose Vyombiz?",
+                        subtitle: "Your trusted partner for environmental clearancess.",
                         list: [
-                            { title: "10+ Years", desc: "A decade of core expertise in acquiring thousands of SPCB/CPCB clearances nationwide." },
-                            { title: "500+ Projects", desc: "Proven track record of assisting diverse industrial units in complex licensing needs." },
-                            { title: "End-to-End", desc: "Complete documentation, technical drawing support, and liaison until final certification." },
-                            { title: "75% Market Hold", desc: "India's leading brand in environmental compliance with widespread regional network." },
-                            { title: "Expert Pre-Audit", desc: "We conduct virtual and physical pre-audits to ensure your site is inspection-ready." },
-                            { title: "Regional Liaison", desc: "Dedicated local teams for every state board ensuring faster processing of files." }
+                            { title: "Expert Support", desc: "Experienced professionals to guide you through complex pollution norms." },
+                            { title: "PAN India Service", desc: "Support for SPCB/PCC approvals across all Indian states and UTs." },
+                            { title: "Accuracy Focused", desc: "Detailed technical verification to eliminate documentation errors." },
+                            { title: "End-to-End Liaison", desc: "We manage everything from initial filing to coordination with officials." },
+                            { title: "Timed Deliverables", desc: "Efficient handling to ensure your business stays on production schedules." }
                         ]
                     }}
                 />
@@ -119,55 +104,39 @@ const NOCPollutionControlBoard = () => {
                     title="Frequently Asked Questions"
                     faqs={[
                         {
-                            question: "What is NOC Pollution Control Board?",
-                            answer: "It is a mandatory legal consent (CTE/CTO) issued by the State Board to ensure industries meet environmental safety standards."
+                            question: "Which industries need a Pollution Board NOC?",
+                            answer: "Most manufacturing units, hospitals, hotels, and large-scale commercial activities that may impact air or water quality need an NOC."
                         },
                         {
-                            question: "What are the common industrial categories?",
-                            answer: "CPCB classifies industries into Red, Orange, Green, and White categories based on their pollution index."
+                            question: "What is the difference between CTE and CTO?",
+                            answer: "CTE (Establish) is for the construction phase; CTO (Operate) is for starting actual production or operations."
                         },
                         {
-                            question: "When should I apply for certificate renewal?",
-                            answer: "Ideally, you should apply for renewal at least 60-90 days before the expiry of your existing 'Consent to Operate'."
+                            question: "How are industries categorized for Pollution NOC?",
+                            answer: "They are classified into Red, Orange, Green, and White categories based on their pollution load and index score."
                         },
                         {
-                            question: "Is there any provision for exemption?",
-                            answer: "Only 'White Category' industries (Pollution Index 0-20) are generally exempt, though they may need to file an undertaking."
+                            question: "Do non-polluting industries need an NOC?",
+                            answer: "White Category industries (non-polluting) are generally exempt but may need to submit a simple undertaking."
                         },
                         {
-                            question: "What is the validity of the Pollution NOC?",
-                            answer: "Validity ranges from 3 years for 'Red' category to 10 years for 'Green' industries, depending on state-specific norms."
+                            question: "What is the validity of a Pollution NOC?",
+                            answer: "Validity varies per category (Red/Orange/Green) and usually ranges from 1 to 10 years, requiring timely renewals."
                         }
                     ]}
                 />
 
                 <ReviewsSection
-                    title="Industrial Trust"
-                    subtitle="Trusted by factories across 10,000+ pin codes."
+                    title="Simplifying Compliance for You"
+                    subtitle="Focus on your business growth while we handle your environmental approvals. Get your Pollution NOC with Vyombiz."
                     reviews={[
                         {
-                            name: "Rakesh Mishra",
-                            role: "Plant Head",
-                            company: "Apex Manufacturing",
+                            name: "Clink Consultancy",
+                            role: "Managed Service",
+                            company: "VyomBiz",
                             rating: 5,
-                            initials: "RM",
-                            text: "Getting the SPCB NOC for our manufacturing unit was daunting until we consulted VyomBiz. Their regional team handled the CTE filing perfectly."
-                        },
-                        {
-                            name: "Dinesh Kumar",
-                            role: "Factory Owner",
-                            company: "DK Textiles",
-                            rating: 5,
-                            initials: "DK",
-                            text: "Very knowledgeable about the technical drawings required for the ETP. Their pre-audit helped us pass the board inspection in one go."
-                        },
-                        {
-                            name: "Sunita Narayan",
-                            role: "Compliance Director",
-                            company: "Green Pharma",
-                            rating: 4.8,
-                            initials: "SN",
-                            text: "Excellent liaison support. They simplified the complex hazardous waste rules for us and got our CTO renewed without delays."
+                            initials: "CC",
+                            text: "We streamline the regulatory path for manufacturers and traders, ensuring zero legal hurdles in their operations."
                         }
                     ]}
                 />

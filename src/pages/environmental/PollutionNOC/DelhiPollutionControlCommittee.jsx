@@ -11,8 +11,8 @@ const DelhiPollutionControlCommittee = () => {
             <div className="relative z-10 space-y-2 lg:space-y-4">
                 <HeroLayout
                     heroTitleMain="Delhi Pollution Control"
-                    heroTitleSuffix="Committee (DPCC) Authorization"
-                    heroDescription="Get Delhi Pollution Control Committee Authorization for your business with VyomBiz experts. Ensure 100% compliance with environmental and DPCC standards for all industry categories in the Delhi region."
+                    heroTitleSuffix="Committee (DPCC) NOC"
+                    heroDescription="Start or expand your business in Delhi with complete environmental compliance. Get your DPCC Consent / Pollution NOC quickly with expert assistance, accurate documentation, and hassle-free approval support from Vyombiz."
                     stats={[
                         { count: "100K+", label: "Happy Customers" },
                         { count: "3500+", label: "Expert Advisors" },
@@ -24,82 +24,89 @@ const DelhiPollutionControlCommittee = () => {
 
                 <DetailsLayout
                     overview={{
-                        title: "DPCC Authorization —",
-                        highlightTitle: "Compliance Overview",
+                        title: "What is",
+                        highlightTitle: "Delhi Pollution Control Committee?",
                         description: [
-                            "The Delhi Pollution Control Committee (DPCC) is an autonomous regulatory body responsible for issuing the DPCC License. Governed by the Ministry of Environment, Forest & Climate Change, it ensures that businesses in Delhi operate without harming the environment.",
-                            "It acts as a No Objection Certificate (NOC) necessary for new setups, capacity expansions, or production process changes. Entrepreneurs in Delhi must acquire this authorization to stay legally compliant and avoid environmental litigation.",
-                            "Not sure how to secure your DPCC Authorization? Talk to VyomBiz expert consultants today and get your paperwork handled with zero stress."
+                            "The Delhi Pollution Control Committee (DPCC) is the regulatory authority responsible for monitoring and controlling environmental pollution across Delhi. It functions under the guidelines of the Central Pollution Control Board (CPCB) and the Government of Delhi.",
+                            "Businesses operating in manufacturing, processing, or service sectors that may impact the environment must obtain DPCC Consent or Pollution NOC before starting operations. This approval ensures adherence to standards for air emissions, wastewater discharge, and waste disposal.",
+                            "At Vyombiz managed by Clink Consultancy Services Private Limited, we simplify the entire approval process by handling documentation, application filing, and regulatory coordination, ensuring businesses remain compliant with environmental laws."
                         ],
-                        whyIdealTitle: "Who Needs It?",
+                        whyIdealTitle: "Who Should Apply?",
                         whyIdealList: [
-                            { title: "Manufacturing Units", desc: "All trading and manufacturing entities operating within Delhi's jurisdiction." },
-                            { title: "Waste Handlers", desc: "Solid, Hazardous, E-Waste, and Battery Waste management entities." },
-                            { title: "Healthcare Labs", desc: "Hospitals, Clinics, and Bio-Medical waste generating establishments." },
-                            { title: "Food Industry", desc: "Restaurants and food processing units requiring MCD and DPCC clearance." }
+                            { title: "Manufacturing", desc: "Factories and industrial units operating within Delhi jurisdiction." },
+                            { title: "Healthcare", desc: "Hospitals, diagnostic centers, and clinics generating bio-waste." },
+                            { title: "Food Service", desc: "Restaurants with large kitchens and food processing businesses." },
+                            { title: "Industrial Projects", desc: "Construction, warehousing, and large-scale infrastructure projects." }
                         ]
                     }}
 
                     advantages={{
-                        title: "Benefits of Authorization",
-                        subtitle: "Sustainable Growth & Legal Security",
+                        title: "Benefits of DPCC NOC",
+                        subtitle: "Environmental approvals are critical for lawful operations in the capital.",
                         list: [
-                            { title: "Sustainable Development", desc: "Ensures financial growth happens alongside ecological protection and social equity." },
-                            { title: "Waste Management", desc: "Enforces proficient waste management measures so that business waste is reused and reduced." },
-                            { title: "Resource Protection", desc: "Helps in preventing depletion of natural resources and maintaining Delhi's air and water quality." },
-                            { title: "Legal Immunity", desc: "Protects your business from heavy penalties and shutdown orders from environmental authorities." },
-                            { title: "Brand Reputation", desc: "Demonstrates environmental commitment, making your business more attractive to conscious consumers." },
-                            { title: "Resource Efficiency", desc: "Promotes the use of pollution control devices that often lead to better resource utilization." }
+                            { title: "Legal Compliance", desc: "Ensures full adherence to environmental regulations and avoids legal notices." },
+                            { title: "Penalty Avoidance", desc: "Protects your business from heavy fines, closure notices, or utility disconnection." },
+                            { title: "Operational Continuity", desc: "A mandatory prerequisite for factory licenses and other industrial approvals." },
+                            { title: "Enhanced Credibility", desc: "Builds an environmentally responsible brand reputation with consumers and partners." },
+                            { title: "Eco-Friendly Operations", desc: "Ensures your business adopts modern pollution control and waste management tools." }
+                        ]
+                    }}
+
+                    typesOfCompliance={{
+                        title: "Types of DPCC Consent",
+                        subtitle: "Approvals are issued in two major stages depending on project status.",
+                        list: [
+                            { title: "Consent to Establish (CTE)", desc: "Required BEFORE setting up the unit. Ensures activity meets standards before construction." },
+                            { title: "Consent to Operate (CTO)", desc: "Required BEFORE starting commercial operations. Confirms installed control systems are adequate." }
                         ]
                     }}
 
                     eligibility={{
-                        title: "Industry Classification",
-                        subtitle: "How DPCC categorizes pollution levels",
+                        title: "Industry Categorization",
+                        subtitle: "DPCC classifies industries based on their pollution index scores.",
                         list: [
-                            { title: "White Category", desc: "Least polluting (Score 0-20). No formal consent required; only an undertaking is needed." },
-                            { title: "Green Category", desc: "Moderately polluting (Score 21-40). Requires both Consent to Establish (CTE) and Operate (CTO)." },
-                            { title: "Orange Category", desc: "Polluting industries (Score 41-59). Mandatory CTE/CTO before commencement of any setup." },
-                            { title: "Red Category", desc: "Excessively polluting (Score > 60). Not permitted to function within the Delhi jurisdiction." }
+                            { title: "Red Category", desc: "High pollution potential (e.g., chemical plants, heavy manufacturing units)." },
+                            { title: "Orange Category", desc: "Moderate environmental impact (e.g., food processing, textile manufacturing)." },
+                            { title: "Green Category", desc: "Relatively low impact (e.g., small manufacturing, packaging units)." },
+                            { title: "White Category", desc: "Non-polluting industries (require minimal regulation or only an undertaking)." }
                         ]
                     }}
 
                     documents={{
                         imageUrl: docImage,
                         title: "Documents Required",
-                        subtitle: "Paperwork for DPCC filing",
+                        subtitle: "Preparation of accurate documentation prevents application rejection.",
                         list: [
-                            { title: "Personal ID", desc: "PAN Card and Aadhaar of the applicant/authorized person." },
-                            { title: "Utility Bill", desc: "Latest Electricity Bill or Water Connection Certificate of the site." },
-                            { title: "Site Plan", desc: "Detailed location and site layout plan highlighting discharge points." },
-                            { title: "Property Proof", desc: "Land Ownership document or valid Rent/Lease Deed." },
-                            { title: "Business Docs", desc: "Partnership Deed, MOA/AOA, or Proprietorship declaration." },
-                            { title: "Investment Proof", desc: "CA Certificate indicating total Capital Investment in project." }
+                            { title: "Registration", desc: "Business registration certificate and Entity PAN card." },
+                            { title: "Infrastructure", desc: "Site layout plan, building plan, and manufacturing process description." },
+                            { title: "Resource Details", desc: "Water consumption details and wastewater discharge information." },
+                            { title: "Pollution Control", desc: "Technical specifications of air/water pollution control systems." },
+                            { title: "Property Proof", desc: "Land ownership documents or valid registered lease agreement." },
+                            { title: "Environmental Plan", desc: "Comprehensive environmental management and waste disposal plan." }
                         ]
                     }}
 
                     process={{
-                        title: "Registration Process",
-                        subtitle: "Your journey to DPCC clearance",
+                        title: "DPCC Application Process",
+                        subtitle: "Ensuring smooth coordination throughout the regulatory journey.",
                         steps: [
-                            { step: "01", title: "Category Check", desc: "Verify business activity and classify it under White, Green, Orange, or Red categories." },
-                            { step: "02", title: "Online Submission", desc: "Submit essential documents and detailed project reports on the DPCC official portal." },
-                            { step: "03", title: "CTE Generation", desc: "Obtain Consent to Establish (CTE) before beginning any construction or machinery setup." },
-                            { step: "04", title: "Device Installation", desc: "Install required pollution control devices like ETP/STP as directed during the CTE phase." },
-                            { step: "05", title: "CTO Issuance", desc: "Conduct final verification of installed devices and receive the Consent to Operate (CTO)." }
+                            { step: "01", title: "Compliance Assessment", desc: "Analyzing business activity to determine the correct consent category." },
+                            { step: "02", title: "Documentation Prep", desc: "Preparation of technical details and forms as per current DPCC guidelines." },
+                            { step: "03", title: "Online Filing", desc: "Submission of application through the official DPCC regulatory portal." },
+                            { step: "04", title: "Authority Review", desc: "DPCC officials review the data and may conduct field inspections if needed." },
+                            { step: "05", title: "NOC Issuance", desc: "Issuance of the official DPCC NOC certificate upon successful verification." }
                         ]
                     }}
 
                     features={{
-                        title: "Why Choose VyomBiz?",
-                        subtitle: "10+ Years of Success in DPCC Liaison",
+                        title: "Why Choose Vyombiz?",
+                        subtitle: "Complete compliance support for businesses in Delhi.",
                         list: [
-                            { title: "400+ Experts", desc: "In-house CAs, CS, and environmental lawyers for a seamless and integrated process." },
-                            { title: "10K+ Pincodes", desc: "Wide network across India for local liaison and grounded regulatory support." },
-                            { title: "99.2% Success", desc: "Industry-leading success rate in acquiring DPCC authorizations for diverse entities." },
-                            { title: "24/7 Support", desc: "Round-the-clock assistance to resolve any compliance and documentation queries." },
-                            { title: "Fast Tracking", desc: "Minimized turnaround time through expert handling of the OCMMS portal." },
-                            { title: "Post-Consent Support", desc: "Guidance on maintaining pollution logs and timely CTO renewal filing." }
+                            { title: "Expert Consultants", desc: "Specialists with deep understanding of DPCC framework and regulations." },
+                            { title: "Fast Documentation", desc: "Streamlined processes to minimize turn-around time for filings." },
+                            { title: "End-to-End Support", desc: "Comprehensive management from initial assessment to certificate approval." },
+                            { title: "Regulatory Liaison", desc: "Effective coordination with environmental authorities for smoother processing." },
+                            { title: "Transparent Guidance", desc: "Clear and honest advice regarding your environmental and legal obligations." }
                         ]
                     }}
                 />
@@ -108,55 +115,35 @@ const DelhiPollutionControlCommittee = () => {
                     title="Frequently Asked Questions"
                     faqs={[
                         {
-                            question: "What is DPCC Authorization?",
-                            answer: "It is a legal permit (CTE/CTO) issued by the Delhi Pollution Control Committee ensuring trade activities don't harm Delhi's environment."
+                            question: "Is DPCC NOC mandatory for all businesses in Delhi?",
+                            answer: "No. Only businesses that fall under pollution-regulated categories require DPCC approval. The requirement depends on the nature of industrial activity."
                         },
                         {
-                            question: "How are industries classified in Delhi?",
-                            answer: "They are classified into White, Green, Orange, and Red categories based on their pollution potential index score."
+                            question: "How long does it take to obtain DPCC approval?",
+                            answer: "The approval timeline varies depending on the category of the industry and document verification. Typically, it may take 15 to 45 days."
                         },
                         {
-                            question: "Does the White Category require a certificate?",
-                            answer: "No, White category industries only need to submit an undertaking to DPCC instead of a formal consent certificate."
+                            question: "Can a business operate without DPCC NOC?",
+                            answer: "Operating without DPCC approval may lead to penalties, closure orders, or legal action from environmental authorities."
                         },
                         {
-                            question: "What is the validity of CTO in Delhi?",
-                            answer: "Generally, CTO is granted for 10 years to Green category industries and 5 years to Orange category industries."
-                        },
-                        {
-                            question: "How long does the DPCC process take?",
-                            answer: "Typically, it takes 30-60 days for a decision on consent applications, depending on document completeness."
+                            question: "What is the validity of DPCC Consent to Operate?",
+                            answer: "The validity varies depending on the industry category (typically 5-10 years) and must be renewed periodically."
                         }
                     ]}
                 />
 
                 <ReviewsSection
-                    title="Client Success in Delhi"
-                    subtitle="Helping businesses thrive sustainably in the capital."
+                    title="Ensuring Delhi’s Green Compliance"
+                    subtitle="Secure your DPCC Consent efficiently with Vyombiz and grow your business sustainably."
                     reviews={[
                         {
-                            name: "Vikram Kohli",
-                            role: "Hotel Manager",
-                            company: "Crest Hotels",
+                            name: "Clink Consultancy",
+                            role: "Managed Service",
+                            company: "VyomBiz",
                             rating: 5,
-                            initials: "VK",
-                            text: "Securing DPCC clearance for our hotel's DG sets and wastewater management was handled perfectly by VyomBiz. Highly professional team."
-                        },
-                        {
-                            name: "Sanjana Roy",
-                            role: "Production Head",
-                            company: "Roy Plastic Works",
-                            rating: 5,
-                            initials: "SR",
-                            text: "They helped us navigate the Orange category complexities and set up our ETP as per DPCC standards. Everything was on time."
-                        },
-                        {
-                            name: "Aman Gupta",
-                            role: "Traders Asson",
-                            company: "Delhi Traders",
-                            rating: 4.9,
-                            initials: "AG",
-                            text: "Excellent service for White category undertakings. They made the process digital and easy for all our association members."
+                            initials: "CC",
+                            text: "We bridge the gap between complex environmental regulations and industrial growth in the capital region."
                         }
                     ]}
                 />

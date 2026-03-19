@@ -10,9 +10,9 @@ const ConsentForEstablishmentFromSPCB = () => {
         <div className="bg-[#f8f9fa] min-h-screen relative font-sans">
             <div className="relative z-10 space-y-2 lg:space-y-4">
                 <HeroLayout
-                    heroTitleMain="Consent to Establish (CTE)"
-                    heroTitleSuffix="from Pollution Control Board"
-                    heroDescription="Are you working on new industrial and development projects? Secure your Consent to Establish from the Pollution Control Board with VyomBiz. We've successfully maintained a 98% first-time approval ratio and secured CTE for 500+ projects across PAN India."
+                    heroTitleMain="Consent for Establishment"
+                    heroTitleSuffix="(CFE) from SPCB"
+                    heroDescription="Start your factory, manufacturing unit, or industrial project legally with SPCB Consent for Establishment (CFE). Avoid regulatory penalties and ensure environmental compliance from day one with expert assistance from Vyombiz."
                     stats={[
                         { count: "100K+", label: "Happy Customers" },
                         { count: "3500+", label: "Expert Advisors" },
@@ -24,69 +24,82 @@ const ConsentForEstablishmentFromSPCB = () => {
 
                 <DetailsLayout
                     overview={{
-                        title: "Consent to Establish (CTE) —",
-                        highlightTitle: "SPCB Overview",
+                        title: "What is",
+                        highlightTitle: "Consent for Establishment (CFE)?",
                         description: [
-                            "Consent to Establish (CTE), also known as Consent for Establishment from SPCB, is a mandatory pollution NOC required for regulating industrial discharges, including air emissions, wastewater, and noise under the Water and Air Acts.",
-                            "Industries are categorized into Red (high), Orange (moderate), and Green (low) based on their pollution levels. Some states also recognize a White Category for exempt industries. Entrepreneurs must apply for CTE before setting up their unit to ensure environmental compliance.",
-                            "Secure your CTE Certificate smoothly with VyomBiz consultants and avoid shutdowns or heavy fines ranging from Rs 1 Lakh to Rs 50 Lakh."
+                            "Consent for Establishment (CFE), also known as NOC from the State Pollution Control Board, is mandatory approval required before setting up any industrial unit, manufacturing facility, or project that may impact the environment.",
+                            "The permission is granted by the respective State Pollution Control Board (SPCB) under environmental regulations governing pollution control in India. This approval ensures that the proposed industry follows proper environmental safeguards before starting construction or installation of machinery.",
+                            "Without obtaining CFE, businesses may face legal notices, operational delays, heavy penalties, or project rejection. Vyombiz managed by Clink Consultancy Services Private Limited assists companies in obtaining CFE through proper documentation and environmental assessment."
                         ],
-                        whyIdealTitle: "Pollution Categories",
+                        whyIdealTitle: "Who Needs SPCB Consent?",
                         whyIdealList: [
-                            { title: "Red Category", desc: "High pollution potential; requires rigorous scrutiny and environmental impact assessment." },
-                            { title: "Orange Category", desc: "Moderate pollution potential; requires standard compliance and regular monitoring." },
-                            { title: "Green Category", desc: "Low pollution potential; faster clearance and simplified documentation." },
-                            { title: "White Category", desc: "Exempt from formal NOC but requires intimation and application submission." }
+                            { title: "New Industrial Units", desc: "Mandatory for anyone planning to start a new manufacturing or production plant." },
+                            { title: "Facility Expansion", desc: "Required for existing units planning to expand production or add new assembly lines." },
+                            { title: "Machinery Upgrades", desc: "Necessary when installing new machinery that significantly impacts emissions or discharge." },
+                            { title: "Waste Treatment", desc: "Critical for establishing specific waste treatment or processing infrastructure." }
                         ]
                     }}
 
                     advantages={{
-                        title: "Why Consent is Essential",
-                        subtitle: "Advantages of getting CTE early",
+                        title: "Importance of SPCB Consent",
+                        subtitle: "Ensures responsible and sustainable business operations from the establishment phase.",
                         list: [
-                            { title: "Regulatory Compliance", desc: "Adheres to environmental laws (Water & Air Acts), helping avoid penalties and project closures." },
-                            { title: "Sustainable Development", desc: "Promotes sustainability by ensuring industry operates within ecological limits from day one." },
-                            { title: "Health and Safety", desc: "Ensures the facility doesn't pose health hazards to the local community and ecosystems." },
-                            { title: "Positive Reputation", desc: "Demonstrates environmental consciousness, boosting brand value with investors and customers." },
-                            { title: "Access to Financing", desc: "A prerequisite for securing loans and financial assistance from major banks and institutions." },
-                            { title: "Operational Continuity", desc: "Prevents future legal roadblocks when transitioning from setup to active operations (CTO)." }
+                            { title: "Legal Compliance", desc: "Ensures your project complies with environmental laws before construction begins." },
+                            { title: "Smooth Approvals", desc: "A prerequisite for many factory registrations, utility approvals, and trade licenses." },
+                            { title: "Pollution Regulation", desc: "Helps regulate and minimize emissions and waste discharge from industrial activities." },
+                            { title: "Business Credibility", desc: "Demonstrates your business commitment to environmental responsibility to stakeholders." },
+                            { title: "Operational Security", desc: "Protects the business from future legal risks, fines, or regulatory shutdown orders." }
+                        ]
+                    }}
+
+                    eligibility={{
+                        title: "Industries Requiring Consent",
+                        subtitle: "Classification based on pollution potential (Red, Orange, Green, White).",
+                        list: [
+                            { title: "Manufacturing & Chemicals", desc: "Chemical industries, pharma plants, and heavy manufacturing units." },
+                            { title: "Food & Textile", desc: "Food processing units, textile manufacturing, and dyeing facilities." },
+                            { title: "Metal & Polymers", desc: "Metal processing, plastic industries, and polymer manufacturing plants." },
+                            { title: "Power & Auto", desc: "Automobile manufacturing units and various power generation facilities." }
                         ]
                     }}
 
                     documents={{
                         imageUrl: docImage,
-                        title: "Documents Checklist",
-                        subtitle: "What you need for a successful CTE application",
+                        title: "Documents Required",
+                        subtitle: "Detailed documentation is crucial for quick environmental approval.",
                         list: [
-                            { title: "Site Plan", desc: "Location plan of the industry highlighting boundaries and nearby landmarks." },
-                            { title: "Project Report", desc: "Details on raw materials, products, and capital cost of land/machinery." },
-                            { title: "Water Balance", desc: "Source of water, intake quantity, and wastewater generation/treatment plan." },
-                            { title: "Land Documents", desc: "Registration, Rent, or Lease deed proving legal possession of the site." },
-                            { title: "Pollution Controls", desc: "Details of Water or Air Pollution Control Instruments and designs." },
-                            { title: "Constitutional Docs", desc: "MOA/AOA, Partnership Deed, or Proprietorship documents as applicable." }
+                            { title: "Entity Proof", desc: "PAN Card of the business entity and Certificate of Incorporation." },
+                            { title: "Constitutional Docs", desc: "Memorandum of Association (MOA) or valid Partnership Deed." },
+                            { title: "Project Blueprint", desc: "Detailed Project Report, Business Plan, and site layout plan." },
+                            { title: "Possession Proof", desc: "Land ownership documents or a registered site lease agreement." },
+                            { title: "Process Flow", desc: "Comprehensive manufacturing process details and flowcharts." },
+                            { title: "Resource Usage", desc: "Water consumption, discharge details, and power requirement plans." },
+                            { title: "Pollution Control", desc: "Proposed pollution control measures and equipment design plans." }
                         ]
                     }}
 
                     process={{
-                        title: "Registration Procedure",
-                        subtitle: "Securing your establishment efficiently",
+                        title: "Step-by-Step Selection Process",
+                        subtitle: "From initial assessment to the issuance of the CFE certificate.",
                         steps: [
-                            { step: "01", title: "Portal Submission", desc: "Submit CFE application online via the respective State Pollution Control Board's OCMMS portal with required fees." },
-                            { step: "02", title: "Document Scrutiny", desc: "Regional Office (R.O.) scrutinizes submitted documents for consistency with local pollution norms." },
-                            { step: "03", title: "Site Inspection", desc: "Officials may perform a site visit to verify location suitability and proposed discharge points." },
-                            { step: "04", title: "Report Forwarding", desc: "Inspection report is forwarded to the approving authority for final review of the project." },
-                            { step: "05", title: "Issuance of CTE", desc: "Provisional CTE is typically issued within 100-120 days, allowing construction to begin." }
+                            { step: "01", title: "Project Assessment", desc: "Evaluating industry type, pollution category, and specific SPCB mandates." },
+                            { step: "02", title: "Documentation", desc: "Preparation of environmental compliance documents and technical application forms." },
+                            { step: "03", title: "Portal Submission", desc: "Online submission of the application to the respective SPCB portal." },
+                            { step: "04", title: "Technical Scrutiny", desc: "Authorities verify documents and may request technical clarifications." },
+                            { step: "05", title: "Site Inspection", desc: "Pollution control officials may conduct a site visit to verify location suitability." },
+                            { step: "06", title: "Consent Issuance", desc: "Issuance of the official Consent for Establishment certificate upon approval." }
                         ]
                     }}
 
-                    postCompliance={{
-                        title: "Validity & Penalties",
-                        subtitle: "Critical compliance windows",
+                    features={{
+                        title: "Why Choose Vyombiz?",
+                        subtitle: "Simplifying SPCB approvals through expert regulatory guidance.",
                         list: [
-                            { title: "CTE Validity", desc: "Generally issued for 3 to 5 years. Micro/Small Green projects may get up to 15 years." },
-                            { title: "Non-Compliance Risks", desc: "Defaults on Water/Air Act can lead to revocation of consent and immediate bank guarantee forfeit." },
-                            { title: "Revocation Notice", desc: "SPCB reserves the right to revoke consent if units fail to implement promised pollution control measures." },
-                            { title: "Timeline Note", desc: "The timeline for getting CTE is 100 to 120 days after filing the application on the OCMMS portal." }
+                            { title: "Regulatory Expertise", desc: "Deep understanding of multi-state SPCB norms and environmental acts." },
+                            { title: "End-to-End Support", desc: "Comprehensive assistance from documentation to final certificate issuance." },
+                            { title: "Accurate Filing", desc: "Rigorous verification of technical data to prevent application rejections." },
+                            { title: "Faster Timelines", desc: "Efficient handling and follow-ups to speed up the approval process." },
+                            { title: "Affordable Solutions", desc: "Cost-effective compliance management for startups and MSMEs." }
                         ]
                     }}
                 />
@@ -95,55 +108,39 @@ const ConsentForEstablishmentFromSPCB = () => {
                     title="Frequently Asked Questions"
                     faqs={[
                         {
-                            question: "What is Consent to Establish from PCB?",
-                            answer: "It is a mandatory pollutions NOC required before setting up any industrial plant to regulate air emissions and wastewater discharge."
+                            question: "Is SPCB Consent mandatory for all industries?",
+                            answer: "Industries that may cause environmental pollution must obtain Consent for Establishment before starting construction or installing machinery."
                         },
                         {
-                            question: "Is Consent to Establish from SPCB mandatory?",
-                            answer: "Yes, under the Water Act and Air Act, no person shall establish or operate any industrial plant without the previous consent of the State Board."
+                            question: "What happens if a business operates without SPCB consent?",
+                            answer: "Operating without consent can lead to heavy penalties, legal action, or closure orders from pollution control authorities."
                         },
                         {
-                            question: "What is the difference between CTO and CTE?",
-                            answer: "CTE (Establish) is obtained before setting up the industry. CTO (Operate) is obtained once the plant is established, allowing them to start operations."
+                            question: "How long does it take to obtain CFE approval?",
+                            answer: "Approval timelines depend on the industry category and documentation accuracy. Proper application preparation significantly speeds up the process."
                         },
                         {
-                            question: "What is the validity of Consent to Establish?",
-                            answer: "The CTE is generally issued for 3 to 5 years. For micro and small-scale green category projects, the validity can be further extended."
+                            question: "Is Consent for Establishment required before construction?",
+                            answer: "Yes. Industries must obtain CFE before construction or installation of equipment begins."
                         },
                         {
-                            question: "Can CTE be revoked after issuance?",
-                            answer: "Yes, the SPCB can revoke the certificate if the unit fails to comply with the Air Act (1981) or Water Act (1974) during construction."
+                            question: "Can consultants help with SPCB approval?",
+                            answer: "Yes. Professional consultants (like VyomBiz) streamline documentation and application procedures, increasing approval success rates."
                         }
                     ]}
                 />
 
                 <ReviewsSection
-                    title="Client Success"
-                    subtitle="Trusted by 500+ projects for SPCB clearances."
+                    title="Start Your Project Legally"
+                    subtitle="Environmental compliance is the foundation of a successful industrial venture. Secure your SPCB CFE with Vyombiz."
                     reviews={[
                         {
-                            name: "Suresh Menon",
-                            role: "Project Manager",
-                            company: "Metals India",
+                            name: "Clink Consultancy",
+                            role: "Managed Service",
+                            company: "VyomBiz",
                             rating: 5,
-                            initials: "SM",
-                            text: "VyomBiz expedited our CTE application through the OCMMS portal. Their understanding of the Red Category requirements was impeccable."
-                        },
-                        {
-                            name: "Anita Desai",
-                            role: "CEO",
-                            company: "EcoPack Solutions",
-                            rating: 5,
-                            initials: "AD",
-                            text: "Secured our Green Category CTE in record time. The team handled all the documentation, from site plans to water balance reports."
-                        },
-                        {
-                            name: "Rajesh V.",
-                            role: "Director",
-                            company: "V-Tech Industries",
-                            rating: 4.8,
-                            initials: "RV",
-                            text: "Professional handling of our site inspection. VyomBiz clarified all regulatory queries from the SPCB officials effectively."
+                            initials: "CC",
+                            text: "We provide high-level technical and regulatory support to ensure your industry establishes itself with 100% compliance."
                         }
                     ]}
                 />
