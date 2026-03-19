@@ -28,14 +28,6 @@ const WindingUpofPrivateLimitedCompany = () => {
         {
             question: "Do directors remain liable after winding up?",
             answer: "Once the winding-up process is completed and approved, directors are generally relieved from future liabilities related to the company."
-        },
-        {
-            question: "What are the main reasons companies wind up?",
-            answer: "A company decides to wind up mostly when it is not active, or it is failing to fulfil the business compliances, or due to insolvency or unwillingness of the directors to continue operations."
-        },
-        {
-            question: "What happens when a company fails to maintain compliance and does not wind up?",
-            answer: "If the company fails to fulfil its compliances, it can be held liable for heavy fines and penalties. Additionally, its directors can be disqualified from incorporating another entity."
         }
     ];
 
@@ -47,7 +39,7 @@ const WindingUpofPrivateLimitedCompany = () => {
                 heroTitleMain="Winding Up of Private Limited "
                 heroTitleSuffix="Company"
                 heroSubtitle="Close Your Company the Right Way — Without Legal Hassles"
-                heroDescription="Winding up a private limited company requires strict compliance with regulatory procedures, documentation, and filings with the Ministry of Corporate Affairs. Whether your business has become inactive, completed its purpose, or you plan to exit, a structured closure process is essential to avoid penalties and legal complications. With expert compliance support, you can close your company smoothly while ensuring all statutory obligations are fulfilled."
+                heroDescription="Winding up a private limited company requires strict compliance with regulatory procedures, documentation, and filings with the Ministry of Corporate Affairs. Whether your business has become inactive, completed its purpose, or you plan to exit, a structured closure process is essential to avoid penalties and legal complications. With expert compliance support, you can close your company smoothly while ensuring all statutory obligations are fulfilled. Simplify Your Company Closure with Expert Compliance Support"
                 whatsIncludedList={[
                     "Solvency Declaration",
                     "Special Resolution Filing",
@@ -106,9 +98,9 @@ const WindingUpofPrivateLimitedCompany = () => {
                         { title: "Protection from Future Liabilities", desc: "Proper winding up ensures directors and shareholders are not liable for future penalties or legal obligations." },
                         { title: "Compliance Clearance", desc: "All regulatory filings and compliance requirements are fulfilled before closure." },
                         { title: "Financial Settlement", desc: "Assets are distributed and debts are cleared systematically during the liquidation process." },
-                        { title: "Clean Exit for Promoters", desc: "Entrepreneurs can move forward with new ventures without compliance burdens from inactive entities." },
-                        { title: "Compliance Cleanliness", desc: "Prevents future penalties for non-filing of annual returns for a defunct or inactive business." }
-                    ]
+                        { title: "Clean Exit for Promoters", desc: "Entrepreneurs can move forward with new ventures without compliance burdens from inactive entities." }
+                    ],
+                    description: "Vyombiz managed by Clink Consultancy Services Private Limited ensures that every stage of the closure process is handled professionally and in accordance with statutory regulations."
                 }}
                 eligibility={{
                     title: "When Should You Consider Winding Up Your Company?",
@@ -146,7 +138,8 @@ const WindingUpofPrivateLimitedCompany = () => {
                         { step: "03", title: "Appointment of Liquidator", desc: "A professional liquidator may be appointed to manage the liquidation process." },
                         { step: "04", title: "Settlement of Liabilities", desc: "All debts, statutory dues, and liabilities are cleared before dissolution." },
                         { step: "05", title: "Asset Distribution", desc: "Remaining assets, if any, are distributed among shareholders according to their shareholding." },
-                        { step: "06", title: "Filing with MCA & Dissolution", desc: "Relevant forms and documents are filed with the Ministry of Corporate Affairs. Once all compliance requirements are completed, the company is officially dissolved." }
+                        { step: "06", title: "Filing with MCA", desc: "Relevant forms and documents are filed with the Ministry of Corporate Affairs." },
+                        { step: "07", title: "Company Dissolution", desc: "Once all compliance requirements are completed, the company is officially dissolved." }
                     ]
                 }}
                 typesOfCompliance={{
@@ -160,13 +153,13 @@ const WindingUpofPrivateLimitedCompany = () => {
                 whyChooseUs={{
                     title: "Why Choose Vyombiz for Company Winding Up?",
                     subtitle: "Handling company closure without professional guidance can lead to compliance errors and regulatory complications. Expert support ensures the process is completed efficiently and legally.",
+                    description: "Vyombiz managed by Clink Consultancy Services Private Limited offers structured compliance solutions to simplify the winding-up process.",
                     list: [
                         { title: "Expert legal and secretarial guidance", desc: "Our team ensures all legal requirements are met accurately." },
                         { title: "Accurate documentation and filings", desc: "We prepare and file all necessary documents with the MCA." },
                         { title: "Compliance with MCA regulations", desc: "We ensure every step adheres to the Companies Act." },
                         { title: "Transparent and streamlined process", desc: "We keep you informed at every stage of the closure." },
-                        { title: "Dedicated professional support", desc: "You get a dedicated point of contact throughout the procedure." },
-                        { title: "Vyombiz managed by Clink Consultancy Services Private Limited", desc: "We offer structured compliance solutions to simplify the winding-up process, ensuring business owners can close their companies confidently without worrying about future legal or compliance issues." }
+                        { title: "Dedicated professional support", desc: "You get a dedicated point of contact throughout the closure procedure." }
                     ]
                 }}
             />

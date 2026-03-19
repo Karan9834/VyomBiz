@@ -27,73 +27,17 @@ const AnnualCompliancePvtLtd = () => {
         {
             question: "Can compliance filings be corrected later?",
             answer: "Yes, corrections can be made through revised filings or additional forms depending on the nature of the error."
-        },
-        {
-            question: "What are the major filings for a private limited company?",
-            answer: "The major filings include AOC-4 (Financial Statements), MGT-7 (Annual Return), DIR-3 KYC (Director KYC), and ITR-6 (Income Tax Return)."
-        },
-        {
-            question: "How often do I need to hold board meetings for my private limited company?",
-            answer: "A private limited company must hold at least four board meetings in a financial year, with a maximum interval of 120 days between two consecutive meetings."
-        },
-        {
-            question: "What will happen if I miss any deadline for annual ROC compliance?",
-            answer: "Missing deadlines leads to a penalty of ₹100 per day per form. Continued non-compliance can result in the disqualification of directors and the company being struck off by the ROC."
-        },
-        {
-            question: "Is it mandatory to fulfil annual ROC compliances every year?",
-            answer: "Yes, it is mandatory for every registered company to file annual returns even if the company has not conducted any business activities during the year (Nil Filing)."
-        },
-        {
-            question: "Do I need to get my financial statements audited before filing?",
-            answer: "Yes, under the Companies Act 2013, every private limited company must get its accounts audited by a qualified statutory auditor (Chartered Accountant) before filing with the ROC."
-        },
-        {
-            question: "Do I need to file director's report even without operations?",
-            answer: "Yes, a Director's Report is a mandatory attachment to Form AOC-4 and must be prepared and filed even if there are no business operations."
-        },
-        {
-            question: "Is it compulsory to pass a board resolution for every general meeting?",
-            answer: "Yes, a board resolution is required to convene a general meeting, approve the notice, and authorize a director or secretary to issue the notice."
-        },
-        {
-            question: "Do I need to appoint an auditor each year?",
-            answer: "An auditor is typically appointed for a term of 5 years (until the conclusion of the 6th AGM). However, the company must intimate the ROC about the appointment using Form ADT-1."
-        },
-        {
-            question: "Is GST compliance mandatory?",
-            answer: "GST compliance is mandatory if your turnover exceeds the prescribed threshold (₹20/40 Lakhs) or if you are engaged in inter-state supply, E-commerce, or other specific categories."
-        },
-        {
-            question: "Which form should I file for the appointment of the statutory auditor?",
-            answer: "Form ADT-1 must be filed with the Registrar of Companies (ROC) to intimate the appointment of the statutory auditor."
-        },
-        {
-            question: "What is the annual ROC compliance for private limited companies?",
-            answer: "It refers to the annual mandatory reporting of financial performance and organizational changes to the Registrar of Companies through forms like AOC-4 and MGT-7."
-        },
-        {
-            question: "What are the penalties for non-compliance?",
-            answer: "Penalties include late fees (₹100/day), additional fines on the company and its officers, potential imprisonment in severe cases, and striking off of the company name."
-        },
-        {
-            question: "What is the main objective of annual compliance?",
-            answer: "The main objective is to ensure transparency by providing updated information about the company's financial health, management, and ownership to the government and stakeholders."
-        },
-        {
-            question: "Do I need to appoint a company secretary?",
-            answer: "A full-time Company Secretary (CS) is mandatory only if the paid-up share capital of the company is ₹10 Crore or more. For other companies, secretarial tasks can be handled by directors or external consultants."
         }
     ];
 
     const navLabels = {
         overview: "Overview",
         advantages: "Benefits",
-        eligibility: "Checklist",
+        eligibility: "Mandatory Compliance",
         documents: "Documents Required",
-        process: "Process",
-        features: "Services",
-        dueDates: "Deadline",
+        postCompliance: "Penalties",
+        features: "Our Services",
+        whyChooseUs: "Why Choose Us",
         faq: "FAQs"
     };
 
@@ -152,10 +96,9 @@ const AnnualCompliancePvtLtd = () => {
                         { title: "Ensures Legal Continuity", desc: "Regular compliance ensures that your company remains legally active and avoids government penalties." },
                         { title: "Builds Business Credibility", desc: "Properly maintained compliance records improve your company's trustworthiness with investors, banks, and partners." },
                         { title: "Prevents Heavy Penalties", desc: "Late filings attract daily penalties which can accumulate significantly over time." },
-                        { title: "Supports Business Growth", desc: "A compliant company structure makes it easier to raise funds, obtain loans, and attract strategic partnerships." },
-                        { title: "Better Decision Making", desc: "Up-to-date statements help you make informed decisions for growth." },
-                        { title: "Good Standing", desc: "Helps maintain active status with the ROC and prevents striking off." }
-                    ]
+                        { title: "Supports Business Growth", desc: "A compliant company structure makes it easier to raise funds, obtain loans, and attract strategic partnerships." }
+                    ],
+                    description: "With Vyombiz managed by Clink Consultancy Services Private Limited, businesses can maintain seamless compliance while focusing on their core operations."
                 }}
                 eligibility={{
                     title: "Mandatory Annual Compliance for Private Limited Companies",
@@ -166,10 +109,9 @@ const AnnualCompliancePvtLtd = () => {
                         { title: "Financial Statement Filing (Form AOC-4)", desc: "Companies must submit financial statements including balance sheet, profit & loss account, and auditor report to MCA." },
                         { title: "Annual Return Filing (Form MGT-7)", desc: "This filing contains information about the company's shareholding pattern, directors, and registered office." },
                         { title: "Director KYC (DIR-3 KYC)", desc: "Every director with a Director Identification Number must complete annual KYC verification." },
-                        { title: "Auditor Appointment (ADT-1)", desc: "The appointment of the statutory auditor must be filed with the ROC." },
-                        { title: "Tax Audit", desc: "Submission of audit report within deadlines." },
-                        { title: "GST & TDS", desc: "Monthly and quarterly filings as per pre-determined deadlines." }
-                    ]
+                        { title: "Auditor Appointment (ADT-1)", desc: "The appointment of the statutory auditor must be filed with the ROC." }
+                    ],
+                    description: "Through Vyombiz managed by Clink Consultancy Services Private Limited, companies receive expert assistance to complete each of these filings accurately and efficiently."
                 }}
                 documents={{
                     title: "Documents Required for Annual Compliance",
@@ -179,23 +121,22 @@ const AnnualCompliancePvtLtd = () => {
                         "Memorandum of Association (MOA)",
                         "Articles of Association (AOA)",
                         "PAN Card of the Company",
-                        "Duly Audited Financial Statements (Balance Sheet, P&L, Notes)",
+                        "Financial Statements",
                         "Director Identification Number (DIN) details",
                         "Shareholder information",
                         "Auditor appointment details"
                     ],
                     imageUrl: "Documents.jpg"
                 }}
-                process={{
-                    title: "How to Fulfil Annual Compliance?",
-                    subtitle: "Vyombiz follows a streamlined process to ensure timely filings.",
-                    steps: [
-                        { step: "01", title: "Contact Us", desc: "Connect and explain your company's activities to our experts." },
-                        { step: "02", title: "Expert Assigned", desc: "Get an individual case manager to guide you throughout." },
-                        { step: "03", title: "Prep Filings", desc: "Prepare financial statements, books of accounts, and KYC data." },
-                        { step: "04", title: "Doc Collection", desc: "Gather mandatory documents like audit reports and certificates." },
-                        { step: "05", title: "Submission", desc: "Final submission of returns to ROC and Income Tax Department." }
-                    ]
+                postCompliance={{
+                    title: "Penalties for Non-Compliance",
+                    subtitle: "Failure to complete annual compliance can lead to serious consequences for companies and directors.",
+                    list: [
+                        { title: "Late Filing Penalties", desc: "ROC imposes daily penalties for delayed filings of annual returns and financial statements." },
+                        { title: "Director Disqualification", desc: "Directors of non-compliant companies may be disqualified from holding director positions in other companies." },
+                        { title: "Company Strike-Off", desc: "If compliance requirements are ignored for a prolonged period, the Registrar of Companies may remove the company from the official register." }
+                    ],
+                    description: "By partnering with Vyombiz managed by Clink Consultancy Services Private Limited, businesses can avoid these risks and maintain continuous legal compliance."
                 }}
                 features={{
                     title: "Our Annual Compliance Services",
@@ -205,40 +146,19 @@ const AnnualCompliancePvtLtd = () => {
                         { title: "Annual ROC Filings", desc: "Preparation and filing of AOC-4, MGT-7, and other statutory forms." },
                         { title: "Statutory Register Maintenance", desc: "Maintaining company registers and documentation as required by law." },
                         { title: "Director Compliance", desc: "DIR-3 KYC filing and director documentation management." },
-                        { title: "Compliance Alerts", desc: "Timely reminders to ensure your company never misses a filing deadline." },
-                        { title: "Tax Dashboard", desc: "Complete assessment of Income Tax, GST, and TDS filings." }
-                    ]
-                }}
-                dueDates={{
-                    title: "Important Deadlines",
-                    subtitle: "Stay ahead of key dates to avoid massive penalties.",
-                    columns: ["Compliance Type", "Form", "Due Date"],
-                    rows: [
-                        ["Commencement of Business Operations declaration", "Form INC 20A", "Within 180 days of incorporation."],
-                        ["Annual General Meeting", "-", "Within 9 months of incorporation and subsequently within 6 months every year."],
-                        ["Mandatory Appointment of Auditor", "Form ADT-1", "Within 15 days of the annual general meeting."],
-                        ["Board Meetings", "-", "Four times a year with two meetings within 120 days gap."],
-                        ["Financial Statement Declaration", "Form AOC-4", "Within 30 days of the annual general meeting."],
-                        ["Annual Return of Small and One-Person Companies", "Form MGT-7A", "Within 60 days from the AGM."],
-                        ["Director KYC Submission", "Form DIR-3 KYC", "September 30th each year"],
-                        ["Board Resolution Filing", "Form MGT-14", "Within 30 days of filing of the resolution."],
-                        ["Return of Deposits / Outstanding Loans", "Form DPT-3", "June 30th each year."],
-                        ["Disclosure of Interest in Other Companies", "Form MBP-1", "Within 30 days of the first board meeting."],
-                        ["Active KYC of a Company", "Form INC-22A", "Within 180 days of incorporation."],
-                        ["Director Declaration of Good Standing", "Form DIR-8", "Each financial year end."],
-                        ["Individual Director's Report", "-", "Within 21 days before the AGM."]
-                    ]
+                        { title: "Compliance Alerts", desc: "Timely reminders to ensure your company never misses a filing deadline." }
+                    ],
+                    description: "With Vyombiz managed by Clink Consultancy Services Private Limited, companies gain a structured and hassle-free compliance system."
                 }}
                 whyChooseUs={{
                     title: "Why Choose Us for Annual Compliance?",
-                    subtitle: "Businesses trust Vyombiz managed by Clink Consultancy Services Private Limited to maintain their corporate compliance with efficiency and accuracy.",
                     list: [
                         { title: "Experienced Compliance Professionals", desc: "Our team understands regulatory procedures and filing requirements in detail." },
                         { title: "Timely Filing Assurance", desc: "We track deadlines to ensure filings are completed before penalties arise." },
                         { title: "Transparent Process", desc: "Clear documentation, professional support, and complete transparency." },
-                        { title: "End-to-End Support", desc: "From compliance assessment to final ROC filing, everything is handled seamlessly." },
-                        { title: "Penalty Avoidance", desc: "By partnering with us, businesses can avoid serious consequences like director disqualification or company strike-off." }
-                    ]
+                        { title: "End-to-End Support", desc: "From compliance assessment to final ROC filing, everything is handled seamlessly." }
+                    ],
+                    description: "Businesses trust Vyombiz managed by Clink Consultancy Services Private Limited to maintain their corporate compliance with efficiency and accuracy."
                 }}
             />
 

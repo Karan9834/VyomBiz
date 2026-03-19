@@ -16,11 +16,177 @@ const EventBasedCompliances = () => {
 
     const navLabels = {
         overview: "Overview",
-        advantages: "Why Comply",
+        advantages: "Importance",
         eligibility: "Common Events",
-        process: "Filing Process",
-        features: "Vyombiz Support",
+        postCompliance: "Challenges",
+        process: "How We Support",
+        features: "Who Needs This",
+        whyChooseUs: "Why Vyombiz",
         faq: "FAQ"
+    };
+
+    const overviewData = {
+        title: "What Are",
+        highlightTitle: "Event-Based Compliances?",
+        description: [
+            "Event-based compliances refer to legal obligations that arise when specific corporate actions or events occur within a company. Unlike annual or periodic compliances, these filings are required immediately after a particular business decision or structural change.",
+            "Examples of such events include:",
+            "• Appointment or resignation of directors",
+            "• Change in company name",
+            "• Issue or transfer of shares",
+            "• Alteration of Memorandum or Articles",
+            "• Change in registered office",
+            "• Increase in authorised capital",
+            "Whenever these corporate events occur, companies must notify regulatory authorities like the Ministry of Corporate Affairs (MCA) through proper filings and documentation.",
+            "Businesses that fail to complete these filings within prescribed timelines may face late fees, penalties, or legal restrictions.",
+            "Vyombiz managed by Clink Consultancy Services Private Limited helps businesses identify, prepare, and file event-based compliances seamlessly, ensuring your company remains fully compliant with regulatory requirements."
+        ]
+    };
+
+    const advantagesData = {
+        title: "Why Event-Based Compliances Are Important",
+        subtitle: "Many companies focus mainly on annual filings but overlook event-based obligations. However, these compliances are equally important for maintaining the legal status and transparency of a business entity.",
+        list: [
+            {
+                title: "Maintain Legal Validity",
+                desc: "Corporate decisions must be officially recorded with regulatory authorities to remain legally enforceable."
+            },
+            {
+                title: "Avoid Penalties",
+                desc: "Delayed or missed filings often lead to significant financial penalties under the Companies Act."
+            },
+            {
+                title: "Build Corporate Transparency",
+                desc: "Timely filings ensure that shareholders, regulators, and stakeholders have access to accurate company records."
+            },
+            {
+                title: "Protect Directors and Shareholders",
+                desc: "Compliance protects the management and owners from potential legal liabilities."
+            }
+        ],
+        description: "With structured compliance management, companies can confidently execute strategic business decisions."
+    };
+
+    const eligibilityData = {
+        title: "Common Event-Based Compliances for Companies",
+        subtitle: "Different corporate events require specific filings with authorities. Below are some of the most common event-based compliances that companies must complete.",
+        list: [
+            {
+                title: "Appointment or Resignation of Directors",
+                desc: "Whenever a director joins or leaves the company, the change must be reported to the MCA through appropriate filings within the prescribed timeline."
+            },
+            {
+                title: "Change in Registered Office",
+                desc: "If a company shifts its registered office location, the change must be approved by the board and updated in the MCA records."
+            },
+            {
+                title: "Increase in Authorised Share Capital",
+                desc: "When a company decides to expand its capital structure, the authorised capital must be modified through proper filings."
+            },
+            {
+                title: "Issue or Allotment of Shares",
+                desc: "Issuing new shares to investors or shareholders requires statutory reporting and documentation."
+            },
+            {
+                title: "Change in Company Name",
+                desc: "A company planning to rebrand must follow the legal procedure for name change approval and filings."
+            },
+            {
+                title: "Amendment of MOA or AOA",
+                desc: "Any change in the Memorandum of Association (MOA) or Articles of Association (AOA) must be properly approved and filed with the authorities."
+            },
+            {
+                title: "Change in Directors’ Details",
+                desc: "Any modification in directors’ personal details, designation, or DIN-related updates must also be filed."
+            }
+        ],
+        description: "Vyombiz managed by Clink Consultancy Services Private Limited assists companies in identifying which events trigger compliance requirements and ensuring timely filings."
+    };
+
+    const postComplianceData = {
+        title: "Challenges Businesses Face With Event-Based Compliances",
+        subtitle: "Many companies struggle to keep track of event-based regulatory obligations due to:",
+        list: [
+            { title: "Regulatory Updates", desc: "Frequent regulatory updates" },
+            { title: "Complex Procedures", desc: "Complex filing procedures" },
+            { title: "Short Deadlines", desc: "Short compliance deadlines" },
+            { title: "Documentation", desc: "Documentation requirements" },
+            { title: "Legal Interpretations", desc: "Legal interpretation challenges" }
+        ],
+        description: "A single missed filing can cause financial penalties or compliance notices from regulatory authorities. Having professional compliance support helps companies stay proactive instead of reactive."
+    };
+
+    const processData = {
+        title: "How Vyombiz Supports Your Event-Based Compliances",
+        subtitle: "Vyombiz managed by Clink Consultancy Services Private Limited provides end-to-end compliance management for businesses, ensuring that all statutory filings are handled efficiently.",
+        steps: [
+            {
+                step: "01",
+                title: "Compliance Identification",
+                desc: "We analyse corporate events and identify all applicable compliance requirements."
+            },
+            {
+                step: "02",
+                title: "Documentation Preparation",
+                desc: "Our experts prepare resolutions, forms, and necessary supporting documents."
+            },
+            {
+                step: "03",
+                title: "MCA Filing & Submission",
+                desc: "We handle the complete filing process with regulatory authorities."
+            },
+            {
+                step: "04",
+                title: "Timeline Monitoring",
+                desc: "Our team ensures every compliance is completed within statutory deadlines."
+            },
+            {
+                step: "05",
+                title: "Compliance Record Management",
+                desc: "We maintain organised records of all filings and approvals for future reference."
+            }
+        ],
+        description: "This structured approach helps businesses focus on growth while ensuring regulatory peace of mind."
+    };
+
+    const featuresData = {
+        title: "Who Needs Event-Based Compliance Support?",
+        list: [
+            { title: "Private Limited Companies", desc: "Essential for standard private entities." },
+            { title: "Startups and Growing Businesses", desc: "Scaling companies with frequent changes." },
+            { title: "Companies Raising Funding", desc: "For investors demanding compliance." },
+            { title: "Restructuring Operations", desc: "Businesses restructuring ownership or management." },
+            { title: "Expanding Operations", desc: "Companies expanding operations." }
+        ],
+        description: "Any organisation undergoing corporate changes must ensure that all regulatory filings are properly handled."
+    };
+
+    const whyChooseUsData = {
+        title: "Why Choose Vyombiz?",
+        subtitle: "Businesses require more than just compliance filing—they need strategic compliance management. Vyombiz managed by Clink Consultancy Services Private Limited offers:",
+        list: [
+            {
+                title: "Expert secretarial compliance support",
+                desc: "Expert compliance operations."
+            },
+            {
+                title: "Accurate and timely filings",
+                desc: "Prevent penalties with right filings."
+            },
+            {
+                title: "End-to-end documentation assistance",
+                desc: "We handle the entire documentation."
+            },
+            {
+                title: "Proactive compliance tracking",
+                desc: "Prevent delays through proactive management."
+            },
+            {
+                title: "Transparent and reliable service",
+                desc: "Clear interactions at every phase."
+            }
+        ],
+        description: "Our goal is to help companies maintain complete legal compliance while enabling smooth business operations.\n\nEnsure Your Corporate Events Stay Compliant: Corporate changes are part of business growth, but every event must follow proper legal procedures. Vyombiz managed by Clink Consultancy Services Private Limited ensures your company handles every event-based compliance accurately, efficiently, and on time.\nStay compliant. Stay confident. Focus on growing your business."
     };
 
     const faqs = [
@@ -49,178 +215,6 @@ const EventBasedCompliances = () => {
             answer: "Form MGT-14 must be filed within 30 days of passing certain resolutions — primarily Special Resolutions and Board Resolutions for specific actions listed in Section 179(3) of the Companies Act, 2013. Examples include resolutions for capital increase, borrowings, amendment of MOA/AOA, or buy-back of shares."
         }
     ];
-
-    const overviewData = {
-        badge: "Companies Act, 2013 — Event-Based ROC Filings",
-        title: "What Are",
-        highlightTitle: "Event-Based Compliances?",
-        description: [
-            "Event-based compliances refer to legal obligations that arise when specific corporate actions or events occur within a company. Unlike annual or periodic compliances, these filings are required immediately after a particular business decision or structural change.",
-            "Examples of such events include:",
-            "• Appointment or resignation of directors",
-            "• Change in company name",
-            "• Issue or transfer of shares",
-            "• Alteration of Memorandum or Articles",
-            "• Change in registered office",
-            "• Increase in authorised capital",
-            "Whenever these corporate events occur, companies must notify regulatory authorities like the Ministry of Corporate Affairs (MCA) through proper filings and documentation.",
-            "Businesses that fail to complete these filings within prescribed timelines may face late fees, penalties, or legal restrictions.",
-            "Vyombiz managed by Clink Consultancy Services Private Limited helps businesses identify, prepare, and file event-based compliances seamlessly, ensuring your company remains fully compliant with regulatory requirements."
-        ],
-        whyIdealTitle: "Key Characteristics of Event-Based Filings",
-        whyIdealList: [
-            {
-                title: "Triggered by Specific Events",
-                desc: "Unlike annual forms, these are filed only when a specific event occurs — there are no fixed annual due dates. The filing window opens immediately on the event date."
-            },
-            {
-                title: "30-Day Filing Window (Typically)",
-                desc: "Most event-based forms have a 30-day window from the date of the event (resolution, execution, exchange of communication). Beyond this, additional fees apply."
-            },
-            {
-                title: "Professional Certification Required",
-                desc: "Many event-based forms require certification by a practicing CA/CS/CMA along with a valid Director DSC — ensuring accuracy and legal compliance."
-            },
-            {
-                title: "Penalty for Non-Filing — ₹100/Day",
-                desc: "The additional fee of ₹100 per day per form accrues from the day following the due date, with no maximum cap, making prompt filing financially critical."
-            }
-        ]
-    };
-
-    const advantagesData = {
-        title: "Why Event-Based Compliances",
-        subtitle: "Are Important for Every Company",
-        list: [
-            {
-                title: "Maintain Legal Validity",
-                desc: "Corporate decisions must be officially recorded with regulatory authorities to remain legally enforceable."
-            },
-            {
-                title: "Avoid Penalties",
-                desc: "Delayed or missed filings often lead to significant financial penalties under the Companies Act."
-            },
-            {
-                title: "Build Corporate Transparency",
-                desc: "Timely filings ensure that shareholders, regulators, and stakeholders have access to accurate company records."
-            },
-            {
-                title: "Protect Directors and Shareholders",
-                desc: "Compliance protects the management and owners from potential legal liabilities."
-            },
-            {
-                title: "Avoiding Strike-Off Risk",
-                desc: "The ROC can mark a company as 'Non-Compliant' or initiate strike-off proceedings if critical event-based changes remain unreported — especially for address changes or continued director vacancies."
-            },
-            {
-                title: "Clean Due Diligence Record",
-                desc: "Investors and acquirers scrutinize MCA filing history during due diligence. A clean event-based compliance record is a sign of disciplined corporate governance."
-            }
-        ]
-    };
-
-    const eligibilityData = {
-        title: "Common Event-Based Compliances",
-        subtitle: "for Companies",
-        list: [
-            {
-                title: "Appointment or Resignation of Directors — DIR-12",
-                desc: "Whenever a director joins or leaves the company, the change must be reported to the MCA through appropriate filings within the prescribed timeline."
-            },
-            {
-                title: "Change in Registered Office — INC-22",
-                desc: "If a company shifts its registered office location, the change must be approved by the board and updated in the MCA records."
-            },
-            {
-                title: "Increase in Authorised Share Capital — SH-7",
-                desc: "When a company decides to expand its capital structure, the authorised capital must be modified through proper filings."
-            },
-            {
-                title: "Issue or Allotment of Shares — PAS-3",
-                desc: "Issuing new shares to investors or shareholders requires statutory reporting and documentation."
-            },
-            {
-                title: "Change in Company Name — INC-24",
-                desc: "A company planning to rebrand must follow the legal procedure for name change approval and filings."
-            },
-            {
-                title: "Amendment of MOA or AOA — MGT-14",
-                desc: "Any change in the Memorandum of Association (MOA) or Articles of Association (AOA) must be properly approved and filed with the authorities."
-            },
-            {
-                title: "Change in Directors' Details — DIR-6",
-                desc: "Any modification in directors' personal details, designation, or DIN-related updates must also be filed."
-            }
-        ]
-    };
-
-    const processData = {
-        title: "How Vyombiz Supports Your",
-        subtitle: "Event-Based Compliances",
-        steps: [
-            {
-                step: "01",
-                title: "Compliance Identification",
-                desc: "We analyse corporate events and identify all applicable compliance requirements."
-            },
-            {
-                step: "02",
-                title: "Documentation Preparation",
-                desc: "Our experts prepare resolutions, forms, and necessary supporting documents."
-            },
-            {
-                step: "03",
-                title: "MCA Filing & Submission",
-                desc: "We handle the complete filing process with regulatory authorities."
-            },
-            {
-                step: "04",
-                title: "Timeline Monitoring",
-                desc: "Our team ensures every compliance is completed within statutory deadlines."
-            },
-            {
-                step: "05",
-                title: "Compliance Record Management",
-                desc: "We maintain organised records of all filings and approvals for future reference."
-            },
-            {
-                step: "06",
-                title: "End-to-End Tracking",
-                desc: "We track the status of every filed form on the MCA portal and respond to any ROC observations — giving you complete visibility and peace of mind."
-            }
-        ]
-    };
-
-    const whyChooseUsData = {
-        title: "Why Choose Vyombiz?",
-        subtitle: "Your partner for seamless event-based compliance",
-        list: [
-            {
-                title: "Expert secretarial compliance support",
-                desc: "Our team understands regulatory procedures and filing requirements in detail."
-            },
-            {
-                title: "Accurate and timely filings",
-                desc: "We track deadlines to ensure filings are completed before penalties arise."
-            },
-            {
-                title: "End-to-end documentation assistance",
-                desc: "We draft all requisite documents in precise statutory language before submission."
-            },
-            {
-                title: "Proactive compliance tracking",
-                desc: "We help companies stay proactive instead of reactive with compliance obligations."
-            },
-            {
-                title: "Transparent and reliable service",
-                desc: "Clear documentation, professional support, and complete transparency throughout the process."
-            },
-            {
-                title: "30-Day Filing Guarantee",
-                desc: "From the moment you inform us of a corporate event, Vyombiz initiates the filing process immediately — ensuring the mandatory 30-day window is never missed."
-            }
-        ]
-    };
 
     return (
         <div className="w-full bg-white font-sans text-[#1a1a1a]">
@@ -253,7 +247,9 @@ const EventBasedCompliances = () => {
                 overview={overviewData}
                 advantages={advantagesData}
                 eligibility={eligibilityData}
+                postCompliance={postComplianceData}
                 process={processData}
+                features={featuresData}
                 whyChooseUs={whyChooseUsData}
             />
 
