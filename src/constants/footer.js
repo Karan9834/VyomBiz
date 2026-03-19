@@ -1,13 +1,13 @@
 export const FOOTER_LINKS = {
     STARTUP: [
         { name: "Business Registration", path: "/business-registration" },
-        { name: "NGO / Trust", path: "/startup" },
-        { name: "Global Incorporation", path: "/startup" },
-        { name: "Industry Setup", path: "/startup" },
-        { name: "Government Licenses", path: "/startup" },
-        { name: "Government Registration", path: "/startup" },
-        { name: "ISO Certifications", path: "/startup" },
-        { name: "Fssai & Eating License", path: "/startup" }
+        { name: "NGO / Trust", path: "/ngo" },
+        { name: "Global Incorporation", path: "/global-incorporation" },
+        { name: "Industry Setup", path: "/industry-setup" },
+        { name: "Government Licenses", path: "/government-licenses" },
+        { name: "Government Registration", path: "/government-registration" },
+        { name: "ISO Certifications", path: "/iso-certifications" },
+        { name: "Fssai & Eating License", path: "/fssai-eating-license" }
     ],
     COMPLIANCE: [
         { name: "Secretarial", path: "/secretarial-compliance" },
