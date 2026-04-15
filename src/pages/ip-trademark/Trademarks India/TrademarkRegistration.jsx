@@ -13,14 +13,14 @@ const overviewImg = overview;
 
 const TrademarkOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
 
                     {/* Left Content */}
                     <div>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            Overview of Trademark Registration
+                            Overview of <span className="text-yellow-400">Trademark Registration</span>
                         </h2>
 
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
@@ -51,7 +51,7 @@ const TrademarkOverview = () => {
 
 const TrademarkRegistrationEligibility = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Who Should Apply for Trademark Registration
@@ -115,7 +115,7 @@ const TrademarkRegistrationEligibility = () => {
 
 const TrademarkRegistrationDocumentsSection = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for Trademark Registration
@@ -165,7 +165,7 @@ const TrademarkRegistrationDocumentsSection = () => {
 
 const TrademarkRegistrationProcessSection = () => {
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -272,8 +272,19 @@ const TrademarkRegistrationProcessSection = () => {
 };
 
 const TrademarkRegistrationFeaturesSection = () => {
+    const features = [
+        { title: "Professional Consultation", desc: "Expert guidance on trademark eligibility and protection." },
+        { title: "Detailed Trademark Search", desc: "Ensuring the mark is unique before filing." },
+        { title: "Documentation Support", desc: "Assistance in preparing and verifying all documents." },
+        { title: "Complete Filing Assistance", desc: "Handling the entire trademark application process." },
+        { title: "Application Status Updates", desc: "Keeping you informed about progress." },
+        { title: "Objection Response Support", desc: "Drafting professional responses to office objections." },
+        { title: "Transparent Pricing", desc: "Clear pricing structure without hidden charges." },
+        { title: "Post-Registration Assistance", desc: "Support for renewal and trademark protection." }
+    ];
+
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
@@ -283,113 +294,26 @@ const TrademarkRegistrationFeaturesSection = () => {
                         Your trusted partner for Intellectual Property Rights.
                     </p>
                 </div>
-                <div>
-
-                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                        <div className="text-[15px] font-semibold text-[#072b47]">
-                            1.
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
+                    {features.map((feature, index) => (
+                        <div
+                            key={index}
+                            className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300"
+                        >
+                            <div className="text-[15px] font-semibold text-[#072b47]">
+                                {index + 1}.
+                            </div>
+                            <div>
+                                <h3 className="text-[16px] font-semibold text-[#072b47]">
+                                    {feature.title}
+                                </h3>
+                                <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
+                                    {feature.desc}
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                Professional Consultation
-                            </h3>
-                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                Expert guidance on trademark eligibility and protection.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                        <div className="text-[15px] font-semibold text-[#072b47]">
-                            2.
-                        </div>
-                        <div>
-                            <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                Detailed Trademark Search
-                            </h3>
-                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                Ensuring the mark is unique before filing.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                        <div className="text-[15px] font-semibold text-[#072b47]">
-                            3.
-                        </div>
-                        <div>
-                            <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                Documentation Support
-                            </h3>
-                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                Assistance in preparing and verifying all documents.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                        <div className="text-[15px] font-semibold text-[#072b47]">
-                            4.
-                        </div>
-                        <div>
-                            <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                Complete Filing Assistance
-                            </h3>
-                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                Handling the entire trademark application process.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                        <div className="text-[15px] font-semibold text-[#072b47]">
-                            5.
-                        </div>
-                        <div>
-                            <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                Application Status Updates
-                            </h3>
-                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                Keeping you informed about progress.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                        <div className="text-[15px] font-semibold text-[#072b47]">
-                            6.
-                        </div>
-                        <div>
-                            <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                Objection Response Support
-                            </h3>
-                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                Drafting professional responses to office objections.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                        <div className="text-[15px] font-semibold text-[#072b47]">
-                            7.
-                        </div>
-                        <div>
-                            <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                Transparent Pricing
-                            </h3>
-                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                Clear pricing structure without hidden charges.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                        <div className="text-[15px] font-semibold text-[#072b47]">
-                            8.
-                        </div>
-                        <div>
-                            <h3 className="text-[16px] font-semibold text-[#072b47]">
-                                Post-Registration Assistance
-                            </h3>
-                            <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">
-                                Support for renewal and trademark protection.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="border-t border-slate-300"></div>
+                    ))}
+                    <div className="border-t border-slate-300 md:col-span-2"></div>
                 </div>
             </div>
         </section>
@@ -427,7 +351,7 @@ const TrademarkRegistration = () => {
 
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Brand Protection
                     </span>
 
@@ -538,3 +462,4 @@ const TrademarkRegistration = () => {
 };
 
 export default TrademarkRegistration;
+

@@ -7,3 +7,4 @@ const PropertyLitigation = () => {
 };
 
 export default PropertyLitigation;
+

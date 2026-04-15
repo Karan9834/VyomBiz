@@ -3,7 +3,6 @@ import { Users, Briefcase, Building2 } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /**
@@ -70,8 +69,6 @@ const LeaseAgreementDrafting = () => {
                     { count: "24hrs", label: "Draft Delivery", icon: <Building2 size={20} /> }
                 ]}
             />
-
-            <TrustedBrands />
             <TalkExpert />
 
             {/* ================= DETAILS SECTION ================= */}
@@ -169,3 +166,4 @@ const LeaseAgreementDrafting = () => {
 };
 
 export default LeaseAgreementDrafting;
+

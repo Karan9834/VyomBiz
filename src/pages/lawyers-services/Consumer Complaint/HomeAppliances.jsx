@@ -7,3 +7,4 @@ const HomeAppliances = () => {
 };
 
 export default HomeAppliances;
+

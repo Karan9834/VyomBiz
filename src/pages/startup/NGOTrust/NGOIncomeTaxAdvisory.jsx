@@ -5,7 +5,6 @@ import { Users, Briefcase, Building2, FileText, CheckCircle, TrendingUp } from "
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 import benefits from "../../../assets/ngo1/NGO Income Tax Advisory Services/benefits.png"
 import overview from "../../../assets/ngo1/NGO Income Tax Advisory Services/overview.png"
@@ -19,15 +18,15 @@ import process from "../../../assets/ngo1/NGO Income Tax Advisory Services/proce
 
 const IncomeTaxOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Tax Compliance
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            NGO Income Tax Advisory – <span className="text-[#005a9c]">Expert Guidance</span>
+                            NGO Income Tax Advisory – <span className="text-yellow-400">Expert Guidance</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             Proper tax compliance is essential for the long-term sustainability of any NGO. Vyombiz provides expert advisory services to help NGOs understand and comply with the Income Tax regulations in India. Our customized solutions help NGOs obtain key registrations such as 12A and 80G while ensuring proper compliance.
@@ -57,7 +56,7 @@ const NGOIncomeTaxAdvisoryAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Tax Compliance
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -102,7 +101,7 @@ const NGOIncomeTaxAdvisoryAdvantages = () => {
 
 const IncomeTaxAdvisoryEligibility = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
 
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
@@ -161,7 +160,7 @@ const IncomeTaxAdvisoryEligibility = () => {
 
 const IncomeTaxAdvisoryDocumentsSection = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
 
                 {/* Main Heading */}
@@ -246,7 +245,7 @@ const IncomeTaxAdvisoryProcessSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
 
                 {/* Heading */}
@@ -343,7 +342,7 @@ const IncomeTaxAdvisoryFeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
 
                 {/* Corrected Heading */}
@@ -432,7 +431,6 @@ const NGOIncomeTaxAdvisory = () => {
                     { count: "99%", label: "Timely Service Delivery", icon: <CheckCircle size={20} /> }
                 ]}
             />
-            <TrustedBrands />
             <TalkExpert expertise="Expertise in NGO Income Tax Advisory" />
 
             {/* ================= DETAILS SECTION ================= */}
@@ -457,3 +455,4 @@ const NGOIncomeTaxAdvisory = () => {
 };
 
 export default NGOIncomeTaxAdvisory;
+

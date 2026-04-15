@@ -10,7 +10,6 @@ import {
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 import benefits from "../../../assets/FSSAI & Eating License/fssai-product-approval/benefits.jpg";
 import overview from "../../../assets/FSSAI & Eating License/fssai-product-approval/overview.jpeg";
@@ -18,15 +17,15 @@ import process from "../../../assets/FSSAI & Eating License/fssai-product-approv
 
 const FssaiProductApprovalOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Innovation Guide
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            What is <span className="text-[#005a9c]">FSSAI Product Approval?</span>
+                            What is <span className="text-yellow-400">FSSAI Product Approval?</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             FSSAI Product Approval is the regulatory process required when a food product does not fall under existing food standards specified by the Food Safety and Standards Authority of India (FSSAI).
@@ -82,7 +81,7 @@ const FssaiProductApprovalAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Why It Is Vital
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -129,7 +128,7 @@ const FssaiProductApprovalAdvantages = () => {
 
 const FssaiProductApprovalEligibility = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Who Should Apply for FSSAI Product Approval?
@@ -157,7 +156,7 @@ const FssaiProductApprovalEligibility = () => {
 
 const FssaiProductApprovalDocuments = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for FSSAI Product Approval
@@ -196,7 +195,7 @@ const FssaiProductApprovalProcess = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -242,7 +241,7 @@ const FssaiProductApprovalFeatures = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
@@ -280,7 +279,7 @@ const FssaiProductApprovalCompliance = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
@@ -355,8 +354,6 @@ const FssaiProductApproval = () => {
                     { count: "NABL", label: "Lab Tested", icon: <Search size={20} /> }
                 ]}
             />
-
-            <TrustedBrands />
             <TalkExpert />
 
             <DetailsLayout
@@ -375,3 +372,4 @@ const FssaiProductApproval = () => {
 };
 
 export default FssaiProductApproval;
+

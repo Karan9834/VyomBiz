@@ -11,7 +11,6 @@ import {
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 import benefits from "../../../assets/Industry Setup/fermentation-industry-setup/benefits.jpg";
 import overview from "../../../assets/Industry Setup/fermentation-industry-setup/overview.jpg";
@@ -19,11 +18,11 @@ import process from "../../../assets/Industry Setup/fermentation-industry-setup/
 
 const FermentationIndustryOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Biotechnology
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -58,7 +57,7 @@ const FermentationIndustryAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Growth Drivers
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -117,7 +116,7 @@ const FermentationIndustryEligibility = () => {
         "Boiler and Industrial Safety Approvals"
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Licenses Required to Start a Fermentation Industry in India
@@ -128,7 +127,7 @@ const FermentationIndustryEligibility = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-[17px] text-slate-600 leading-relaxed mb-8">
                     {list.map((item, i) => (
                         <div key={i} className="flex items-start">
-                            <div className="mr-3 mt-1 text-[#005a9c]"><ShieldCheck size={18} /></div>
+                            <div className="mr-3 mt-1 text-yellow-400"><ShieldCheck size={18} /></div>
                             <span>{item}</span>
                         </div>
                     ))}
@@ -158,7 +157,7 @@ const FermentationIndustryDocumentsSection = () => {
         "Product details and manufacturing process information"
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for Fermentation Industry Setup
@@ -169,7 +168,7 @@ const FermentationIndustryDocumentsSection = () => {
                 <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed">
                     {list.map((item, i) => (
                         <li key={i} className="flex">
-                            <span className="text-[#005a9c] mr-2">•</span> {item}
+                            <span className="text-yellow-400 mr-2">•</span> {item}
                         </li>
                     ))}
                 </ul>
@@ -190,7 +189,7 @@ const FermentationIndustryProcessSection = () => {
         { title: "Compliance & Documentation", desc: "Proper documentation related to safety standards, environmental compliance, and manufacturing processes must be maintained." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -258,7 +257,7 @@ const FermentationIndustryFeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 
                 <div className="grid lg:grid-cols-2 gap-16 mb-16">
@@ -291,7 +290,7 @@ const FermentationIndustryFeaturesSection = () => {
                         <ul className="space-y-3 mb-8">
                             {compliances.map((item, index) => (
                                 <li key={index} className="flex">
-                                    <span className="text-[#005a9c] mr-3 mt-1"><ShieldCheck size={18} /></span>
+                                    <span className="text-yellow-400 mr-3 mt-1"><ShieldCheck size={18} /></span>
                                     <span className="text-[17px] text-slate-600 leading-relaxed">{item}</span>
                                 </li>
                             ))}
@@ -313,7 +312,7 @@ const FermentationIndustryFeaturesSection = () => {
                 <div>
                     {features.map((feature, index) => (
                         <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]"><Dna size={20} className="text-[#005a9c]" /></div>
+                            <div className="text-[15px] font-semibold text-[#072b47]"><Dna size={20} className="text-yellow-400" /></div>
                             <div>
                                 <h3 className="text-[16px] font-semibold text-[#072b47]">{feature.title}</h3>
                                 <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">{feature.desc}</p>
@@ -367,8 +366,6 @@ const FermentationIndustry = () => {
                     { count: "50+", label: "Offices", icon: <Building2 size={20} /> }
                 ]}
             />
-
-            <TrustedBrands />
             <TalkExpert />
 
             <DetailsLayout
@@ -390,3 +387,4 @@ const FermentationIndustry = () => {
 };
 
 export default FermentationIndustry;
+

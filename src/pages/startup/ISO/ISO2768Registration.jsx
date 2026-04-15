@@ -11,15 +11,15 @@ import process from "../../../assets/ISO Certifications/ISO 2768-1/process.jpg";
 
 const ISO2768Overview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Mechanical Equipment Precision
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            ISO 2768-1 Standard – <span className="text-[#005a9c]">An Overview</span>
+                            ISO 2768-1 Standard – <span className="text-yellow-400">An Overview</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             The ISO 2768-1 standard heavily measures the exact level of discrepancy that shall be tolerated in mechanical equipment. Developed safely by the technical committee of the ISO in 1989, it meticulously delineates accepted angular and linear dimensional limits securely bridging manufacturing tolerances.
@@ -53,7 +53,7 @@ const ISO2768Advantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Operational Excellence
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -98,7 +98,7 @@ const ISO2768Advantages = () => {
 
 const ISO2768Benefits = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Key Advantages Received
@@ -137,7 +137,7 @@ const ISO2768Benefits = () => {
 
 const ISODocumentsSection = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documentation Required
@@ -192,7 +192,7 @@ const ISO2768ProcessSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -263,7 +263,7 @@ const ISO2768FeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
@@ -359,3 +359,4 @@ const ISO2768Registration = () => {
 };
 
 export default ISO2768Registration;
+

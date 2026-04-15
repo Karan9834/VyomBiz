@@ -10,22 +10,21 @@ import {
 import HeroLayout from "../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../components/common/TalkExpert.jsx";
 
 
 
 const ProducerCompanyOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Agricultural Business
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            Producer Company Registration – <span className="text-[#005a9c]">Empowering Producers</span>
+                            <span className="text-yellow-400">Producer Company Registration</span> – Empowering Producers
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             A Producer Company combines the benefits of a private limited company and a cooperative society. It merges corporate management practices with the cooperative principles of member participation. It is formed by primary producers such as farmers, artisans, and agriculturists to enhance their income and business opportunities.
@@ -59,7 +58,7 @@ const ProducerCompanyAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Why It Is Vital
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -151,7 +150,6 @@ const ProducerCompanyRegistration = () => {
             />
 
             {/* ================= TRUSTED BRANDS SECTION ================= */}
-            <TrustedBrands />
 
             {/* ================= TALK EXPERT SECTION ================= */}
             <TalkExpert />
@@ -226,3 +224,4 @@ const ProducerCompanyRegistration = () => {
 };
 
 export default ProducerCompanyRegistration;
+

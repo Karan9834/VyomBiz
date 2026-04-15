@@ -11,67 +11,67 @@ const EnvironmentalIndustry = () => {
                 "title": "ESDD in Food Processing Industry",
                 "desc": "Environmental & Social Due Diligence in Food Processing Industry Allow VyomBiz to conduct Environmental & Social Due Diligence in Food Processing Industry for you, in order to a..",
                 "price": "499.00",
-                icon: <CheckCircle className='w-8 h-8 text-[#005a9c]' />
+                icon: <CheckCircle className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "ESDD in Tobacco Industry",
                 "desc": "Environmental & Social Due Diligence in Tobacco Industry Let VyomBiz help you with Environmental & Social Due Diligence in Tobacco Industry that would become sufficiently accessib..",
                 "price": "499.00",
-                icon: <CheckCircle className='w-8 h-8 text-[#005a9c]' />
+                icon: <CheckCircle className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "ESDD in Aerospace Industry",
                 "desc": "Environmental and Social Due Diligence in the Aerospace Industry Get Environmental and Social Due Diligence in the Aerospace Industry done, seamlessly with VyomBiz as your trusted partner",
                 "price": "499.00",
-                icon: <CheckCircle className='w-8 h-8 text-[#005a9c]' />
+                icon: <CheckCircle className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "ESDD in Renewable Energy Industry",
                 "desc": "ESDD Compliance in Renewable Energy Industry with VyomBiz Hire our bespoke team of experts at VyomBiz to conduct Environmental and Social Due Diligence in Renewable Energy Industry to ach..",
                 "price": "499.00",
-                icon: <Leaf className='w-8 h-8 text-[#005a9c]' />
+                icon: <Leaf className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "ESDD in Financial & Banking Sector",
                 "desc": "Environmental and Social Due Diligence Compliance Conduct Environmental and Social Due Diligence in Financial & Banking Sector Proficiently with the Assistance of our Expert Team!",
                 "price": "499.00",
-                icon: <Building2 className='w-8 h-8 text-[#005a9c]' />
+                icon: <Building2 className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "ESDD in Dairy Industry",
                 "desc": "Environmental and Social Due Diligence in Dairy Industry Get Environmental and Social Due Diligence in Dairy Industry done effortlessly with VyomBiz as your trusted partner.",
                 "price": "499.00",
-                icon: <CheckCircle className='w-8 h-8 text-[#005a9c]' />
+                icon: <CheckCircle className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "ESDD in the Sugar Industry",
                 "desc": "Environmental and Social Due Diligence in the Sugar Industry Hire our team of experts at VyomBiz to conduct Environmental and Social Due Diligence in the Sugar Industry without any hassle..",
                 "price": "499.00",
-                icon: <Factory className='w-8 h-8 text-[#005a9c]' />
+                icon: <Factory className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "ESDD in Iron and Steel Industry",
                 "desc": "Environmental and Social Due Diligence in the Iron and Steel Industry? Unlock avenues for Environmental and Social Due Diligence in the Iron and Steel Industry effortlessly and hassle-free..",
                 "price": "499.00",
-                icon: <Factory className='w-8 h-8 text-[#005a9c]' />
+                icon: <Factory className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "ESDD in Agricultural Equipment Manufacturing Industry",
                 "desc": "ESDD in Agricultural Equipment Manufacturing Industry Conduct ESDD for Agricultural Equipment Manufacturing Industry with 500+ ESDD and ESG Experts of VyomBiz on your side",
                 "price": "499.00",
-                icon: <Factory className='w-8 h-8 text-[#005a9c]' />
+                icon: <Factory className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "ESDD in Solar Energy Industry",
                 "desc": "ESDD in Solar Energy Industry Ensure ESDD Compliance in Solar Energy Industry with 500+ ESDD and ESG Experts of VyomBiz on your side.",
                 "price": "499.00",
-                icon: <Zap className='w-8 h-8 text-[#005a9c]' />
+                icon: <Zap className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "ESDD in Furniture and Fixtures Industry",
                 "desc": "ESDD in Furniture and Fixtures Industry Hire our bespoke team at VyomBiz to conduct ESDD for Furniture and Fixtures Industry to achieve 99.8 % proficiency without any hassle.",
                 "price": "499.00",
-                icon: <Factory className='w-8 h-8 text-[#005a9c]' />
+                icon: <Factory className='w-8 h-8 text-yellow-400' />
         }
 ];
 
@@ -159,7 +159,7 @@ const EnvironmentalIndustry = () => {
                                     <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:scale-110 group-hover:bg-[#dead01]/10 transition-all duration-500 mb-6">
                                         {service.icon}
                                     </div>
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors line-clamp-2">{service.title}</h3>
+                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-yellow-400 transition-colors line-clamp-2">{service.title}</h3>
                                     <p className="text-slate-600 text-[15px] leading-relaxed mb-8 flex-grow font-medium line-clamp-3">{service.desc}</p>
                                     
                                     <div className="mt-auto pt-6 border-t border-slate-100">
@@ -171,7 +171,7 @@ const EnvironmentalIndustry = () => {
                                             <button className="w-full lg:w-auto flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3 rounded-xl text-sm font-bold transition-all shadow-md active:scale-[0.97] whitespace-nowrap">
                                                 Get Started Free
                                             </button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read transition-all hover:text-[#072b47] whitespace-nowrap">
+                                            <button className="text-yellow-400 font-bold text-sm flex items-center gap-1.5 group/read transition-all hover:text-[#072b47] whitespace-nowrap">
                                                 <span>Read more</span>
                                                 <ArrowRight className="w-4 h-4 group-hover/read:translate-x-1" />
                                             </button>
@@ -237,7 +237,7 @@ const EnvironmentalIndustry = () => {
                                 </div>
                                 <p className="text-slate-600 font-medium leading-relaxed mb-6">"{rev.text}"</p>
                                 <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-[#005a9c] font-bold text-xl">
+                                    <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-yellow-400 font-bold text-xl">
                                         {rev.name.charAt(0)}
                                     </div>
                                     <div>
@@ -250,7 +250,7 @@ const EnvironmentalIndustry = () => {
                     </div>
 
                     <div className="text-center">
-                        <button className="bg-white border-2 border-[#005a9c] text-[#005a9c] hover:bg-[#005a9c] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors shadow-md">
+                        <button className="bg-white border-2 border-[#005a9c] text-yellow-400 hover:bg-[#005a9c] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors shadow-md">
                             View More Reviews
                         </button>
                     </div>
@@ -261,3 +261,4 @@ const EnvironmentalIndustry = () => {
 };
 
 export default EnvironmentalIndustry;
+

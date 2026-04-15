@@ -11,15 +11,15 @@ import process from "../../../assets/ISO Certifications/iso 22000 fsms certifica
 
 const ISO22000Overview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Global Food Safety
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            ISO 22000 FSMS – <span className="text-[#005a9c]">Overview</span>
+                            ISO 22000 FSMS – <span className="text-yellow-400">Overview</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             Food safety is a global priority. Businesses involved in food production or supply must ensure that their products are safe for consumption. ISO 22000 is an internationally recognized standard for Food Safety Management Systems (FSMS).
@@ -53,7 +53,7 @@ const ISO22000Advantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Systematic Security
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -98,7 +98,7 @@ const ISO22000Advantages = () => {
 
 const ISO22000Eligibility = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Pre-Requisites for ISO 22000 FSMS
@@ -139,7 +139,7 @@ const ISO22000Eligibility = () => {
 
 const ISODocumentsSection = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for ISO 22000
@@ -192,7 +192,7 @@ const ISO22000ProcessSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -259,7 +259,7 @@ const ISO22000FeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
@@ -355,3 +355,4 @@ const ISO22000Registration = () => {
 };
 
 export default ISO22000Registration;
+

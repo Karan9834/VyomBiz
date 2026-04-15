@@ -16,3 +16,4 @@ const PartnershipRegistration = () => {
 };
 
 export default PartnershipRegistration;
+

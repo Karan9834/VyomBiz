@@ -9,15 +9,15 @@ import req from "../../../assets/ISO Certifications/iso-16001-certification/req.
 
 const ISO16001Overview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Object Detection Systems
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            Overview of <span className="text-[#005a9c]">ISO 16001 Certification</span>
+                            Overview of <span className="text-yellow-400">ISO 16001 Certification</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             ISO 16001:2017 specifies basic requirements and describes the method or procedure for evaluating and testing the performance of the object detection systems (ODSs) and visibility aids (VAs) used on earth-moving machines.
@@ -51,7 +51,7 @@ const ISO16001Requirements = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Evaluation Testing
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -96,7 +96,7 @@ const ISO16001Requirements = () => {
 
 const ISO16001Benefits = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Benefits of ISO 16001 Certification
@@ -150,19 +150,19 @@ const ISO16001DocumentsSection = () => {
                         <h3 className="text-[20px] font-semibold text-[#072b47] mb-4">Functional Data</h3>
                         <ul className="space-y-3 text-[16px] text-slate-600">
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Description of systems function</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Detection area shape, size, & variances</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Weather limitations & topography</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Description of controls</span>
                             </li>
                         </ul>
@@ -173,19 +173,19 @@ const ISO16001DocumentsSection = () => {
                         <h3 className="text-[20px] font-semibold text-[#072b47] mb-4">Operational Instructions</h3>
                         <ul className="space-y-3 text-[16px] text-slate-600">
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Instructions for activation</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Routine maintenance instructions</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Safety operation & malfunction actions</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Info for job-site organization (ODS/VAs)</span>
                             </li>
                         </ul>
@@ -196,19 +196,19 @@ const ISO16001DocumentsSection = () => {
                         <h3 className="text-[20px] font-semibold text-[#072b47] mb-4">Extra Submissions</h3>
                         <ul className="space-y-3 text-[16px] text-slate-600">
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Regulatory certifications (e.g. RF conformity)</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Info for connection with other components</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Installation & performance verification</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Electrical supply requirements</span>
                             </li>
                         </ul>
@@ -240,7 +240,7 @@ const ISO16001ProcessSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -311,7 +311,7 @@ const ISO16001FeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
@@ -411,3 +411,4 @@ const ISO16001Registration = () => {
 };
 
 export default ISO16001Registration;
+

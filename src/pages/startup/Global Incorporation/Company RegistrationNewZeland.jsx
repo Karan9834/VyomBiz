@@ -15,15 +15,15 @@ import process from "../../../assets/Global Incorporation/Company Registration i
 
 const CompanyRegistrationNewZealandOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Global Expansion
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            Company Registration in New Zealand – <span className="text-[#005a9c]">Overview</span>
+                            Company Registration in New Zealand – <span className="text-yellow-400">Overview</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             Expand your business into one of the world’s most business-friendly economies. New Zealand offers a transparent regulatory system, quick company formation, and global credibility for entrepreneurs and investors.
@@ -60,7 +60,7 @@ const CompanyRegistrationNewZealandAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Why It Is Vital
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -103,7 +103,7 @@ const CompanyRegistrationNewZealandAdvantages = () => {
 
 const NewZealandIncorporationEligibility = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Types of Business Entities in New Zealand
@@ -170,7 +170,7 @@ const NewZealandIncorporationDocumentsSection = () => {
         "Registered office address in New Zealand"
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Eligibility for Company Registration
@@ -178,7 +178,7 @@ const NewZealandIncorporationDocumentsSection = () => {
                 <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed mb-10">
                     {eligibilityList.map((item, i) => (
                         <li key={i} className="flex items-start">
-                             <div className="mr-3 mt-1 text-[#005a9c]"><Users size={18} /></div>
+                             <div className="mr-3 mt-1 text-yellow-400"><Users size={18} /></div>
                              <span>{item}</span>
                         </li>
                     ))}
@@ -196,7 +196,7 @@ const NewZealandIncorporationDocumentsSection = () => {
                 <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed">
                     {list.map((item, i) => (
                         <li key={i} className="flex items-start">
-                             <div className="mr-3 mt-1 text-[#005a9c]"><Users size={18} /></div>
+                             <div className="mr-3 mt-1 text-yellow-400"><Users size={18} /></div>
                              <span>{item}</span>
                         </li>
                     ))}
@@ -218,7 +218,7 @@ const NewZealandIncorporationProcessSection = () => {
         { title: "Company Incorporation Certificate", desc: "Once approved, the business receives its Certificate of Incorporation, confirming legal registration." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -278,7 +278,7 @@ const NewZealandIncorporationFeaturesSection = () => {
         { title: "Post-registration support", desc: "Support for post-registration compliance." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
@@ -389,3 +389,4 @@ const CompanyRegistrationNewZeland = () => {
 };
 
 export default CompanyRegistrationNewZeland;
+

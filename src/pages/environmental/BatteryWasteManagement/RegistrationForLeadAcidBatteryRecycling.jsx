@@ -144,3 +144,4 @@ const RegistrationForLeadAcidBatteryRecycling = () => {
 };
 
 export default RegistrationForLeadAcidBatteryRecycling;
+

@@ -165,3 +165,4 @@ const PlasticWasteAuthorization = () => {
 };
 
 export default PlasticWasteAuthorization;
+

@@ -124,3 +124,4 @@ const IndustrialWasteManagement = () => {
 };
 
 export default IndustrialWasteManagement;
+

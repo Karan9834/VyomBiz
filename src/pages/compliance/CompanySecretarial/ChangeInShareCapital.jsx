@@ -3,7 +3,6 @@ import { CheckCircle2, AlertTriangle, Clock, Users, FileText, Shield, BookOpen, 
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /**
@@ -23,14 +22,14 @@ const ChangeinShareCapital = () => {
     const listiclesContent = (
         <div className="space-y-8">
             <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
-                <BarChart2 size={18} className="text-[#005a9c]" />
+                <BarChart2 size={18} className="text-yellow-400" />
                 Kinds of Change in Share Capital — Section 61
             </h3>
             <div className="flex flex-wrap gap-2 mb-6">
                 {["Increase in Authorized Share Capital", "Consolidation & Division of Shares", "Conversion of Shares into Stock", "Sub-Division of Shares", "Reduction / Cancellation of Shares"].map((item, i) => (
                     <div key={i} className="flex items-center gap-2 bg-[#e8f1fb] border border-[#c0d8f0] rounded-full px-3 py-1.5">
-                        <CheckCircle2 size={13} className="text-[#005a9c]" />
-                        <span className="text-[12px] font-medium text-[#005a9c]">{item}</span>
+                        <CheckCircle2 size={13} className="text-yellow-400" />
+                        <span className="text-[12px] font-medium text-yellow-400">{item}</span>
                     </div>
                 ))}
             </div>
@@ -51,7 +50,7 @@ const ChangeinShareCapital = () => {
                     </div>
                 ))}
             </div>
-            <h4 className="text-[15px] font-bold text-[#072b47] mt-6 mb-3 flex items-center gap-2"><Shield size={15} className="text-[#005a9c]" />Characteristics of Share Capital</h4>
+            <h4 className="text-[15px] font-bold text-[#072b47] mt-6 mb-3 flex items-center gap-2"><Shield size={15} className="text-yellow-400" />Characteristics of Share Capital</h4>
             <div className="grid gap-2">
                 {[
                     "Share Capital carries specific rights and liabilities attached to a predefined amount of a company's equity.",
@@ -59,7 +58,7 @@ const ChangeinShareCapital = () => {
                     "Share Capital is recognized by its certificate number — except for shares held with a depository.",
                 ].map((item, i) => (
                     <div key={i} className="flex items-start gap-2 bg-[#f8fbff] border border-[#d0e3f5] rounded-lg px-4 py-2.5">
-                        <CheckCircle2 size={13} className="text-[#005a9c] mt-0.5 shrink-0" />
+                        <CheckCircle2 size={13} className="text-yellow-400 mt-0.5 shrink-0" />
                         <p className="text-[13px] text-slate-700 leading-relaxed">{item}</p>
                     </div>
                 ))}
@@ -90,7 +89,6 @@ const ChangeinShareCapital = () => {
                     { count: "24/7", label: "Expert Availability", icon: <Users size={20} /> }
                 ]}
             />
-            <TrustedBrands />
             <TalkExpert />
             <DetailsLayout
                 navLabels={{ overview: "Overview", eligibility: "Listicles", documents: "Documents Required", process: "Registration Procedure", faq: "FAQs" }}
@@ -151,3 +149,4 @@ const ChangeinShareCapital = () => {
 };
 
 export default ChangeinShareCapital;
+

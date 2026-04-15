@@ -14,7 +14,7 @@ const NotFound = () => {
   return (
     <div className="min-h-[70vh] flex items-center justify-center bg-slate-50 px-4 py-16">
       <div className="max-w-xl w-full bg-white rounded-2xl shadow-xl p-8 md:p-12 text-center border border-slate-100">
-        <div className="w-20 h-20 bg-blue-50 text-[#005a9c] rounded-full flex items-center justify-center mx-auto mb-6">
+        <div className="w-20 h-20 bg-blue-50 text-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
           <Clock className="w-10 h-10" strokeWidth={2} />
         </div>
 
@@ -48,3 +48,4 @@ const NotFound = () => {
 };
 
 export default NotFound;
+

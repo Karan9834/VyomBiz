@@ -24,7 +24,7 @@ import process from "../../../assets/Trademarks India/Trademark Opposition Servi
 
 const TrademarkOppositionEligibility = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Who Can File a Trademark Opposition?
@@ -80,7 +80,7 @@ const TrademarkOppositionEligibility = () => {
 
 const TrademarkOppositionDocumentsSection = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Notice of Opposition (Form TM-O) – Requirements
@@ -130,7 +130,7 @@ const TrademarkOppositionDocumentsSection = () => {
 
 const TrademarkOppositionProcessSection = () => {
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -238,7 +238,7 @@ const TrademarkOppositionProcessSection = () => {
 
 const TrademarkOppositionFeaturesSection = () => {
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
@@ -387,7 +387,7 @@ const TrademarkOpposition = () => {
     ];
 
     const oppositionOverviewContent = (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     {/* Left Content */}
@@ -424,7 +424,7 @@ const TrademarkOpposition = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Brand Defense
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -508,3 +508,4 @@ const TrademarkOpposition = () => {
 };
 
 export default TrademarkOpposition;
+

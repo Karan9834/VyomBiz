@@ -4,7 +4,6 @@ import { Users, Briefcase, Building2 } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 import overview from "../../../assets/ngo1/Strike Off Section 8 Company/overview.png"
 import benefits from "../../../assets/ngo1/Strike Off Section 8 Company/benefits.png"
@@ -17,15 +16,15 @@ import process from "../../../assets/ngo1/Strike Off Section 8 Company/process.p
 
 const StrikeOffOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Company Closure
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            Strike Off Section 8 Company – <span className="text-[#005a9c]">Overview</span>
+                            Strike Off Section 8 Company – <span className="text-yellow-400">Overview</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             Section 8 companies are formed for charitable objectives and follow different closure rules compared to standard private limited companies. Unlike other companies, a Section 8 company usually cannot apply directly for voluntary strike off. In most cases, the company must first convert into a regular private limited company by surrendering its Section 8 license.
@@ -55,7 +54,7 @@ const StrikeoffSection8CompaniesAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Legal Closure
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -100,7 +99,7 @@ const StrikeoffSection8CompaniesAdvantages = () => {
 
 const StrikeOffEligibility = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
 
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
@@ -169,7 +168,7 @@ const StrikeOffEligibility = () => {
 
 const StrikeOffDocumentsSection = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
 
                 {/* Main Heading */}
@@ -254,7 +253,7 @@ const StrikeOffProcessSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
 
                 {/* Heading */}
@@ -351,7 +350,7 @@ const StrikeOffFeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
 
                 {/* Corrected Heading */}
@@ -440,7 +439,6 @@ const StrikeoffSection8Companies = () => {
                     { count: "Dedicated", label: "Legal Support", icon: <Building2 size={20} /> }
                 ]}
             />
-            <TrustedBrands />
             <TalkExpert expertise="Expertise in Strike off Section 8 Companies" />
 
             {/* ================= DETAILS SECTION ================= */}
@@ -465,3 +463,4 @@ const StrikeoffSection8Companies = () => {
 };
 
 export default StrikeoffSection8Companies;
+

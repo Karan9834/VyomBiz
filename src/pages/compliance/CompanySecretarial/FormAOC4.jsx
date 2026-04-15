@@ -3,7 +3,6 @@ import { CheckCircle, Shield, FileText, Users, Building2, AlertTriangle, Clock }
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 const FormAOC4 = () => {
@@ -155,8 +154,6 @@ const FormAOC4 = () => {
                     { count: "MCA", label: "Guaranteed Submission", icon: <Building2 size={20} /> }
                 ]}
             />
-
-            <TrustedBrands />
             <TalkExpert />
 
             <DetailsLayout

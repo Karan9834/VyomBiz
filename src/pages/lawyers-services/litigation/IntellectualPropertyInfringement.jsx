@@ -7,3 +7,4 @@ const IntellectualPropertyInfringement = () => {
 };
 
 export default IntellectualPropertyInfringement;
+

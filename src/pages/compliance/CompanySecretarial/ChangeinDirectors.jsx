@@ -3,7 +3,6 @@ import { Users, FileText, CheckCircle, Shield, Building2, Clock } from "lucide-r
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 const ChangeinDirectors = () => {
@@ -142,8 +141,6 @@ const ChangeinDirectors = () => {
                     { count: "Fast", label: "Turnaround", icon: <Clock size={20} /> }
                 ]}
             />
-
-            <TrustedBrands />
             <TalkExpert />
 
             <DetailsLayout

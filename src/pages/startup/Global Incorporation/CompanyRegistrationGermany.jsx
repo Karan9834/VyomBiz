@@ -15,7 +15,7 @@ import process from "../../../assets/Global Incorporation/Company Registration i
 
 const CompanyRegistrationGermanyOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
@@ -107,7 +107,7 @@ const GermanyIncorporationEligibility = () => {
         { title: "Branch Office", desc: "Foreign companies can register a branch office in Germany to conduct business activities under the parent company’s legal entity." }
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Types of Companies You Can Register in Germany
@@ -146,7 +146,7 @@ const GermanyIncorporationDocumentsSection = () => {
         "Proof of share capital deposit"
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for Company Registration in Germany
@@ -177,7 +177,7 @@ const GermanyIncorporationProcessSection = () => {
         { title: "Trade Office and Tax Registration", desc: "The company must be registered with the local trade office (Gewerbeamt) and obtain a tax number (Steuernummer) and VAT ID." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -226,7 +226,7 @@ const GermanyIncorporationFeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 
                 <div className="mb-16">
@@ -329,3 +329,4 @@ const CompanyRegistrationGermany = () => {
 };
 
 export default CompanyRegistrationGermany;
+

@@ -3,7 +3,6 @@ import { Clock, FileText, Users, Building2, Shield, AlertTriangle } from "lucide
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 const AppointmentandResignationofDirectors = () => {
@@ -163,8 +162,6 @@ const AppointmentandResignationofDirectors = () => {
                     { count: "Secure", label: "Documentation", icon: <Shield size={20} /> }
                 ]}
             />
-
-            <TrustedBrands />
             <TalkExpert />
 
             <DetailsLayout

@@ -15,35 +15,35 @@ const PlasticWasteManagement = () => {
             title: "EPR Authorization for Plastic Waste Management",
             desc: "Plastic Waste EPR Registration — Start Filing in 2 Min. Is your brand at risk due to plastic waste mismanagement? 70% consumers prefer compliant brands. VyomBiz ensures 100% documentation accuracy and simplifies plastic waste EPR registration for you.",
             price: "499.00",
-            icon: <FileCheck className="w-8 h-8 text-[#005a9c]" />,
+            icon: <FileCheck className="w-8 h-8 text-yellow-400" />,
             path: "/epr-authorization-for-plastic-waste-management"
         },
         {
             title: "EPR Post Compliance – Plastic Waste",
             desc: "After receiving the EPR Authorisation for plastic waste management, every producer, brand owner, importer, recycler, plastic trader, and plastic manufacturer must meet ongoing EPR post compliance obligations.",
             price: "499.00",
-            icon: <ClipboardCheck className="w-8 h-8 text-[#005a9c]" />,
+            icon: <ClipboardCheck className="w-8 h-8 text-yellow-400" />,
             path: "/epr-post-compliance-plastic-waste"
         },
         {
             title: "Plastic Waste Recycling Plant & PWM",
             desc: "Looking for a plastic waste recycling plant setup in India? Contact VyomBiz to transform plastic waste into an eco-friendly business opportunity. Assisted in 100+ plant setups.",
             price: "499.00",
-            icon: <Factory className="w-8 h-8 text-[#005a9c]" />,
+            icon: <Factory className="w-8 h-8 text-yellow-400" />,
             path: "/plastic-waste-recycling-plant-pwm"
         },
         {
             title: "Plastic Waste Processors Authorisation",
             desc: "Aiming to become a plastic waste processor and minimize the environmental impact of plastic waste? Get Plastic Waste Processors Authorisation with VyomBiz — end-to-end support from CTE/CTO to CPCB EPR portal registration.",
             price: "499.00",
-            icon: <Shield className="w-8 h-8 text-[#005a9c]" />,
+            icon: <Shield className="w-8 h-8 text-yellow-400" />,
             path: "/plastic-waste-processors-authorisation"
         },
         {
             title: "EPR Fulfilment For Plastic Waste Management",
             desc: "Get your EPR Fulfilment in Plastic Waste Management done with the help of VyomBiz. End-to-end EPR target calculation, PWP tie-ups, credit procurement, and annual return filing — ensuring zero penalties.",
             price: "499.00",
-            icon: <Settings className="w-8 h-8 text-[#005a9c]" />,
+            icon: <Settings className="w-8 h-8 text-yellow-400" />,
             path: "/epr-fulfilment-for-plastic-waste-management"
         }
     ];
@@ -133,7 +133,7 @@ const PlasticWasteManagement = () => {
                                         {service.icon}
                                     </div>
                                     <Link to={service.path}>
-                                        <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors line-clamp-2 hover:underline cursor-pointer">{service.title}</h3>
+                                        <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-yellow-400 transition-colors line-clamp-2 hover:underline cursor-pointer">{service.title}</h3>
                                     </Link>
                                     <p className="text-slate-600 text-[15px] leading-relaxed mb-8 flex-grow font-medium line-clamp-3">{service.desc}</p>
 
@@ -148,7 +148,7 @@ const PlasticWasteManagement = () => {
                                                     Get Started Free
                                                 </button>
                                             </Link>
-                                            <Link to={service.path} className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read transition-all hover:text-[#072b47] whitespace-nowrap">
+                                            <Link to={service.path} className="text-yellow-400 font-bold text-sm flex items-center gap-1.5 group/read transition-all hover:text-[#072b47] whitespace-nowrap">
                                                 <span>Read more</span>
                                                 <ArrowRight className="w-4 h-4 group-hover/read:translate-x-1" />
                                             </Link>
@@ -214,7 +214,7 @@ const PlasticWasteManagement = () => {
                                 </div>
                                 <p className="text-slate-600 font-medium leading-relaxed mb-6">"{rev.text}"</p>
                                 <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-[#005a9c] font-bold text-xl">
+                                    <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-yellow-400 font-bold text-xl">
                                         {rev.name.charAt(0)}
                                     </div>
                                     <div>
@@ -227,7 +227,7 @@ const PlasticWasteManagement = () => {
                     </div>
 
                     <div className="text-center">
-                        <button className="bg-white border-2 border-[#005a9c] text-[#005a9c] hover:bg-[#005a9c] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors shadow-md">
+                        <button className="bg-white border-2 border-[#005a9c] text-yellow-400 hover:bg-[#005a9c] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors shadow-md">
                             View More Reviews
                         </button>
                     </div>
@@ -238,3 +238,4 @@ const PlasticWasteManagement = () => {
 };
 
 export default PlasticWasteManagement;
+

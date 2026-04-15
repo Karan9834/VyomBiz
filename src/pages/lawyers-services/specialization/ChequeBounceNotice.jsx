@@ -52,7 +52,7 @@ const NumberedList = ({ items }) => (
     <ol className="space-y-3 my-4 pl-1">
         {items.map((item, i) => (
             <li key={i} className="flex items-start gap-3">
-                <span className="shrink-0 w-6 h-6 rounded-full bg-[#e8f1fb] text-[#005a9c] text-[11px] font-bold flex items-center justify-center mt-0.5">
+                <span className="shrink-0 w-6 h-6 rounded-full bg-[#e8f1fb] text-yellow-400 text-[11px] font-bold flex items-center justify-center mt-0.5">
                     {i + 1}
                 </span>
                 <span className="text-[15px] text-slate-600 leading-[1.8]">{item}</span>
@@ -65,7 +65,7 @@ const InfoCard = ({ icon, title, children }) => (
     <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 md:p-6 mb-5">
         <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 rounded-lg bg-[#e8f1fb] flex items-center justify-center shrink-0">
-                <span className="text-[#005a9c]">{icon}</span>
+                <span className="text-yellow-400">{icon}</span>
             </div>
             <h4 className="text-[15px] font-semibold text-[#072b47]">{title}</h4>
         </div>
@@ -78,7 +78,7 @@ const Divider = () => (
 );
 
 const SectionLabel = ({ children }) => (
-    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-[#005a9c] bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
+    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-yellow-400 bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
         {children}
     </span>
 );
@@ -357,11 +357,11 @@ const ChequeBounceNotice = () => {
                     <SubHeading>Alternative Avenues for Resolution</SubHeading>
                     <div className="grid md:grid-cols-2 gap-6 my-6">
                         <div className="p-6 bg-slate-50 border border-slate-200 rounded-xl">
-                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2 text-sm"><MessageSquare size={16} className="text-[#005a9c]" /> Mediation & Conciliation</h4>
+                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2 text-sm"><MessageSquare size={16} className="text-yellow-400" /> Mediation & Conciliation</h4>
                             <p className="text-xs text-slate-600 leading-relaxed">Voluntary processes where a neutral third party helps reach a settlement without a formal trial. Courts often encourage this for faster results.</p>
                         </div>
                         <div className="p-6 bg-slate-50 border border-slate-200 rounded-xl">
-                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2 text-sm"><Landmark size={16} className="text-[#005a9c]" /> Banking Ombudsman</h4>
+                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2 text-sm"><Landmark size={16} className="text-yellow-400" /> Banking Ombudsman</h4>
                             <p className="text-xs text-slate-600 leading-relaxed">If the issue involves bank error or unsatisfactory service regarding cheque processing, complaints can be filed here for a cost-effective resolution.</p>
                         </div>
                     </div>
@@ -375,21 +375,21 @@ const ChequeBounceNotice = () => {
                     <div className="grid md:grid-cols-3 gap-6 my-10">
                         <div className="p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all">
                             <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-5">
-                                <Scale size={24} className="text-[#005a9c]" />
+                                <Scale size={24} className="text-yellow-400" />
                             </div>
                             <h4 className="text-[17px] font-bold text-[#072b47] mb-3">Expert Legal Network</h4>
                             <p className="text-slate-600 text-[13px] leading-relaxed">Connect with specialized lawyers who have handled thousands of NI Act cases successfully.</p>
                         </div>
                         <div className="p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all">
                             <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-5">
-                                <Clock size={24} className="text-[#005a9c]" />
+                                <Clock size={24} className="text-yellow-400" />
                             </div>
                             <h4 className="text-[17px] font-bold text-[#072b47] mb-3">Statutory Speed</h4>
                             <p className="text-slate-600 text-[13px] leading-relaxed">We ensure notices are drafted and dispatched within the strict 30-day legal window, every time.</p>
                         </div>
                         <div className="p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all">
                             <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-5">
-                                <FileText size={24} className="text-[#005a9c]" />
+                                <FileText size={24} className="text-yellow-400" />
                             </div>
                             <h4 className="text-[17px] font-bold text-[#072b47] mb-3">Hassle-Free Filing</h4>
                             <p className="text-slate-600 text-[13px] leading-relaxed">From initial notice to court representations, we manage all paperwork so you can focus on your business.</p>
@@ -429,3 +429,4 @@ const ChequeBounceNotice = () => {
 };
 
 export default ChequeBounceNotice;
+

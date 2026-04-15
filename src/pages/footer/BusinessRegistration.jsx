@@ -12,7 +12,7 @@ const BusinessRegistration = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 mb-20">
                     {/* Left Content */}
                     <div className="w-full lg:w-[60%]">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-8">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-full text-yellow-400 text-sm font-bold uppercase tracking-wider mb-8">
                             <Rocket size={16} />
                             <span>Business Registration</span>
                         </div>
@@ -71,7 +71,7 @@ const BusinessRegistration = () => {
                         {/* Card 1 */}
                         <div className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
                             <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">
-                                <Rocket className="w-8 h-8 text-[#005a9c]" fill="currentColor" fillOpacity={0.2} />
+                                <Rocket className="w-8 h-8 text-yellow-400" fill="currentColor" fillOpacity={0.2} />
                             </div>
                             <h3 className="text-xl font-bold text-[#072b47] mb-4">50,000+ Start-ups</h3>
                             <p className="text-slate-600 text-[15px] leading-relaxed font-medium">
@@ -83,7 +83,7 @@ const BusinessRegistration = () => {
                         <div className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
                             <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">
                                 <div className="relative">
-                                    <Smile className="w-8 h-8 text-[#005a9c]" />
+                                    <Smile className="w-8 h-8 text-yellow-400" />
                                     <div className="absolute top-1 right-1 w-2 h-2 bg-orange-400 rounded-full"></div>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@ const BusinessRegistration = () => {
                         {/* Card 3 */}
                         <div className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
                             <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">
-                                <MapPin className="w-8 h-8 text-[#005a9c]" fill="currentColor" fillOpacity={0.2} />
+                                <MapPin className="w-8 h-8 text-yellow-400" fill="currentColor" fillOpacity={0.2} />
                             </div>
                             <h3 className="text-xl font-bold text-[#072b47] mb-4">250+ Locations</h3>
                             <p className="text-slate-600 text-[15px] leading-relaxed font-medium">
@@ -108,7 +108,7 @@ const BusinessRegistration = () => {
                         <div className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
                             <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">
                                 <div className="relative">
-                                    <PieChart className="w-8 h-8 text-[#005a9c]" />
+                                    <PieChart className="w-8 h-8 text-yellow-400" />
                                     <div className="absolute top-0 right-0 w-4 h-4 rounded-full border-2 border-white bg-orange-400"></div>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@ const BusinessRegistration = () => {
                                 <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
 
                                 <div className="p-8 flex flex-col h-full pt-10">
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">
+                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-yellow-400 transition-colors">
                                         {service.title}
                                     </h3>
                                     <p className="text-slate-600 text-[15px] leading-relaxed mb-10 flex-grow font-medium">
@@ -196,7 +196,7 @@ const BusinessRegistration = () => {
                                             <button className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all shadow-md hover:shadow-lg active:scale-[0.97]">
                                                 Get Started
                                             </button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read relative py-1">
+                                            <button className="text-yellow-400 font-bold text-sm flex items-center gap-1.5 group/read relative py-1">
                                                 <span>Read More</span>
                                                 <ArrowRight className="w-4 h-4 group-hover/read:translate-x-1.5 transition-transform duration-300" />
                                                 <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#FFE90A] group-hover/read:w-full transition-all duration-300 rounded-full"></div>
@@ -353,7 +353,7 @@ const BusinessRegistration = () => {
                                     </div>
 
                                     <div className="ml-8 lg:ml-0 lg:mt-10 text-left lg:text-center">
-                                        <h4 className="text-xl font-black text-[#072b47] mb-3 group-hover:text-[#005a9c] transition-colors">{step.title}</h4>
+                                        <h4 className="text-xl font-black text-[#072b47] mb-3 group-hover:text-yellow-400 transition-colors">{step.title}</h4>
                                         <p className="text-slate-600 leading-relaxed font-medium text-[15px] max-w-[240px] lg:mx-auto">
                                             {step.desc}
                                         </p>
@@ -402,7 +402,7 @@ const BusinessRegistration = () => {
                                     </div>
                                 </div>
 
-                                <h3 className="text-xl font-black text-[#072b47] mb-4 leading-tight group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
+                                <h3 className="text-xl font-black text-[#072b47] mb-4 leading-tight group-hover:text-yellow-400 transition-colors">{item.title}</h3>
                                 <p className="text-slate-600 leading-relaxed font-medium text-[15px] flex-grow">
                                     {item.desc}
                                 </p>
@@ -416,3 +416,4 @@ const BusinessRegistration = () => {
 };
 
 export default BusinessRegistration;
+

@@ -12,7 +12,7 @@ import FAQLayout from "../../../components/common/FAQLayout.jsx";
 
 const CompanyRegistrationUKOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
@@ -99,7 +99,7 @@ const UKIncorporationEligibility = () => {
         { title: "Sole Trader", desc: "A simple business structure for individual entrepreneurs operating independently." },
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Types of Companies You Can Register in the UK
@@ -138,7 +138,7 @@ const UKIncorporationDocumentsSection = () => {
         "Director and shareholder information"
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for UK Company Registration
@@ -169,7 +169,7 @@ const UKIncorporationProcessSection = () => {
         { title: "Certificate of Incorporation", desc: "Once approved, the company receives the official Certificate of Incorporation, confirming the company’s legal existence." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -234,7 +234,7 @@ const UKIncorporationFeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 
                 <div className="mb-16">
@@ -309,7 +309,7 @@ const UKIncorporationFeaturesSection = () => {
                     <p className="text-[17px] text-slate-700 leading-relaxed max-w-4xl mx-auto mb-8">
                         Vyombiz managed by Clink Consultancy Services Private Limited simplifies the entire process so you can focus on building and growing your global business.
                     </p>
-                    <p className="text-[19px] font-semibold text-[#005a9c]">
+                    <p className="text-[19px] font-semibold text-yellow-400">
                         Register your UK company today and step into the global market with confidence
                     </p>
                 </div>
@@ -383,3 +383,4 @@ const UKIncorporation = () => {
 };
 
 export default UKIncorporation;
+

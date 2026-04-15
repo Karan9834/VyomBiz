@@ -6,3 +6,4 @@ const IPTrademark = () => {
 };
 
 export default IPTrademark;
+

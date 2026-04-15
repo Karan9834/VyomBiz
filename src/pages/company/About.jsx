@@ -8,7 +8,6 @@ import VisionMission from '../../components/AboutUs/VisionMission';
 import OurJourney from '../../components/AboutUs/OurJourney';
 import SuccessStory from '../../components/myHome/SuccessStory';
 import WorkingProcess from '../../components/myHome/WorkingProcess';
-import TrustedBrands from '../../components/myHome/TrustedBrands';
 
 import IPLegalServices from '../../components/AboutUs/IPLegalServices';
 import AboutFooterCTA from '../../components/AboutUs/AboutFooterCTA';
@@ -30,3 +29,4 @@ const About = () => {
 };
 
 export default About;
+

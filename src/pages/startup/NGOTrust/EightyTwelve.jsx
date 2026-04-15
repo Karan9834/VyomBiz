@@ -18,15 +18,15 @@ import process from "../../../assets/ngo/80G12A/process.png"
 
 const EightyTwelveOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Tax Exemption
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            80G & 12A Registration – <span className="text-[#005a9c]">Overview</span>
+                            80G & 12A Registration – <span className="text-yellow-400">Overview</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             In India, 12A and 80G registrations are important for Non-Profit Organizations to obtain tax benefits. Most NGOs apply for both registrations to maximize benefits for the organization and its donors. Without 12A registration, an NGO is treated like a normal taxable entity and must pay income tax. 12A registration allows income used for charitable purposes to be exempt from taxation.
@@ -59,7 +59,7 @@ const EightyTwelveAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Dual Benefits
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -104,7 +104,7 @@ const EightyTwelveAdvantages = () => {
 
 const EightyTwelveEligibility = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
 
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
@@ -173,7 +173,7 @@ const EightyTwelveEligibility = () => {
 
 const EightyTwelveDocumentsSection = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
 
                 {/* Main Heading */}
@@ -262,7 +262,7 @@ const EightyTwelveProcessSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
 
                 {/* Heading */}
@@ -359,7 +359,7 @@ const EightyTwelveFeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
 
                 {/* Corrected Heading */}
@@ -469,3 +469,4 @@ const EightyTwelve = () => {
 };
 
 export default EightyTwelve;
+

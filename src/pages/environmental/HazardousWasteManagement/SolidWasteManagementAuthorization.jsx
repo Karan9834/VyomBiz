@@ -128,3 +128,4 @@ const SolidWasteManagementAuthorization = () => {
 };
 
 export default SolidWasteManagementAuthorization;
+

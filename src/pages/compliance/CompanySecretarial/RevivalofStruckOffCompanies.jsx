@@ -3,7 +3,6 @@ import { CheckCircle2, AlertTriangle, Clock, Users, FileText, Shield, BookOpen, 
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /**
@@ -35,7 +34,7 @@ const RevivalofStruckOffCompanies = () => {
     const groundsContent = (
         <div className="space-y-6">
             <h3 className="text-lg font-bold text-[#072b47] mb-2 flex items-center gap-2">
-                <Shield size={18} className="text-[#005a9c]" />
+                <Shield size={18} className="text-yellow-400" />
                 Who Can Apply for Company Revival?
             </h3>
             <p className="text-[14px] text-slate-600 mb-2 leading-relaxed">
@@ -44,13 +43,13 @@ const RevivalofStruckOffCompanies = () => {
             <div className="flex flex-wrap gap-2 mb-8">
                 {["Company directors", "Shareholders / members", "Creditors / lenders", "Employees", "Any aggrieved person"].map((who, i) => (
                     <div key={i} className="flex items-center gap-2 bg-[#e8f1fb] border border-[#c0d8f0] rounded-full px-4 py-2">
-                        <CheckCircle2 size={13} className="text-[#005a9c]" />
-                        <span className="text-[13px] font-medium text-[#005a9c]">{who}</span>
+                        <CheckCircle2 size={13} className="text-yellow-400" />
+                        <span className="text-[13px] font-medium text-yellow-400">{who}</span>
                     </div>
                 ))}
             </div>
             <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
-                <BookOpen size={18} className="text-[#005a9c]" />
+                <BookOpen size={18} className="text-yellow-400" />
                 Grounds on Which NCLT Orders Revival
             </h3>
             <div className="grid gap-3">
@@ -62,7 +61,7 @@ const RevivalofStruckOffCompanies = () => {
                     "Any document showing that the Company is ongoing or active and it will be in the public interest to revive the Company.",
                 ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
-                        <CheckCircle2 size={15} className="text-[#005a9c] mt-0.5 shrink-0" />
+                        <CheckCircle2 size={15} className="text-yellow-400 mt-0.5 shrink-0" />
                         <p className="text-[14px] text-slate-700 leading-relaxed">{item}</p>
                     </div>
                 ))}
@@ -91,7 +90,7 @@ const RevivalofStruckOffCompanies = () => {
     const benefitsContent = (
         <div className="space-y-6">
             <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
-                <BarChart2 size={18} className="text-[#005a9c]" />
+                <BarChart2 size={18} className="text-yellow-400" />
                 Benefits of Reviving a Struck Off Company
             </h3>
             <p className="text-[14px] text-slate-600 mb-2 leading-relaxed">
@@ -110,7 +109,7 @@ const RevivalofStruckOffCompanies = () => {
                     { title: "Withdrawal of Initiated Prosecution", desc: "Any proceedings or prosecution already initiated shall be withdrawn if the scheme's requirements are obeyed within time." },
                 ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
-                        <CheckCircle2 size={15} className="text-[#005a9c] mt-0.5 shrink-0" />
+                        <CheckCircle2 size={15} className="text-yellow-400 mt-0.5 shrink-0" />
                         <div>
                             <p className="text-[14px] font-bold text-[#072b47] mb-0.5">{item.title}</p>
                             <p className="text-[13px] text-slate-600 leading-relaxed">{item.desc}</p>
@@ -125,7 +124,7 @@ const RevivalofStruckOffCompanies = () => {
     const otherInfoContent = (
         <div className="space-y-8">
             <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
-                <BookOpen size={18} className="text-[#005a9c]" />
+                <BookOpen size={18} className="text-yellow-400" />
                 Revival of Struck Off Companies by CFSS-2020
             </h3>
             <p className="text-[14px] text-slate-600 mb-4 leading-relaxed">
@@ -184,7 +183,6 @@ const RevivalofStruckOffCompanies = () => {
                     { count: "24/7", label: "Expert Availability", icon: <Users size={20} /> }
                 ]}
             />
-            <TrustedBrands />
             <TalkExpert />
             <DetailsLayout
                 navLabels={{ overview: "Overview", advantages: "Grounds", features: "Benefits", documents: "Listicles", process: "Registration Procedure", postCompliance: "Other Info", faq: "FAQs" }}

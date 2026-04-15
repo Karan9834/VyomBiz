@@ -3,7 +3,6 @@ import { CheckCircle, Shield, FileText, Building2, Star, Zap } from "lucide-reac
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 const SPICEForm = () => {
@@ -149,8 +148,6 @@ const SPICEForm = () => {
                     { count: "Faster", label: "Incorporation", icon: <Zap size={20} /> }
                 ]}
             />
-
-            <TrustedBrands />
             <TalkExpert />
 
             <DetailsLayout

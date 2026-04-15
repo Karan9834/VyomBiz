@@ -12,28 +12,28 @@ const BatteryWasteManagement = () => {
             "title": "New Lead Acid Battery Import License",
             "desc": "New Lead Acid Battery Import License New Lead Acid Battery Import license is necessary to deal in import of lead acid batteries. The importers need to apply to the CPCB for obtaining..",
             "price": "499.00",
-            icon: <FileCheck className='w-8 h-8 text-[#005a9c]' />,
+            icon: <FileCheck className='w-8 h-8 text-yellow-400' />,
             link: "/new-lead-acid-battery-import-license"
         },
         {
             "title": "Lithium-Ion Battery Import License",
             "desc": "Lithium-Ion Battery Import License Lithium-ion battery import license is necessary to deal in import of Lithium-ion batteries.",
             "price": "499.00",
-            icon: <FileCheck className='w-8 h-8 text-[#005a9c]' />,
+            icon: <FileCheck className='w-8 h-8 text-yellow-400' />,
             link: "/lithium-ion-battery-import-license"
         },
         {
             "title": "Registration for Lead Acid Battery Recycling",
             "desc": "Registration for Lead Acid Battery Recycling Lead Acid Battery Recycling is necessary to avoid major environmental hazard.",
             "price": "499.00",
-            icon: <RefreshCcw className='w-8 h-8 text-[#005a9c]' />,
+            icon: <RefreshCcw className='w-8 h-8 text-yellow-400' />,
             link: "/registration-for-lead-acid-battery-recycling"
         },
         {
             "title": "Registration for Scrap Battery Import",
             "desc": "Registration for Scrap Battery Import Anyone who wants to deal in scrap battery import must secure registration for such import. Contact VyomBiz to know the registration process for i..",
             "price": "499.00",
-            icon: <Zap className='w-8 h-8 text-[#005a9c]' />,
+            icon: <Zap className='w-8 h-8 text-yellow-400' />,
             link: "/registration-for-scrap-battery-import"
         }
     ];
@@ -122,7 +122,7 @@ const BatteryWasteManagement = () => {
                                     <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:scale-110 group-hover:bg-[#dead01]/10 transition-all duration-500 mb-6">
                                         {service.icon}
                                     </div>
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors line-clamp-2">{service.title}</h3>
+                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-yellow-400 transition-colors line-clamp-2">{service.title}</h3>
                                     <p className="text-slate-600 text-[15px] leading-relaxed mb-8 flex-grow font-medium line-clamp-3">{service.desc}</p>
 
                                     <div className="mt-auto pt-6 border-t border-slate-100">
@@ -134,7 +134,7 @@ const BatteryWasteManagement = () => {
                                             <Link to={service.link} className="w-full lg:w-auto flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3 rounded-xl text-sm font-bold transition-all shadow-md active:scale-[0.97] whitespace-nowrap text-center">
                                                 Get Started Free
                                             </Link>
-                                            <Link to={service.link} className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read transition-all hover:text-[#072b47] whitespace-nowrap">
+                                            <Link to={service.link} className="text-yellow-400 font-bold text-sm flex items-center gap-1.5 group/read transition-all hover:text-[#072b47] whitespace-nowrap">
                                                 <span>Read more</span>
                                                 <ArrowRight className="w-4 h-4 group-hover/read:translate-x-1" />
                                             </Link>
@@ -200,7 +200,7 @@ const BatteryWasteManagement = () => {
                                 </div>
                                 <p className="text-slate-600 font-medium leading-relaxed mb-6">"{rev.text}"</p>
                                 <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-[#005a9c] font-bold text-xl">
+                                    <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-yellow-400 font-bold text-xl">
                                         {rev.name.charAt(0)}
                                     </div>
                                     <div>
@@ -213,7 +213,7 @@ const BatteryWasteManagement = () => {
                     </div>
 
                     <div className="text-center">
-                        <button className="bg-white border-2 border-[#005a9c] text-[#005a9c] hover:bg-[#005a9c] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors shadow-md">
+                        <button className="bg-white border-2 border-[#005a9c] text-yellow-400 hover:bg-[#005a9c] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors shadow-md">
                             View More Reviews
                         </button>
                     </div>
@@ -224,3 +224,4 @@ const BatteryWasteManagement = () => {
 };
 
 export default BatteryWasteManagement;
+

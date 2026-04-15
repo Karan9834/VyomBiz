@@ -142,3 +142,4 @@ const RegistrationForScrapBatteryImport = () => {
 };
 
 export default RegistrationForScrapBatteryImport;
+

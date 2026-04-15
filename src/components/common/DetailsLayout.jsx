@@ -124,7 +124,7 @@ const DetailsLayout = ({
 
                 {/* 1. OVERVIEW SECTION */}
                 {overview && (
-                    <section id="overview" ref={overviewRef} className="py-14 border-b border-slate-50 scroll-mt-24">
+                    <section id="overview" ref={overviewRef} className="py-8 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(overview) ? overview : (
                             <div className="flex flex-col lg:flex-row gap-16 items-center">
                                 <div className="lg:w-3/5">
@@ -133,7 +133,7 @@ const DetailsLayout = ({
                                         <span>{overview.badge || "Market Insight"}</span>
                                     </div>
                                     <h2 className="text-3xl lg:text-4xl font-black text-[#072b47] mb-8 leading-tight">
-                                        {overview.title} <span className="text-[#f1a134]">{overview.highlightTitle}</span>
+                                        {overview.title} <span className="text-yellow-400">{overview.highlightTitle}</span>
                                     </h2>
                                     <div className="space-y-6 text-slate-600 font-medium text-lg leading-relaxed">
                                         {Array.isArray(overview.description) ? overview.description.map((p, i) => <p key={i}>{p}</p>) : <p>{overview.description}</p>}
@@ -185,7 +185,7 @@ const DetailsLayout = ({
 
                 {/* 2. ADVANTAGES SECTION */}
                 {advantages && (
-                    <section id="advantages" ref={advantagesRef} className="py-14 border-b border-slate-50 scroll-mt-24">
+                    <section id="advantages" ref={advantagesRef} className="py-8 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(advantages) ? advantages : (
                             <>
                                 <div className="text-center max-w-3xl mx-auto mb-10">
@@ -216,7 +216,7 @@ const DetailsLayout = ({
 
                 {/* 3. ELIGIBILITY / CHECKLIST */}
                 {eligibility && (
-                    <section id="eligibility" ref={eligibilityRef} className="py-14 border-b border-slate-50 scroll-mt-24">
+                    <section id="eligibility" ref={eligibilityRef} className="py-8 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(eligibility) ? eligibility : (
                             <div className="bg-[#1e40af] rounded-[4rem] p-10 lg:p-20 text-white relative overflow-hidden shadow-2xl">
                                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white opacity-[0.03] rounded-full translate-x-1/2 -translate-y-1/2" />
@@ -255,7 +255,7 @@ const DetailsLayout = ({
 
                 {/* 4. DOCUMENTS SECTION */}
                 {documents && (
-                    <section id="documents" ref={documentsRef} className="py-14 border-b border-slate-50 scroll-mt-24">
+                    <section id="documents" ref={documentsRef} className="py-8 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(documents) ? documents : (
                             <div className="flex flex-col lg:flex-row gap-20 items-center">
                                 <div className="lg:w-1/2 order-2 lg:order-1 relative w-full">
@@ -292,7 +292,7 @@ const DetailsLayout = ({
 
                 {/* 5. PROCESS SECTION */}
                 {process && (
-                    <section id="process" ref={processRef} className="py-14 border-b border-slate-50 scroll-mt-24">
+                    <section id="process" ref={processRef} className="py-8 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(process) ? process : (
                             <>
                                 <div className="text-center max-w-3xl mx-auto mb-20">
@@ -328,7 +328,7 @@ const DetailsLayout = ({
 
                 {/* 6. TYPES OF COMPLIANCE */}
                 {typesOfCompliance && (
-                    <section id="typesOfCompliance" ref={typesOfComplianceRef} className="py-14 border-b border-slate-50 scroll-mt-24">
+                    <section id="typesOfCompliance" ref={typesOfComplianceRef} className="py-8 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(typesOfCompliance) ? typesOfCompliance : (
                             <>
                                 <div className="text-center max-w-3xl mx-auto mb-10">
@@ -357,7 +357,7 @@ const DetailsLayout = ({
 
                 {/* 7. DUE DATES SECTION (Table) */}
                 {dueDates && (
-                    <section id="dueDates" ref={dueDatesRef} className="py-14 border-b border-slate-50 scroll-mt-24">
+                    <section id="dueDates" ref={dueDatesRef} className="py-8 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(dueDates) ? dueDates : (
                             <>
                                 <div className="text-center max-w-3xl mx-auto mb-10">
@@ -397,7 +397,7 @@ const DetailsLayout = ({
 
                 {/* 8. EVENT-BASED COMPLIANCE */}
                 {eventBasedCompliance && (
-                    <section id="eventBasedCompliance" ref={eventBasedComplianceRef} className="py-14 border-b border-slate-50 scroll-mt-24">
+                    <section id="eventBasedCompliance" ref={eventBasedComplianceRef} className="py-8 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(eventBasedCompliance) ? eventBasedCompliance : (
                             <div className="flex flex-col lg:flex-row gap-16 items-center">
                                 <div className="lg:w-1/2">
@@ -436,7 +436,7 @@ const DetailsLayout = ({
 
                 {/* 9. NON-REGISTRAR FILINGS */}
                 {nonRegistrarFilings && (
-                    <section id="nonRegistrarFilings" ref={nonRegistrarFilingsRef} className="py-14 border-b border-slate-50 scroll-mt-24">
+                    <section id="nonRegistrarFilings" ref={nonRegistrarFilingsRef} className="py-8 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(nonRegistrarFilings) ? nonRegistrarFilings : (
                             <>
                                 <div className="text-center max-w-3xl mx-auto mb-10">
@@ -464,7 +464,7 @@ const DetailsLayout = ({
 
                 {/* 10. VYOMBIZ SUPPORT / RESIGNATION / CUSTOM SECTION */}
                 {(features || whyChooseUs) && (
-                    <section id="features" ref={features ? featuresRef : whyChooseUsRef} className="py-14 scroll-mt-24">
+                    <section id="features" ref={features ? featuresRef : whyChooseUsRef} className="py-8 scroll-mt-24">
                         {React.isValidElement(features || whyChooseUs) ? (
                             <div className="max-w-[1440px] mx-auto">
                                 {features || whyChooseUs}
@@ -499,7 +499,7 @@ const DetailsLayout = ({
 
                 {/* 11. POST COMPLIANCE SECTION */}
                 {postCompliance && (
-                    <section id="postCompliance" ref={postComplianceRef} className="py-14 border-b border-slate-50 scroll-mt-24">
+                    <section id="postCompliance" ref={postComplianceRef} className="py-8 border-b border-slate-50 scroll-mt-24">
                         {React.isValidElement(postCompliance) ? (
                             <div className="max-w-[1440px] mx-auto">
                                 {postCompliance}

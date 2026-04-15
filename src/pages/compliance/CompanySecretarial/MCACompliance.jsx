@@ -3,7 +3,6 @@ import { CheckCircle2, AlertTriangle, Clock, Users, FileText, Shield, BookOpen, 
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /**
@@ -34,7 +33,7 @@ const MCACompliance = () => {
     const importanceContent = (
         <div className="space-y-6">
             <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
-                <BookOpen size={18} className="text-[#005a9c]" />
+                <BookOpen size={18} className="text-yellow-400" />
                 Importance of MCA Annual Compliance
             </h3>
             <div className="grid sm:grid-cols-2 gap-4">
@@ -49,7 +48,7 @@ const MCACompliance = () => {
                     { title: "Access to Government Incentives", desc: "Compliance with MCA regulations provides access to government schemes and incentives — including tax breaks, subsidies, and grants." },
                 ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
-                        <CheckCircle2 size={16} className="text-[#005a9c] mt-0.5 shrink-0" />
+                        <CheckCircle2 size={16} className="text-yellow-400 mt-0.5 shrink-0" />
                         <div>
                             <p className="text-[14px] font-bold text-[#072b47] mb-0.5">{item.title}</p>
                             <p className="text-[13px] text-slate-600 leading-relaxed">{item.desc}</p>
@@ -64,7 +63,7 @@ const MCACompliance = () => {
     const mcaComplianceContent = (
         <div className="space-y-10">
             <div>
-                <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><Building2 size={18} className="text-[#005a9c]" />MCA Compliance for LLPs in India</h3>
+                <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><Building2 size={18} className="text-yellow-400" />MCA Compliance for LLPs in India</h3>
                 <div className="grid gap-3 mb-8">
                     {[
                         { form: "Form 8", title: "Statement of Account & Solvency", desc: "All enrolled LLPs must file Form 8 comprising data related to the profit and finances of the business." },
@@ -84,7 +83,7 @@ const MCACompliance = () => {
                 </div>
             </div>
             <div>
-                <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><Shield size={18} className="text-[#005a9c]" />MCA Compliances for Private Limited Company</h3>
+                <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><Shield size={18} className="text-yellow-400" />MCA Compliances for Private Limited Company</h3>
                 <div className="grid sm:grid-cols-2 gap-4">
                     {[
                         { form: "INC-20A", title: "Declaration for Commencement of Business", desc: "All private limited companies must file Form INC-20A before initiating any business activities." },
@@ -114,7 +113,7 @@ const MCACompliance = () => {
     /* ─── Types (custom JSX → features slot) ─────────── */
     const typesContent = (
         <div className="space-y-8">
-            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><BarChart2 size={18} className="text-[#005a9c]" />Types of MCA Compliance in India</h3>
+            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><BarChart2 size={18} className="text-yellow-400" />Types of MCA Compliance in India</h3>
             <div className="grid gap-4">
                 {[
                     { title: "Annual Compliance", desc: "Mandatory yearly filings required under the Companies Act, 2013. Must be submitted to the Registrar of Companies (RoC) irrespective of whether the company carried out any business activity during the year. Examples: AOC-4, MGT-7, ADT-1, DIR-3 KYC." },
@@ -140,7 +139,7 @@ const MCACompliance = () => {
                     "Apply for UDYOG Aadhar registration and relevant schemes",
                 ].map((item, i) => (
                     <div key={i} className="flex items-center gap-2 bg-[#f8fbff] border border-[#d0e3f5] rounded-lg px-3 py-2.5">
-                        <CheckCircle2 size={14} className="text-[#005a9c] shrink-0" />
+                        <CheckCircle2 size={14} className="text-yellow-400 shrink-0" />
                         <span className="text-[13px] text-slate-700">{item}</span>
                     </div>
                 ))}
@@ -151,7 +150,7 @@ const MCACompliance = () => {
     /* ─── Forms Required (custom JSX → documents slot — standard list) ─ */
     const formsRequiredContent = (
         <div className="space-y-6">
-            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><FileText size={18} className="text-[#005a9c]" />Forms Required to be Filed under MCA Compliance</h3>
+            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><FileText size={18} className="text-yellow-400" />Forms Required to be Filed under MCA Compliance</h3>
             <div className="grid gap-3">
                 {[
                     { form: "DIR-3 KYC / Web KYC", desc: "E-form that must be filed by every person holding a DIN — by 30th September each year." },
@@ -173,7 +172,7 @@ const MCACompliance = () => {
     /* ─── MCA Compliance Calendar (custom JSX → postCompliance slot) ─── */
     const calendarContent = (
         <div className="space-y-6">
-            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><Clock size={18} className="text-[#005a9c]" />ROC MCA Compliance Calendar 2025–26</h3>
+            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><Clock size={18} className="text-yellow-400" />ROC MCA Compliance Calendar 2025–26</h3>
             <div className="overflow-x-auto rounded-xl border border-slate-200">
                 <table className="w-full text-[12px]">
                     <thead>
@@ -208,7 +207,7 @@ const MCACompliance = () => {
                             ["PAS-6", "Share capital audit report", "Within 60 days of half-year end", "Unlisted public companies"],
                         ].map((row, i) => (
                             <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
-                                <td className="px-3 py-2.5 font-bold text-[#005a9c]">{row[0]}</td>
+                                <td className="px-3 py-2.5 font-bold text-yellow-400">{row[0]}</td>
                                 <td className="px-3 py-2.5 text-slate-700">{row[1]}</td>
                                 <td className="px-3 py-2.5 text-slate-700">{row[2]}</td>
                                 <td className="px-3 py-2.5 text-slate-500">{row[3]}</td>
@@ -257,7 +256,7 @@ const MCACompliance = () => {
                             <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
                                 <td className="px-3 py-2.5 text-slate-500 font-semibold">{row[0]}</td>
                                 <td className="px-3 py-2.5 text-slate-700">{row[1]}</td>
-                                <td className="px-3 py-2.5 text-[#005a9c] font-medium">{row[2]}</td>
+                                <td className="px-3 py-2.5 text-yellow-400 font-medium">{row[2]}</td>
                                 <td className="px-3 py-2.5 text-red-600 font-medium">{row[3]}</td>
                             </tr>
                         ))}
@@ -281,7 +280,6 @@ const MCACompliance = () => {
                     { count: "24/7", label: "Expert Availability", icon: <Shield size={20} /> }
                 ]}
             />
-            <TrustedBrands />
             <TalkExpert />
             <DetailsLayout
                 navLabels={{
@@ -342,3 +340,4 @@ const MCACompliance = () => {
 };
 
 export default MCACompliance;
+

@@ -3,7 +3,6 @@ import { Users, Award, Briefcase } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 const ChangeInObjectClause = () => {
@@ -46,8 +45,6 @@ const ChangeInObjectClause = () => {
                     { count: "Expert", label: "Support", icon: <Users size={20} /> }
                 ]}
             />
-
-            <TrustedBrands />
             <TalkExpert />
 
             {/* DETAILS */}

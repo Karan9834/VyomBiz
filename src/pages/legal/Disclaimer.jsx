@@ -8,7 +8,7 @@ const Disclaimer = () => {
             <section className="relative bg-white pt-32 pb-16 overflow-hidden">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-full text-yellow-400 text-sm font-bold uppercase tracking-wider mb-6">
                             <AlertCircle size={16} />
                             <span>Important Notice</span>
                         </div>
@@ -23,7 +23,7 @@ const Disclaimer = () => {
             </section>
 
             {/* Disclaimer Content */}
-            <section className="py-12 bg-white">
+            <section className="py-6 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="bg-white rounded-3xl border border-slate-200 shadow-lg p-8 md:p-12">
                         
@@ -257,7 +257,7 @@ const Disclaimer = () => {
                         <div className="mt-12 pt-6 border-t border-slate-200">
                             <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
                                 <h3 className="font-bold text-[#072b47] mb-3 flex items-center gap-2">
-                                    <FileText className="w-5 h-5 text-[#005a9c]" />
+                                    <FileText className="w-5 h-5 text-yellow-400" />
                                     Important Acknowledgment
                                 </h3>
                                 <p className="text-sm text-slate-600 leading-relaxed">

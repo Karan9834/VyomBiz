@@ -50,7 +50,7 @@ const InfoCard = ({ icon, title, children }) => (
     <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 md:p-6 mb-5">
         <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 rounded-lg bg-[#e8f1fb] flex items-center justify-center shrink-0">
-                <span className="text-[#005a9c]">{icon}</span>
+                <span className="text-yellow-400">{icon}</span>
             </div>
             <h4 className="text-[15px] font-semibold text-[#072b47]">{title}</h4>
         </div>
@@ -63,7 +63,7 @@ const Divider = () => (
 );
 
 const SectionLabel = ({ children }) => (
-    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-[#005a9c] bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
+    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-yellow-400 bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
         {children}
     </span>
 );
@@ -236,27 +236,27 @@ const CyberCrimeLawyer = () => {
 
                     <div className="grid md:grid-cols-2 gap-4 my-6">
                         <div className="bg-[#f8fbff] p-5 rounded-xl border border-[#d0e3f5]">
-                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><Briefcase size={16} className="text-[#005a9c]" /> Online Financial Fraud</h4>
+                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><Briefcase size={16} className="text-yellow-400" /> Online Financial Fraud</h4>
                             <p className="text-sm text-slate-600">Unauthorized transactions, banking fraud, or payment gateway scams.</p>
                         </div>
                         <div className="bg-[#f8fbff] p-5 rounded-xl border border-[#d0e3f5]">
-                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><Users size={16} className="text-[#005a9c]" /> Social Media Harassment</h4>
+                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><Users size={16} className="text-yellow-400" /> Social Media Harassment</h4>
                             <p className="text-sm text-slate-600">Threats, defamation, fake profiles, or cyber bullying on platforms.</p>
                         </div>
                         <div className="bg-[#f8fbff] p-5 rounded-xl border border-[#d0e3f5]">
-                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><Shield size={16} className="text-[#005a9c]" /> Data Breach or Hacking</h4>
+                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><Shield size={16} className="text-yellow-400" /> Data Breach or Hacking</h4>
                             <p className="text-sm text-slate-600">Illegal access to personal or corporate data.</p>
                         </div>
                         <div className="bg-[#f8fbff] p-5 rounded-xl border border-[#d0e3f5]">
-                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><AlertCircle size={16} className="text-[#005a9c]" /> Identity Theft</h4>
+                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><AlertCircle size={16} className="text-yellow-400" /> Identity Theft</h4>
                             <p className="text-sm text-slate-600">Someone impersonating you online or misusing your identity.</p>
                         </div>
                         <div className="bg-[#f8fbff] p-5 rounded-xl border border-[#d0e3f5]">
-                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><ShoppingBag size={16} className="text-[#005a9c]" /> Online Business Fraud</h4>
+                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><ShoppingBag size={16} className="text-yellow-400" /> Online Business Fraud</h4>
                             <p className="text-sm text-slate-600">E-commerce scams, digital payment disputes, or platform fraud.</p>
                         </div>
                         <div className="bg-[#f8fbff] p-5 rounded-xl border border-[#d0e3f5]">
-                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><BookOpen size={16} className="text-[#005a9c]" /> Intellectual Property Theft</h4>
+                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><BookOpen size={16} className="text-yellow-400" /> Intellectual Property Theft</h4>
                             <p className="text-sm text-slate-600">Copying digital content, trademarks, or proprietary data.</p>
                         </div>
                     </div>
@@ -382,7 +382,7 @@ const CyberCrimeLawyer = () => {
                             { step: "03", title: "Complaint & Legal Action", desc: "Our lawyers assist with filing complaints, investigations, and legal proceedings." }
                         ].map((item, idx) => (
                             <div key={idx} className="flex gap-6 items-start group">
-                                <span className="flex-shrink-0 w-12 h-12 rounded-full border-2 border-slate-200 text-[#005a9c] flex items-center justify-center font-bold group-hover:bg-[#005a9c] group-hover:text-white group-hover:border-[#005a9c] transition-all duration-300">
+                                <span className="flex-shrink-0 w-12 h-12 rounded-full border-2 border-slate-200 text-yellow-400 flex items-center justify-center font-bold group-hover:bg-[#005a9c] group-hover:text-white group-hover:border-[#005a9c] transition-all duration-300">
                                     {item.step}
                                 </span>
                                 <div>
@@ -422,3 +422,4 @@ const CyberCrimeLawyer = () => {
 };
 
 export default CyberCrimeLawyer;
+

@@ -49,7 +49,7 @@ const BulletList = ({ items }) => (
 const InfoCard = ({ icon, title, children }) => (
     <div className="bg-white border border-slate-100 shadow-sm rounded-2xl p-6 transition-all hover:shadow-md">
         <div className="w-10 h-10 rounded-xl bg-[#f0f7ff] flex items-center justify-center mb-4">
-            <span className="text-[#005a9c]">{icon}</span>
+            <span className="text-yellow-400">{icon}</span>
         </div>
         <h4 className="text-[16px] font-bold text-[#072b47] mb-2">{title}</h4>
         <div className="text-sm text-slate-600 leading-relaxed">{children}</div>
@@ -61,7 +61,7 @@ const Divider = () => (
 );
 
 const SectionLabel = ({ children }) => (
-    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-[#005a9c] bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
+    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-yellow-400 bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
         {children}
     </span>
 );
@@ -254,7 +254,7 @@ const LabourLawyer = () => {
                     <div className="grid md:grid-cols-2 gap-8 mt-6">
                         <div>
                             <h4 className="font-bold text-[#072b47] mb-4 flex items-center gap-2">
-                                <Landmark size={18} className="text-[#005a9c]" /> Statutes
+                                <Landmark size={18} className="text-yellow-400" /> Statutes
                             </h4>
                             <BulletList items={[
                                 "Industrial Disputes Act",
@@ -316,3 +316,4 @@ const LabourLawyer = () => {
 };
 
 export default LabourLawyer;
+

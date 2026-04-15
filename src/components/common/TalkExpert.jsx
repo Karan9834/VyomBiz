@@ -12,11 +12,11 @@ const TalkExpert = ({ expertise = "Expertise in NGO CSR-1 Filing" }) => {
     const navigate = useNavigate();
 
     return (
-        <section className="w-full bg-white py-10 px-6 lg:px-16">
+        <section className="w-full bg-white py-8 px-6 lg:px-16">
 
             {/* ================= TITLE ================= */}
             <h2 className="text-2xl font-semibold mb-8 border-l-4 border-yellow-500 pl-3">
-                Talk to an Expert
+                Talk to an <span className="text-yellow-400">Expert</span>
             </h2>
 
             <div className="flex flex-col lg:flex-row justify-between items-start gap-12">

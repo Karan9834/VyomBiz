@@ -3,7 +3,6 @@ import { CheckCircle, Globe, Award, Shield, Calendar, Briefcase, FileCheck, User
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /**
@@ -238,8 +237,6 @@ const EventBasedCompliances = () => {
                     { count: "Expert", label: "CS & CA Support", icon: <Users size={20} /> }
                 ]}
             />
-
-            <TrustedBrands />
             <TalkExpert />
 
             <DetailsLayout

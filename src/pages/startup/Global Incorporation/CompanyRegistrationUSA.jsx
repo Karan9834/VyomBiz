@@ -16,15 +16,15 @@ import process from "../../../assets/Global Incorporation/Company Registration i
 
 const CompanyRegistrationUSAOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Global Expansion
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            Expand Globally With a <span className="text-[#005a9c]">US Company</span>
+                            Expand Globally With a <span className="text-yellow-400">US Company</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             The United States is one of the most attractive destinations for entrepreneurs and startups looking to operate globally. Setting up a company in the US offers credibility, access to international markets, global payment systems, and strong legal protection.
@@ -55,7 +55,7 @@ const CompanyRegistrationUSAAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Why It Is Vital
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -110,7 +110,7 @@ const USAIncorporationEligibility = () => {
         { title: "Partnership", desc: "A partnership structure works well for businesses owned by two or more partners." }
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Types of Business Entities in the USA
@@ -143,7 +143,7 @@ const USAIncorporationDocumentsSection = () => {
         "Email ID and contact details"
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for US Company Registration
@@ -173,7 +173,7 @@ const USAIncorporationProcessSection = () => {
         { title: "Compliance Setup", desc: "Ensure your company meets initial compliance and regulatory requirements." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -218,7 +218,7 @@ const USAIncorporationFeaturesSection = () => {
         { title: "End-to-End Support", desc: "From incorporation to compliance, we provide continuous assistance." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
@@ -234,7 +234,7 @@ const USAIncorporationFeaturesSection = () => {
                 <div className="grid md:grid-cols-2 gap-6 mt-10">
                     {features.map((feature, index) => (
                         <div key={index} className="bg-slate-50 rounded-2xl p-6 border border-slate-100 flex gap-4">
-                            <div className="text-[#005a9c] font-bold text-xl">{index + 1}.</div>
+                            <div className="text-yellow-400 font-bold text-xl">{index + 1}.</div>
                             <div>
                                 <h3 className="text-[18px] font-semibold text-[#072b47]">{feature.title}</h3>
                                 <p className="text-[15px] text-slate-600 mt-2 leading-relaxed">{feature.desc}</p>
@@ -328,3 +328,4 @@ const USAIncorporation = () => {
 };
 
 export default USAIncorporation;
+

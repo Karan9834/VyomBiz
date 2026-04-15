@@ -51,7 +51,7 @@ const InfoCard = ({ icon, title, children }) => (
     <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 md:p-6 mb-5">
         <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 rounded-lg bg-[#e8f1fb] flex items-center justify-center shrink-0">
-                <span className="text-[#005a9c]">{icon}</span>
+                <span className="text-yellow-400">{icon}</span>
             </div>
             <h4 className="text-[15px] font-semibold text-[#072b47]">{title}</h4>
         </div>
@@ -64,7 +64,7 @@ const Divider = () => (
 );
 
 const SectionLabel = ({ children }) => (
-    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-[#005a9c] bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
+    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-yellow-400 bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
         {children}
     </span>
 );
@@ -188,15 +188,15 @@ const MuslimLawLawyer = () => {
                         <p>Navigate complex personal laws with confidence. From marriage and divorce to inheritance and property rights, experienced Muslim law lawyers help protect your legal rights while respecting Islamic legal principles.</p>
                         <div className="grid grid-cols-1 gap-2">
                             <div className="flex items-center gap-2">
-                                <CheckCircle2 size={16} className="text-[#005a9c]" />
+                                <CheckCircle2 size={16} className="text-yellow-400" />
                                 <span className="text-[15px]">Sharia Interpretation & Guidance</span>
                             </div>
                             <div className="flex items-center gap-2">
-                                <CheckCircle2 size={16} className="text-[#005a9c]" />
+                                <CheckCircle2 size={16} className="text-yellow-400" />
                                 <span className="text-[15px]">Nikahnama Drafting & Validation</span>
                             </div>
                             <div className="flex items-center gap-2">
-                                <CheckCircle2 size={16} className="text-[#005a9c]" />
+                                <CheckCircle2 size={16} className="text-yellow-400" />
                                 <span className="text-[15px]">Court Representation in Family Cases</span>
                             </div>
                         </div>
@@ -332,7 +332,7 @@ const MuslimLawLawyer = () => {
                             { step: "04", title: "Representation & Resolution", desc: "Ongoing support through negotiation, formal filing, or court representation." }
                         ].map((item, idx) => (
                             <div key={idx} className="flex gap-6 items-start group">
-                                <span className="flex-shrink-0 w-12 h-12 rounded-full border-2 border-slate-200 text-[#005a9c] flex items-center justify-center font-bold group-hover:bg-[#005a9c] group-hover:text-white group-hover:border-[#005a9c] transition-all duration-300">
+                                <span className="flex-shrink-0 w-12 h-12 rounded-full border-2 border-slate-200 text-yellow-400 flex items-center justify-center font-bold group-hover:bg-[#005a9c] group-hover:text-white group-hover:border-[#005a9c] transition-all duration-300">
                                     {item.step}
                                 </span>
                                 <div>
@@ -402,3 +402,4 @@ const MuslimLawLawyer = () => {
 };
 
 export default MuslimLawLawyer;
+

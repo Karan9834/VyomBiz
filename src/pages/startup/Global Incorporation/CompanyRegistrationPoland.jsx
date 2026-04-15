@@ -15,7 +15,7 @@ import polandProcess from "../../../assets/Global Incorporation/Company Registra
 
 const CompanyRegistrationPolandOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
@@ -111,7 +111,7 @@ const PolandIncorporationEligibility = () => {
         { title: "Representative Office", desc: "A representative office is mainly used for marketing, promotion, and research activities rather than direct commercial operations." }
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Types of Companies You Can Register in Poland
@@ -150,7 +150,7 @@ const PolandIncorporationDocumentsSection = () => {
         "Articles of Association"
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for Company Registration in Poland
@@ -181,7 +181,7 @@ const PolandIncorporationProcessSection = () => {
         { title: "Tax and VAT Registration", desc: "After registration, businesses must obtain tax identification numbers and complete VAT registration if applicable." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -239,7 +239,7 @@ const PolandIncorporationFeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 
                 <div className="mb-16">
@@ -362,3 +362,4 @@ const CompanyRegistrationPoland = () => {
 };
 
 export default CompanyRegistrationPoland;
+

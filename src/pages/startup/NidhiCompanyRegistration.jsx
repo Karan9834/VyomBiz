@@ -7,7 +7,6 @@ import {
 import HeroLayout from "../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../components/common/TalkExpert.jsx";
 
 
@@ -22,7 +21,7 @@ const NidhiCompanyOverview = () => {
                             Mutual Benefit Society
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            Nidhi Company Registration – <span className="text-[#005a9c]">An Overview</span>
+                            <span className="text-yellow-400">Nidhi Company Registration</span> – An Overview
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             A Nidhi Company is a form of Non-Banking Financial Company (NBFC) created primarily to encourage savings and provide lending facilities among its members. It operates on the principle of mutual benefit and promotes financial discipline within its member community.
@@ -147,7 +146,6 @@ const NidhiCompanyRegistration = () => {
             />
 
             {/* ================= TRUSTED BRANDS SECTION ================= */}
-            <TrustedBrands />
 
             {/* ================= TALK EXPERT SECTION ================= */}
             <TalkExpert />

@@ -150,3 +150,4 @@ const ConsentForEstablishmentFromSPCB = () => {
 };
 
 export default ConsentForEstablishmentFromSPCB;
+

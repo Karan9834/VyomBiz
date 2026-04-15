@@ -6,3 +6,4 @@ const Regulatory = () => {
 };
 
 export default Regulatory;
+

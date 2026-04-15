@@ -6,7 +6,6 @@ import {
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 const RemovalofDirector = () => {
@@ -30,18 +29,18 @@ const RemovalofDirector = () => {
 
     const benefitContent = (
         <div className="space-y-8">
-            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><BookOpen size={18} className="text-[#005a9c]" />Participation in Removal of a Director</h3>
+            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><BookOpen size={18} className="text-yellow-400" />Participation in Removal of a Director</h3>
             {[
                 "Stockholders holding shares not less than Rs. 5,00,000 as paid-up capital or not less than 1% of total voting power can send a special notice to the company for removal of the director.",
                 "Shareholders concede the power to decide the date of the meeting. However, the special notice shall not be sent earlier than three months from the meeting, although the resolution must be moved at least 14 clear days before the session.",
                 "The concerned director is given the option of being heard at the meeting. If objections are validated by the stockholders and board, they can eliminate the removal procedure after consideration.",
             ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
-                    <CheckCircle2 size={16} className="text-[#005a9c] mt-0.5 shrink-0" />
+                    <CheckCircle2 size={16} className="text-yellow-400 mt-0.5 shrink-0" />
                     <p className="text-[14px] text-slate-700 leading-relaxed">{item}</p>
                 </div>
             ))}
-            <h3 className="text-lg font-bold text-[#072b47] mt-6 mb-4 flex items-center gap-2"><Shield size={18} className="text-[#005a9c]" />Reasons Behind Resignation / Removal</h3>
+            <h3 className="text-lg font-bold text-[#072b47] mt-6 mb-4 flex items-center gap-2"><Shield size={18} className="text-yellow-400" />Reasons Behind Resignation / Removal</h3>
             <div className="grid sm:grid-cols-2 gap-4">
                 {[
                     { title: "Dispute with the Board", desc: "Differences of opinion among directors can hinder the overall performance of the corporation, leading to removal with due consideration." },
@@ -57,7 +56,7 @@ const RemovalofDirector = () => {
             </div>
             <div className="flex flex-wrap gap-2 mt-2">
                 {["Get fresh talent on council", "No compulsion of ownership", "Incompetence of existing directors", "To meet the sanctioned limit"].map((r, i) => (
-                    <span key={i} className="inline-flex items-center gap-1.5 bg-[#e8f1fb] text-[#005a9c] border border-[#c0d8f0] px-3 py-1.5 rounded-full text-[13px] font-medium"><CheckCircle2 size={12} />{r}</span>
+                    <span key={i} className="inline-flex items-center gap-1.5 bg-[#e8f1fb] text-yellow-400 border border-[#c0d8f0] px-3 py-1.5 rounded-full text-[13px] font-medium"><CheckCircle2 size={12} />{r}</span>
                 ))}
             </div>
         </div>
@@ -65,7 +64,7 @@ const RemovalofDirector = () => {
 
     const listiclesContent = (
         <div className="space-y-8">
-            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><Shield size={18} className="text-[#005a9c]" />Eligibility Criteria to be a Director</h3>
+            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><Shield size={18} className="text-yellow-400" />Eligibility Criteria to be a Director</h3>
             <div className="grid gap-4 mb-6">
                 {[
                     { title: "Age Demarcation", desc: "No fixed minimum age, but the person must be competent to enter into contracts. For MD, Full-Time, or Independent Director of listed company: between 21 and 70 years." },
@@ -74,7 +73,7 @@ const RemovalofDirector = () => {
                     { title: "Limit of Directorships", desc: "A person can hold a maximum of 20 directorships, of which only 10 can be in public companies." },
                 ].map((item, i) => (
                     <div key={i} className="flex items-start gap-4 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-4">
-                        <div className="w-8 h-8 rounded-lg bg-[#e8f1fb] flex items-center justify-center shrink-0 font-bold text-[#005a9c] text-[12px]">{i + 1}</div>
+                        <div className="w-8 h-8 rounded-lg bg-[#e8f1fb] flex items-center justify-center shrink-0 font-bold text-yellow-400 text-[12px]">{i + 1}</div>
                         <div><p className="text-[14px] font-bold text-[#072b47] mb-1">{item.title}</p><p className="text-[13px] text-slate-600 leading-relaxed">{item.desc}</p></div>
                     </div>
                 ))}
@@ -92,7 +91,7 @@ const RemovalofDirector = () => {
                     </div>
                 ))}
             </div>
-            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><Users size={18} className="text-[#005a9c]" />Types of Director & Numerical Requirements</h3>
+            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><Users size={18} className="text-yellow-400" />Types of Director & Numerical Requirements</h3>
             <div className="grid gap-2">
                 {[
                     "Per Section 149(1) of the Companies Act, 2013 — every public company must have a minimum of 3 directors; a private company requires at least 2; OPC requires only 1.",
@@ -103,7 +102,7 @@ const RemovalofDirector = () => {
                     "All public companies with turnover of Rs. 300 crores or paid-up capital of Rs. 100 crores must also appoint at least one woman director.",
                 ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3 bg-[#f8fbff] border border-[#d0e3f5] rounded-xl p-3">
-                        <CheckCircle2 size={14} className="text-[#005a9c] mt-0.5 shrink-0" />
+                        <CheckCircle2 size={14} className="text-yellow-400 mt-0.5 shrink-0" />
                         <p className="text-[13px] text-slate-700 leading-relaxed">{item}</p>
                     </div>
                 ))}
@@ -121,7 +120,7 @@ const RemovalofDirector = () => {
 
     const otherInfoContent = (
         <div className="space-y-8">
-            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><FileText size={18} className="text-[#005a9c]" />Provisional Aspects — Section 169 of Companies Act 2013</h3>
+            <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2"><FileText size={18} className="text-yellow-400" />Provisional Aspects — Section 169 of Companies Act 2013</h3>
             <div className="grid gap-4">
                 {[
                     { section: "Section 169(1)", points: ["An ordinary resolution is needed to remove a director.", "Director assigned by Tribunal under Section 242 shall not be removed.", "Reappointed Independent Director shall be removed by Special Resolution.", "Section 169(1) will not apply where directors are appointed per proportional representation (Section 163)."] },
@@ -138,7 +137,7 @@ const RemovalofDirector = () => {
                         <div className="p-4 grid gap-2">
                             {item.points.map((pt, j) => (
                                 <div key={j} className="flex items-start gap-2 bg-[#f8fbff] rounded-lg px-3 py-2">
-                                    <CheckCircle2 size={13} className="text-[#005a9c] mt-0.5 shrink-0" />
+                                    <CheckCircle2 size={13} className="text-yellow-400 mt-0.5 shrink-0" />
                                     <p className="text-[13px] text-slate-700 leading-relaxed">{pt}</p>
                                 </div>
                             ))}
@@ -175,7 +174,6 @@ const RemovalofDirector = () => {
                     { count: "24/7", label: "Expert Availability", icon: <Users size={20} /> }
                 ]}
             />
-            <TrustedBrands />
             <TalkExpert />
             <DetailsLayout
                 navLabels={{ overview: "Overview", advantages: "Benefit", eligibility: "Listicles", documents: "Documents Required", process: "Registration Procedure", features: "Other Information", faq: "FAQs" }}

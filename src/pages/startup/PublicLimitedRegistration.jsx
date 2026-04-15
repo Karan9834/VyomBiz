@@ -16,3 +16,4 @@ const PublicLimitedRegistration = () => {
 };
 
 export default PublicLimitedRegistration;
+

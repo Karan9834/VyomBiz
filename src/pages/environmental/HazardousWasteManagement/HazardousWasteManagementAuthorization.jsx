@@ -120,3 +120,4 @@ const HazardousWasteManagementAuthorization = () => {
 };
 
 export default HazardousWasteManagementAuthorization;
+

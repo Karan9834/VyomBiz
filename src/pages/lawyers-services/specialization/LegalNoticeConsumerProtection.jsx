@@ -50,7 +50,7 @@ const NumberedList = ({ items }) => (
     <ol className="space-y-3 my-4 pl-1">
         {items.map((item, i) => (
             <li key={i} className="flex items-start gap-3">
-                <span className="shrink-0 w-6 h-6 rounded-full bg-[#e8f1fb] text-[#005a9c] text-[11px] font-bold flex items-center justify-center mt-0.5">
+                <span className="shrink-0 w-6 h-6 rounded-full bg-[#e8f1fb] text-yellow-400 text-[11px] font-bold flex items-center justify-center mt-0.5">
                     {i + 1}
                 </span>
                 <span className="text-[15px] text-slate-600 leading-[1.8]">{item}</span>
@@ -63,7 +63,7 @@ const InfoCard = ({ icon, title, children }) => (
     <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 md:p-6 mb-5">
         <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 rounded-lg bg-[#e8f1fb] flex items-center justify-center shrink-0">
-                <span className="text-[#005a9c]">{icon}</span>
+                <span className="text-yellow-400">{icon}</span>
             </div>
             <h4 className="text-[15px] font-semibold text-[#072b47]">{title}</h4>
         </div>
@@ -76,7 +76,7 @@ const Divider = () => (
 );
 
 const SectionLabel = ({ children }) => (
-    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-[#005a9c] bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
+    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-yellow-400 bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
         {children}
     </span>
 );
@@ -247,17 +247,17 @@ const LegalNoticeConsumerProtection = () => {
                     <div className="grid md:grid-cols-3 gap-4 my-8">
                         <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
                             <h4 className="font-bold text-[#072b47] mb-2 text-center uppercase tracking-wider text-xs">District Level</h4>
-                            <p className="text-[#005a9c] font-bold text-center text-sm">DCDRC</p>
+                            <p className="text-yellow-400 font-bold text-center text-sm">DCDRC</p>
                             <p className="text-slate-500 text-[13px] text-center mt-2 italic">District Consumer Disputes Redressal Commission</p>
                         </div>
                         <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
                             <h4 className="font-bold text-[#072b47] mb-2 text-center uppercase tracking-wider text-xs">State Level</h4>
-                            <p className="text-[#005a9c] font-bold text-center text-sm">SCDRC</p>
+                            <p className="text-yellow-400 font-bold text-center text-sm">SCDRC</p>
                             <p className="text-slate-500 text-[13px] text-center mt-2 italic">State Consumer Disputes Redressal Commission</p>
                         </div>
                         <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
                             <h4 className="font-bold text-[#072b47] mb-2 text-center uppercase tracking-wider text-xs">National Level</h4>
-                            <p className="text-[#005a9c] font-bold text-center text-sm">NCDRC</p>
+                            <p className="text-yellow-400 font-bold text-center text-sm">NCDRC</p>
                             <p className="text-slate-500 text-[13px] text-center mt-2 italic">National Consumer Disputes Redressal Commission</p>
                         </div>
                     </div>
@@ -311,19 +311,19 @@ const LegalNoticeConsumerProtection = () => {
                     <SubHeading>Who Can File a Legal Notice?</SubHeading>
                     <div className="grid md:grid-cols-2 gap-4 my-6">
                         <div className="p-5 bg-[#f8fbff] rounded-xl border border-[#d0e3f5]">
-                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><ShoppingBag size={16} className="text-[#005a9c]" /> Standard Buyers</h4>
+                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><ShoppingBag size={16} className="text-yellow-400" /> Standard Buyers</h4>
                             <p className="text-sm text-slate-600">Anyone who purchases goods or avails services for consideration (payment).</p>
                         </div>
                         <div className="p-5 bg-[#f8fbff] rounded-xl border border-[#d0e3f5]">
-                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><Landmark size={16} className="text-[#005a9c]" /> E-commerce Users</h4>
+                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><Landmark size={16} className="text-yellow-400" /> E-commerce Users</h4>
                             <p className="text-sm text-slate-600">Modern definitions include shoppers on delivery sites and digital service recipients (like insurance).</p>
                         </div>
                         <div className="p-5 bg-[#f8fbff] rounded-xl border border-[#d0e3f5]">
-                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><AlertCircle size={16} className="text-[#005a9c]" /> Victims of Malpractice</h4>
+                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><AlertCircle size={16} className="text-yellow-400" /> Victims of Malpractice</h4>
                             <p className="text-sm text-slate-600">Those affected by false product claims, adulteration, or spurious goods.</p>
                         </div>
                         <div className="p-5 bg-[#f8fbff] rounded-xl border border-[#d0e3f5]">
-                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><FileText size={16} className="text-[#005a9c]" /> Victims of Unfair Trades</h4>
+                            <h4 className="font-bold text-[#072b47] mb-2 flex items-center gap-2"><FileText size={16} className="text-yellow-400" /> Victims of Unfair Trades</h4>
                             <p className="text-sm text-slate-600">Covers non-issuance of bills, refusal of valid refunds, or forced tied-in purchases.</p>
                         </div>
                     </div>
@@ -381,7 +381,7 @@ const LegalNoticeConsumerProtection = () => {
                             { step: "05", title: "Judgment & Appeal", desc: "The forum delivers a judgment. If unsatisfied, you have 30 days to file an appeal with the next level commission." }
                         ].map((item, idx) => (
                             <div key={idx} className="flex gap-6 items-start group">
-                                <span className="flex-shrink-0 w-12 h-12 rounded-full border-2 border-slate-200 text-[#005a9c] flex items-center justify-center font-bold group-hover:bg-[#005a9c] group-hover:text-white group-hover:border-[#005a9c] transition-all duration-300">
+                                <span className="flex-shrink-0 w-12 h-12 rounded-full border-2 border-slate-200 text-yellow-400 flex items-center justify-center font-bold group-hover:bg-[#005a9c] group-hover:text-white group-hover:border-[#005a9c] transition-all duration-300">
                                     {item.step}
                                 </span>
                                 <div>
@@ -478,28 +478,28 @@ const LegalNoticeConsumerProtection = () => {
                     <div className="grid md:grid-cols-2 gap-6 my-10">
                         <div className="p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all">
                             <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-5">
-                                <Users size={24} className="text-[#005a9c]" />
+                                <Users size={24} className="text-yellow-400" />
                             </div>
                             <h4 className="text-[18px] font-bold text-[#072b47] mb-3">300-Strong Team</h4>
                             <p className="text-slate-600 text-sm leading-relaxed">Our experienced business advisors and legal professionals are always just a call away from securing your rights.</p>
                         </div>
                         <div className="p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all">
                             <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-5">
-                                <Briefcase size={24} className="text-[#005a9c]" />
+                                <Briefcase size={24} className="text-yellow-400" />
                             </div>
                             <h4 className="text-[18px] font-bold text-[#072b47] mb-3">Access To Experts</h4>
                             <p className="text-slate-600 text-sm leading-relaxed">We coordinate with reliable professionals to fulfill your requirements, with real-time tracking on our online platform.</p>
                         </div>
                         <div className="p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all">
                             <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-5">
-                                <FileText size={24} className="text-[#005a9c]" />
+                                <FileText size={24} className="text-yellow-400" />
                             </div>
                             <h4 className="text-[18px] font-bold text-[#072b47] mb-3">Realistic Expectations</h4>
                             <p className="text-slate-600 text-sm leading-relaxed">We handle all the paperwork and provide absolute clarity on the process so you have clear goals.</p>
                         </div>
                         <div className="p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all">
                             <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-5">
-                                <Landmark size={24} className="text-[#005a9c]" />
+                                <Landmark size={24} className="text-yellow-400" />
                             </div>
                             <h4 className="text-[18px] font-bold text-[#072b47] mb-3">Smooth Interaction</h4>
                             <p className="text-slate-600 text-sm leading-relaxed">Our goal is to make your interaction with regulatory bodies as smooth as possible through expert intervention.</p>
@@ -548,3 +548,4 @@ const LegalNoticeConsumerProtection = () => {
 };
 
 export default LegalNoticeConsumerProtection;
+

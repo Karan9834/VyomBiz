@@ -136,3 +136,4 @@ const PlasticWasteRecyclingPlantWM = () => {
 };
 
 export default PlasticWasteRecyclingPlantWM;
+

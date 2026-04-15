@@ -16,7 +16,7 @@ const ESDDInTobaccoIndustry = () => {
             <section className="relative min-h-[90vh] bg-white flex items-center pt-24 pb-12 overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12 mb-20">
                     <div className="w-full lg:w-[60%]">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#005a9c]/10 border border-[#005a9c]/20 rounded-full text-[#005a9c] text-sm font-bold uppercase tracking-wider mb-8">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#005a9c]/10 border border-[#005a9c]/20 rounded-full text-yellow-400 text-sm font-bold uppercase tracking-wider mb-8">
                             <Shield size={16} /><span>Environmental Industry Services</span>
                         </div>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#072b47] leading-[1.1] mb-8">
@@ -46,10 +46,10 @@ const ESDDInTobaccoIndustry = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {[
-                            { icon: <Rocket className="w-8 h-8 text-[#005a9c]" />, title: "Track Record", desc: "Successfully processed thousands of applications for clients across India." },
-                            { icon: <Smile className="w-8 h-8 text-[#005a9c]" />, title: "Domain Expertise", desc: "Deep knowledge of specific regulatory frameworks and compliance timelines." },
-                            { icon: <MapPin className="w-8 h-8 text-[#005a9c]" />, title: "Pan-India Reach", desc: "We provide comprehensive regulatory coverage spanning all states and territories." },
-                            { icon: <PieChart className="w-8 h-8 text-[#005a9c]" />, title: "Data Security", desc: "Your business secrets, process details, and critical data are held in strict confidence." },
+                            { icon: <Rocket className="w-8 h-8 text-yellow-400" />, title: "Track Record", desc: "Successfully processed thousands of applications for clients across India." },
+                            { icon: <Smile className="w-8 h-8 text-yellow-400" />, title: "Domain Expertise", desc: "Deep knowledge of specific regulatory frameworks and compliance timelines." },
+                            { icon: <MapPin className="w-8 h-8 text-yellow-400" />, title: "Pan-India Reach", desc: "We provide comprehensive regulatory coverage spanning all states and territories." },
+                            { icon: <PieChart className="w-8 h-8 text-yellow-400" />, title: "Data Security", desc: "Your business secrets, process details, and critical data are held in strict confidence." },
                         ].map((card, i) => (
                             <div key={i} className="bg-white rounded-[2rem] p-10 flex flex-col shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
                                 <div className="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center mb-8">{card.icon}</div>
@@ -72,7 +72,7 @@ const ESDDInTobaccoIndustry = () => {
                             <div key={index} className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-[#FFE90A]/40 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full group relative">
                                 <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
                                 <div className="p-8 flex flex-col h-full pt-10">
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{service.title}</h3>
+                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-yellow-400 transition-colors">{service.title}</h3>
                                     <p className="text-slate-600 text-[15px] leading-relaxed mb-10 flex-grow font-medium">{service.desc}</p>
                                     <div className="mt-auto pt-6">
                                         <div className="flex flex-col mb-6">
@@ -81,7 +81,7 @@ const ESDDInTobaccoIndustry = () => {
                                         </div>
                                         <div className="flex items-center justify-between gap-4">
                                             <button className="flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3.5 rounded-xl text-sm font-bold transition-all">Get Started</button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read py-1">
+                                            <button className="text-yellow-400 font-bold text-sm flex items-center gap-1.5 group/read py-1">
                                                 <span>Read More</span><ArrowRight className="w-4 h-4 group-hover/read:translate-x-1.5 transition-transform duration-300" />
                                             </button>
                                         </div>
@@ -110,7 +110,7 @@ const ESDDInTobaccoIndustry = () => {
                                 <ul className="space-y-4">
                                     {["Business Incorporation Details", "Authorized Person KYC", "Facility Setup Plans", "List of Machinery/Process Details", "Past Compliance Records (if any)", "Site Clearance Approvals", "Local Body NOCs"].map((doc, i) => (
                                         <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
-                                            <CheckCircle className="w-5 h-5 text-[#005a9c] mt-0.5 shrink-0" />
+                                            <CheckCircle className="w-5 h-5 text-yellow-400 mt-0.5 shrink-0" />
                                             <span>{doc}</span>
                                         </li>
                                     ))}
@@ -139,7 +139,7 @@ const ESDDInTobaccoIndustry = () => {
                                         <CheckCircle className="w-8 h-8 text-[#dead01]" />
                                     </div>
                                 </div>
-                                <h3 className="text-xl font-black text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
+                                <h3 className="text-xl font-black text-[#072b47] mb-4 group-hover:text-yellow-400 transition-colors">{item.title}</h3>
                                 <p className="text-slate-600 leading-relaxed font-medium text-[15px]">{item.desc}</p>
                             </div>
                         ))}
@@ -151,3 +151,4 @@ const ESDDInTobaccoIndustry = () => {
 };
 
 export default ESDDInTobaccoIndustry;
+

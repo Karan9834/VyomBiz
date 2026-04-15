@@ -15,15 +15,15 @@ import process from '../../../assets/ngo1/80G Registration for NGOs/process.png'
 
 const Registration80GOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Tax Exemption
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            80G Registration – <span className="text-[#005a9c]">Overview</span>
+                            80G Registration – <span className="text-yellow-400">Overview</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             80G registration is a certification issued by the Income Tax Department that allows donors to claim tax deductions on donations made to eligible NGOs and charitable institutions. This provision allows donors to reduce their taxable income by claiming deductions on donated amounts, encouraging charitable contributions.
@@ -56,7 +56,7 @@ const Registration80GAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Donor Incentives
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -101,7 +101,7 @@ const Registration80GAdvantages = () => {
 
 const Registration80GEligibility = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
 
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
@@ -182,7 +182,7 @@ const Registration80GEligibility = () => {
 
 const Registration80GDocumentsSection = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
 
                 {/* Main Heading */}
@@ -263,7 +263,7 @@ const Registration80GProcessSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
 
                 {/* Heading */}
@@ -361,7 +361,7 @@ const Registration80GFeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
 
                 {/* Corrected Heading */}
@@ -473,3 +473,4 @@ const Registration80G = () => {
 };
 
 export default Registration80G;
+

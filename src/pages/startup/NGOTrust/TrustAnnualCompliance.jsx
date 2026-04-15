@@ -15,15 +15,15 @@ import process from "../../../assets/ngo1/Trust Annual Compliance/process.png"
 
 const ComplianceOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Regulatory Adherence
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            Trust Annual Compliance – <span className="text-[#005a9c]">Overview</span>
+                            Trust Annual Compliance – <span className="text-yellow-400">Overview</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             A Trust, governed by the Indian Trusts Act, 1882, is a legal arrangement where trustees manage assets for the benefit of beneficiaries. To maintain legal recognition and tax benefits, trusts must follow mandatory annual compliance requirements. Annual compliance generally includes maintaining proper books of accounts, submitting audit reports, and filing income tax returns.
@@ -53,7 +53,7 @@ const TrustAnnualComplianceAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Regulatory Adherence
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -98,7 +98,7 @@ const TrustAnnualComplianceAdvantages = () => {
 
 const ComplianceEligibility = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
 
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
@@ -167,7 +167,7 @@ const ComplianceEligibility = () => {
 
 const ComplianceDocumentsSection = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
 
                 {/* Main Heading */}
@@ -248,7 +248,7 @@ const ComplianceProcessSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
 
                 {/* Heading */}
@@ -345,7 +345,7 @@ const ComplianceFeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
 
                 {/* Corrected Heading */}
@@ -456,3 +456,4 @@ const TrustAnnualCompliance = () => {
 };
 
 export default TrustAnnualCompliance;
+

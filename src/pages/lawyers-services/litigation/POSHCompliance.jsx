@@ -7,3 +7,4 @@ const POSHCompliance = () => {
 };
 
 export default POSHCompliance;
+

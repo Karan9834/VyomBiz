@@ -7,3 +7,4 @@ const Automobile = () => {
 };
 
 export default Automobile;
+

@@ -288,7 +288,7 @@ const LegalServices = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-8 lg:gap-12 py-6 md:py-10 lg:py-6">
                     {/* Left Content */}
                     <div className="w-full lg:w-[60%] text-center lg:text-left">
-                        <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-blue-50 border border-blue-100 rounded-full text-[#005a9c] text-xs md:text-sm font-bold uppercase tracking-wider mb-4 md:mb-8">
+                        <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-blue-50 border border-blue-100 rounded-full text-yellow-400 text-xs md:text-sm font-bold uppercase tracking-wider mb-4 md:mb-8">
                             <Gavel size={16} className="hidden sm:block" />
                             <span>Legal Services</span>
                         </div>
@@ -336,23 +336,23 @@ const LegalServices = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
                         {[
                             {
-                                icon: <Gavel className="w-6 h-6 md:w-8 md:h-8 text-[#005a9c]" />,
+                                icon: <Gavel className="w-6 h-6 md:w-8 md:h-8 text-yellow-400" />,
                                 title: "10,000+ Cases",
                                 desc: "Successfully handled over 10,000+ legal cases across various domains of law."
                             },
                             {
-                                icon: <Users className="w-6 h-6 md:w-8 md:h-8 text-[#005a9c]" />,
+                                icon: <Users className="w-6 h-6 md:w-8 md:h-8 text-yellow-400" />,
                                 title: "100+ Legal Experts",
                                 desc: "Team of experienced lawyers specializing in civil, criminal, and corporate law.",
                                 badge: true
                             },
                             {
-                                icon: <Scale className="w-6 h-6 md:w-8 md:h-8 text-[#005a9c]" />,
+                                icon: <Scale className="w-6 h-6 md:w-8 md:h-8 text-yellow-400" />,
                                 title: "95% Success Rate",
                                 desc: "High success rate in litigation, dispute resolution, and legal consultations."
                             },
                             {
-                                icon: <Clock className="w-6 h-6 md:w-8 md:h-8 text-[#005a9c]" />,
+                                icon: <Clock className="w-6 h-6 md:w-8 md:h-8 text-yellow-400" />,
                                 title: "24/7 Support",
                                 desc: "Round-the-clock legal assistance and consultation for urgent matters.",
                                 badge: true
@@ -397,7 +397,7 @@ const LegalServices = () => {
                                 <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
 
                                 <div className="p-4 sm:p-6 md:p-8 flex flex-col h-full pt-6 md:pt-10">
-                                    <h3 className="text-lg md:text-xl font-bold text-[#072b47] mb-2 md:mb-4 group-hover:text-[#005a9c] transition-colors">
+                                    <h3 className="text-lg md:text-xl font-bold text-[#072b47] mb-2 md:mb-4 group-hover:text-yellow-400 transition-colors">
                                         {service.title}
                                     </h3>
                                     <p className="text-sm md:text-[15px] text-slate-600 leading-relaxed mb-4 md:mb-6 flex-grow font-medium">
@@ -412,7 +412,7 @@ const LegalServices = () => {
                                                     Get Started
                                                 </button>
                                                 <div className="flex items-center gap-2 sm:gap-3 order-1 sm:order-2">
-                                                    <a href={service.link} className="text-[#005a9c] font-bold text-xs md:text-sm flex items-center gap-1 group/read relative py-1 whitespace-nowrap">
+                                                    <a href={service.link} className="text-yellow-400 font-bold text-xs md:text-sm flex items-center gap-1 group/read relative py-1 whitespace-nowrap">
                                                         <span>Read More</span>
                                                         <ArrowRight className="w-3 h-3 md:w-4 md:h-4 group-hover/read:translate-x-1 transition-transform duration-300" />
                                                         <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#FFE90A] group-hover/read:w-full transition-all duration-300 rounded-full"></div>
@@ -422,7 +422,7 @@ const LegalServices = () => {
                                                             href={`https://www.youtube.com/watch?v=${service.link}`}
                                                             target="_blank"
                                                             rel="noopener noreferrer"
-                                                            className="text-[#005a9c] font-bold text-xs md:text-sm flex items-center gap-1 group/video relative py-1 whitespace-nowrap"
+                                                            className="text-yellow-400 font-bold text-xs md:text-sm flex items-center gap-1 group/video relative py-1 whitespace-nowrap"
                                                         >
                                                             <Play className="w-3 h-3 md:w-4 md:h-4 fill-[#005a9c] group-hover/video:scale-110 transition-transform" />
                                                             <span className="hidden xs:inline">Watch Video</span>
@@ -547,7 +547,7 @@ const LegalServices = () => {
                                     </div>
                                 </div>
 
-                                <h3 className="text-lg md:text-xl font-black text-[#072b47] mb-3 md:mb-4 leading-tight group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
+                                <h3 className="text-lg md:text-xl font-black text-[#072b47] mb-3 md:mb-4 leading-tight group-hover:text-yellow-400 transition-colors">{item.title}</h3>
                                 <p className="text-sm md:text-[15px] text-slate-600 leading-relaxed font-medium flex-grow">
                                     {item.desc}
                                 </p>
@@ -561,7 +561,7 @@ const LegalServices = () => {
             <section className="py-16 md:py-20 lg:py-24 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-8 md:mb-12 lg:mb-16">
-                        <p className="text-[#005a9c] font-bold text-sm md:text-base lg:text-lg mb-2">Testimonials</p>
+                        <p className="text-yellow-400 font-bold text-sm md:text-base lg:text-lg mb-2">Testimonials</p>
                         <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-[#072b47] mb-3 md:mb-4 px-4">
                             Updated testimonials from our customers
                         </h2>
@@ -590,7 +590,7 @@ const LegalServices = () => {
                     <div className="text-center mt-8 md:mt-12">
                         <a
                             href="reviews"
-                            className="inline-flex items-center gap-2 bg-transparent border-2 border-[#005a9c] text-[#005a9c] hover:bg-[#005a9c] hover:text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-bold transition-all text-sm md:text-base"
+                            className="inline-flex items-center gap-2 bg-transparent border-2 border-[#005a9c] text-yellow-400 hover:bg-[#005a9c] hover:text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-bold transition-all text-sm md:text-base"
                         >
                             View More Reviews
                             <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />

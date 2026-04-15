@@ -3,7 +3,6 @@ import { CheckCircle2, AlertTriangle, Clock, Users, FileText, Shield, BookOpen, 
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /**
@@ -28,7 +27,7 @@ const ChangeinRegisteredOffice = () => {
     const reasonsContent = (
         <div className="space-y-6">
             <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
-                <BookOpen size={18} className="text-[#005a9c]" />
+                <BookOpen size={18} className="text-yellow-400" />
                 Reasons for Change in Registered Office Address
             </h3>
             <p className="text-[14px] text-slate-500 mb-4 leading-relaxed">
@@ -57,7 +56,7 @@ const ChangeinRegisteredOffice = () => {
             <div className="grid sm:grid-cols-2 gap-3">
                 {["Water Bill / Electricity Bill", "Property Tax Receipt", "NOC from landlord regarding Registered Office", "Lease Agreement between landlord and the company"].map((item, i) => (
                     <div key={i} className="flex items-center gap-2 bg-[#e8f1fb] border border-[#c0d8f0] rounded-lg px-4 py-2.5">
-                        <CheckCircle2 size={13} className="text-[#005a9c] shrink-0" />
+                        <CheckCircle2 size={13} className="text-yellow-400 shrink-0" />
                         <span className="text-[13px] text-slate-700">{item}</span>
                     </div>
                 ))}
@@ -73,7 +72,7 @@ const ChangeinRegisteredOffice = () => {
     const typeContent = (
         <div className="space-y-5">
             <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
-                <BarChart2 size={18} className="text-[#005a9c]" />
+                <BarChart2 size={18} className="text-yellow-400" />
                 Types of Registered Office Address Change
             </h3>
             <div className="grid gap-4">
@@ -92,7 +91,7 @@ const ChangeinRegisteredOffice = () => {
                             <p className="text-[14px] text-slate-700 leading-relaxed mb-3">{item.desc}</p>
                             <div className="flex flex-wrap gap-2">
                                 {item.forms.map((f, j) => (
-                                    <span key={j} className="inline-flex items-center gap-1 bg-[#e8f1fb] border border-[#c0d8f0] text-[#005a9c] text-[11px] font-medium px-2 py-1 rounded-full">
+                                    <span key={j} className="inline-flex items-center gap-1 bg-[#e8f1fb] border border-[#c0d8f0] text-yellow-400 text-[11px] font-medium px-2 py-1 rounded-full">
                                         <CheckCircle2 size={10} />{f}
                                     </span>
                                 ))}
@@ -154,7 +153,7 @@ const ChangeinRegisteredOffice = () => {
                             <div className="grid gap-1.5">
                                 {section.docs.map((d, i) => (
                                     <div key={i} className="flex items-start gap-2 bg-[#e8f1fb] rounded-lg px-3 py-2">
-                                        <FileText size={12} className="text-[#005a9c] mt-0.5 shrink-0" />
+                                        <FileText size={12} className="text-yellow-400 mt-0.5 shrink-0" />
                                         <p className="text-[12px] text-slate-700 leading-relaxed">{d}</p>
                                     </div>
                                 ))}
@@ -180,7 +179,6 @@ const ChangeinRegisteredOffice = () => {
                     { count: "24/7", label: "Expert Availability", icon: <Users size={20} /> }
                 ]}
             />
-            <TrustedBrands />
             <TalkExpert />
             <DetailsLayout
                 navLabels={{ overview: "Overview", advantages: "Reasons", features: "Type", eligibility: "Procedure", documents: "Documents Required", faq: "FAQs" }}
@@ -240,3 +238,4 @@ const ChangeinRegisteredOffice = () => {
 };
 
 export default ChangeinRegisteredOffice;
+

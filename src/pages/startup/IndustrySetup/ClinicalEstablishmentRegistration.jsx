@@ -11,7 +11,6 @@ import {
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 import advantages from "../../../assets/Industry Setup/Clinical Establishment Registration/advantages.png";
 import expertise from "../../../assets/Industry Setup/Clinical Establishment Registration/expertise.png";
@@ -20,11 +19,11 @@ import process from "../../../assets/Industry Setup/Clinical Establishment Regis
 
 const ClinicalEstablishmentOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Regulatory Compliance
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -62,7 +61,7 @@ const ClinicalEstablishmentAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Why It Is Vital
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -109,7 +108,7 @@ const ClinicalEstablishmentAdvantages = () => {
 
 const ClinicalEstablishmentEligibility = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Who Needs Clinical Establishment Registration?
@@ -119,21 +118,21 @@ const ClinicalEstablishmentEligibility = () => {
                 </p>
                 <div className="space-y-6">
                     <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm flex items-start">
-                        <div className="text-[#005a9c] mt-1 mr-4"><Building2 size={24} /></div>
+                        <div className="text-yellow-400 mt-1 mr-4"><Building2 size={24} /></div>
                         <div>
                             <h3 className="text-xl font-semibold text-[#072b47] mb-2">Medical Services</h3>
                             <p className="text-[17px] text-slate-600 leading-relaxed">Individual doctors running private clinics and multi-speciality hospitals.</p>
                         </div>
                     </div>
                     <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm flex items-start">
-                        <div className="text-[#005a9c] mt-1 mr-4"><Stethoscope size={24} /></div>
+                        <div className="text-yellow-400 mt-1 mr-4"><Stethoscope size={24} /></div>
                         <div>
                             <h3 className="text-xl font-semibold text-[#072b47] mb-2">Diagnostic Facilities</h3>
                             <p className="text-[17px] text-slate-600 leading-relaxed">Diagnostic and pathology laboratories, and imaging centres (X-ray, MRI, CT scan).</p>
                         </div>
                     </div>
                     <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm flex items-start">
-                        <div className="text-[#005a9c] mt-1 mr-4"><Briefcase size={24} /></div>
+                        <div className="text-yellow-400 mt-1 mr-4"><Briefcase size={24} /></div>
                         <div>
                             <h3 className="text-xl font-semibold text-[#072b47] mb-2">Specialized Care & In-patient Facilities</h3>
                             <p className="text-[17px] text-slate-600 leading-relaxed">Dental clinics, physiotherapy and rehabilitation centres, nursing homes, maternity centres, and daycare surgical facilities.</p>
@@ -158,7 +157,7 @@ const ClinicalEstablishmentDocumentsSection = () => {
         "Pollution control certificate (if required)"
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for Clinical Establishment Registration
@@ -169,7 +168,7 @@ const ClinicalEstablishmentDocumentsSection = () => {
                 <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed">
                     {list.map((item, i) => (
                         <li key={i} className="flex items-start">
-                             <div className="mr-3 mt-1 text-[#005a9c]"><CheckCircle2 size={18} /></div>
+                             <div className="mr-3 mt-1 text-yellow-400"><CheckCircle2 size={18} /></div>
                              <span>{item}</span>
                         </li>
                     ))}
@@ -191,7 +190,7 @@ const ClinicalEstablishmentProcessSection = () => {
         { title: "Registration Approval", desc: "Once the verification process is complete, the Clinical Establishment Registration certificate is issued." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -249,7 +248,7 @@ const ClinicalEstablishmentFeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="mb-14">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
@@ -344,7 +343,6 @@ const ClinicalEstablishment = () => {
             />
 
             {/* ================= TRUSTED BRANDS SECTION ================= */}
-            <TrustedBrands />
 
             {/* ================= TALK EXPERT SECTION ================= */}
             <TalkExpert />
@@ -371,3 +369,4 @@ const ClinicalEstablishment = () => {
 };
 
 export default ClinicalEstablishment;
+

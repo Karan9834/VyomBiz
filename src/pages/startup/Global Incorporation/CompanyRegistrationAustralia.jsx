@@ -14,7 +14,7 @@ import process from "../../../assets/Global Incorporation/Company Registration i
 
 const CompanyRegistrationAustraliaOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
@@ -102,7 +102,7 @@ const AustraliaIncorporationEligibility = () => {
         { title: "Branch Office of Foreign Company", desc: "Foreign companies that wish to operate in Australia without incorporating a separate legal entity can register as a branch office. This structure allows international companies to directly conduct business activities in Australia while remaining legally connected to the parent company." }
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Types of Companies in Australia
@@ -138,7 +138,7 @@ const AustraliaIncorporationDocumentsSection = () => {
         "Business activity description"
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for Company Registration in Australia
@@ -168,7 +168,7 @@ const AustraliaIncorporationProcessSection = () => {
         { title: "Receive ACN", desc: "Once approved, the company receives its Australian Company Number (ACN) and becomes legally registered." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -210,7 +210,7 @@ const AustraliaIncorporationProcessSection = () => {
 
 const AustraliaIncorporationFeaturesSection = () => {
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="mb-14">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
@@ -319,3 +319,4 @@ const CompanyRegistrationAustralia = () => {
 };
 
 export default CompanyRegistrationAustralia;
+

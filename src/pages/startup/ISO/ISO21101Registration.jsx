@@ -11,15 +11,15 @@ import req from "../../../assets/ISO Certifications/iso-21101-2014-certification
 
 const ISO21101Overview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Adventure Tourism Safety
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            An Overview of <span className="text-[#005a9c]">ISO 21101:2014</span>
+                            An Overview of <span className="text-yellow-400">ISO 21101:2014</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             The ISO 21101:2014 Certification Standards outline the Safety Management System for Activity Providers of Adventure Tourism. It ensures the expectations of safety measures are safely met regarding participants and staff members.
@@ -53,7 +53,7 @@ const ISO21101Requirements = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         System Elements
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -98,7 +98,7 @@ const ISO21101Requirements = () => {
 
 const ISO21101Benefits = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Benefits of ISO 21101:2014 Certification
@@ -163,7 +163,7 @@ const ISO21101ProcessSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -234,7 +234,7 @@ const ISO21101FeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
@@ -286,15 +286,15 @@ const ISO21101DocumentsSection = () => {
                         <h3 className="text-[20px] font-semibold text-[#072b47] mb-4">Foundational Business Verification</h3>
                         <ul className="space-y-3 text-[16px] text-slate-600">
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Identity and address proof of the active applicant</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>PAN Card and Voter IDs validating all core directors</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Recent passport-sized photographs</span>
                             </li>
                         </ul>
@@ -304,15 +304,15 @@ const ISO21101DocumentsSection = () => {
                         <h3 className="text-[20px] font-semibold text-[#072b47] mb-4">Premise & Financial Infrastructure</h3>
                         <ul className="space-y-3 text-[16px] text-slate-600">
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Formal utility bills or latest electricity structures</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Property sale deeds or formal rent agreements</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Detailed latest bank statements</span>
                             </li>
                         </ul>
@@ -322,15 +322,15 @@ const ISO21101DocumentsSection = () => {
                         <h3 className="text-[20px] font-semibold text-[#072b47] mb-4">Entity Formative Instruments</h3>
                         <ul className="space-y-3 text-[16px] text-slate-600">
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Corporate Certificate of Incorporation</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Memorandum and Articles of Association (M&AoA)</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Additional operational capacity logs</span>
                             </li>
                         </ul>
@@ -407,3 +407,4 @@ const ISO21101Registration = () => {
 };
 
 export default ISO21101Registration;
+

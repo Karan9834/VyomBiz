@@ -3,7 +3,6 @@ import { CheckCircle2, AlertTriangle, Clock, Users, FileText, Shield, BookOpen, 
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /**
@@ -26,7 +25,7 @@ const LiquidationofCompany = () => {
     const typesContent = (
         <div className="space-y-8">
             <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
-                <BarChart2 size={18} className="text-[#005a9c]" />
+                <BarChart2 size={18} className="text-yellow-400" />
                 Types of Company Liquidation
             </h3>
             <div className="grid gap-6">
@@ -126,7 +125,7 @@ const LiquidationofCompany = () => {
         <div className="space-y-8">
             <div>
                 <h3 className="text-lg font-bold text-[#072b47] mb-4 flex items-center gap-2">
-                    <CheckCircle2 size={18} className="text-[#005a9c]" />
+                    <CheckCircle2 size={18} className="text-yellow-400" />
                     Benefits of Proper Company Liquidation
                 </h3>
                 <p className="text-[14px] text-slate-600 mb-4 leading-relaxed">
@@ -210,7 +209,6 @@ const LiquidationofCompany = () => {
                     { count: "24/7", label: "Expert Availability", icon: <Users size={20} /> }
                 ]}
             />
-            <TrustedBrands />
             <TalkExpert />
             <DetailsLayout
                 navLabels={{ overview: "Overview", advantages: "Types", eligibility: "Process", features: "Advantage", documents: "Documents Required", faq: "FAQs" }}

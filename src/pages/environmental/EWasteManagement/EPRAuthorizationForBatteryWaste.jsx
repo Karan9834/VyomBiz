@@ -168,3 +168,4 @@ const EPRAuthorizationForBatteryWaste = () => {
 };
 
 export default EPRAuthorizationForBatteryWaste;
+

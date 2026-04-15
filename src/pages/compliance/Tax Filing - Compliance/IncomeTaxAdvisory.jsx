@@ -3,7 +3,6 @@ import { Users, Briefcase, Building2, CheckCircle2, ShieldAlert, BadgeInfo } fro
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 const IncomeTaxAdvisory = () => {
@@ -228,8 +227,6 @@ const IncomeTaxAdvisory = () => {
                     { count: "100+", label: "Cities Covered", icon: <Building2 size={20} /> }
                 ]}
             />
-
-            <TrustedBrands />
             <TalkExpert />
 
             {/* ================= DETAILS SECTION ================= */}
@@ -334,3 +331,4 @@ const IncomeTaxAdvisory = () => {
 };
 
 export default IncomeTaxAdvisory;
+

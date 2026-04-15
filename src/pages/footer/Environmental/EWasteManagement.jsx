@@ -13,105 +13,105 @@ const EWasteManagement = () => {
             title: "EPR Registration",
             desc: "EPR Registration in India Free Consultation for EPR Certificate -VyomBiz® Expert Heyy PIBOs! Are you facing challenges during EPR registration in India? If yes, you are at the right..",
             price: "499.00",
-            icon: <FileCheck className="w-8 h-8 text-[#005a9c]" />
+            icon: <FileCheck className="w-8 h-8 text-yellow-400" />
         },
         {
             title: "Refurbisher Authorization and License",
             desc: "Ready to obtain your refurbisher authorization and license? Ensure compliance, build trust, and drive sustainable business growth with VyomBiz expert..",
             price: "499.00",
-            icon: <RefreshCcw className="w-8 h-8 text-[#005a9c]" />
+            icon: <RefreshCcw className="w-8 h-8 text-yellow-400" />
         },
         {
             title: "PRO Authorization",
             desc: "PRO Authorization Certificate- File Application in 5 Min With 200+ approvals and 99% success rate, VyomBiz delivers PRO authorization certificate within 4 to 8 weeks through ex..",
             price: "499.00",
-            icon: <Shield className="w-8 h-8 text-[#005a9c]" />
+            icon: <Shield className="w-8 h-8 text-yellow-400" />
         },
         {
             title: "Plastic Waste Authorization",
             desc: "Plastic Waste Authorization in India Get 50% off on Professional Services Today Unmanaged plastic waste can harm your brand’s reputation! Secure your plastic waste authoriza..",
             price: "499.00",
-            icon: <Droplets className="w-8 h-8 text-[#005a9c]" />
+            icon: <Droplets className="w-8 h-8 text-yellow-400" />
         },
         {
             title: "E-Waste Recycling Authorization",
             desc: "Ready to get your e-waste recycling authorization? Let VyomBiz guide you in taking the first step towards sustainable e-waste management for a gree..",
             price: "499.00",
-            icon: <Leaf className="w-8 h-8 text-[#005a9c]" />
+            icon: <Leaf className="w-8 h-8 text-yellow-400" />
         },
         {
             title: "EPR Authorization for E-waste",
             desc: "Get EPR Authorization for E-Waste management effortlessly. Ensure compliance with extended producer responsibility regulations with VyomBiz expert's guidance..",
             price: "499.00",
-            icon: <Settings className="w-8 h-8 text-[#005a9c]" />
+            icon: <Settings className="w-8 h-8 text-yellow-400" />
         },
         {
             title: "EPR Post Compliance (E-Waste)",
             desc: "Not sure how to meet the needs of EPR post compliance for e-waste? Let VyomBiz experts help you drive positive changes in the electronics recycling..",
             price: "499.00",
-            icon: <CheckCircle className="w-8 h-8 text-[#005a9c]" />
+            icon: <CheckCircle className="w-8 h-8 text-yellow-400" />
         },
         {
             title: "Authorization for Export of E-waste",
             desc: "Authorization for Export of E-waste Get 50% off on Professional Services Today Don’t risk penalties while exporting e-waste! Get your authorization for export of e-waste w..",
             price: "499.00",
-            icon: <Building2 className="w-8 h-8 text-[#005a9c]" />
+            icon: <Building2 className="w-8 h-8 text-yellow-400" />
         },
         {
             title: "EPR Target Fulfilment",
             desc: "EPR Target Fulfilment - Apply in 5 Minutes Close your EPR gap before it costs you crores. Struggling with CPCB EPR shortfall notices? Achieve 100% EPR target fulfilment with VyomBiz. Now,..",
             price: "499.00",
-            icon: <Star className="w-8 h-8 text-[#005a9c]" />
+            icon: <Star className="w-8 h-8 text-yellow-400" />
         },
         {
             title: "EPR Authorization For Battery Waste",
             desc: "Obtain EPR Authorization for Battery Waste management with VyomBiz experts support. Ensure eco-friendly operations and compliance with government regul..",
             price: "499.00",
-            icon: <Zap className="w-8 h-8 text-[#005a9c]" />
+            icon: <Zap className="w-8 h-8 text-yellow-400" />
         },
         {
             title: "EPR Credits From Plastic Waste Recyclers",
             desc: "EPR Credits From Plastic Waste Recyclers VyomBiz offers brand partners information about plastic collection in the form of EPR Credits. What’s included? 10+ Ye..",
             price: "499.00",
-            icon: <Droplets className="w-8 h-8 text-[#005a9c]" />,
+            icon: <Droplets className="w-8 h-8 text-yellow-400" />,
             hasVideo: true
         },
         {
             title: "EPR for Importers",
             desc: "EPR Certificate for Importers Are you an importer looking to reduce the environmental impact of products? If yes, get EPR Certificate for importers with experts at VyomBiz at the desired..",
             price: "499.00",
-            icon: <Globe className="w-8 h-8 text-[#005a9c]" />
+            icon: <Globe className="w-8 h-8 text-yellow-400" />
         },
         {
             title: "EPR Credits",
             desc: "Get verified EPR credits for e-waste compliance. Connect with certified recyclers, trade credits legally, and meet your CPCB EPR obligations efficiently.",
             price: "499.00",
-            icon: <FileText className="w-8 h-8 text-[#005a9c]" />,
+            icon: <FileText className="w-8 h-8 text-yellow-400" />,
             hasVideo: true
         },
         {
             title: "E-waste Recycling license",
             desc: "With the help of VyomBiz, get assistance in the entire process of obtaining an E-waste recycling license right from the beginning to the end. What’s i..",
             price: "499.00",
-            icon: <Leaf className="w-8 h-8 text-[#005a9c]" />
+            icon: <Leaf className="w-8 h-8 text-yellow-400" />
         },
         {
             title: "EPR Registration for Producers and Brand Owners",
             desc: "Get the EPR Registration for Producers and Brand Owners with the help of VyomBiz and also get compliance assistance.",
             price: "499.00",
-            icon: <Building2 className="w-8 h-8 text-[#005a9c]" />
+            icon: <Building2 className="w-8 h-8 text-yellow-400" />
         },
         {
             title: "EPR Fulfillment in E-Waste Management",
             desc: "EPR Compliance for E-Waste Management Achieve effortless EPR compliance for E-Waste management with VyomBiz. Let experts at VyomBiz guide you towards a greener and more sustainable future!",
             price: "499.00",
-            icon: <Settings className="w-8 h-8 text-[#005a9c]" />
+            icon: <Settings className="w-8 h-8 text-yellow-400" />
         },
         {
             title: "EPR Compliance",
             desc: "EPR Compliance in India- Get 365-Day Roadmap in 1 Day Fear heavy CPCB penalties for not meeting the needs of EPR compliance in India? Stay 100% EPR compliant with VyomBiz. We ensure compl..",
             price: "499.00",
-            icon: <Shield className="w-8 h-8 text-[#005a9c]" />
+            icon: <Shield className="w-8 h-8 text-yellow-400" />
         }
     ];
 
@@ -207,7 +207,7 @@ const EWasteManagement = () => {
                                             </button>
                                         )}
                                     </div>
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors line-clamp-2">{service.title}</h3>
+                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-yellow-400 transition-colors line-clamp-2">{service.title}</h3>
                                     <p className="text-slate-600 text-[15px] leading-relaxed mb-8 flex-grow font-medium line-clamp-3">{service.desc}</p>
 
                                     <div className="mt-auto pt-6 border-t border-slate-100">
@@ -219,7 +219,7 @@ const EWasteManagement = () => {
                                             <button className="w-full lg:w-auto flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3 rounded-xl text-sm font-bold transition-all shadow-md active:scale-[0.97] whitespace-nowrap">
                                                 Get Started Free
                                             </button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read transition-all hover:text-[#072b47] whitespace-nowrap">
+                                            <button className="text-yellow-400 font-bold text-sm flex items-center gap-1.5 group/read transition-all hover:text-[#072b47] whitespace-nowrap">
                                                 <span>Read more</span>
                                                 <ArrowRight className="w-4 h-4 group-hover/read:translate-x-1" />
                                             </button>
@@ -285,7 +285,7 @@ const EWasteManagement = () => {
                                 </div>
                                 <p className="text-slate-600 font-medium leading-relaxed mb-6">"{rev.text}"</p>
                                 <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-[#005a9c] font-bold text-xl">
+                                    <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-yellow-400 font-bold text-xl">
                                         {rev.name.charAt(0)}
                                     </div>
                                     <div>
@@ -298,7 +298,7 @@ const EWasteManagement = () => {
                     </div>
 
                     <div className="text-center">
-                        <button className="bg-white border-2 border-[#005a9c] text-[#005a9c] hover:bg-[#005a9c] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors shadow-md">
+                        <button className="bg-white border-2 border-[#005a9c] text-yellow-400 hover:bg-[#005a9c] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors shadow-md">
                             View More Reviews
                         </button>
                     </div>
@@ -309,3 +309,4 @@ const EWasteManagement = () => {
 };
 
 export default EWasteManagement;
+

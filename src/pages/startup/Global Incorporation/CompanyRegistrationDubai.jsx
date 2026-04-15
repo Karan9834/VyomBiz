@@ -9,15 +9,15 @@ import process from "../../../assets/Global Incorporation/Company Registration i
 
 const CompanyRegistrationDubaiOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Global Hub
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            Why Start a Company in <span className="text-[#005a9c]">Dubai?</span>
+                            Why Start a Company in <span className="text-yellow-400">Dubai?</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             Dubai has rapidly positioned itself as a global business hub connecting Asia, Europe, and Africa. Entrepreneurs choose Dubai not just for tax benefits but also for its stable economy, advanced infrastructure, and investor-friendly regulations.
@@ -56,7 +56,7 @@ const CompanyRegistrationDubaiAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Why It Is Vital
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -105,7 +105,7 @@ const DubaiIncorporationEligibility = () => {
         { title: "Offshore Company", desc: "Offshore companies are primarily used for international trading, asset protection, and global investments. They offer privacy and simplified compliance requirements." }
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Types of Company Registration in Dubai
@@ -140,7 +140,7 @@ const DubaiIncorporationDocumentsSection = () => {
         "Visa copies (if applicable)"
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for Dubai Company Registration
@@ -174,7 +174,7 @@ const DubaiIncorporationProcessSection = () => {
         { title: "Open Corporate Bank Account", desc: "The final step involves opening a corporate bank account to start business transactions." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -222,7 +222,7 @@ const DubaiIncorporationFeaturesSection = () => {
         { title: "Ongoing compliance and advisory services" }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="mb-12">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
@@ -352,3 +352,4 @@ const CompanyRegistrationDubai = () => {
 };
 
 export default CompanyRegistrationDubai;
+

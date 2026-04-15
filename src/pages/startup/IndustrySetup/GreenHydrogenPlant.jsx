@@ -11,7 +11,6 @@ import {
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 import benefits from "../../../assets/Industry Setup/Green Hydrogen Plant Setup/benefits.png";
 import overview from "../../../assets/Industry Setup/Green Hydrogen Plant Setup/overview.png";
@@ -19,11 +18,11 @@ import process from "../../../assets/Industry Setup/Green Hydrogen Plant Setup/p
 
 const GreenHydrogenPlantOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Renewable Energy
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -58,7 +57,7 @@ const GreenHydrogenPlantAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Why It Is Vital
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -101,7 +100,7 @@ const GreenHydrogenPlantAdvantages = () => {
 
 const GreenHydrogenPlantEligibility = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Our Green Hydrogen Plant Setup Services
@@ -153,7 +152,7 @@ const GreenHydrogenPlantDocumentsSection = () => {
         "Project feasibility and technical reports"
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for Green Hydrogen Plant Setup
@@ -164,7 +163,7 @@ const GreenHydrogenPlantDocumentsSection = () => {
                 <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed">
                     {list.map((item, i) => (
                         <li key={i} className="flex items-start">
-                             <div className="mr-3 mt-1 text-[#005a9c]"><Zap size={18} /></div>
+                             <div className="mr-3 mt-1 text-yellow-400"><Zap size={18} /></div>
                              <span>{item}</span>
                         </li>
                     ))}
@@ -186,7 +185,7 @@ const GreenHydrogenPlantProcessSection = () => {
         { title: "Compliance & Operational Setup", desc: "All operational licenses and regulatory filings are completed before plant commissioning." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -241,7 +240,7 @@ const GreenHydrogenPlantFeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 
                 <div className="mb-14">
@@ -338,7 +337,6 @@ const GreenHydrogenPlant = () => {
             />
 
             {/* ================= TRUSTED BRANDS SECTION ================= */}
-            <TrustedBrands />
 
             {/* ================= TALK EXPERT SECTION ================= */}
             <TalkExpert />
@@ -365,3 +363,4 @@ const GreenHydrogenPlant = () => {
 };
 
 export default GreenHydrogenPlant;
+

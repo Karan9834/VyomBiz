@@ -17,15 +17,15 @@ import process from "../../../assets/Global Incorporation/Company Registration i
 
 const CompanyRegistrationFranceOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             EU Gateway
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            Why Start a Business in <span className="text-[#005a9c]">France?</span>
+                            Why Start a Business in <span className="text-yellow-400">France?</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             France is one of the most attractive destinations in Europe for international businesses. With access to the European Union market, a highly skilled workforce, and strong infrastructure, France provides a strategic environment for startups, SMEs, and global corporations.
@@ -59,7 +59,7 @@ const CompanyRegistrationFranceAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Why It Is Vital
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -115,7 +115,7 @@ const FranceIncorporationEligibility = () => {
         { title: "Representative Office", desc: "Best suited for companies looking to explore the French market without conducting direct commercial activities." }
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Types of Companies You Can Register in France
@@ -150,7 +150,7 @@ const FranceIncorporationDocumentsSection = () => {
         "Shareholding structure information"
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for Company Registration in France
@@ -181,7 +181,7 @@ const FranceIncorporationProcessSection = () => {
         { title: "Obtain Business Registration Certificate", desc: "Once approved, the company receives an official registration number and can legally operate in France." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -236,7 +236,7 @@ const FranceIncorporationFeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 
                 <div className="mb-12">
@@ -364,3 +364,4 @@ const CompanyRegistrationFrance = () => {
 };
 
 export default CompanyRegistrationFrance;
+

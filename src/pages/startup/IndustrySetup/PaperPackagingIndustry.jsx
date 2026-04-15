@@ -11,7 +11,6 @@ import {
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 import process from "../../../assets/Industry Setup/paper/process.jpg";
 import benefits from "../../../assets/Industry Setup/paper/benefits.jpeg";
@@ -19,11 +18,11 @@ import overview from "../../../assets/Industry Setup/paper/overview.jpg";
 
 const PaperPackagingOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Sustainable Industry
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -36,12 +35,12 @@ const PaperPackagingOverview = () => {
                             Businesses operating in this industry manufacture products such as:
                         </p>
                         <ul className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6 space-y-2">
-                            <li className="flex"><span className="text-[#005a9c] mr-2">•</span> Corrugated boxes</li>
-                            <li className="flex"><span className="text-[#005a9c] mr-2">•</span> Folding cartons</li>
-                            <li className="flex"><span className="text-[#005a9c] mr-2">•</span> Paper bags and pouches</li>
-                            <li className="flex"><span className="text-[#005a9c] mr-2">•</span> Kraft paper packaging</li>
-                            <li className="flex"><span className="text-[#005a9c] mr-2">•</span> Paperboard containers</li>
-                            <li className="flex"><span className="text-[#005a9c] mr-2">•</span> Custom retail packaging</li>
+                            <li className="flex"><span className="text-yellow-400 mr-2">•</span> Corrugated boxes</li>
+                            <li className="flex"><span className="text-yellow-400 mr-2">•</span> Folding cartons</li>
+                            <li className="flex"><span className="text-yellow-400 mr-2">•</span> Paper bags and pouches</li>
+                            <li className="flex"><span className="text-yellow-400 mr-2">•</span> Kraft paper packaging</li>
+                            <li className="flex"><span className="text-yellow-400 mr-2">•</span> Paperboard containers</li>
+                            <li className="flex"><span className="text-yellow-400 mr-2">•</span> Custom retail packaging</li>
                         </ul>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             The sector offers strong growth opportunities for manufacturers, exporters, and packaging solution providers. However, before starting operations, businesses must comply with several legal, environmental, and operational requirements. Vyombiz managed by Clink Consultancy Services Private Limited supports businesses through every stage of setting up a paper and paperboard packaging unit — from business registration to regulatory approvals and operational compliance.
@@ -66,7 +65,7 @@ const PaperPackagingIndustryAdvantages = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Why It Is Vital
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -117,7 +116,7 @@ const PaperPackagingIndustryEligibility = () => {
         { title: "Trade License", desc: "A trade license from the local municipal authority may be required to operate the manufacturing facility within the specified jurisdiction." }
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Legal Requirements for Starting a Paper Packaging Business
@@ -155,7 +154,7 @@ const PaperPackagingIndustryDocumentsSection = () => {
         "Machinery and manufacturing details"
     ];
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for Industry Setup
@@ -166,7 +165,7 @@ const PaperPackagingIndustryDocumentsSection = () => {
                 <ul className="space-y-3 text-[17px] text-slate-600 leading-relaxed">
                     {list.map((item, i) => (
                         <li key={i} className="flex">
-                            <span className="text-[#005a9c] mr-2">•</span> {item}
+                            <span className="text-yellow-400 mr-2">•</span> {item}
                         </li>
                     ))}
                 </ul>
@@ -188,7 +187,7 @@ const PaperPackagingIndustryProcessSection = () => {
         { title: "Operational Compliance", desc: "Businesses must maintain compliance with labor laws, environmental regulations, and safety standards." }
     ];
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -255,7 +254,7 @@ const PaperPackagingIndustryFeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 
                 <div className="mb-14 grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -269,7 +268,7 @@ const PaperPackagingIndustryFeaturesSection = () => {
                         <ul className="space-y-3 mb-6">
                             {machinery.map((item, index) => (
                                 <li key={index} className="flex items-center">
-                                    <ShieldCheck size={18} className="text-[#005a9c] mr-2" />
+                                    <ShieldCheck size={18} className="text-yellow-400 mr-2" />
                                     <span className="text-[17px] text-slate-600 leading-relaxed">{item}</span>
                                 </li>
                             ))}
@@ -304,7 +303,7 @@ const PaperPackagingIndustryFeaturesSection = () => {
                 <div>
                     {features.map((feature, index) => (
                         <div key={index} className="grid grid-cols-[40px_1fr] gap-4 py-5 border-t border-slate-300">
-                            <div className="text-[15px] font-semibold text-[#072b47]"><Package size={20} className="text-[#005a9c]" /></div>
+                            <div className="text-[15px] font-semibold text-[#072b47]"><Package size={20} className="text-yellow-400" /></div>
                             <div>
                                 <h3 className="text-[16px] font-semibold text-[#072b47]">{feature.title}</h3>
                                 <p className="text-[15px] text-slate-600 mt-1 leading-relaxed">{feature.desc}</p>
@@ -360,8 +359,6 @@ const PaperPackagingIndustry = () => {
                     { count: "50+", label: "Offices", icon: <Building2 size={20} /> }
                 ]}
             />
-
-            <TrustedBrands />
             <TalkExpert />
 
             <DetailsLayout
@@ -383,3 +380,4 @@ const PaperPackagingIndustry = () => {
 };
 
 export default PaperPackagingIndustry;
+

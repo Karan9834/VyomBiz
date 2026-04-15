@@ -49,7 +49,7 @@ const ISODetailsLayout = ({ overview, advantages, eligibility, process, whyUs, f
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {eligibility.list && eligibility.list.map((item, idx) => (
                             <div key={idx} className="bg-[#f0f7ff] p-6 rounded-xl">
-                                <h3 className="text-xl font-semibold text-[#005a9c] mb-2">{item.title}</h3>
+                                <h3 className="text-xl font-semibold text-yellow-400 mb-2">{item.title}</h3>
                                 <p className="text-slate-600">{item.desc}</p>
                             </div>
                         ))}
@@ -66,7 +66,7 @@ const ISODetailsLayout = ({ overview, advantages, eligibility, process, whyUs, f
                         <div className="space-y-4">
                             {process.steps && process.steps.map((step, idx) => (
                                 <div key={idx} className="flex gap-4 p-4 bg-white rounded-lg shadow-sm border border-slate-100">
-                                    <div className="text-[#005a9c] font-bold text-xl">{step.step}</div>
+                                    <div className="text-yellow-400 font-bold text-xl">{step.step}</div>
                                     <div>
                                         <h3 className="text-lg font-semibold text-[#072b47]">{step.title}</h3>
                                         <p className="text-slate-600 mt-1">{step.desc}</p>
@@ -107,3 +107,4 @@ const ISODetailsLayout = ({ overview, advantages, eligibility, process, whyUs, f
 };
 
 export default ISODetailsLayout;
+

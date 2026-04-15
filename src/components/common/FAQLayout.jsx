@@ -19,7 +19,7 @@ const FAQLayout = ({
     const [openIndex, setOpenIndex] = useState(0);
 
     return (
-        <section id="faq" className="py-14 bg-white scroll-mt-32 relative z-10">
+        <section id="faq" className="py-8 bg-white scroll-mt-32 relative z-10">
             <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16 xl:px-24">
                 <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
 
@@ -30,7 +30,7 @@ const FAQLayout = ({
                                 <HelpCircle size={24} />
                             </div>
                             <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-4 leading-tight">
-                                {title.split(' ')[0]} <span className="text-[#f1a134]">{title.split(' ').slice(1).join(' ')}</span>
+                                {title.split(' ')[0]} <span className="text-yellow-400">{title.split(' ').slice(1).join(' ')}</span>
                             </h2>
                             <p className="text-slate-500 font-medium text-sm leading-relaxed mb-6">
                                 {subtitle}

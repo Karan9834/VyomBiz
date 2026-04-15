@@ -3,7 +3,6 @@ import { Shield, FileText, CheckCircle, Users, Award, Building2 } from "lucide-r
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 const Section8CompanyCompliance = () => {
@@ -163,8 +162,6 @@ const Section8CompanyCompliance = () => {
                     { count: "Timely", label: "Delivery", icon: <CheckCircle size={20} /> }
                 ]}
             />
-
-            <TrustedBrands />
             <TalkExpert />
 
             <DetailsLayout

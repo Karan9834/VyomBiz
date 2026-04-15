@@ -3,7 +3,6 @@ import { ShieldCheck, Users, Building2 } from "lucide-react";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
 import DetailsLayout from "../../../components/common/DetailsLayout.jsx";
 import FAQLayout from "../../../components/common/FAQLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 const ClosingLLP = () => {
@@ -51,8 +50,6 @@ const ClosingLLP = () => {
                     { count: "99%", label: "Success Rate", icon: <Users size={20} /> }
                 ]}
             />
-
-            <TrustedBrands />
             <TalkExpert />
 
             {/* DETAILS */}

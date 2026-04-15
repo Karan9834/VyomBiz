@@ -106,3 +106,4 @@ const ICATCertification = () => {
 };
 
 export default ICATCertification;
+

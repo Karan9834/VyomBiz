@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { Users, Briefcase, Building2, ChevronDown, Phone, CheckCircle2, Shield, FileText, Scale, AlertCircle, BookOpen, Gavel } from "lucide-react";
 import InsideNavbar from "../../../components/common/InsideNavbar.jsx";
 import HeroLayout from "../../../components/common/HeroLayout.jsx";
-import TrustedBrands from "../../../components/myHome/TrustedBrands.jsx";
 import TalkExpert from "../../../components/common/TalkExpert.jsx";
 
 /* ─────────────────────────────────────────────────────────
@@ -54,7 +53,7 @@ const NumberedList = ({ items }) => (
     <ol className="space-y-3 my-4 pl-1">
         {items.map((item, i) => (
             <li key={i} className="flex items-start gap-3">
-                <span className="shrink-0 w-6 h-6 rounded-full bg-[#e8f1fb] text-[#005a9c] text-[11px] font-bold flex items-center justify-center mt-0.5">
+                <span className="shrink-0 w-6 h-6 rounded-full bg-[#e8f1fb] text-yellow-400 text-[11px] font-bold flex items-center justify-center mt-0.5">
                     {i + 1}
                 </span>
                 <span className="text-[15px] text-slate-600 leading-[1.8]">{item}</span>
@@ -67,7 +66,7 @@ const InfoCard = ({ icon, title, children }) => (
     <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 md:p-6 mb-5">
         <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 rounded-lg bg-[#e8f1fb] flex items-center justify-center shrink-0">
-                <span className="text-[#005a9c]">{icon}</span>
+                <span className="text-yellow-400">{icon}</span>
             </div>
             <h4 className="text-[15px] font-semibold text-[#072b47]">{title}</h4>
         </div>
@@ -80,7 +79,7 @@ const Divider = () => (
 );
 
 const SectionLabel = ({ children }) => (
-    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-[#005a9c] bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
+    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-yellow-400 bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
         {children}
     </span>
 );
@@ -233,8 +232,6 @@ const LegalNoticeMoneyRecovery = () => {
                     { count: "24–48 hrs", label: "Draft Ready", icon: <Building2 size={20} /> }
                 ]}
             />
-
-            <TrustedBrands />
             <TalkExpert />
 
             {/* ═══════════════════════════════════════════
@@ -427,7 +424,7 @@ const LegalNoticeMoneyRecovery = () => {
                     <div className="bg-[#f8fbff] border border-[#d0e3f5] rounded-2xl p-6 md:p-8 my-8">
                         <div className="flex items-center gap-3 mb-6">
                             <div className="w-9 h-9 rounded-lg bg-[#e8f1fb] flex items-center justify-center">
-                                <FileText size={16} className="text-[#005a9c]" />
+                                <FileText size={16} className="text-yellow-400" />
                             </div>
                             <h4 className="text-[15px] font-semibold text-[#072b47]">Commonly Required Documents</h4>
                         </div>
@@ -521,7 +518,7 @@ const LegalNoticeMoneyRecovery = () => {
                             },
                         ].map(({ step, title, desc }) => (
                             <div key={step} className="flex gap-5 bg-slate-50 border border-slate-200 rounded-xl p-5 md:p-6">
-                                <div className="shrink-0 w-10 h-10 rounded-full bg-[#e8f1fb] text-[#005a9c] font-bold text-[13px] flex items-center justify-center">
+                                <div className="shrink-0 w-10 h-10 rounded-full bg-[#e8f1fb] text-yellow-400 font-bold text-[13px] flex items-center justify-center">
                                     {step}
                                 </div>
                                 <div>
@@ -649,7 +646,7 @@ const LegalNoticeMoneyRecovery = () => {
                             <div key={title} className="bg-slate-50 border border-slate-200 rounded-xl p-5">
                                 <div className="flex items-center gap-3 mb-3">
                                     <div className="w-8 h-8 rounded-lg bg-[#e8f1fb] flex items-center justify-center shrink-0">
-                                        <span className="text-[#005a9c]">{icon}</span>
+                                        <span className="text-yellow-400">{icon}</span>
                                     </div>
                                     <h4 className="text-[14px] font-semibold text-[#072b47]">{title}</h4>
                                 </div>
@@ -697,7 +694,7 @@ const LegalNoticeMoneyRecovery = () => {
                         ].map(({ icon, title, desc }) => (
                             <div key={title} className="flex gap-4 bg-slate-50 border border-slate-200 rounded-xl p-5 hover:border-[#005a9c]/30 hover:bg-[#f8fbff] transition-colors">
                                 <div className="w-8 h-8 rounded-lg bg-[#e8f1fb] flex items-center justify-center shrink-0 mt-0.5">
-                                    <span className="text-[#005a9c]">{icon}</span>
+                                    <span className="text-yellow-400">{icon}</span>
                                 </div>
                                 <div>
                                     <h4 className="text-[14px] font-semibold text-[#072b47] mb-1">{title}</h4>
@@ -760,3 +757,4 @@ const LegalNoticeMoneyRecovery = () => {
 };
 
 export default LegalNoticeMoneyRecovery;
+

@@ -9,15 +9,15 @@ import process from "../../../assets/IP & Trademark/Copyright/copyright-registra
 
 const CopyrightRegistrationOverview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Protection of Intellectual Property
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            Overview of <span className="text-[#005a9c]">Copyright Registration in India</span>
+                            Overview of <span className="text-yellow-400">Copyright Registration in India</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             Copyright registration in India applies to various types of creative works, including literary works, artistic works, musical compositions, sound recordings, computer programs, dramatic works, cinematograph films, and software.
@@ -50,7 +50,7 @@ const CopyrightRegistrationOverview = () => {
 
 const CopyrightRegistrationEligibility = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Who Can Apply for Copyright Registration?
@@ -117,7 +117,7 @@ const CopyrightRegistrationEligibility = () => {
 
 const CopyrightRegistrationDocumentsSection = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Documents Required for Copyright Registration
@@ -153,7 +153,7 @@ const CopyrightRegistrationDocumentsSection = () => {
 
 const CopyrightRegistrationProcessSection = () => {
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -204,7 +204,7 @@ const CopyrightRegistrationProcessSection = () => {
 
 const CopyrightRegistrationFeaturesSection = () => {
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
@@ -274,7 +274,7 @@ const CopyrightRegistration = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
 
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         Creative Protection
                     </span>
 
@@ -365,3 +365,4 @@ const CopyrightRegistration = () => {
 };
 
 export default CopyrightRegistration;
+

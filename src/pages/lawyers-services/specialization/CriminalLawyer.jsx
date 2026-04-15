@@ -50,7 +50,7 @@ const InfoCard = ({ icon, title, children }) => (
     <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 md:p-6 mb-5">
         <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 rounded-lg bg-[#e8f1fb] flex items-center justify-center shrink-0">
-                <span className="text-[#005a9c]">{icon}</span>
+                <span className="text-yellow-400">{icon}</span>
             </div>
             <h4 className="text-[15px] font-semibold text-[#072b47]">{title}</h4>
         </div>
@@ -63,7 +63,7 @@ const Divider = () => (
 );
 
 const SectionLabel = ({ children }) => (
-    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-[#005a9c] bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
+    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-yellow-400 bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
         {children}
     </span>
 );
@@ -279,7 +279,7 @@ const CriminalLawyer = () => {
                             { title: "Court Representation", desc: "Experienced lawyers represent clients during hearings and trial proceedings." },
                         ].map((step, idx) => (
                             <div key={idx} className="flex gap-6 items-start group">
-                                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-[#f8fbff] border-2 border-[#d0e3f5] text-[#005a9c] flex items-center justify-center font-bold text-sm">
+                                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-[#f8fbff] border-2 border-[#d0e3f5] text-yellow-400 flex items-center justify-center font-bold text-sm">
                                     {idx + 1}
                                 </span>
                                 <div>
@@ -298,21 +298,21 @@ const CriminalLawyer = () => {
                     <div className="grid md:grid-cols-3 gap-6 my-10">
                         <div className="p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all">
                             <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-5">
-                                <Users size={24} className="text-[#005a9c]" />
+                                <Users size={24} className="text-yellow-400" />
                             </div>
                             <h4 className="text-[17px] font-bold text-[#072b47] mb-3">Experienced Team</h4>
                             <p className="text-slate-600 text-[13px] leading-relaxed">Connect with specialized criminal defense professionals across India.</p>
                         </div>
                         <div className="p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all">
                             <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-5">
-                                <Briefcase size={24} className="text-[#005a9c]" />
+                                <Briefcase size={24} className="text-yellow-400" />
                             </div>
                             <h4 className="text-[17px] font-bold text-[#072b47] mb-3">Strategic Consultation</h4>
                             <p className="text-slate-600 text-[13px] leading-relaxed">Personalized legal strategies tailored to the specifics of your case.</p>
                         </div>
                         <div className="p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all">
                             <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-5">
-                                <Landmark size={24} className="text-[#005a9c]" />
+                                <Landmark size={24} className="text-yellow-400" />
                             </div>
                             <h4 className="text-[17px] font-bold text-[#072b47] mb-3">All India Support</h4>
                             <p className="text-slate-600 text-[13px] leading-relaxed">Consistent support across trial courts, sessions courts, and high courts.</p>
@@ -348,3 +348,4 @@ const CriminalLawyer = () => {
 };
 
 export default CriminalLawyer;
+

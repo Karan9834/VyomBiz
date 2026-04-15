@@ -190,7 +190,7 @@ const SecretarialCompliance = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-8 lg:gap-12 py-6 md:py-10 lg:py-6">
                     {/* Left Content */}
                     <div className="w-full lg:w-[60%] text-center lg:text-left">
-                        <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-blue-50 border border-blue-100 rounded-full text-[#005a9c] text-xs md:text-sm font-bold uppercase tracking-wider mb-4 md:mb-8">
+                        <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-blue-50 border border-blue-100 rounded-full text-yellow-400 text-xs md:text-sm font-bold uppercase tracking-wider mb-4 md:mb-8">
                             <FileCheck size={16} className="hidden sm:block" />
                             <span>Secretarial Compliance</span>
                         </div>
@@ -243,23 +243,23 @@ const SecretarialCompliance = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
                         {[
                             {
-                                icon: <Rocket className="w-6 h-6 md:w-8 md:h-8 text-[#005a9c]" fill="currentColor" fillOpacity={0.2} />,
+                                icon: <Rocket className="w-6 h-6 md:w-8 md:h-8 text-yellow-400" fill="currentColor" fillOpacity={0.2} />,
                                 title: "1 Lakh+ Clients",
                                 desc: "Global brands that trust us for their secretarial compliance needs across India."
                             },
                             {
-                                icon: <Clock className="w-6 h-6 md:w-8 md:h-8 text-[#005a9c]" />,
+                                icon: <Clock className="w-6 h-6 md:w-8 md:h-8 text-yellow-400" />,
                                 title: "10+ Years Experience",
                                 desc: "Seasoned professionals with deep expertise in corporate secretarial matters.",
                                 badge: true
                             },
                             {
-                                icon: <Scale className="w-6 h-6 md:w-8 md:h-8 text-[#005a9c]" />,
+                                icon: <Scale className="w-6 h-6 md:w-8 md:h-8 text-yellow-400" />,
                                 title: "100% Compliance",
                                 desc: "Ensure complete statutory compliance with our expert guidance and timely filings."
                             },
                             {
-                                icon: <Shield className="w-6 h-6 md:w-8 md:h-8 text-[#005a9c]" />,
+                                icon: <Shield className="w-6 h-6 md:w-8 md:h-8 text-yellow-400" />,
                                 title: "Data Security",
                                 desc: "Your company and personal details are protected at the highest security level.",
                                 badge: true
@@ -320,7 +320,7 @@ const SecretarialCompliance = () => {
                                 <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFE90A]"></div>
 
                                 <div className="p-4 sm:p-6 md:p-8 flex flex-col h-full pt-6 md:pt-10">
-                                    <h3 className="text-lg md:text-xl font-bold text-[#072b47] mb-2 md:mb-4 group-hover:text-[#005a9c] transition-colors">
+                                    <h3 className="text-lg md:text-xl font-bold text-[#072b47] mb-2 md:mb-4 group-hover:text-yellow-400 transition-colors">
                                         {service.title}
                                     </h3>
                                     <p className="text-sm md:text-[15px] text-slate-600 leading-relaxed mb-4 md:mb-6 flex-grow font-medium">
@@ -334,7 +334,7 @@ const SecretarialCompliance = () => {
                                                 <button className="bg-[#005a9c] hover:bg-[#072b47] text-white px-3 md:px-5 py-2 md:py-3 rounded-lg md:rounded-xl text-xs md:text-sm font-bold transition-all shadow-md hover:shadow-lg active:scale-[0.97] whitespace-nowrap">
                                                     Get Started
                                                 </button>
-                                                <a href={service.link} className="text-[#005a9c] font-bold text-xs md:text-sm flex items-center gap-1 group/read relative py-1 whitespace-nowrap">
+                                                <a href={service.link} className="text-yellow-400 font-bold text-xs md:text-sm flex items-center gap-1 group/read relative py-1 whitespace-nowrap">
                                                     <span>Read More</span>
                                                     <ArrowRight className="w-3 h-3 md:w-4 md:h-4 group-hover/read:translate-x-1 transition-transform duration-300" />
                                                     <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#FFE90A] group-hover/read:w-full transition-all duration-300 rounded-full"></div>
@@ -457,7 +457,7 @@ const SecretarialCompliance = () => {
                                     </div>
                                 </div>
 
-                                <h3 className="text-lg md:text-xl font-black text-[#072b47] mb-3 md:mb-4 leading-tight group-hover:text-[#005a9c] transition-colors">{item.title}</h3>
+                                <h3 className="text-lg md:text-xl font-black text-[#072b47] mb-3 md:mb-4 leading-tight group-hover:text-yellow-400 transition-colors">{item.title}</h3>
                                 <p className="text-sm md:text-[15px] text-slate-600 leading-relaxed font-medium flex-grow">
                                     {item.desc}
                                 </p>
@@ -471,7 +471,7 @@ const SecretarialCompliance = () => {
             <section className="py-16 md:py-20 lg:py-24 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-8 md:mb-12 lg:mb-16">
-                        <p className="text-[#005a9c] font-bold text-sm md:text-base lg:text-lg mb-2">Testimonials</p>
+                        <p className="text-yellow-400 font-bold text-sm md:text-base lg:text-lg mb-2">Testimonials</p>
                         <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-[#072b47] mb-3 md:mb-4 px-4">
                             Updated testimonials from our customers
                         </h2>
@@ -498,7 +498,7 @@ const SecretarialCompliance = () => {
                     </div>
 
                     <div className="text-center mt-8 md:mt-12">
-                        <button className="inline-flex items-center gap-2 bg-transparent border-2 border-[#005a9c] text-[#005a9c] hover:bg-[#005a9c] hover:text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-bold transition-all text-sm md:text-base">
+                        <button className="inline-flex items-center gap-2 bg-transparent border-2 border-[#005a9c] text-yellow-400 hover:bg-[#005a9c] hover:text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-bold transition-all text-sm md:text-base">
                             View More Reviews
                             <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
                         </button>

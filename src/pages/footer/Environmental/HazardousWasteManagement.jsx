@@ -11,55 +11,55 @@ const HazardousWasteManagement = () => {
                 "title": "Solid Waste Management Authorization",
                 "desc": "Solid Waste Management Authorization Start Process in 2 Minutes Worried about rejection of the solid waste management authorization? VyomBiz delivers 99% first-time approvals th..",
                 "price": "499.00",
-                icon: <Shield className='w-8 h-8 text-[#005a9c]' />
+                icon: <Shield className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "Hazardous Waste Management Authorization",
                 "desc": "Hazardous Waste Management Authorization Hazardous Waste Management Authorization is necessary for those involved in handling, generating, collection, storing, packaging, transportation,..",
                 "price": "499.00",
-                icon: <Shield className='w-8 h-8 text-[#005a9c]' />
+                icon: <Shield className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "Authorization for Import of Hazardous Waste",
                 "desc": "If you wish to deal in the process of Import of Hazardous Waste then it is mandatory to get Authorization.",
                 "price": "499.00",
-                icon: <FileCheck className='w-8 h-8 text-[#005a9c]' />
+                icon: <FileCheck className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "Authorization for Export of Hazardous Waste",
                 "desc": "All those who want to deal in the process of export of Hazardous Waste must know that it is mandatory to get Authorization.",
                 "price": "499.00",
-                icon: <FileCheck className='w-8 h-8 text-[#005a9c]' />
+                icon: <FileCheck className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "Bio Medical Waste Recycling Plant",
                 "desc": "Bio Medical Waste Management Recycling Plant Setup Struggling to set up your bio medical waste Management recycling plant? Get VyomBiz expert assistance for affordable, reliable..",
                 "price": "499.00",
-                icon: <Factory className='w-8 h-8 text-[#005a9c]' />
+                icon: <Factory className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "Hazardous Waste Export Authorisation",
                 "desc": "Hazardous Waste Export Authorisation For compliance assurance of all risks associated with your Export Authorisation of Hazardous Waste, comply with applicable laws with the assistance..",
                 "price": "499.00",
-                icon: <Shield className='w-8 h-8 text-[#005a9c]' />
+                icon: <Shield className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "Land Waste Management",
                 "desc": "Land Waste Management For compliance assurance of all risks associated with your Land Waste, comply with applicableLand Waste Management laws with the assistance of VyomBiz.",
                 "price": "499.00",
-                icon: <Leaf className='w-8 h-8 text-[#005a9c]' />
+                icon: <Leaf className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "Hazardous Waste Management and Compliance Assurance",
                 "desc": "Hazardous Waste Management and Compliance Assurance For compliance assurance of all risks associated with your Hazardous waste, get your Hazardous Waste Management with the assistance o..",
                 "price": "499.00",
-                icon: <CheckCircle className='w-8 h-8 text-[#005a9c]' />
+                icon: <CheckCircle className='w-8 h-8 text-yellow-400' />
         },
         {
                 "title": "Industrial Waste Management",
                 "desc": "Industrial Waste Management in India Get More Value- Up to 50% off on Professional Services Today Facing hurdles in complying with industrial waste management regulations? Let..",
                 "price": "499.00",
-                icon: <Factory className='w-8 h-8 text-[#005a9c]' />
+                icon: <Factory className='w-8 h-8 text-yellow-400' />
         }
 ];
 
@@ -147,7 +147,7 @@ const HazardousWasteManagement = () => {
                                     <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 group-hover:scale-110 group-hover:bg-[#dead01]/10 transition-all duration-500 mb-6">
                                         {service.icon}
                                     </div>
-                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-[#005a9c] transition-colors line-clamp-2">{service.title}</h3>
+                                    <h3 className="text-xl font-bold text-[#072b47] mb-4 group-hover:text-yellow-400 transition-colors line-clamp-2">{service.title}</h3>
                                     <p className="text-slate-600 text-[15px] leading-relaxed mb-8 flex-grow font-medium line-clamp-3">{service.desc}</p>
                                     
                                     <div className="mt-auto pt-6 border-t border-slate-100">
@@ -159,7 +159,7 @@ const HazardousWasteManagement = () => {
                                             <button className="w-full lg:w-auto flex-1 bg-[#005a9c] hover:bg-[#072b47] text-white px-5 py-3 rounded-xl text-sm font-bold transition-all shadow-md active:scale-[0.97] whitespace-nowrap">
                                                 Get Started Free
                                             </button>
-                                            <button className="text-[#005a9c] font-bold text-sm flex items-center gap-1.5 group/read transition-all hover:text-[#072b47] whitespace-nowrap">
+                                            <button className="text-yellow-400 font-bold text-sm flex items-center gap-1.5 group/read transition-all hover:text-[#072b47] whitespace-nowrap">
                                                 <span>Read more</span>
                                                 <ArrowRight className="w-4 h-4 group-hover/read:translate-x-1" />
                                             </button>
@@ -225,7 +225,7 @@ const HazardousWasteManagement = () => {
                                 </div>
                                 <p className="text-slate-600 font-medium leading-relaxed mb-6">"{rev.text}"</p>
                                 <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-[#005a9c] font-bold text-xl">
+                                    <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-yellow-400 font-bold text-xl">
                                         {rev.name.charAt(0)}
                                     </div>
                                     <div>
@@ -238,7 +238,7 @@ const HazardousWasteManagement = () => {
                     </div>
 
                     <div className="text-center">
-                        <button className="bg-white border-2 border-[#005a9c] text-[#005a9c] hover:bg-[#005a9c] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors shadow-md">
+                        <button className="bg-white border-2 border-[#005a9c] text-yellow-400 hover:bg-[#005a9c] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors shadow-md">
                             View More Reviews
                         </button>
                     </div>
@@ -249,3 +249,4 @@ const HazardousWasteManagement = () => {
 };
 
 export default HazardousWasteManagement;
+

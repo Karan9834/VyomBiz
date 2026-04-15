@@ -94,45 +94,45 @@ const HeroLayout = ({
 
     const serviceName = `${heroTitlePrefix} ${heroTitleMain} ${heroTitleSuffix}`.trim();
 
-   const handleSubmit = async (e) => {
-    e.preventDefault();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
-    if (!validateForm()) return;
+        if (!validateForm()) return;
 
-    const templateParams = {
-    full_name: formData.name,
-    email: formData.email,
-    phone: formData.phone,
-    state: formData.state,
-    city: formData.city === "Other" ? formData.cityOther : formData.city,
-    service: serviceName
-};
-    try {
+        const templateParams = {
+            full_name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            state: formData.state,
+            city: formData.city === "Other" ? formData.cityOther : formData.city,
+            service: serviceName
+        };
+        try {
 
-        await emailjs.send(
-            SERVICE_ID,
-            TEMPLATE_ID,
-            templateParams,
-            PUBLIC_KEY
-        );
+            await emailjs.send(
+                SERVICE_ID,
+                TEMPLATE_ID,
+                templateParams,
+                PUBLIC_KEY
+            );
 
-        setAlertMessage("Message sent successfully. Our experts will contact you shortly.");
-        setIsSuccess(true);
+            setAlertMessage("Message sent successfully. Our experts will contact you shortly.");
+            setIsSuccess(true);
 
-        setFormData({
-            name: "",
-            email: "",
-            phone: "",
-            state: "",
-            city: "",
-            cityOther: ""
-        });
+            setFormData({
+                name: "",
+                email: "",
+                phone: "",
+                state: "",
+                city: "",
+                cityOther: ""
+            });
 
-    } catch (error) {
-        console.error("EmailJS Error:", error);
-        setAlertMessage("Something went wrong. Please try again.");
-    }
-};
+        } catch (error) {
+            console.error("EmailJS Error:", error);
+            setAlertMessage("Something went wrong. Please try again.");
+        }
+    };
 
     return (
         <section className="relative pt-6 pb-16 lg:pt-8 lg:pb-20 overflow-hidden border-b border-slate-50 bg-white min-h-screen font-sans text-slate-900">
@@ -191,7 +191,7 @@ const HeroLayout = ({
                         </div>
 
                         {/* Bottom Stats Grid */}
-                        <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100/80 flex items-center justify-between max-w-3xl">
+                        <div className="bg-white p-8 rounded-2xl shadow-sm border-2 border-yellow-400 flex items-center justify-between max-w-3xl">
                             {stats.slice(0, 4).map((stat, index) => (
                                 <React.Fragment key={index}>
                                     <div className={`flex-1 ${index >= 3 ? 'hidden lg:block text-right' : ''}`}>

@@ -16,3 +16,4 @@ const SoleProprietorship = () => {
 };
 
 export default SoleProprietorship;
+

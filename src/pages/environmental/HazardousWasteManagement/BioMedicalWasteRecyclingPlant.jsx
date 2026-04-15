@@ -133,3 +133,4 @@ const BioMedicalWasteRecyclingPlant = () => {
 };
 
 export default BioMedicalWasteRecyclingPlant;
+

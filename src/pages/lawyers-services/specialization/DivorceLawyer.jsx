@@ -50,7 +50,7 @@ const BulletList = ({ items }) => (
 const InfoCard = ({ icon, title, children }) => (
     <div className="bg-white border border-slate-100 shadow-sm rounded-2xl p-6 transition-all hover:shadow-md">
         <div className="w-10 h-10 rounded-xl bg-[#f0f7ff] flex items-center justify-center mb-4">
-            <span className="text-[#005a9c]">{icon}</span>
+            <span className="text-yellow-400">{icon}</span>
         </div>
         <h4 className="text-[16px] font-bold text-[#072b47] mb-2">{title}</h4>
         <div className="text-sm text-slate-600 leading-relaxed">{children}</div>
@@ -62,7 +62,7 @@ const Divider = () => (
 );
 
 const SectionLabel = ({ children }) => (
-    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-[#005a9c] bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
+    <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-yellow-400 bg-[#e8f1fb] px-3 py-1 rounded-full mb-4">
         {children}
     </span>
 );
@@ -287,7 +287,7 @@ const DivorceLawyer = () => {
                             { title: "Final Decree", desc: "The court grants the divorce after reviewing all legal aspects." },
                         ].map((step, idx) => (
                             <div key={idx} className="flex gap-6 items-start">
-                                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-[#f8fbff] text-[#005a9c] border-2 border-[#d0e3f5] flex items-center justify-center font-bold">
+                                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-[#f8fbff] text-yellow-400 border-2 border-[#d0e3f5] flex items-center justify-center font-bold">
                                     {idx + 1}
                                 </span>
                                 <div>
@@ -339,3 +339,4 @@ const DivorceLawyer = () => {
 };
 
 export default DivorceLawyer;
+

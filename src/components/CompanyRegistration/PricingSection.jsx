@@ -51,7 +51,7 @@ const PricingSection = () => {
 
     return (
         <PricingLayout
-            title="Choose Your Best Package"
+            title={<>Choose Your <span className="text-yellow-400">Best Package</span></>}
             packages={packages}
         />
     );

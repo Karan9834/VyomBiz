@@ -11,15 +11,15 @@ import overview from "../../../assets/ISO Certifications/iso-27001-isms/overview
 
 const ISO27001Overview = () => {
     return (
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 lg:gap-24">
                     <div>
-                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-4">
+                        <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-4">
                             Information Security
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
-                            An Overview of <span className="text-[#005a9c]">ISO 27001 ISMS</span>
+                            An Overview of <span className="text-yellow-400">ISO 27001 ISMS</span>
                         </h2>
                         <p className="text-[17px] text-slate-600 leading-relaxed font-medium mb-6">
                             ISO 27001 ISMS Certification is vital for any organisation that aims to enhance, nurture, or establish an information security management system to conform with its established information security requirements & policy.
@@ -53,7 +53,7 @@ const ISO27001Meaning = () => {
             <div className="grid lg:grid-cols-2 gap-16 w-full">
                 {/* LEFT SIDE (STICKY) */}
                 <div className="lg:sticky lg:top-28 h-fit self-start">
-                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-[#005a9c] rounded-full mb-6">
+                    <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-[#e6f0fa] text-yellow-400 rounded-full mb-6">
                         System Controls
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] leading-[1.15] tracking-tight mb-6">
@@ -99,7 +99,7 @@ const ISO27001Meaning = () => {
 
 const ISO27001Benefits = () => {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6 lg:px-12">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-6">
                     Benefits of ISO 27001 ISMS Certification
@@ -154,23 +154,23 @@ const ISO27001DocumentsSection = () => {
                         <h3 className="text-[20px] font-semibold text-[#072b47] mb-4">Written Documents I</h3>
                         <ul className="space-y-3 text-[16px] text-slate-600">
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Scope of the ISMS & Info Security Policy</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Risk Treatment Plan & Methodology</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Risk Assessment Report</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Incident Management Procedure</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Statutory & Regulatory Requirements</span>
                             </li>
                         </ul>
@@ -181,23 +181,23 @@ const ISO27001DocumentsSection = () => {
                         <h3 className="text-[20px] font-semibold text-[#072b47] mb-4">Written Documents II</h3>
                         <ul className="space-y-3 text-[16px] text-slate-600">
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Secure System Engineering Principles</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Definition of security roles</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Inventory of Assets</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Supplier Security Policy</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Business Continuity Procedures</span>
                             </li>
                         </ul>
@@ -208,23 +208,23 @@ const ISO27001DocumentsSection = () => {
                         <h3 className="text-[20px] font-semibold text-[#072b47] mb-4">Mandatory Records</h3>
                         <ul className="space-y-3 text-[16px] text-slate-600">
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Monitoring & Measurement Results</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Results of Management Review</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Records of training and skills</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Logs of user activities & internal audits</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-[#005a9c] shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                                 <span>Results of Corrective Actions</span>
                             </li>
                         </ul>
@@ -260,7 +260,7 @@ const ISO27001ProcessSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-4">
@@ -331,7 +331,7 @@ const ISO27001FeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-14 bg-white">
+        <section className="w-full py-6 bg-white">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#072b47] mb-3">
@@ -431,3 +431,4 @@ const ISO27001Registration = () => {
 };
 
 export default ISO27001Registration;
+
