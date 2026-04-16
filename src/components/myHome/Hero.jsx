@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronRight, Rocket, FileText, CheckCircle2, Shield, Upload, FileCheck } from "lucide-react";
+import TextReveal from "../common/TextReveal";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -68,11 +69,10 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
         {/* Hero Content */}
         <div className="text-center mb-16 md:mb-20">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-[1.15] mb-4 max-w-4xl mx-auto tracking-wide group">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-[1.15] mb-8 max-w-4xl mx-auto tracking-wide group">
             Build Your Business with Confidence. <br />
-            Run It Smarter with <span className="text-[#FFE90A] relative inline-block">VyomBiz <div className="absolute -bottom-1 left-0 w-full h-[2px] bg-[#FFE90A] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div></span>.
+            Run It Smarter with <TextReveal text="VyomBiz" className="text-[#FFE90A]" />.
           </h1>
-          <div className="w-24 h-1 bg-[#FFE90A] mx-auto rounded-full mb-8"></div>
 
           <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-6">
             Simplifying Legal, Tax, and Compliance the{" "}
@@ -88,7 +88,7 @@ const Hero = () => {
               <button
                 key={index}
                 onClick={() => navigate(button.path)}
-                className="px-4 md:px-5 py-2 bg-[#FFE90A] border border-[#FFE90A]/60 rounded-full text-[#072b47] text-xs md:text-sm font-bold hover:bg-white hover:border-white hover:text-[#072b47] transition-all duration-300 shadow-md hover:shadow-lg active:scale-95"
+                className="px-4 md:px-5 py-2 bg-[#FFE90A] border border-[#FFE90A]/60 rounded-full text-[#072b47] text-xs md:text-sm font-bold hover:bg-white hover:border-white hover:text-[#072b47] transition-all duration-300 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
               >
                 {button.name}
               </button>

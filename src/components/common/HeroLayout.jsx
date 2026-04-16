@@ -191,7 +191,8 @@ const HeroLayout = ({
                         </div>
 
                         {/* Bottom Stats Grid */}
-                        <div className="bg-white p-8 rounded-2xl shadow-sm border-2 border-yellow-400 flex items-center justify-between max-w-3xl">
+                        <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100/80 flex items-center justify-between max-w-3xl">
+
                             {stats.slice(0, 4).map((stat, index) => (
                                 <React.Fragment key={index}>
                                     <div className={`flex-1 ${index >= 3 ? 'hidden lg:block text-right' : ''}`}>
